@@ -22,7 +22,7 @@ Questa assunzione ci permette di utilizzare il comportamento umano osservato com
 
 Utilizziamo due risorse complementari:
 
-| Dataset       | Contenuto                                                             | Limiti                         | Uso nel nostro lavoro                                    |
+| Dataset       | Contenuto                                                             | Limiti                         | Estensione                                   |
 | ------------- | --------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
 | **MultiPICo** | Coppie post→reply annotate con ironia, con annotazioni prospettiviste | Contesto conversazionale breve | Estendiamo il **contesto**                               |
 | **CSC**       | Dialoghi multi-turn                  | Mancano info socio-demografiche  | Lo **arricchiamo con annotazioni prospettiviste silver** |
