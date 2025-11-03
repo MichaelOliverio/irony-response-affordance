@@ -1,89 +1,84 @@
-# IS IT REALLY APPROPRIATE TO BE SO IRONIC?
+# **Is It Really Appropriate To Be So Ironic?**
 
-Questo repository contiene dati, codice ed esperimenti relativi allo studio dell’appropriatezza dell’ironia nei dialoghi. L’obiettivo principale è esplorare quando è appropriato rispondere con ironia, nonchè il rilascio di una versione arricchita di MultiPICo (D-MultiPICo).
+## **1. Obiettivo**
 
-## Metodologia
+Questo lavoro esplora **quando l’uso dell’ironia è considerato appropriato** all’interno di una conversazione.
 
-La nostra metodologia è strutturata in tre fasi principali: **generazione del contesto**, **annotazione umana** e **analisi**.
-
-### 1. Generazione del Contesto
-
-Utilizziamo **MultiPICo** per generare un contesto più ampio attorno a post e risposte sui social media. In particolare:
-
-- **Esempio di Post:**
-```
-
-Red rooster is the worst fast food place by far. Where I grew up there were two: one in the major shopping centre and one about a minute away outside. The outdoor one was always dead; never saw a car in the drive-thru. But the inside one had a line as long as Hungry Jack's. Almost like people not wanting to wait in line decided to go there, which then formed a line. There is a Chinese place, Maccas, KFC and a bunch of smaller food places in the same food court as well. But always a line at Red Rooster.
-
-```
-- **Esempio di Risposta:**
-```
-
-Worse than Maccas? Sure mate
-
-```
-- **Annotation Task:** È appropriato rispondere con una frase ironica? (Sì/No)
-
-Bisogna chiarire quanto contesto dare per l'annotazione. Ci sono più strade
-- solo il post
-- post + reply
-- 1+ turni precedenti generato + post + reply
-
-Potrebbe essere anche interessante studiare quanto contesto serve per capire l'appropriatezza dell'ironia, quindi in tal caso verrebbero forniti agli annotatori dialoghi di diversa lunghezza
-
-Il contesto aggiuntivo alle coppie post-reply verrà generato usando LLM.
-
-### 2. Annotazione Umana
-
-I dataset sintetici generati dagli LLM vengono poi annotati su **Prolific**. Gli annotatori valutano l’appropriatezza di una risposta ironica nel contesto fornito.
-
-### 3. Analisi
-
-Dopo l’annotazione, vengono condotte diverse analisi:
-
-- **Analisi 1:** Come variano le annotazioni umane in base alla prospettiva?
-- **Analisi 2:** Gli LLM hanno una certa prospettiva? si potrebbe fare una valutazione utilizzando zero-shot
-- **Analisi 3:** Il fine-tuning di un LLM permette l’adattamento a una prospettiva specifica sull’ironia?
-
-### Risorse & Riferimenti
-
-- Dataset MultiPICo (tutte le lingue)
-- Letteratura rilevante sull’ironia nei dialoghi e sul prospettivismo:
-  - https://consensus.app/search/when-to-be-ironic-in-dialogue-systems/OJxdPJBzQj2ZlAerJsLCQw/
-  - https://consensus.app/search/when-to-be-ironic/0CuAicniT7CE1eJwAEoDwg/
+In particolare, ci concentriamo su **dialoghi estratti dai social media**, con l’obiettivo di capire **se e come i modelli linguistici possano apprendere** quando usare l’ironia, in modo **contestuale** e **sensibile alla prospettiva del parlante**.
 
 ---
 
-## Bozza struttura del Paper
+## **2. Assunzione di base**
 
-Di seguito la struttura prevista per il paper sullo studio dell’appropriatezza dell’ironia nei dialoghi:
+Assumiamo che:
 
-### 1. Introduction
-- Teoria sull’appropriatezza e uso dell’ironia
-- Prospettivismo e ironia
+> **Se, in una conversazione umana, è stata utilizzata una risposta ironica, allora essa era (per il parlante umano) appropriata.**
 
-### 2. Related Work
-- Prospettivismo e teorie correlate
-- Lavori già svolti in questa direzione (TO DO)
+Questa assunzione ci permette di utilizzare il comportamento umano osservato come proxy dell’“appropriatezza”.
 
-### 3. Dataset
-- MultiPICo (tutte le lingue)
+---
 
-### 4. Metodologia
-- Creazione del contesto
-- Annotazione su Prolific
-- Analisi dei dati
+## **3. Datasets**
 
-### 5. Annotazione di D-MultiPICo
-- Descrizione del processo di annotazione sintetica generata con LLM
-- Strategie di confronto con annotazioni umane
+Utilizziamo due risorse complementari:
 
-### 6. Analisi
-- Analisi della variazione delle annotazioni
-- Analisi delle prospettive LLM zero-shot
-- Effetti del fine-tuning su prospettive specifiche
+| Dataset       | Contenuto                                                             | Limiti                         | Uso nel nostro lavoro                                    |
+| ------------- | --------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
+| **MultiPICo** | Coppie post→reply annotate con ironia, con annotazioni prospettiviste | Contesto conversazionale breve | Estendiamo il **contesto**                               |
+| **CSC**       | Dialoghi multi-turn                  | Mancano info socio-demografiche  | Lo **arricchiamo con annotazioni prospettiviste silver** |
 
-### 7. Conclusioni
-- Sintesi dei risultati
-- Implicazioni per l’uso dell’ironia nei sistemi di dialogo
-- Possibili sviluppi futuri
+---
+
+## **4. Metodologia**
+
+La pipeline è organizzata in tre fasi:
+
+### **4.1 Data Augmentation**
+
+* **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply a **dialoghi multi-turn**.
+* **Annotazione prospettivista in CSC**: alleniamo un classificatore dell’ironia su MultiPICo e lo utilizziamo per produrre **annotazioni silver** del CSC, preservando le informazioni sulla prospettiva.
+
+
+### **4.2 Model Evaluation**
+
+L’obiettivo è verificare se i modelli sono in grado di **selezionare** (o **produrre**) una risposta ironica quando è appropriato.
+
+**Dubbio metodologico chiave:**
+Trattiamo il problema come **classificazione** o come **generazione**?
+
+| Approccio           | Descrizione                                                                                  | Pro                                              | Contro                                                                                   |
+| ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| **Classificazione** | Dato il contesto e la prospettiva, il modello predice se la risposta dovrebbe essere ironica (0/1) | Valutazione chiara (accuracy/F1), setup semplice | Minor ricchezza analitica                                                                |
+| **Generazione**     | Il modello genera direttamente la reply                                                  | Permette analisi qualitative sulle generazioni prodotte   | Richiede valutazione automatica complessa (es. classificatore o annotazione umana dell'ironia) |
+
+---
+
+### **4.3 Analisi**
+
+Le analisi si concentrano su:
+
+1. **Prospettiva e variazione nell’uso dell’ironia**
+   Es.: il modello riproduce alcune prospettive più di altre?
+
+2. **Adattamento tramite fine-tuning**
+   Possiamo “orientare” un modello verso una particolare prospettiva riguardo all'appropriatezza dell'ironia?
+
+---
+
+## **5. Contributi attesi**
+
+* Introduzione di versioni **arricchite** di MultiPICo e CSC (con contesto + annotazioni prospettiviste)
+* Valutazione sistematica della capacità dei LLM di usare l’ironia **in modo contestualmente appropriato**
+* Discussione sull’impatto della **prospettiva** nella generazione di contenuto ironico
+
+---
+
+## **6. Risorse**
+
+* MultiPICo: [https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo](https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo)
+* CSC: [https://github.com/CoPsyN/CSC](https://github.com/CoPsyN/CSC)
+* Letteratura sulla prospettiva linguistica e l'ironia → (inserire paper più specifici nella versione finale)
+
+---
+
+Punto chiave: definire il convetto di **appropriatezza dell'ironia**
