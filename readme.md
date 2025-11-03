@@ -92,7 +92,6 @@ Le analisi si concentrano su:
 
 * MultiPICo: [https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo](https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo)
 * CSC: [https://github.com/CoPsyN/CSC](https://github.com/CoPsyN/CSC)
-* Letteratura sulla prospettiva linguistica e l'ironia → (inserire paper più specifici nella versione finale)
 
 ---
 
