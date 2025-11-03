@@ -37,12 +37,19 @@ La pipeline è organizzata in tre fasi:
 
 * **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply a **dialoghi multi-turn**.
 
-  - letteratura utile:
-    - [S2M: Converting Single-Turn to Multi-Turn Datasets for Conversational Question Answering (B. Li et al., 2023)](https://arxiv.org/html/2312.16511v1/#bib.bib14)
-    - [Survey: Synthetic Data Generation Using Large Language Models: Advances in Text and Code (M. Nadas et al., 2025)](https://arxiv.org/abs/2503.14023)
-    - [SPADE: Structured Prompting Augmentation for Dialogue Enhancement in Machine-Generated Text Detection (H. Li et al., 2024)](https://aclanthology.org/2025.llmsec-1.11.pdf)
+  - Come aumentare il numero di turni?
+    - letteratura utile:
+      - [S2M: Converting Single-Turn to Multi-Turn Datasets for Conversational Question Answering (B. Li et al., 2023)](https://arxiv.org/html/2312.16511v1/#bib.bib14)
+      - [Survey: Synthetic Data Generation Using Large Language Models: Advances in Text and Code (M. Nadas et al., 2025)](https://arxiv.org/abs/2503.14023)
+      - [SPADE: Structured Prompting Augmentation for Dialogue Enhancement in Machine-Generated Text Detection (H. Li et al., 2024)](https://aclanthology.org/2025.llmsec-1.11.pdf)
 
-  - Nota personale: uno dei dubbi è quello di quanti turni di dialogo generare. Io andrei a guradare CSC quanti turni ha mediamente e userei quello come numero di turni da generare. Successivamente, andrei a valutare come incide il numero di turni sulle prestazioni dei modelli
+    - Quanti turni precedenti generare?
+      - Letteratura utile:
+        - [An Empirical Study on Context Length for Open-Domain Dialog Generation (X. Shen et al., 2024)](https://arxiv.org/html/2409.00315v1?utm_source=chatgpt.com)
+        - [How Does Conversation Length Impact User’s Satisfaction? A Case Study of Length-Controlled Conversations with LLM-Powered Chatbots (S. Huang et al., 2024)](https://arxiv.org/html/2404.17025v1?utm_source=chatgpt.com)
+        - [Context Does Matter: Implications for Crowdsourced Evaluation Labels in Task-Oriented Dialogue Systems (C. Siro et al., 2024)](https://www.researchgate.net/publication/381671868_Context_Does_Matter_Implications_for_Crowdsourced_Evaluation_Labels_in_Task-Oriented_Dialogue_Systems)
+
+      - Nota personale: Io andrei a guradare CSC quanti turni ha mediamente e userei quello come numero di turni da generare per MultiPICo. Successivamente, andrei a valutare come incide per gli LLM il numero di turni dati in input sulle prestazioni
 
 
 * **Annotazione prospettivista in CSC**: alleniamo un classificatore dell’ironia su MultiPICo e lo utilizziamo per produrre **annotazioni silver** del CSC, preservando le informazioni sulla prospettiva.
