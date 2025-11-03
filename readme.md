@@ -57,8 +57,8 @@ Trattiamo il problema come **classificazione** o come **generazione**?
 
 | Approccio           | Descrizione                                                                                  | Pro                                              | Contro                                                                                   |
 | ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **Classificazione** | Dato il contesto e la prospettiva, il modello predice se la risposta dovrebbe essere ironica (0/1) | Valutazione chiara (accuracy/F1), setup semplice | Minor ricchezza analitica                                                                |
-| **Generazione**     | Il modello genera direttamente la reply                                                  | Permette analisi qualitative sulle generazioni prodotte   | Richiede valutazione automatica complessa (es. classificatore o annotazione umana dell'ironia) |
+| **Classificazione** | Dato il contesto e la prospettiva, il modello predice se la risposta dovrebbe essere ironica (0/1) | Valutazione chiara (accuracy/F1) | Minor ricchezza analitica                                                                |
+| **Generazione**     | Il modello genera direttamente la reply                                                  | Permette analisi qualitative sulle generazioni prodotte   | Come valutare? (idea: fare classificazione automatica/manuale dell'ironia e poi comparazione con label gold) |
 
 ---
 
