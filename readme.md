@@ -36,6 +36,15 @@ La pipeline è organizzata in tre fasi:
 ### **4.1 Data Augmentation**
 
 * **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply a **dialoghi multi-turn**.
+
+  - letteratura utile:
+    - [S2M: Converting Single-Turn to Multi-Turn Datasets for Conversational Question Answering (B. Li et al., 2023)](https://arxiv.org/html/2312.16511v1/#bib.bib14)
+    - [Survey: Synthetic Data Generation Using Large Language Models: Advances in Text and Code (M. Nadas et al., 2025)](https://arxiv.org/abs/2503.14023)
+    - [SPADE: Structured Prompting Augmentation for Dialogue Enhancement in Machine-Generated Text Detection (H. Li et al., 2024)](https://aclanthology.org/2025.llmsec-1.11.pdf)
+
+  - Nota personale: uno dei dubbi è quello di quanti turni di dialogo generare. Io andrei a guradare CSC quanti turni ha mediamente e userei quello come numero di turni da generare. Successivamente, andrei a valutare come incide il numero di turni sulle prestazioni dei modelli
+
+
 * **Annotazione prospettivista in CSC**: alleniamo un classificatore dell’ironia su MultiPICo e lo utilizziamo per produrre **annotazioni silver** del CSC, preservando le informazioni sulla prospettiva.
 
 
@@ -57,10 +66,10 @@ Trattiamo il problema come **classificazione** o come **generazione**?
 
 Le analisi si concentrano su:
 
-1. **Prospettiva e variazione nell’uso dell’ironia**
-   Es.: il modello riproduce alcune prospettive più di altre?
+1. **Prospettiva e variazione nell’uso dell’ironia**:
+   Es. il modello riproduce alcune prospettive più di altre?
 
-2. **Adattamento tramite fine-tuning**
+2. **Adattamento tramite fine-tuning**:
    Possiamo “orientare” un modello verso una particolare prospettiva riguardo all'appropriatezza dell'ironia?
 
 ---
@@ -69,8 +78,7 @@ Le analisi si concentrano su:
 
 * Introduzione di versioni **arricchite** di MultiPICo e CSC (con contesto + annotazioni prospettiviste)
 * Valutazione sistematica della capacità dei LLM di usare l’ironia **in modo contestualmente appropriato**
-* Discussione sull’impatto della **prospettiva** nella generazione di contenuto ironico
-
+* Discussione sull’impatto della **prospettiva** nell'uso appropriato dell'ironia
 ---
 
 ## **6. Risorse**
