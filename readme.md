@@ -4,7 +4,7 @@
 
 Questo lavoro esplora **quando l’uso dell’ironia è considerato appropriato** all’interno di una conversazione.
 
-In particolare, ci concentriamo su **dialoghi estratti dai social media**, con l’obiettivo di capire **se e come i modelli linguistici possano apprendere** quando usare l’ironia, in modo **contestuale** e **sensibile alla prospettiva del parlante**.
+In particolare, ci concentriamo su **dialoghi estratti dai social media**, con l’obiettivo di capire **se e come gli LLM possano apprendere** quando usare l’ironia, in modo **contestuale** e **sensibile alla prospettiva del parlante**.
 
 ---
 
