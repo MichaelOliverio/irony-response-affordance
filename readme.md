@@ -53,8 +53,8 @@ La pipeline è organizzata in tre fasi:
 L’obiettivo è verificare se i modelli sono in grado di **classificare** l'appropriatezza dell'uso dell'ironia/sarcasmo in un certo punto della conversazione
 
 Metriche:
-- Accuracy -> con dati aggregati
-- Precision/Recall -> con dati disaggregati
+- Accuracy→con dati aggregati
+- Precision/Recall→con dati disaggregati
 
 ---
 
