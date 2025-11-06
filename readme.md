@@ -19,10 +19,10 @@ Questo lavoro esplora **quando l’uso dell’ironia è considerato appropriato*
 
 ## **4. Datasets**
 
-| Dataset       | Contenuto / Struttura                                                                 | Informazioni sugli annotatori / Relazioni | Dialogo                                                                                               |
-| ------------- | -------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| **MultiPICo** | Irony labeling su conversazioni **single-turn** (post → reply)                         | Include **informazioni socio-demografiche**; annotazione **disaggregata**; ogni conversazione annotata da **più annotatori esterni** | single-turn                       | 
-| **CSC**       | Sarcasm labeling su **contesto + reply**  | **Nessuna** informazione socio-demografica; annotazione da **speaker** e **observer** con relazione *best_friend / colleague* | contesto + reply       | 
+| Dataset       | Contenuto / Struttura                                                        | Informazioni sugli annotatori / Relazioni                                                                 | Tipo di dialogo        |
+|---------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------|
+| **MultiPICo** | Irony labeling su conversazioni **single-turn** (post → reply)              | Include **informazioni socio-demografiche**; annotazione **disaggregata**; ogni conversazione annotata da **più annotatori esterni** | Single-turn            |
+| **CSC**       | Sarcasm labeling su **contesto + reply**                                    | **Nessuna** informazione socio-demografica; annotazione da **speaker** e **observer** con relazione *best_friend / colleague*         | Contesto + reply       |
 
 
 ---
