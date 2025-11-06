@@ -1,4 +1,4 @@
-**README from the official (GitHub repository)[https://github.com/CoPsyN/CSC] of CSC**
+**README from the official [GitHub repository](https://github.com/CoPsyN/CSC) of CSC**
 
 # Conversational Sarcasm Corpus (CSC)
 
