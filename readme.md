@@ -1,31 +1,29 @@
-# **Is It Really Appropriate To Be So Ironic?**
+# **Teach Me To Joke**
 
 ## **1. Obiettivo**
 
-Questo lavoro esplora **quando l’uso dell’ironia è considerato appropriato** all’interno di una conversazione.
-
-In particolare, ci concentriamo su **dialoghi estratti dai social media**, con l’obiettivo di capire **se e come gli LLM possano apprendere** quando usare l’ironia, in modo **contestuale** e **sensibile alla prospettiva del parlante**.
+Questo lavoro esplora **quando l’uso dell’ironia è considerato appropriato** in una conversazione.
 
 ---
 
-## **2. Assunzione di base**
+## **2. Research Questions**
 
-Assumiamo che:
+- **RQ1**: When is it appropriate to be ironic?
+- **RQ2**: To whom is it appropriate to be ironic?
 
-> **Se, in una conversazione umana, è stata utilizzata una risposta ironica, allora essa era (per il parlante umano) appropriata.**
+## **3. Working Hypothesis**
 
-Questa assunzione ci permette di utilizzare il comportamento umano osservato come proxy dell’“appropriatezza”.
+> **se, in un determinato momento del dialogo, è stata rilevata una risposta ironica o sarcastica da parte dello speaker o dell’observer, possiamo presumere che, per quello stesso ruolo, l’uso dell’ironia o del sarcasmo sia considerato appropriato.**
 
 ---
 
-## **3. Datasets**
+## **4. Datasets**
 
-Utilizziamo due risorse complementari:
+| Dataset       | Contenuto / Struttura                                                                 | Informazioni sugli annotatori / Relazioni | Dialogo                                                                                               |
+| ------------- | -------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| **MultiPICo** | Irony labeling su conversazioni **single-turn** (post → reply)                         | Include **informazioni socio-demografiche**; annotazione **disaggregata**; ogni conversazione annotata da **più annotatori esterni** | single-turn                       | 
+| **CSC**       | Sarcasm labeling su **contesto + reply**  | **Nessuna** informazione socio-demografica; annotazione da **speaker** e **observer** con relazione *best_friend / colleague* | contesto + reply       | 
 
-| Dataset       | Contenuto                                                             | Limiti                         | Uso nel nostro lavoro                                    |
-| ------------- | --------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
-| **MultiPICo** | Coppie post→reply annotate con ironia, con annotazioni prospettiviste | Contesto conversazionale breve | Estendiamo il **contesto**                               |
-| **CSC**       | Dialoghi multi-turn                  | Mancano info socio-demografiche  | Lo **arricchiamo con annotazioni prospettiviste silver** |
 
 ---
 
@@ -35,7 +33,7 @@ La pipeline è organizzata in tre fasi:
 
 ### **4.1 Data Augmentation**
 
-* **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply a **dialoghi multi-turn**.
+* **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply/contesto->reply a **dialoghi multi-turn**.
 
   - Come aumentare il numero di turni?
     - letteratura utile:
@@ -49,42 +47,22 @@ La pipeline è organizzata in tre fasi:
       - [How Does Conversation Length Impact User’s Satisfaction? A Case Study of Length-Controlled Conversations with LLM-Powered Chatbots (S. Huang et al., 2024)](https://arxiv.org/html/2404.17025v1?utm_source=chatgpt.com)
       - [Context Does Matter: Implications for Crowdsourced Evaluation Labels in Task-Oriented Dialogue Systems (C. Siro et al., 2024)](https://www.researchgate.net/publication/381671868_Context_Does_Matter_Implications_for_Crowdsourced_Evaluation_Labels_in_Task-Oriented_Dialogue_Systems)
 
-    - Nota personale: Io andrei a guradare CSC quanti turni ha mediamente e userei quello come numero di turni da generare per MultiPICo. Successivamente, andrei a valutare come incide per gli LLM il numero di turni dati in input sulle prestazioni
-
-
-* **Annotazione prospettivista in CSC**: alleniamo un classificatore dell’ironia su MultiPICo e lo utilizziamo per produrre **annotazioni silver** del CSC, preservando le informazioni sulla prospettiva.
-
 
 ### **4.2 Model Evaluation**
 
-L’obiettivo è verificare se i modelli sono in grado di **selezionare** (o **produrre**) una risposta ironica quando è appropriato.
+L’obiettivo è verificare se i modelli sono in grado di **classificare** l'appropriatezza dell'uso dell'ironia/sarcasmo in un certo punto della conversazione
 
-**Dubbio metodologico chiave:**
-Trattiamo il problema come **classificazione** o come **generazione**?
-
-| Approccio           | Descrizione                                                                                  | Pro                                              | Contro                                                                                   |
-| ------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **Classificazione** | Dato il contesto e la prospettiva, il modello predice se la risposta dovrebbe essere ironica (0/1) | Valutazione chiara (accuracy/F1) | Minor ricchezza analitica                                                                |
-| **Generazione**     | Il modello genera direttamente la reply                                                  | Permette analisi qualitative sulle generazioni prodotte   | Come valutare? (idea: fare classificazione automatica/manuale dell'ironia e poi comparazione con label gold) |
+Metriche:
+- Accuracy -> con dati aggregati
+- Precision/Recall -> con dati disaggregati
 
 ---
 
-### **4.3 Analisi**
-
-Le analisi si concentrano su:
-
-1. **Prospettiva e variazione nell’uso dell’ironia**:
-   Es. il modello riproduce alcune prospettive più di altre?
-
-2. **Adattamento tramite fine-tuning**:
-   Possiamo “orientare” un modello verso una particolare prospettiva riguardo all'appropriatezza dell'ironia?
-
----
 
 ## **5. Contributi attesi**
 
 * Introduzione di versioni **arricchite** di MultiPICo e CSC (con contesto + annotazioni prospettiviste)
-* Valutazione sistematica della capacità dei LLM di usare l’ironia **in modo contestualmente appropriato**
+* Valutazione sistematica della capacità dei LLM di classificare quando **è appropriato** essere ironici/sarcastici
 * Discussione sull’impatto della **prospettiva** nell'uso appropriato dell'ironia
 ---
 
@@ -92,7 +70,3 @@ Le analisi si concentrano su:
 
 * MultiPICo: [https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo](https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo)
 * CSC: [https://github.com/CoPsyN/CSC](https://github.com/CoPsyN/CSC)
-
----
-
-Punto chiave: definire il convetto di **appropriatezza dell'ironia**
