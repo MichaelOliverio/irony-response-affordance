@@ -33,7 +33,7 @@ La pipeline è organizzata in tre fasi:
 
 ### **4.1 Data Augmentation**
 
-* **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply/contesto->reply a **dialoghi multi-turn**.
+* **Estensione del contesto in MultiPICo**: utilizziamo LLM per generare conversazioni più ampie per passare da coppie post→reply/contesto→reply a **dialoghi multi-turn**.
 
   - Come aumentare il numero di turni?
     - letteratura utile:
