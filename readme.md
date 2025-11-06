@@ -38,8 +38,13 @@ La pipeline è organizzata in tre fasi:
   - Come aumentare il numero di turni?
     - letteratura utile:
       - [S2M: Converting Single-Turn to Multi-Turn Datasets for Conversational Question Answering (B. Li et al., 2023)](https://arxiv.org/html/2312.16511v1/#bib.bib14)
+      - [SMILE: Single-turn to Multi-turn Inclusive Language Expansion via ChatGPT for Mental Health Support (Qiu et al., 2024)](https://aclanthology.org/2024.findings-emnlp.34.pdf?utm_source=chatgpt.com)
       - [Survey: Synthetic Data Generation Using Large Language Models: Advances in Text and Code (M. Nadas et al., 2025)](https://arxiv.org/abs/2503.14023)
       - [SPADE: Structured Prompting Augmentation for Dialogue Enhancement in Machine-Generated Text Detection (H. Li et al., 2024)](https://aclanthology.org/2025.llmsec-1.11.pdf)
+
+  - LLM-as-a-Judjge per dialoghi sintetici
+    - letteratura utile:
+      - [Judging LLM-as-a-judge with MT-bench and Chatbot Arena](https://dl.acm.org/doi/10.5555/3666122.3668142)  
 
   - Quanti turni precedenti generare?
     - Letteratura utile:
