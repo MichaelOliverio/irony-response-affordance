@@ -1,2 +1,3 @@
 .env
-notes/
+notes/*
+1_data_augmentation/src/__pycache__/*
