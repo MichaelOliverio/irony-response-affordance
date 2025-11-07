@@ -55,7 +55,7 @@ class DatasetMerger:
             # Calculate aggregate irony scores
             irony_labels = group['label']
             majority_irony = self.compute_majority_vote(irony_labels)
-            average_irony_score = irony_labels.mean()
+            #average_irony_score = irony_labels.mean()
             
             # Build observer annotations (all rows are observers in MultiPICo)
             observers_annotations = []
@@ -84,8 +84,8 @@ class DatasetMerger:
             # Create structured entry
             entry = {
                 'source': str(first_row['source']) if pd.notna(first_row['source']) else None,
-                'context_type': '',  # Not available in MultiPICo
-                'context': '',  # Not available in MultiPICo
+                'context_type': None,  # Not available in MultiPICo
+                'context': None,  # Not available in MultiPICo
                 'post': str(first_row['post']) if pd.notna(first_row['post']) else '',
                 'reply': str(first_row['reply']) if pd.notna(first_row['reply']) else '',
                 'language': str(first_row['language']) if pd.notna(first_row['language']) else None,
@@ -96,7 +96,7 @@ class DatasetMerger:
                 'unique_id': unique_id,
                 'annotations': {
                     'aggregate_irony_label': majority_irony,
-                    'average_irony_score': float(average_irony_score),
+                    'average_irony_score': None, #float(average_irony_score),
                     'aggregate_sarcasm_label': None,
                     'average_sarcasm_score': None,
                     'speaker_annotation': None,  # MultiPICo doesn't have speaker annotations
@@ -137,7 +137,7 @@ class DatasetMerger:
             response_text = row['response_text']
             sarcasm_score_by_speaker = self.normalize_csc_score(row['sarcasm_score_by_speaker'])
             sarcasm_scores.append(sarcasm_score_by_speaker)
-            sarcasm_label_by_speaker = int(sarcasm_score_by_speaker >= 3) if pd.notna(sarcasm_score_by_speaker) else None
+            sarcasm_label_by_speaker = int(sarcasm_score_by_speaker >= 0.5) if sarcasm_score_by_speaker is not None else None
             sarcasm_labels.append(sarcasm_label_by_speaker)
 
             # Build speaker annotation
@@ -171,7 +171,7 @@ class DatasetMerger:
                     global_evaluator = observer_row['global_evaluator']
                     sarcasm_score_by_evaluator = self.normalize_csc_score(observer_row['sarcasm_score_by_evaluator'])
                     sarcasm_scores.append(sarcasm_score_by_evaluator)
-                    sarcasm_label_by_evaluator = int(sarcasm_score_by_evaluator > 3) if pd.notna(sarcasm_score_by_evaluator) else None
+                    sarcasm_label_by_evaluator = int(sarcasm_score_by_evaluator >= 0.5) if sarcasm_score_by_evaluator is not None else None
                     sarcasm_labels.append(sarcasm_label_by_evaluator)
 
                     observer = {
@@ -203,10 +203,10 @@ class DatasetMerger:
                 'source': 'fictionary',  # CSC is from fictional scenarios
                 'context_type': context_type,
                 'context': context_text,
-                'post': '',  # CSC doesn't have post
+                'post': None,  # CSC doesn't have post
                 'reply': response_text,
                 'language': 'en',  # CSC is English
-                'language_variety': '',
+                'language_variety': None,
                 'key_1': str(context_name),
                 'key_2': str(speaker),
                 'dataset_name': 'CSC',
@@ -214,7 +214,7 @@ class DatasetMerger:
                 'annotations': {
                     'aggregate_irony_label': None,
                     'average_irony_score': None,
-                    'aggregate_sarcasm_label': majority_sarcasm_label,
+                    'aggregate_sarcasm_label': majority_sarcasm_label, # computed by majority vote
                     'average_sarcasm_score': float(average_sarcasm_score) if average_sarcasm_score is not None else None,
                     'speaker_annotation': speaker_annotation,
                     'observers_annotations': observers_annotations

@@ -1,0 +1,39 @@
+2025-11-07 12:05:33 - main - INFO - setup_logger:65 - Logger initialized. Log file: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\log\datasets_merge_20251107_120533.log
+2025-11-07 12:05:33 - main - INFO - main:7 - ==================================================
+2025-11-07 12:05:33 - main - INFO - main:8 - Starting data augmentation pipeline
+2025-11-07 12:05:33 - main - INFO - main:9 - ==================================================
+2025-11-07 12:05:33 - main - INFO - main:12 - Initializing DatasetLoader
+2025-11-07 12:05:33 - src.dataset_loader - INFO - setup_logger:65 - Logger initialized. Log file: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\log\datasets_merge_20251107_120533.log
+2025-11-07 12:05:33 - src.dataset_loader - INFO - __init__:32 - DatasetLoader initialized
+2025-11-07 12:05:33 - src.dataset_merger - INFO - setup_logger:65 - Logger initialized. Log file: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\log\datasets_merge_20251107_120533.log
+2025-11-07 12:05:33 - src.dataset_loader - INFO - _setup_dataset_configs:56 - Configured 2 datasets
+2025-11-07 12:05:33 - main - INFO - main:16 - Available datasets:
+2025-11-07 12:05:33 - main - INFO - main:18 -   - CSC: Conversational Sarcasm Corpus - local dataset
+2025-11-07 12:05:33 - main - INFO - main:18 -   - MultiPICo: Multilingual Perspectivist NLU dataset from Hugging Face
+2025-11-07 12:05:33 - main - INFO - main:21 - ==================================================
+2025-11-07 12:05:33 - main - INFO - main:22 - Creating unified corpus with structured annotations...
+2025-11-07 12:05:33 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:126 - Creating unified corpus with annotations from datasets: ['CSC', 'MultiPICo']
+2025-11-07 12:05:33 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:131 - Loading CSC with annotations...
+2025-11-07 12:05:33 - src.dataset_loader - INFO - load_dataset_with_annotations:77 - Loading dataset with annotations: CSC
+2025-11-07 12:05:33 - src.dataset_loader - INFO - load_dataset_with_annotations:87 - Loading raw data from: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\datasets\CSC\data_full.json
+2025-11-07 12:05:33 - src.dataset_merger - INFO - process_csc_annotations:122 - Processing CSC annotations...
+2025-11-07 12:05:48 - src.dataset_merger - INFO - process_csc_annotations:226 - Processed 7036 unique conversations from CSC
+2025-11-07 12:05:48 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:134 - Added 7036 entries from CSC
+2025-11-07 12:05:48 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:131 - Loading MultiPICo with annotations...
+2025-11-07 12:05:48 - src.dataset_loader - INFO - load_dataset_with_annotations:77 - Loading dataset with annotations: MultiPICo
+2025-11-07 12:05:48 - src.dataset_loader - INFO - load_dataset_with_annotations:93 - Loading raw data from Hugging Face: Multilingual-Perspectivist-NLU/MultiPICo
+2025-11-07 12:05:49 - src.dataset_merger - INFO - process_multipico_annotations:43 - Processing MultiPICo annotations...
+2025-11-07 12:05:55 - src.dataset_merger - INFO - process_multipico_annotations:109 - Processed 18778 unique conversations from MultiPICo
+2025-11-07 12:05:55 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:134 - Added 18778 entries from MultiPICo
+2025-11-07 12:05:55 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:136 - Combined 2 datasets into unified corpus with 25814 total entries
+2025-11-07 12:05:58 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:151 - Saved unified corpus with annotations to: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\output\unified_corpus_with_annotations.json
+2025-11-07 12:05:58 - src.dataset_loader - INFO - create_unified_corpus_with_annotations:160 - Saved 10-entry sample to: c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\1_datasets_merge\output\unified_corpus_sample_10.json
+2025-11-07 12:05:58 - main - INFO - main:25 - Unified corpus with annotations created successfully with 25814 entries
+2025-11-07 12:05:58 - main - INFO - main:26 - Sample entry structure:
+2025-11-07 12:05:58 - main - INFO - main:29 -   - Dataset: CSC
+2025-11-07 12:05:58 - main - INFO - main:30 -   - Unique ID: 101_1001
+2025-11-07 12:05:58 - main - INFO - main:31 -   - Number of observer annotations: 6
+2025-11-07 12:05:58 - main - INFO - main:32 -   - Has speaker annotation: True
+2025-11-07 12:05:58 - main - INFO - main:36 - ==================================================
+2025-11-07 12:05:58 - main - INFO - main:37 - All operations completed successfully
+2025-11-07 12:05:58 - main - INFO - main:38 - ==================================================
