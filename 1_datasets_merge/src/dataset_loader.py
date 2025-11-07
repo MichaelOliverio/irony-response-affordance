@@ -150,6 +150,15 @@ class DatasetLoader:
             json.dump(all_data, f, indent=2, ensure_ascii=False)
         self.logger.info(f"Saved unified corpus with annotations to: {json_path}")
 
+        # Save a smaller sample JSON with 10 random entries
+        sample_size = min(10, len(all_data))  # per evitare errori se hai meno di 10 entry
+        sample_data = pd.DataFrame(all_data).sample(sample_size, random_state=42).to_dict(orient='records')
+
+        sample_json_path = output_dir / 'unified_corpus_sample_10.json'
+        with open(sample_json_path, 'w', encoding='utf-8') as f:
+            json.dump(sample_data, f, indent=2, ensure_ascii=False)
+        self.logger.info(f"Saved 10-entry sample to: {sample_json_path}")
+
         # TODO: compute statistics on the unified corpus with annotations
         
         return all_data
