@@ -1,3 +1,4 @@
 .env
 notes/*
 1_datasets_merge/src/__pycache__/*
+1_datasets_merge/output/unified_corpus_with_annotations.json
