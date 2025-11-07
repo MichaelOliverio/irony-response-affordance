@@ -109,7 +109,7 @@ class DatasetLoader:
         
         return structured_data
     
-    def create_unified_corpus_with_annotations(self, dataset_names: List[str] = None, output_dir: str = None) -> List[Dict[str, Any]]:
+    def create_unified_corpus(self, dataset_names: List[str] = None, output_dir: str = None) -> List[Dict[str, Any]]:
         """
         Create a unified corpus with structured annotations
         
@@ -145,7 +145,7 @@ class DatasetLoader:
         output_dir.mkdir(parents=True, exist_ok=True)
         
         # Save as JSON with structured annotations
-        json_path = output_dir / 'unified_corpus_with_annotations.json'
+        json_path = output_dir / 'unified_corpus.json'
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(all_data, f, indent=2, ensure_ascii=False)
         self.logger.info(f"Saved unified corpus with annotations to: {json_path}")

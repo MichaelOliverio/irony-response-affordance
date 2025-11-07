@@ -21,7 +21,7 @@ def main():
     logger.info("="*50)
     logger.info("Creating unified corpus with structured annotations...")
     try:
-        unified_with_annotations = loader.create_unified_corpus_with_annotations()
+        unified_with_annotations = loader.create_unified_corpus()
         logger.info(f"Unified corpus with annotations created successfully with {len(unified_with_annotations)} entries")
         logger.info(f"Sample entry structure:")
         if len(unified_with_annotations) > 0:
