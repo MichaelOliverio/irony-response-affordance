@@ -62,8 +62,10 @@ class DatasetMerger:
             for _, row in group.iterrows():
                 observer = {
                     'annotator_id': str(row['annotator_id']),
+                    'irony_appropriateness_label': int(row['label']), # working hypothesis
                     'irony_label': int(row['label']),
                     'irony_score': None,
+                    'sarcasm_appropriateness_label': None,  # MultiPICo doesn't have sarcasm
                     'sarcasm_label': None,  # MultiPICo doesn't have sarcasm
                     'sarcasm_score': None,
                     'age': int(row['Age']) if pd.notna(row['Age']) else None,
@@ -95,8 +97,10 @@ class DatasetMerger:
                 'dataset_name': 'MultiPICo',
                 'unique_id': unique_id,
                 'annotations': {
+                    'irony_appropriateness_label': majority_irony, # working hypothesis
                     'aggregate_irony_label': majority_irony,
                     'average_irony_score': None, #float(average_irony_score),
+                    'sarcasm_appropriateness_label': None,
                     'aggregate_sarcasm_label': None,
                     'average_sarcasm_score': None,
                     'speaker_annotation': None,  # MultiPICo doesn't have speaker annotations
@@ -143,8 +147,10 @@ class DatasetMerger:
             # Build speaker annotation
             speaker_annotation = {
                 'annotator_id': str(speaker),
+                'irony_appropriateness_label': None,
                 'irony_label': None,  # CSC doesn't have irony labels
                 'irony_score': None,
+                'sarcasm_appropriateness_label': sarcasm_label_by_speaker, # working hypothesis
                 'sarcasm_label': sarcasm_label_by_speaker,
                 'sarcasm_score': float(sarcasm_score_by_speaker) if pd.notna(sarcasm_score_by_speaker) else None,
                 'age': None,  # Not available in CSC
@@ -176,8 +182,10 @@ class DatasetMerger:
 
                     observer = {
                         'annotator_id': str(global_evaluator),
+                        'irony_appropriateness_label': None,
                         'irony_label': None,
                         'irony_score': None,
+                        'sarcasm_appropriateness_label': sarcasm_label_by_evaluator, # working hypothesis
                         'sarcasm_label': sarcasm_label_by_evaluator,
                         'sarcasm_score': float(sarcasm_score_by_evaluator) if pd.notna(sarcasm_score_by_evaluator) else None,
                         'age': None,
@@ -212,8 +220,10 @@ class DatasetMerger:
                 'dataset_name': 'CSC',
                 'unique_id': unique_id,
                 'annotations': {
+                    'irony_appropriateness_label': None,
                     'aggregate_irony_label': None,
                     'average_irony_score': None,
+                    'sarcasm_appropriateness_label': majority_sarcasm_label, # working hypothesis
                     'aggregate_sarcasm_label': majority_sarcasm_label, # computed by majority vote
                     'average_sarcasm_score': float(average_sarcasm_score) if average_sarcasm_score is not None else None,
                     'speaker_annotation': speaker_annotation,
