@@ -1,7 +1,7 @@
 .env
-notes/*
+my_notes/*
 1_datasets_merge/src/__pycache__/*
 1_datasets_merge/output/unified_corpus.json
-1_datasets_merge/correzioni.md
-2_data_augmentation/prompt-csc-context-to-multi-turn.md
-2_data_augmentation/prompt-multipico-single-turn-to-multi-turn.md
+1_datasets_merge/notes/*
+2_data_augmentation/notes/*
+3_appropriateness/notes/*
