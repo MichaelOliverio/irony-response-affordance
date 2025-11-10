@@ -2,3 +2,4 @@
 notes/*
 1_datasets_merge/src/__pycache__/*
 1_datasets_merge/output/unified_corpus.json
+1_datasets_merge/correzioni.md

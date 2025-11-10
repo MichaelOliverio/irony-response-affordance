@@ -73,5 +73,9 @@ Metriche:
 
 ## **6. Risorse**
 
-* MultiPICo: [https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo](https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo)
-* CSC: [https://github.com/CoPsyN/CSC](https://github.com/CoPsyN/CSC)
+* [MultiPICo](https://huggingface.co/datasets/Multilingual-Perspectivist-NLU/MultiPICo)
+* [CSC](https://github.com/CoPsyN/CSC)
+
+## **7. References**
+* [Intended and Perceived Sarcasm Between Close Friends: What Triggers Sarcasm and What Gets Conveyed? (Jang et al., 2023)](https://escholarship.org/uc/item/1cw1m8bm)
+- [Generalizable Sarcasm Detection is Just Around the Corner, of Course! (Jang et al., 2024)](https://aclanthology.org/2024.naacl-long.238/)
