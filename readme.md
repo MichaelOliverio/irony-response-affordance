@@ -67,7 +67,7 @@ Metriche:
 ## **5. Contributi attesi**
 
 * Introduzione di versioni **arricchite** di MultiPICo e CSC (con contesto + annotazioni prospettiviste)
-* Valutazione sistematica della capacità dei LLM di classificare quando **è appropriato** essere ironici/sarcastici
+* Valutazione della capacità dei LLM di classificare quando **è appropriato** essere ironici/sarcastici
 * Discussione sull’impatto della **prospettiva** nell'uso appropriato dell'ironia
 ---
 
