@@ -6,7 +6,6 @@
     "post": "Cuando cristina era presi hace poco en un discurso hablabla mal de menem y su neoliberalismo noventoso. Y mi sobrino tipo 12 años dice\n- habla mal de menem pero no es de su partido?\n- cállate muchacho.",
     "reply": "Ese niño era el mismísimo Alberto Einstman",
     "language": "es",
-    "language_variety": "ar",
     "key_1": "3797645560351721974",
     "key_2": "5703400798739952490",
     "dataset_name": "MultiPICo",
@@ -28,6 +27,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "ar",
           "age": 25,
           "gender": "Female",
           "ethnicity_simplified": "White",
@@ -38,8 +38,7 @@
           "employment_status": "Full-Time",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "3163100404536952455",
@@ -49,6 +48,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "ar",
           "age": 28,
           "gender": "Male",
           "ethnicity_simplified": "Other",
@@ -59,8 +59,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "5512752256955436175",
@@ -70,6 +69,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "ar",
           "age": 31,
           "gender": "Female",
           "ethnicity_simplified": "Mixed",
@@ -80,8 +80,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "9089942703202505027",
@@ -91,6 +90,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "ar",
           "age": 31,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -101,8 +101,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "17532307838587468515",
@@ -112,6 +111,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "ar",
           "age": 45,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -122,8 +122,7 @@
           "employment_status": "Full-Time",
           "generation": "GenX",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         }
       ]
     }
@@ -135,7 +134,6 @@
     "post": "फ़्रांस ने मस्जिद और मदरसों को आतंकवादी अड्डा घोषित करके बैन कर दिया “क्या ऐसा “ भारत ” में भी होना चाहिए\n\n                       YES / NO",
     "reply": "@USER  @USER Yes",
     "language": "hi",
-    "language_variety": "in",
     "key_1": "8608658330517202540",
     "key_2": "2471108880616607540",
     "dataset_name": "MultiPICo",
@@ -157,6 +155,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 28,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -167,8 +166,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "646949556866742535",
@@ -178,6 +176,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 33,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -188,8 +187,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "6329173098022087167",
@@ -199,6 +197,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 25,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -209,8 +208,7 @@
           "employment_status": "Other",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "9324642097328085193",
@@ -220,6 +218,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 34,
           "gender": "Female",
           "ethnicity_simplified": "Asian",
@@ -230,8 +229,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "6600538484154963792",
@@ -241,6 +239,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 31,
           "gender": "Female",
           "ethnicity_simplified": "Asian",
@@ -251,8 +250,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         }
       ]
     }
@@ -264,7 +262,6 @@
     "post": "The theory that Epstein didn't kill himself. Memes aside, he could've probably exposed a lot more rich people for their sex crimes. They just bumped him off before he could do so.",
     "reply": "Isn’t it more believable that an insanely wealthy narcissist couldn’t face a lifetime behind bars and an underfunded and incompetent prison system messed up?\nThe president openly confessed to sexually assaulting a woman and nothing happened.  What more damage could Epstein have done to anyone?",
     "language": "en",
-    "language_variety": "us",
     "key_1": "16405681680750966708",
     "key_2": "4805175435571151929",
     "dataset_name": "MultiPICo",
@@ -286,6 +283,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "us",
           "age": 20,
           "gender": "Male",
           "ethnicity_simplified": "Black",
@@ -296,8 +294,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenZ",
           "generation_aggregated": "Old",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "1255672479512845078",
@@ -307,6 +304,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "us",
           "age": 65,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -317,8 +315,7 @@
           "employment_status": "Full-Time",
           "generation": "Boomer",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "4577118298449039369",
@@ -328,6 +325,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "us",
           "age": 34,
           "gender": "Female",
           "ethnicity_simplified": "White",
@@ -338,8 +336,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "18222950645312062723",
@@ -349,6 +346,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "us",
           "age": 24,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -359,8 +357,7 @@
           "employment_status": "Full-Time",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         }
       ]
     }
@@ -372,7 +369,6 @@
     "post": null,
     "reply": "It's tonight at 8.",
     "language": "en",
-    "language_variety": null,
     "key_1": "271",
     "key_2": "2024",
     "dataset_name": "CSC",
@@ -402,7 +398,8 @@
         "employment_status": null,
         "generation": null,
         "generation_aggregated": null,
-        "employed": null
+        "employed": null,
+        "interlocutor_relationship": "best_friend"
       },
       "observers_annotations": [
         {
@@ -423,8 +420,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "best_friend"
+          "employed": null
         },
         {
           "annotator_id": "2296",
@@ -444,8 +440,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "best_friend"
+          "employed": null
         },
         {
           "annotator_id": "2342",
@@ -465,8 +460,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "best_friend"
+          "employed": null
         },
         {
           "annotator_id": "2470",
@@ -486,8 +480,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "best_friend"
+          "employed": null
         }
       ]
     }
@@ -499,7 +492,6 @@
     "post": "Ik wil groenrechts! Waarom niet? Ik ben meer rechts maar ik wil dat er meer gedaan moet worden tegen klimaatverandering. Helaas val ik dus tussen wal en schip. Ik kan FvD en GL niet uitstaan en andere partijen passen ook niet bij mijn ideeën. helaas...",
     "reply": "Daar heb je een punt idd",
     "language": "nl",
-    "language_variety": "nl",
     "key_1": "4930716325938360694",
     "key_2": "11799352572334330365",
     "dataset_name": "MultiPICo",
@@ -521,6 +513,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "nl",
           "age": 33,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -531,8 +524,7 @@
           "employment_status": "Part-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "17966717300851881084",
@@ -542,6 +534,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "nl",
           "age": 45,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -552,8 +545,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenX",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "4209621594502965340",
@@ -563,6 +555,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "nl",
           "age": 37,
           "gender": "Female",
           "ethnicity_simplified": "Mixed",
@@ -573,8 +566,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "473726698440972455",
@@ -584,6 +576,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "nl",
           "age": 38,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -594,8 +587,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "13116509567553178993",
@@ -605,6 +597,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "nl",
           "age": 20,
           "gender": "Male",
           "ethnicity_simplified": "Mixed",
@@ -615,8 +608,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenZ",
           "generation_aggregated": "Old",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         }
       ]
     }
@@ -628,7 +620,6 @@
     "post": "बहुत सुंदर कविता है।\nअगर आप सुझाव लेना चाहें तो मैं सोच रहा था -\nपहली पंक्ति में मोटीवेशन की दवा थोड़ी भटकी सी लगती है, \nआप दवा को चुरण, गोली या टॉनिक कर दें तो शायद बेहतर हो, बाकी कविता आपने दिल से लिखी है उसमे कोई दो राय नहीं।\nडिप्रेशन की दवा भी हो सकती है। क्योंकि दवा बीमारी की होती है । शायद मैं ज्यादा सोच रहा हूं ऐसा भी हो सकता है, लगा बोल देना चाहिए इस लिए बात रख दी है।\nवैसे अगर ज्यों का त्यों भी छोड़ दे तो भी कविता सुन्दर ही है।\nकविता का फ्लो बहुत रमणीक है।\nआशा है आपकी और कविताएं पढूं।\nधन्यवाद।",
     "reply": "पढ़ने के लिए धन्यवाद! और सुझाव आपका एकदम सटीक है! :)",
     "language": "hi",
-    "language_variety": "in",
     "key_1": "18130589736193328617",
     "key_2": "14458133695895674275",
     "dataset_name": "MultiPICo",
@@ -650,6 +641,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 32,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -660,8 +652,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "9402688339570480652",
@@ -671,6 +662,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 25,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -681,8 +673,7 @@
           "employment_status": "Part-Time",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "7129652377943491324",
@@ -692,6 +683,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 31,
           "gender": "Female",
           "ethnicity_simplified": "Asian",
@@ -702,8 +694,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "17123644610932753797",
@@ -713,6 +704,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 28,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -723,8 +715,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "7679926023038831617",
@@ -734,6 +725,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 20,
           "gender": "Female",
           "ethnicity_simplified": "Asian",
@@ -744,8 +736,7 @@
           "employment_status": "Due to start a new job within the next month",
           "generation": "GenZ",
           "generation_aggregated": "Old",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "3615746247665946498",
@@ -755,6 +746,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 32,
           "gender": "Male",
           "ethnicity_simplified": "Asian",
@@ -765,8 +757,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "9324642097328085193",
@@ -776,6 +767,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 34,
           "gender": "Female",
           "ethnicity_simplified": "Asian",
@@ -786,8 +778,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "5553843018797724755",
@@ -797,6 +788,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "in",
           "age": 33,
           "gender": "Female",
           "ethnicity_simplified": "Other",
@@ -807,8 +799,7 @@
           "employment_status": "Part-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         }
       ]
     }
@@ -820,7 +811,6 @@
     "post": null,
     "reply": "Hi Shoehand...",
     "language": "en",
-    "language_variety": null,
     "key_1": "236",
     "key_2": "2038",
     "dataset_name": "CSC",
@@ -850,7 +840,8 @@
         "employment_status": null,
         "generation": null,
         "generation_aggregated": null,
-        "employed": null
+        "employed": null,
+        "interlocutor_relationship": "colleague"
       },
       "observers_annotations": [
         {
@@ -871,8 +862,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "colleague"
+          "employed": null
         },
         {
           "annotator_id": "2128",
@@ -892,8 +882,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "colleague"
+          "employed": null
         },
         {
           "annotator_id": "2349",
@@ -913,8 +902,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "colleague"
+          "employed": null
         },
         {
           "annotator_id": "2391",
@@ -934,8 +922,7 @@
           "employment_status": null,
           "generation": null,
           "generation_aggregated": null,
-          "employed": null,
-          "relationship_with_speaker": "colleague"
+          "employed": null
         }
       ]
     }
@@ -947,7 +934,6 @@
     "post": "في الاحساء وفي الحجاز تنطق عَيشْ بفتح العين. اول مرة اسمع بنطق نجد",
     "reply": "في الحجاز نسميه عِيش على وزن سِيل (بالعامية) وليس سِيل (بالفصحى).",
     "language": "ar",
-    "language_variety": "sa",
     "key_1": "14860601853666725897",
     "key_2": "657826436078693151",
     "dataset_name": "MultiPICo",
@@ -969,6 +955,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 24,
           "gender": "Female",
           "ethnicity_simplified": "Other",
@@ -979,8 +966,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "2284772217634381325",
@@ -990,6 +976,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 25,
           "gender": "Male",
           "ethnicity_simplified": "Other",
@@ -1000,8 +987,7 @@
           "employment_status": "Other",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         }
       ]
     }
@@ -1013,7 +999,6 @@
     "post": "@USER  @USER مبروك يارا تستاهلين يا اعظم اعلامية ❤️",
     "reply": "@USER  @USER الله يسعدك ويبارك فيك يا روحيي??",
     "language": "ar",
-    "language_variety": "sa",
     "key_1": "13383178024007300351",
     "key_2": "15634403913188502250",
     "dataset_name": "MultiPICo",
@@ -1035,6 +1020,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 31,
           "gender": "Female",
           "ethnicity_simplified": "Mixed",
@@ -1045,8 +1031,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "13231872285217268351",
@@ -1056,6 +1041,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 48,
           "gender": "Male",
           "ethnicity_simplified": "Other",
@@ -1066,8 +1052,7 @@
           "employment_status": "Part-Time",
           "generation": "GenX",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "8659256728544446295",
@@ -1077,6 +1062,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 26,
           "gender": "Male",
           "ethnicity_simplified": "Other",
@@ -1087,8 +1073,7 @@
           "employment_status": "Part-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "243115049802638421",
@@ -1098,6 +1083,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 27,
           "gender": "Male",
           "ethnicity_simplified": "Other",
@@ -1108,8 +1094,7 @@
           "employment_status": "Other",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "7138855396356363573",
@@ -1119,6 +1104,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "sa",
           "age": 23,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -1129,8 +1115,7 @@
           "employment_status": "DATA_EXPIRED",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         }
       ]
     }
@@ -1142,7 +1127,6 @@
     "post": "Ma al sabato pomeriggio esiste  vita oltre il supermercato?",
     "reply": "@USER Dipende: pioveva? ?",
     "language": "it",
-    "language_variety": "it",
     "key_1": "12464161284601871249",
     "key_2": "9245814821330018201",
     "dataset_name": "MultiPICo",
@@ -1164,6 +1148,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "it",
           "age": 34,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -1174,8 +1159,7 @@
           "employment_status": "Full-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "9208155880570654046",
@@ -1185,6 +1169,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "it",
           "age": 29,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -1195,8 +1180,7 @@
           "employment_status": "Part-Time",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "Yes",
-          "relationship_with_speaker": "unknown"
+          "employed": "Yes"
         },
         {
           "annotator_id": "5207205501906279894",
@@ -1206,6 +1190,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "it",
           "age": 24,
           "gender": "Female",
           "ethnicity_simplified": "White",
@@ -1216,8 +1201,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "4214950563330724416",
@@ -1227,6 +1211,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "it",
           "age": 23,
           "gender": "Female",
           "ethnicity_simplified": "White",
@@ -1237,8 +1222,7 @@
           "employment_status": "Not in paid work (e.g. homemaker', 'retired or disabled)",
           "generation": "GenZ",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         },
         {
           "annotator_id": "15293273663751040024",
@@ -1248,6 +1232,7 @@
           "sarcasm_appropriateness_label": null,
           "sarcasm_label": null,
           "sarcasm_score": null,
+          "language_variety": "it",
           "age": 41,
           "gender": "Male",
           "ethnicity_simplified": "White",
@@ -1258,8 +1243,7 @@
           "employment_status": "Unemployed (and job seeking)",
           "generation": "GenY",
           "generation_aggregated": "Young",
-          "employed": "No",
-          "relationship_with_speaker": "unknown"
+          "employed": "No"
         }
       ]
     }

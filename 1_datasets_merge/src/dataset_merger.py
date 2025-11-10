@@ -68,6 +68,7 @@ class DatasetMerger:
                     'sarcasm_appropriateness_label': None,  # MultiPICo doesn't have sarcasm
                     'sarcasm_label': None,  # MultiPICo doesn't have sarcasm
                     'sarcasm_score': None,
+                    'language_variety': str(row['language_variety']) if pd.notna(row['language_variety']) else '',
                     'age': int(row['Age']) if pd.notna(row['Age']) else None,
                     'gender': str(row['Gender']) if pd.notna(row['Gender']) else None,
                     'ethnicity_simplified': str(row['Ethnicity simplified']) if pd.notna(row['Ethnicity simplified']) else None,
@@ -78,8 +79,7 @@ class DatasetMerger:
                     'employment_status': str(row['Employment status']) if pd.notna(row['Employment status']) else None,
                     'generation': str(row['Generation']) if pd.notna(row['Generation']) else None,
                     'generation_aggregated': str(row['GenerationAggregated']) if pd.notna(row['GenerationAggregated']) else None,
-                    'employed': str(row['Employed']) if pd.notna(row['Employed']) else None,
-                    'relationship_with_speaker': 'unknown'  # Not available in MultiPICo
+                    'employed': str(row['Employed']) if pd.notna(row['Employed']) else None
                 }
                 observers_annotations.append(observer)
             
@@ -91,7 +91,6 @@ class DatasetMerger:
                 'post': str(first_row['post']) if pd.notna(first_row['post']) else '',
                 'reply': str(first_row['reply']) if pd.notna(first_row['reply']) else '',
                 'language': str(first_row['language']) if pd.notna(first_row['language']) else None,
-                'language_variety': str(first_row['language_variety']) if pd.notna(first_row['language_variety']) else '',
                 'key_1': str(reply_id),
                 'key_2': str(post_id),
                 'dataset_name': 'MultiPICo',
@@ -139,6 +138,7 @@ class DatasetMerger:
             context_type = row['context_type']
             context_text = row['context_text']
             response_text = row['response_text']
+            interlocutor_relationship = row['interlocutor_relationship']
             sarcasm_score_by_speaker = self.normalize_csc_score(row['sarcasm_score_by_speaker'])
             sarcasm_scores.append(sarcasm_score_by_speaker)
             sarcasm_label_by_speaker = int(sarcasm_score_by_speaker >= 0.5) if sarcasm_score_by_speaker is not None else None
@@ -163,7 +163,8 @@ class DatasetMerger:
                 'employment_status': None,
                 'generation': None,
                 'generation_aggregated': None,
-                'employed': None
+                'employed': None,
+                'interlocutor_relationship': interlocutor_relationship
             }
 
             # get all the df rows that correspond to the current context_name and global_speaker
@@ -173,7 +174,6 @@ class DatasetMerger:
             observers_annotations = []
             if len(observers_df) > 0:
                 for _, observer_row in observers_df.iterrows():
-                    interlocutor_relationship = observer_row['interlocutor_relationship']
                     global_evaluator = observer_row['global_evaluator']
                     sarcasm_score_by_evaluator = self.normalize_csc_score(observer_row['sarcasm_score_by_evaluator'])
                     sarcasm_scores.append(sarcasm_score_by_evaluator)
@@ -199,7 +199,6 @@ class DatasetMerger:
                         'generation': None,
                         'generation_aggregated': None,
                         'employed': None,
-                        'relationship_with_speaker': interlocutor_relationship
                     }
                     observers_annotations.append(observer)
 
@@ -214,7 +213,6 @@ class DatasetMerger:
                 'post': None,  # CSC doesn't have post
                 'reply': response_text,
                 'language': 'en',  # CSC is English
-                'language_variety': None,
                 'key_1': str(context_name),
                 'key_2': str(speaker),
                 'dataset_name': 'CSC',

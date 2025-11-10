@@ -15,7 +15,7 @@
 
 ## Prompt CSC: from single-turn to multi-turn
 
->Given the context and the reply of a user u2 to u1 (whose name is Steve and your relation with him is best friend)
+>Given the context and the reply of a user u2 to u1 (whose name is Steve and whose relationship with u2 is that of best friends)
 >
 >context: "Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",
 >u2 : "Three weeks in and here you are, are you ever going to start?",
