@@ -7,10 +7,10 @@ L'appropriatezza dell'uso dell'ironia non dipende solamente dal contesto, ma dal
 
 ### Esempio
 
-**Contesto:** seduta di dottorato
-**Parlante:** Pier
-**Ascoltatore:** Alessandro
-**Osservatore:** Michael
+- **Contesto:** seduta di dottorato
+- **Parlante:** Pier
+- **Ascoltatore:** Alessandro
+- **Osservatore:** Michael
 
 1. **Interazione diretta (Parlante → Ascoltatore)**
    Pier fa una battuta ironica ad Alessandro. Anche se il contesto formale potrebbe sembrare inappropriato alla battuta, entrambi riconoscono e condividono il registro ironico.
