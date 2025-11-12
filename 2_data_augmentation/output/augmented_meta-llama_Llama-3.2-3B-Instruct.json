@@ -1,0 +1,373 @@
+[
+  {
+    "Index":7041,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating",
+    "reply":"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!",
+    "language":"en",
+    "key_1":"6831492794824847",
+    "key_2":"6953515965526014329",
+    "dataset_name":"MultiPICo",
+    "unique_id":"6831492794824847_6953515965526014329",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"2136232525506717736",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":44,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"Yes",
+          "employment_status":"Full-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"18355818464389531127",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":62,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"Boomer",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"8050880901999182774",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":50,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"5012446113609819794",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":22,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenZ",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n            Given this pair of messages extracted from social media:\n\n            u1: Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\n            u2: Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!\n\n            Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n            - Maintain the original writing style of both u1 e u2.\n            - Preserve the sentiment and tone of the conversation.\n            - Keep the dialogue coherent and consistent with the context of the given messages.\n\n            Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:\n\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"First message from user1 in the earliest turn\",\n                        \"u2\": \"First message from user2 in response\"\n                    },\n                    {\n                        \"u1\": \"Second message from user1\",\n                        \"u2\": \"Second message from user2\"\n                    },\n                    {\n                        \"u1\": \"Third message from user1\",\n                        \"u2\": \"Third message from user2\"\n                    },\n                    {\n                        \"u1\": \"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Response:\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"\n            ",
+    "model_output":"I'm so drunk I can barely stand\",\n                        \"u2\": \"Pisser. Amusing joke or incident. \"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!\"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Note: The first message from u1 is not explicitly stated in the prompt, but it can be inferred as \"I'm so drunk I can barely stand\". This message is used to establish the context of the conversation and to set the tone for the rest of the dialogue. The first message from u2 is also inferred as \"Pisser. Amusing joke or incident.\" as it responds to the situation described in the first message from u1. The rest of the dialogue follows the given messages. \n\n            The dialogue is generated based on the context and the writing style of both u1 and u2. The sentiment and tone of the conversation are preserved throughout the dialogue. The coherence and consistency of the conversation are maintained by ensuring that each message from u1 is a logical response to the previous message from u2. \n\n            The given messages are used as the last turn in the dialogue, and they are enclosed in the specified JSON format. \n\n            The response is generated based on the provided information and the rules specified in the prompt. \n\n            The response is as follows:\n\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"\n             I'm so drunk I can barely stand\",\n                        \"u2\": \"Pisser. Amusing joke or incident. \"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!\"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!\"\n                    }\n                ]\n            }\n            <\/JSON> \n\n            Note: The response is generated based on the provided information and the rules specified in the prompt. The response is as follows: \n\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"\n             I'm so drunk I can barely stand\",\n                        \"u2\": \"Pisser. Amusing joke or incident. \"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"u2\": \"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!\"\n                    },\n                    {\n                        \"u1\": \"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                        \"",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm so drunk I can barely stand",
+          "u2":"Pisser. Amusing joke or incident. "
+        },
+        {
+          "u1":"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating",
+          "u2":"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!"
+        },
+        {
+          "u1":"I'm so drunk I can barely stand\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating",
+          "u2":"Pisser. Amusing joke or incident. Wasting time. Pissweak or weak as piss. Very weak Piss off. Go away. Some of these aren't unique to Aus but what a versatile word!"
+        }
+      ]
+    },
+    "invalid_inferences":0,
+    "model_name":"meta-llama\/Llama-3.2-3B-Instruct"
+  },
+  {
+    "Index":7042,
+    "source":"twitter",
+    "context_type":null,
+    "context":null,
+    "post":"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?",
+    "reply":"@USER Take a look at Operator Starsky on YouTube.",
+    "language":"en",
+    "key_1":"8130940562900296",
+    "key_2":"16285417133666056067",
+    "dataset_name":"MultiPICo",
+    "unique_id":"8130940562900296_16285417133666056067",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"4167198063289028593",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"9359518652035557311",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":26,
+          "gender":"Female",
+          "ethnicity_simplified":"Other",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"Yes",
+          "employment_status":"Part-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"4410496555658861668",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":26,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n            Given this pair of messages extracted from social media:\n\n            u1: No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\n            u2: @USER Take a look at Operator Starsky on YouTube.\n\n            Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n            - Maintain the original writing style of both u1 e u2.\n            - Preserve the sentiment and tone of the conversation.\n            - Keep the dialogue coherent and consistent with the context of the given messages.\n\n            Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:\n\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"First message from user1 in the earliest turn\",\n                        \"u2\": \"First message from user2 in response\"\n                    },\n                    {\n                        \"u1\": \"Second message from user1\",\n                        \"u2\": \"Second message from user2\"\n                    },\n                    {\n                        \"u1\": \"Third message from user1\",\n                        \"u2\": \"Third message from user2\"\n                    },\n                    {\n                        \"u1\": \"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\",\n                        \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Response:\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"\n            ",
+    "model_output":"I'm still waiting for some decent footage of the war in Ukraine. Anyone else?\",\n                        \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                    },\n                    {\n                        \"u1\": \"Yeah, I've been trying to find some good videos but it's like they're not even reporting on it. It's so frustrating.\",\n                        \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                    },\n                    {\n                        \"u1\": \"I know, right? It's like they're just ignoring the whole thing. I'm starting to think it's not even happening.\",\n                        \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                    },\n                    {\n                        \"u1\": \"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\",\n                        \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Note: The first message from u1 in the earliest turn is a rewritten version of the given message, with the addition of the question mark at the end. The rewritten message is intended to be a more open-ended and inquiring question, rather than a statement. The rewritten message is also intended to be more engaging and likely to elicit a response from u2.",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm still waiting for some decent footage of the war in Ukraine. Anyone else?",
+          "u2":"@USER Take a look at Operator Starsky on YouTube."
+        },
+        {
+          "u1":"Yeah, I've been trying to find some good videos but it's like they're not even reporting on it. It's so frustrating.",
+          "u2":"@USER Take a look at Operator Starsky on YouTube."
+        },
+        {
+          "u1":"I know, right? It's like they're just ignoring the whole thing. I'm starting to think it's not even happening.",
+          "u2":"@USER Take a look at Operator Starsky on YouTube."
+        },
+        {
+          "u1":"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?",
+          "u2":"@USER Take a look at Operator Starsky on YouTube."
+        }
+      ]
+    },
+    "invalid_inferences":0,
+    "model_name":"meta-llama\/Llama-3.2-3B-Instruct"
+  },
+  {
+    "Index":7049,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"The thought of being anxious. Vicious cycle",
+    "reply":"Same.",
+    "language":"en",
+    "key_1":"18442403337591841",
+    "key_2":"10279341821823853675",
+    "dataset_name":"MultiPICo",
+    "unique_id":"18442403337591841_10279341821823853675",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"12889421378994486038",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"8584239438024562192",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":43,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"3814109247260872773",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":48,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"15797607780646129545",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":21,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"South Africa",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"Yes",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenZ",
+          "generation_aggregated":"Old",
+          "employed":"No"
+        }
+      ]
+    },
+    "prompt":"\n            Given this pair of messages extracted from social media:\n\n            u1: The thought of being anxious. Vicious cycle\n            u2: Same.\n\n            Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n            - Maintain the original writing style of both u1 e u2.\n            - Preserve the sentiment and tone of the conversation.\n            - Keep the dialogue coherent and consistent with the context of the given messages.\n\n            Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:\n\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"First message from user1 in the earliest turn\",\n                        \"u2\": \"First message from user2 in response\"\n                    },\n                    {\n                        \"u1\": \"Second message from user1\",\n                        \"u2\": \"Second message from user2\"\n                    },\n                    {\n                        \"u1\": \"Third message from user1\",\n                        \"u2\": \"Third message from user2\"\n                    },\n                    {\n                        \"u1\": \"The thought of being anxious. Vicious cycle\",\n                        \"u2\": \"Same.\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Response:\n            <JSON>\n            {\n                \"turns\": [\n                    {\n                        \"u1\": \"\n            ",
+    "model_output":"I'm really struggling to find motivation lately. It feels like I'm stuck in a rut and can't get out.\",\n                        \"u2\": \"I feel you. It's like, you're trying to do stuff, but nothing seems to be working out.\"\n                    },\n                    {\n                        \"u1\": \"I know, right? It's like, I'll start doing something, and then I'll just get overwhelmed and give up. And then I'll feel guilty for not following through, and it just creates this vicious cycle.\",\n                        \"u2\": \"That sounds so familiar. It's like, you're trying to be productive, but your brain is just telling you to take a nap.\"\n                    },\n                    {\n                        \"u2\": \"I'm starting to think that maybe I'm just not cut out for this whole adulting thing. Maybe I should just stick to being a kid and playing video games all day.\",\n                        \"u1\": \"Don't say that! You're not a kid, and you're definitely not a failure. We all struggle with motivation and anxiety. It's just part of life.\",\n                        \"u2\": \"I guess you're right. It's just hard to shake the feeling that I'm not doing enough, you know?\"\n                    },\n                    {\n                        \"u1\": \"The thought of being anxious. Vicious cycle\",\n                        \"u2\": \"Same.\"\n                    }\n                ]\n            }\n            <\/JSON>\n\n            Note: The actual messages were not provided, but the response is generated based on the context and the given messages. The actual messages may vary based on the context and the conversation flow.",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm really struggling to find motivation lately. It feels like I'm stuck in a rut and can't get out.",
+          "u2":"I feel you. It's like, you're trying to do stuff, but nothing seems to be working out."
+        },
+        {
+          "u1":"I know, right? It's like, I'll start doing something, and then I'll just get overwhelmed and give up. And then I'll feel guilty for not following through, and it just creates this vicious cycle.",
+          "u2":"That sounds so familiar. It's like, you're trying to be productive, but your brain is just telling you to take a nap."
+        },
+        {
+          "u2":"I guess you're right. It's just hard to shake the feeling that I'm not doing enough, you know?",
+          "u1":"Don't say that! You're not a kid, and you're definitely not a failure. We all struggle with motivation and anxiety. It's just part of life."
+        },
+        {
+          "u1":"The thought of being anxious. Vicious cycle",
+          "u2":"Same."
+        }
+      ]
+    },
+    "invalid_inferences":0,
+    "model_name":"meta-llama\/Llama-3.2-3B-Instruct"
+  }
+]

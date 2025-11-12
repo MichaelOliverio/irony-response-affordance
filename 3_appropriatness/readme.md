@@ -25,8 +25,6 @@ Se non la conosce, potrebbe non cogliere la complicità che rende la battuta acc
 
 ---
 
-### Collegamento con CSC e Multipico
-
 * **CSC** permette di analizzare sia l’interazione diretta (1) sia la percezione dell’osservatore (2).
 * **Multipico** consente invece di modellare solo la percezione esterna (2).
 
