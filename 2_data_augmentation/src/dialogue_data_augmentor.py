@@ -77,13 +77,16 @@ class DialogueDataAugmentor:
         u2: {reply}
 
         Generate the {num_turns} previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:
-        - Maintain the original writing style of both u1 e u2.
+        - Maintain the original writing style of both u1 and u2.
         - Preserve the sentiment and tone of the conversation.
         - Keep the dialogue coherent and consistent with the context of the given messages.
 
-        Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:
+        Return ONLY a JSON object with a "turns" array containing {num_turns + 1} turns (the {num_turns} previous turns plus the given messages as the last turn). Do not include any other fields.
 
-        <JSON>"""
+        Format:
+        <JSON>
+        {{
+            "turns": ["""
 
         # turni
         turni_prompt = ""
@@ -93,8 +96,17 @@ class DialogueDataAugmentor:
                 "u1": "{PROMPT_MAPPING[i+1]} message from u1",
                 "u2": "{PROMPT_MAPPING[i+1]} message from u2"
             }},"""
+        
+        # Ultimo turno (quello dato)
+        turni_prompt += f"""
+        {{
+            "u1": "{post}",
+            "u2": "{reply}"
+        }}"""
 
         final_prompt = f"""
+            ]
+        }}
         </JSON>
 
         Response:
@@ -114,17 +126,20 @@ class DialogueDataAugmentor:
         initial_prompt = f"""
         Given the context and the reply of a user u2 to u1 (whose name is Steve and your relation with him is {relation}):
 
-        context: {context},
-        u2 : {reply},
+        context: {context}
+        u2: {reply}
 
         Generate the {num_turns} previous dialogue turns (each turn = one message from u1 followed by one from u2) plus the u1 message that directly precedes the final given u2 line. Make sure to:
         - Maintain the original writing style of u2.
         - Preserve the sentiment and tone of the conversation.
-        - Keep the dialogue coherent and consistent with the context of the given messages
+        - Keep the dialogue coherent and consistent with the context of the given messages.
 
-        Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:
+        Return ONLY a JSON object with a "turns" array containing {num_turns + 1} turns. Do not include any other fields.
 
-        <JSON>"""
+        Format:
+        <JSON>
+        {{
+            "turns": ["""
 
         # turni
         turni_prompt = ""
@@ -134,8 +149,17 @@ class DialogueDataAugmentor:
                 "u1": "{PROMPT_MAPPING[i+1]} message from u1",
                 "u2": "{PROMPT_MAPPING[i+1]} message from u2"
             }},"""
+            
+        # Ultimo turno
+        turni_prompt += f"""
+        {{
+            "u1": "Message from u1 that precedes the given u2",
+            "u2": "{reply}"
+        }}"""
 
         final_prompt = f"""
+            ]
+        }}
         </JSON>
 
         Response:
@@ -217,10 +241,10 @@ class DialogueDataAugmentor:
                         dialogue = {"error": "Max retries reached"}
                         model_output = {"error": "Max retries reached"}
 
-                    cleaned_results.append((prompt, model_output, dialogue, invalid_inferences))
+                    cleaned_results.append((prompt, model_output, dialogue, invalid_inferences, invalid_model_outputs))
 
-                for row, (prompt, model_output, dialogue, invalid_inferences) in zip(batch_df.itertuples(), cleaned_results):
-                    enriched = row.asdict()
+                for row, (prompt, model_output, dialogue, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
+                    enriched = row._asdict()  # Nota: _asdict() con underscore per pandas named tuples
                     enriched['prompt'] = prompt
                     enriched['model_output'] = model_output
                     enriched['dialogue'] = dialogue
