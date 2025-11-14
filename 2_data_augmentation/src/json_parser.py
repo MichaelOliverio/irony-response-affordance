@@ -27,6 +27,10 @@ class JSONParser:
 
         # -------- PULIZIA JSON -------- #
         
+        # 0. Normalizza virgolette curve in virgolette dritte
+        json_str = json_str.replace('"', '"').replace('"', '"')
+        json_str = json_str.replace(''', "'").replace(''', "'")
+        
         # 1. Rimuove trailing commas illegali
         json_str = re.sub(r',\s*([\]}])', r'\1', json_str)
         
