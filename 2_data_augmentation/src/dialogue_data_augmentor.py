@@ -187,7 +187,7 @@ class DialogueDataAugmentor:
         for i in range(NUM_MAX_TURNS):
             num_turn = i + 1
 
-            output_file = f'{dataset_name}_{model_name.replace("/", "_")}_num_turn_{num_turn}.json'
+            output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_num_gen_turn_{num_turn}.json'
             output_rows = []
 
             # --- carica dati già esistenti, se presenti ---
@@ -231,23 +231,27 @@ class DialogueDataAugmentor:
                 for i, (prompt, model_output, dialogue) in enumerate(results):
                     invalid_inferences = 0
                     invalid_model_outputs = []
+                    print(f"Processing entry {batch_df.iloc[i]['unique_id']}")
                     while dialogue is None and invalid_inferences < 3:
+                        print(f"Retrying entry {batch_df.iloc[i]['unique_id']} (attempt {invalid_inferences + 1})")
                         invalid_inferences += 1
                         invalid_model_outputs.append(model_output)
                         prompt, model_output, dialogue = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, [turn[i]], dataset_name, num_turn)[0]
+                    print(f"Finished processing entry {batch_df.iloc[i]['unique_id']} with {invalid_inferences} invalid inferences.")
 
                     if invalid_inferences >= 3:
                         print(f"Warning: Max retries reached for entry {batch_df.iloc[i]['unique_id']}. Saving last output anyway.")
                         dialogue = {"error": "Max retries reached"}
                         model_output = {"error": "Max retries reached"}
 
-                    cleaned_results.append((prompt, model_output, dialogue, invalid_inferences, invalid_model_outputs))
+                    cleaned_results.append((prompt, model_output, dialogue, num_turn, invalid_inferences, invalid_model_outputs))
 
-                for row, (prompt, model_output, dialogue, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
+                for row, (prompt, model_output, dialogue, num_turns_generated, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
                     enriched = row._asdict()  # Nota: _asdict() con underscore per pandas named tuples
                     enriched['prompt'] = prompt
                     enriched['model_output'] = model_output
                     enriched['dialogue'] = dialogue
+                    enriched['num_turns_generated'] = num_turns_generated
                     enriched['invalid_model_outputs'] = invalid_model_outputs
                     enriched['invalid_inferences'] = invalid_inferences
                     output_rows.append(enriched)
