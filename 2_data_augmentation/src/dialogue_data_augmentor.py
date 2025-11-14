@@ -1,81 +1,241 @@
+"""
+Generatore di dialoghi multi-turn usando modelli LLM.
+"""
+import re
 import pandas as pd
-from typing import Optional, List, Dict
-from .config import ACCEPTED_INPUT_TYPES, ACCEPTED_OUTPUT_TYPES, DATA_AUGMENTATION_DIR
-from .dialogue_generator import DialogueGenerator
+import json
+import os
+from typing import List, Tuple, Optional, Dict, Any
+from tqdm import tqdm
+from .llm_handler import LLMHandler
+from .json_parser import JSONParser
+from .config import DATA_AUGMENTATION_HYPERPARAMS, DATA_AUGMENTATION_MODELS, PROMPT_MAPPING, NUM_MAX_TURNS
 
 class DialogueDataAugmentor:
+    """Classe per generare dialoghi multi-turn da coppie post-reply."""
     @staticmethod
-    def augment_data(
-        df: pd.DataFrame, 
-        input_type: str = "single-turn", 
-        output_type: str = "multi-turn",
-    ) -> Dict[str, str]:
+    def generate_batch_output(
+        pipe, 
+        tokenizer, 
+        turns: List[Tuple[str, str]], 
+        dataset_name: str,
+        num_turns: int
+    ) -> List[Tuple[str, str, Optional[Dict[str, Any]]]]:
         """
-        Esegue la data augmentation sul DataFrame fornito.
+        Genera output in batch per una lista di coppie di messaggi.
         
         Args:
-            df: DataFrame contenente i dati da aumentare
-            input_type: Tipo di input ("single-turn" o "contextual")
-            output_type: Tipo di output desiderato ("multi-turn")
-            models: Lista di modelli da usare (default: DialogueGenerator.DEFAULT_MODELS)
-            batch_size: Dimensione del batch (default: 1)
-            max_retries: Numero massimo di retry per inferenze fallite (default: 3)
-            temperature: Temperatura per il sampling (default: 0.1)
-            output_dir: Directory dove salvare i risultati (default: DATA_AUGMENTATION_DIR)
+            pipe: Pipeline del modello di generazione
+            tokenizer: Tokenizer associato al modello
+            turns: Lista di tuple (post, reply)
         
         Returns:
-            Dizionario {model_name: output_file_path}
+            Lista di tuple (prompt, model_output, dialogue_dict)
         """
-        if input_type not in ACCEPTED_INPUT_TYPES:
-            raise ValueError(f"Input type non valido. Accettati: {ACCEPTED_INPUT_TYPES}")
-        if output_type not in ACCEPTED_OUTPUT_TYPES:
-            raise ValueError(f"Output type non valido. Accettati: {ACCEPTED_OUTPUT_TYPES}")
+        prompts = []
+        for post, reply, relation in turns:
+            if dataset_name == "MultiPICo":
+                prompt = DialogueDataAugmentor.multipico_prompt(post, reply, num_turns)
+            elif dataset_name == "CSC":
+                prompt = DialogueDataAugmentor.csc_prompt(post, reply, num_turns, relation)
+            else:
+                raise ValueError(f"Dataset non supportato: {dataset_name}")
+            
+            prompts.append(prompt)
 
-        return DialogueDataAugmentor._compute_data_augmentation(
-            df, input_type, output_type
+
+        # Genera i risultati dal modello
+        outputs = pipe(
+            prompts,
+            max_new_tokens=DATA_AUGMENTATION_HYPERPARAMS['max_new_tokens'],
+            do_sample=DATA_AUGMENTATION_HYPERPARAMS['temperature'] > 0,
+            temperature=DATA_AUGMENTATION_HYPERPARAMS['temperature'],
+            return_full_text=False,
+            batch_size=DATA_AUGMENTATION_HYPERPARAMS['batch_size'],
+            pad_token_id=tokenizer.eos_token_id
         )
+
+        results = []
+        for prompt, out in zip(prompts, outputs):
+            entry = out[0]
+            model_output = entry['generated_text'].strip()
+            
+            # Ricostruisce l'output completo aggiungendo il prefisso iniziale
+            initial_output = """<JSON>{"turns": [{"u1":\""""
+            dialogue = JSONParser.parse(f"{initial_output}{model_output}", num_turns)
+            
+            results.append((prompt, model_output, dialogue))
+
+        return results
     
     @staticmethod
-    def _compute_data_augmentation(
-        df: pd.DataFrame, 
-        input_type: str, 
-        output_type: str,
-    ) -> Dict[str, str]:
-        """Esegue la data augmentation in base ai tipi di input/output."""
-        if input_type == "single-turn" and output_type == "multi-turn":
-            return DialogueDataAugmentor._augment_single_to_multi(df)
-        elif input_type == "contextual" and output_type == "multi-turn":
-            return DialogueDataAugmentor._augment_contextual_to_multi(df)
-        else:
-            raise NotImplementedError(
-                f"Data augmentation non implementata per input_type={input_type} e output_type={output_type}"
-            )
+    def multipico_prompt(post, reply, num_turns) -> str:
+        initial_prompt = f"""
+        Given this pair of messages extracted from social media:
 
+        u1: {post}
+        u2: {reply}
+
+        Generate the {num_turns} previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:
+        - Maintain the original writing style of both u1 e u2.
+        - Preserve the sentiment and tone of the conversation.
+        - Keep the dialogue coherent and consistent with the context of the given messages.
+
+        Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:
+
+        <JSON>"""
+
+        # turni
+        turni_prompt = ""
+        for i in range(num_turns):
+            turni_prompt += f"""
+            {{
+                "u1": "{PROMPT_MAPPING[i+1]} message from u1",
+                "u2": "{PROMPT_MAPPING[i+1]} message from u2"
+            }},"""
+
+        final_prompt = f"""
+        </JSON>
+
+        Response:
+        <JSON>
+        {{
+            "turns": [
+                {{
+                    "u1": "
+        """
+
+        prompt = initial_prompt + turni_prompt + final_prompt
+
+        return prompt
+    
     @staticmethod
-    def _augment_single_to_multi(
-        df: pd.DataFrame,
-    ) -> Dict[str, str]:
-        """
-        Augmentation da single-turn a multi-turn.
-        
-        Usa DialogueGenerator per generare dialoghi multi-turn
-        da coppie post-reply singole.
-        """
-        print("\n=== Data Augmentation: single-turn → multi-turn ===")
-        
-        return DialogueGenerator.generate_dialogues_for_dataset(df)
+    def csc_prompt(context, reply, num_turns, relation) -> str:
+        initial_prompt = f"""
+        Given the context and the reply of a user u2 to u1 (whose name is Steve and your relation with him is {relation}):
 
+        context: {context},
+        u2 : {reply},
+
+        Generate the {num_turns} previous dialogue turns (each turn = one message from u1 followed by one from u2) plus the u1 message that directly precedes the final given u2 line. Make sure to:
+        - Maintain the original writing style of u2.
+        - Preserve the sentiment and tone of the conversation.
+        - Keep the dialogue coherent and consistent with the context of the given messages
+
+        Return the result in the following JSON format, including both the previous 3 turns and the given messages as the last turn, enclosed in <JSON> tags:
+
+        <JSON>"""
+
+        # turni
+        turni_prompt = ""
+        for i in range(num_turns):
+            turni_prompt += f"""
+            {{
+                "u1": "{PROMPT_MAPPING[i+1]} message from u1",
+                "u2": "{PROMPT_MAPPING[i+1]} message from u2"
+            }},"""
+
+        final_prompt = f"""
+        </JSON>
+
+        Response:
+        <JSON>
+        {{
+            "turns": [
+                {{
+                    "u1": "
+        """
+
+        prompt = initial_prompt + turni_prompt + final_prompt
+
+        return prompt
+    
     @staticmethod
-    def _augment_contextual_to_multi(
-        df: pd.DataFrame,
+    def generate_dialogues_for_dataset(
+        dataset_df: pd.DataFrame,
+        dataset_name: str,
     ) -> Dict[str, str]:
-        """
-        Augmentation da contextual a multi-turn.
-        
-        TODO: Implementare logica specifica per dati contestuali.
-        Per ora usa la stessa logica di single-turn.
-        """
-        print("\n=== Data Augmentation: contextual → multi-turn ===")
-        print("⚠️  Usando logica single-turn (da implementare logica specifica)")
+       for model_name in DATA_AUGMENTATION_MODELS:
+        print(f"Processing model: {model_name}")
+        pipe, model, tokenizer = LLMHandler.load_model(model_name)
+        print("Model and tokenizer loaded.")
+    
+        for i in range(NUM_MAX_TURNS):
+            num_turn = i + 1
 
-        return DialogueGenerator.generate_dialogues_for_dataset(df)
+            output_file = f'{dataset_name}_{model_name.replace("/", "_")}_num_turn_{num_turn}.json'
+            output_rows = []
+
+            # --- carica dati già esistenti, se presenti ---
+            if os.path.exists(output_file):
+                try:
+                    with open(output_file, 'r', encoding='utf-8') as f:
+                        existing_data = json.load(f)
+                    existing_ids = set([row['unique_id'] for row in existing_data])
+                    print(f"Found {len(existing_ids)} already processed entries in {output_file}")
+                    # aggiungi i dati esistenti a output_rows
+                    output_rows.extend(existing_data)
+                except Exception as e:
+                    print(f"Error loading existing JSON: {e}")
+                    existing_ids = set()
+            else:
+                existing_ids = set()
+
+            # filtra dataset_df per saltare già processati
+            dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)]
+            print(f"{len(dataset_df)} new entries to process")
+
+            for start in tqdm(range(0, len(dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
+                batch_df = dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
+
+                post = batch_df['post'].tolist()
+                #post = [re.sub(r'@USER', '', p) for p in post]
+
+                reply = batch_df['reply'].tolist()
+                #reply = [re.sub(r'@USER', '', r) for r in reply]
+
+                if dataset_name == "CSC":
+                    relation = batch_df['annotations'].apply(lambda x: x['speaker_annotation']['interlocutor_relationship']).tolist()
+                else:
+                    relation = [None] * len(post)
+
+                turn = list(zip(post, reply, relation))
+
+                results = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, turn, dataset_name, num_turn)
+
+                cleaned_results = []
+                for i, (prompt, model_output, dialogue) in enumerate(results):
+                    invalid_inferences = 0
+                    invalid_model_outputs = []
+                    while dialogue is None and invalid_inferences < 3:
+                        invalid_inferences += 1
+                        invalid_model_outputs.append(model_output)
+                        prompt, model_output, dialogue = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, [turn[i]], dataset_name, num_turn)[0]
+
+                    if invalid_inferences >= 3:
+                        print(f"Warning: Max retries reached for entry {batch_df.iloc[i]['unique_id']}. Saving last output anyway.")
+                        dialogue = {"error": "Max retries reached"}
+                        model_output = {"error": "Max retries reached"}
+
+                    cleaned_results.append((prompt, model_output, dialogue, invalid_inferences))
+
+                for row, (prompt, model_output, dialogue, invalid_inferences) in zip(batch_df.itertuples(), cleaned_results):
+                    enriched = row.asdict()
+                    enriched['prompt'] = prompt
+                    enriched['model_output'] = model_output
+                    enriched['dialogue'] = dialogue
+                    enriched['invalid_model_outputs'] = invalid_model_outputs
+                    enriched['invalid_inferences'] = invalid_inferences
+                    output_rows.append(enriched)
+
+                # salva ad ogni batch
+                pd.DataFrame(output_rows).to_json(
+                    output_file,
+                    orient='records',
+                    indent=2,
+                    force_ascii=False
+                )
+                print(f"✔ Batch {start//DATA_AUGMENTATION_HYPERPARAMS['batch_size'] + 1} salvato → {output_file}")
+
+            LLMHandler.destroy_model(model, tokenizer)
+            print("Model and tokenizer destroyed.")

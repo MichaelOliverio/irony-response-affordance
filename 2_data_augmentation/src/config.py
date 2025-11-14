@@ -8,46 +8,35 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 DATASETS_MERGE_DIR = PROJECT_ROOT / "1_datasets_merge"
 DATA_AUGMENTATION_DIR = PROJECT_ROOT / "2_data_augmentation"
 APPROPRIATENESS_DIR = PROJECT_ROOT / "3_appropriatness"
-MY_NOTES_DIR = PROJECT_ROOT / "my_notes"
-NOTES_DIR = PROJECT_ROOT / "notes"
 
 # Path specifici dei file
 UNIFIED_CORPUS_PATH = DATASETS_MERGE_DIR / "output" / "unified_corpus.json"
-UNIFIED_CORPUS_SAMPLE_PATH = DATASETS_MERGE_DIR / "output" / "unified_corpus_sample_10.json"
 
 # Directory di output
 DATASETS_MERGE_OUTPUT_DIR = DATASETS_MERGE_DIR / "output"
 DATASETS_MERGE_LOG_DIR = DATASETS_MERGE_DIR / "log"
 
 # Data Augmentation Constants
-ACCEPTED_INPUT_TYPES = ["single-turn", "contextual"]
-ACCEPTED_OUTPUT_TYPES = ["multi-turn"]
 DATA_AUGMENTATION_HYPERPARAMS = {
-    "batch_size": 1, #8
+    "batch_size": 8,
     "max_retries": 3,
-    "temperature": 0.1,
+    "temperature": 0.5,
     "max_new_tokens": 1024,
 }
 DATA_AUGMENTATION_MODELS = [
     'meta-llama/Llama-3.2-3B-Instruct',
-    #'Qwen/Qwen2.5-3B-Instruct',
+    #'meta-llama/Llama-3.1-8B-Instruct',
+    #'mistralai/Mixtral-8x7B-Instruct-v0.1',
+    #'Qwen/Qwen2.5-7B-Instruct',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
 
-def print_config():
-    """Stampa la configurazione dei path"""
-    print("=== Configurazione Path del Progetto ===")
-    print(f"PROJECT_ROOT: {PROJECT_ROOT}")
-    print(f"\nDirectory principali:")
-    print(f"  DATASETS_MERGE_DIR: {DATASETS_MERGE_DIR}")
-    print(f"  DATA_AUGMENTATION_DIR: {DATA_AUGMENTATION_DIR}")
-    print(f"  APPROPRIATENESS_DIR: {APPROPRIATENESS_DIR}")
-    print(f"\nFile principali:")
-    print(f"  UNIFIED_CORPUS_PATH: {UNIFIED_CORPUS_PATH}")
-    print(f"    Esiste: {UNIFIED_CORPUS_PATH.exists()}")
-    print(f"  UNIFIED_CORPUS_SAMPLE_PATH: {UNIFIED_CORPUS_SAMPLE_PATH}")
-    print(f"    Esiste: {UNIFIED_CORPUS_SAMPLE_PATH.exists()}")
-    print("=" * 50)
+PROMPT_MAPPING = {
+    1: "First",
+    2: "Second",
+    3: "Third",
+    4: "Fourth",
+    5: "Fifth"
+}
 
-if __name__ == "__main__":
-    print_config()
+NUM_MAX_TURNS = 3

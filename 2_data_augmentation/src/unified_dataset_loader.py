@@ -2,7 +2,7 @@ import pandas as pd
 import json
 from pathlib import Path
 from typing import Optional, Dict, List, Any, Union
-from .config import UNIFIED_CORPUS_PATH, print_config
+from .config import UNIFIED_CORPUS_PATH
 
 class UnifiedDatasetLoader:
     @staticmethod
