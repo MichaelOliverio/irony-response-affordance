@@ -22,6 +22,17 @@ DATASETS_MERGE_LOG_DIR = DATASETS_MERGE_DIR / "log"
 # Data Augmentation Constants
 ACCEPTED_INPUT_TYPES = ["single-turn", "contextual"]
 ACCEPTED_OUTPUT_TYPES = ["multi-turn"]
+DATA_AUGMENTATION_HYPERPARAMS = {
+    "batch_size": 1, #8
+    "max_retries": 3,
+    "temperature": 0.1,
+    "max_new_tokens": 1024,
+}
+DATA_AUGMENTATION_MODELS = [
+    'meta-llama/Llama-3.2-3B-Instruct',
+    #'Qwen/Qwen2.5-3B-Instruct',
+]
+DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
 
 def print_config():
     """Stampa la configurazione dei path"""

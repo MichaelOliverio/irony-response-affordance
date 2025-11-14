@@ -33,7 +33,7 @@ class UnifiedDatasetLoader:
                 unified_corpus = json.load(f)
             df = pd.DataFrame(unified_corpus)
             
-            print(f"✓ Caricato unified_corpus da: {file_path}")
+            print(f"Caricato unified_corpus da: {file_path}")
             print(f"  Totale righe: {len(df)}")
             
         except json.JSONDecodeError as e:
