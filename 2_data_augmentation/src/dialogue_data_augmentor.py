@@ -62,7 +62,10 @@ class DialogueDataAugmentor:
             
             # Ricostruisce l'output completo aggiungendo il prefisso iniziale
             initial_output = """<JSON>{"turns": [{"u1":\""""
-            dialogue = JSONParser.parse(f"{initial_output}{model_output}", num_turns)
+            if dataset_name == "MultiPICo":
+                dialogue = JSONParser.multipico_parse(f"{initial_output}{model_output}", num_turns, post, reply)
+            elif dataset_name == "CSC":
+                dialogue = JSONParser.csc_parse(f"{initial_output}{model_output}", num_turns, reply)
             
             results.append((prompt, model_output, dialogue))
 

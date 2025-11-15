@@ -96,61 +96,21 @@ def convert_to_valid_json(json_str: str) -> Optional[dict]:
         data = json5.loads(json_str)
         return data
     except Exception as e:
-        print(f"❌ Errore nel parsing JSON5: {e}")
+        print(f"Errore nel parsing JSON5: {e}")
         
         # Prova con json standard
         try:
             data = json.loads(json_str)
             return data
         except Exception as e2:
-            print(f"❌ Errore anche con json standard: {e2}")
+            print(f"Errore anche con json standard: {e2}")
             return None
-
-
-def extract_all_messages_from_raw_json(raw_json_str: str) -> list:
-    """
-    Estrae tutti i messaggi u1/u2 dal JSON raw prima del parsing.
-    Questo evita problemi con chiavi duplicate che vengono sovrascritte.
-    
-    Args:
-        raw_json_str: Stringa JSON raw
-        
-    Returns:
-        Lista di dict con 'speaker' e 'content'
-    """
-    all_messages = []
-    
-    # Pattern per trovare tutti i pattern "u1": "valore" o "u2": "valore"
-    # Usa finditer per trovare TUTTE le occorrenze, anche duplicate
-    pattern = r'"(u[12])":\s*"((?:[^"\\]|\\.)*)"\s*(?=[,}])'
-    
-    for match in re.finditer(pattern, raw_json_str):
-        speaker = match.group(1)
-        content = match.group(2)
-        
-        # Decodifica gli escape
-        content = content.replace('\\"', '"')
-        content = content.replace('\\n', '\n')
-        content = content.replace('\\t', '\t')
-        content = content.replace('\\\\', '\\')
-        
-        if content.strip():
-            all_messages.append({
-                'speaker': speaker,
-                'content': content.strip()
-            })
-    
-    return all_messages
-
-
-def validate_json_content(json_content: dict, raw_json_str: str, num_turns_generated: int, 
-                         original_post: str, original_reply: str) -> Optional[dict]:
+def validate_json_content(json_content: dict, num_turns_generated: int, original_post: str, original_reply: str) -> Optional[dict]:
     """
     Valida e normalizza il contenuto JSON estratto.
     
     Args:
-        json_content: Il JSON parsato da validare (può avere chiavi duplicate perse)
-        raw_json_str: La stringa JSON raw prima del parsing
+        json_content: Il JSON parsato da validare
         num_turns_generated: Numero di turni attesi (es. 3)
         original_post: Il post originale (ultimo u1)
         original_reply: La reply originale (ultimo u2)
@@ -162,77 +122,82 @@ def validate_json_content(json_content: dict, raw_json_str: str, num_turns_gener
         print("❌ JSON non contiene 'turns'")
         return None
     
-    # Estrai TUTTI i messaggi dal JSON raw (prima del parsing)
-    # per evitare di perdere chiavi duplicate
-    all_messages = extract_all_messages_from_raw_json(raw_json_str)
-    
-    if len(all_messages) == 0:
-        print("❌ Nessun messaggio trovato nel JSON raw")
+    turns = json_content["turns"]
+    if not isinstance(turns, list) or len(turns) == 0:
+        print("❌ 'turns' non è una lista valida")
         return None
     
-    print(f"📊 Trovati {len(all_messages)} messaggi totali dal JSON raw")
+    # Estrai tutti i messaggi da tutti i turns
+    all_messages = []
+    
+    for turn_idx, turn in enumerate(turns):
+        if not isinstance(turn, dict):
+            print(f"❌ Turn {turn_idx} non è un dizionario")
+            continue
+        
+        # Estrai tutti i messaggi u1 e u2 da questo turn
+        # I messaggi potrebbero essere multipli nello stesso oggetto
+        turn_messages = []
+        
+        for key in sorted(turn.keys()):
+            if key.startswith('u1') or key.startswith('u2'):
+                # Determina se è u1 o u2
+                speaker = 'u1' if key.startswith('u1') else 'u2'
+                message = turn[key]
+                
+                if isinstance(message, str) and message.strip():
+                    turn_messages.append({
+                        'speaker': speaker,
+                        'content': message.strip()
+                    })
+        
+        all_messages.extend(turn_messages)
+    
+    if len(all_messages) == 0:
+        print("Nessun messaggio trovato")
+        return None
+    
+    print(f"Trovati {len(all_messages)} messaggi totali")
     
     # Calcola il numero atteso di messaggi: num_turns * 2 + 2
     expected_messages = num_turns_generated * 2 + 2
     
-    print(f"📊 Messaggi attesi: {expected_messages} (num_turns={num_turns_generated})")
+    print(f"Messaggi attesi: {expected_messages} (num_turns={num_turns_generated})")
     
     # Prendi gli ultimi N messaggi (dal fondo)
     if len(all_messages) > expected_messages:
-        print(f"⚠️  Troppi messaggi ({len(all_messages)}), prendo gli ultimi {expected_messages}")
+        print(f"Troppi messaggi ({len(all_messages)}), prendo gli ultimi {expected_messages}")
         all_messages = all_messages[-expected_messages:]
     elif len(all_messages) < expected_messages:
-        print(f"⚠️  Pochi messaggi ({len(all_messages)}), attesi {expected_messages}")
-        # Continuiamo comunque con quello che abbiamo invece di fallire
-    
-    # Verifica che ci siano numero atteso di messaggi
-    if len(all_messages) < expected_messages:
-        print(f"❌ Servono {expected_messages} messaggi, trovati {len(all_messages)}")
+        print(f"Pochi messaggi ({len(all_messages)}), attesi {expected_messages}")
         return None
     
-    # Assicurati che l'ultimo messaggio sia u2 e il penultimo u1
-    # Se non è così, aggiusta la sequenza
-    if len(all_messages) >= 2:
-        # Gli ultimi due messaggi DEVONO essere u1 seguito da u2
-        if all_messages[-1]['speaker'] != 'u2' or all_messages[-2]['speaker'] != 'u1':
-            print("⚠️  Ultimi due messaggi non sono in ordine corretto (u1, u2)")
-            
-            # Trova l'ultimo u1 e l'ultimo u2
-            last_u1_idx = None
-            last_u2_idx = None
-            
-            for idx in range(len(all_messages) - 1, -1, -1):
-                if all_messages[idx]['speaker'] == 'u1' and last_u1_idx is None:
-                    last_u1_idx = idx
-                if all_messages[idx]['speaker'] == 'u2' and last_u2_idx is None:
-                    last_u2_idx = idx
-                
-                if last_u1_idx is not None and last_u2_idx is not None:
-                    break
-            
-            if last_u1_idx is None or last_u2_idx is None:
-                print("❌ Non trovati sia u1 che u2 nei messaggi")
-                return None
-            
-            # Rimuovi questi due messaggi dalla loro posizione attuale
-            # e mettili alla fine nell'ordine corretto
-            u1_msg = all_messages.pop(last_u1_idx)
-            # Aggiorna l'indice di u2 se era dopo u1
-            if last_u2_idx > last_u1_idx:
-                last_u2_idx -= 1
-            u2_msg = all_messages.pop(last_u2_idx)
-            
-            # Aggiungi alla fine nell'ordine corretto
-            all_messages.append(u1_msg)
-            all_messages.append(u2_msg)
-            
-            print(f"✅ Riordinati ultimi messaggi: u1 e u2 ora sono alla fine")
+    # Sostituisci gli ultimi due messaggi con i valori originali
+    # Ultimo u1 = original_post
+    # Ultimo u2 = original_reply
     
-    # Ora sostituisci gli ultimi due messaggi con i valori originali
-    all_messages[-2]['content'] = original_post  # Penultimo = u1
-    all_messages[-1]['content'] = original_reply  # Ultimo = u2
+    # Trova l'indice dell'ultimo u1 e dell'ultimo u2
+    last_u1_idx = None
+    last_u2_idx = None
     
-    print(f"✅ Sostituiti ultimi messaggi con post e reply originali")
+    for idx in range(len(all_messages) - 1, -1, -1):
+        if all_messages[idx]['speaker'] == 'u1' and last_u1_idx is None:
+            last_u1_idx = idx
+        if all_messages[idx]['speaker'] == 'u2' and last_u2_idx is None:
+            last_u2_idx = idx
+        
+        if last_u1_idx is not None and last_u2_idx is not None:
+            break
+    
+    if last_u1_idx is None or last_u2_idx is None:
+        print("Non trovati sia u1 che u2 nei messaggi")
+        return None
+    
+    # Sostituisci i contenuti
+    all_messages[last_u1_idx]['content'] = original_post
+    all_messages[last_u2_idx]['content'] = original_reply
+    
+    print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
     
     # Ricostruisci il JSON normalizzato con il formato corretto
     # Formato: un oggetto per ogni coppia (u1, u2)
@@ -252,20 +217,20 @@ def validate_json_content(json_content: dict, raw_json_str: str, num_turns_gener
             turn['u2'] = all_messages[i]['content']
             i += 1
         
-        # Aggiungi il turn solo se ha ENTRAMBI u1 e u2
-        if 'u1' in turn and 'u2' in turn:
+        # Se abbiamo almeno uno dei due, aggiungi il turn
+        if turn:
             normalized_turns.append(turn)
-        elif turn:
-            print(f"⚠️  Turn incompleto scartato: {turn.keys()}")
+    
+    # Se l'ultimo turn ha solo u1 o solo u2, potrebbe essere incompleto
+    # ma lo teniamo comunque perché contiene post o reply originale
     
     validated_json = {
         "turns": normalized_turns
     }
     
-    print(f"✅ JSON validato con {len(normalized_turns)} turns normalizzati\n")
+    print(f"✅ JSON validato con {len(normalized_turns)} turns normalizzati")
     
     return validated_json
-
 
 def main():
     """Funzione principale per riprocessare i file JSON"""
@@ -353,7 +318,6 @@ def main():
                 # Valida il JSON
                 validated_json_content = validate_json_content(
                     json_content,
-                    raw_json_content,  # Passa anche la stringa raw!
                     num_turns_generated, 
                     post, 
                     reply
