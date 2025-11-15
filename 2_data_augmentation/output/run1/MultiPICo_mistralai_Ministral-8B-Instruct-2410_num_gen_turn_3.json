@@ -1,0 +1,1458 @@
+[
+  {
+    "Index":7041,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating",
+    "reply":"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!",
+    "language":"en",
+    "key_1":"6831492794824847",
+    "key_2":"6953515965526014329",
+    "dataset_name":"MultiPICo",
+    "unique_id":"6831492794824847_6953515965526014329",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"2136232525506717736",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":44,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"Yes",
+          "employment_status":"Full-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"18355818464389531127",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":62,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"Boomer",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"8050880901999182774",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":50,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"5012446113609819794",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":22,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenZ",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\n        u2: Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n            \"u2\": \"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I'm feeling pretty pissed off after that meeting.\",\n                    \"u2\": \"Oh, I'm sorry to hear that. Want to talk about it?\"\n                },\n                {\n                    \"u1\": \"Nah, I just need to let off some steam.\",\n                    \"u2\": \"You should go for a run or something, that might help.\"\n                },\n                {\n                    \"u1\": \"Or maybe I'll just take the piss out of my colleagues later.\",\n                    \"u2\": \"Haha, good for you! Just make sure they can take a joke.\"\n                },\n                {\n                    \"u1\": \"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating\",\n                    \"u2\": \"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm feeling pretty pissed off after that meeting.",
+          "u2":"Oh, I'm sorry to hear that. Want to talk about it?"
+        },
+        {
+          "u1":"Nah, I just need to let off some steam.",
+          "u2":"You should go for a run or something, that might help."
+        },
+        {
+          "u1":"Or maybe I'll just take the piss out of my colleagues later.",
+          "u2":"Haha, good for you! Just make sure they can take a joke."
+        },
+        {
+          "u1":"Piss. Alcohol\nPissed. Drunk\nPissed off. Angry.\nPissing. Urinating\nPissing down. Heavy rain\nTaking the piss. Having a joke at someone's expense\nTaking a piss. Urinating",
+          "u2":"Pisser. Amusing joke or incident.\nPissing around. Wasting time.\nPissweak or weak as piss. Very weak\nPiss off. Go away.\nSome of these aren't unique to Aus but what a versatile word!"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7042,
+    "source":"twitter",
+    "context_type":null,
+    "context":null,
+    "post":"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?",
+    "reply":"@USER Take a look at Operator Starsky on YouTube.",
+    "language":"en",
+    "key_1":"8130940562900296",
+    "key_2":"16285417133666056067",
+    "dataset_name":"MultiPICo",
+    "unique_id":"8130940562900296_16285417133666056067",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"4167198063289028593",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"9359518652035557311",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":26,
+          "gender":"Female",
+          "ethnicity_simplified":"Other",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"Yes",
+          "employment_status":"Part-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"4410496555658861668",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":26,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\n        u2: @USER Take a look at Operator Starsky on YouTube.\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\",\n            \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I've been watching the news about the war in Ukraine. It seems like there's barely any footage of the actual fighting.\",\n                    \"u2\": \"@USER Check out the latest update on the war in Ukraine.\"\n                },\n                {\n                    \"u1\": \"Yeah, I've noticed that too. It's strange, isn't it? I mean, there's usually loads of footage in situations like this.\",\n                    \"u2\": \"You're right. The lack of footage is unusual.\"\n                },\n                {\n                    \"u1\": \"So, what's your take on why there's so little footage of the war?\",\n                    \"u2\": \"I'm not sure, but I've seen some theories online. Have you heard of Operator Starsky?\"\n                },\n                {\n                    \"u1\": \"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?\",\n                    \"u2\": \"@USER Take a look at Operator Starsky on YouTube.\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I've been watching the news about the war in Ukraine. It seems like there's barely any footage of the actual fighting.",
+          "u2":"@USER Check out the latest update on the war in Ukraine."
+        },
+        {
+          "u1":"Yeah, I've noticed that too. It's strange, isn't it? I mean, there's usually loads of footage in situations like this.",
+          "u2":"You're right. The lack of footage is unusual."
+        },
+        {
+          "u1":"So, what's your take on why there's so little footage of the war?",
+          "u2":"I'm not sure, but I've seen some theories online. Have you heard of Operator Starsky?"
+        },
+        {
+          "u1":"No one is curious as to why the war in Ukraine has almost zero footage?\n\nNo one?",
+          "u2":"@USER Take a look at Operator Starsky on YouTube."
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7049,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"The thought of being anxious. Vicious cycle",
+    "reply":"Same.",
+    "language":"en",
+    "key_1":"18442403337591841",
+    "key_2":"10279341821823853675",
+    "dataset_name":"MultiPICo",
+    "unique_id":"18442403337591841_10279341821823853675",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"12889421378994486038",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"8584239438024562192",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":43,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"3814109247260872773",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":48,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"15797607780646129545",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":21,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"South Africa",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"Yes",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenZ",
+          "generation_aggregated":"Old",
+          "employed":"No"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: The thought of being anxious. Vicious cycle\n        u2: Same.\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"The thought of being anxious. Vicious cycle\",\n            \"u2\": \"Same.\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I was feeling a bit overwhelmed today.\",\n                    \"u2\": \"Yeah, I understand. It can be tough.\"\n                },\n                {\n                    \"u1\": \"Just trying to manage my stress levels.\",\n                    \"u2\": \"That's important. How are you doing with that?\"\n                },\n                {\n                    \"u1\": \"It's a bit challenging sometimes.\",\n                    \"u2\": \"I get it. It's a constant battle.\"\n                },\n                {\n                    \"u1\": \"The thought of being anxious. Vicious cycle\",\n                    \"u2\": \"Same.\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I was feeling a bit overwhelmed today.",
+          "u2":"Yeah, I understand. It can be tough."
+        },
+        {
+          "u1":"Just trying to manage my stress levels.",
+          "u2":"That's important. How are you doing with that?"
+        },
+        {
+          "u1":"It's a bit challenging sometimes.",
+          "u2":"I get it. It's a constant battle."
+        },
+        {
+          "u1":"The thought of being anxious. Vicious cycle",
+          "u2":"Same."
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7053,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"I believe that the U.S government has men in black that make people \"disappear\" if they know more than what's good for them",
+    "reply":"r\/missing411",
+    "language":"en",
+    "key_1":"22344244419519199",
+    "key_2":"17402967697845139214",
+    "dataset_name":"MultiPICo",
+    "unique_id":"22344244419519199_17402967697845139214",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"4167198063289028593",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"17399807088893886482",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":30,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"4410496555658861668",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":26,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"15082683500820320180",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":26,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"15362555889673255505",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":29,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"United Kingdom",
+          "nationality":"India",
+          "student_status":"Yes",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"12683246462479763441",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":36,
+          "gender":"Female",
+          "ethnicity_simplified":"Other",
+          "country_of_birth":"India",
+          "country_of_residence":"Australia",
+          "nationality":"India",
+          "student_status":"Yes",
+          "employment_status":"Not in paid work (e.g. homemaker', 'retired or disabled)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: I believe that the U.S government has men in black that make people \"disappear\" if they know more than what's good for them\n        u2: r\/missing411\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"I believe that the U.S government has men in black that make people \"disappear\" if they know more than what's good for them\",\n            \"u2\": \"r\/missing411\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I've been thinking about the disappearances of those people in the government. It's all so suspicious.\",\n                    \"u2\": \"Indeed, it is.\"\n                },\n                {\n                    \"u1\": \"I mean, who are these men in black? What's their real agenda?\",\n                    \"u2\": \"That's a good question.\"\n                },\n                {\n                    \"u1\": \"I've heard rumors about them making people disappear, especially those who know too much.\",\n                    \"u2\": \"I've seen some threads on Reddit about it too.\"\n                },\n                {\n                    \"u1\": \"I believe that the U.S government has men in black that make people \\\"disappear\\\" if they know more than what's good for them\",\n                    \"u2\": \"r\/missing411\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I've been thinking about the disappearances of those people in the government. It's all so suspicious.",
+          "u2":"Indeed, it is."
+        },
+        {
+          "u1":"I mean, who are these men in black? What's their real agenda?",
+          "u2":"That's a good question."
+        },
+        {
+          "u1":"I've heard rumors about them making people disappear, especially those who know too much.",
+          "u2":"I've seen some threads on Reddit about it too."
+        },
+        {
+          "u1":"I believe that the U.S government has men in black that make people \"disappear\" if they know more than what's good for them",
+          "u2":"r\/missing411"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+      "I've heard some strange stories about the government lately.\",\n                    \"u2\": \"What do you mean?\"\n                },\n                {\n                    \"u1\": \"\n         I've heard whispers of secret agents who can make people disappear if they're a threat.\",\n                    \"u2\": \"Oh, really? That's intense.\"\n                },\n                {\n                    \"u1\": \"\n         Yeah, I've seen some videos online about it. It's all very mysterious.\",\n                    \"u2\": \"I've seen some of those too. It's all just speculation, though, right?\"\n                },\n                {\n                    \"u1\": \"I believe that the U.S government has men in black that make people \"disappear\" if they know more than what's good for them\",\n                    \"u2\": \"r\/missing411\"\n                }\n            ]\n        }\n        <\/JSON>"
+    ],
+    "invalid_inferences":1
+  },
+  {
+    "Index":7070,
+    "source":"twitter",
+    "context_type":null,
+    "context":null,
+    "post":"Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.",
+    "reply":"@USER At the 3pm show",
+    "language":"en",
+    "key_1":"35095457193347086",
+    "key_2":"18292057226616010858",
+    "dataset_name":"MultiPICo",
+    "unique_id":"35095457193347086_18292057226616010858",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"7476125256337117039",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":42,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"No",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"9396872709676225215",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":53,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Not in paid work (e.g. homemaker', 'retired or disabled)",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"5931715189306991149",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":41,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"16623373919712436896",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":30,
+          "gender":"Female",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"United Arab Emirates",
+          "country_of_residence":"United States",
+          "nationality":"India",
+          "student_status":"No",
+          "employment_status":"Not in paid work (e.g. homemaker', 'retired or disabled)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"12683246462479763441",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":36,
+          "gender":"Female",
+          "ethnicity_simplified":"Other",
+          "country_of_birth":"India",
+          "country_of_residence":"Australia",
+          "nationality":"India",
+          "student_status":"Yes",
+          "employment_status":"Not in paid work (e.g. homemaker', 'retired or disabled)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.\n        u2: @USER At the 3pm show\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.\",\n            \"u2\": \"@USER At the 3pm show\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I'm thinking of going to the Civic Theatre in Tallaght this weekend. Do you have any recommendations?\",\n                    \"u2\": \"Sure, what are you interested in seeing?\"\n                },\n                {\n                    \"u1\": \"I heard there's a play about Martin Naughton there. Is that still on?\",\n                    \"u2\": \"Yes, it is. It's called ‘No Magic Pill’. I think you'll enjoy it.\"\n                },\n                {\n                    \"u1\": \"Great, I'll check the schedule to see when it's showing.\",\n                    \"u2\": \"Let me know if you need any more info.\"\n                },\n            {\n                \"u1\": \"Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.\",\n                \"u2\": \"@USER At the 3pm show\"\n            }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm thinking of going to the Civic Theatre in Tallaght this weekend. Do you have any recommendations?",
+          "u2":"Sure, what are you interested in seeing?"
+        },
+        {
+          "u1":"I heard there's a play about Martin Naughton there. Is that still on?",
+          "u2":"Yes, it is. It's called ‘No Magic Pill’. I think you'll enjoy it."
+        },
+        {
+          "u1":"Great, I'll check the schedule to see when it's showing.",
+          "u2":"Let me know if you need any more info."
+        },
+        {
+          "u1":"Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.",
+          "u2":"@USER At the 3pm show"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+      "Hello, I'm looking for something interesting to do this weekend. Any recommendations?\",\n                    \"u2\": \"Hey, I just saw a great play called ‘No Magic Pill’ at the Civic Theatre in Tallaght. It's about the life of Martin Naughton, a late great disability activist. Highly recommend it.\"\n                },\n                {\n                    \"u1\": \"That sounds really interesting! When did you see it?\",\n                    \"u2\": \"I saw the 3pm show yesterday.\"\n                },\n                {\n                    \"u1\": \"Thanks for the tip. I'll definitely check it out then.\"\n                },\n                {\n                    \"u1\": \"Just back from seeing a great play in the Civic Theatre in Tallaght called ‘No Magic Pill’. It’s about the life of Martin Naughton the late great disability activist. Highly recommend it.\",\n                    \"u2\": \"@USER At the 3pm show\"\n                }\n            ]\n        }\n        <\/JSON>"
+    ],
+    "invalid_inferences":1
+  },
+  {
+    "Index":7074,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"Some of the reviews for this place are... thrilling:  \n\\> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review . Your review will be recorded on your records and you will not be *welcomed back to Australia.*\n URL \n\\> We were told that it is $50 per hour for early check in. This is ridiculous and meant that we would have paid more for 3 hours than for the entire room. Needless to say we declined\n\\> The staff at check in was quite rude and suggested I would be coming back half drunk if I was going to a wedding. I’m a non drinker. \nand on and on... Time to freshen up the management I suspect.",
+    "reply":"My favourite for reviews is when a clearly online username the owner replies with \"No Ardee959 ever stayed here! What a snake in the grass\". Like of course some people use an online name?",
+    "language":"en",
+    "key_1":"37268771336504051",
+    "key_2":"2585354592208575908",
+    "dataset_name":"MultiPICo",
+    "unique_id":"37268771336504051_2585354592208575908",
+    "annotations":{
+      "irony_appropriateness_label":1,
+      "aggregate_irony_label":1,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"9396872709676225215",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":53,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Not in paid work (e.g. homemaker', 'retired or disabled)",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"6166373155684403458",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":35,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"9253316037568721188",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":36,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"8045517445065863149",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"au",
+          "age":33,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"India",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: Some of the reviews for this place are... thrilling:  \n\\> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review . Your review will be recorded on your records and you will not be *welcomed back to Australia.*\n URL \n\\> We were told that it is $50 per hour for early check in. This is ridiculous and meant that we would have paid more for 3 hours than for the entire room. Needless to say we declined\n\\> The staff at check in was quite rude and suggested I would be coming back half drunk if I was going to a wedding. I’m a non drinker. \nand on and on... Time to freshen up the management I suspect.\n        u2: My favourite for reviews is when a clearly online username the owner replies with \"No Ardee959 ever stayed here! What a snake in the grass\". Like of course some people use an online name?\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"Some of the reviews for this place are... thrilling:  \n\\> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review . Your review will be recorded on your records and you will not be *welcomed back to Australia.*\n URL \n\\> We were told that it is $50 per hour for early check in. This is ridiculous and meant that we would have paid more for 3 hours than for the entire room. Needless to say we declined\n\\> The staff at check in was quite rude and suggested I would be coming back half drunk if I was going to a wedding. I’m a non drinker. \nand on and on... Time to freshen up the management I suspect.\",\n            \"u2\": \"My favourite for reviews is when a clearly online username the owner replies with \"No Ardee959 ever stayed here! What a snake in the grass\". Like of course some people use an online name?\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I've been reading the reviews for this place. Some of them are quite harsh.\",\n                    \"u2\": \"Oh yeah? What's the worst one you've seen?\"\n                },\n                {\n                    \"u1\": \"Well, there's one that mentions smoking allegations and threats of reporting to immigration.\",\n                    \"u2\": \"That's harsh. But I've seen worse. Like when people use fake names to leave negative reviews.\"\n                },\n                {\n                    \"u1\": \"Yeah, people can be quite creative with their names. But still, it's not cool when they make up stories.\",\n                    \"u2\": \"Exactly. And then the owners respond with ridiculous comments. Like 'No Ardee959 ever stayed here!'\"\n                },\n                {\n                    \"u1\": \"Some of the reviews for this place are... thrilling:\n\\> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review. Your review will be recorded on your records and you will not be *welcomed back to Australia.*\n URL\n\\> We were told that it is $50 per hour for early check in. This is ridiculous and meant that we would have paid more for 3 hours than for the entire room. Needless to say we declined\n\\> The staff at check in was quite rude and suggested I would be coming back half drunk if I was going to a wedding. I’m a non drinker.\nand on and on... Time to freshen up the management I suspect.\",\n                    \"u2\": \"My favourite for reviews is when a clearly online username the owner replies with 'No Ardee959 ever stayed here! What a snake in the grass'. Like of course some people use an online name?\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I've been reading the reviews for this place. Some of them are quite harsh.",
+          "u2":"Oh yeah? What's the worst one you've seen?"
+        },
+        {
+          "u1":"Well, there's one that mentions smoking allegations and threats of reporting to immigration.",
+          "u2":"That's harsh. But I've seen worse. Like when people use fake names to leave negative reviews."
+        },
+        {
+          "u1":"Yeah, people can be quite creative with their names. But still, it's not cool when they make up stories.",
+          "u2":"Exactly. And then the owners respond with ridiculous comments. Like 'No Ardee959 ever stayed here!'"
+        },
+        {
+          "u1":"Some of the reviews for this place are... thrilling:\n> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review. Your review will be recorded on your records and you will not be *welcomed back to Australia.*\n URL\n> We were told that it is $50 per hour for early check in. This is ridiculous and meant that we would have paid more for 3 hours than for the entire room. Needless to say we declined\n> The staff at check in was quite rude and suggested I would be coming back half drunk if I was going to a wedding. I’m a non drinker.\nand on and on... Time to freshen up the management I suspect.",
+          "u2":"My favourite for reviews is when a clearly online username the owner replies with 'No Ardee959 ever stayed here! What a snake in the grass'. Like of course some people use an online name?"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7075,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"It will all be stale ina week too, but the shops will still be open...",
+    "reply":"You can freeze it and it’ll be fine. \nI always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.",
+    "language":"en",
+    "key_1":"38034123590098350",
+    "key_2":"15001348376067200924",
+    "dataset_name":"MultiPICo",
+    "unique_id":"38034123590098350_15001348376067200924",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"13611239536429127813",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":52,
+          "gender":"Male",
+          "ethnicity_simplified":"DATA_EXPIRED",
+          "country_of_birth":"Hong Kong",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"5012446113609819794",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":22,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenZ",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"8544605374756584285",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":null,
+          "gender":"Male",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"South Africa",
+          "nationality":"India",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"Unknown",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"17690070198177359728",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"ie",
+          "age":30,
+          "gender":"Female",
+          "ethnicity_simplified":"Asian",
+          "country_of_birth":"India",
+          "country_of_residence":"Canada",
+          "nationality":"India",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: It will all be stale ina week too, but the shops will still be open...\n        u2: You can freeze it and it’ll be fine. \nI always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"It will all be stale ina week too, but the shops will still be open...\",\n            \"u2\": \"You can freeze it and it’ll be fine. \nI always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I'm thinking of making some bread today, but I'm not sure if I should make a whole loaf or just a few slices.\",\n                    \"u2\": \"You could always make a whole loaf and freeze some of it. It keeps well in the freezer.\"\n                },\n                {\n                    \"u1\": \"True, but I don't want to waste bread if I don't eat it all.\",\n                    \"u2\": \"You can freeze it and it’ll be fine. I always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.\"\n                },\n                {\n                    \"u1\": \"That's a good point. Thanks for the tip!\",\n                    \"u2\": \"You're welcome! It's always handy to have some bread on hand.\"\n                },\n                {\n                    \"u1\": \"It will all be stale in a week too, but the shops will still be open...\",\n                    \"u2\": \"You can freeze it and it’ll be fine. I always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I'm thinking of making some bread today, but I'm not sure if I should make a whole loaf or just a few slices.",
+          "u2":"You could always make a whole loaf and freeze some of it. It keeps well in the freezer."
+        },
+        {
+          "u1":"True, but I don't want to waste bread if I don't eat it all.",
+          "u2":"You can freeze it and it’ll be fine. I always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year."
+        },
+        {
+          "u1":"That's a good point. Thanks for the tip!",
+          "u2":"You're welcome! It's always handy to have some bread on hand."
+        },
+        {
+          "u1":"It will all be stale in a week too, but the shops will still be open...",
+          "u2":"You can freeze it and it’ll be fine. I always have 3\/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year."
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7078,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"The Brave Little Toaster™",
+    "reply":"That air conditioner, man",
+    "language":"en",
+    "key_1":"49443789131401814",
+    "key_2":"1501027734299054437",
+    "dataset_name":"MultiPICo",
+    "unique_id":"49443789131401814_1501027734299054437",
+    "annotations":{
+      "irony_appropriateness_label":1,
+      "aggregate_irony_label":1,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"161587565098132450",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":19,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"Yes",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenZ",
+          "generation_aggregated":"Old",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"1255672479512845078",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":65,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"Boomer",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"16743853328930660077",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":29,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"13274409370230485799",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":47,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"8760180200553100497",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":42,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Ireland",
+          "country_of_residence":"Ireland",
+          "nationality":"Ireland",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: The Brave Little Toaster™\n        u2: That air conditioner, man\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"The Brave Little Toaster™\",\n            \"u2\": \"That air conditioner, man\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"How's the weather been treating you?\",\n                    \"u2\": \"It's been a scorcher, man. I can't wait for the air conditioner to kick in.\"\n                },\n                {\n                    \"u1\": \"That's tough. Any plans for the weekend?\",\n                    \"u2\": \"Not really. I was thinking of just staying in and getting some work done.\"\n                },\n                {\n                    \"u1\": \"I see. Well, maybe you should treat yourself to something nice. How about that new air conditioner you've been eyeing?\",\n                    \"u2\": \"You're right, man. I think I'll finally pull the trigger and get it.\"\n                },\n                {\n                    \"u1\": \"The Brave Little Toaster™\",\n                    \"u2\": \"That air conditioner, man\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"How's the weather been treating you?",
+          "u2":"It's been a scorcher, man. I can't wait for the air conditioner to kick in."
+        },
+        {
+          "u1":"That's tough. Any plans for the weekend?",
+          "u2":"Not really. I was thinking of just staying in and getting some work done."
+        },
+        {
+          "u1":"I see. Well, maybe you should treat yourself to something nice. How about that new air conditioner you've been eyeing?",
+          "u2":"You're right, man. I think I'll finally pull the trigger and get it."
+        },
+        {
+          "u1":"The Brave Little Toaster™",
+          "u2":"That air conditioner, man"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+      "\"u2\": \"Man, I'm sweating over here!\"\n                },\n                {\n                    \"u1\": \"Not sure what to do about it, man. It's pretty hot in here.\"\n                },\n                {\n                    \"u1\": \"I've heard that air conditioners can really help.\"\n                },\n                {\n                    \"u1\": \"The Brave Little Toaster™\",\n                    \"u2\": \"That air conditioner, man\"\n                }\n            ]\n        }\n        <\/JSON>",
+      "u1: \"Hey, how's it going?\",\n                    \"u2\": \"Not bad, just trying to cool down.\"\n                },\n                {\n                    \"u1\": \"I hear you. It's hot out there.\",\n                    \"u2\": \"Yeah, man. I swear this air conditioner is gonna break any minute.\"\n                },\n                {\n                    \"u1\": \"I feel you. I've been using my little toaster to try and keep things cool.\",\n                    \"u2\": \"That air conditioner, man\"\n                },\n                {\n                    \"u1\": \"The Brave Little Toaster™\",\n                    \"u2\": \"That air conditioner, man\"\n                }\n            ]\n        }\n        <\/JSON>"
+    ],
+    "invalid_inferences":2
+  },
+  {
+    "Index":7089,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"peak capitalism is not being able to immediately tell if it is satire or not",
+    "reply":"Seems pretty obvious to me",
+    "language":"en",
+    "key_1":"57442745360369576",
+    "key_2":"1976420819183543719",
+    "dataset_name":"MultiPICo",
+    "unique_id":"57442745360369576_1976420819183543719",
+    "annotations":{
+      "irony_appropriateness_label":0,
+      "aggregate_irony_label":0,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"4167198063289028593",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":40,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"3541986224620897618",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":57,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"DATA_EXPIRED",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"12977532582335423221",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":20,
+          "gender":"Male",
+          "ethnicity_simplified":"Black",
+          "country_of_birth":"Haiti",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"Yes",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenZ",
+          "generation_aggregated":"Old",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"3814109247260872773",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":48,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"4410496555658861668",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"us",
+          "age":26,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: peak capitalism is not being able to immediately tell if it is satire or not\n        u2: Seems pretty obvious to me\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"peak capitalism is not being able to immediately tell if it is satire or not\",\n            \"u2\": \"Seems pretty obvious to me\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I've been noticing that\",\n                    \"u2\": \"Noticed what?\"\n                },\n                {\n                    \"u1\": \"A lot of things are being shared online without it being clear if they're satire or not\",\n                    \"u2\": \"Yeah, it's a bit confusing\"\n                },\n                {\n                    \"u1\": \"I mean, sometimes it's obvious, but other times it's not\",\n                    \"u2\": \"Well, some people are just trying to be clever\"\n                },\n                {\n                    \"u1\": \"peak capitalism is not being able to immediately tell if it is satire or not\",\n                    \"u2\": \"Seems pretty obvious to me\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I've been noticing that",
+          "u2":"Noticed what?"
+        },
+        {
+          "u1":"A lot of things are being shared online without it being clear if they're satire or not",
+          "u2":"Yeah, it's a bit confusing"
+        },
+        {
+          "u1":"I mean, sometimes it's obvious, but other times it's not",
+          "u2":"Well, some people are just trying to be clever"
+        },
+        {
+          "u1":"peak capitalism is not being able to immediately tell if it is satire or not",
+          "u2":"Seems pretty obvious to me"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  },
+  {
+    "Index":7101,
+    "source":"reddit",
+    "context_type":null,
+    "context":null,
+    "post":"Haha he was talking about this on RHLSTP, without naming the brand.\nEdit: I meant Matt Morgan’s “Funny How?” podcast.",
+    "reply":"Also Matt Morgan's Funny How? \nUnfortunately that podcast doesn't have a fun to shout acronym. \nMMFH!",
+    "language":"en",
+    "key_1":"68868888557561800",
+    "key_2":"837990615954431511",
+    "dataset_name":"MultiPICo",
+    "unique_id":"68868888557561800_837990615954431511",
+    "annotations":{
+      "irony_appropriateness_label":1,
+      "aggregate_irony_label":1,
+      "average_irony_score":null,
+      "sarcasm_appropriateness_label":null,
+      "aggregate_sarcasm_label":null,
+      "average_sarcasm_score":null,
+      "speaker_annotation":null,
+      "observers_annotations":[
+        {
+          "annotator_id":"16607808769003982531",
+          "irony_appropriateness_label":0,
+          "irony_label":0,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"gb",
+          "age":27,
+          "gender":"Male",
+          "ethnicity_simplified":"Black",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"No",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"4370291582408568032",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"gb",
+          "age":46,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United States",
+          "country_of_residence":"United States",
+          "nationality":"United States",
+          "student_status":"No",
+          "employment_status":"DATA_EXPIRED",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"1052913210170879258",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"gb",
+          "age":41,
+          "gender":"Male",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"Australia",
+          "country_of_residence":"Australia",
+          "nationality":"Australia",
+          "student_status":"No",
+          "employment_status":"Full-Time",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        },
+        {
+          "annotator_id":"4121866847976695788",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"gb",
+          "age":39,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Unemployed (and job seeking)",
+          "generation":"GenY",
+          "generation_aggregated":"Young",
+          "employed":"No"
+        },
+        {
+          "annotator_id":"13274409370230485799",
+          "irony_appropriateness_label":1,
+          "irony_label":1,
+          "irony_score":null,
+          "sarcasm_appropriateness_label":null,
+          "sarcasm_label":null,
+          "sarcasm_score":null,
+          "language_variety":"gb",
+          "age":47,
+          "gender":"Female",
+          "ethnicity_simplified":"White",
+          "country_of_birth":"United Kingdom",
+          "country_of_residence":"United Kingdom",
+          "nationality":"United Kingdom",
+          "student_status":"No",
+          "employment_status":"Part-Time",
+          "generation":"GenX",
+          "generation_aggregated":"Young",
+          "employed":"Yes"
+        }
+      ]
+    },
+    "prompt":"\n        Given this pair of messages extracted from social media:\n\n        u1: Haha he was talking about this on RHLSTP, without naming the brand.\nEdit: I meant Matt Morgan’s “Funny How?” podcast.\n        u2: Also Matt Morgan's Funny How? \nUnfortunately that podcast doesn't have a fun to shout acronym. \nMMFH!\n\n        Generate the 3 previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:\n        - Maintain the original writing style of both u1 and u2.\n        - Preserve the sentiment and tone of the conversation.\n        - Keep the dialogue coherent and consistent with the context of the given messages.\n\n        Return ONLY a JSON object with a \"turns\" array containing 4 turns (the 3 previous turns plus the given messages as the last turn). Do not include any other fields.\n\n        Format:\n        <JSON>\n        {\n            \"turns\": [\n            {\n                \"u1\": \"First message from u1\",\n                \"u2\": \"First message from u2\"\n            },\n            {\n                \"u1\": \"Second message from u1\",\n                \"u2\": \"Second message from u2\"\n            },\n            {\n                \"u1\": \"Third message from u1\",\n                \"u2\": \"Third message from u2\"\n            },\n        {\n            \"u1\": \"Haha he was talking about this on RHLSTP, without naming the brand.\nEdit: I meant Matt Morgan’s “Funny How?” podcast.\",\n            \"u2\": \"Also Matt Morgan's Funny How? \nUnfortunately that podcast doesn't have a fun to shout acronym. \nMMFH!\"\n        }\n            ]\n        }\n        <\/JSON>\n\n        Response:\n        <JSON>\n        {\n            \"turns\": [\n                {\n                    \"u1\": \"\n        ",
+    "model_output":"I was wondering if you've listened to any new podcasts lately?\",\n                    \"u2\": \"Not really, I've been too busy with work.\"\n                },\n                {\n                    \"u1\": \"Oh, that's a shame. There's this really funny podcast called 'Funny How?' that I've been enjoying. Have you heard of it?\",\n                    \"u2\": \"No, I haven't. What's it about?\"\n                },\n                {\n                    \"u1\": \"It's hosted by Matt Morgan and it's all about funny stories and anecdotes. You should give it a listen!\",\n                    \"u2\": \"Sounds interesting. I'll check it out sometime.\"\n                },\n                {\n                    \"u1\": \"Haha he was talking about this on RHLSTP, without naming the brand.\nEdit: I meant Matt Morgan’s “Funny How?” podcast.\",\n                    \"u2\": \"Also Matt Morgan's Funny How?\nUnfortunately that podcast doesn't have a fun to shout acronym.\nMMFH!\"\n                }\n            ]\n        }\n        <\/JSON>",
+    "dialogue":{
+      "turns":[
+        {
+          "u1":"I was wondering if you've listened to any new podcasts lately?",
+          "u2":"Not really, I've been too busy with work."
+        },
+        {
+          "u1":"Oh, that's a shame. There's this really funny podcast called 'Funny How?' that I've been enjoying. Have you heard of it?",
+          "u2":"No, I haven't. What's it about?"
+        },
+        {
+          "u1":"It's hosted by Matt Morgan and it's all about funny stories and anecdotes. You should give it a listen!",
+          "u2":"Sounds interesting. I'll check it out sometime."
+        },
+        {
+          "u1":"Haha he was talking about this on RHLSTP, without naming the brand.\nEdit: I meant Matt Morgan’s “Funny How?” podcast.",
+          "u2":"Also Matt Morgan's Funny How?\nUnfortunately that podcast doesn't have a fun to shout acronym.\nMMFH!"
+        }
+      ]
+    },
+    "num_turns_generated":3,
+    "invalid_model_outputs":[
+
+    ],
+    "invalid_inferences":0
+  }
+]

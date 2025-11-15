@@ -24,10 +24,9 @@ DATA_AUGMENTATION_HYPERPARAMS = {
     "max_new_tokens": 1024,
 }
 DATA_AUGMENTATION_MODELS = [
-    'meta-llama/Llama-3.2-3B-Instruct',
-    #'meta-llama/Llama-3.1-8B-Instruct',
-    #'mistralai/Mixtral-8x7B-Instruct-v0.1',
-    #'Qwen/Qwen2.5-7B-Instruct',
+    'meta-llama/Llama-3.1-8B-Instruct',
+    'Qwen/Qwen2.5-7B-Instruct',
+    'mistralai/Ministral-8B-Instruct-2410',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
 

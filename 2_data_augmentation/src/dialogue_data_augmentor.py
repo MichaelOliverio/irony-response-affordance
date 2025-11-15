@@ -81,7 +81,13 @@ class DialogueDataAugmentor:
         - Preserve the sentiment and tone of the conversation.
         - Keep the dialogue coherent and consistent with the context of the given messages.
 
-        Return ONLY a JSON object with a "turns" array containing {num_turns + 1} turns (the {num_turns} previous turns plus the given messages as the last turn). Do not include any other fields.
+        Return ONLY a JSON object containing:
+        - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
+        - Each turn object must have this structure:
+        {{
+            "u1": "<message from u1>",
+            "u2": "<message from u2>"
+        }}
 
         Format:
         <JSON>
@@ -134,7 +140,13 @@ class DialogueDataAugmentor:
         - Preserve the sentiment and tone of the conversation.
         - Keep the dialogue coherent and consistent with the context of the given messages.
 
-        Return ONLY a JSON object with a "turns" array containing {num_turns + 1} turns. Do not include any other fields.
+        Return ONLY a JSON object containing:
+        - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
+        - Each turn object must have this structure:
+        {{
+            "u1": "<message from u1>",
+            "u2": "<message from u2>"
+        }}
 
         Format:
         <JSON>
@@ -179,91 +191,91 @@ class DialogueDataAugmentor:
         dataset_df: pd.DataFrame,
         dataset_name: str,
     ) -> Dict[str, str]:
-       for model_name in DATA_AUGMENTATION_MODELS:
-        print(f"Processing model: {model_name}")
-        pipe, model, tokenizer = LLMHandler.load_model(model_name)
-        print("Model and tokenizer loaded.")
-    
-        for i in range(NUM_MAX_TURNS):
-            num_turn = i + 1
+        for model_name in DATA_AUGMENTATION_MODELS:
+            print(f"Processing model: {model_name}")
+            pipe, model, tokenizer = LLMHandler.load_model(model_name)
+            print("Model and tokenizer loaded.")
+        
+            for i in range(NUM_MAX_TURNS):
+                num_turn = i + 1
 
-            output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_num_gen_turn_{num_turn}.json'
-            output_rows = []
+                output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_num_gen_turn_{num_turn}.json'
+                output_rows = []
 
-            # --- carica dati già esistenti, se presenti ---
-            if os.path.exists(output_file):
-                try:
-                    with open(output_file, 'r', encoding='utf-8') as f:
-                        existing_data = json.load(f)
-                    existing_ids = set([row['unique_id'] for row in existing_data])
-                    print(f"Found {len(existing_ids)} already processed entries in {output_file}")
-                    # aggiungi i dati esistenti a output_rows
-                    output_rows.extend(existing_data)
-                except Exception as e:
-                    print(f"Error loading existing JSON: {e}")
-                    existing_ids = set()
-            else:
-                existing_ids = set()
-
-            # filtra dataset_df per saltare già processati
-            dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)]
-            print(f"{len(dataset_df)} new entries to process")
-
-            for start in tqdm(range(0, len(dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
-                batch_df = dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
-
-                post = batch_df['post'].tolist()
-                #post = [re.sub(r'@USER', '', p) for p in post]
-
-                reply = batch_df['reply'].tolist()
-                #reply = [re.sub(r'@USER', '', r) for r in reply]
-
-                if dataset_name == "CSC":
-                    relation = batch_df['annotations'].apply(lambda x: x['speaker_annotation']['interlocutor_relationship']).tolist()
+                # --- carica dati già esistenti, se presenti ---
+                if os.path.exists(output_file):
+                    try:
+                        with open(output_file, 'r', encoding='utf-8') as f:
+                            existing_data = json.load(f)
+                        existing_ids = set([row['unique_id'] for row in existing_data])
+                        print(f"Found {len(existing_ids)} already processed entries in {output_file}")
+                        # aggiungi i dati esistenti a output_rows
+                        output_rows.extend(existing_data)
+                    except Exception as e:
+                        print(f"Error loading existing JSON: {e}")
+                        existing_ids = set()
                 else:
-                    relation = [None] * len(post)
+                    existing_ids = set()
 
-                turn = list(zip(post, reply, relation))
+                # filtra dataset_df per saltare già processati
+                dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)]
+                print(f"{len(dataset_df)} new entries to process")
 
-                results = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, turn, dataset_name, num_turn)
+                for start in tqdm(range(0, len(dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
+                    batch_df = dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
 
-                cleaned_results = []
-                for i, (prompt, model_output, dialogue) in enumerate(results):
-                    invalid_inferences = 0
-                    invalid_model_outputs = []
-                    print(f"Processing entry {batch_df.iloc[i]['unique_id']}")
-                    while dialogue is None and invalid_inferences < 3:
-                        print(f"Retrying entry {batch_df.iloc[i]['unique_id']} (attempt {invalid_inferences + 1})")
-                        invalid_inferences += 1
-                        invalid_model_outputs.append(model_output)
-                        prompt, model_output, dialogue = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, [turn[i]], dataset_name, num_turn)[0]
-                    print(f"Finished processing entry {batch_df.iloc[i]['unique_id']} with {invalid_inferences} invalid inferences.")
+                    post = batch_df['post'].tolist()
+                    #post = [re.sub(r'@USER', '', p) for p in post]
 
-                    if invalid_inferences >= 3:
-                        print(f"Warning: Max retries reached for entry {batch_df.iloc[i]['unique_id']}. Saving last output anyway.")
-                        dialogue = {"error": "Max retries reached"}
-                        model_output = {"error": "Max retries reached"}
+                    reply = batch_df['reply'].tolist()
+                    #reply = [re.sub(r'@USER', '', r) for r in reply]
 
-                    cleaned_results.append((prompt, model_output, dialogue, num_turn, invalid_inferences, invalid_model_outputs))
+                    if dataset_name == "CSC":
+                        relation = batch_df['annotations'].apply(lambda x: x['speaker_annotation']['interlocutor_relationship']).tolist()
+                    else:
+                        relation = [None] * len(post)
 
-                for row, (prompt, model_output, dialogue, num_turns_generated, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
-                    enriched = row._asdict()  # Nota: _asdict() con underscore per pandas named tuples
-                    enriched['prompt'] = prompt
-                    enriched['model_output'] = model_output
-                    enriched['dialogue'] = dialogue
-                    enriched['num_turns_generated'] = num_turns_generated
-                    enriched['invalid_model_outputs'] = invalid_model_outputs
-                    enriched['invalid_inferences'] = invalid_inferences
-                    output_rows.append(enriched)
+                    turn = list(zip(post, reply, relation))
 
-                # salva ad ogni batch
-                pd.DataFrame(output_rows).to_json(
-                    output_file,
-                    orient='records',
-                    indent=2,
-                    force_ascii=False
-                )
-                print(f"✔ Batch {start//DATA_AUGMENTATION_HYPERPARAMS['batch_size'] + 1} salvato → {output_file}")
+                    results = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, turn, dataset_name, num_turn)
+
+                    cleaned_results = []
+                    for i, (prompt, model_output, dialogue) in enumerate(results):
+                        invalid_inferences = 0
+                        invalid_model_outputs = []
+                        print(f"Processing entry {batch_df.iloc[i]['unique_id']}")
+                        while dialogue is None and invalid_inferences < DATA_AUGMENTATION_HYPERPARAMS['max_retries']:
+                            print(f"Retrying entry {batch_df.iloc[i]['unique_id']} (attempt {invalid_inferences + 1})")
+                            invalid_inferences += 1
+                            invalid_model_outputs.append(model_output)
+                            prompt, model_output, dialogue = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, [turn[i]], dataset_name, num_turn)[0]
+                        print(f"Finished processing entry {batch_df.iloc[i]['unique_id']} with {invalid_inferences} invalid inferences.")
+
+                        if invalid_inferences >= DATA_AUGMENTATION_HYPERPARAMS['max_retries']:
+                            print(f"Warning: Max retries reached for entry {batch_df.iloc[i]['unique_id']}. Saving last output anyway.")
+                            dialogue = {"error": "Max retries reached"}
+                            model_output = {"error": "Max retries reached"}
+
+                        cleaned_results.append((prompt, model_output, dialogue, num_turn, invalid_inferences, invalid_model_outputs))
+
+                    for row, (prompt, model_output, dialogue, num_turns_generated, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
+                        enriched = row._asdict()  # Nota: _asdict() con underscore per pandas named tuples
+                        enriched['prompt'] = prompt
+                        enriched['model_output'] = model_output
+                        enriched['dialogue'] = dialogue
+                        enriched['num_turns_generated'] = num_turns_generated
+                        enriched['invalid_model_outputs'] = invalid_model_outputs
+                        enriched['invalid_inferences'] = invalid_inferences
+                        output_rows.append(enriched)
+
+                    # salva ad ogni batch
+                    pd.DataFrame(output_rows).to_json(
+                        output_file,
+                        orient='records',
+                        indent=2,
+                        force_ascii=False
+                    )
+                    print(f"✔ Batch {start//DATA_AUGMENTATION_HYPERPARAMS['batch_size'] + 1} salvato → {output_file}")
 
             LLMHandler.destroy_model(model, tokenizer)
             print("Model and tokenizer destroyed.")
