@@ -4,7 +4,8 @@ my_notes/*
 1_datasets_merge/output/unified_corpus.json
 1_datasets_merge/notes/*
 2_data_augmentation/src/__pycache__/*
-2_data_augmentation/notes/*
+2_data_augmentation/prompt/*
 2_data_augmentation/code_test/*
-3_appropriateness/notes/*
-3_appropriatness/models/*
+3_appropriateness/prompt/*
+3_appropriateness/models/*
+3_appropriateness/code_test/*
