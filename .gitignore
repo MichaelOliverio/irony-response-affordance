@@ -7,3 +7,4 @@ my_notes/*
 3_appropriateness/notes/*
 2_data_augmentation/src/__pycache__/*
 3_appropriatness/models/*
+2_data_augmentation/test/*

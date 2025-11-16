@@ -1581,7 +1581,24 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1": "Same tweet reverse lo oka ammayi veste, Appudu em cheyaali?",
+          "u2":"Go girl anali"
+        },
+        {
+          "u1":"Oka ammayi veste lo reverse cheyaledu, Appudu em cheyaali?",
+          "u2":"Nenu kooda cheyaledu, go girl"
+        },
+        {
+          "u1":"Oka ammayi veste lo reverse cheyaledu, Appudu em cheyaali?",
+          "u2":"Nenu kooda cheyaledu, go girl"
+        },
+        {
+          "u1":"@USER Same tweet reverse lo oka ammayi veste, Appudu em cheyaali?",
+          "u2":"@USER  @USER Go girl anali"
+        }
+      ]
     },
     "num_turns_generated":3,
     "invalid_model_outputs":[

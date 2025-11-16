@@ -10,6 +10,11 @@ import json5
 class JSONParser:
     """Classe per estrarre e parsare JSON dalle risposte dei modelli LLM."""
 
+    """
+    TODO: "turns": [{"u1": --> se qualcosa di questo è già presente allora non va reinserito
+    TODO: se viene fatto un unico dizionario con chiavi ripetute (u1, u2) allora va splittato in più dizionari
+    """
+
     @staticmethod
     def extract_json_tag_content(text: str) -> Optional[str]:
         """Estrae il contenuto tra tag <JSON>...</JSON>"""
