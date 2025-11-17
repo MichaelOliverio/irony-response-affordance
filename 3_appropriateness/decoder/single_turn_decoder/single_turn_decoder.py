@@ -23,7 +23,7 @@ MODELS = [
     'Qwen/Qwen2.5-3B-Instruct',
 ]
 
-BATCH_SIZE = 1
+BATCH_SIZE = 8
 
 def load_model(model_name: str):
     model = AutoModelForCausalLM.from_pretrained(
@@ -133,21 +133,14 @@ def clean_output(text: str, output_type: str) -> Optional[str]:
         raise ValueError("Invalid output_type. Must be 'answer' or 'reasoning'.")
 
 
-def generate_batch_output(pipe, tokenizer, input_text_list, temperature: float = 0.1):
+def generate_batch_output(pipe, tokenizer, input_text_list, temperature: float = 0.5):
     """
     input_text_list: lista di frasi
     ritorna: lista di dict con prompt, model_output, reasoning, answer
     """
     prompts = []
     for text in input_text_list:
-        prompts.append(f"""        
-        Classify whether the use of irony in the response to the user utterance between the tag <USER_UTTERANCE>...</USER_UTTERANCE> is appropriate. Output must be 0 (inappropriate) or 1 (appropriate).
-
-        reason step by step, and then provide your final answer between the tags <ANSWER></ANSWER>.
-        Provide your reasoning between the tags <REASONING></REASONING>.
-
-        <USER_UTTERANCE>{text}</USER_UTTERANCE>
-        <REASONING>
+        prompts.append(f"""
         You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>. Determine whether it is appropriate for u2 to respond ironically to u1’s last message. 
         Output must be 0 (inappropriate) or 1 (appropriate).
 
@@ -169,12 +162,12 @@ def generate_batch_output(pipe, tokenizer, input_text_list, temperature: float =
     )
 
     results = []
-    for prompt, out in zip(prompts, outputs):
+    for text, prompt, out in zip(input_text_list, prompts, outputs):
         entry = out[0]
         model_output = entry['generated_text'].strip()
         reasoning = clean_output(f"<REASONING>{model_output}", "reasoning")
         answer = clean_output(model_output, "answer")
-        results.append((prompt, model_output, reasoning, answer))
+        results.append((text, prompt, model_output, reasoning, answer))
 
     return results
 
@@ -216,12 +209,14 @@ def calculate_aggregated_baseline(dataset_df: pd.DataFrame):
             results = generate_batch_output(pipe, tokenizer, posts)
 
             cleaned_results = []
-            for prompt, model_output, reasoning, answer in results:
+            for text, prompt, model_output, reasoning, answer in results:
                 invalid_inferences = 0
+                invalid_model_outputs = []
                 while answer not in ['0', '1']:
                     invalid_inferences += 1
-                    prompt, model_output, reasoning, answer = generate_batch_output(pipe, tokenizer, [prompt])[0]
-                cleaned_results.append((prompt, model_output, reasoning, answer, invalid_inferences))
+                    invalid_model_outputs.append(model_output)
+                    text, prompt, model_output, reasoning, answer = generate_batch_output(pipe, tokenizer, [text])[0]
+                cleaned_results.append((prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs))
 
             for row, (prompt, model_output, reasoning, answer, invalid_inferences) in zip(batch_df.itertuples(), cleaned_results):
                 dict_row = row._asdict()
@@ -232,7 +227,8 @@ def calculate_aggregated_baseline(dataset_df: pd.DataFrame):
                     'prompt': prompt,
                     'model_output': model_output,
                     'model_reasoning': reasoning,
-                    'invalid_inferences': invalid_inferences
+                    'invalid_inferences': invalid_inferences,
+                    'invalid_model_outputs': invalid_model_outputs
                 }
                 output_rows.append(enriched)
 
@@ -314,7 +310,7 @@ def load_dataset(file_path, language='en', dataset_name='MultiPICo', limit=None)
         raise e
 
 def main():
-    data_path = "../../../../1_datasets_merge/output/unified_corpus.json"
+    data_path = "../../../1_datasets_merge/output/unified_corpus.json"
 
     # Carica e filtra il dataset
     dataset_splits = load_dataset(
