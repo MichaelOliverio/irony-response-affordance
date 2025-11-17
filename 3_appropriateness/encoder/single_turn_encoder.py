@@ -196,9 +196,12 @@ class CustomTrainer(Trainer):
         logits = outputs.get("logits")
 
         # Focal Loss Perseval
-        loss_fct = torch.nn.CrossEntropyLoss(weight=torch.tensor(self.class_weights)).to("cuda")
-        BCEloss = loss_fct(logits.view(-1, model.config.num_labels), labels.view(-1))
-        pt = torch.exp(-BCEloss)  # prevents nans when probability
+        loss_fct = torch.nn.CrossEntropyLoss(
+            weight=torch.tensor(self.class_weights)
+        ).to(logits.device)
+
+        BCEloss = loss_fct(logits.view(-1, num_labels), labels.view(-1))
+        pt = torch.exp(-BCEloss)
         loss = alpha * (1 - pt) ** gamma * BCEloss
 
         return (loss, outputs) if return_outputs else loss
