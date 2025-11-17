@@ -196,6 +196,13 @@ class CustomTrainer(Trainer):
         logits = outputs.get("logits")
 
         # Focal Loss Perseval
+        # -----------------------------
+        # FIX: gestiamo DataParallel
+        # -----------------------------
+        real_model = model.module if hasattr(model, "module") else model
+        num_labels = real_model.config.num_labels
+        # -----------------------------
+
         loss_fct = torch.nn.CrossEntropyLoss(
             weight=torch.tensor(self.class_weights)
         ).to(logits.device)
