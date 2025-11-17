@@ -279,7 +279,7 @@ def load_dataset(file_path, language='en', dataset_name='MultiPICo', limit=None)
         raise e
 
 def main():
-    data_path = "../../1_datasets_merge/output/unified_corpus.json"
+    data_path = "../../../../1_datasets_merge/output/unified_corpus.json"
 
     # Carica e filtra il dataset
     dataset_splits = load_dataset(

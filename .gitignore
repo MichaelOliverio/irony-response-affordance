@@ -15,3 +15,4 @@ my_notes/*
 2_data_augmentation/start.sh
 3_appropriateness/decoder/start.sh
 3_appropriateness/encoder/start.sh
+3_appropriateness/encoder/single_turn_encoder/models/*
