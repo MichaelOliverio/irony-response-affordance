@@ -12,3 +12,6 @@ my_notes/*
 3_appropriateness/src/__pycache__/*
 3_appropriateness/code_test/*
 3_appropriateness/code_test/models/*
+2_data_augmentation/start.sh
+3_appropriateness/decoder/start.sh
+3_appropriateness/encoder/start.sh
