@@ -9,10 +9,11 @@ OUTPUT_DIR = PROJECT_ROOT / "3_appropriateness" / "output"
 
 DECODER_PARAMS = {
     'models': [
-        'meta-llama/Llama-3.2-3B-Instruct',
-        #'Qwen/Qwen2.5-3B-Instruct',
+        'meta-llama/Llama-3.1-8B-Instruct',
+        'Qwen/Qwen2.5-7B-Instruct',
+        'mistralai/Ministral-8B-Instruct-2410',
     ],
-    'max_new_tokens': 256,
+    'max_new_tokens': 512,
     'temperature': 0.5,
-    'batch_size': 1,
+    'batch_size': 8,
 }
