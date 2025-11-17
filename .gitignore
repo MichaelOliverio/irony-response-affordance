@@ -8,5 +8,7 @@ my_notes/*
 2_data_augmentation/code_test/*
 3_appropriateness/prompt/*
 3_appropriateness/models/*
-3_appropriateness/code_test/*
+3_appropriateness/code_test1/*
 3_appropriateness/src/__pycache__/*
+3_appropriateness/code_test/*
+3_appropriateness/code_test/models/*
