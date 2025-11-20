@@ -96,7 +96,7 @@ class DecoderCoTClassifier:
 
         outputs = pipe(
             prompts,
-            max_new_tokens=200,
+            max_new_tokens=DECODER_PARAMS['max_new_tokens'],
             do_sample=DECODER_PARAMS['temperature'] > 0,
             temperature=DECODER_PARAMS['temperature'],
             return_full_text=False,

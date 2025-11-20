@@ -19,8 +19,8 @@ hf_token = os.getenv("HF_TOKEN")
 login(token=hf_token)
 
 MODELS = [
-    #'meta-llama/Llama-3.2-3B-Instruct',
-    'Qwen/Qwen2.5-3B-Instruct',
+    'meta-llama/Llama-3.1-8B-Instruct',
+    'mistralai/Ministral-8B-Instruct-2410',
 ]
 
 BATCH_SIZE = 8
@@ -218,7 +218,7 @@ def calculate_aggregated_baseline(dataset_df: pd.DataFrame):
                     text, prompt, model_output, reasoning, answer = generate_batch_output(pipe, tokenizer, [text])[0]
                 cleaned_results.append((prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs))
 
-            for row, (prompt, model_output, reasoning, answer, invalid_inferences) in zip(batch_df.itertuples(), cleaned_results):
+            for row, (prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
                 dict_row = row._asdict()
                 enriched = {
                     'unique_id': dict_row['unique_id'],

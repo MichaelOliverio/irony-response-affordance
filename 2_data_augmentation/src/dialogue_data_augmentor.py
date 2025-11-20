@@ -33,7 +33,12 @@ class DialogueDataAugmentor:
             Lista di tuple (prompt, model_output, dialogue_dict)
         """
         prompts = []
+        posts = []
+        replies = []
         for post, reply, relation in turns:
+            posts.append(post)
+            replies.append(reply)
+            
             if dataset_name == "MultiPICo":
                 prompt = DialogueDataAugmentor.multipico_prompt(post, reply, num_turns)
             elif dataset_name == "CSC":
@@ -56,6 +61,7 @@ class DialogueDataAugmentor:
         )
 
         results = []
+        i = 0
         for prompt, out in zip(prompts, outputs):
             entry = out[0]
             model_output = entry['generated_text'].strip()
@@ -63,12 +69,12 @@ class DialogueDataAugmentor:
             # Ricostruisce l'output completo aggiungendo il prefisso iniziale
             initial_output = """<JSON>{"turns": [{"u1":\""""
             if dataset_name == "MultiPICo":
-                dialogue = JSONParser.multipico_parse(f"{initial_output}{model_output}", num_turns, post, reply)
+                dialogue = JSONParser.multipico_parse(f"{initial_output}{model_output}", num_turns, posts[i], replies[i])
             elif dataset_name == "CSC":
-                dialogue = JSONParser.csc_parse(f"{initial_output}{model_output}", num_turns, reply)
+                dialogue = JSONParser.csc_parse(f"{initial_output}{model_output}", num_turns, replies[i])
             
             results.append((prompt, model_output, dialogue))
-
+            i += 1
         return results
     
     @staticmethod

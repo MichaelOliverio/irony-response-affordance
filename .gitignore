@@ -16,3 +16,4 @@ my_notes/*
 3_appropriateness/decoder/start.sh
 3_appropriateness/encoder/start.sh
 3_appropriateness/encoder/single_turn_encoder/models/*
+3_appropriateness/decoder/single_turn_decoder/start.sh
