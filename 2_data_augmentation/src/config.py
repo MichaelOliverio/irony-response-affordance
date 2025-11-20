@@ -21,13 +21,13 @@ DATA_AUGMENTATION_HYPERPARAMS = {
     "batch_size": 8,
     "max_retries": 3,
     "temperature": 0.5,
-    "max_new_tokens": 1024,
+    "max_new_tokens": 512,
 }
 DATA_AUGMENTATION_MODELS = [
-    'meta-llama/Llama-3.2-3B-Instruct',
+    #'meta-llama/Llama-3.2-3B-Instruct',
     #'meta-llama/Llama-3.1-8B-Instruct',
     #'Qwen/Qwen2.5-7B-Instruct',
-    #'mistralai/Ministral-8B-Instruct-2410',
+    'mistralai/Ministral-8B-Instruct-2410',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
 
@@ -39,4 +39,4 @@ PROMPT_MAPPING = {
     5: "Fifth"
 }
 
-NUM_MAX_TURNS = 3
+NUM_MAX_TURNS = 1
