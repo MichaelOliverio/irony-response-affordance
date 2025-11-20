@@ -19,8 +19,9 @@ def parse_filename(filename):
 def main():
     folder_path = AUGMENTEND_CORPUS_PATH
 
-
+    print(f"Processing files in: {folder_path}")
     for file_path in folder_path.glob("*.json"):
+        print(f"\nProcessing file: {file_path.name}")
         parsed = parse_filename(file_path.name)
         if not parsed:
             print(f"Filename {file_path.name} does not match the expected pattern.")

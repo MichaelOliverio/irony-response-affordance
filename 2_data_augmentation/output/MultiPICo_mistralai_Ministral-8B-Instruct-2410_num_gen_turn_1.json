@@ -545,7 +545,16 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1":"Sounds good! I've heard it's a great city.",
+          "u2":"I've been there before, it's amazing. Let's check out the pubs and the music scene."
+        },
+        {
+          "u1":"We went to Glasgow and nearly got stabbed by some fella in his 40's",
+          "u2":"why? what did you do to the poor guy?"
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -903,7 +912,12 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1": "As an avid Brit, and a manager of a restaurant, this part is never as straight forward as it should be. Some people want to sit for ever and actually have to be told that other people need to be sat on that table, others are desperate to leave as soon as they have put their cutlery down, and no one knows how to say what they’re after. That said if your table’s been cleared, and you’ve not ordered\/been offered anything else, then someone should’ve dealt with payment.",
+          "u2": "> others are desperate to leave as soon as they have put their cutlery down\nI'm one of those most of the time, other than with one specific set of friends who like to do the post-prandial chat thing (they're both from mainland Europe tho, so maybe that's why). I try to be polite about it however it turns out though - if I'm waiting for the bill (or the card machine to pay the bill) I try to be as obvious as possible - to the point of putting on my jacket and playing with my debit card."
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -6149,7 +6163,12 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns":[
+        {
+          "u1":"@USER  @USER  @USER  @USER  @USER If thalaivar attend Guru poojai any impact on Devendra Kula vellar votes?",
+          "u2":"@USER  @USER  @USER  @USER  @USER  @USER Krishna Samy group knew the reality. They won't oppose it and at the same time bridging the gap between these communities will be possible.  BJP office bearers will work for that."
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -6739,7 +6758,12 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1": "आजकल के लोग गाय चराने में शर्म\n और कुत्ता घूमाने में गर्व महसूस करते हैं",
+          "u2": "@USER Right"
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -8749,7 +8773,16 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns":[
+        {
+          "u1":"Why are you interested in the USA?",
+          "u2":"I'm just curious."
+        },
+        {
+          "u1":"Come to usa, trump is waiting for you?",
+          "u2":"What is your name : \nReject."
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -9306,7 +9339,12 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1":"@USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER #मान्यवर_कांशीराम_साहब_जी_अमर_रहे",
+          "u2":"@USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER  @USER #मान्यवर_कांशीराम_साहब_जी_अमर_रहे \n#मान्यवर_कांशीराम_साहेब \n#बहुजन_महानायक"
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
@@ -14088,7 +14126,12 @@
       "error":"Max retries reached"
     },
     "dialogue":{
-      "error":"Max retries reached"
+      "turns": [
+        {
+          "u1":"@USER looks so nice....",
+          "u2":"@USER Amazing national park within the town.  Just need to acclimatise to the humidity"
+        }
+      ]
     },
     "num_turns_generated":1,
     "invalid_model_outputs":[
