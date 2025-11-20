@@ -6,7 +6,7 @@ import json
 import json5
 from tqdm import tqdm
 
-from src.config import DECODER_PARAMS, OUTPUT_DIR
+from src.config import DECODER_PARAMS, DECODER_MULTITURN_OUTPUT_DIR
 from src.llm_handler import LLMHandler
 
 class DecoderCoTClassifier:
@@ -121,7 +121,7 @@ class DecoderCoTClassifier:
             pipe, model, tokenizer = LLMHandler.load_model(model_name)
             print("Model and tokenizer loaded.")
 
-            output_file = OUTPUT_DIR / f'cot_{model_name.replace("/", "_")}_{dataset}_num_gen_turn_{added_turn}_by_{augmenter_model_name}.json'
+            output_file = DECODER_MULTITURN_OUTPUT_DIR / f'cot_{model_name.replace("/", "_")}_{dataset}_n_turn_{added_turn}_by_{augmenter_model_name}.json'
             output_rows = []
 
             # --- carica dati già esistenti, se presenti ---

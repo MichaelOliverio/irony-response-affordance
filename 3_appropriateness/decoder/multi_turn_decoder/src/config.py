@@ -5,7 +5,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent.parent
 DATA_AUGMENTATION_DIR = PROJECT_ROOT / "2_data_augmentation"
 AUGMENTEND_CORPUS_PATH = DATA_AUGMENTATION_DIR / "output"
-OUTPUT_DIR = PROJECT_ROOT / "3_appropriateness" / "output"
+DECODER_MULTITURN_OUTPUT_DIR = PROJECT_ROOT / "3_appropriateness" / "decoder" / "multi_turn_decoder" / "output"
 
 DECODER_PARAMS = {
     'models': [

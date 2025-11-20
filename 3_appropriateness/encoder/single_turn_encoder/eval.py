@@ -34,19 +34,22 @@ def main():
         precision = precision_metric.compute(
             predictions=df["predicted_label"], 
             references=df["label"], 
-            average="weighted"
+            pos_label=1,
+            average="binary"
         )["precision"]
         
         recall = recall_metric.compute(
             predictions=df["predicted_label"], 
             references=df["label"], 
-            average="weighted"
+            pos_label=1,
+            average="binary"
         )["recall"]
         
         f1 = f1_metric.compute(
             predictions=df["predicted_label"], 
             references=df["label"], 
-            average="weighted"
+            pos_label=1,
+            average="binary"
         )["f1"]
         
         # Stampa i risultati

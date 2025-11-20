@@ -7,7 +7,7 @@ output_dir = Path("output")
 json_files = list(output_dir.glob("*.json"))
 
 # Regex per estrarre modello e numero turning dal nome del file
-file_pattern = re.compile(r"MultiPICo_(.+)_num_gen_turn_(\d+)\.json")
+file_pattern = re.compile(r"MultiPICo_(.+)_n_turn_(\d+)\.json")
 
 # Dizionario: key = (model, num_turns), value = lista dei record
 grouped = {}

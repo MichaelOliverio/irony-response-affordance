@@ -208,7 +208,7 @@ class DialogueDataAugmentor:
             for i in range(NUM_MAX_TURNS):
                 num_turn = i + 1
 
-                output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_num_gen_turn_{num_turn}.json'
+                output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_n_turn_{num_turn}.json'
                 output_rows = []
 
                 # --- carica dati già esistenti, se presenti ---

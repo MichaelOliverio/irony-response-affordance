@@ -7,7 +7,7 @@ from src.decoder_cot_classifier import DecoderCoTClassifier
 
 def parse_filename(filename):
     pattern = re.compile(
-        r'^(?P<dataset>[^_]+)_(?P<model>.+?)_num_gen_turn_(?P<turn>\d+)\.json$'
+        r'^(?P<dataset>[^_]+)_(?P<model>.+?)_n_turn_(?P<turn>\d+)\.json$'
     )
     
     match = pattern.match(filename)
