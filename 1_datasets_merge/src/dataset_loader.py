@@ -159,6 +159,141 @@ class DatasetLoader:
             json.dump(sample_data, f, indent=2, ensure_ascii=False)
         self.logger.info(f"Saved 10-entry sample to: {sample_json_path}")
 
-        # TODO: compute statistics on the unified corpus with annotations
+        # Create CSV version with expanded annotations
+        self._create_csv_with_expanded_annotations(all_data, output_dir)
+        
+        # Create benchmark datasets
+        self._create_benchmark_datasets(all_data, output_dir)
         
         return all_data
+    
+    def _create_csv_with_expanded_annotations(self, data: List[Dict[str, Any]], output_dir: Path) -> None:
+        """
+        Create CSV version of the unified corpus with expanded annotation columns
+        
+        Args:
+            data: Unified corpus data
+            output_dir: Output directory path
+        """
+        self.logger.info("Creating CSV with expanded annotations...")
+        
+        # Convert to DataFrame
+        df = pd.DataFrame(data)
+        
+        # Expand the annotations dictionary into separate columns
+        annotations_df = pd.json_normalize(df['annotations'])
+        annotations_df.columns = ['annotations.' + col for col in annotations_df.columns]
+        
+        # Concatenate with the original dataframe
+        df_expanded = pd.concat([df.drop('annotations', axis=1), annotations_df], axis=1)
+        
+        # Save as CSV
+        csv_path = output_dir / 'unified_corpus.csv'
+        df_expanded.to_csv(csv_path, index=False, encoding='utf-8')
+        self.logger.info(f"Saved CSV with expanded annotations to: {csv_path}")
+    
+    def _create_benchmark_datasets(self, data: List[Dict[str, Any]], output_dir: Path) -> None:
+        """
+        Create benchmark datasets for MultiPICo and CSC
+        
+        Args:
+            data: Unified corpus data
+            output_dir: Output directory path
+        """
+        self.logger.info("Creating benchmark datasets...")
+        
+        # Convert to DataFrame with expanded annotations
+        df = pd.DataFrame(data)
+        annotations_df = pd.json_normalize(df['annotations'])
+        annotations_df.columns = ['annotations.' + col for col in annotations_df.columns]
+        df_expanded = pd.concat([df.drop('annotations', axis=1), annotations_df], axis=1)
+        
+        # Create MultiPICo benchmark
+        self._create_multipico_benchmark(df_expanded, output_dir)
+        
+        # Create CSC benchmark
+        self._create_csc_benchmark(df_expanded, output_dir)
+    
+    def _create_multipico_benchmark(self, df: pd.DataFrame, output_dir: Path) -> None:
+        """
+        Create MultiPICo benchmark: 500 ironical + 500 non-ironical English samples
+        
+        Args:
+            df: DataFrame with expanded annotations
+            output_dir: Output directory path
+        """
+        self.logger.info("Creating MultiPICo benchmark...")
+        
+        # Filter MultiPICo English data
+        df_multipico = df[(df['dataset_name'] == 'MultiPICo') & (df['language'] == 'en')]
+        self.logger.info(f"Found {len(df_multipico)} MultiPICo English entries")
+        
+        if len(df_multipico) == 0:
+            self.logger.warning("No MultiPICo English data found, skipping benchmark creation")
+            return
+        
+        # Sample 500 ironical and 500 non-ironical (or as many as available)
+        df_ironical = df_multipico[df_multipico['annotations.irony_appropriateness_label'] == 1]
+        df_non_ironical = df_multipico[df_multipico['annotations.irony_appropriateness_label'] == 0]
+        
+        n_ironical = min(500, len(df_ironical))
+        n_non_ironical = min(500, len(df_non_ironical))
+        
+        self.logger.info(f"Sampling {n_ironical} ironical and {n_non_ironical} non-ironical instances")
+        
+        df_ironical_sampled = df_ironical.sample(n=n_ironical, random_state=42) if n_ironical > 0 else pd.DataFrame()
+        df_non_ironical_sampled = df_non_ironical.sample(n=n_non_ironical, random_state=42) if n_non_ironical > 0 else pd.DataFrame()
+        
+        df_sampled = pd.concat([df_ironical_sampled, df_non_ironical_sampled])
+        df_sampled = df_sampled.sample(frac=1, random_state=42).reset_index(drop=True)
+        
+        # Save as CSV and JSON
+        csv_path = output_dir / 'multipico_benchmark.csv'
+        json_path = output_dir / 'multipico_benchmark.json'
+        
+        df_sampled.to_csv(csv_path, index=False, encoding='utf-8')
+        df_sampled.to_json(json_path, orient='records', indent=2, force_ascii=False)
+        
+        self.logger.info(f"Saved MultiPICo benchmark ({len(df_sampled)} entries) to: {csv_path} and {json_path}")
+    
+    def _create_csc_benchmark(self, df: pd.DataFrame, output_dir: Path) -> None:
+        """
+        Create CSC benchmark: 500 sarcastic + 500 non-sarcastic English samples
+        
+        Args:
+            df: DataFrame with expanded annotations
+            output_dir: Output directory path
+        """
+        self.logger.info("Creating CSC benchmark...")
+        
+        # Filter CSC English data
+        df_csc = df[(df['dataset_name'] == 'CSC') & (df['language'] == 'en')]
+        self.logger.info(f"Found {len(df_csc)} CSC English entries")
+        
+        if len(df_csc) == 0:
+            self.logger.warning("No CSC English data found, skipping benchmark creation")
+            return
+        
+        # Sample 500 sarcastic and 500 non-sarcastic (or as many as available)
+        df_sarcastic = df_csc[df_csc['annotations.sarcasm_appropriateness_label'] == 1]
+        df_non_sarcastic = df_csc[df_csc['annotations.sarcasm_appropriateness_label'] == 0]
+        
+        n_sarcastic = min(500, len(df_sarcastic))
+        n_non_sarcastic = min(500, len(df_non_sarcastic))
+        
+        self.logger.info(f"Sampling {n_sarcastic} sarcastic and {n_non_sarcastic} non-sarcastic instances")
+        
+        df_sarcastic_sampled = df_sarcastic.sample(n=n_sarcastic, random_state=42) if n_sarcastic > 0 else pd.DataFrame()
+        df_non_sarcastic_sampled = df_non_sarcastic.sample(n=n_non_sarcastic, random_state=42) if n_non_sarcastic > 0 else pd.DataFrame()
+        
+        df_sampled = pd.concat([df_sarcastic_sampled, df_non_sarcastic_sampled])
+        df_sampled = df_sampled.sample(frac=1, random_state=42).reset_index(drop=True)
+        
+        # Save as CSV and JSON
+        csv_path = output_dir / 'csc_benchmark.csv'
+        json_path = output_dir / 'csc_benchmark.json'
+        
+        df_sampled.to_csv(csv_path, index=False, encoding='utf-8')
+        df_sampled.to_json(json_path, orient='records', indent=2, force_ascii=False)
+        
+        self.logger.info(f"Saved CSC benchmark ({len(df_sampled)} entries) to: {csv_path} and {json_path}")
