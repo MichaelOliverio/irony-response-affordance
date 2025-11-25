@@ -80,7 +80,7 @@ class DialogueDataAugmentor:
     @staticmethod
     def multipico_prompt(post, reply, num_turns) -> str:
         initial_prompt = f"""
-        Given this pair of messages extracted from social media:
+        Given this pair of messages extracted from social media between the users u1 and user u2:
 
         u1: {post}
         u2: {reply}
@@ -89,7 +89,9 @@ class DialogueDataAugmentor:
         - Maintain the original writing style of both u1 and u2.
         - Preserve the sentiment and tone of the conversation.
         - Keep the dialogue coherent and consistent with the context of the given messages.
-
+        - **Do not** change the tone of the conversation, and ensure that the added turns blend well with the exchange between u1 and u2.
+        - **Do not** produce duplicated or defective messages across the turns.
+        
         Return ONLY a JSON object containing:
         - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
         - Each turn object must have this structure:
@@ -148,6 +150,8 @@ class DialogueDataAugmentor:
         - Maintain the original writing style of u2.
         - Preserve the sentiment and tone of the conversation.
         - Keep the dialogue coherent and consistent with the context of the given messages.
+        - **Do not** change the tone of the conversation, and ensure that the added turns blend well with the exchange between u1 and u2.
+        - **Do not** produce duplicated or defective messages across the turns.
 
         Return ONLY a JSON object containing:
         - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
@@ -284,7 +288,7 @@ class DialogueDataAugmentor:
                         indent=2,
                         force_ascii=False
                     )
-                    print(f"✔ Batch {start//DATA_AUGMENTATION_HYPERPARAMS['batch_size'] + 1} salvato → {output_file}")
+                    print(f"Batch {start//DATA_AUGMENTATION_HYPERPARAMS['batch_size'] + 1} salvato → {output_file}")
 
             LLMHandler.destroy_model(model, tokenizer)
             print("Model and tokenizer destroyed.")

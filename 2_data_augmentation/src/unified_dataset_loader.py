@@ -11,7 +11,12 @@ class UnifiedDatasetLoader:
         """
         Carica il dataset dal unified corpus, mantenendo gli unique_id anche negli split.
         """
-        file_path = UNIFIED_CORPUS_PATH
+        if dataset_name == 'MultiPICo':
+            file_path = UNIFIED_CORPUS_PATH / "multipico_benchmark.json"
+        elif dataset_name == 'CSC':
+            file_path = UNIFIED_CORPUS_PATH / "csc_benchmark.json"
+        else:
+            raise ValueError(f"Dataset non supportato: {dataset_name}")
 
         with open(file_path, 'r', encoding='utf-8') as f:
             unified_corpus = json.load(f)

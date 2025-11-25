@@ -10,7 +10,7 @@ DATA_AUGMENTATION_DIR = PROJECT_ROOT / "2_data_augmentation"
 APPROPRIATENESS_DIR = PROJECT_ROOT / "3_appropriatness"
 
 # Path specifici dei file
-UNIFIED_CORPUS_PATH = DATASETS_MERGE_DIR / "output" / "unified_corpus.json"
+UNIFIED_CORPUS_PATH = DATASETS_MERGE_DIR / "output"
 
 # Directory di output
 DATASETS_MERGE_OUTPUT_DIR = DATASETS_MERGE_DIR / "output"
@@ -24,8 +24,9 @@ DATA_AUGMENTATION_HYPERPARAMS = {
     "max_new_tokens": 512,
 }
 DATA_AUGMENTATION_MODELS = [
-    #'meta-llama/Llama-3.1-8B-Instruct',
-    #'Qwen/Qwen2.5-7B-Instruct',
+    #'meta-llama/Llama-3.2-1B-Instruct'
+    'meta-llama/Llama-3.1-8B-Instruct',
+    'Qwen/Qwen2.5-7B-Instruct',
     'mistralai/Ministral-8B-Instruct-2410',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
@@ -38,4 +39,4 @@ PROMPT_MAPPING = {
     5: "Fifth"
 }
 
-NUM_MAX_TURNS = 1
+NUM_MAX_TURNS = 2
