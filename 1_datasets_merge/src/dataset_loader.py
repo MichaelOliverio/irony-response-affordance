@@ -202,24 +202,21 @@ class DatasetLoader:
         """
         self.logger.info("Creating benchmark datasets...")
         
-        # Convert to DataFrame with expanded annotations
+        # Convert to DataFrame (keep nested structure for JSON output)
         df = pd.DataFrame(data)
-        annotations_df = pd.json_normalize(df['annotations'])
-        annotations_df.columns = ['annotations.' + col for col in annotations_df.columns]
-        df_expanded = pd.concat([df.drop('annotations', axis=1), annotations_df], axis=1)
         
         # Create MultiPICo benchmark
-        self._create_multipico_benchmark(df_expanded, output_dir)
+        self._create_multipico_benchmark(df, output_dir)
         
         # Create CSC benchmark
-        self._create_csc_benchmark(df_expanded, output_dir)
+        self._create_csc_benchmark(df, output_dir)
     
     def _create_multipico_benchmark(self, df: pd.DataFrame, output_dir: Path) -> None:
         """
         Create MultiPICo benchmark: 500 ironical + 500 non-ironical English samples
         
         Args:
-            df: DataFrame with expanded annotations
+            df: DataFrame with nested annotations structure
             output_dir: Output directory path
         """
         self.logger.info("Creating MultiPICo benchmark...")
@@ -233,8 +230,9 @@ class DatasetLoader:
             return
         
         # Sample 500 ironical and 500 non-ironical (or as many as available)
-        df_ironical = df_multipico[df_multipico['annotations.irony_appropriateness_label'] == 1]
-        df_non_ironical = df_multipico[df_multipico['annotations.irony_appropriateness_label'] == 0]
+        # Access nested annotation structure
+        df_ironical = df_multipico[df_multipico['annotations'].apply(lambda x: x.get('irony_appropriateness_label') == 1)]
+        df_non_ironical = df_multipico[df_multipico['annotations'].apply(lambda x: x.get('irony_appropriateness_label') == 0)]
         
         n_ironical = min(500, len(df_ironical))
         n_non_ironical = min(500, len(df_non_ironical))
@@ -247,12 +245,16 @@ class DatasetLoader:
         df_sampled = pd.concat([df_ironical_sampled, df_non_ironical_sampled])
         df_sampled = df_sampled.sample(frac=1, random_state=42).reset_index(drop=True)
         
-        # Save as CSV and JSON
-        csv_path = output_dir / 'multipico_benchmark.csv'
+        # Save as JSON with nested structure
         json_path = output_dir / 'multipico_benchmark.json'
-        
-        df_sampled.to_csv(csv_path, index=False, encoding='utf-8')
         df_sampled.to_json(json_path, orient='records', indent=2, force_ascii=False)
+        
+        # Save as CSV with expanded annotations for easier viewing
+        annotations_df = pd.json_normalize(df_sampled['annotations'])
+        annotations_df.columns = ['annotations.' + col for col in annotations_df.columns]
+        df_expanded = pd.concat([df_sampled.drop('annotations', axis=1), annotations_df], axis=1)
+        csv_path = output_dir / 'multipico_benchmark.csv'
+        df_expanded.to_csv(csv_path, index=False, encoding='utf-8')
         
         self.logger.info(f"Saved MultiPICo benchmark ({len(df_sampled)} entries) to: {csv_path} and {json_path}")
     
@@ -261,7 +263,7 @@ class DatasetLoader:
         Create CSC benchmark: 500 sarcastic + 500 non-sarcastic English samples
         
         Args:
-            df: DataFrame with expanded annotations
+            df: DataFrame with nested annotations structure
             output_dir: Output directory path
         """
         self.logger.info("Creating CSC benchmark...")
@@ -275,8 +277,9 @@ class DatasetLoader:
             return
         
         # Sample 500 sarcastic and 500 non-sarcastic (or as many as available)
-        df_sarcastic = df_csc[df_csc['annotations.sarcasm_appropriateness_label'] == 1]
-        df_non_sarcastic = df_csc[df_csc['annotations.sarcasm_appropriateness_label'] == 0]
+        # Access nested annotation structure
+        df_sarcastic = df_csc[df_csc['annotations'].apply(lambda x: x.get('sarcasm_appropriateness_label') == 1)]
+        df_non_sarcastic = df_csc[df_csc['annotations'].apply(lambda x: x.get('sarcasm_appropriateness_label') == 0)]
         
         n_sarcastic = min(500, len(df_sarcastic))
         n_non_sarcastic = min(500, len(df_non_sarcastic))
@@ -289,11 +292,15 @@ class DatasetLoader:
         df_sampled = pd.concat([df_sarcastic_sampled, df_non_sarcastic_sampled])
         df_sampled = df_sampled.sample(frac=1, random_state=42).reset_index(drop=True)
         
-        # Save as CSV and JSON
-        csv_path = output_dir / 'csc_benchmark.csv'
+        # Save as JSON with nested structure
         json_path = output_dir / 'csc_benchmark.json'
-        
-        df_sampled.to_csv(csv_path, index=False, encoding='utf-8')
         df_sampled.to_json(json_path, orient='records', indent=2, force_ascii=False)
+        
+        # Save as CSV with expanded annotations for easier viewing
+        annotations_df = pd.json_normalize(df_sampled['annotations'])
+        annotations_df.columns = ['annotations.' + col for col in annotations_df.columns]
+        df_expanded = pd.concat([df_sampled.drop('annotations', axis=1), annotations_df], axis=1)
+        csv_path = output_dir / 'csc_benchmark.csv'
+        df_expanded.to_csv(csv_path, index=False, encoding='utf-8')
         
         self.logger.info(f"Saved CSC benchmark ({len(df_sampled)} entries) to: {csv_path} and {json_path}")
