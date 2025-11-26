@@ -17,6 +17,9 @@ def main():
         }
     }
 
+    print(f"\n{'='*70}")
+    print(" Starting Data Augmentation Pipeline ")
+    print(f"{'='*70}")
     for dataset_name, params in datasets.items():
         print(f"\n{'='*70}")
         print(f"=== Processing dataset: {dataset_name} ===")
@@ -27,7 +30,7 @@ def main():
         # 1. Caricare il dataset
         print("\n[1/3] Caricamento dataset...")
         df = UnifiedDatasetLoader.load_test_set(dataset_name, 'en') # UnifiedDatasetLoader.load_dataset([dataset_name], languages)
-        df = df.sample(n=50, random_state=42)
+        df = df.sample(n=40, random_state=42)
 
         print(f" Usando {len(df)} righe per testing")
 

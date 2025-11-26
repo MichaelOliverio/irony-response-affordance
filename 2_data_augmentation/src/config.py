@@ -19,14 +19,14 @@ DATASETS_MERGE_LOG_DIR = DATASETS_MERGE_DIR / "log"
 # Data Augmentation Constants
 DATA_AUGMENTATION_HYPERPARAMS = {
     "batch_size": 8,
-    "max_retries": 3,
+    "max_retries": 2,
     "temperature": 0.5,
     "max_new_tokens": 512,
 }
 DATA_AUGMENTATION_MODELS = [
-    #'meta-llama/Llama-3.2-1B-Instruct'
+    #'meta-llama/Llama-3.2-3B-Instruct'
     'meta-llama/Llama-3.1-8B-Instruct',
-    'Qwen/Qwen2.5-7B-Instruct',
+    #'Qwen/Qwen2.5-7B-Instruct',
     'mistralai/Ministral-8B-Instruct-2410',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"

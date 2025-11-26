@@ -213,7 +213,7 @@ class DatasetLoader:
     
     def _create_multipico_benchmark(self, df: pd.DataFrame, output_dir: Path) -> None:
         """
-        Create MultiPICo benchmark: 500 ironical + 500 non-ironical English samples
+        Create MultiPICo benchmark: 1000 ironical + 1000 non-ironical English samples
         
         Args:
             df: DataFrame with nested annotations structure
@@ -229,13 +229,13 @@ class DatasetLoader:
             self.logger.warning("No MultiPICo English data found, skipping benchmark creation")
             return
         
-        # Sample 500 ironical and 500 non-ironical (or as many as available)
+        # Sample 1000 ironical and 1000 non-ironical (or as many as available)
         # Access nested annotation structure
         df_ironical = df_multipico[df_multipico['annotations'].apply(lambda x: x.get('irony_appropriateness_label') == 1)]
         df_non_ironical = df_multipico[df_multipico['annotations'].apply(lambda x: x.get('irony_appropriateness_label') == 0)]
         
-        n_ironical = min(500, len(df_ironical))
-        n_non_ironical = min(500, len(df_non_ironical))
+        n_ironical = min(1000, len(df_ironical))
+        n_non_ironical = min(1000, len(df_non_ironical))
         
         self.logger.info(f"Sampling {n_ironical} ironical and {n_non_ironical} non-ironical instances")
         
@@ -260,7 +260,7 @@ class DatasetLoader:
     
     def _create_csc_benchmark(self, df: pd.DataFrame, output_dir: Path) -> None:
         """
-        Create CSC benchmark: 500 sarcastic + 500 non-sarcastic English samples
+        Create CSC benchmark: 1000 sarcastic + 1000 non-sarcastic English samples
         
         Args:
             df: DataFrame with nested annotations structure
@@ -276,13 +276,13 @@ class DatasetLoader:
             self.logger.warning("No CSC English data found, skipping benchmark creation")
             return
         
-        # Sample 500 sarcastic and 500 non-sarcastic (or as many as available)
+        # Sample 1000 sarcastic and 1000 non-sarcastic (or as many as available)
         # Access nested annotation structure
         df_sarcastic = df_csc[df_csc['annotations'].apply(lambda x: x.get('sarcasm_appropriateness_label') == 1)]
         df_non_sarcastic = df_csc[df_csc['annotations'].apply(lambda x: x.get('sarcasm_appropriateness_label') == 0)]
         
-        n_sarcastic = min(500, len(df_sarcastic))
-        n_non_sarcastic = min(500, len(df_non_sarcastic))
+        n_sarcastic = min(1000, len(df_sarcastic))
+        n_non_sarcastic = min(1000, len(df_non_sarcastic))
         
         self.logger.info(f"Sampling {n_sarcastic} sarcastic and {n_non_sarcastic} non-sarcastic instances")
         

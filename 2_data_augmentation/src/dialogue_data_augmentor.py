@@ -80,27 +80,25 @@ class DialogueDataAugmentor:
     @staticmethod
     def multipico_prompt(post, reply, num_turns) -> str:
         initial_prompt = f"""
-        Given this pair of messages extracted from social media between the users u1 and user u2:
+        You are given the following pair of final messages exchanged on social media between user u1 and user u2:
 
         u1: {post}
         u2: {reply}
 
-        Generate the {num_turns} previous dialogue turns (each turn consisting of a message from u1 and a message from u2) that logically lead up to the given messages. Make sure to:
-        - Maintain the original writing style of both u1 and u2.
-        - Preserve the sentiment and tone of the conversation.
-        - Keep the dialogue coherent and consistent with the context of the given messages.
-        - **Do not** change the tone of the conversation, and ensure that the added turns blend well with the exchange between u1 and u2.
-        - **Do not** produce duplicated or defective messages across the turns.
-        
-        Return ONLY a JSON object containing:
-        - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
-        - Each turn object must have this structure:
-        {{
-            "u1": "<message from u1>",
-            "u2": "<message from u2>"
-        }}
+        Your task is to generate EXACTLY {num_turns} dialogue turns (each turn = one message from u1 and one message from u2) that logically and stylistically lead up to the given final messages.
 
-        Format:
+        STRICT REQUIREMENTS:
+        - You MUST output exactly {num_turns + 1} turns total: the {num_turns} generated turns + the final provided turn.
+        - All generated messages MUST be coherent, consistent, and plausible precursors to the final turn.
+        - Absolutely DO NOT invent or repeat text from the final messages.
+        - DO NOT repeat messages across different turns.
+        - DO NOT output placeholder or generic text such as \"First message from u1\".
+        - DO NOT produce duplicated messages or self-repetitions across any turn.
+        - Preserve the writing style, tone, sentiment, and personality of u1 and u2.
+        - Make the conversation flow naturally towards the final turn.
+        
+        OUTPUT FORMAT (MANDATORY):
+        Return ONLY a JSON object in this exact structure:
         <JSON>
         {{
             "turns": ["""
@@ -126,7 +124,8 @@ class DialogueDataAugmentor:
         }}
         </JSON>
 
-        Response:
+        Produce only valid JSON. No explanations, no comments, no extra text.
+        RESPONSE:
         <JSON>
         {{
             "turns": [
@@ -141,27 +140,30 @@ class DialogueDataAugmentor:
     @staticmethod
     def csc_prompt(context, reply, num_turns, relation) -> str:
         initial_prompt = f"""
-        Given the context and the reply of a user u2 to u1 (whose name is Steve and your relation with him is {relation}):
+        Given the context and the reply of user u2 to user u1 (whose name is Steve and whose relation to u2 is: {relation}):
 
         context: {context}
         u2: {reply}
 
-        Generate the {num_turns} previous dialogue turns (each turn = one message from u1 followed by one from u2) plus the u1 message that directly precedes the final given u2 line. Make sure to:
-        - Maintain the original writing style of u2.
-        - Preserve the sentiment and tone of the conversation.
-        - Keep the dialogue coherent and consistent with the context of the given messages.
-        - **Do not** change the tone of the conversation, and ensure that the added turns blend well with the exchange between u1 and u2.
-        - **Do not** produce duplicated or defective messages across the turns.
+        Your task is to generate EXACTLY {num_turns} preceding dialogue turns (each turn = a message from u1 followed by a message from u2), PLUS the u1 message that directly precedes the final provided u2 reply.
 
-        Return ONLY a JSON object containing:
-        - A "turns" array with exactly {num_turns + 1} turn objects (the {num_turns} previous turns plus the given messages as the last turn)
-        - Each turn object must have this structure:
-        {{
-            "u1": "<message from u1>",
-            "u2": "<message from u2>"
-        }}
+        STRICT REQUIREMENTS:
+        - You MUST output exactly {num_turns + 1} turns total:
+        - {num_turns} generated turns
+        - + 1 final turn consisting of:
+                u1: the message that directly precedes the final given u2 line
+                u2: the provided reply ({reply})
+        - All generated messages MUST be coherent, stylistically consistent, and logically lead to the provided reply.
+        - Absolutely DO NOT invent or repeat any part of the provided reply.
+        - DO NOT output placeholders or generic fillers (e.g., \"First message from u1\").
+        - DO NOT repeat messages across different turns.
+        - DO NOT produce duplicated messages or self-repetitions across any turn.
+        - Preserve the writing style, tone, sentiment, and personality of u2.
+        - Messages from u1 must sound like Steve and must fit the relation: {relation}.
+        - The context must be respected and smoothly woven into the preceding turns.
+        - Output MUST be valid JSON ONLY. No comments, no extra explanations.
 
-        Format:
+        MANDATORY OUTPUT FORMAT:
         <JSON>
         {{
             "turns": ["""
@@ -187,7 +189,8 @@ class DialogueDataAugmentor:
         }}
         </JSON>
 
-        Response:
+        Produce only valid JSON. No explanations, no comments, no extra text.
+        RESPONSE:
         <JSON>
         {{
             "turns": [
