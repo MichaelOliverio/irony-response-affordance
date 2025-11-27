@@ -105,7 +105,8 @@ def convert_to_valid_json(json_str: str) -> Optional[dict]:
         except Exception as e2:
             print(f"Errore anche con json standard: {e2}")
             return None
-def validate_json_content(json_content: dict, num_turns_generated: int, original_post: str, original_reply: str) -> Optional[dict]:
+        
+def validate_json_content(json_content: dict, num_turns_generated: int, original_post: str, original_reply: str, u1_name: str) -> Optional[dict]:
     """
     Valida e normalizza il contenuto JSON estratto.
     
@@ -140,9 +141,9 @@ def validate_json_content(json_content: dict, num_turns_generated: int, original
         turn_messages = []
         
         for key in sorted(turn.keys()):
-            if key.startswith('u1') or key.startswith('u2'):
+            if key.startswith(u1_name) or key.startswith('u2'):
                 # Determina se è u1 o u2
-                speaker = 'u1' if key.startswith('u1') else 'u2'
+                speaker = 'u1' if key.startswith(u1_name) else 'u2'
                 message = turn[key]
                 
                 if isinstance(message, str) and message.strip():
@@ -189,15 +190,24 @@ def validate_json_content(json_content: dict, num_turns_generated: int, original
         if last_u1_idx is not None and last_u2_idx is not None:
             break
     
-    if last_u1_idx is None or last_u2_idx is None:
-        print("Non trovati sia u1 che u2 nei messaggi")
-        return None
-    
-    # Sostituisci i contenuti
-    all_messages[last_u1_idx]['content'] = original_post
-    all_messages[last_u2_idx]['content'] = original_reply
-    
-    print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
+    # Sostituisci i contenuti in base al dataset
+    if original_post is not None:
+        # MultiPICo: sostituisci sia l'ultimo u1 che l'ultimo u2
+        if last_u1_idx is None or last_u2_idx is None:
+            print("Non trovati sia u1 che u2 nei messaggi")
+            return None
+        
+        all_messages[last_u1_idx]['content'] = original_post
+        all_messages[last_u2_idx]['content'] = original_reply
+        print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
+    else:
+        # CSC: sostituisci solo l'ultimo u2
+        if last_u2_idx is None:
+            print("Non trovato u2 nei messaggi")
+            return None
+        
+        all_messages[last_u2_idx]['content'] = original_reply
+        print(f"✅ Sostituito ultimo messaggio u2 (idx={last_u2_idx})")
     
     # Ricostruisci il JSON normalizzato con il formato corretto
     # Formato: un oggetto per ogni coppia (u1, u2)
@@ -319,8 +329,9 @@ def main():
                 validated_json_content = validate_json_content(
                     json_content,
                     num_turns_generated, 
-                    post, 
-                    reply
+                    None, 
+                    reply,
+                    "Steve"
                 )
                 
                 if validated_json_content is not None:

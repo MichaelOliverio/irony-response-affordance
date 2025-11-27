@@ -119,7 +119,7 @@ class JSONParser:
                 return None
 
     @staticmethod
-    def validate_multipico_json_content(json_content: dict, num_turns_generated: int, original_post: str, original_reply: str) -> Optional[dict]:
+    def validate_json_content(json_content: dict, num_turns_generated: int, original_post: str, original_reply: str, u1_name: str) -> Optional[dict]:
         """
         Valida e normalizza il contenuto JSON estratto.
         
@@ -154,9 +154,9 @@ class JSONParser:
             turn_messages = []
             
             for key in sorted(turn.keys()):
-                if key.startswith('u1') or key.startswith('u2'):
+                if key.startswith(u1_name) or key.startswith('u2'):
                     # Determina se è u1 o u2
-                    speaker = 'u1' if key.startswith('u1') else 'u2'
+                    speaker = 'u1' if key.startswith(u1_name) else 'u2'
                     message = turn[key]
                     
                     if isinstance(message, str) and message.strip():
@@ -203,15 +203,24 @@ class JSONParser:
             if last_u1_idx is not None and last_u2_idx is not None:
                 break
         
-        if last_u1_idx is None or last_u2_idx is None:
-            print("Non trovati sia u1 che u2 nei messaggi")
-            return None
-        
-        # Sostituisci i contenuti
-        all_messages[last_u1_idx]['content'] = original_post
-        all_messages[last_u2_idx]['content'] = original_reply
-        
-        print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
+        # Sostituisci i contenuti in base al dataset
+        if original_post is not None:
+            # MultiPICo: sostituisci sia l'ultimo u1 che l'ultimo u2
+            if last_u1_idx is None or last_u2_idx is None:
+                print("Non trovati sia u1 che u2 nei messaggi")
+                return None
+            
+            all_messages[last_u1_idx]['content'] = original_post
+            all_messages[last_u2_idx]['content'] = original_reply
+            print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
+        else:
+            # CSC: sostituisci solo l'ultimo u2
+            if last_u2_idx is None:
+                print("Non trovato u2 nei messaggi")
+                return None
+            
+            all_messages[last_u2_idx]['content'] = original_reply
+            print(f"✅ Sostituito ultimo messaggio u2 (idx={last_u2_idx})")
         
         # Ricostruisci il JSON normalizzato con il formato corretto
         # Formato: un oggetto per ogni coppia (u1, u2)
@@ -270,11 +279,12 @@ class JSONParser:
             return None
         
         # Valida il JSON
-        validated_json_content = JSONParser.validate_multipico_json_content(
+        validated_json_content = JSONParser.validate_json_content(
             json_content,
             num_turns, 
             post, 
-            reply
+            reply,
+            "u1"  # Nome fittizio per u1
         )
 
         return validated_json_content
@@ -302,17 +312,16 @@ class JSONParser:
             return None
         
         # Valida il JSON
-        #validated_json_content = JSONParser.validate_csc_json_content(
-        #    json_content,
-        #    raw_json_content,  # Passa anche la stringa raw!
-        #    num_turns, 
-        #    reply
-        #)
+        validated_json_content = JSONParser.validate_json_content(
+            json_content,
+            num_turns,
+            None, 
+            reply,
+            "Steve"  # Nome fittizio per u1
+        )
 
-        #return validated_json_content
+        return validated_json_content
 
-        return None
-    
     @staticmethod
     def parse(text: str, num_turns: int) -> Optional[Dict[str, Any]]:
         if not text:

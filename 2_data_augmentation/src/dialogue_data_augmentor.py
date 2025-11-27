@@ -67,10 +67,11 @@ class DialogueDataAugmentor:
             model_output = entry['generated_text'].strip()
             
             # Ricostruisce l'output completo aggiungendo il prefisso iniziale
-            initial_output = """<JSON>{"turns": [{"u1":\""""
             if dataset_name == "MultiPICo":
+                initial_output = """<JSON>{"turns": [{"u1":\""""
                 dialogue = JSONParser.multipico_parse(f"{initial_output}{model_output}", num_turns, posts[i], replies[i])
             elif dataset_name == "CSC":
+                initial_output = """<JSON>{"turns": [{"Steve":\""""
                 dialogue = JSONParser.csc_parse(f"{initial_output}{model_output}", num_turns, replies[i])
             
             results.append((prompt, model_output, dialogue))
@@ -140,18 +141,18 @@ class DialogueDataAugmentor:
     @staticmethod
     def csc_prompt(context, reply, num_turns, relation) -> str:
         initial_prompt = f"""
-        Given the context and the reply of user u2 to user u1 (whose name is Steve and whose relation to u2 is: {relation}):
+        Given the context and the reply of user u2 to Steve (whose relation to u2 is: {relation}):
 
         context: {context}
         u2: {reply}
 
-        Your task is to generate EXACTLY {num_turns} preceding dialogue turns (each turn = a message from u1 followed by a message from u2), PLUS the u1 message that directly precedes the final provided u2 reply.
-
+        Your task is to generate EXACTLY {num_turns} preceding dialogue turns (each turn consisting of a message from Steve followed by a message from u2), PLUS the Steve message that directly precedes the final provided u2 reply.
+        
         STRICT REQUIREMENTS:
         - You MUST output exactly {num_turns + 1} turns total:
         - {num_turns} generated turns
         - + 1 final turn consisting of:
-                u1: the message that directly precedes the final given u2 line
+                Steve: the message that directly precedes the final given u2 line
                 u2: the provided reply ({reply})
         - All generated messages MUST be coherent, stylistically consistent, and logically lead to the provided reply.
         - Absolutely DO NOT invent or repeat any part of the provided reply.
@@ -173,14 +174,14 @@ class DialogueDataAugmentor:
         for i in range(num_turns):
             turni_prompt += f"""
             {{
-                "u1": "{PROMPT_MAPPING[i+1]} message from u1",
+                "Steve": "{PROMPT_MAPPING[i+1]} message from Steve",
                 "u2": "{PROMPT_MAPPING[i+1]} message from u2"
             }},"""
             
         # Ultimo turno
         turni_prompt += f"""
         {{
-            "u1": "Message from u1 that precedes the given u2",
+            "Steve": "Message from Steve that precedes the given u2",
             "u2": "{reply}"
         }}"""
 
@@ -195,7 +196,7 @@ class DialogueDataAugmentor:
         {{
             "turns": [
                 {{
-                    "u1": "
+                    "Steve": "
         """
 
         prompt = initial_prompt + turni_prompt + final_prompt
@@ -213,6 +214,8 @@ class DialogueDataAugmentor:
             print("Model and tokenizer loaded.")
         
             for i in range(NUM_MAX_TURNS):
+                print(f"Generating dialogues with {i + 1} turns...\n")
+
                 num_turn = i + 1
 
                 output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_n_turn_{num_turn}.json'
@@ -234,14 +237,16 @@ class DialogueDataAugmentor:
                     existing_ids = set()
 
                 # filtra dataset_df per saltare già processati
-                dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)]
-                print(f"{len(dataset_df)} new entries to process")
+                skew_dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)]
+                print(f"{len(skew_dataset_df)} new entries to process")
 
-                for start in tqdm(range(0, len(dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
-                    batch_df = dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
-
-                    post = batch_df['post'].tolist()
-                    #post = [re.sub(r'@USER', '', p) for p in post]
+                for start in tqdm(range(0, len(skew_dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
+                    batch_df = skew_dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
+                    if dataset_name == "MultiPICo":
+                        post = batch_df['post'].tolist()
+                        #post = [re.sub(r'@USER', '', p) for p in post]
+                    elif dataset_name == "CSC":
+                        post = batch_df['context'].tolist()
 
                     reply = batch_df['reply'].tolist()
                     #reply = [re.sub(r'@USER', '', r) for r in reply]
