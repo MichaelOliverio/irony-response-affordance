@@ -1,0 +1,159 @@
+Torch Version: 2.7.1a0+gite2d141d
+CUDA available: True
+Compiled with CUDA: 12.9
+Note: Environment variable`HF_TOKEN` is set and is the current active token independently from the token you've just configured.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+======================================================================
+ Starting Data Augmentation Pipeline 
+======================================================================
+
+======================================================================
+=== Processing dataset: MultiPICo ===
+======================================================================
+
+[1/3] Caricamento dataset...
+Caricato unified_corpus da: /beegfs/home/moliveri/unito-projects/appropriateness-of-irony/1_datasets_merge/output/multipico_benchmark.json
+  Totale righe: 1882
+  Righe dopo filtro (datasets=['MultiPICo'], languages=['en']): 1882
+    MultiPICo: 1882 righe
+ Usando 40 righe per testing
+
+[2/3] Data augmentation...
+Processing model: meta-llama/Llama-3.1-8B-Instruct
+Autenticazione HuggingFace completata
+Caricamento modello: meta-llama/Llama-3.1-8B-Instruct
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.30it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.29it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.85it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.60it/s]
+Device set to use cuda
+Modello caricato: meta-llama/Llama-3.1-8B-Instruct
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 150 already processed entries in output/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_1.json
+0 new entries to process
+Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 150 already processed entries in output/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2.json
+0 new entries to process
+Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+Processing model: mistralai/Ministral-8B-Instruct-2410
+Caricamento modello: mistralai/Ministral-8B-Instruct-2410
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.29it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.27it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.85it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.58it/s]
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+Device set to use cuda
+Modello caricato: mistralai/Ministral-8B-Instruct-2410
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 150 already processed entries in output/MultiPICo_mistralai_Ministral-8B-Instruct-2410_n_turn_1.json
+0 new entries to process
+Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 150 already processed entries in output/MultiPICo_mistralai_Ministral-8B-Instruct-2410_n_turn_2.json
+0 new entries to process
+Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+Processing model: mistralai/Mistral-Nemo-Instruct-2407
+Caricamento modello: mistralai/Mistral-Nemo-Instruct-2407
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.34it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.32it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.32it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.32it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.33it/s]
+Device set to use cuda
+Modello caricato: mistralai/Mistral-Nemo-Instruct-2407
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 150 already processed entries in output/MultiPICo_mistralai_Mistral-Nemo-Instruct-2407_n_turn_1.json
+0 new entries to process
+Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 150 already processed entries in output/MultiPICo_mistralai_Mistral-Nemo-Instruct-2407_n_turn_2.json
+0 new entries to process
+Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+
+ Data augmentation completata
+
+======================================================================
+=== Processing dataset: CSC ===
+======================================================================
+
+[1/3] Caricamento dataset...
+Caricato unified_corpus da: /beegfs/home/moliveri/unito-projects/appropriateness-of-irony/1_datasets_merge/output/csc_benchmark.json
+  Totale righe: 2000
+  Righe dopo filtro (datasets=['CSC'], languages=['en']): 2000
+    CSC: 2000 righe
+ Usando 40 righe per testing
+
+[2/3] Data augmentation...
+Processing model: meta-llama/Llama-3.1-8B-Instruct
+Caricamento modello: meta-llama/Llama-3.1-8B-Instruct
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.19it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.78it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.51it/s]
+Device set to use cuda
+Modello caricato: meta-llama/Llama-3.1-8B-Instruct
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 150 already processed entries in output/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_1.json
+0 new entries to process
+Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 150 already processed entries in output/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2.json
+0 new entries to process
+Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]Running meta-llama/Llama-3.1-8B-Instruct: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+Processing model: mistralai/Ministral-8B-Instruct-2410
+Caricamento modello: mistralai/Ministral-8B-Instruct-2410
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.28it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:06<00:07,  3.93s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.50s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.58s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.97s/it]
+Device set to use cuda
+Modello caricato: mistralai/Ministral-8B-Instruct-2410
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 150 already processed entries in output/CSC_mistralai_Ministral-8B-Instruct-2410_n_turn_1.json
+0 new entries to process
+Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 136 already processed entries in output/CSC_mistralai_Ministral-8B-Instruct-2410_n_turn_2.json
+0 new entries to process
+Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]Running mistralai/Ministral-8B-Instruct-2410: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+Processing model: mistralai/Mistral-Nemo-Instruct-2407
+Caricamento modello: mistralai/Mistral-Nemo-Instruct-2407
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.32it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.30it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:07<00:06,  3.19s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:08<00:02,  2.24s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:09<00:00,  1.71s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:09<00:00,  1.83s/it]
+Device set to use cuda
+Modello caricato: mistralai/Mistral-Nemo-Instruct-2407
+  Device: GPU (CUDA)
+Model and tokenizer loaded.
+Generating dialogues with 1 turns...
+
+Found 72 already processed entries in output/CSC_mistralai_Mistral-Nemo-Instruct-2407_n_turn_1.json
+0 new entries to process
+Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]
+Generating dialogues with 2 turns...
+
+Found 40 already processed entries in output/CSC_mistralai_Mistral-Nemo-Instruct-2407_n_turn_2.json
+0 new entries to process
+Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]Running mistralai/Mistral-Nemo-Instruct-2407: 0it [00:00, ?it/s]
+Modello distrutto e cache GPU svuotata
+Model and tokenizer destroyed.
+
+ Data augmentation completata
+
+======================================================================
+ Pipeline completata
+======================================================================

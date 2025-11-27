@@ -5,11 +5,11 @@ def main():
     Pipeline completa per data augmentation e valutazione.
     """
     datasets = {
-        #"MultiPICo": {
-        #    "input_type": "single-turn",
-        #    "output_type": "multi-turn",
-        #    "languages": ["en"],
-        #},
+        "MultiPICo": {
+            "input_type": "single-turn",
+            "output_type": "multi-turn",
+            "languages": ["en"],
+        },
         "CSC": {
             "input_type": "contextual",
             "output_type": "multi-turn",

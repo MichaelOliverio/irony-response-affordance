@@ -51,3 +51,8 @@
         - preservare tono/sentiment (da scartare? non oggettivo)
     - usare un prompt unico oppure 1 prompt per ogni criterio?
     - calcolare correlazione con annotazioni umane (pearson)
+
+
+- tempistiche per generare 40 dialoghi
+    - modelli 8b: circa 4 min
+    - mistral-nemo (12b): circa 7 min
