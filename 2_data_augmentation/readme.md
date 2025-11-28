@@ -56,3 +56,9 @@
 - tempistiche per generare 40 dialoghi
     - modelli 8b: circa 4 min
     - mistral-nemo (12b): circa 7 min
+
+
+- record rimossi perchè post e/o reply in lingua errata
+    - 10650700715547896354_15532585713669006029
+    - 10507817198588275973_331640713868913828
+    - 13312514902345445677_9014807427999635218
