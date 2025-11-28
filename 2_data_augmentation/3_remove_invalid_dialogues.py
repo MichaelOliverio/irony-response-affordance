@@ -3,6 +3,13 @@ from pathlib import Path
 from collections import defaultdict
 from typing import Dict, List, Set
 
+# Lista di unique_id da escludere manualmente
+EXCLUDED_IDS = {
+    "10650700715547896354_15532585713669006029",
+    "10507817198588275973_331640713868913828",
+    "13312514902345445677_9014807427999635218"
+}
+
 def load_all_files(directory: Path) -> Dict[str, List[dict]]:
     """
     Carica tutti i file JSON da una directory.
@@ -45,9 +52,10 @@ def find_valid_unique_ids(files_data: Dict[str, List[dict]]) -> Set[str]:
                     id_with_turns[unique_id] += 1
     
     # Un unique_id è valido se in TUTTI i file in cui appare ha 'turns'
+    # e NON è nella lista degli esclusi
     valid_ids = set()
     for unique_id, count in id_total_count.items():
-        if id_with_turns[unique_id] == count:
+        if id_with_turns[unique_id] == count and unique_id not in EXCLUDED_IDS:
             valid_ids.add(unique_id)
     
     return valid_ids
@@ -62,7 +70,7 @@ def filter_and_save_files(directory: Path, files_data: Dict[str, List[dict]], va
         valid_ids: Set di unique_id validi
     """
     # Crea la directory di output
-    output_dir = directory.parent.parent / "cleaned_dialogues" / directory.name
+    output_dir = directory.parent.parent / directory.name
     output_dir.mkdir(parents=True, exist_ok=True)
     
     for filename, dialogues in files_data.items():
@@ -72,8 +80,10 @@ def filter_and_save_files(directory: Path, files_data: Dict[str, List[dict]], va
             if d.get('unique_id') in valid_ids
         ]
         
+        filename_filtered = filename.replace(".json", "_filtered.json")
+
         # Salva il file filtrato
-        output_file = output_dir / filename
+        output_file = output_dir / filename_filtered
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(filtered_dialogues, f, indent=2, ensure_ascii=False)
         
