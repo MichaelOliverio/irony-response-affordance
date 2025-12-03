@@ -113,16 +113,37 @@ class DialogueEvaluator:
             compute_judge: Whether to use LLM judge
             judge_models: List of judge models to use (default: self.JUDGE_MODELS)
         """
-        results = {}
+        # Crea il file di output se non esiste, o carica risultati esistenti
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        if output_file.exists():
+            print(f"Caricamento risultati esistenti da: {output_file}")
+            with open(output_file, 'r', encoding='utf-8') as f:
+                results = json.load(f)
+        else:
+            results = {}
 
-        if "perplexity" in metrics:            
-            perplexity_results = {}
+        if "perplexity" in metrics:
+            if 'perplexity' not in results:
+                results['perplexity'] = {}
+                
             for model_name in self.perplexity_models:
                 print(f"Calculating perplexity for model: {model_name}")
-                perplexity_results[model_name] = []
+                
+                if model_name not in results['perplexity']:
+                    results['perplexity'][model_name] = []
+                
+                # Trova le coppie (unique_id, generation_setting) già processate
+                processed_pairs = {(r['unique_id'], r['generation_setting']) for r in results['perplexity'][model_name]}
+                
                 self.pipe, self.model, self.tokenizer = LLMHandler.load_model(model_name)
 
                 for row in dataset_df.itertuples():
+                    # Skip se già processato
+                    if (row.unique_id, row.generation_setting) in processed_pairs:
+                        print(f"⏭ Skipping already processed dialogue ID: {row.unique_id} with setting: {row.generation_setting}")
+                        continue
+                        
                     print(f"Calculating perplexity for dialogue ID: {row.unique_id}")
                     turns = row.dialogue['turns']
                     ppl_metrics = self._calculate_dialogue_perplexity(model_name, turns)
@@ -130,16 +151,18 @@ class DialogueEvaluator:
                     result = {
                         'unique_id': row.unique_id,
                         'dataset_name': row.dataset_name,
+                        'generation_setting': row.generation_setting,
                         'dialogue': row.dialogue,
                         **ppl_metrics
                     }
 
-                    perplexity_results[model_name].append(result)
+                    results['perplexity'][model_name].append(result)
+                    
+                    # Salva incrementalmente dopo ogni record
+                    self._save_results(results, output_file)
 
                 LLMHandler.destroy_model(self.model, self.tokenizer)
                 print(f"✓ Perplexity calculation complete for model: {model_name}\n")
-
-            results['perplexity'] = perplexity_results
 
 
 
@@ -149,13 +172,26 @@ class DialogueEvaluator:
         
         # LLM Judge evaluation
         if "llm-judge" in metrics:
-            judge_results = {}
-            for model_name in self.judge_models:      
-                print(f"🤖 Evaluating with judge model: {model_name}")
+            if 'judge' not in results:
+                results['judge'] = {}
                 
-                judge_results[model_name] = []
+            for model_name in self.judge_models:      
+                print(f"Evaluating with judge model: {model_name}")
+                
+                if model_name not in results['judge']:
+                    results['judge'][model_name] = []
+                
+                # Trova le coppie (unique_id, generation_setting) già processate
+                processed_pairs = {(r['unique_id'], r['generation_setting']) for r in results['judge'][model_name]}
+                
                 self.pipe, self.model, self.tokenizer = LLMHandler.load_model(model_name)
+                
                 for row in dataset_df.itertuples():
+                    # Skip se già processato
+                    if (row.unique_id, row.generation_setting) in processed_pairs:
+                        print(f"Skipping already processed dialogue ID: {row.unique_id} with setting: {row.generation_setting}")
+                        continue
+                        
                     print(f"Calculating judge score for dialogue ID: {row.unique_id}")
                     print(f" Dialogue: {row.dialogue}")
                     turns = row.dialogue['turns']
@@ -166,25 +202,35 @@ class DialogueEvaluator:
                     result = {
                         'unique_id': row.unique_id,
                         'dataset_name': row.dataset_name,
+                        'generation_setting': row.generation_setting,
                         'dialogue': row.dialogue,
                         **judge_metrics
                     }
 
-                    judge_results[model_name].append(result)
+                    results['judge'][model_name].append(result)
+                    
+                    # Salva incrementalmente dopo ogni record
+                    self._save_results(results, output_file)
 
                 LLMHandler.destroy_model(self.model, self.tokenizer)
-                print(f"✓ Judge evaluation complete for model: {model_name}\n")
+                print(f"Judge evaluation complete for model: {model_name}\n")
 
-            results['judge'] = judge_results
-
-        # Save results
-        results_df = pd.DataFrame(results)
+        print(f"All results saved to: {output_file}")
+        return results
+    
+    def _save_results(self, results: Dict, output_file: Path):
+        """
+        Save results incrementally to JSON file.
         
-        # Save as JSON
-        results_df.to_json(output_file, orient='records', indent=2, force_ascii=False)
-        print(f"✅ Results saved to: {output_file}")
-            
-        return results_df
+        Args:
+            results: Results dictionary
+            output_file: Path to save results
+        """
+        try:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(results, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error saving results: {e}")
 
         
     # ========== Perplexity Methods ========== #
@@ -201,7 +247,7 @@ class DialogueEvaluator:
         try:
             perplexity = load("pico-lm/perplexity")
         except Exception as e:
-            print(f"⚠ Error loading perplexity metric: {e}")
+            print(f"Error loading perplexity metric: {e}")
             return float('inf')
 
         results = perplexity.compute(predictions=predictions, model_id='gpt2')        
@@ -428,11 +474,11 @@ Q1:
                     print(f" Generated text: {generated_text}")
                     return generated_text
             
-            print(f"⚠ Unexpected response structure")
+            print(f"Unexpected response structure")
             return ""
             
         except Exception as e:
-            print(f"⚠ Error getting judge response: {e}")
+            print(f"Error getting judge response: {e}")
             import traceback
             traceback.print_exc()
             return ""

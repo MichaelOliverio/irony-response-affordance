@@ -30,7 +30,7 @@ def main():
     json_files = list(output_dir.glob("*.json"))
     
     if not json_files:
-        print("❌ No JSON files found in output directory")
+        print("No JSON files found in output directory")
         return
     
     print(f"{'='*70}")
@@ -56,7 +56,7 @@ def main():
         # Parse filename
         parsed = parse_filename(json_file.name)
         if not parsed:
-            print(f"⚠ Skipping {json_file.name} - doesn't match expected pattern")
+            print(f"Skipping {json_file.name} - doesn't match expected pattern")
             continue
         
         dataset_name, model_name, added_turn = parsed
@@ -68,10 +68,10 @@ def main():
         try:
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            print(f"✓ Loaded {len(data)} entries")
+            print(f"Loaded {len(data)} entries")
             df = pd.DataFrame(data)
         except Exception as e:
-            print(f"❌ Error loading {json_file.name}: {e}")
+            print(f"Error loading {json_file.name}: {e}")
             continue
         
         # Create output filename
@@ -80,7 +80,7 @@ def main():
         
         # Check if evaluation already exists
         if output_file.exists():
-            print(f"⚠ Evaluation already exists: {output_file.name}")
+            print(f"Evaluation already exists: {output_file.name}")
             user_input = input("Do you want to recompute? (y/n): ")
             if user_input.lower() != 'y':
                 print("Skipping...")
@@ -93,16 +93,16 @@ def main():
                 output_file=output_file,
                 metrics=["llm-judge"] # ["perplexity", "llm-judge"]
             )
-            print(f"✅ Evaluation completed for {json_file.name}")
+            print(f"Evaluation completed for {json_file.name}")
             
         except Exception as e:
-            print(f"❌ Error during evaluation: {e}")
+            print(f"Error during evaluation: {e}")
             import traceback
             traceback.print_exc()
             continue
     
     print(f"\n{'='*70}")
-    print("✅ All evaluations completed!")
+    print("All evaluations completed!")
     print(f"{'='*70}")
     print(f"Results saved in: {eval_output_dir}")
 
