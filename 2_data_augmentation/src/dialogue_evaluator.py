@@ -67,12 +67,14 @@ class DialogueEvaluator:
         }
     }
     
-    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None):
+    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 4):
         """
         Initialize the evaluator.
         
         Args:
-            perplexity_model: Model to use for perplexity calculation
+            perplexity_models: List of models to use for perplexity calculation
+            judge_models: List of models to use for LLM-as-a-judge evaluation
+            judge_batch_size: Batch size for judge evaluation (number of prompts to process together)
         """
         if perplexity_models is None:
             raise ValueError("Please specify at least one perplexity model."
@@ -93,6 +95,7 @@ class DialogueEvaluator:
 
         self.perplexity_models = perplexity_models
         self.judge_models = judge_models
+        self.judge_batch_size = judge_batch_size
         self.model = None
         self.tokenizer = None
         self.pipe = None
@@ -291,7 +294,7 @@ class DialogueEvaluator:
     # ========== LLM-as-a-Judge Methods ========== #
     def _generate_judge_score(self, model_name: str, turns: List[Dict[str, str]]) -> Dict[str, any]:
         """
-        Generate LLM judge scores for a dialogue across multiple dimensions.
+        Generate LLM judge scores for a dialogue across multiple dimensions using batch processing.
         
         Args:
             model_name: Name of the judge model
@@ -302,7 +305,6 @@ class DialogueEvaluator:
         """
         results = {}
         
-        
         # Get the response to evaluate (the preceding turn before the last one)
         # We evaluate the generated content, which is everything except the last turn
         previous_turns = self._format_turn_for_evaluation(turns[-2]) if len(turns) >= 2 else ""
@@ -310,9 +312,14 @@ class DialogueEvaluator:
         # Get the final turn (ground truth)
         final_turn = self._format_turn_for_evaluation(turns[-1])
         
-        # Evaluate each dimension
+        # Prepare all prompts for batch processing
+        dimension_names = []
+        dimension_infos = []
+        all_prompts = []
+        
         for dimension_name, dimension_info in self.JUDGE_DIMENSIONS.items():
-            print(f"  Evaluating dimension: {dimension_name}")
+            dimension_names.append(dimension_name)
+            dimension_infos.append(dimension_info)
             
             # Create prompt for this dimension
             prompt = self._create_judge_prompt(
@@ -322,16 +329,19 @@ class DialogueEvaluator:
                 dimension_definition=dimension_info['definition'],
                 questions=dimension_info['questions']
             )
-
-            print(f" Prompt: {prompt}")
-            
-            # Get LLM response
-            llm_response = self._get_judge_response(prompt)
-            print(f" LLM Response: {llm_response}")
+            all_prompts.append(prompt)
+        
+        # Get all LLM responses in batch
+        llm_responses = self._get_judge_responses_batch(all_prompts)
+        
+        # Process each dimension's response
+        for dimension_name, dimension_info, llm_response in zip(dimension_names, dimension_infos, llm_responses):
+            print(f"  Evaluating dimension: {dimension_name}")
+            print(f"   LLM Response: {llm_response}")
             
             # Parse the response
             parsed_scores = self._parse_judge_response(llm_response, dimension_info['questions'])
-            print(f" Parsed Scores: {parsed_scores}")
+            print(f"   Parsed Scores: {parsed_scores}")
             
             results[dimension_name] = {
                 'raw_response': llm_response,
@@ -446,9 +456,80 @@ Q1:
 """
         return prompt
     
+    def _get_judge_responses_batch(self, prompts: List[str]) -> List[str]:
+        """
+        Get responses from the judge model for a batch of prompts.
+        Processes prompts in chunks based on self.judge_batch_size.
+        
+        Args:
+            prompts: List of evaluation prompts
+            
+        Returns:
+            List of model response strings
+        """
+        try:
+            # Save original padding side and switch to left for batch generation
+            original_padding_side = self.tokenizer.padding_side
+            self.tokenizer.padding_side = 'left'
+            
+            try:
+                all_results = []
+                
+                # Process prompts in batches
+                for i in range(0, len(prompts), self.judge_batch_size):
+                    batch_prompts = prompts[i:i + self.judge_batch_size]
+                    print(f"  Processing batch {i//self.judge_batch_size + 1}/{(len(prompts)-1)//self.judge_batch_size + 1} ({len(batch_prompts)} prompts)")
+                    
+                    # Tokenize batch prompts with padding
+                    inputs = self.tokenizer(
+                        batch_prompts, 
+                        return_tensors="pt",
+                        add_special_tokens=True,
+                        padding=True,
+                        truncation=False
+                    ).to(self.model.device)
+                    
+                    # Generate for the batch
+                    with torch.no_grad():
+                        outputs = self.model.generate(
+                            input_ids=inputs['input_ids'],
+                            attention_mask=inputs['attention_mask'],
+                            max_new_tokens=256,
+                            pad_token_id=self.tokenizer.pad_token_id,
+                            eos_token_id=self.tokenizer.eos_token_id,
+                            temperature=0.7,
+                            do_sample=True,
+                        )
+                    
+                    # Decode outputs for this batch
+                    for output, input_ids in zip(outputs, inputs['input_ids']):
+                        # Decode the full generated text
+                        generated_text = self.tokenizer.decode(output, skip_special_tokens=True)
+                        
+                        # Remove the input part to get only the generated text
+                        input_text = self.tokenizer.decode(input_ids, skip_special_tokens=True)
+                        generated_text_without_input = generated_text[len(input_text):].strip()
+                        
+                        # Format as Q1: to match expected format
+                        formatted_response = f"Q1:{generated_text_without_input}"
+                        all_results.append(formatted_response)
+                
+                return all_results
+            
+            finally:
+                # Restore original padding side
+                self.tokenizer.padding_side = original_padding_side
+                
+        except Exception as e:
+            print(f"Error getting batch judge responses: {e}")
+            import traceback
+            traceback.print_exc()
+            # Return empty strings for all prompts on error
+            return [""] * len(prompts)
+    
     def _get_judge_response(self, prompt: str) -> str:
         """
-        Get response from the judge model.
+        Get response from the judge model (single prompt).
         
         Args:
             prompt: The evaluation prompt
@@ -456,32 +537,8 @@ Q1:
         Returns:
             Model response string
         """
-        try:
-            # Pass prompt directly as string, similar to dialogue_data_augmentor
-            response = self.pipe(
-                prompt,
-                max_new_tokens=256,
-                temperature=0.7,
-                do_sample=True,
-                return_full_text=False,
-                pad_token_id=self.tokenizer.eos_token_id
-            )
-            
-            # Extract generated text
-            if isinstance(response, list) and len(response) > 0:
-                if isinstance(response[0], dict) and 'generated_text' in response[0]:
-                    generated_text = f"Q1:{response[0]['generated_text'].strip()}"
-                    print(f" Generated text: {generated_text}")
-                    return generated_text
-            
-            print(f"Unexpected response structure")
-            return ""
-            
-        except Exception as e:
-            print(f"Error getting judge response: {e}")
-            import traceback
-            traceback.print_exc()
-            return ""
+        # Use batch method with single prompt for consistency
+        return self._get_judge_responses_batch([prompt])[0]
     
     def _parse_judge_response(self, response: str, questions: Dict[str, str]) -> Dict[str, float]:
         """
