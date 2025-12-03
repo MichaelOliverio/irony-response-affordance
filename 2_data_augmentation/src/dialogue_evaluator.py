@@ -1,6 +1,7 @@
 """
 Automatic evaluation of generated dialogues using perplexity and LLM-as-a-judge.
 """
+import re
 import torch
 import numpy as np
 import pandas as pd
@@ -26,39 +27,38 @@ class DialogueEvaluator:
         "meta-llama/Llama-3.2-1B-Instruct",
     ]
 
+    # aggiornare
     JUDGE_DIMENSIONS = {
         'Coherence': {
-            'definition': 'TODO',
+            'definition': 'the quality of a generated turn that allows it to fit logically and meaningfully within the following context',
             'questions': {
-                'Logical Flow': 'Does the preceding turn logically follow from the other part of the conversation, maintaining a clear flow of ideas?',
-                'Relevance': 'Is the preceding turn directly relevant to the content and context of the dialogue?',
-                'Continuity 1': 'Does the preceding turn stay consistent with the topic discussed in the dialogue? ',
-                'Continuity 2': 'Does the preceding turn integrate smoothly with the ongoing conversation, ensuring a coherent progression?'
+                'Logical Flow': 'Does the generated turn logically precede the original turn, maintaining a clear flow of ideas?',
+                'Relevance': 'Is the generated turn directly relevant to the content and context of the dialogue?',
+                'Continuity 1': 'Does the generated turn stay consistent with the topic discussed in the dialogue?',
+                'Continuity 2': 'Does the generated turn integrate smoothly with the ongoing conversation, ensuring a coherent progression?'
             }
         },
         'Engagingness': {
-            'definition': 'TODO',
+            'definition': 'the extent to which a generated turn captures and maintains a reader’s interest',
             'questions': {
-                'Informative': 'Does the preceding turn add meaningful value to the conversation?',
-                'Emotional Engagement': 'Is the preceding turn friendly, polite, and empathetic?',
-                'Interest Level 1': 'Does the preceding turn capture interest or intrigue, making the conversation more engaging?',
-                'Interest Level 2': 'Does the preceding turn actively contribute to keeping the conversation lively and engaging?'
+                'Informative': 'Does the generated turn add meaningful value to the conversation?',
+                'Emotional Engagement': 'Is the generated turn friendly, polite, and empathetic?',
+                'Interest Level': 'Does the generated turn contribute to a more engaging and interesting conversation?',
             }
         },
         'Groundedness': {
-            'definition': 'TODO',
+            'definition': 'the accuracy and relevance of a generated turn in relation to the factual information it is based on',
             'questions': {
-                'Relevance 1': 'Does the preceding turn appropriately address the final reply?',
-                'Relevance 2': 'Does the preceding turn provide new information while maintaining the flow of the conversation?',
-                'Relevance 3': 'Does it effectively utilize the key information that has been mentioned in the conversation?',
-                'Consistency 1': 'Does the preceding turn remain consistent with the final turn?',
+                'Relevance 1': 'Does the generated turn provide new information while maintaining the flow of the conversation?',
+                'Relevance 2': 'Does it effectively utilize the key information that has been mentioned in the conversation?',
+                'Consistency 1': 'Does the generated turn remain consistent with the original turn?',
                 'Consistency 2': 'Does it avoid contradicting afterwards provided information?'
             }
         },
         'Naturalness': {
-            'definition': 'TODO',
+            'definition': 'the degree to which a generated turn resembles something a real person would naturally say',
             'questions': {
-                'Avoid repetition': 'Does the preceding turn avoid unnecessary repetition of the same content between sentences?',
+                'Avoid repetition': 'Does the generated turn avoid unnecessary repetition of the same content between sentences?',
                 'Context relevance': 'Are the sentences used naturally within the context?',
                 'Clarity': 'Is the overall message clear and easy to understand?',
                 'Word choice and tone 1': 'Is the tone consistent throughout?',
@@ -256,12 +256,10 @@ class DialogueEvaluator:
         """
         results = {}
         
-        # Prepare conversation history (all turns except the last one)
-        conversation_history = self._format_conversation_history(turns[:-1])
         
         # Get the response to evaluate (the preceding turn before the last one)
         # We evaluate the generated content, which is everything except the last turn
-        response_to_evaluate = self._format_turn_for_evaluation(turns[-2]) if len(turns) >= 2 else ""
+        previous_turns = self._format_turn_for_evaluation(turns[-2]) if len(turns) >= 2 else ""
         
         # Get the final turn (ground truth)
         final_turn = self._format_turn_for_evaluation(turns[-1])
@@ -272,8 +270,7 @@ class DialogueEvaluator:
             
             # Create prompt for this dimension
             prompt = self._create_judge_prompt(
-                conversation_history=conversation_history,
-                response=response_to_evaluate,
+                previous_turns=previous_turns,
                 final_turn=final_turn,
                 dimension_name=dimension_name,
                 dimension_definition=dimension_info['definition'],
@@ -311,24 +308,23 @@ class DialogueEvaluator:
         lines = []
         for i, turn in enumerate(turns):
             if 'u1' in turn:
-                lines.append(f"Speaker 1: {turn['u1']}")
+                lines.append(f"u1: {turn['u1']}")
             if 'u2' in turn:
-                lines.append(f"Speaker 2: {turn['u2']}")
+                lines.append(f"u2: {turn['u2']}")
         return "\n".join(lines) if lines else "No previous conversation."
     
     def _format_turn_for_evaluation(self, turn: Dict[str, str]) -> str:
         """Format a single turn for evaluation."""
         parts = []
         if 'u1' in turn:
-            parts.append(f"Speaker 1: {turn['u1']}")
+            parts.append(f"u1: {turn['u1']}")
         if 'u2' in turn:
-            parts.append(f"Speaker 2: {turn['u2']}")
+            parts.append(f"u2: {turn['u2']}")
         return "\n".join(parts)
     
     def _create_judge_prompt(
         self,
-        conversation_history: str,
-        response: str,
+        previous_turns: str,
         final_turn: str,
         dimension_name: str,
         dimension_definition: str,
@@ -338,8 +334,7 @@ class DialogueEvaluator:
         Create the judge prompt based on the template.
         
         Args:
-            conversation_history: Formatted conversation history
-            response: The response to evaluate
+            previous_turns: The previous_turns to evaluate
             final_turn: The final turn of the dialogue
             dimension_name: Name of the dimension being evaluated
             dimension_definition: Definition of the dimension
@@ -350,36 +345,42 @@ class DialogueEvaluator:
         """
         # Format questions
         formatted_questions = []
+        example_answer = []
         for i, (q_name, q_text) in enumerate(questions.items(), 1):
             formatted_questions.append(f"Q{i} ({q_name}): {q_text}")
+            example_answer.append(f"Q{i}:yes/no")  # Example answer format
         questions_text = "\n".join(formatted_questions)
+        example_answers_text = "\n".join(example_answer)
         
         # Use proper indentation without leading spaces on each line
         prompt = f"""
-<Task Overview>
+<TASK_OVERVIEW>
 You will be given a short conversation between two individuals u1 and u2 between the tags <SHORT_CONVERSATION>. 
 You will then be given a generated dialogue starting from the short conversation, between the tags <GENERATED_DIALOGUE>.
 You will be given a set of instructions between the tags <INSTRUCTIONS>.
-Your task is to evaluate the generated dialogue (provided between the tags <GENERATED_DIALOGUE>) according to a specific dimension (provided between the tags <DIMENSION_DEFINITION>) and taking into account the starting short conversation (provided between the tags <SHORT_CONVERSATION>).
-For the dimension in the tag <DIMENSION_DEFINITION>, answer the questions provided in <QUESTIONS>, strictly with 'yes' or 'no', following the instructions given in the tag <INSTRUCTIONS>.
+Your task is to evaluate the generated dialogue (provided between the tags <GENERATED_DIALOGUE>) according to a specific dimension (provided between the tags <DIMENSION_DEFINITION>), taking into account the starting short conversation (provided between the tags <SHORT_CONVERSATION>).
+To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answer the questions provided in <QUESTIONS>, strictly with 'yes' or 'no', following the instructions given in the tag <INSTRUCTIONS> and the response format specified between the tags <ANSWER_FORMAT>.
 
 <DIMENSION_DEFINITION>
 {dimension_name} - {dimension_definition}
 </DIMENSION_DEFINITION>
 
 <INSTRUCTIONS>
-1. Carefully read the Conversation History (two-turn dialogue), the Response (preceding turn), and the Final Turn (ground truth).
+1. Carefully read the short conversation (between the tags <SHORT_CONVERSATION>) and the generated dialogue (between the tags <GENERATED_DIALOGUE>).
 2. Review the given questions associated with the dimension "{dimension_name}".
-3. For each question, answer strictly with 'yes' or 'no'.
+3. For each question between the tags <QUESTIONS>, answer strictly with 'yes' or 'no'.
 4. Base your answers on clear reasoning, but **do not include the reasoning in the output**.
+4. Evaluate the generated dialogue, taking into account the short conversation.
 5. Follow the answer format exactly as specified between the tags <ANSWER_FORMAT>.
+</INSTRUCTIONS>
 
 <SHORT_CONVERSATION>
 {final_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
-{response}
+{previous_turns}
+{final_turn}
 </GENERATED_DIALOGUE>
 
 <QUESTIONS>
@@ -387,13 +388,15 @@ For the dimension in the tag <DIMENSION_DEFINITION>, answer the questions provid
 </QUESTIONS>
 
 <ANSWER_FORMAT>
-## Response
-Q1: [yes/no]
-Q2: [yes/no]
-...
+{example_answers_text}
 </ANSWER_FORMAT>
 
 Provide your answers to each question following the specified Answer Format.
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:
 """
         return prompt
     
@@ -411,19 +414,17 @@ Provide your answers to each question following the specified Answer Format.
             # Pass prompt directly as string, similar to dialogue_data_augmentor
             response = self.pipe(
                 prompt,
-                max_new_tokens=500,
-                temperature=0.1,  # Low temperature for more consistent judgments
-                do_sample=False,
+                max_new_tokens=256,
+                temperature=0.7,
+                do_sample=True,
                 return_full_text=False,
                 pad_token_id=self.tokenizer.eos_token_id
             )
-            print(f" Response type: {type(response)}")
-            print(f" Response: {response}")
             
             # Extract generated text
             if isinstance(response, list) and len(response) > 0:
                 if isinstance(response[0], dict) and 'generated_text' in response[0]:
-                    generated_text = f"{response[0]['generated_text'].strip()}"
+                    generated_text = f"Q1:{response[0]['generated_text'].strip()}"
                     print(f" Generated text: {generated_text}")
                     return generated_text
             
@@ -448,23 +449,21 @@ Provide your answers to each question following the specified Answer Format.
             Dict mapping question names to scores (1.0 for yes, 0.0 for no)
         """
         scores = {}
-        lines = response.strip().split('\n')
         
-        # Try to parse Q1:, Q2:, etc.
+        # Regex pattern per catturare 'yes' o 'no' anche tra <>, spazi, newline
+        answer_pattern = re.compile(r'Q(\d+)\s*:\s*[\s<]*?(yes|no)', re.IGNORECASE)
+        
+        # Trova tutte le risposte
+        matches = answer_pattern.findall(response)
+        # matches -> lista di tuple (numero_domanda, risposta)
+
         for i, (q_name, _) in enumerate(questions.items(), 1):
             score = 0.0
-            question_key = f"Q{i}:"
-            
-            for line in lines:
-                if line.strip().startswith(question_key):
-                    # Extract the answer
-                    answer = line.split(':', 1)[1].strip().lower()
-                    if 'yes' in answer:
-                        score = 1.0
-                    elif 'no' in answer:
-                        score = 0.0
+            # Cerca la corrispondenza per questa domanda
+            for num, ans in matches:
+                if int(num) == i:
+                    score = 1.0 if ans.lower() == 'yes' else 0.0
                     break
-            
             scores[q_name] = score
-        
+
         return scores
