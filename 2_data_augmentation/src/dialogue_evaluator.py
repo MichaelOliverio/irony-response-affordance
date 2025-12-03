@@ -20,11 +20,15 @@ class DialogueEvaluator:
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
         "meta-llama/Llama-3.2-1B-Instruct"
+        "Qwen/Qwen2.5-7B-Instruct",
+        "google/gemma-3-12b-it",
     ]
     
     # Modelli per LLM-as-a-judge
     JUDGE_MODELS = [
         "meta-llama/Llama-3.2-1B-Instruct",
+        "Qwen/Qwen2.5-7B-Instruct",
+        "google/gemma-3-12b-it",
     ]
 
     # aggiornare
@@ -67,7 +71,7 @@ class DialogueEvaluator:
         }
     }
     
-    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 4):
+    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
         Initialize the evaluator.
         
@@ -189,34 +193,95 @@ class DialogueEvaluator:
                 
                 self.pipe, self.model, self.tokenizer = LLMHandler.load_model(model_name)
                 
+                # Raccogli tutti i dialoghi da processare
+                dialogues_to_process = []
                 for row in dataset_df.itertuples():
-                    # Skip se già processato
-                    if (row.unique_id, row.generation_setting) in processed_pairs:
-                        print(f"Skipping already processed dialogue ID: {row.unique_id} with setting: {row.generation_setting}")
-                        continue
-                        
-                    print(f"Calculating judge score for dialogue ID: {row.unique_id}")
-                    print(f" Dialogue: {row.dialogue}")
-                    turns = row.dialogue['turns']
-                    judge_metrics = self._generate_judge_score(model_name, turns)
-
-                    print(f" Judge metrics: {judge_metrics}")
-
-                    result = {
-                        'unique_id': row.unique_id,
-                        'dataset_name': row.dataset_name,
-                        'generation_setting': row.generation_setting,
-                        'dialogue': row.dialogue,
-                        **judge_metrics
-                    }
-
-                    results['judge'][model_name].append(result)
+                    if (row.unique_id, row.generation_setting) not in processed_pairs:
+                        dialogues_to_process.append(row)
+                
+                print(f"Total dialogues to process: {len(dialogues_to_process)}")
+                
+                # Calcola il batch size per i dialoghi (dividi per 4 dimensioni)
+                dialogue_batch_size = max(1, self.judge_batch_size // 4)
+                
+                # Processa in batch di dialoghi
+                for batch_idx in range(0, len(dialogues_to_process), dialogue_batch_size):
+                    batch_rows = dialogues_to_process[batch_idx:batch_idx + dialogue_batch_size]
+                    print(f"\nProcessing dialogue batch {batch_idx//dialogue_batch_size + 1}/{(len(dialogues_to_process)-1)//dialogue_batch_size + 1} ({len(batch_rows)} dialogues)")
                     
-                    # Salva incrementalmente dopo ogni record
+                    # Prepara tutti i prompt per questo batch di dialoghi
+                    all_prompts = []
+                    batch_metadata = []  # (row, dimension_name, dimension_info)
+                    
+                    for row in batch_rows:
+                        turns = row.dialogue['turns']
+                        previous_turns = self._format_turn_for_evaluation(turns[-2]) if len(turns) >= 2 else ""
+                        final_turn = self._format_turn_for_evaluation(turns[-1])
+                        
+                        for dimension_name, dimension_info in self.JUDGE_DIMENSIONS.items():
+                            prompt = self._create_judge_prompt(
+                                previous_turns=previous_turns,
+                                final_turn=final_turn,
+                                dimension_name=dimension_name,
+                                dimension_definition=dimension_info['definition'],
+                                questions=dimension_info['questions']
+                            )
+                            all_prompts.append(prompt)
+                            batch_metadata.append((row, dimension_name, dimension_info))
+                    
+                    # Ottieni tutte le risposte in batch
+                    llm_responses = self._get_judge_responses_batch(all_prompts)
+                    
+                    # Organizza i risultati per dialogo
+                    current_dialogue_results = {}
+                    for (row, dimension_name, dimension_info), llm_response in zip(batch_metadata, llm_responses):
+                        row_key = (row.unique_id, row.generation_setting)
+                        
+                        if row_key not in current_dialogue_results:
+                            current_dialogue_results[row_key] = {
+                                'row': row,
+                                'dimensions': {}
+                            }
+                        
+                        # Parse la risposta
+                        parsed_scores = self._parse_judge_response(llm_response, dimension_info['questions'])
+                        
+                        current_dialogue_results[row_key]['dimensions'][dimension_name] = {
+                            'raw_response': llm_response,
+                            'scores': parsed_scores,
+                            'average_score': np.mean(list(parsed_scores.values())) if parsed_scores else 0.0
+                        }
+                    
+                    # Salva i risultati di questo batch
+                    for row_key, dialogue_data in current_dialogue_results.items():
+                        row = dialogue_data['row']
+                        dimension_results = dialogue_data['dimensions']
+                        
+                        # Calcola overall average
+                        all_scores = []
+                        for dim_result in dimension_results.values():
+                            if dim_result['scores']:
+                                all_scores.extend(dim_result['scores'].values())
+                        
+                        print(f"    Processed dialogue ID: {row.unique_id} with setting: {row.generation_setting}")
+                        
+                        result = {
+                            'unique_id': row.unique_id,
+                            'dataset_name': row.dataset_name,
+                            'generation_setting': row.generation_setting,
+                            'dialogue': row.dialogue,
+                            **dimension_results,
+                            'overall_average': np.mean(all_scores) if all_scores else 0.0
+                        }
+                        
+                        results['judge'][model_name].append(result)
+                    
+                    # Salva dopo ogni batch
                     self._save_results(results, output_file)
+                    print(f"    Saved batch results ({len(current_dialogue_results)} dialogues)")
 
                 LLMHandler.destroy_model(self.model, self.tokenizer)
-                print(f"Judge evaluation complete for model: {model_name}\n")
+                print(f"    Judge evaluation complete for model: {model_name}\n")
 
         print(f"All results saved to: {output_file}")
         return results

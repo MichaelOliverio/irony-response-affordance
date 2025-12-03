@@ -32,10 +32,14 @@ def main():
     # Initialize evaluator
     evaluator = DialogueEvaluator(
         perplexity_models = [
-            "meta-llama/Llama-3.2-1B-Instruct",
+            #"meta-llama/Llama-3.2-1B-Instruct",
+            "Qwen/Qwen2.5-7B-Instruct",
+            "google/gemma-3-12b-it",
         ],
         judge_models = [
-            "meta-llama/Llama-3.2-1B-Instruct",
+            #"meta-llama/Llama-3.2-1B-Instruct",
+            "Qwen/Qwen2.5-7B-Instruct",
+            "google/gemma-3-12b-it",
         ]
     )
     
