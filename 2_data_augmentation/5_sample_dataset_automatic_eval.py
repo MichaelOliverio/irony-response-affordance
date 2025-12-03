@@ -33,8 +33,8 @@ def main():
     evaluator = DialogueEvaluator(
         perplexity_models = [
             #"meta-llama/Llama-3.2-1B-Instruct",
-            "Qwen/Qwen2.5-7B-Instruct",
-            "google/gemma-3-12b-it",
+            #"Qwen/Qwen2.5-7B-Instruct",
+            #"google/gemma-3-12b-it",
         ],
         judge_models = [
             #"meta-llama/Llama-3.2-1B-Instruct",
@@ -64,14 +64,6 @@ def main():
         
         # Create output filename
         output_file = eval_output_dir / f"judge_scores_{json_file.name}"
-        
-        # Check if evaluation already exists
-        if output_file.exists():
-            print(f"Evaluation already exists: {output_file.name}")
-            user_input = input("Do you want to recompute? (y/n): ")
-            if user_input.lower() != 'y':
-                print("Skipping...")
-                continue
         
         # Evaluate
         try:

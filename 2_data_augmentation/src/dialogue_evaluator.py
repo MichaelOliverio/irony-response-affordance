@@ -71,7 +71,7 @@ class DialogueEvaluator:
         }
     }
     
-    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
+    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 16):
         """
         Initialize the evaluator.
         
