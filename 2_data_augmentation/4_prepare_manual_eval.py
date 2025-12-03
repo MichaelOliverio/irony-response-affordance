@@ -75,7 +75,7 @@ def find_common_unique_ids(base_dir: Path, dataset_name: str, label_column: str,
             ids_sets = [model_data[label] for model_data in all_ids_by_model_and_label.values()]
             common_ids = set.intersection(*ids_sets)
             common_ids_by_label[label] = common_ids
-            print(f"  ✓ Label {label}: {len(common_ids)} unique_id comuni")
+            print(f"  Label {label}: {len(common_ids)} unique_id comuni")
         return common_ids_by_label
     else:
         print(f"  ⚠ Non tutti i modelli disponibili")
@@ -233,7 +233,7 @@ def main():
     output_base = Path("human_annotations/manual_eval_files")
     output_base.mkdir(exist_ok=True, parents=True)
     
-    print("🚀 Inizio preparazione file per valutazione manuale (Latin Square Design)\n")
+    print("Inizio preparazione file per valutazione manuale (Latin Square Design)\n")
     print("   [Seed random: 42 - per riproducibilità]")
     
     # FASE 1: Trova gli unique_id comuni
@@ -241,15 +241,15 @@ def main():
     print("FASE 1: Analisi unique_id comuni")
     print("="*70)
     
-    print("\n📊 CSC Dataset:")
+    print("\nCSC Dataset:")
     csc_common_ids = find_common_unique_ids(csc_dir, "CSC", "aggregate_sarcasm_label")
     csc_instances = sample_instances(csc_common_ids, n_per_label=30)
-    print(f"  ✓ {len(csc_instances)} istanze selezionate per CSC")
+    print(f"  {len(csc_instances)} istanze selezionate per CSC")
     
-    print("\n📊 MultiPICo Dataset (filtro >= 10 token):")
+    print("\nMultiPICo Dataset (filtro >= 10 token):")
     multipico_common_ids = find_common_unique_ids(multipico_dir, "MultiPICo", "aggregate_irony_label", min_tokens=10)
     multipico_instances = sample_instances(multipico_common_ids, n_per_label=30)
-    print(f"  ✓ {len(multipico_instances)} istanze selezionate per MultiPICo")
+    print(f"  {len(multipico_instances)} istanze selezionate per MultiPICo")
     
     # FASE 2: Crea Latin Square assignment
     print("\n" + "="*70)
@@ -259,9 +259,9 @@ def main():
     csc_assignment = create_latin_square_assignment(csc_instances, SETTINGS, NUM_ANNOTATORS)
     multipico_assignment = create_latin_square_assignment(multipico_instances, SETTINGS, NUM_ANNOTATORS)
     
-    print(f"  ✓ Assignment creato per {NUM_ANNOTATORS} annotatori")
-    print(f"  ✓ Ogni annotatore valuterà {len(csc_instances)} istanze CSC")
-    print(f"  ✓ Ogni annotatore valuterà {len(multipico_instances)} istanze MultiPICo")
+    print(f"  Assignment creato per {NUM_ANNOTATORS} annotatori")
+    print(f"  Ogni annotatore valuterà {len(csc_instances)} istanze CSC")
+    print(f"  Ogni annotatore valuterà {len(multipico_instances)} istanze MultiPICo")
     
     # Salva le associazioni in un JSON
     assignments_data = {
@@ -287,7 +287,7 @@ def main():
     with open(assignments_file, 'w', encoding='utf-8') as f:
         json.dump(assignments_data, f, indent=2, ensure_ascii=False)
     
-    print(f"  ✓ Associazioni salvate in: {assignments_file.name}")
+    print(f"  Associazioni salvate in: {assignments_file.name}")
     
     # FASE 3: Genera file Excel per ogni annotatore
     print("\n" + "="*70)
@@ -295,7 +295,7 @@ def main():
     print("="*70)
     
     for annotator_id in range(NUM_ANNOTATORS):
-        print(f"\n📝 Annotatore {annotator_id + 1}:")
+        print(f"\nAnnotatore {annotator_id + 1}:")
         
         output_excel = output_base / f"annotator_{annotator_id + 1}_evaluation.xlsx"
         
@@ -328,7 +328,7 @@ def main():
             # Conta le label per MultiPICo
             multipico_label_counts = df_multipico['aggregate_irony_label'].value_counts().sort_index()
             
-            print(f"  ✓ File salvato: {output_excel.name}")
+            print(f"  File salvato: {output_excel.name}")
             print(f"    - Sheet CSC: {len(df_csc)} righe")
             print(f"      • Sarcasm label 0: {csc_label_counts.get(0)}")
             print(f"      • Sarcasm label 1: {csc_label_counts.get(1)}")
@@ -338,9 +338,64 @@ def main():
         else:
             print(f"  ⚠ Errore nel caricamento dati per annotatore {annotator_id + 1}")
     
+    # FASE 4: Genera file JSON con tutte le istanze per LLM-judge
     print("\n" + "="*70)
-    print("🎉 Tutti i file Excel sono stati creati con successo!")
-    print(f"📁 Directory output: {output_base.absolute()}")
+    print("FASE 4: Generazione file per LLM-judge")
+    print("="*70)
+    
+    # Carica tutte le istanze CSC (tutti i 4 setting)
+    print("\nCreazione file CSC per LLM-judge...")
+    all_csc_rows = []
+    for setting in SETTINGS:
+        filename = f"CSC_{setting}_filtered.json"
+        filepath = csc_dir / filename
+        
+        if filepath.exists():
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            
+            # Filtra solo le istanze selezionate
+            for row in data:
+                if row.get("unique_id") in csc_instances:
+                    if isinstance(row.get("dialogue"), dict) and "turns" in row["dialogue"]:
+                        row['generation_setting'] = setting
+                        all_csc_rows.append(row)
+    
+    csc_judge_file = output_base / "csc_all_instances_for_llm_judge.json"
+    with open(csc_judge_file, 'w', encoding='utf-8') as f:
+        json.dump(all_csc_rows, f, indent=2, ensure_ascii=False)
+    
+    print(f"    File CSC salvato: {csc_judge_file.name}")
+    print(f"    Totale istanze: {len(all_csc_rows)} (60 istanze × 4 setting)")
+    
+    # Carica tutte le istanze MultiPICo (tutti i 4 setting)
+    print("\nCreazione file MultiPICo per LLM-judge...")
+    all_multipico_rows = []
+    for setting in SETTINGS:
+        filename = f"MultiPICo_{setting}_filtered.json"
+        filepath = multipico_dir / filename
+        
+        if filepath.exists():
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            
+            # Filtra solo le istanze selezionate
+            for row in data:
+                if row.get("unique_id") in multipico_instances:
+                    if isinstance(row.get("dialogue"), dict) and "turns" in row["dialogue"]:
+                        row['generation_setting'] = setting
+                        all_multipico_rows.append(row)
+    
+    multipico_judge_file = output_base / "multipico_all_instances_for_llm_judge.json"
+    with open(multipico_judge_file, 'w', encoding='utf-8') as f:
+        json.dump(all_multipico_rows, f, indent=2, ensure_ascii=False)
+    
+    print(f"    File MultiPICo salvato: {multipico_judge_file.name}")
+    print(f"    Totale istanze: {len(all_multipico_rows)} (60 istanze × 4 setting)")
+    
+    print("\n" + "="*70)
+    print("Tutti i file sono stati creati con successo!")
+    print(f"Directory output: {output_base.absolute()}")
     print("="*70)
         
 if __name__ == "__main__":
