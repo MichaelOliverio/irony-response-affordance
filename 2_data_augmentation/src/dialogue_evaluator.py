@@ -73,6 +73,7 @@ class DialogueEvaluator:
         }
     }
     
+    @staticmethod
     def prompt1(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You will be given a short conversation between two individuals u1 and u2 between the tags <SHORT_CONVERSATION>. 
@@ -118,6 +119,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
+    @staticmethod
     def prompt2(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an automated judge model. You will receive:
@@ -163,6 +165,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
+    @staticmethod
     def prompt3(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an LLM-based evaluator. Evaluate the generated dialogue against the specified dimension.
@@ -208,6 +211,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
+    @staticmethod
     def prompt4(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
@@ -255,6 +259,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
+    @staticmethod
     def prompt5(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
