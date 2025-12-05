@@ -1,0 +1,54 @@
+[
+  {
+    "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_1",
+    "coherence_r": 0.16444413230541546,
+    "coherence_p": 0.5581128218095266,
+    "engagingness_r": -0.13359491129023474,
+    "engagingness_p": 0.6350288250347714,
+    "groundedness_r": 0.06040893208184248,
+    "groundedness_p": 0.830656585044364,
+    "naturalness_r": 0.36528507416035944,
+    "naturalness_p": 0.18062436044506866,
+    "total_r": 0.047493040777103215,
+    "total_p": 0.8665237738799281
+  },
+  {
+    "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+    "coherence_r": 0.08887849243326564,
+    "coherence_p": 0.752772455721404,
+    "engagingness_r": -0.013848224294575542,
+    "engagingness_p": 0.9609330496787452,
+    "groundedness_r": 0.3327350549948561,
+    "groundedness_p": 0.22559416107352598,
+    "naturalness_r": 0.017256093209720824,
+    "naturalness_p": 0.95132863574432,
+    "total_r": 0.08042898653967123,
+    "total_p": 0.7756920508475327
+  },
+  {
+    "setting": "mistralai_Ministral-8B-Instruct-2410_n_turn_1",
+    "coherence_r": 0.5604797898455672,
+    "coherence_p": 0.029759586143990255,
+    "engagingness_r": 0.13445077902843766,
+    "engagingness_p": 0.6328426750971586,
+    "groundedness_r": 0.35487050039846935,
+    "groundedness_p": 0.1943179776859448,
+    "naturalness_r": 0.4441083012505462,
+    "naturalness_p": 0.09723535511592284,
+    "total_r": 0.4468468468468467,
+    "total_p": 0.09494602741448459
+  },
+  {
+    "setting": "mistralai_Ministral-8B-Instruct-2410_n_turn_2",
+    "coherence_r": 0.4563572129466805,
+    "coherence_p": 0.08729035057043502,
+    "engagingness_r": 0.5033262108171943,
+    "engagingness_p": 0.05579316391696518,
+    "groundedness_r": 0.478616063929883,
+    "groundedness_p": 0.07110068616008372,
+    "naturalness_r": 0.27258546838264425,
+    "naturalness_p": 0.3256500913034567,
+    "total_r": 0.5338405082647595,
+    "total_p": 0.04039619795285109
+  }
+]
