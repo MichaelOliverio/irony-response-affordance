@@ -57,7 +57,19 @@ def main():
             with open(json_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             print(f"Loaded {len(data)} entries")
-            df = pd.DataFrame(data)
+            
+            # Filter only records with generation_setting = "meta-llama_Llama-3.1-8B-Instruct_n_turn_2"
+            filtered_data = [
+                record for record in data 
+                if record.get('generation_setting') == 'meta-llama_Llama-3.1-8B-Instruct_n_turn_2'
+            ]
+            print(f"Filtered to {len(filtered_data)} entries with generation_setting='meta-llama_Llama-3.1-8B-Instruct_n_turn_2'")
+            
+            if not filtered_data:
+                print(f"No records found with the specified generation_setting. Skipping.")
+                continue
+                
+            df = pd.DataFrame(filtered_data)
         except Exception as e:
             print(f"Error loading {json_file.name}: {e}")
             continue
