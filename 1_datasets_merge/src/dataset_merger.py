@@ -144,7 +144,7 @@ class DatasetMerger:
             sarcasm_label_by_speaker = int(sarcasm_score_by_speaker >= 0.5) if sarcasm_score_by_speaker is not None else None
             sarcasm_labels.append(sarcasm_label_by_speaker)
 
-            # Build speaker annotation
+            # Build speaker annotation (extract demographic info from TSV)
             speaker_annotation = {
                 'annotator_id': str(speaker),
                 'irony_appropriateness_label': None,
@@ -153,9 +153,9 @@ class DatasetMerger:
                 'sarcasm_appropriateness_label': sarcasm_label_by_speaker, # working hypothesis
                 'sarcasm_label': sarcasm_label_by_speaker,
                 'sarcasm_score': float(sarcasm_score_by_speaker) if pd.notna(sarcasm_score_by_speaker) else None,
-                'age': None,  # Not available in CSC
-                'gender': None,
-                'ethnicity_simplified': None,
+                'age': int(row['speaker_age']) if pd.notna(row['speaker_age']) and str(row['speaker_age']) != 'DATA_EXPIRED' else None,
+                'gender': str(row['speaker_sex']) if pd.notna(row['speaker_sex']) and str(row['speaker_sex']) != 'DATA_EXPIRED' else None,
+                'ethnicity_simplified': str(row['speaker_ethnicity']) if pd.notna(row['speaker_ethnicity']) and str(row['speaker_ethnicity']) != 'DATA_EXPIRED' else None,
                 'country_of_birth': None,
                 'country_of_residence': None,
                 'nationality': None,
@@ -188,9 +188,9 @@ class DatasetMerger:
                         'sarcasm_appropriateness_label': sarcasm_label_by_evaluator, # working hypothesis
                         'sarcasm_label': sarcasm_label_by_evaluator,
                         'sarcasm_score': float(sarcasm_score_by_evaluator) if pd.notna(sarcasm_score_by_evaluator) else None,
-                        'age': None,
-                        'gender': None,
-                        'ethnicity_simplified': None,
+                        'age': int(observer_row['evaluator_age']) if pd.notna(observer_row['evaluator_age']) and str(observer_row['evaluator_age']) != 'DATA_EXPIRED' else None,
+                        'gender': str(observer_row['evaluator_sex']) if pd.notna(observer_row['evaluator_sex']) and str(observer_row['evaluator_sex']) != 'DATA_EXPIRED' else None,
+                        'ethnicity_simplified': str(observer_row['evaluator_ethnicity']) if pd.notna(observer_row['evaluator_ethnicity']) and str(observer_row['evaluator_ethnicity']) != 'DATA_EXPIRED' else None,
                         'country_of_birth': None,
                         'country_of_residence': None,
                         'nationality': None,

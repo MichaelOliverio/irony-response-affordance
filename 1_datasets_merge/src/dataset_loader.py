@@ -39,10 +39,10 @@ class DatasetLoader:
             'CSC': DatasetConfig(
                 name='CSC',
                 source='local',
-                path='datasets/CSC/data_full.json',
+                path='datasets/CSC/data_full_w_demo.tsv',
                 field_mappings={},
                 id_fields=['global_context_name', 'global_speaker'],
-                description='Conversational Sarcasm Corpus - local dataset'
+                description='Conversational Sarcasm Corpus - local dataset with demographic info'
             ),
             'MultiPICo': DatasetConfig(
                 name='MultiPICo',
@@ -85,9 +85,18 @@ class DatasetLoader:
                 file_path = current_dir / config.path
             
             self.logger.info(f"Loading raw data from: {file_path}")
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            df_raw = pd.DataFrame(data)
+            
+            # Check file extension and load accordingly
+            if file_path.suffix == '.json':
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                df_raw = pd.DataFrame(data)
+            elif file_path.suffix in ['.tsv', '.csv']:
+                # Use tab separator for TSV files, comma for CSV
+                separator = '\t' if file_path.suffix == '.tsv' else ','
+                df_raw = pd.read_csv(file_path, sep=separator, encoding='utf-8')
+            else:
+                raise ValueError(f"Unsupported file format: {file_path.suffix}")
             
         elif config.source == 'huggingface':
             self.logger.info(f"Loading raw data from Hugging Face: {config.path}")
