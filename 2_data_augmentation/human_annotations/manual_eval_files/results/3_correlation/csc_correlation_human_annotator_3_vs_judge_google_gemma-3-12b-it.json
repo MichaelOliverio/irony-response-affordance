@@ -1,54 +1,15 @@
 [
   {
-    "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_1",
-    "coherence_r": 0.5569945540200996,
-    "coherence_p": 0.031015319451847333,
-    "engagingness_r": 0.3060799585291159,
-    "engagingness_p": 0.26721544410039744,
-    "groundedness_r": 0.43707155007925497,
-    "groundedness_p": 0.10329494439238376,
-    "naturalness_r": 0.281401452155124,
-    "naturalness_p": 0.3096119291217182,
-    "total_r": 0.5022791037374975,
-    "total_p": 0.0563880433246105
-  },
-  {
     "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
-    "coherence_r": 0.08011171991592533,
-    "coherence_p": 0.776556126974456,
+    "coherence_r": 0.2570679211490926,
+    "coherence_p": 0.35500554221540626,
     "engagingness_r": NaN,
     "engagingness_p": NaN,
-    "groundedness_r": 0.1802967964572861,
-    "groundedness_p": 0.5202173179422172,
-    "naturalness_r": -0.03808687214422718,
-    "naturalness_p": 0.8928013911876858,
-    "total_r": -0.11715856879966524,
-    "total_p": 0.6775378133621446
-  },
-  {
-    "setting": "mistralai_Ministral-8B-Instruct-2410_n_turn_1",
-    "coherence_r": -0.2059335957551661,
-    "coherence_p": 0.461527884314612,
-    "engagingness_r": 0.03898789938405789,
-    "engagingness_p": 0.8902793288717351,
-    "groundedness_r": 0.20783476929501782,
-    "groundedness_p": 0.4573099331331574,
-    "naturalness_r": 0.5097289848016693,
-    "naturalness_p": 0.052254990018352244,
-    "total_r": 0.057223564501308055,
-    "total_p": 0.8394761729367602
-  },
-  {
-    "setting": "mistralai_Ministral-8B-Instruct-2410_n_turn_2",
-    "coherence_r": -0.30424349222966557,
-    "coherence_p": 0.27024281304025616,
-    "engagingness_r": -0.24855225809670126,
-    "engagingness_p": 0.3717172160350881,
-    "groundedness_r": 0.03330174885561168,
-    "groundedness_p": 0.9062108570324463,
-    "naturalness_r": -0.19170846812839737,
-    "naturalness_p": 0.4936836816895849,
-    "total_r": -0.16714845192286795,
-    "total_p": 0.5515657617822989
+    "groundedness_r": 0.2760262237369417,
+    "groundedness_p": 0.3193351202833233,
+    "naturalness_r": -0.12220540934961649,
+    "naturalness_p": 0.6643818773892538,
+    "total_r": -0.08499168914421705,
+    "total_p": 0.7632929654149355
   }
 ]

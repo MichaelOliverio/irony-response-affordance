@@ -1,0 +1,18 @@
+{
+  "Qwen/Qwen2.5-7B-Instruct": {
+    "meta-llama_Llama-3.1-8B-Instruct_n_turn_2": {
+      "Coherence": 0.9791666666666666,
+      "Engagingness": 0.7388888888888889,
+      "Groundedness": 0.8375,
+      "Naturalness": 0.9766666666666666
+    }
+  },
+  "google/gemma-3-12b-it": {
+    "meta-llama_Llama-3.1-8B-Instruct_n_turn_2": {
+      "Coherence": 0.6458333333333333,
+      "Engagingness": 0.37777777777777777,
+      "Groundedness": 0.6791666666666667,
+      "Naturalness": 0.9266666666666665
+    }
+  }
+}

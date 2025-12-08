@@ -1,0 +1,15 @@
+[
+  {
+    "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+    "coherence_r": 0.36594334954651897,
+    "coherence_p": 0.17978059088046575,
+    "engagingness_r": 0.190029237516523,
+    "engagingness_p": 0.49754765186585037,
+    "groundedness_r": 0.13130643285972254,
+    "groundedness_p": 0.6408880223829734,
+    "naturalness_r": -0.017460757394239457,
+    "naturalness_p": 0.9507520152082045,
+    "total_r": 0.4875508045998948,
+    "total_p": 0.06525400654889948
+  }
+]

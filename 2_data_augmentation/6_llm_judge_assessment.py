@@ -19,7 +19,7 @@ LATIN_SQUARE_ASSIGNMENTS_FILE = "human_annotations/manual_eval_files/latin_squar
 ANNOTATOR_IDS = ["annotator_1", "annotator_2", "annotator_3", "annotator_4"] # ["annotator_1", "annotator_2", "annotator_3", "annotator_4"]
 JUDGE_MODELS = ["Qwen/Qwen2.5-7B-Instruct", "google/gemma-3-12b-it"]
 NUM_RECORD = None # None: tutti i record
-DATASET_NAMES = ["csc"] # ["csc", "multipico"]
+DATASET_NAMES = ["csc", "multipico"]
 DIMENSIONS = {
     "Coherence": ['Logical Flow', 'Relevance', 'Continuity 1', 'Continuity 2'],
     "Engagingness": ['Informative', 'Emotional Engagement', 'Interest Level'],
@@ -107,7 +107,7 @@ def preprocess_human_annotations(dataset_name, lsa):
 
 def preprocess_judge_annotations(dataset_name, lsa):
     """Preprocessa le annotazioni dei judge convertendole nel formato delle annotazioni umane"""
-    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/judge_scores_{dataset_name}_all_instances_for_llm_judge.json"
+    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt5_judge_scores_{dataset_name}_all_instances_for_llm_judge.json"
     
     with open(judge_file, "r", encoding="utf-8") as f:
         judge_data = json.load(f)
@@ -422,6 +422,105 @@ def correlation(dataset_name):
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(results_dict, f, indent=2)
             print(f"\n        Salvato: {output_file}")
+    
+    # ===== CORRELAZIONE TOTALE (TUTTE LE ANNOTAZIONI AGGREGATE) =====
+    print("\n" + "="*70)
+    print("     CORRELAZIONE TOTALE (TUTTI GLI ANNOTATORI AGGREGATI)")
+    print("="*70)
+    
+    for judge_model in JUDGE_MODELS:
+        judge_name = judge_model.replace('/', '_')
+        judge_file = f"{PREPROCESSED_DIR}/{dataset_name}_judge_{judge_name}_preprocessed.json"
+        
+        try:
+            with open(judge_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            df_judge = pd.DataFrame(data)
+        except FileNotFoundError:
+            print(f"     File non trovato: {judge_file}")
+            continue
+        
+        # Aggrega i punteggi per dimensione (media)
+        df_judge['Coherence_total'] = df_judge[DIMENSIONS['Coherence']].mean(axis=1)
+        df_judge['Engagingness_total'] = df_judge[DIMENSIONS['Engagingness']].mean(axis=1)
+        df_judge['Groundedness_total'] = df_judge[DIMENSIONS['Groundedness']].mean(axis=1)
+        df_judge['Naturalness_total'] = df_judge[DIMENSIONS['Naturalness']].mean(axis=1)
+        df_judge['Total_total'] = df_judge[['Coherence_total', 'Engagingness_total', 'Groundedness_total', 'Naturalness_total']].mean(axis=1)
+        
+        # Seleziona solo le colonne necessarie
+        df_judge = df_judge[['unique_id', 'setting', 'Coherence_total', 'Engagingness_total', 'Groundedness_total', 'Naturalness_total', 'Total_total']]
+        
+        # Aggrega tutte le annotazioni umane
+        all_human_data = []
+        for annotator_id in ANNOTATOR_IDS:
+            df_human = human_dfs[annotator_id].copy()
+            df_human['annotator'] = annotator_id
+            all_human_data.append(df_human)
+        
+        df_all_human = pd.concat(all_human_data, ignore_index=True)
+        
+        # Merge con i dati del judge (ogni istanza del judge viene matchata con tutte le annotazioni umane)
+        df_merge = pd.merge(df_all_human, df_judge, on=['unique_id', 'setting'], suffixes=('_human', '_judge'))
+        
+        print(f"\n     Correlazione TOTALE: Tutti gli annotatori vs {judge_model}")
+        print(f"   Istanze totali: {len(df_merge)} (annotazioni umane aggregate)")
+        
+        # Calcola correlazione complessiva per tutte le istanze
+        print(f"\n   Correlazioni di Spearman COMPLESSIVE:")
+        overall_results = {}
+        for dim in dimensions:
+            col_human = f"{dim}_total_human"
+            col_judge = f"{dim}_total_judge"
+            
+            if len(df_merge) > 1:
+                r, p = spearmanr(df_merge[col_human], df_merge[col_judge])
+                overall_results[dim] = {'r': r, 'p': p, 'n': len(df_merge)}
+                significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
+                print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance} (n={len(df_merge)})")
+            else:
+                overall_results[dim] = {'r': np.nan, 'p': np.nan, 'n': len(df_merge)}
+                print(f"      {dim:15s}: N/A")
+        
+        # Calcola correlazione per setting (con tutte le annotazioni aggregate)
+        results_by_setting = []
+        for setting, group in df_merge.groupby('setting'):
+            row = {'setting': setting, 'n': len(group)}
+            for dim in dimensions:
+                col_human = f"{dim}_total_human"
+                col_judge = f"{dim}_total_judge"
+                
+                if len(group) > 1:
+                    r, p = spearmanr(group[col_human], group[col_judge])
+                    row[f'{dim.lower()}_r'] = r
+                    row[f'{dim.lower()}_p'] = p
+                else:
+                    row[f'{dim.lower()}_r'] = np.nan
+                    row[f'{dim.lower()}_p'] = np.nan
+            results_by_setting.append(row)
+        
+        df_spearman_by_setting = pd.DataFrame(results_by_setting)
+        
+        print(f"\n   Correlazioni di Spearman per setting (tutte le annotazioni aggregate):")
+        for _, row in df_spearman_by_setting.sort_values('setting').iterrows():
+            print(f"\n   {row['setting']} (n={row['n']}):")
+            for dim in dimensions:
+                r = row[f'{dim.lower()}_r']
+                p = row[f'{dim.lower()}_p']
+                if not np.isnan(r):
+                    significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
+                    print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance}")
+                else:
+                    print(f"      {dim:15s}: N/A")
+        
+        # Salva risultati aggregati in JSON
+        output_overall = f"{CORRELATION_DIR}/{dataset_name}_correlation_TOTAL_human_vs_judge_{judge_name}.json"
+        output_data = {
+            'overall': overall_results,
+            'by_setting': df_spearman_by_setting.to_dict(orient='records')
+        }
+        with open(output_overall, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, indent=2)
+        print(f"\n        Salvato: {output_overall}")
 
 
 def statistical_tests(dataset_name):
