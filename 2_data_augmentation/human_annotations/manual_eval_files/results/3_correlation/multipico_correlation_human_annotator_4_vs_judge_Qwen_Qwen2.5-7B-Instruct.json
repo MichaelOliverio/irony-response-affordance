@@ -3,13 +3,13 @@
     "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
     "coherence_r": NaN,
     "coherence_p": NaN,
-    "engagingness_r": -0.04429811949614587,
-    "engagingness_p": 0.8754360690005111,
-    "groundedness_r": 0.3659625273556999,
-    "groundedness_p": 0.17975604764223707,
-    "naturalness_r": -0.1336306209562122,
-    "naturalness_p": 0.6349375554371686,
-    "total_r": 0.31980736209447863,
-    "total_p": 0.24523851648841372
+    "engagingness_r": -0.18898223650461357,
+    "engagingness_p": 0.4999639789623681,
+    "groundedness_r": -0.07424302148395534,
+    "groundedness_p": 0.7925824311469598,
+    "naturalness_r": NaN,
+    "naturalness_p": NaN,
+    "total_r": 0.012469593727770992,
+    "total_p": 0.9648199372926003
   }
 ]

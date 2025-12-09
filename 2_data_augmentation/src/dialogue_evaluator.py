@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [3]
+    PROMPTS = [1, 2, 3, 4, 5, 6]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [

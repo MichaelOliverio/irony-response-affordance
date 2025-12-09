@@ -1,15 +1,15 @@
 [
   {
     "setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
-    "coherence_r": 0.2568195923179081,
-    "coherence_p": 0.35548688190015865,
-    "engagingness_r": 0.1392621247645583,
-    "engagingness_p": 0.6206058598462452,
-    "groundedness_r": 0.09710568665124317,
-    "groundedness_p": 0.730638357114777,
-    "naturalness_r": 0.4460847900209897,
-    "naturalness_p": 0.09557923344782995,
-    "total_r": 0.14802046909754993,
-    "total_p": 0.5985675655188532
+    "coherence_r": 0.703451521636327,
+    "coherence_p": 0.0034322412120208587,
+    "engagingness_r": 0.282842712474619,
+    "engagingness_p": 0.30703441952821553,
+    "groundedness_r": 0.36318014522928643,
+    "groundedness_p": 0.18333975305205927,
+    "naturalness_r": 0.6418645104313244,
+    "naturalness_p": 0.009890045654149113,
+    "total_r": 0.5438300781853295,
+    "total_p": 0.036121011462866316
   }
 ]
