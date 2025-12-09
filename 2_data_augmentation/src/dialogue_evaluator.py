@@ -433,7 +433,7 @@ Q1:"""
         return prompt
 
 
-    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 16):
+    def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
         Initialize the evaluator.
         
@@ -939,7 +939,7 @@ Q1:"""
                         outputs = self.model.generate(
                             input_ids=inputs['input_ids'],
                             attention_mask=inputs['attention_mask'],
-                            max_new_tokens=256,
+                            max_new_tokens=128,
                             pad_token_id=self.tokenizer.pad_token_id,
                             eos_token_id=self.tokenizer.eos_token_id,
                             temperature=0.7,
