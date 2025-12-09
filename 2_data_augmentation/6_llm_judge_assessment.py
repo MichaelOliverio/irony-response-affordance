@@ -6,12 +6,13 @@ import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import os
+import warnings
 
 HUMAN_ANNOTATIONS_DIR = "human_annotations/manual_eval_files/human"
 JUDGE_ANNOTATIONS_DIR = "human_annotations/manual_eval_files/judge"
 RESULTS_DIR = "human_annotations/manual_eval_files/results"
 PREPROCESSED_DIR = f"{RESULTS_DIR}/1_preprocessed"
-RANKING_DIR = f"{RESULTS_DIR}/2_ranking"
+#RANKING_DIR = f"{RESULTS_DIR}/2_ranking"
 CORRELATION_DIR = f"{RESULTS_DIR}/3_correlation"
 STATISTICAL_TESTS_DIR = f"{RESULTS_DIR}/4_statistical_tests"
 LATIN_SQUARE_ASSIGNMENTS_FILE = "human_annotations/manual_eval_files/latin_square_assignments.json"
@@ -19,7 +20,7 @@ LATIN_SQUARE_ASSIGNMENTS_FILE = "human_annotations/manual_eval_files/latin_squar
 ANNOTATOR_IDS = ["annotator_1", "annotator_2", "annotator_3", "annotator_4"] # ["annotator_1", "annotator_2", "annotator_3", "annotator_4"]
 JUDGE_MODELS = ["Qwen/Qwen2.5-7B-Instruct", "google/gemma-2-9b-it"] #"google/gemma-3-12b-it"
 NUM_RECORD = None # None: tutti i record
-DATASET_NAMES = ["csc", "multipico"]
+DATASET_NAMES = ["multipico"] #"csc", 
 DIMENSIONS = {
     "Coherence": ['Logical Flow', 'Relevance', 'Continuity 1', 'Continuity 2'],
     "Engagingness": ['Informative', 'Emotional Engagement', 'Interest Level'],
@@ -38,7 +39,7 @@ def preprocess_datasets():
     """Preprocessa sia le annotazioni umane che quelle dei judge"""
     # Crea le directory se non esistono
     os.makedirs(PREPROCESSED_DIR, exist_ok=True)
-    os.makedirs(RANKING_DIR, exist_ok=True)
+    #os.makedirs(RANKING_DIR, exist_ok=True)
     os.makedirs(CORRELATION_DIR, exist_ok=True)
     os.makedirs(STATISTICAL_TESTS_DIR, exist_ok=True)
     
@@ -165,162 +166,6 @@ def preprocess_judge_annotations(dataset_name, lsa):
             json.dump(output_data, f, indent=2)
         print(f"     Salvato: {dataset_name}_judge_{judge_name}_preprocessed.json ({len(df)} istanze)")
 
-def get_aggregate_dimension_score_per_setting(df):
-    '''
-    Ottengo questo formato
-        {
-            "annotator_2": {
-                "mistralai_Ministral-8B-Instruct-2410_n_turn_1": {
-                "Coherence": 27,
-                "Engagingness": 19,
-                "Groundedness": 26,
-                "Naturalness": 30
-                },
-                ...
-            },
-            ...
-        }
-    '''
-    settings = df['setting'].unique()
-    setting_dimension_scores = {}
-    for setting in settings:
-        setting_df = df[df['setting'] == setting]
-        dimension_scores = {}
-        for dimension, cols in DIMENSIONS.items():
-            dimension_score = setting_df[cols].mean().mean().item()
-            dimension_scores[dimension] = dimension_score
-        setting_dimension_scores[setting] = dimension_scores
-    return setting_dimension_scores
-
-def get_ranking_results(annotators):
-    '''
-    Ottengo questo formato
-        {
-            "mistralai_Ministral-8B-Instruct-2410_n_turn_1": {
-                "Coherence": [...],
-                ...
-            },
-            ...
-        }
-    '''
-    ranking_scores = {}
-    for annotator in annotators:
-        for setting in annotators[annotator]:
-            for dimension in annotators[annotator][setting]:
-                score = annotators[annotator][setting][dimension]
-                if setting not in ranking_scores:
-                    ranking_scores[setting] = {}
-                if dimension not in ranking_scores[setting]:
-                    ranking_scores[setting][dimension] = []
-                ranking_scores[setting][dimension].append(score)
-    return ranking_scores
-
-def get_average_ranking_results(ranking_results):
-    '''
-    Ottengo questo formato
-        {
-            "mistralai_Ministral-8B-Instruct-2410_n_turn_1": {
-                "Coherence": 25.5,
-                ...
-            },
-            ...
-        }
-    '''
-    average_ranking = {}
-    for setting in ranking_results:
-        average_ranking[setting] = {}
-        for dimension in ranking_results[setting]:
-            scores = ranking_results[setting][dimension]
-            average_score = np.mean(scores)
-            average_ranking[setting][dimension] = average_score
-
-    # Ordina i setting alfabeticamente
-    for setting in sorted(average_ranking.keys()):
-        print(f"{setting}:")
-        for dimension in average_ranking[setting]:
-            avg_score = average_ranking[setting][dimension]
-            print(f"  {dimension}: {avg_score:.2f}")
-
-    # media pesata tra le dimensioni (0.3 per Coherence/Groundedness/Naturalness, 0.1 per Engagingness)
-    dimension_weights = {
-        'Coherence': 0.3,
-        'Engagingness': 0.1,
-        'Groundedness': 0.3,
-        'Naturalness': 0.3
-    }
-    
-    for setting in sorted(average_ranking.keys()):
-        weighted_total = 0
-        for dimension in average_ranking[setting]:
-            weight = dimension_weights.get(dimension, 0)
-            weighted_total += average_ranking[setting][dimension] * weight
-        print(f"Weighted Average for {setting}: {weighted_total:.2f}")
-
-    return average_ranking
-
-
-def ranking(dataset_name):
-    """Calcola il ranking per annotatori umani e judge"""
-    
-    # ===== ANNOTATORI UMANI =====
-    print("\n" + "="*70)
-    print("     ANNOTATORI UMANI")
-    print("="*70)
-    
-    human_annotators = {}
-    for annotator_id in ANNOTATOR_IDS:
-        file_path = f"{PREPROCESSED_DIR}/{dataset_name}_{annotator_id}_preprocessed.json"
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        df = pd.DataFrame(data)
-        human_annotators[annotator_id] = get_aggregate_dimension_score_per_setting(df)
-
-    print("\n     Ranking Results per Annotatore:")
-    for annotator_id in human_annotators:
-        print(f"\n--- {annotator_id} ---")
-        annotator_results = {annotator_id: human_annotators[annotator_id]}
-        annotator_ranking = get_ranking_results(annotator_results)
-        get_average_ranking_results(annotator_ranking)
-
-    # Salva in un json nella cartella ranking
-    output_file = f"{RANKING_DIR}/{dataset_name}_human_aggregated_dimension_scores.json"
-    with open(output_file, 'w') as f:
-        json.dump(human_annotators, f, indent=2)
-    print(f"\n     Salvato: {output_file}")
-    
-    # ===== JUDGE =====
-    print("\n" + "="*70)
-    print("     JUDGE (LLM)")
-    print("="*70)
-    
-    judge_annotators = {}
-    for judge_model in JUDGE_MODELS:
-        judge_name = judge_model.replace('/', '_')
-        file_path = f"{PREPROCESSED_DIR}/{dataset_name}_judge_{judge_name}_preprocessed.json"
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            df = pd.DataFrame(data)
-            judge_annotators[judge_model] = get_aggregate_dimension_score_per_setting(df)
-        except FileNotFoundError:
-            print(f"     File non trovato: {file_path}")
-            continue
-
-    if judge_annotators:
-        print("\n     Ranking Results per Judge:")
-        for judge_model in judge_annotators:
-            print(f"\n--- {judge_model} ---")
-            judge_results = {judge_model: judge_annotators[judge_model]}
-            judge_ranking = get_ranking_results(judge_results)
-            get_average_ranking_results(judge_ranking)
-
-        # Salva in un json nella cartella ranking
-        output_file = f"{RANKING_DIR}/{dataset_name}_judge_aggregated_dimension_scores.json"
-        with open(output_file, 'w') as f:
-            json.dump(judge_annotators, f, indent=2)
-        print(f"\n     Salvato: {output_file}")
-    else:
-        print("     Nessun dato judge trovato")
 
 def correlation(dataset_name):
     """Calcola la correlazione tra annotatori umani vs judge"""
@@ -392,8 +237,11 @@ def correlation(dataset_name):
                     col_human = f"{dim}_total_human"
                     col_judge = f"{dim}_total_judge"
                     
-                    if len(group) > 1:  # Serve almeno 2 punti per la correlazione
-                        r, p = spearmanr(group[col_human], group[col_judge])
+                    # Controlla se ci sono abbastanza punti e varianza
+                    if len(group) > 1 and group[col_human].std() > 0 and group[col_judge].std() > 0:
+                        with warnings.catch_warnings():
+                            warnings.simplefilter("ignore")
+                            r, p = spearmanr(group[col_human], group[col_judge])
                         row[f'{dim.lower()}_r'] = r
                         row[f'{dim.lower()}_p'] = p
                     else:
@@ -472,8 +320,11 @@ def correlation(dataset_name):
             col_human = f"{dim}_total_human"
             col_judge = f"{dim}_total_judge"
             
-            if len(df_merge) > 1:
-                r, p = spearmanr(df_merge[col_human], df_merge[col_judge])
+            # Controlla se ci sono abbastanza punti e varianza
+            if len(df_merge) > 1 and df_merge[col_human].std() > 0 and df_merge[col_judge].std() > 0:
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    r, p = spearmanr(df_merge[col_human], df_merge[col_judge])
                 overall_results[dim] = {'r': r, 'p': p, 'n': len(df_merge)}
                 significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
                 print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance} (n={len(df_merge)})")
@@ -489,8 +340,11 @@ def correlation(dataset_name):
                 col_human = f"{dim}_total_human"
                 col_judge = f"{dim}_total_judge"
                 
-                if len(group) > 1:
-                    r, p = spearmanr(group[col_human], group[col_judge])
+                # Controlla se ci sono abbastanza punti e varianza
+                if len(group) > 1 and group[col_human].std() > 0 and group[col_judge].std() > 0:
+                    with warnings.catch_warnings():
+                        warnings.simplefilter("ignore")
+                        r, p = spearmanr(group[col_human], group[col_judge])
                     row[f'{dim.lower()}_r'] = r
                     row[f'{dim.lower()}_p'] = p
                 else:
@@ -596,6 +450,16 @@ def statistical_tests(dataset_name):
             'significant': bool(p_value_setting < 0.05)
         }
         
+        # Calcola sempre il ranking dei settings (media più alta)
+        setting_means = df_combined.groupby('setting')[dim_col].mean().sort_values(ascending=False)
+        print(f"\n     Ranking dei settings (dal migliore):")
+        for i, (setting, mean_score) in enumerate(setting_means.items(), 1):
+            print(f"   {i}. {setting}: {mean_score:.4f}")
+        
+        # Converti setting_means in dict con valori float
+        result['setting_means'] = {str(k): float(v) for k, v in setting_means.items()}
+        result['best_setting'] = str(setting_means.index[0])
+        
         # Se significativo, esegui Tukey HSD
         if p_value_setting < 0.05:
             print(f"\n     Differenza significativa trovata (p={p_value_setting:.4f})")
@@ -621,21 +485,9 @@ def statistical_tests(dataset_name):
                         converted_record[key] = value
                 tukey_records.append(converted_record)
             result['tukey_results'] = tukey_records
-            
-            # Trova il miglior setting (media più alta)
-            setting_means = df_combined.groupby('setting')[dim_col].mean().sort_values(ascending=False)
-            print(f"\n     Ranking dei settings (dal migliore):")
-            for i, (setting, mean_score) in enumerate(setting_means.items(), 1):
-                print(f"   {i}. {setting}: {mean_score:.4f}")
-            
-            # Converti setting_means in dict con valori float
-            result['setting_means'] = {str(k): float(v) for k, v in setting_means.items()}
-            result['best_setting'] = str(setting_means.index[0])
         else:
             print(f"\n     Nessuna differenza significativa (p={p_value_setting:.4f})")
             result['tukey_results'] = None
-            result['setting_means'] = None
-            result['best_setting'] = None
         
         results_summary.append(result)
     
@@ -658,7 +510,6 @@ def main():
         print(f"\n" + "="*70)
         print(f"     ANALISI DELLE VALUTAZIONI PER IL DATASET: {dataset_name.upper()}")
         print("="*70)
-        #ranking(dataset_name)
         correlation(dataset_name)
         #statistical_tests(dataset_name)
 

@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [1, 2, 3, 4, 5, 6]
+    PROMPTS = [3]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
@@ -790,6 +790,7 @@ Q1:"""
                             parsed_scores = self._parse_judge_response(llm_response, dimension_info['questions'])
                             
                             current_dialogue_results[row_key]['dimensions'][dimension_name] = {
+                                'prompt': prompt,
                                 'raw_response': llm_response,
                                 'scores': parsed_scores,
                                 'average_score': np.mean(list(parsed_scores.values())) if parsed_scores else 0.0
