@@ -107,7 +107,7 @@ def preprocess_human_annotations(dataset_name, lsa):
 
 def preprocess_judge_annotations(dataset_name, lsa):
     """Preprocessa le annotazioni dei judge convertendole nel formato delle annotazioni umane"""
-    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt5_judge_scores_{dataset_name}_all_instances_for_llm_judge.json"
+    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt3_judge_scores_{dataset_name}_all_instances_for_llm_judge.json" # il 3 sembra il migliore
     
     with open(judge_file, "r", encoding="utf-8") as f:
         judge_data = json.load(f)
