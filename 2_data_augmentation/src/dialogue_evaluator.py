@@ -548,7 +548,6 @@ Your task is to read the generated dialogue (provided between the tags <GENERATE
             prompt = f"""<TASK_OVERVIEW>
 You will be given a short conversation between two individuals u1 and u2 between the tags <ORIGINAL_CONTEXT>. The short conversation consists of a pair of messages exchanged on social media. 
 You will then be given a generated dialogue that precedes the short conversation, between the tags <GENERATED_TURN>.
-You will be given the complete conversation between the tags <FULL_CONVERSATION>.
 Your task is to read the generated dialogue (provided between the tags <GENERATED_TURN>) taking into account the short conversation (provided between the tags <ORIGINAL_CONTEXT>), then answer ‘yes’ or ‘no’ to specific questions. These questions will relate to a particular dimension (provided between the tags <DIMENSION_DEFINITION>) of the generated dialogue."""
         else:
             raise ValueError(f"Unknown dataset name: {dataset_name}")
