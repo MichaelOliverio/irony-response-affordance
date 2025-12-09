@@ -7443,6 +7443,3728 @@
         },
         "overall_average": 0.375
       }
+    ],
+    "google/gemma-2-9b-it": [
+      {
+        "unique_id": "5913824363200763144_11130415265007119424",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "The Scottish referendum in 2014 was a close call, but it was a vote for the UK, not independence. That's a fact.",
+              "u2": "But the UK is changing, and Scotland is changing too. Shouldn't they have a say in their own future?"
+            },
+            {
+              "u1": "If Scotland wants to re-evaluate their decision, they should do it through the proper channels, not through social media.",
+              "u2": "Proper channels? You mean the same channels that brought us Brexit? I don't think so."
+            },
+            {
+              "u1": "The people of Scotland had a vote on devolution in 1997.\nThey voted clearly in support of devolution and that vote has been respected with it's implementation.\nTime for another vote to see if they still want devolution.\nA lot has changed since then.\nIs that how it works?",
+              "u2": "@USER One question . \n\nSHOULD SCOTLAND BE INDEPENDENT.\n\nBan all coverage from any political parties, let the people decide with their own conscience."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "4153912052076221148_13253936608490326173",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm getting a bit tired of the constant scrutiny on young players. It's hard enough to make it in this game without having the media breathing down your neck.",
+              "u2": "Why are you defending him? He's clearly not playing by the rules"
+            },
+            {
+              "u1": "I'm not defending him, I'm just saying that we should be more understanding and not jump to conclusions. We've all made mistakes on the field, right?",
+              "u2": "Mistakes? He's been caught red-handed multiple times, it's not a mistake, it's a pattern of behaviour"
+            },
+            {
+              "u1": "The targeted abuse towards Porteous, a young player with a promising future, is disgusting. Media in this country do no favours in helping the game progress. Don't mind him being seen as a 'pantomine villain' but the current 'cheating' narrative is way over the line.",
+              "u2": "@USER Except for the fact that he is a cheat"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>\n\n\n```python\ndef evaluate_coherence(short_conversation, generated_dialogue):\n  \"\"\"\n  Evaluates the coherence of a generated dialogue based on the given dimension definition.\n\n  Args:\n    short_conversation: The initial dialogue exchange.\n    generated_dialogue: The generated dialogue to be evaluated.\n\n  Returns:\n    A dictionary containing 'yes' or 'no' answers for each question related to coherence.\n  \"\"\"\n\n  # Extract user turns for analysis\n  u1",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "17473242444830018254_14709404905966474854",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, I've been digging into their past for weeks and I've found nothing but skeletons in their closet.",
+              "u2": "What are you talking about?"
+            },
+            {
+              "u1": "I'm talking about all the shady business deals they've been involved in, the fake charities they've been running, the lies they've been telling.",
+              "u2": "That sounds like a pretty big deal. Are you going to expose them?"
+            },
+            {
+              "u1": "That must have been the easiest job in the world, digging up dirt on Bronwyn and Ley. The dirt pretty much dug itself out of the ground for those two.",
+              "u2": "Seriously.\nTalk about a non-story."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 0.6666666666666666
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "16479877604240977630_5093588245350490870",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm so glad I'm not the only one who saw that crazy thing on the tracks.",
+              "u2": "What are you talking about? I've been stuck in traffic all day."
+            },
+            {
+              "u1": "Apparently, it was some kind of vehicle that got stuck on the tracks.",
+              "u2": "Oh yeah? What kind of vehicle?"
+            },
+            {
+              "u1": "It wasn't a train lol...small maintenance vehicle, but it messed up a lot of train lines.",
+              "u2": "I guess it had the same sort of effect"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.75
+      },
+      {
+        "unique_id": "4406816020059779237_11047491654451679497",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Jason Momoa's got some serious brawn going on, right?",
+              "u2": "I know, I saw him in that Aquaman movie"
+            },
+            {
+              "u1": "He's like a real-life superhero, but with a better beard",
+              "u2": "Haha yeah, and a better abs too"
+            },
+            {
+              "u1": "Jason Momoa, i'm straight but if i had to, that guy could tear me up.",
+              "u2": "Ouch your butt"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "15878862390442679669_5355962305897979354",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Just got my Irish citizenship! I've always wanted to connect with my heritage.",
+              "u2": "Congrats! How long did it take you to get the paperwork done?"
+            },
+            {
+              "u1": "It was a long process, but totally worth it! I'm so excited to celebrate St. Patrick's Day this year!",
+              "u2": "You'll have to show me your new passport. I want to see the 'Irish' stamp."
+            },
+            {
+              "u1": "It’s Official! I’m Irish!",
+              "u2": "Paper Irish*"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "9624035845805455500_12738531622442180264",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm getting a bit worried about my son. He's been acting strange lately.",
+              "u2": "What do you mean? Is he okay?"
+            },
+            {
+              "u1": "He's been getting into some bad crowds and I'm starting to think he's experimenting with things he shouldn't be.",
+              "u2": "That's not good. Maybe he just needs some guidance or a reality check?"
+            },
+            {
+              "u1": "My son came home from a party(obviously drunk) he had to throw up and he said he was ill from the food.",
+              "u2": "your son is brilliant"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "14414048990837088696_5694833559517307771",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't understand why it's taking so long to get the manifest. I thought it was supposed to be a straightforward process.",
+              "u2": "I know, I've been trying to get some info on it and it seems like there's a lot of red tape involved."
+            },
+            {
+              "u1": "It's unbelievable that the Commonwealth can't even get a copy of a few pages done quickly. It's not like they're dealing with a massive data dump.",
+              "u2": "And to think that Peter Dutton is always going on about national security. You'd think they'd have their act together by now."
+            },
+            {
+              "u1": ">the Commonwealth was trying to provide the manifest \"as urgently as they possibly can\"\nWhat the actual fuck?  Manifests are compiled and submitted by airlines by law.  The Commonwealth government is not able to get a copy of a few pages done quickly?  And the Commonwealth is only today thinking about a process to deal with this request?  God we're so stupid.",
+              "u2": "I know, this is totally unacceptable considering how hard Peter Dutton touts national security."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "5441048214740561263_16301769596788618145",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm still trying to wrap my head around the whole cafe situation. I mean, I know he's a public figure, but I wouldn't expect him to be so... accessible.",
+              "u2": "Yeah, I know what you mean. I've seen him at a few events, but I've never seen him just chillin' at a cafe like that. What was he doing, do you think?"
+            },
+            {
+              "u1": "Honestly, I have no idea. He was just sitting there, staring at his phone. I didn't want to intrude, so I just kept walking.",
+              "u2": "That's weird. I've heard rumors that he's been struggling with some personal stuff lately. Maybe that's what's going on?"
+            },
+            {
+              "u1": "I literally passed a cafe an hour ago with himself sat in the window with other people and he looked stressed to fuck",
+              "u2": "I'm sure he's not worried about his staff members who he laid off. Click farms are nonsensical. If any account or post has a high number of likes or followers I'm always wondering how many actual real people liked it or followed it and how many bots did the same."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "4377701867540598223_265041111922432154",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "\"This is getting out of hand. We can't just let them shout at the metro stations.",
+              "u2": "I know, right? It's like they're trying to start a riot."
+            },
+            {
+              "u1": "It's not just the shouting. They're also vandalizing the stations.",
+              "u2": "That's it, I've had enough. We need to do something about this."
+            },
+            {
+              "u1": "People are now justifying \"Goli Maro\" shouting at Metro Station.",
+              "u2": "What's their excuse this time?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "15416369316281645161_9398622354843955071",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've seen some pretty reckless driving around here lately, and I'm starting to wonder if some drivers are just oblivious to the fact that there are pedestrians around.",
+              "u2": "I know what you mean. I've had a few close calls myself. I think it's just a matter of being more aware of your surroundings."
+            },
+            {
+              "u1": "But even if they're not intentionally trying to splash us, don't you think it's still a problem? I mean, it's not like we're asking for much – just a little courtesy on the road.",
+              "u2": "I agree, it's still a problem. But I think it's more about a lack of consideration rather than malice. Maybe if we could get more drivers to be more mindful, it would make a difference."
+            },
+            {
+              "u1": "It's actually illegal (UK) for drivers to do this on purpose to pedestrians now.",
+              "u2": "I don’t think they did it on purpose, per se, but they definitely could’ve reduced the amount of splash by being aware of the road."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.75
+      },
+      {
+        "unique_id": "1374960697160453405_2252348410419998272",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: @USER You're blaming people for their health problems? That's a pretty harsh stance.",
+              "u2": "u2: @USER I'm not blaming them. I'm just saying that some people are dealt a tougher hand in life. My aunt had to work hard to stay healthy, but she did it. My mom didn't have to work as hard, but she still managed to stay healthy. It's not about blaming people, it's about recognizing that some people have it easier than others."
+            },
+            {
+              "u1": "u1: @USER That's a pretty simplistic view of a complex issue. What about people who are struggling with addiction or mental health issues?",
+              "u2": "u2: @USER I understand that it's not always that simple. But my point is that some people are more resilient than others. My grandfather was a heavy drinker, but he got sober and lived a long, healthy life. It's not about being lazy or not trying hard enough. It's about being dealt a certain hand in life."
+            },
+            {
+              "u1": "@USER It's cruel and it's false",
+              "u2": "@USER Just lazy. My aunt quit smoking young, ate like an athlete in training, and ran all over her NH farm. My mother never smoked, loved sweets, ran all over the  Methuen Mall. My grandfather got sober, never stopped moving, ate what he could afford. They were dealt their destiny."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "15552971381088866001_11888329237387000433",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Just got back from a trip and I'm still finding stuff I lost. Anyone lost a phone recently?",
+              "u2": "Nah, I haven't lost anything"
+            },
+            {
+              "u1": "I'm starting to think I'm the only one who loses things all the time",
+              "u2": "Ha! You're just clumsy"
+            },
+            {
+              "u1": "Pretty sure that’s mine. I dropped one in nsw recently... please pm to return /s",
+              "u2": "Lol. Nice one."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "17457646054318905579_2168687590666378141",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: What do you think about the role of religion in politics? Should they be separate?",
+              "u2": "Absolutely, they should be separate. Religion is personal and should not influence public policy."
+            },
+            {
+              "u1": "But what about companies that use their religion as a way to justify discriminatory practices?",
+              "u2": "That's a whole different story. I think companies should be held accountable for their actions and policies, regardless of their religious affiliations."
+            },
+            {
+              "u1": "What is one company you'll never do business with because of their horrible politics?",
+              "u2": "@USER The Catholic Church"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "3323520100287981446_1413281847757410776",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm not sure what's more annoying, the constant stream of smart devices trying to 'improve' our lives or the fact that they're all just a bunch of unnecessary clutter.",
+              "u2": "I see what you mean, but some of these devices can be really convenient. I mean, having a smart thermostat that learns your schedule and preferences is pretty cool."
+            },
+            {
+              "u1": "But at what point do we draw the line? Do we really need a smart coffee maker that can order beans online and schedule brewing times?",
+              "u2": "Well, I think it's all about finding a balance between convenience and security. I mean, if these devices are connected to the internet, they're basically a vulnerability waiting to happen."
+            },
+            {
+              "u1": "There are kettles and toasters that hook into your WiFi that can be set to operate at a particular time or be controlled by your phone however you're still going to have to get out of bed to make tea and butter your toast",
+              "u2": "And are a security nightmare"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "5484529351205990135_6006195789051494887",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been to Britain a few times and I have to say, I'm not blown away by it.",
+              "u2": "What do you mean? I think it's fantastic!"
+            },
+            {
+              "u1": "I don't know, it just feels so... ordinary. I mean, the food, the culture, the people... it all seems so... normal.",
+              "u2": "Normal? That's what I love about it! It's not all about the glitz and glamour, you know?"
+            },
+            {
+              "u1": "I know it says great, but all I see is ordinary Britain.",
+              "u2": "Ordinary Britain is in France"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "3387143640398978761_8608797291134632917",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm still fuming about the National Games in Gujarat. The organizers were so unprepared, and the accommodation was a nightmare. I'm an athlete, and I expect a certain level of respect and care.",
+              "u2": "@USER What's the big deal? It's just a game, right?"
+            },
+            {
+              "u1": "I'm not just talking about the games themselves, but the way we were treated as a whole. The staff at the airport, the food, the transportation... everything was a disaster. And to top it all off, they charged us for excess baggage for our medals and goodies!",
+              "u2": "@USER Oh, come on! You're an athlete, you must be used to dealing with some level of chaos. It's not like you're a celebrity or something."
+            },
+            {
+              "u1": "Dear  @USER \n\n I was returning from the National Games held in Gujarat, and the staff not only behaved badly, but also charged us a hefty amount for excess baggage which was the medals and goodies that we athletes had won.",
+              "u2": "@USER  @USER What do you expect from a third class airlines.? Indigo airlines is worse than the village town bus"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "10148886791469606977_9447386993757114952",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "McConnell is a master of spin. He can make a broken clock sound like a great timepiece.",
+              "u2": "Spin doctoring won't cut it this time, Mitch. The people are onto you."
+            },
+            {
+              "u1": "It's just a matter of framing it the right way. People will come around once they see it from our perspective.",
+              "u2": "Perspective? You mean the one where you get to decide what's right and wrong?"
+            },
+            {
+              "u1": "“I personally thought it was a good idea.” —Mitch McConnell on the illegal and immoral transporting of migrants",
+              "u2": "@USER Of course you did Mitch. Its a criminal act."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "14405335798959219671_971412872973820805",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Just got word from Keith that labour is going to start soon. Fingers crossed it goes smoothly",
+              "u2": "That's good news! What's the scope of the work?"
+            },
+            {
+              "u1": "Keith and his crew are doing the whole renovation, so it's a big job. Hopefully, they can get it done quickly",
+              "u2": "That sounds like a lot of work. Do you know how long it'll take?"
+            },
+            {
+              "u1": "@USER Labour is finished thanks too Keith and his mates ???????",
+              "u2": "@USER Who’s Keith?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "18150040957451552889_3896265658229282475",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Sapien says, “I'm so done with studying for this exam. I'm never gonna remember anything anyway.”",
+              "u2": "Dude, you gotta focus, it's not that hard. You've got this."
+            },
+            {
+              "u1": "Sapien says, “I swear, if I have to look at one more textbook, I'm gonna lose my mind.”",
+              "u2": "Then maybe you should just drop out of school and get a job at McDonald's"
+            },
+            {
+              "u1": "Sapien says, “tomorrows exam can fuck off.”",
+              "u2": "Then tomorrow exam fucks Sapien in the ass"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "11694935650518623250_229682044750173047",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "What a game! Wexford were so close!",
+              "u2": "Yeah, they had some chances but couldn't capitalize on them. That penalty was a huge miss"
+            },
+            {
+              "u1": "I'm still trying to figure out what happened with that Wexford player...",
+              "u2": "I think he got injured pretty early on, and it seemed to affect their whole team's momentum"
+            },
+            {
+              "u1": "Black card and penalty?",
+              "u2": "@USER Absolutely should  that I know it could’ve been a game changer Wexford injuries through the game cost them in the last 15 minutes ,Well done Clare no arguments"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "7781613690748774184_5914449470530159289",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I think it's time to talk about the double standards in the Royal Family. Prince Harry and his wife are constantly under scrutiny, while Prince William and his wife seem to get a free pass.",
+              "u2": "I don't get why Prince Harry can't just move on from the past and focus on his present. He's got a beautiful family and a great platform."
+            },
+            {
+              "u1": "It's not just about moving on from the past, it's about accountability. Prince William and Kate have been using the tabloids to their advantage, while Harry and Meghan have been punished for doing the same.",
+              "u2": "But don't you think that's a bit unfair? Prince William and Kate have been in the public eye for just as long as Harry and Meghan, and they've managed to navigate it just fine."
+            },
+            {
+              "u1": "While Prince Harry fights the tabloids that destroyed his mother and abused his wife, his brother Prince William works with the same tabloids to fight his SIL and offers his children pictures to keep the same tabloids happy… The Windsor Princes.",
+              "u2": "@USER Harry seems to be constantly unhappy. I don’t understand why he’s not living his best life with all that privilege."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "15741050156977533455_5876804306864960579",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1 is still talking about Jonathan Scott, but now he's expressing his frustration about people not understanding him",
+              "u2": "I don't think people are misunderstanding you, u1. They just don't agree with you."
+            },
+            {
+              "u1": "I swear, no one gets it. They think I'm just making a big deal out of nothing",
+              "u2": "Maybe if you explained it in a different way, people would understand your point of view"
+            },
+            {
+              "u1": "Everyone Is Still Grasping Jonathan Scott Tragedy, here is the full story",
+              "u2": "@USER Its not a tragedy. Its life. It goes on. He's fine."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "859039820490555932_16171471155411693258",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "We're stuck in this mess, it's like we're drowning in quicksand. I don't know how much longer I can hold on.",
+              "u2": "Hey, don't lose hope, we'll get through this together"
+            },
+            {
+              "u1": "I'm tired of pretending everything's fine when it's not. I need someone to talk to, someone who gets it.",
+              "u2": "I'm here for you, what's going on?"
+            },
+            {
+              "u1": "Damn, I'm exhausted\nWhat the hell's this all for?\nIs this where it mends or it breaks?\nBetween a rock and a hard place\nFor the record, shit\nThrowin' in the towel takes some effort\nSo I'd rather ride it out for better weather\nTogether ?",
+              "u2": "@USER Good blessed morning luv.. hope you had a great evening"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n\n\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "15102706557225594680_5971079196558459844",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm really enjoying the game so far. The world is so immersive and the characters are so well-developed. I feel like I'm really getting to know Arthur Morgan.",
+              "u2": "I know what you mean! The way the game makes you feel like you're part of the gang is amazing. I love how you have to make tough choices and see how it affects the story."
+            },
+            {
+              "u1": "I'm getting really attached to Arthur, though. He's such a complex character with so much depth. I'm starting to feel like I'm invested in his fate.",
+              "u2": "I feel the same way! Arthur's character development is one of the things that's really stood out to me about the game. I'm curious to see where his story goes from here."
+            },
+            {
+              "u1": "Red Dead Redemption 2. Without spoiling too much it just felt way too personal and I’m still not over it.",
+              "u2": "Before playing it, I knew how it was going to end, but I still cried, I felt that Arthur deserved the best."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 0.6666666666666666
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "4545055710738964083_8855341108826293525",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been trying to get my family to join me on social media for years, but they just won't have it. I guess I'll just have to get my birthday wishes from all of you lovely people instead.",
+              "u2": "Happy to help spread the word!"
+            },
+            {
+              "u1": "I've been feeling a bit down lately, so it would really make my day if I could get some birthday love from my online friends.",
+              "u2": "Sending you all the birthday vibes, @USER!"
+            },
+            {
+              "u1": "Hello everyone. Today is my 73rd birthday. Haven't heard from family. Can I  please get some birthday likes?",
+              "u2": "@USER Happy birthday"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "12586785139810390111_899571767597707952",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm really loving the new Queen album. What do you think of it?",
+              "u2": "I've only listened to it a few times, but I think it's a solid addition to their discography. I'm still waiting for a new Prince album to drop."
+            },
+            {
+              "u1": "I've been listening to a lot of Prince lately too. His songwriting skills are incredible.",
+              "u2": "Absolutely! Prince was a master songwriter. His ability to blend genres and create something unique is unmatched."
+            },
+            {
+              "u1": "Queen or Prince?",
+              "u2": "@USER I am a huge fan of queen but I got to go with prince was a once in a generation talent"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.75
+      },
+      {
+        "unique_id": "5817995381377013637_15542851172796108969",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I love the idea of a Yorkshire pudding with a twist. What's your favorite way to serve it?",
+              "u2": "Honestly, I'm a bit of a traditionalist, but I do love it with a bit of gravy and some roasted veggies on the side."
+            },
+            {
+              "u1": "Gravy and veggies sound delicious! But I'm thinking of trying something new. Have you ever put any type of meat in the pudding itself?",
+              "u2": "Actually, yes! My family's recipe involves putting a few slices of cooked ham in the batter before baking. It adds a nice salty flavor."
+            },
+            {
+              "u1": "Just needs some sausages in it",
+              "u2": "My family also does a Yorkshire like this but instead of sausages puts the whole roasting joint in the middle (not covered with batter mind you) , the meaty juices infuse the pudding with amazing flavour."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "11864687632882393096_2290386840625022049",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "The Indian government has been quite slow in responding to the pandemic. I wonder if they will finally start taking concrete steps to combat it.",
+              "u2": "I'm not sure. They've been saying they're working on it, but it seems like nothing's changing on the ground."
+            },
+            {
+              "u1": "But what about the testing? Won't that be a crucial step in controlling the spread of the virus?",
+              "u2": "I don't think so. They're more concerned with the economic impact right now."
+            },
+            {
+              "u1": "Can we expect Indians to start getting tested by government soon?",
+              "u2": "Unlikely."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 1.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.9375
+      },
+      {
+        "unique_id": "4258712411468956824_899571767597707952",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm thinking about the latest royal family news and I'm torn between the queen and the prince. What do you think?",
+              "u2": "I'm more of a fan of the queen, I love her sense of style and her dedication to her country."
+            },
+            {
+              "u1": "But the prince has been doing some amazing work with his charity initiatives, I think he's really making a difference.",
+              "u2": "That's true, but the queen has been on the throne for so long, she's earned her place in history."
+            },
+            {
+              "u1": "Queen or Prince?",
+              "u2": "@USER Both, Its A Tie To Me!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 1.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.9375
+      },
+      {
+        "unique_id": "2946702837011743905_7828973175098327307",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: I'm starting to think I'm the only one who's still young at heart. I mean, I'm 35 and I still love playing video games and watching cartoons. Is that weird?",
+              "u2": "Nah, I'm 32 and I still play video games too! But I'm starting to feel like I'm getting too old for it."
+            },
+            {
+              "u1": "What do you mean you're getting too old for it? You're not even 40 yet!",
+              "u2": "I know, I know. It's just that my friends are all getting married and having kids, and I'm still just playing games all day. It feels like I'm stuck in a different stage of life."
+            },
+            {
+              "u1": "@USER Christ no, 35 is still babes in arms stage!",
+              "u2": "@USER ?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "263390242635453778_8904139756219500879",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: Hey @USER, I just watched Urlo and I'm still reeling from it. The emotions were so raw and honest.",
+              "u2": "What did you think of the ending? I'm still trying to process it."
+            },
+            {
+              "u1": "I loved how it wrapped up the story without tying everything up with a bow. It felt so true to life.",
+              "u2": "Exactly! I felt like I was right there with the characters, experiencing their pain and struggle."
+            },
+            {
+              "u1": "@USER  @USER It was powerful Urlo. Made me cry.",
+              "u2": "@USER  @USER Yep very much from the heart"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.8125
+      },
+      {
+        "unique_id": "18070823294188321522_7724647346679285012",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1 is having a bad day, so u1 starts the conversation with a venting message about a frustrating situation.",
+              "u2": "Sorry to hear that. What happened?"
+            },
+            {
+              "u1": "Just got into a fight with my neighbor over a parking spot. Now I'm stuck with a huge fine",
+              "u2": "That's so annoying! Did you record the incident?"
+            },
+            {
+              "u1": "The Mams WhatsApp group here in D9 is off on one now give me strength",
+              "u2": "Anything hilarious? Please share if there is"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "2563116565800703968_2201949443606602851",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm trying to understand the impact of advertising on our behavior. Do you think it influences our choices?",
+              "u2": "Honestly, I think it does, but it's hard to say for sure. I mean, we're not mindless drones, are we?"
+            },
+            {
+              "u1": "I see what you mean. But what if I told you that some companies are actually using their ads to promote a positive message?",
+              "u2": "That's interesting. Which companies are doing that?"
+            },
+            {
+              "u1": "They are aren't they? I always see on alcohol ads \"always drink responsibly.\"",
+              "u2": "yeah like heinekens ads are literally all about not drinking and driving."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "3987351056977585279_12499657043217930172",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm still trying to wrap my head around this new law. I mean, what even is the definition of 'good faith'?",
+              "u2": "I know, right? It's like they're just making it up as they go along. I swear, politicians have no idea what regular people go through."
+            },
+            {
+              "u1": "I guess the idea is that if someone can find one person who agrees with them, then their belief is legit? It's like having a get-out-of-jail-free card.",
+              "u2": "That's exactly what it sounds like. And what's to stop people from just making up some crazy stuff and finding one person to vouch for it?"
+            },
+            {
+              "u1": ">The statement must be made in good faith and is a belief that a person of the same religion could reasonably consider to be in accordance with the doctrines, tenets, beliefs or teachings of that religion. This has been dubbed the “phone a friend” clause as the person only needs a single other person to vouch that the belief is part of their shared religion.\nNah, there's no way this could backfire spectacularly.",
+              "u2": "Totally becoming a Satanist if this legislation goes through."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "3890158818726889546_9413127874837259452",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: Hope you're feeling better soon, Massimo. How's the prep going?",
+              "u2": "u2: @USER Thanks for asking, @USER! The doctors say everything is on track, but I'm still a bit anxious."
+            },
+            {
+              "u1": "u1: That's completely normal! You've got this, Massimo. Have you talked to any of the other patients?",
+              "u2": "u2: @USER Actually, I met a few of them in the waiting area. They're all really nice and seem to be handling it well."
+            },
+            {
+              "u1": "@USER Best of luck Massimo, hope it goes smoothly.",
+              "u2": "@USER  @USER Best wishes for a successful operation and a speedy and comfortable recovery ."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "16873054711772305548_6725044516132975537",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been wondering why I chose this username. It's not like I had a grand epiphany or anything. I just thought it sounded cool, I guess.",
+              "u2": "I'm curious, what made you think it sounded cool?"
+            },
+            {
+              "u1": "I don't know, it just did, I suppose. I was going through a bit of a phase back then. I was really into fantasy novels and stuff.",
+              "u2": "Ah, I see. So you were trying to tap into your inner fantasy hero?"
+            },
+            {
+              "u1": "My first girlfriend gave me the same nickname.",
+              "u2": "Guess that explains the username."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "17202242027389598106_9759080988703837106",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1 is loving the LIVGolf event and can't wait to see the final leaderboard",
+              "u2": "Just got back from the course and saw the leaderboard. Looks like it's going to be a close finish"
+            },
+            {
+              "u1": "The competition is getting fierce, but I'm still rooting for @USER",
+              "u2": "I'm not sure who's going to win, but I'm loving the drama and suspense"
+            },
+            {
+              "u1": "Last place in the #LIVGolfBangkok event should def have to go with  @USER to sample some of that extreme local cuisine. ?? #LIVGolf",
+              "u2": "@USER  @USER That was great to see that - so much more interesting broadcast"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "13733442130523169713_1864848405404634972",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "The news out of Thailand is just devastating. I'm still trying to wrap my head around the senseless violence that occurred at the nursery.",
+              "u2": "I'm still trying to process the events that transpired in Thailand. The images and stories are just heartbreaking."
+            },
+            {
+              "u1": "It's heartbreaking to see the impact on the families and the community. This tragedy will leave a lasting scar.",
+              "u2": "The families of the victims will be left to pick up the pieces and try to move forward. It's a difficult road ahead for them."
+            },
+            {
+              "u1": "Our thoughts and prayers are with the families of those killed in this senseless massacre at the nursery in Thailand. Thai people are peace loving with a beautiful nature, which makes this crime even more difficult to comprehend.",
+              "u2": "@USER People are genuinely upset for the families in Thailand who are grieving the death of their innocent loved ones. Truly a horrifying, senseless loss of so many lives. \nHowever I do question the sincerity of Peter Dutton's words when he is trying to show 'his nicer, caring'side."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "16178942295009949284_6401240489724397065",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "\"Human activities are causing irreversible damage to our planet. It's time we take action!",
+              "u2": "That's just a bunch of alarmist nonsense. What's the real evidence?"
+            },
+            {
+              "u1": "Studies have shown that industrial emissions and deforestation are leading to devastating effects on our environment.",
+              "u2": "Those studies are probably funded by environmental groups looking to make a quick buck."
+            },
+            {
+              "u1": "Human activity causes pollution shocker.",
+              "u2": "China still denies they cause pollution all the same."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "11611773272680671666_3993119636255516191",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't think we're getting anywhere with this discussion.",
+              "u2": "I'm starting to feel like we're just talking past each other."
+            },
+            {
+              "u1": "It's like we're not even on the same page.",
+              "u2": "I'm not sure what you're trying to get at."
+            },
+            {
+              "u1": "Can we just stop with this now?",
+              "u2": "I suspect it’s coming to an end...."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "6740582605855102885_13146902556849237443",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I heard something about a concert. Is it true?",
+              "u2": "I don't know, I haven't seen any official announcements yet."
+            },
+            {
+              "u1": "A friend told me it's happening this weekend.",
+              "u2": "That's not what I heard. I think it's next month."
+            },
+            {
+              "u1": "Yes.",
+              "u2": "You sure? I haven't heard anything."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "11702850398649379152_11792447315014619533",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: I see you're still married, but I'm curious, are you looking to make some changes in your life?",
+              "u2": "Changes? Like what kind of changes?"
+            },
+            {
+              "u1": "Well, you know, maybe a new partner, a new life, a new everything?",
+              "u2": "You think I'm looking to trade in my wife for a newer model?"
+            },
+            {
+              "u1": "What sort of Missus are you looking to replace her with?",
+              "u2": "LOL! She's priceless, though she may not say the same about me."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "476416851459628777_3323035862530885153",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been watching them for years and I've never really been a fan. I just don't find them funny. I've seen a few episodes and I just don't get it.",
+              "u2": "I'm a massive fan! I love their sense of humor and the way they interact with each other. They're hilarious!"
+            },
+            {
+              "u1": "I think they're okay, I guess. I mean, they're not my cup of tea, but I can see why people like them. They do have a certain charm, I suppose.",
+              "u2": "I think you're being too harsh! They're brilliant! They're like two old mates who are just having a laugh. That's what makes them so lovable."
+            },
+            {
+              "u1": "I’m probably going to be downvoted for having my own opinion, but I disagree. I loved their recent program about their DNA and family history. They can be quite funny but more so their banter is fun to watch. They’re just two typical Northern blokes who’ve been best mates since they were kids and it’s nice to see.",
+              "u2": "I liked them for a few years, but then Saturday Night Takeaway started getting repetitive. Ant nearly killing a child was the final nail in the coffin for me."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "5173097289432429873_18301677037320873346",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "u1: I think I know who you're talking about. He's always been a bit of a mystery to me too.",
+              "u2": "yeah, i've been trying to figure him out for ages. he's so private"
+            },
+            {
+              "u1": "I know, right? It's like he's hiding something. Or maybe he's just really confident.",
+              "u2": "hmm, maybe. but sometimes i wonder if it's just an act"
+            },
+            {
+              "u1": "@USER Wait…so am I!",
+              "u2": "@USER  @USER every time i feel bad about myself i remember he's two years older than i am."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "13843687178917565628_9054020231438687133",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Looking for some great food in Cincinnati. Have you been there recently?",
+              "u2": "Yeah, I was there a few months ago. It's a great city for foodies."
+            },
+            {
+              "u1": "Awesome! What are some of your favorite spots?",
+              "u2": "Well, you have to try the Skyline Chili. It's a local favorite."
+            },
+            {
+              "u1": "Coming to Cincinnati for a couple days tomorrow! Would love to know what to eat, please!",
+              "u2": "@USER @sottocincy"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "17077239463043950011_6477052088234903406",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I recently stayed at the Mollymook Ocean View Motel and I'm still trying to wrap my head around the experience. The location was great, but the room was a bit of a letdown. I'm not sure if I'd recommend it to others.",
+              "u2": "That sounds like a pretty standard motel experience. What made it stand out to you?"
+            },
+            {
+              "u1": "To be honest, I'm still a bit annoyed about the whole thing. I paid for a room with a view, but when I got there, it was just a regular old room. I felt like I'd been misled.",
+              "u2": "That's frustrating. Did you talk to the staff about it when you were there?"
+            },
+            {
+              "u1": "> A motel on the New South Wales South Coast has charged a guest $50 for writing what it described as a \"defamatory\" review.\n> \n> Sharon Graham spent two nights at the Mollymook Ocean View Motel last week, and gave the motel a score of six out of 10 on the website Booking.com.\n> \n> Ms Graham said the location was good but a bit noisy, and that she was unsure whether the motel offered daily room service.\n> \n> \"I thought it was quite a fair review,\" Ms Graham said.\n> \n> Ms Graham was shocked when, having checked out, she received a second invoice which listed a $50 credit card fee for leaving a \"false review\" online.\n> \n> The motel said the $50 will be refunded when the review is taken down.\n> \n> \"Social media bookings false review will be refunded if removed within 24 hours,\" the invoice read.\n> \n> Motel management claimed the review was misleading and harmed the business's public image.\n> \n> \"The score is not even close to the average rating,\" the motel said.",
+              "u2": "/r/TourismHell"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "470659115498059835_15704161191300768817",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Have you noticed that India has been doing pretty well in terms of managing the pandemic? I've been following the news and it seems like they've got it under control.",
+              "u2": "Yeah, I've been hearing that too. But I'm not sure what's behind it."
+            },
+            {
+              "u1": "I think it's because of the government's proactive measures and the people's cooperation. They've been doing a great job of containing the spread.",
+              "u2": "That's a good point. But I'm still curious about what's going on in other countries."
+            },
+            {
+              "u1": "Just this morning I was wondering, how did India manage to stay clear of this virus so far when so many other developed countries are falling prey to it. \nPehle hi tension kam hain is desh main, ke ek aur.",
+              "u2": "Are you familiar with the entire country of Russia?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "14894865802089027809_11839207472455146327",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm a bit of a fast food connoisseur, and I've tried my fair share of places. But Red Rooster just doesn't cut it for me.",
+              "u2": "What's wrong with it then?"
+            },
+            {
+              "u1": "I don't know, it's just always so busy. I mean, I've seen lines out the door at the one in the shopping centre.",
+              "u2": "That's because it's convenient. People like that sort of thing."
+            },
+            {
+              "u1": "Red rooster is the fucking worst fast food place by far. Where I grew up there where two one in the major shopping centre and ones about a minute away outside. The outdoor one was always dead never saw a car in the drive thru. But the inside one had a line as long as hungry jack's, almost like people not wanting to wait in line decided to go there which then formed a line. There is a Chinese place, Maccas, KFC and a bunch of smaller food places in the same food court aswell. But always a line at red rooster.",
+              "u2": "Worse than maccas? Sure mate"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "4857759686591172005_4500616088352534105",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "\"Do you think they'd be okay with that?",
+              "u2": "I don't know, but I'm sure they'd survive it."
+            },
+            {
+              "u1": "I guess we could try to get them to drink something a bit stronger.",
+              "u2": "Ha! Yeah, that's a great idea. What did you have in mind?"
+            },
+            {
+              "u1": "Aye have them drink whiskey instead ?",
+              "u2": "Have them neck it."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes \n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "14557754514829482383_14434659164409264319",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been following the Irish news lately and I'm curious, what's the current state of the Irish government?",
+              "u2": "Well, to be honest, it's a bit of a mess at the moment. There's a lot of infighting between the different parties and it's hard to get anything done. But that's politics, right?"
+            },
+            {
+              "u1": "Do you think the Irish president has a lot of power or is it more of a symbolic role?",
+              "u2": "To be fair, the President of Ireland has a lot of ceremonial duties, but not a lot of actual power. They're more of a figurehead, really."
+            },
+            {
+              "u1": "As an american dealing with the cheeto, is the Irish president generally well supported?",
+              "u2": "It's easy to be a well liked President in Ireland, as the role is mainly ceremonial. That said, Michael D is particularly well liked. To the point where the entire country refers to him by his first name out of affection. \nThe Taoiseach, Leo Varadkar is the one most equivalent to the US president. He's not well liked, and recently lost a general election. They're trying to form a new government as we speak, but basically he and his party were voted out."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 1.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.8125
+      },
+      {
+        "unique_id": "12823616541745381530_3530454176966291117",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Have you heard anything about it? I'm getting a little worried.",
+              "u2": "Nah, I haven't heard anything. I'm sure it's fine."
+            },
+            {
+              "u1": "I'm pretty sure I saw it on the news or something. I don't remember exactly.",
+              "u2": "You're probably just misremembering it."
+            },
+            {
+              "u1": "Thought I read somewhere they were shutting down.\nMight have imagined it.",
+              "u2": "*dreamed it"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "5793130396389717078_16503904273585413762",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm so tired of all the hate and misinformation spread by 'The Daily Racist Express'! They have no regard for the truth or for the well-being of our community. It's time for them to be held accountable.",
+              "u2": "Preach! We can't let them get away with it. What's the plan to take them down?"
+            },
+            {
+              "u1": "I've been thinking about that, and I believe we need to organize a campaign to raise awareness about their biased reporting. We can use social media to our advantage and get more people to speak out against them.",
+              "u2": "That's a great idea! We can start by sharing articles and posts that expose their hypocrisy and share our own personal stories of how they've affected us."
+            },
+            {
+              "u1": "I pray the day will come when  'The Daily  Racist Express ' will get their karma too",
+              "u2": "@USER I shout A big AMEN"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.875
+      },
+      {
+        "unique_id": "16332326261106869309_7817752018250119487",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Just had the worst experience at an Italian place downtown. Ordered a pizza and it was like eating cardboard. I'm not even kidding.",
+              "u2": "Sorry to hear that. Maybe it was just an off day?"
+            },
+            {
+              "u1": "Off day? You think that's it? I've been to that place multiple times and it's always been subpar. I'm starting to think they're just not that into food.",
+              "u2": "Well, that's a pretty harsh assessment. Have you talked to the manager or something?"
+            },
+            {
+              "u1": "I once left a neutral review at an italian restaurant. They tracked down my friend who made the booking, called HIS PARENTS and told them their entire extended family wouldn't be allowed back unless they convinced me to pull my review. If you don't like bad reviews, do something about your service or don't own a business. \nStill salty.",
+              "u2": "URL \ncheck out this post"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "12162821564167248829_17394625436796042370",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Just got a new writing buddy who’s been helping me stay on track.",
+              "u2": "That's awesome! I've been trying to find someone to hold me accountable too. What's their writing experience like?"
+            },
+            {
+              "u1": "They're a total newbie but super enthusiastic, and they've been pushing me to write more than I thought I could.",
+              "u2": "That's great! Sometimes having someone who believes in you more than you believe in yourself can be really helpful."
+            },
+            {
+              "u1": "So I've written 25k of new book since end of July.\n\nThis is good yes?\n\nMy brain constantly tells me I'm a writing failure.\n\nAlso launched massive marketing campaign at work. \n\n#ImposterSyndrome #adhd",
+              "u2": "@USER I tell myself I’ll never be as successful as Agatha Christie. And therefore always a failure. Once you’ve accepted your failure, the success goal posts move an awful lot closer."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "4152209341363912095_8000791775169430080",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been watching a lot of TV series lately and I'm really glad I stumbled upon Limitless.",
+              "u2": "I've been meaning to watch it, but I haven't had the time yet."
+            },
+            {
+              "u1": "It's about a guy who develops a pill that allows him to access 100% of his brain, which basically makes him a genius.",
+              "u2": "That sounds really interesting, I'll have to add it to my watchlist."
+            },
+            {
+              "u1": "The tv series Limitless was really enjoyable although most people didn’t bother watching it.",
+              "u2": "What was it about?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.75
+      },
+      {
+        "unique_id": "6149868823636250320_13567897604457125413",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "AFP is a major news source, but their reporting has been compromised by political agendas. We need to question the motives behind their stories.",
+              "u2": "I don't think that's fair. AFP has a good reputation for accuracy and impartiality."
+            },
+            {
+              "u1": "But have you seen their recent coverage of the government's counter-terrorism efforts? It seems like they're trying to undermine ASIO's work.",
+              "u2": "I'm not sure what you're getting at. ASIO's job is to keep us safe, and if AFP is criticizing them, it's probably because they're doing something wrong."
+            },
+            {
+              "u1": "AFP is politicised and ASIO is criticised for warning of rightwing extremists.",
+              "u2": "ASIO shouldn't be attacking the government."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "11481831143952863443_17221143262976393795",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "\"It's a shame the Queen's passing has overshadowed the SNP's plans for another referendum. What's the latest on that front?",
+              "u2": "I've not seen anything concrete, but I'm sure Nicola Sturgeon will find a way to make it happen. She's a determined one."
+            },
+            {
+              "u1": "That's true, but do you think the Scottish people are ready for another vote? The last one was pretty divisive.",
+              "u2": "I think the Scottish people are always ready for a say in their own future. The question is, will the UK government give them the chance?"
+            },
+            {
+              "u1": "With the union firmly secured because the Queen died, what now for the SNP and Sturgeon's Yes movement? We'll ask some unionists.",
+              "u2": "@USER  @USER Firmly secure wow is that like a prison secure I mean what about Democracy? What about Human rights?\nDo Unionists not believe in such things? Or do they only apply if you're Not Scottish. I mean surely Scots decide their own Future or is that only outside the UK?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "4396654287307266332_7161307676402908153",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm starting to lose track of what's going on in the world. It feels like every day there's a new scandal or controversy.",
+              "u2": "I know, right? It's like the news cycle is moving faster than we can keep up with. And it's not just the news, it's the way people react to it."
+            },
+            {
+              "u1": "I'm starting to think that our politicians are more interested in scoring points than actually solving problems.",
+              "u2": "That's the sad truth. They're more concerned with their own careers than with doing what's best for the country."
+            },
+            {
+              "u1": "What will this period of our political history be called? The muddled years?",
+              "u2": "@USER The criminal years!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 1.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.8125
+      },
+      {
+        "unique_id": "4962849042328034628_8678312134847647030",
+        "dataset_name": "MultiPICo",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Have you guys ever had to make a critical decision based on incomplete data?",
+              "u2": "Ugh, all the time! Especially when working with limited resources. It's like trying to assemble a puzzle with missing pieces."
+            },
+            {
+              "u1": "Exactly! And what if you're working in a field where the stakes are high? Do you take a chance or play it safe?",
+              "u2": "Well, that's when experience and intuition come into play. You weigh the risks and benefits, and sometimes you just have to trust your gut."
+            },
+            {
+              "u1": "In research, it's not enough to be 99.9% sure, you have to be 100% sure. How many of you agree?  @USER  @USER  @USER @AcademicDilemma",
+              "u2": "@USER  @USER  @USER  @USER  @USER Depends on the context? Nothing in Biology is 100%. Do you need to be 100% sure that you sterilised the laminar flow before working with cultures? Absolutely. Does a result 100% prove a hypothesis? Not necessarily! It's all part of the fun ?."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.4375
+      }
     ]
   }
 }

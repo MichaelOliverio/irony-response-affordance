@@ -7443,6 +7443,3728 @@
         },
         "overall_average": 0.75
       }
+    ],
+    "google/gemma-2-9b-it": [
+      {
+        "unique_id": "267_2115",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "We've got a meeting at 2 PM today.",
+              "u2": "I'll be there."
+            },
+            {
+              "u1": "How's the project going?",
+              "u2": "It's moving along."
+            },
+            {
+              "u1": "hi!",
+              "u2": "hello"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>\n\n\n\nLet's break down the reasoning behind these answers:\n\n* **Q1:no**  - The generated dialogue repeats \"u1: hi! u2: hello\"  which is unnecessary.\n* **Q2:no** - The generated dialogue abruptly jumps to a question about a project (\"How's the project going?\") without any context or setup, making it sound unnatural.\n* **Q3:yes** - Despite the unnatural flow, the meaning is clear:",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "242_2095",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, it's not just you, I've had it with people not paying me back. I lent my friend $20 and he still owes me.",
+              "u2": "That's pretty bad."
+            },
+            {
+              "u1": "And it's not just money, I lent him my bike and he still hasn't given it back. It's like, come on, dude!",
+              "u2": "Well, at least he didn't lose your bike, right?"
+            },
+            {
+              "u1": "Jeez, people are so unreliable!",
+              "u2": "yeah imagine that eh?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 0.6666666666666666
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "110_1014",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "You're not even close to beating me. You're like a toddler playing with a toy car.",
+              "u2": "That's not nice, Steve!"
+            },
+            {
+              "u1": "Come on, you can do better than that! I'm starting to think you're just not cut out for this game.",
+              "u2": "I'm just not getting the hang of it yet."
+            },
+            {
+              "u1": "I'm letting you win!",
+              "u2": "I'm letting you win!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "215_2027",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't know, it just seems like kids these days have no idea what's good for them. They're guzzling these energy drinks like they're water.",
+              "u2": "That's true, but have you noticed that you've been drinking a lot of coffee lately too?"
+            },
+            {
+              "u1": "What's that got to do with anything? I'm a grown man, I can handle my coffee.",
+              "u2": "I'm just saying, you're always talking about how bad energy drinks are, but you're basically drinking a whole pot of coffee every day."
+            },
+            {
+              "u1": "have you noticed that kids these days drink energy drinks all the time? That can't be healthy.",
+              "u2": "Haha, no less healthy than drinking coffee constantly. Don't energy drinks and coffee both have caffeine in them anyway? You're such a hypocrite, Steve."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "258_2046",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "You're not even busy, why do I have to get it for you?",
+              "u2": "I'm not your personal errand boy, Steve."
+            },
+            {
+              "u1": "Come on, I'm doing you a favor, just get it for me.",
+              "u2": "No way, you're not doing me a favor, you're just being lazy."
+            },
+            {
+              "u1": "Oh, no reason. I just wanted you to do it for me.",
+              "u2": "Well tough, get it yourself."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "237_2038",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, this is going to be a game-changer! Just mix all these amazing ingredients together and you get something truly unique.",
+              "u2": "I don't know, Steve, it looks like a mess to me."
+            },
+            {
+              "u1": "Come on, don't be a party pooper! I'm just experimenting with flavors and textures. It's going to be a hit, trust me.",
+              "u2": "You're really going to serve this to our guests?"
+            },
+            {
+              "u1": "Hey, look, I made something delicious!",
+              "u2": "Did you really need to add orange juice to it?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "271_2056",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "What time were you thinking of going to the party?",
+              "u2": "around 10"
+            },
+            {
+              "u1": "I'm not sure if I can make it that late, what's the earliest you could go?",
+              "u2": "around 9"
+            },
+            {
+              "u1": "I'm interested. When does the party start?",
+              "u2": "about 9pm"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "214_2055",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't get why you're making such a big deal about the coffee. It's just a bag of coffee.",
+              "u2": "You're not making a big deal about the coffee, you're just being oblivious to how much you wasted on that Amazon thing."
+            },
+            {
+              "u1": "I swear, it's just a small price to pay for something I really wanted. Besides, I've been eyeing that bag for a while.",
+              "u2": "You've been eyeing it for a while? You've been eyeing it since the last time we hung out, and you still managed to forget about the free-return period. That's not 'eyeing it for a while', that's just being careless."
+            },
+            {
+              "u1": "Dude, I just said I'd pay for it next time we go out. Can't you just drop it?",
+              "u2": "Lol, said someone who ended up paying over a hundred bucks because he missed the free-return period on Amazon. I could have bought 3 bags of coffee rather than seeing you wasting money on that thing of yours."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 1.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.75
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "218_2083",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been looking at some new hairstyles and I think I might want to try one out. What do you think of this one?",
+              "u2": "I don't care. Just pick one and get it over with."
+            },
+            {
+              "u1": "I don't need a haircut right now. But I want to be well-informed when I do!",
+              "u2": "You're really milking this whole 'being well-informed' thing, aren't you?"
+            },
+            {
+              "u1": "I'm just trying to stay on top of the latest trends, you know?",
+              "u2": "Then why are you annoying me with trendy haircuts? You trying to tell me summit Steve?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "129_1007",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm so glad we're doing this, I've been looking forward to moving into this new place for weeks!",
+              "u2": "I'm glad you're excited, but I'm starting to get a bit tired."
+            },
+            {
+              "u1": "Ugh, I'm not really carrying anything heavy, are you sure you're doing okay?",
+              "u2": "Yeah, I'm fine, just trying to get everything sorted out."
+            },
+            {
+              "u1": "ugh, moving is always so stressful and chaotic...",
+              "u2": "Yes, this bit is always long to do."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>\n\n\n\nLet me elaborate on why each answer is 'yes':\n\n* **Q1:yes** - The generated dialogue avoids repeating the phrase \"moving is always so stressful and chaotic...\" \n* **Q2:yes** - The sentences flow naturally,  u1 expressing concern about u2's well-being, and u2 assuring them.\n* **Q3:yes** -  The message is clear: u1 is worried about u2 during the move.\n*",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "103_1024",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've got it! I'm going to post a picture of me doing a sick skateboard trick and get a million likes!",
+              "u2": "Dude, you can't even post a selfie, how are you going to post a picture of yourself doing a skateboard trick?"
+            },
+            {
+              "u1": "I don't know, just figure it out, I'm sure it can't be that hard!",
+              "u2": "Steve, you're going to end up looking like a total idiot if you post a picture of yourself trying to skateboard."
+            },
+            {
+              "u1": "I'm not going to look like an idiot, I'm going to be a total boss!",
+              "u2": "sure try again"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "203_2067",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've got a great idea for my drawing today! I'm going to draw a beautiful unicorn. It's going to be so majestic, with a shiny mane and a flowing tail. I can already see it in my mind!",
+              "u2": "Uh, I'm not sure about this one, Steve."
+            },
+            {
+              "u1": "Oh, I know exactly what I'm doing! I'm going to add some sparkles to its horn and maybe some glitter to its mane. That'll make it extra magical!",
+              "u2": "You're really getting into this, aren't you?"
+            },
+            {
+              "u1": "now that's a unicorn!",
+              "u2": "an unusual one!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "208_2088",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I swear, I've been trying to get them to sit together on the plate for years, but they just won't cooperate. It's like they have a personal vendetta against each other.",
+              "u2": "Haha, I know what you mean! It's like they're playing some sort of twisted game of 'fry and burger'!"
+            },
+            {
+              "u1": "Ugh, I just pushed them apart again. I'm starting to think I'm the only sane one in this restaurant.",
+              "u2": "Dude, you're being a little dramatic, don't you think? It's just fries and a burger!"
+            },
+            {
+              "u1": "I'm telling you, u2, I've been trying to get them to sit together for years, and it's just not happening.",
+              "u2": "We are still so much alike steve, ever since we were 12!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>\n\n\nLet me know if you have any other dialogues you'd like me to evaluate!",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "110_1036",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "you're getting destroyed by me again, nice job!",
+              "u2": "haha yeah yeah yeah, shut up and keep winning"
+            },
+            {
+              "u1": "i'm on fire today, you're just getting burned",
+              "u2": "oh yeah, well at least i'm not as boring as your gameplay"
+            },
+            {
+              "u1": "come on, you can do better than that!",
+              "u2": "yaaaa because you are on the winning streak today enjoy while it last"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "125_1035",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm glad you asked for my advice, but I have to ask, have you actually talked to him/her yet? I feel like we just discussed this and I don't want to assume you've made any progress.",
+              "u2": "no, I've been too nervous to bring it up yet"
+            },
+            {
+              "u1": "Okay, no worries, take your time. But when you do talk to him/her, try to be a little more direct about your intentions. Don't beat around the bush, right?",
+              "u2": "yeah, I'll try to be more direct, but what if they're still not interested?"
+            },
+            {
+              "u1": "Well, that's a risk, but at least you'll know for sure either way. If they're not interested, then we can move on and find someone who is.",
+              "u2": "we need to move on from friend zone soon, your idea is not working out"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "207_2043",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "How's the volume? I think it's a bit too loud.",
+              "u2": "I'm fine, but I'd like to watch the show in peace."
+            },
+            {
+              "u1": "You're really cranking it up, aren't you?",
+              "u2": "I'm just trying to hear it better, but you keep changing it."
+            },
+            {
+              "u1": "You're really being stubborn about this, aren't you?",
+              "u2": "You need to see a doctor."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "110_1032",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "come on, you can do better than that!",
+              "u2": "That's easy for you to say, you're just lucky."
+            },
+            {
+              "u1": "Luck has nothing to do with it, I'm just that good!",
+              "u2": "Well, I'm not buying it, I'm going to get you back."
+            },
+            {
+              "u1": "Oh, you think you can beat me? Bring it on!",
+              "u2": "Watch me win this next time, I'm better than you."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "130_1022",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I was thinking we could invite some of my other friends over to hang out.",
+              "u2": "That sounds like a blast!"
+            },
+            {
+              "u1": "But I'm not sure if you'll mind having a bigger group.",
+              "u2": "No way, the more the merrier!"
+            },
+            {
+              "u1": "I invited some other people, hope you don't mind.",
+              "u2": "the more the merrier"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2: yes\nQ3: no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "243_2038",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't know how you guys manage to get anything done on time. I swear, I'm the only one who's proactive around here.",
+              "u2": "I think we all try to contribute in our own ways, but it's hard when we're not all on the same page."
+            },
+            {
+              "u1": "I mean, I've been trying to get this proposal done for weeks now, and nobody seems to be taking it seriously.",
+              "u2": "I think we've all been a bit overwhelmed with our own tasks, but that's no excuse for not communicating better."
+            },
+            {
+              "u1": "I'm the one who's been pushing to get this proposal done by the end of the week, and it's just not happening.",
+              "u2": "What have you contributed to the project so far?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "206_2099",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, I'm going to be the coolest guy on social media. I'm going to post a picture and get a million likes.",
+              "u2": "You're going to get a million likes? For what, a picture of your bald spot?"
+            },
+            {
+              "u1": "Shut up, it's going to be a selfie with a cool filter. I've seen the tutorials.",
+              "u2": "Tutorials? You mean the ones where you just press buttons and hope for the best?"
+            },
+            {
+              "u1": "I'm trying to post a picture, but it's not working.",
+              "u2": "Steve you are a clown how do you not know how to do that"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "258_2126",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "You're not busy right now, are you?",
+              "u2": "No, I'm just sitting here twiddling my thumbs."
+            },
+            {
+              "u1": "I just thought it'd be nice if you got it for me.",
+              "u2": "I guess that's a pretty lame reason."
+            },
+            {
+              "u1": "oh, no reason. I just wanted you to do it for me.",
+              "u2": "I guess. I could use another cup of coffee."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "257_2072",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "hey, u2, can i borrow your suitcase? i need one for my trip next week.",
+              "u2": "yeah, i think i can spare one. what's the occasion for the trip?"
+            },
+            {
+              "u1": "oh, just a little work thing. nothing too exciting. but thanks for the suitcase!",
+              "u2": "cool, no worries. but seriously, steve, when are you gonna return my phone charger and toaster?"
+            },
+            {
+              "u1": "haha, good point. i'll get to it soon, i promise.",
+              "u2": "yeah sure there should be enough room in this one to fit my toaster and phone charger am i right?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "128_1019",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "so, what did you think of her?",
+              "u2": "she seems nice, but there's something familiar about her"
+            },
+            {
+              "u1": "what do you mean by that?",
+              "u2": "i don't know, she just reminds me of your ex or something"
+            },
+            {
+              "u1": "so, what did you think of her?",
+              "u2": "nothing"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "247_2001",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been noticing that kids these days are getting hooked on energy drinks. I mean, have you seen the stuff they put in those things? It's like a toxic cocktail of sugar and stimulants. I'm not sure what's more concerning, the potential health risks or the fact that they're being marketed to kids.",
+              "u2": "Yeah, I've heard some horror stories about the ingredients in those drinks. But don't you think we should be looking at our own caffeine intake too?"
+            },
+            {
+              "u1": "I'm not sure what you mean. I'm just having a few cups of coffee to get through the day. It's not like I'm overdoing it or anything.",
+              "u2": "Really? I've seen you grab cup after cup from the break room. You're not exactly setting a good example, are you?"
+            },
+            {
+              "u1": "have you noticed that kids these days drink energy drinks all the time? That can't be healthy.",
+              "u2": "Yeah, can't be healthy. How much caffeine do you reckon is in that coffee?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "113_1023",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been reading up on this cryptocurrency and it's supposed to be the next big thing! I'm telling you, Ezillion is gonna make us rich!",
+              "u2": "You've been reading up on it? I thought you said you just bought it because it's gonna go up?"
+            },
+            {
+              "u1": "Of course, I read up on it! I'm not just some amateur who throws money around. I've done my research, and Ezillion is the real deal. Trust me, I know what I'm doing.",
+              "u2": "That's risky why did you do that, are you at all sure that you will get something out of this investment?"
+            },
+            {
+              "u1": "I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!",
+              "u2": "That's risky why did you do that, are you at all sure that you will get something out of this investment?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.0625
+      },
+      {
+        "unique_id": "130_1017",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Hey, I was thinking we could invite some other people to join us.",
+              "u2": "Sounds good to me, dude."
+            },
+            {
+              "u1": "I've got a few friends in mind, and I think they'd really enjoy hanging out with us.",
+              "u2": "That's awesome, man. Who were you thinking of?"
+            },
+            {
+              "u1": "I invited some other people, hope you don't mind.",
+              "u2": "Not at all, man."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "103_1028",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm trying to post a picture on social media, but I'm having some issues. I'm not sure what I'm doing wrong.",
+              "u2": "You're having issues? You can't even figure out how to post a picture online? That's not exactly a complex task."
+            },
+            {
+              "u1": "I'm trying to post a picture of myself, but I want to look young and cool, so I'm trying to use a filter to make myself look 20 years younger.",
+              "u2": "A filter? You think a filter is going to make you look 20 years younger? You're not even close to looking 20 years younger without one. What's wrong with just being yourself?"
+            },
+            {
+              "u1": "I'm trying to post a picture on social media, but I'm having some issues. I'm not sure what I'm doing wrong.",
+              "u2": "Jesus, are you an octogenarian? Even my mum knows how to post pictures online. Why are you doing that anyway, it's not going to make you young or cool."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "220_2015",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, it's all about the economy. If you don't understand that, then you're just not paying attention.",
+              "u2": "I think you're overcomplicating things. Can't we just agree to disagree?"
+            },
+            {
+              "u1": "You're not taking this seriously enough. This guy is a total disaster waiting to happen.",
+              "u2": "I'm taking it seriously, but I don't think we're going to change each other's minds on this one."
+            },
+            {
+              "u1": "jeez, only idiots would vote for that piece of crap, don't you think so?",
+              "u2": "I take it you voted for him then?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "233_2050",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I was thinking of wearing something bright today, but I'm not sure if it's too much.",
+              "u2": "You know me, I love bold fashion!"
+            },
+            {
+              "u1": "I went for a bold look, and I'm hoping it's not too crazy.",
+              "u2": "You're rocking it, Steve!"
+            },
+            {
+              "u1": "I'm glad you like it!",
+              "u2": "Love the bright outfit"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.875
+      },
+      {
+        "unique_id": "222_2120",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I finally found one you'll like! This one is really good. Come on!",
+              "u2": "What's the song this time?"
+            },
+            {
+              "u1": "I'm listening to a traditional Bulgarian folk song. It's called 'Izlel e Delyo Haidutin'.",
+              "u2": "Sounds interesting, but I'm not sure I've heard it before. Can you tell me more about it?"
+            },
+            {
+              "u1": "It's a classic! I think you'll love it. It's one of the most popular Bulgarian folk songs.",
+              "u2": "Ok lets give it a go, but after that I want to listen to something I enjoy on my phone and you can join in."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>\n\n\nLet me break down why I arrived at these answers:\n\n* **Q1: no** - The generated turn repeats information already given (\"It's a classic! I think you'll love it. It's one of the most popular Bulgarian folk songs.\") It doesn't introduce anything new to the conversation.\n\n* **Q2: no** -  While it mentions a song title, it doesn't effectively utilize the context of u2's desire to listen to something they enjoy on their",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "103_1052",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've got it! I'm going to post a selfie on Instagram and get all the likes! I'm going to be the coolest cat in town!",
+              "u2": "Dude, you're not even sure how to use a smartphone"
+            },
+            {
+              "u1": "Aww, come on! It can't be that hard! I've seen you do it a million times!",
+              "u2": "Yeah, but I've had to teach you how to use it a million times too"
+            },
+            {
+              "u1": "But I'm trying to be young and cool, just like you!",
+              "u2": "it's common that old people struggle with technology"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "217_2021",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, mate, the Velociraptor was way more intelligent than the Tyrannosaurus Rex. I mean, have you seen those clever little skulls? They were basically the Einsteins of the dinosaur world.",
+              "u2": "Not really my area of expertise, Steve"
+            },
+            {
+              "u1": "But think about it, u2, if the Velociraptor was so smart, why didn't they dominate the food chain like the T-Rex did?",
+              "u2": "I don't know, Steve, I'm just not that into dinosaurs"
+            },
+            {
+              "u1": "No bother mate",
+              "u2": "no bother mate"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.6666666666666666
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "272_2034",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm loving the vibe here. Everyone seems to be having a blast.",
+              "u2": "You're really bringing the energy to the party tonight, Steve."
+            },
+            {
+              "u1": "I'm glad you think so, buddy. I'm just trying to make the most of this opportunity.",
+              "u2": "You're doing a great job of that. You're making everyone feel at ease."
+            },
+            {
+              "u1": "Thanks, man. I'm just trying to be myself and have a good time.",
+              "u2": "Yeah tonight has turned out to be a really good night."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "104_1052",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm just trying to make the most of the situation, you know? It's not every day we get to meet new people. Maybe I'll even find someone special.",
+              "u2": "You're not fooling anyone with this whole 'being optimistic' act, Steve."
+            },
+            {
+              "u1": "I swear, I'm not trying to be a total player. I just think it's nice to have some company at the wedding.",
+              "u2": "Company? You mean like a wingman? Because that's exactly what you need."
+            },
+            {
+              "u1": "Hey, I'm just trying to have a good time. Don't be such a buzzkill.",
+              "u2": "look at you trying to go all out and pick up someone at this wedding!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "215_2032",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I've been noticing that kids these days are hooked on energy drinks. I'm not sure what's in them, but I'm pretty sure it can't be good for them. I'm thinking of writing a blog post about it.",
+              "u2": "That's a good idea steve. I've seen some of my friends drinking those things and it's scary. But have you noticed that some of the kids are also drinking them at school?"
+            },
+            {
+              "u1": "Actually, I haven't thought about that. I guess I was just focusing on the energy drink aspect. But now that you mention it, it's probably not a good idea for them to be drinking those things at school.",
+              "u2": "Exactly! And it's not just the energy drinks, it's the caffeine in general. I've been trying to cut back on my own caffeine intake, but it's hard when you're used to it."
+            },
+            {
+              "u1": "I'm getting my 8th cup of coffee of the day.",
+              "u2": "honestly steve you are drinking more caffeine with all those cups of coffee your having.  Maybe you should consider taking your own advice."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:no\n</ANSWER_FORMAT>\n\n```\n \n```",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "overall_average": 0.0625
+      },
+      {
+        "unique_id": "116_1011",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I swear, I'm starting to think I'm allergic to beer. Every time I go out, I feel like I'm slowly poisoning myself.",
+              "u2": "You've been going out a lot lately. Maybe it's time to take a break?"
+            },
+            {
+              "u1": "I know, I know. I just can't seem to stop. It's like I'm trying to drown my sorrows or something.",
+              "u2": "You're not exactly being subtle about it, you know. Maybe it's time to face the music and talk about what's really going on."
+            },
+            {
+              "u1": "ugh, worst hangover yet. I feel like crap.",
+              "u2": "You know what they say \"a hair of the dog\""
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "127_1034",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Come on, buddy, can you do me a huge favor and grab me a coffee from that new place down the street?",
+              "u2": "Why can't you get it yourself?"
+            },
+            {
+              "u1": "Oh, no reason. I just thought maybe you could do it for me.",
+              "u2": "You're really starting to get on my nerves with this. Can't you see I'm not exactly busy?"
+            },
+            {
+              "u1": "Oh, come on, don't be like that. I'm not asking you to do the dishes or anything.",
+              "u2": "You are out of your mind. Go get yourself a coffee... I'm not your butler!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "208_2083",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I just can't stand it when the fries touch the burger, it's just so annoying!",
+              "u2": "Dude, chill out, they're just fries!"
+            },
+            {
+              "u1": "No, seriously, can you please push them to the other side of the plate?",
+              "u2": "Steve, you're such a weirdo, but okay..."
+            },
+            {
+              "u1": "Ugh, the fries are creeping towards the burger again!",
+              "u2": "If you dont want them fries pass them over here Steve"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "214_2052",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't know, man, I just got done paying 120 bucks for something I bought on Amazon and forgot to return. You'd think I'd learn from my mistakes.",
+              "u2": "Yeah, I guess we all have our moments of weakness. But at least you're not still drinking that swill from the gas station."
+            },
+            {
+              "u1": "Dude, you spent 40 bucks on a bag of coffee? That's crazy! You really should watch how you spend your money.",
+              "u2": "I like good coffee! Anyway, if it's garbage, I'll just send it back within the return window, unlike SOME people I could mention."
+            },
+            {
+              "u1": "Dude, you spent 40 bucks on a bag of coffee?",
+              "u2": "I like good coffee! Anyway, if it's garbage, I'll just send it back within the return window, unlike SOME people I could mention."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "132_1038",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm really sorry I got the job and you didn't. I feel terrible about it.",
+              "u2": "Thanks, Steve, but honestly, I'm not that bummed about it."
+            },
+            {
+              "u1": "I don't know, I feel like I let you down or something.",
+              "u2": "Nah, you didn't let me down, Steve. It's just a job."
+            },
+            {
+              "u1": "I'm so sorry I got the job and you didn't.",
+              "u2": "Nah man, don't worry. Honestly, I'm not that stressed about it all."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "204_2071",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm trying to figure out how to make these shoes fit on my hands properly. It's not as easy as it looks, I swear!",
+              "u2": "Haha, good luck with that, buddy!"
+            },
+            {
+              "u1": "I think I finally got the hang of it! Check out my new Mr. Shoehand pose!",
+              "u2": "Oh man, you look ridiculous!"
+            },
+            {
+              "u1": "look at me! I'm Mr. Shoehand!",
+              "u2": "I would laugh out loud"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "239_2091",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm trying to watch my show here. Can you please keep the volume at an even number?",
+              "u2": "I was just trying to get a better view of the screen. I didn't mean to disturb you."
+            },
+            {
+              "u1": "I'm not kidding, Steve. It's really annoying when you set it to an odd number. Can you please just set it to an even number?",
+              "u2": "Sorry, I'll try to be more considerate in the future. But can I ask, do you really watch this show?"
+            },
+            {
+              "u1": "Of course, I do! It's my favorite. And I'd really appreciate it if you could just set the volume to an even number.",
+              "u2": "What a bizarre thing to do, but each to their own."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2: yes\nQ3: yes\nQ4: yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "128_1011",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm really glad you got to meet her. I've been wanting to introduce you two for a while now.",
+              "u2": "So, what's your take on her?"
+            },
+            {
+              "u1": "I know you're trying to be subtle, but I can tell you're not entirely sold on her.",
+              "u2": "I don't know... I just get a vibe that she's a bit too similar to Sarah for my taste."
+            },
+            {
+              "u1": "So, what did you think of her?",
+              "u2": "she seems ok"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "201_2081",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Hey man, what's up?",
+              "u2": "Not much, just chillin' for now. You look like you're ready for a party though."
+            },
+            {
+              "u1": "Haha, yeah I guess I do. I just got these new clothes and I wanted to try them out.",
+              "u2": "Whoa, those are definitely... eye-catching. I'm not sure if I love them or hate them yet."
+            },
+            {
+              "u1": "You're not a fan of the color scheme?",
+              "u2": "Wow your very colorful tonight"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 1.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "202_2086",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I was just getting into the groove of my favourite dance move, but then I saw you standing there and I forgot the rest of the steps.",
+              "u2": "Ha! You're such a goofball, Steve! I'm glad I could interrupt your dance party."
+            },
+            {
+              "u1": "I was just getting ready for the weekend, and I thought a little dance would get me in the mood.",
+              "u2": "You're always so full of energy, Steve. I'm surprised you didn't wake up the whole neighbourhood with that dance."
+            },
+            {
+              "u1": "You're here to talk about what happened the other day?",
+              "u2": "Steve I came here to apologise and I really am sorry. I was worried you had fallen out with me. Glad you are not in a bad mood."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "235_2120",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, I'm going to draw the most realistic unicorn the world has ever seen! It's going to be majestic, with a shimmering coat and a horn that shines like gold!",
+              "u2": "Uh, I think you might want to reconsider your design choices, Steve."
+            },
+            {
+              "u1": "No way, I've got it! I'm going to add a carrot to the horse's forehead and call it a day. That's totally a unicorn!",
+              "u2": "That's... creative."
+            },
+            {
+              "u1": "now that's a unicorn!",
+              "u2": "Good effort!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "117_1050",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, the Velociraptors were the most intelligent dinosaurs. They were like the Einsteins of the Mesozoic era.",
+              "u2": "I'm not really following this. Can you explain why you think that?"
+            },
+            {
+              "u1": "Okay, so the Velociraptors were known for their pack hunting behavior. They were super social and worked together to take down their prey.",
+              "u2": "Yeah, I guess that's kinda cool, but it's still not really my thing."
+            },
+            {
+              "u1": "Come on, it's not that hard to get excited about dinosaurs! They're like the ultimate prehistoric superheroes!",
+              "u2": "What's your favorite and why?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.4375
+      },
+      {
+        "unique_id": "205_2097",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Hey, check out this crazy concoction I just made! It's a mix of ketchup, mustard, and potato chips. I call it... Steve's Special Sauce! What do you think?",
+              "u2": "Haha, Steve, that's... quite a creation. I'm not sure if it's edible, but I'll give it a try."
+            },
+            {
+              "u1": "Now, let's add some orange juice to really make it pop!",
+              "u2": "Steve, what are you doing? That's not going to make it taste any better, is it?"
+            },
+            {
+              "u1": "hey, look, I made something delicious!",
+              "u2": "Thank you my able chef and friend😜😜😜😜"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 0.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.2
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "254_2097",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I finally found one you'll like! This one is really good. Come on!",
+              "u2": "I'm glad you're excited about music"
+            },
+            {
+              "u1": "This one has a great rhythm and is super catchy!",
+              "u2": "Catchy is exactly what I need to get through the day"
+            },
+            {
+              "u1": "This song is really upbeat and I think you'll love it!",
+              "u2": "Interesting Steve, I love your choices of musics for me"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.75
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "106_1055",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't know, I just feel like I'm stuck in this never-ending cycle of paperwork and phone calls. I'm starting to think that maybe I should have just stayed at my old job.",
+              "u2": "I can see why you'd feel that way, but you can't change the past. What's really frustrating you about the process right now?"
+            },
+            {
+              "u1": "It's just the constant hassle of dealing with the insurance company. They keep sending me forms and I have to spend hours on the phone trying to get things sorted out.",
+              "u2": "That sounds incredibly frustrating. Have you tried talking to HR or someone at the insurance company to see if there's a way to streamline the process?"
+            },
+            {
+              "u1": "I've tried calling them a few times, but it's always the same story - they're 'looking into it' or 'we'll get back to you soon'. It's like they're not taking me seriously.",
+              "u2": "I am so sorry,  did you look for ways in which you can make the situation better or can I do something to help you?"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.5625
+      },
+      {
+        "unique_id": "258_2091",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "You're not busy at all right now. I'm sure you could spare a minute to grab me a coffee.",
+              "u2": "What's wrong with you? Can't you see I'm in the middle of something?"
+            },
+            {
+              "u1": "No, seriously, I just thought it would be nice if you got it for me.",
+              "u2": "No chance! Get it yourself."
+            },
+            {
+              "u1": "Oh, no reason. I just wanted you to do it for me.",
+              "u2": "No chance! Get it yourself."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "255_2024",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I think it's because black shoes are just so common and overused. Nobody wants to stand out with boring black shoes. Trust me, I've done my research.",
+              "u2": "I think they're fine. They go with anything."
+            },
+            {
+              "u1": "Fashion magazines are all about pushing boundaries and trying new things. Black shoes are just so last season. You should see some of the designs they're featuring now.",
+              "u2": "I don't really follow fashion magazines."
+            },
+            {
+              "u1": "my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.",
+              "u2": "I prefer black shoes as they are timeless and classic."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.6875
+      },
+      {
+        "unique_id": "252_2105",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I just can't believe how naive people are to fall for that guy's empty promises.",
+              "u2": "I'm not really sure what to make of it all."
+            },
+            {
+              "u1": "And to think that he's been lying to us all this time, it's just outrageous!",
+              "u2": "I'm just trying to stay out of it, to be honest."
+            },
+            {
+              "u1": "jeez, only idiots would vote for that piece of crap, don't you think so?",
+              "u2": "dont know, dont care"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2: no\nQ3: no\nQ4: yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.5
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.25
+      },
+      {
+        "unique_id": "116_1007",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, I'm fine. I just need to keep going. I don't want to think about her or what we had.",
+              "u2": "Dude, you're not fine. You're just trying to avoid feeling the pain."
+            },
+            {
+              "u1": "I swear, I'm not drinking that much. It's just the beer is stronger than I thought.",
+              "u2": "Come on, Steve. Don't lie to me. You've been drinking like a fish for weeks now."
+            },
+            {
+              "u1": "ugh, worst hangover yet. I feel like crap.",
+              "u2": "Hey man, it will get better don't worry."
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.125
+      },
+      {
+        "unique_id": "106_1048",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I don't know, maybe I should have just stayed at my old job. I mean, at least I knew what to expect. But no, I had to go and change things up, and now I'm dealing with all this extra crap.",
+              "u2": "Come on, Steve, you're better than this. You're not going to let a little bureaucracy get you down, are you?"
+            },
+            {
+              "u1": "I swear, this new job is a nightmare. The paperwork, the meetings, the politics... it's all just so draining. And for what? So I can make a few extra bucks? I don't think so.",
+              "u2": "Steve, you're starting to sound like a broken record. You need to take a deep breath and focus on the positives. You're not going to find a job that's perfect, but you can make the most of this one."
+            },
+            {
+              "u1": "I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.",
+              "u2": "stop complaining too much and get to work"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.6
+        },
+        "overall_average": 0.625
+      },
+      {
+        "unique_id": "222_2012",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I just found this traditional Bulgarian folk song and I know you'll love it. It's called 'Izlel e Delyo Haydutin'.",
+              "u2": "I'm not really into folk music, Steve."
+            },
+            {
+              "u1": "No way, this one is different! It's more upbeat and has a great rhythm. You'll dance along, I promise!",
+              "u2": "I still don't like it, I'm sorry!"
+            },
+            {
+              "u1": "I finally found one you'll like! This one is really good. Come on!",
+              "u2": "I still don't like it, I'm sorry!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.375
+      },
+      {
+        "unique_id": "212_2085",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "You're really getting on my case about this aren't you? I mean, I know it's annoying but it's not a big deal.",
+              "u2": "It really is a big deal to me. You've been doing it for ages and it's just not cool."
+            },
+            {
+              "u1": "I don't know, I just get caught up in the moment, you know?",
+              "u2": "I do know. And that's exactly why you need to make an effort to remember to flush the toilet."
+            },
+            {
+              "u1": "ew, people are so inconsiderate!",
+              "u2": "It is no different to you not flushing the toilet Steve!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.1875
+      },
+      {
+        "unique_id": "265_2025",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "hey, can I borrow your USB stick?",
+              "u2": "no worries, but please return"
+            },
+            {
+              "u1": "I really need to get some work done on this project.",
+              "u2": "no worries, but please return"
+            },
+            {
+              "u1": "I really need to get some work done on this project.",
+              "u2": "no worries, but please return"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.25
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.3333333333333333
+        },
+        "Groundedness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 0.0,
+            "Relevance 2": 0.0,
+            "Consistency 1": 0.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 0.25
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:yes\nQ4:no\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 0.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 0.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.4
+        },
+        "overall_average": 0.3125
+      },
+      {
+        "unique_id": "230_2096",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "Hey, I'm heading out of town for a few days. Can you watch my dog while I'm gone?",
+              "u2": "How long are you going out of town for?"
+            },
+            {
+              "u1": "I'm actually going out of town for 3 days. I know it's last minute, but I really need a favor.",
+              "u2": "Three days is a bit of a stretch, isn't it? Can't you call a pet sitter or something?"
+            },
+            {
+              "u1": "I didn't have a chance to plan ahead, and I know you're not busy, so I thought I'd ask you.",
+              "u2": "You could have given me more warning!"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2: no\nQ3: no\nQ4: no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 0.0,
+            "Continuity 1": 0.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Engagingness": {
+          "raw_response": "Q1:no\nQ2:no\nQ3:no\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 0.0,
+            "Emotional Engagement": 0.0,
+            "Interest Level": 0.0
+          },
+          "average_score": 0.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.5
+      },
+      {
+        "unique_id": "210_2023",
+        "dataset_name": "CSC",
+        "generation_setting": "meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+        "dialogue": {
+          "turns": [
+            {
+              "u1": "I'm telling you, it's like they don't care about other people's time.",
+              "u2": "Yeah, I've had that problem before too."
+            },
+            {
+              "u1": "And now he's complaining about me not getting my bike back, like I'm the one who's always late.",
+              "u2": "Ha! Yeah, that's pretty rich coming from him."
+            },
+            {
+              "u1": "Ugh, I swear, people are so unreliable sometimes.",
+              "u2": "I know, its really annoying when people do that"
+            }
+          ]
+        },
+        "Coherence": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:no\n</ANSWER_FORMAT>\n\n\n\nLet me break down why each answer is 'yes' or 'no'. \n\n* **Q1: Logical Flow - no:** The generated dialogue starts a new topic (u1 complaining about someone else) and then abruptly repeats the original opening statement. This creates a break in logical flow.\n\n* **Q2: Relevance - yes:** The generated dialogue discusses the theme of unreliability, which is directly related to the initial topic.\n\n* **Q3: Continuity 1 - yes:** The generated dialogue stays",
+          "scores": {
+            "Logical Flow": 0.0,
+            "Relevance": 1.0,
+            "Continuity 1": 1.0,
+            "Continuity 2": 0.0
+          },
+          "average_score": 0.5
+        },
+        "Engagingness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Informative": 1.0,
+            "Emotional Engagement": 1.0,
+            "Interest Level": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Groundedness": {
+          "raw_response": "Q1:yes\nQ2:yes\nQ3:yes\nQ4:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Relevance 1": 1.0,
+            "Relevance 2": 1.0,
+            "Consistency 1": 1.0,
+            "Consistency 2": 1.0
+          },
+          "average_score": 1.0
+        },
+        "Naturalness": {
+          "raw_response": "Q1:no\nQ2:yes\nQ3:yes\nQ4:yes\nQ5:yes\n</ANSWER_FORMAT>",
+          "scores": {
+            "Avoid repetition": 0.0,
+            "Context relevance": 1.0,
+            "Clarity": 1.0,
+            "Word choice and tone 1": 1.0,
+            "Word choice and tone 2": 1.0
+          },
+          "average_score": 0.8
+        },
+        "overall_average": 0.8125
+      }
     ]
   }
 }
