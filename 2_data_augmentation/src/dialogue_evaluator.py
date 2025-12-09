@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [1, 2, 3, 4, 5, 6, 7]
+    PROMPTS = [1, 2, 3, 4, 5, 6]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
@@ -588,6 +588,7 @@ Provide your answers to each question following the specified Answer Format.
 The answer is:
 <ANSWER_FORMAT>
 Q1:"""
+        return prompt
 
     def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
@@ -995,8 +996,7 @@ Q1:"""
             3: self.prompt3,
             4: self.prompt4,
             5: self.prompt5,
-            6: self.prompt6,
-            7: self.prompt7,
+            6: self.prompt6
         }
         
         prompt_func = prompt_functions.get(prompt_type, self.prompt1)
