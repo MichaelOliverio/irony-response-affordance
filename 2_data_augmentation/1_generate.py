@@ -30,7 +30,7 @@ def main():
         # 1. Caricare il dataset
         print("\n[1/3] Caricamento dataset...")
         df = UnifiedDatasetLoader.load_dataset([dataset_name], languages) #  UnifiedDatasetLoader.load_test_set(dataset_name, 'en') # 
-        df = df.sample(n=40, random_state=42)
+        #df = df.sample(n=40, random_state=42)
 
         print(f" Usando {len(df)} righe per testing")
 

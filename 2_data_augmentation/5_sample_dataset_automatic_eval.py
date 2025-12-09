@@ -34,12 +34,12 @@ def main():
         perplexity_models = [
             #"meta-llama/Llama-3.2-1B-Instruct",
             #"Qwen/Qwen2.5-7B-Instruct",
-            #"google/gemma-3-12b-it",
+            #"google/gemma-2-9b-it",
         ],
         judge_models = [
             #"meta-llama/Llama-3.2-1B-Instruct",
             "Qwen/Qwen2.5-7B-Instruct",
-            "google/gemma-3-12b-it",
+            "google/gemma-2-9b-it",
         ]
     )
     
