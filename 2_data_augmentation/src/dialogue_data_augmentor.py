@@ -262,24 +262,64 @@ class DialogueDataAugmentor:
 
                     results = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, turn, dataset_name, num_turn)
 
-                    cleaned_results = []
+                    # Gestione retry in batch
+                    # Struttura: lista di dizionari con informazioni su ogni entry
+                    entries_info = []
                     for i, (prompt, model_output, dialogue) in enumerate(results):
-                        invalid_inferences = 0
-                        invalid_model_outputs = []
-                        print(f"Processing entry {batch_df.iloc[i]['unique_id']}")
-                        while dialogue is None and invalid_inferences < DATA_AUGMENTATION_HYPERPARAMS['max_retries']:
-                            print(f"Retrying entry {batch_df.iloc[i]['unique_id']} (attempt {invalid_inferences + 1})")
-                            invalid_inferences += 1
-                            invalid_model_outputs.append(model_output)
-                            prompt, model_output, dialogue = DialogueDataAugmentor.generate_batch_output(pipe, tokenizer, [turn[i]], dataset_name, num_turn)[0]
-                        print(f"Finished processing entry {batch_df.iloc[i]['unique_id']} with {invalid_inferences} invalid inferences.")
-
-                        if invalid_inferences >= DATA_AUGMENTATION_HYPERPARAMS['max_retries']:
-                            print(f"Warning: Max retries reached for entry {batch_df.iloc[i]['unique_id']}. Saving last output anyway.")
-                            dialogue = {"error": "Max retries reached"}
-                            model_output = {"error": "Max retries reached"}
-
-                        cleaned_results.append((prompt, model_output, dialogue, num_turn, invalid_inferences, invalid_model_outputs))
+                        entries_info.append({
+                            'index': i,
+                            'unique_id': batch_df.iloc[i]['unique_id'],
+                            'prompt': prompt,
+                            'model_output': model_output,
+                            'dialogue': dialogue,
+                            'invalid_inferences': 0,
+                            'invalid_model_outputs': []
+                        })
+                    
+                    # Retry loop: continua finché ci sono entry non valide e non abbiamo superato max_retries
+                    retry_attempt = 0
+                    while retry_attempt < DATA_AUGMENTATION_HYPERPARAMS['max_retries']:
+                        # Trova tutte le entry con dialogue None
+                        invalid_entries = [entry for entry in entries_info if entry['dialogue'] is None]
+                        
+                        if not invalid_entries:
+                            break  # Tutti i dialoghi sono validi
+                        
+                        print(f"\nRetry attempt {retry_attempt + 1}: {len(invalid_entries)} invalid entries to regenerate")
+                        
+                        # Prepara il batch di retry
+                        retry_turns = [turn[entry['index']] for entry in invalid_entries]
+                        
+                        # Rigenera in batch
+                        retry_results = DialogueDataAugmentor.generate_batch_output(
+                            pipe, tokenizer, retry_turns, dataset_name, num_turn
+                        )
+                        
+                        # Aggiorna le entry con i nuovi risultati
+                        for entry, (new_prompt, new_model_output, new_dialogue) in zip(invalid_entries, retry_results):
+                            print(f"  Retrying entry {entry['unique_id']}")
+                            entry['invalid_model_outputs'].append(entry['model_output'])
+                            entry['prompt'] = new_prompt
+                            entry['model_output'] = new_model_output
+                            entry['dialogue'] = new_dialogue
+                            entry['invalid_inferences'] += 1
+                        
+                        retry_attempt += 1
+                    
+                    # Gestisci le entry che hanno ancora dialogue None dopo max_retries
+                    for entry in entries_info:
+                        if entry['dialogue'] is None:
+                            print(f"Warning: Max retries reached for entry {entry['unique_id']}. Saving error marker.")
+                            entry['dialogue'] = {"error": "Dialogue: Max retries reached"}
+                            entry['model_output'] = {"error": "Model output: Max retries reached"}
+                        print(f"Finished processing entry {entry['unique_id']} with {entry['invalid_inferences']} invalid inferences.")
+                    
+                    # Converti entries_info in cleaned_results nel formato originale
+                    cleaned_results = [
+                        (entry['prompt'], entry['model_output'], entry['dialogue'], 
+                         num_turn, entry['invalid_inferences'], entry['invalid_model_outputs'])
+                        for entry in entries_info
+                    ]
 
                     for row, (prompt, model_output, dialogue, num_turns_generated, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
                         enriched = row._asdict()  # Nota: _asdict() con underscore per pandas named tuples

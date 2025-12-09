@@ -18,9 +18,9 @@ DATASETS_MERGE_LOG_DIR = DATASETS_MERGE_DIR / "log"
 
 # Data Augmentation Constants
 DATA_AUGMENTATION_HYPERPARAMS = {
-    "batch_size": 8,
-    "max_retries": 2,
-    "temperature": 0.5,
+    "batch_size": 32,
+    "max_retries": 3,
+    "temperature": 1.0,
     "max_new_tokens": 512,
 }
 DATA_AUGMENTATION_MODELS = [
