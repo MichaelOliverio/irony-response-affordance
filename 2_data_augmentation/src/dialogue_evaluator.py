@@ -75,7 +75,7 @@ class DialogueEvaluator:
         }
     }
     
-    def prompt1(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt1(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         dataset_name = dataset_name.lower()
 
         if dataset_name == 'csc':
@@ -100,7 +100,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_DIALOGUE>
@@ -143,7 +143,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <SHORT_CONVERSATION>
-{original_turns}
+{original_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
@@ -165,7 +165,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    def prompt2(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt2(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         dataset_name = dataset_name.lower()
 
         if dataset_name == 'csc':
@@ -192,7 +192,7 @@ Output:
 </DIMENSION_DEFINITION>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_DIALOGUE>
@@ -235,7 +235,7 @@ Output:
 </DIMENSION_DEFINITION>
 
 <SHORT_CONVERSATION>
-{original_turns}
+{original_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
@@ -255,7 +255,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    def prompt3(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt3(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         dataset_name = dataset_name.lower()
 
         if dataset_name == 'csc':
@@ -282,7 +282,7 @@ Edge cases:
 </DIMENSION_DEFINITION>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_DIALOGUE>
@@ -325,7 +325,7 @@ Edge cases:
 </DIMENSION_DEFINITION>
 
 <SHORT_CONVERSATION>
-{original_turns}
+{original_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
@@ -345,7 +345,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    def prompt4(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt4(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         dataset_name = dataset_name.lower()
 
         if dataset_name == 'csc':
@@ -372,7 +372,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_DIALOGUE>
@@ -417,7 +417,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <SHORT_CONVERSATION>
-{original_turns}
+{original_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
@@ -439,7 +439,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    def prompt5(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt5(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         dataset_name = dataset_name.lower()
 
         if dataset_name == 'csc':
@@ -466,7 +466,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_DIALOGUE>
@@ -512,7 +512,7 @@ To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answ
 </INSTRUCTIONS>
 
 <SHORT_CONVERSATION>
-{original_turns}
+{original_turn}
 </SHORT_CONVERSATION>
 
 <GENERATED_DIALOGUE>
@@ -535,7 +535,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
 
-    def prompt6(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turns):
+    def prompt6(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
         prompt = ''
         dataset_name = dataset_name.lower()
 
@@ -566,7 +566,7 @@ Your task is to read the generated dialogue (provided between the tags <GENERATE
 </INSTRUCTIONS>
 
 <ORIGINAL_CONTEXT>
-{original_turns}
+{original_turn}
 </ORIGINAL_CONTEXT>
 
 <GENERATED_TURN>
