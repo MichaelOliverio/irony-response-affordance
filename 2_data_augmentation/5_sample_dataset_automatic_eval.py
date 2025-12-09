@@ -15,7 +15,7 @@ FILES = [
 def main():
     """Main function for automatic evaluation."""
     output_dir = Path("human_annotations/manual_eval_files")
-    eval_output_dir = output_dir / "judge_evaluations"
+    eval_output_dir = output_dir / "judge"
     eval_output_dir.mkdir(exist_ok=True)
     
     json_files = list(output_dir.glob("*.json"))

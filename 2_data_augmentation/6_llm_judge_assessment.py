@@ -17,7 +17,7 @@ STATISTICAL_TESTS_DIR = f"{RESULTS_DIR}/4_statistical_tests"
 LATIN_SQUARE_ASSIGNMENTS_FILE = "human_annotations/manual_eval_files/latin_square_assignments.json"
 
 ANNOTATOR_IDS = ["annotator_1", "annotator_2", "annotator_3", "annotator_4"] # ["annotator_1", "annotator_2", "annotator_3", "annotator_4"]
-JUDGE_MODELS = ["Qwen/Qwen2.5-7B-Instruct", "google/gemma-3-12b-it"]
+JUDGE_MODELS = ["Qwen/Qwen2.5-7B-Instruct", "google/gemma-3-12b-it", "google/gemma-2-9b-it"]
 NUM_RECORD = None # None: tutti i record
 DATASET_NAMES = ["csc", "multipico"]
 DIMENSIONS = {
@@ -107,7 +107,7 @@ def preprocess_human_annotations(dataset_name, lsa):
 
 def preprocess_judge_annotations(dataset_name, lsa):
     """Preprocessa le annotazioni dei judge convertendole nel formato delle annotazioni umane"""
-    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt3_judge_scores_{dataset_name}_all_instances_for_llm_judge.json" # il 3 sembra il migliore
+    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt5_judge_scores_{dataset_name}_all_instances_for_llm_judge.json" # il 3 sembra il migliore
     
     with open(judge_file, "r", encoding="utf-8") as f:
         judge_data = json.load(f)
@@ -500,17 +500,17 @@ def correlation(dataset_name):
         
         df_spearman_by_setting = pd.DataFrame(results_by_setting)
         
-        print(f"\n   Correlazioni di Spearman per setting (tutte le annotazioni aggregate):")
-        for _, row in df_spearman_by_setting.sort_values('setting').iterrows():
-            print(f"\n   {row['setting']} (n={row['n']}):")
-            for dim in dimensions:
-                r = row[f'{dim.lower()}_r']
-                p = row[f'{dim.lower()}_p']
-                if not np.isnan(r):
-                    significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
-                    print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance}")
-                else:
-                    print(f"      {dim:15s}: N/A")
+        #print(f"\n   Correlazioni di Spearman per setting (tutte le annotazioni aggregate):")
+        #for _, row in df_spearman_by_setting.sort_values('setting').iterrows():
+        #    print(f"\n   {row['setting']} (n={row['n']}):")
+        #    for dim in dimensions:
+        #        r = row[f'{dim.lower()}_r']
+        #        p = row[f'{dim.lower()}_p']
+        #        if not np.isnan(r):
+        #            significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
+        #            print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance}")
+        #        else:
+        #            print(f"      {dim:15s}: N/A")
         
         # Salva risultati aggregati in JSON
         output_overall = f"{CORRELATION_DIR}/{dataset_name}_correlation_TOTAL_human_vs_judge_{judge_name}.json"
@@ -658,9 +658,9 @@ def main():
         print(f"\n" + "="*70)
         print(f"     ANALISI DELLE VALUTAZIONI PER IL DATASET: {dataset_name.upper()}")
         print("="*70)
-        ranking(dataset_name)
+        #ranking(dataset_name)
         correlation(dataset_name)
-        statistical_tests(dataset_name)
+        #statistical_tests(dataset_name)
 
 
 if __name__ == "__main__":

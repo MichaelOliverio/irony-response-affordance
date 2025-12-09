@@ -17,13 +17,14 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [1, 2, 3, 4, 5]
+    PROMPTS = [1, 2, 3, 4, 5, 6, 7]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
         "meta-llama/Llama-3.2-1B-Instruct",
         "Qwen/Qwen2.5-7B-Instruct",
         "google/gemma-3-12b-it",
+        "google/gemma-2-9b-it",
     ]
     
     # Modelli per LLM-as-a-judge
@@ -31,6 +32,7 @@ class DialogueEvaluator:
         "meta-llama/Llama-3.2-1B-Instruct",
         "Qwen/Qwen2.5-7B-Instruct",
         "google/gemma-3-12b-it",
+        "google/gemma-2-9b-it",
     ]
 
     # aggiornare
@@ -73,8 +75,7 @@ class DialogueEvaluator:
         }
     }
     
-    @staticmethod
-    def prompt1(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt1(self, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You will be given a short conversation between two individuals u1 and u2 between the tags <SHORT_CONVERSATION>. 
 You will then be given a generated dialogue starting from the short conversation, between the tags <GENERATED_DIALOGUE>.
@@ -119,8 +120,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    @staticmethod
-    def prompt2(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt2(self, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an automated judge model. You will receive:
 - a short seed conversation between participants (tag: <SHORT_CONVERSATION>),
@@ -165,8 +165,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    @staticmethod
-    def prompt3(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt3(self, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an LLM-based evaluator. Evaluate the generated dialogue against the specified dimension.
 
@@ -211,8 +210,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    @staticmethod
-    def prompt4(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt4(self, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
 Try to correlate with human judgment as closely as possible.
@@ -259,8 +257,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
     
-    @staticmethod
-    def prompt5(dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt5(self, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         return f"""<TASK_OVERVIEW>
 You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
 Try to correlate with human judgment as closely as possible.
@@ -308,8 +305,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
 
-    @staticmethod
-    def prompt6(dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt6(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         prompt = ''
         if dataset_name == 'CSC':
             prompt = f"""<TASK_OVERVIEW>
@@ -367,8 +363,7 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
 
-    @staticmethod
-    def prompt7(dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
+    def prompt7(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, previous_turns, final_turn):
         prompt = ''
         if dataset_name == 'CSC':
             prompt = f"""<TASK_OVERVIEW>
