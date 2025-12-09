@@ -5,13 +5,13 @@ def main():
     Pipeline completa per data augmentation e valutazione.
     """
     datasets = {
-        "MultiPICo": {
-            "input_type": "single-turn",
+        "CSC": {
+            "input_type": "contextual",
             "output_type": "multi-turn",
             "languages": ["en"],
         },
-        "CSC": {
-            "input_type": "contextual",
+        "MultiPICo": {
+            "input_type": "single-turn",
             "output_type": "multi-turn",
             "languages": ["en"],
         }
@@ -32,7 +32,7 @@ def main():
         df = UnifiedDatasetLoader.load_dataset([dataset_name], languages) #  UnifiedDatasetLoader.load_test_set(dataset_name, 'en') # 
         #df = df.sample(n=40, random_state=42)
 
-        print(f" Usando {len(df)} righe per testing")
+        print(f" num items: {len(df)}")
 
         # 2. Data augmentation
         print("\n[2/3] Data augmentation...")

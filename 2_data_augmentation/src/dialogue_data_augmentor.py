@@ -9,7 +9,7 @@ from typing import List, Tuple, Optional, Dict, Any
 from tqdm import tqdm
 from .llm_handler import LLMHandler
 from .json_parser import JSONParser
-from .config import DATA_AUGMENTATION_HYPERPARAMS, DATA_AUGMENTATION_MODELS, PROMPT_MAPPING, NUM_MAX_TURNS
+from .config import DATA_AUGMENTATION_HYPERPARAMS, DATA_AUGMENTATION_MODELS, PROMPT_MAPPING, NUM_MAX_TURNS, FROM_ONE_TO_MAX_TURNS
 
 class DialogueDataAugmentor:
     """Classe per generare dialoghi multi-turn da coppie post-reply."""
@@ -214,9 +214,13 @@ class DialogueDataAugmentor:
             print("Model and tokenizer loaded.")
         
             for i in range(NUM_MAX_TURNS):
-                print(f"Generating dialogues with {i + 1} turns...\n")
-
                 num_turn = i + 1
+
+                if not FROM_ONE_TO_MAX_TURNS and not (num_turn == NUM_MAX_TURNS):
+                    continue
+
+                print(f"Generating dialogues with {num_turn} turns...\n")
+
 
                 output_file = f'output/{dataset_name}_{model_name.replace("/", "_")}_n_turn_{num_turn}.json'
                 output_rows = []

@@ -10,7 +10,7 @@ DATA_AUGMENTATION_DIR = PROJECT_ROOT / "2_data_augmentation"
 APPROPRIATENESS_DIR = PROJECT_ROOT / "3_appropriatness"
 
 # Path specifici dei file
-UNIFIED_CORPUS_PATH = DATASETS_MERGE_DIR / "output"
+UNIFIED_CORPUS_PATH = DATASETS_MERGE_DIR / "output" / "unified_corpus.json"
 
 # Directory di output
 DATASETS_MERGE_OUTPUT_DIR = DATASETS_MERGE_DIR / "output"
@@ -25,8 +25,7 @@ DATA_AUGMENTATION_HYPERPARAMS = {
 }
 DATA_AUGMENTATION_MODELS = [
     'meta-llama/Llama-3.1-8B-Instruct',
-    'mistralai/Ministral-8B-Instruct-2410',
-    #'mistralai/Mistral-Nemo-Instruct-2407',
+    #'mistralai/Ministral-8B-Instruct-2410',
 ]
 DATA_AUGMENTATION_OUTPUT_DIR = DATA_AUGMENTATION_DIR / "output"
 
@@ -39,3 +38,4 @@ PROMPT_MAPPING = {
 }
 
 NUM_MAX_TURNS = 2
+FROM_ONE_TO_MAX_TURNS = False # Se True, genera da 1 fino a NUM_MAX_TURNS, altrimenti solo NUM_MAX_TURNS

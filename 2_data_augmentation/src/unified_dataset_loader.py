@@ -76,12 +76,7 @@ class UnifiedDatasetLoader:
         Returns:
             DataFrame filtrato
         """
-        if 'MultiPICo' in datasets:
-            file_path = UNIFIED_CORPUS_PATH / "multipico_benchmark.json"
-        elif 'CSC' in datasets:
-            file_path = UNIFIED_CORPUS_PATH / "csc_benchmark.json"
-        else:
-            raise ValueError(f"Dataset non supportato: {datasets}")
+        file_path = UNIFIED_CORPUS_PATH
         
         # Verifica che il file esista
         if not file_path.exists():
