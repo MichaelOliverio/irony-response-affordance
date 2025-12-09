@@ -755,7 +755,8 @@ Q1:"""
                         
                         for row in batch_rows:
                             turns = row.dialogue['turns']
-                            all_turns = self._format_turn_for_evaluation(turns) if len(turns) >= 2 else ""
+                            # Format all turns for evaluation
+                            all_turns = "\n".join([self._format_turn_for_evaluation(turn) for turn in turns]) if turns else ""
                             # Use the original data formatted correctly for each dataset
                             original_turn = self._format_original_turn(row, row.dataset_name)
                             
