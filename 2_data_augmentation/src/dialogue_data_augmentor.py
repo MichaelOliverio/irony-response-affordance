@@ -241,15 +241,17 @@ class DialogueDataAugmentor:
                 print(f"{len(skew_dataset_df)} new entries to process")
 
                 for start in tqdm(range(0, len(skew_dataset_df), DATA_AUGMENTATION_HYPERPARAMS['batch_size']), desc=f"Running {model_name}"):
-                    batch_df = skew_dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']]
+                    batch_df = skew_dataset_df.iloc[start:start+DATA_AUGMENTATION_HYPERPARAMS['batch_size']].copy()
+                    
+                    # Rimuovi @USER dai dati e aggiorna il DataFrame
                     if dataset_name == "MultiPICo":
+                        batch_df['post'] = batch_df['post'].apply(lambda p: re.sub(r'@USER\s*', '', p))
                         post = batch_df['post'].tolist()
-                        #post = [re.sub(r'@USER', '', p) for p in post]
                     elif dataset_name == "CSC":
                         post = batch_df['context'].tolist()
 
+                    batch_df['reply'] = batch_df['reply'].apply(lambda r: re.sub(r'@USER\s*', '', r))
                     reply = batch_df['reply'].tolist()
-                    #reply = [re.sub(r'@USER', '', r) for r in reply]
 
                     if dataset_name == "CSC":
                         relation = batch_df['annotations'].apply(lambda x: x['speaker_annotation']['interlocutor_relationship']).tolist()

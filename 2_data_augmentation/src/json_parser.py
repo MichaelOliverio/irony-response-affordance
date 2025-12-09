@@ -16,6 +16,49 @@ class JSONParser:
     """
 
     @staticmethod
+    def clean_message(message: str) -> str:
+        """
+        Pulisce un messaggio rimuovendo il prefisso 'Steve:' e i caratteri newline.
+        
+        Args:
+            message: Il messaggio da pulire
+            
+        Returns:
+            Il messaggio pulito
+        """
+        # Rimuove "Steve:" all'inizio del messaggio (case-insensitive)
+        cleaned = re.sub(r'^Steve:\s*', '', message, flags=re.IGNORECASE)
+        
+        # Rimuove tutti i caratteri newline
+        cleaned = cleaned.replace('\n', ' ')
+        
+        # Rimuove spazi multipli e fa strip
+        cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+        
+        return cleaned
+    
+    @staticmethod
+    def has_repeated_utterances(messages: list) -> bool:
+        """
+        Controlla se ci sono utterance ripetute nel dialogo.
+        
+        Args:
+            messages: Lista di dizionari con 'speaker' e 'content'
+            
+        Returns:
+            True se ci sono messaggi ripetuti, False altrimenti
+        """
+        seen_contents = set()
+        
+        for msg in messages:
+            content = msg['content'].strip().lower()
+            if content in seen_contents:
+                return True
+            seen_contents.add(content)
+        
+        return False
+
+    @staticmethod
     def extract_json_tag_content(text: str) -> Optional[str]:
         """Estrae il contenuto tra tag <JSON>...</JSON>"""
         match = re.search(r'<JSON\s*>(.*?)</JSON\s*>', text, re.DOTALL | re.IGNORECASE)
@@ -133,12 +176,12 @@ class JSONParser:
             JSON validato e normalizzato, o None se non valido
         """
         if not json_content or "turns" not in json_content:
-            print("❌ JSON non contiene 'turns'")
+            print(" JSON non contiene 'turns'")
             return None
         
         turns = json_content["turns"]
         if not isinstance(turns, list) or len(turns) == 0:
-            print("❌ 'turns' non è una lista valida")
+            print(" 'turns' non è una lista valida")
             return None
         
         # Estrai tutti i messaggi da tutti i turns
@@ -146,7 +189,7 @@ class JSONParser:
         
         for turn_idx, turn in enumerate(turns):
             if not isinstance(turn, dict):
-                print(f"❌ Turn {turn_idx} non è un dizionario")
+                print(f" Turn {turn_idx} non è un dizionario")
                 continue
             
             # Estrai tutti i messaggi u1 e u2 da questo turn
@@ -160,15 +203,24 @@ class JSONParser:
                     message = turn[key]
                     
                     if isinstance(message, str) and message.strip():
-                        turn_messages.append({
-                            'speaker': speaker,
-                            'content': message.strip()
-                        })
+                        # Pulisci il messaggio (rimuovi "Steve:" e "\n")
+                        cleaned_message = JSONParser.clean_message(message)
+                        
+                        if cleaned_message:  # Verifica che dopo la pulizia il messaggio non sia vuoto
+                            turn_messages.append({
+                                'speaker': speaker,
+                                'content': cleaned_message
+                            })
             
             all_messages.extend(turn_messages)
         
         if len(all_messages) == 0:
             print("Nessun messaggio trovato")
+            return None
+        
+        # Controlla se ci sono utterance ripetute
+        if JSONParser.has_repeated_utterances(all_messages):
+            print("Dialogo non valido: trovate utterance ripetute")
             return None
         
         print(f"Trovati {len(all_messages)} messaggi totali")
@@ -210,17 +262,24 @@ class JSONParser:
                 print("Non trovati sia u1 che u2 nei messaggi")
                 return None
             
-            all_messages[last_u1_idx]['content'] = original_post
-            all_messages[last_u2_idx]['content'] = original_reply
-            print(f"✅ Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
+            # Pulisci anche i messaggi originali
+            all_messages[last_u1_idx]['content'] = JSONParser.clean_message(original_post)
+            all_messages[last_u2_idx]['content'] = JSONParser.clean_message(original_reply)
+            print(f" Sostituiti ultimi messaggi: u1 (idx={last_u1_idx}), u2 (idx={last_u2_idx})")
         else:
             # CSC: sostituisci solo l'ultimo u2
             if last_u2_idx is None:
                 print("Non trovato u2 nei messaggi")
                 return None
             
-            all_messages[last_u2_idx]['content'] = original_reply
-            print(f"✅ Sostituito ultimo messaggio u2 (idx={last_u2_idx})")
+            # Pulisci anche il messaggio originale
+            all_messages[last_u2_idx]['content'] = JSONParser.clean_message(original_reply)
+            print(f" Sostituito ultimo messaggio u2 (idx={last_u2_idx})")
+        
+        # Ricontrolla se ci sono utterance ripetute dopo la sostituzione
+        if JSONParser.has_repeated_utterances(all_messages):
+            print("Dialogo non valido: trovate utterance ripetute dopo sostituzione dei messaggi originali")
+            return None
         
         # Ricostruisci il JSON normalizzato con il formato corretto
         # Formato: un oggetto per ogni coppia (u1, u2)
@@ -251,7 +310,7 @@ class JSONParser:
             "turns": normalized_turns
         }
         
-        print(f"✅ JSON validato con {len(normalized_turns)} turns normalizzati")
+        print(f" JSON validato con {len(normalized_turns)} turns normalizzati")
         
         return validated_json
 
@@ -396,7 +455,7 @@ class JSONParser:
         actual = len(data["turns"])
 
         if actual != expected:
-            print(f'⚠️  Numero di turni errato: trovato {actual}, atteso {expected}.')
+            print(f'  Numero di turni errato: trovato {actual}, atteso {expected}.')
             return None
         
         # Valida che ogni turn abbia u1 e u2
