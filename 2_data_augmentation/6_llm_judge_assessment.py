@@ -108,7 +108,7 @@ def preprocess_human_annotations(dataset_name, lsa):
 
 def preprocess_judge_annotations(dataset_name, lsa):
     """Preprocessa le annotazioni dei judge convertendole nel formato delle annotazioni umane"""
-    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt6_judge_scores_{dataset_name}_all_instances_for_llm_judge.json" # il 3 sembra il migliore
+    judge_file = f"{JUDGE_ANNOTATIONS_DIR}/prompt8_judge_scores_{dataset_name}_all_instances_for_llm_judge.json" # il 3 sembra il migliore
     
     with open(judge_file, "r", encoding="utf-8") as f:
         judge_data = json.load(f)
@@ -537,7 +537,7 @@ def main():
         print(f"\n" + "="*70)
         print(f"     ANALISI DELLE VALUTAZIONI PER IL DATASET: {dataset_name.upper()}")
         print("="*70)
-        statistical_tests(dataset_name)
+        #statistical_tests(dataset_name)
         correlation(dataset_name)
 
 
