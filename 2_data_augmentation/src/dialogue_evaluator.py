@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [1,2,3,4,5,6,7]
+    PROMPTS = [8]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
@@ -679,6 +679,109 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
 
+    def prompt8(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
+        dataset_name = dataset_name.lower()
+
+        if dataset_name == 'csc':
+            return f"""<TASK_OVERVIEW>
+You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
+
+Dataset: CSC  
+In CSC, the ORIGINAL_CONTEXT contains:
+- a short context written by user u1,
+- the original reply written by user u2.
+
+You will also be given a GENERATED_DIALOGUE, which is an automatically created multi-turn conversation whose last utterance corresponds exactly to the original user reply.
+
+Your evaluation task:
+- Evaluate the GENERATED_DIALOGUE according to the dimension defined in <DIMENSION_DEFINITION>.
+- Use the ORIGINAL_CONTEXT as the ground-truth behavioural reference.
+- Answer the questions in <QUESTIONS> strictly with “yes” or “no”.
+- Follow exactly the output format given in <ANSWER_FORMAT>.
+- Never include explanations or reasoning.
+
+<DIMENSION_DEFINITION>
+{dimension_name} – {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<ORIGINAL_CONTEXT>
+{original_turn}
+</ORIGINAL_CONTEXT>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<INSTRUCTIONS>
+1. Read carefully the ORIGINAL_CONTEXT and the GENERATED_DIALOGUE.
+2. For each question in <QUESTIONS>, output strictly “yes” or “no”.
+3. Base your answers on the alignment between the ORIGINAL_CONTEXT and the behavior in the GENERATED_DIALOGUE.
+4. Do not include reasoning or commentary.
+5. Follow exactly the structure of <ANSWER_FORMAT>.
+</INSTRUCTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+
+Provide your answers following the required Answer Format.
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
+        else:
+            return f"""<TASK_OVERVIEW>
+You are an AI judge model.
+
+Dataset: Multipico  
+In Multipico, the ORIGINAL_TURN contains:
+- a POST written by the user,
+- the corresponding REPLY,
+both of which also appear as the final two utterances of the GENERATED_DIALOGUE that was automatically constructed from them.
+
+You will evaluate the GENERATED_DIALOGUE based on a specific dimension and answer yes/no questions.
+
+Your task:
+- Judge how well the GENERATED_DIALOGUE reflects the criteria defined in <DIMENSION_DEFINITION>, considering the original POST and REPLY as the reference behavior.
+- Answer each question strictly with “yes” or “no” (lowercase).
+- Produce ONLY the output specified by <ANSWER_FORMAT>, with no explanations or extra text.
+
+<DIMENSION_DEFINITION>
+{dimension_name} – {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<ORIGINAL_TURN>
+{original_turn}
+</ORIGINAL_TURN>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+
+<INSTRUCTIONS>
+1. Read the ORIGINAL_TURN (post + reply) and the GENERATED_DIALOGUE.
+2. Evaluate the GENERATED_DIALOGUE according to the dimension.
+3. For each question, output exactly “yes” or “no” in the positions required by the <ANSWER_FORMAT>.
+4. Do NOT output explanations, punctuation, or extra text.
+</INSTRUCTIONS>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
 
     def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
@@ -1089,7 +1192,8 @@ Q1:"""
             4: self.prompt4,
             5: self.prompt5,
             6: self.prompt6,
-            7: self.prompt7
+            7: self.prompt7,
+            8: self.prompt8,
         }
         
         prompt_func = prompt_functions.get(prompt_type, self.prompt1)
