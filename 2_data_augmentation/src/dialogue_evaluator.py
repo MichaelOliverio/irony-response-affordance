@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [1, 2, 3, 4, 5, 6]
+    PROMPTS = [1,2,3,4,5,6,7]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
@@ -589,6 +589,97 @@ The answer is:
 Q1:"""
         return prompt
 
+    def prompt7(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
+        dataset_name = dataset_name.lower()
+
+        if dataset_name == 'csc':
+            return f"""<TASK_OVERVIEW>
+You will be given a context and a reply of the user u2 to the user u1 between the tags <ORIGINAL_CONTEXT>. 
+You will then be given a generated dialogue starting from the short conversation, between the tags <GENERATED_DIALOGUE>.
+You will be given a set of instructions between the tags <INSTRUCTIONS>.
+Your task is to evaluate the generated dialogue (provided between the tags <GENERATED_DIALOGUE>) according to a specific dimension (provided between the tags <DIMENSION_DEFINITION>), taking into account the original context (provided between the tags <ORIGINAL_CONTEXT>).
+To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answer the questions provided in <QUESTIONS>, strictly with 'yes' or 'no', following the instructions given in the tag <INSTRUCTIONS> and the response format specified between the tags <ANSWER_FORMAT>.
+
+<DIMENSION_DEFINITION>
+{dimension_name} - {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<INSTRUCTIONS>
+1. Carefully read the original context (between the tags <ORIGINAL_CONTEXT>) and the generated dialogue (between the tags <GENERATED_DIALOGUE>).
+2. Review the given questions associated with the dimension "{dimension_name}".
+3. For each question between the tags <QUESTIONS>, answer strictly with 'yes' or 'no'.
+4. Base your answers on whether the generated dialogue feels appropriate, natural, and aligned with the given context. 
+5. Make sure your evaluation reflects how a human would interpret coherence, tone, or relevance in a conversation.
+6. Follow the answer format exactly as specified between the tags <ANSWER_FORMAT>.
+</INSTRUCTIONS>
+
+<ORIGINAL_CONTEXT>
+{original_turn}
+</ORIGINAL_CONTEXT>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+
+Provide your answers to each question following the specified Answer Format.
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
+        else:
+            return f"""<TASK_OVERVIEW>
+You will be given a short conversation between two individuals u1 and u2 between the tags <SHORT_CONVERSATION>. 
+You will then be given a generated dialogue starting from the short conversation, between the tags <GENERATED_DIALOGUE>.
+You will be given a set of instructions between the tags <INSTRUCTIONS>.
+Your task is to evaluate the generated dialogue (provided between the tags <GENERATED_DIALOGUE>) according to a specific dimension (provided between the tags <DIMENSION_DEFINITION>), taking into account the starting short conversation (provided between the tags <SHORT_CONVERSATION>).
+To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answer the questions provided in <QUESTIONS>, strictly with 'yes' or 'no', following the instructions given in the tag <INSTRUCTIONS> and the response format specified between the tags <ANSWER_FORMAT>.
+
+<DIMENSION_DEFINITION>
+{dimension_name} - {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<INSTRUCTIONS>
+1. Carefully read the short conversation (between the tags <SHORT_CONVERSATION>) and the generated dialogue (between the tags <GENERATED_DIALOGUE>).
+2. Review the given questions associated with the dimension "{dimension_name}".
+3. For each question between the tags <QUESTIONS>, answer strictly with 'yes' or 'no'.
+4. Base your answers on whether the generated dialogue feels appropriate, natural, and aligned with the given short conversation. 
+5. Make sure your evaluation reflects how a human would interpret coherence, tone, or relevance in a conversation.
+6. Follow the answer format exactly as specified between the tags <ANSWER_FORMAT>.
+</INSTRUCTIONS>
+
+<SHORT_CONVERSATION>
+{original_turn}
+</SHORT_CONVERSATION>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+
+Provide your answers to each question following the specified Answer Format.
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
+
+
     def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
         Initialize the evaluator.
@@ -997,7 +1088,8 @@ Q1:"""
             3: self.prompt3,
             4: self.prompt4,
             5: self.prompt5,
-            6: self.prompt6
+            6: self.prompt6,
+            7: self.prompt7
         }
         
         prompt_func = prompt_functions.get(prompt_type, self.prompt1)
