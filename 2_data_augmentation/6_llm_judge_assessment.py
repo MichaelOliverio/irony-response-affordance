@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import json
-from scipy.stats import spearmanr
+from scipy.stats import spearmanr, pearsonr
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
@@ -241,32 +241,40 @@ def correlation(dataset_name):
                     if len(group) > 1 and group[col_human].std() > 0 and group[col_judge].std() > 0:
                         with warnings.catch_warnings():
                             warnings.simplefilter("ignore")
-                            r, p = spearmanr(group[col_human], group[col_judge])
-                        row[f'{dim.lower()}_r'] = r
-                        row[f'{dim.lower()}_p'] = p
+                            r_spearman, p_spearman = spearmanr(group[col_human], group[col_judge])
+                            r_pearson, p_pearson = pearsonr(group[col_human], group[col_judge])
+                        row[f'{dim.lower()}_spearman_r'] = r_spearman
+                        row[f'{dim.lower()}_spearman_p'] = p_spearman
+                        row[f'{dim.lower()}_pearson_r'] = r_pearson
+                        row[f'{dim.lower()}_pearson_p'] = p_pearson
                     else:
-                        row[f'{dim.lower()}_r'] = np.nan
-                        row[f'{dim.lower()}_p'] = np.nan
+                        row[f'{dim.lower()}_spearman_r'] = np.nan
+                        row[f'{dim.lower()}_spearman_p'] = np.nan
+                        row[f'{dim.lower()}_pearson_r'] = np.nan
+                        row[f'{dim.lower()}_pearson_p'] = np.nan
                 results.append(row)
             
-            df_spearman = pd.DataFrame(results)
+            df_correlation = pd.DataFrame(results)
             
             # Stampa risultati ordinati per setting
-            print(f"\n   Correlazioni di Spearman per setting:")
-            for _, row in df_spearman.sort_values('setting').iterrows():
+            print(f"\n   Correlazioni per setting:")
+            for _, row in df_correlation.sort_values('setting').iterrows():
                 print(f"\n   {row['setting']}:")
                 for dim in dimensions:
-                    r = row[f'{dim.lower()}_r']
-                    p = row[f'{dim.lower()}_p']
-                    if not np.isnan(r):
-                        significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
-                        print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance}")
+                    r_s = row[f'{dim.lower()}_spearman_r']
+                    p_s = row[f'{dim.lower()}_spearman_p']
+                    r_p = row[f'{dim.lower()}_pearson_r']
+                    p_p = row[f'{dim.lower()}_pearson_p']
+                    if not np.isnan(r_s):
+                        sig_s = "***" if p_s < 0.001 else "**" if p_s < 0.01 else "*" if p_s < 0.05 else ""
+                        sig_p = "***" if p_p < 0.001 else "**" if p_p < 0.01 else "*" if p_p < 0.05 else ""
+                        print(f"      {dim:15s}: Spearman r={r_s:6.3f}, p={p_s:6.4f} {sig_s} | Pearson r={r_p:6.3f}, p={p_p:6.4f} {sig_p}")
                     else:
                         print(f"      {dim:15s}: N/A")
             
             # Salva risultati in JSON nella cartella correlation
             output_file = f"{CORRELATION_DIR}/{dataset_name}_correlation_human_{annotator_id}_vs_judge_{judge_name}.json"
-            results_dict = df_spearman.to_dict(orient='records')
+            results_dict = df_correlation.to_dict(orient='records')
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(results_dict, f, indent=2)
             print(f"\n        Salvato: {output_file}")
@@ -314,7 +322,7 @@ def correlation(dataset_name):
         print(f"   Istanze totali: {len(df_merge)} (annotazioni umane aggregate)")
         
         # Calcola correlazione complessiva per tutte le istanze
-        print(f"\n   Correlazioni di Spearman COMPLESSIVE:")
+        print(f"\n   Correlazioni COMPLESSIVE:")
         overall_results = {}
         for dim in dimensions:
             col_human = f"{dim}_total_human"
@@ -324,12 +332,26 @@ def correlation(dataset_name):
             if len(df_merge) > 1 and df_merge[col_human].std() > 0 and df_merge[col_judge].std() > 0:
                 with warnings.catch_warnings():
                     warnings.simplefilter("ignore")
-                    r, p = spearmanr(df_merge[col_human], df_merge[col_judge])
-                overall_results[dim] = {'r': r, 'p': p, 'n': len(df_merge)}
-                significance = "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else ""
-                print(f"      {dim:15s}: r={r:6.3f}, p={p:6.4f} {significance} (n={len(df_merge)})")
+                    r_spearman, p_spearman = spearmanr(df_merge[col_human], df_merge[col_judge])
+                    r_pearson, p_pearson = pearsonr(df_merge[col_human], df_merge[col_judge])
+                overall_results[dim] = {
+                    'spearman_r': r_spearman, 
+                    'spearman_p': p_spearman,
+                    'pearson_r': r_pearson,
+                    'pearson_p': p_pearson,
+                    'n': len(df_merge)
+                }
+                sig_s = "***" if p_spearman < 0.001 else "**" if p_spearman < 0.01 else "*" if p_spearman < 0.05 else ""
+                sig_p = "***" if p_pearson < 0.001 else "**" if p_pearson < 0.01 else "*" if p_pearson < 0.05 else ""
+                print(f"      {dim:15s}: Spearman r={r_spearman:6.3f}, p={p_spearman:6.4f} {sig_s} | Pearson r={r_pearson:6.3f}, p={p_pearson:6.4f} {sig_p} (n={len(df_merge)})")
             else:
-                overall_results[dim] = {'r': np.nan, 'p': np.nan, 'n': len(df_merge)}
+                overall_results[dim] = {
+                    'spearman_r': np.nan, 
+                    'spearman_p': np.nan,
+                    'pearson_r': np.nan,
+                    'pearson_p': np.nan,
+                    'n': len(df_merge)
+                }
                 print(f"      {dim:15s}: N/A")
         
         # Calcola correlazione per setting (con tutte le annotazioni aggregate)
@@ -344,18 +366,23 @@ def correlation(dataset_name):
                 if len(group) > 1 and group[col_human].std() > 0 and group[col_judge].std() > 0:
                     with warnings.catch_warnings():
                         warnings.simplefilter("ignore")
-                        r, p = spearmanr(group[col_human], group[col_judge])
-                    row[f'{dim.lower()}_r'] = r
-                    row[f'{dim.lower()}_p'] = p
+                        r_spearman, p_spearman = spearmanr(group[col_human], group[col_judge])
+                        r_pearson, p_pearson = pearsonr(group[col_human], group[col_judge])
+                    row[f'{dim.lower()}_spearman_r'] = r_spearman
+                    row[f'{dim.lower()}_spearman_p'] = p_spearman
+                    row[f'{dim.lower()}_pearson_r'] = r_pearson
+                    row[f'{dim.lower()}_pearson_p'] = p_pearson
                 else:
-                    row[f'{dim.lower()}_r'] = np.nan
-                    row[f'{dim.lower()}_p'] = np.nan
+                    row[f'{dim.lower()}_spearman_r'] = np.nan
+                    row[f'{dim.lower()}_spearman_p'] = np.nan
+                    row[f'{dim.lower()}_pearson_r'] = np.nan
+                    row[f'{dim.lower()}_pearson_p'] = np.nan
             results_by_setting.append(row)
         
-        df_spearman_by_setting = pd.DataFrame(results_by_setting)
+        df_correlation_by_setting = pd.DataFrame(results_by_setting)
         
         #print(f"\n   Correlazioni di Spearman per setting (tutte le annotazioni aggregate):")
-        #for _, row in df_spearman_by_setting.sort_values('setting').iterrows():
+        #for _, row in df_correlation_by_setting.sort_values('setting').iterrows():
         #    print(f"\n   {row['setting']} (n={row['n']}):")
         #    for dim in dimensions:
         #        r = row[f'{dim.lower()}_r']
@@ -370,7 +397,7 @@ def correlation(dataset_name):
         output_overall = f"{CORRELATION_DIR}/{dataset_name}_correlation_TOTAL_human_vs_judge_{judge_name}.json"
         output_data = {
             'overall': overall_results,
-            'by_setting': df_spearman_by_setting.to_dict(orient='records')
+            'by_setting': df_correlation_by_setting.to_dict(orient='records')
         }
         with open(output_overall, 'w', encoding='utf-8') as f:
             json.dump(output_data, f, indent=2)
@@ -510,8 +537,8 @@ def main():
         print(f"\n" + "="*70)
         print(f"     ANALISI DELLE VALUTAZIONI PER IL DATASET: {dataset_name.upper()}")
         print("="*70)
+        statistical_tests(dataset_name)
         correlation(dataset_name)
-        #statistical_tests(dataset_name)
 
 
 if __name__ == "__main__":
