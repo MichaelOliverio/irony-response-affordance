@@ -56,6 +56,35 @@ def remove_short_context_entries(df, dataset_name):
     print(f"Removed {removed_count} entries with too short context or reply")
     return df_cleaned, removed_unique_ids
 
+def remove_null_dialogues(df):
+    """Remove entries with null or empty dialogues."""
+    
+    def has_valid_dialogue(row):
+        """Check if the row has valid dialogue turns."""
+        if 'dialogue' not in row or row['dialogue'] is None:
+            return False
+        if not isinstance(row['dialogue'], dict):
+            return False
+        if 'turns' not in row['dialogue'] or row['dialogue']['turns'] is None:
+            return False
+        if not isinstance(row['dialogue']['turns'], list):
+            return False
+        if len(row['dialogue']['turns']) == 0:
+            return False
+        return True
+    
+    initial_count = len(df)
+    mask = df.apply(has_valid_dialogue, axis=1)
+    
+    # Get the unique_ids of removed entries
+    removed_unique_ids = df[~mask]['unique_id'].tolist()
+    
+    df_cleaned = df[mask].reset_index(drop=True)
+    removed_count = initial_count - len(df_cleaned)
+    print(f"Removed {removed_count} entries with null or empty dialogues")
+    return df_cleaned, removed_unique_ids
+
+
 def main():
     """Main function for automatic evaluation."""
     output_dir = Path("output")
@@ -80,7 +109,7 @@ def main():
     # Initialize evaluator
     evaluator = DialogueEvaluator(
         judge_models = [
-            "meta-llama/Llama-3.2-1B-Instruct",
+            "google/gemma-2-9b-it",
         ]
     )
     
@@ -129,16 +158,20 @@ def main():
         # Data Cleaning
         df = remove_invalid_entries(df)
         df, removed_short_ids = remove_short_context_entries(df, dataset_name)
+        df, removed_null_ids = remove_null_dialogues(df)
         
         # Save removed unique_ids to file
-        removed_file = removed_entries_dir / f"removed_short_{dataset_name}_{safe_model_name}_n_turn_{added_turn}.json"
+        removed_file = removed_entries_dir / f"removed_{dataset_name}_{safe_model_name}_n_turn_{added_turn}.json"
         with open(removed_file, 'w', encoding='utf-8') as f:
             json.dump({
                 'dataset': dataset_name,
                 'model': model_name,
                 'added_turns': added_turn,
-                'removed_count': len(removed_short_ids),
-                'removed_unique_ids': removed_short_ids
+                'removed_short_context_count': len(removed_short_ids),
+                'removed_short_context_ids': removed_short_ids,
+                'removed_null_dialogues_count': len(removed_null_ids),
+                'removed_null_dialogues_ids': removed_null_ids,
+                'total_removed': len(removed_short_ids) + len(removed_null_ids)
             }, f, indent=2, ensure_ascii=False)
         print(f"Saved removed unique_ids to: {removed_file.name}")
 
