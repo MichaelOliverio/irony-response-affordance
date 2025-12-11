@@ -6,12 +6,12 @@ import re
 from pathlib import Path
 import pandas as pd
 from src import DialogueEvaluator
-
+from src.config import INVALID_UNIQUEID
 
 def parse_filename(filename):
     """Parse filename to extract dataset name, model name and number of turns"""
     pattern = re.compile(
-        r'^(?P<dataset>[^_]+)_(?P<model>.+?)_n_turn_(?P<turn>\d+)\_filtered.json$'
+        r'^(?P<dataset>[^_]+)_(?P<model>.+?)_n_turn_(?P<turn>\d+).json$'
     )
     
     match = pattern.match(filename)
@@ -20,12 +20,51 @@ def parse_filename(filename):
     else:
         return None
 
+def remove_invalid_entries(df):
+    """Remove entries with invalid unique IDs."""
+    initial_count = len(df)
+    df_cleaned = df[~df['unique_id'].isin(INVALID_UNIQUEID)].reset_index(drop=True)
+    removed_count = initial_count - len(df_cleaned)
+    print(f"Removed {removed_count} invalid entries based on unique_id")
+    return df_cleaned
+
+def remove_short_context_entries(df, dataset_name):
+    # voglio rimuovere quei dialoghi di multipico che hanno una sola parola come post o come reply oppure che hanno solamente punteggiatura
+
+    def is_too_short(text):
+        if not isinstance(text, str):
+            return True
+        text = text.strip()
+        if len(text.split()) <= 1:
+            return True
+        if all(char in '.,!?;:' for char in text):
+            return True
+        return False
+    
+    
+    initial_count = len(df)
+    if dataset_name == 'MultiPICo':
+        mask = df.apply(lambda row: is_too_short(row['post']) or is_too_short(row['reply']), axis=1)
+    else:
+        mask = df.apply(lambda row: is_too_short(row['reply']), axis=1)
+
+    # Get the unique_ids of removed entries
+    removed_unique_ids = df[mask]['unique_id'].tolist()
+    
+    df_cleaned = df[~mask].reset_index(drop=True)
+    removed_count = initial_count - len(df_cleaned)
+    print(f"Removed {removed_count} entries with too short context or reply")
+    return df_cleaned, removed_unique_ids
 
 def main():
     """Main function for automatic evaluation."""
     output_dir = Path("output")
     eval_output_dir = output_dir / "evaluations"
     eval_output_dir.mkdir(exist_ok=True)
+    
+    # Create directory for removed entries logs
+    removed_entries_dir = eval_output_dir / "removed_entries"
+    removed_entries_dir.mkdir(exist_ok=True)
     
     json_files = list(output_dir.glob("*.json"))
     
@@ -40,9 +79,6 @@ def main():
     
     # Initialize evaluator
     evaluator = DialogueEvaluator(
-        perplexity_models = [
-            "meta-llama/Llama-3.2-1B-Instruct",
-        ],
         judge_models = [
             "meta-llama/Llama-3.2-1B-Instruct",
         ]
@@ -70,6 +106,10 @@ def main():
                 data = json.load(f)
             print(f"Loaded {len(data)} entries")
             df = pd.DataFrame(data)
+            
+            # Add generation_setting column (derived from model_name and added_turn)
+            df['generation_setting'] = f"{model_name}_n_turn_{added_turn}"
+            
         except Exception as e:
             print(f"Error loading {json_file.name}: {e}")
             continue
@@ -86,12 +126,29 @@ def main():
                 print("Skipping...")
                 continue
         
+        # Data Cleaning
+        df = remove_invalid_entries(df)
+        df, removed_short_ids = remove_short_context_entries(df, dataset_name)
+        
+        # Save removed unique_ids to file
+        removed_file = removed_entries_dir / f"removed_short_{dataset_name}_{safe_model_name}_n_turn_{added_turn}.json"
+        with open(removed_file, 'w', encoding='utf-8') as f:
+            json.dump({
+                'dataset': dataset_name,
+                'model': model_name,
+                'added_turns': added_turn,
+                'removed_count': len(removed_short_ids),
+                'removed_unique_ids': removed_short_ids
+            }, f, indent=2, ensure_ascii=False)
+        print(f"Saved removed unique_ids to: {removed_file.name}")
+
+
         # Evaluate
         try:
             evaluator.eval(
                 dataset_df=df,
                 output_file=output_file,
-                metrics=["llm-judge"] # ["perplexity", "llm-judge"]
+                metrics=["llm-judge"]
             )
             print(f"Evaluation completed for {json_file.name}")
             

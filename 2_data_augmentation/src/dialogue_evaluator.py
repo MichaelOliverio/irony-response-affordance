@@ -17,7 +17,7 @@ from .config import DATA_AUGMENTATION_OUTPUT_DIR
 class DialogueEvaluator:
     """Class for automatic evaluation of generated dialogues."""
     
-    PROMPTS = [8]
+    PROMPTS = [9]
 
     # Modelli per perplexity evaluation
     PERPLEXITY_MODELS = [
@@ -783,6 +783,101 @@ The answer is:
 <ANSWER_FORMAT>
 Q1:"""
 
+    # prompt finale usato
+    def prompt9(self, dataset_name, dimension_name, dimension_definition, questions_text, example_answers_text, all_turns, original_turn):
+        dataset_name = dataset_name.lower()
+
+        if dataset_name == 'csc':
+            return f"""<TASK_OVERVIEW>
+You are an AI judge model. Your task is to evaluate a generated dialogue based on a specific dimension.
+Try to correlate with human judgment as closely as possible.
+You will be given a context and a reply of the user u2 to the user u1 between the tags <ORIGINAL_CONTEXT>. 
+You will then be given a generated dialogue starting from the short conversation, between the tags <GENERATED_DIALOGUE>.
+You will be given a set of instructions between the tags <INSTRUCTIONS>.
+Your task is to evaluate the generated dialogue (provided between the tags <GENERATED_DIALOGUE>) according to a specific dimension (provided between the tags <DIMENSION_DEFINITION>), taking into account the original context (provided between the tags <ORIGINAL_CONTEXT>).
+To evaluate the dimension provided between the tags <DIMENSION_DEFINITION>, answer the questions provided in <QUESTIONS>, strictly with 'yes' or 'no', following the instructions given in the tag <INSTRUCTIONS> and the response format specified between the tags <ANSWER_FORMAT>.
+
+<DIMENSION_DEFINITION>
+{dimension_name} - {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<INSTRUCTIONS>
+1. Carefully read the original context (between the tags <ORIGINAL_CONTEXT>) and the generated dialogue (between the tags <GENERATED_DIALOGUE>).
+2. Review the given questions associated with the dimension "{dimension_name}".
+3. For each question between the tags <QUESTIONS>, answer strictly with 'yes' or 'no'.
+4. Base your answers on clear reasoning, but **do not include the reasoning in the output**.
+5. Evaluate the generated dialogue, taking into account the short conversation.
+6. Follow the answer format exactly as specified between the tags <ANSWER_FORMAT>.
+</INSTRUCTIONS>
+
+<ORIGINAL_CONTEXT>
+{original_turn}
+</ORIGINAL_CONTEXT>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+
+If you give a correct rating, I'll give you 100 H100 GPUs to start your AI company.
+Provide your answers to each question following the specified Answer Format.
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
+        else:    
+            return f"""<TASK_OVERVIEW>
+You are an automated judge model. You will receive:
+- a short seed conversation between participants (tag: <SHORT_CONVERSATION>),
+- a generated previous conversation (tag: <GENERATED_DIALOGUE>),
+- a dimension definition (tag: <DIMENSION_DEFINITION>),
+- a set of yes/no questions (tag: <QUESTIONS>),
+- and an exact answer format (tag: <ANSWER_FORMAT>).
+
+Your job: evaluate the GENERATED_DIALOGUE with respect to the DIMENSION_DEFINITION, taking into account the SHORT_CONVERSATION. For each question in <QUESTIONS> answer strictly with 'yes' or 'no' (lowercase). Do not output any additional text, explanation, or chain-of-thought.
+
+Answering rules:
+- Read all provided content carefully.
+- For each question, return exactly 'yes' or 'no' (lowercase) in the positions required by <ANSWER_FORMAT>.
+- Do NOT include reasoning, internal deliberation, or any extra characters (no punctuation, no commentary).
+
+Output:
+- Produce only the content specified by <ANSWER_FORMAT> populated with 'yes'/'no' answers.
+
+<DIMENSION_DEFINITION>
+{dimension_name} - {dimension_definition}
+</DIMENSION_DEFINITION>
+
+<SHORT_CONVERSATION>
+{original_turn}
+</SHORT_CONVERSATION>
+
+<GENERATED_DIALOGUE>
+{all_turns}
+</GENERATED_DIALOGUE>
+
+<QUESTIONS>
+{questions_text}
+</QUESTIONS>
+
+<ANSWER_FORMAT>
+{example_answers_text}
+</ANSWER_FORMAT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER_FORMAT>
+Q1:"""
+    
+
     def __init__(self, perplexity_models: Optional[List[str]] = None, judge_models: Optional[List[str]] = None, judge_batch_size: int = 32):
         """
         Initialize the evaluator.
@@ -792,14 +887,11 @@ Q1:"""
             judge_models: List of models to use for LLM-as-a-judge evaluation
             judge_batch_size: Batch size for judge evaluation (number of prompts to process together)
         """
-        if perplexity_models is None:
-            raise ValueError("Please specify at least one perplexity model."
-                             f" Supported models: {self.PERPLEXITY_MODELS}")
-        
-        # check if the models are in the supported list
-        for model in perplexity_models:
-            if model not in self.PERPLEXITY_MODELS:
-                raise ValueError(f"Perplexity model '{model}' is not supported. Supported models: {self.PERPLEXITY_MODELS}")
+        if not perplexity_models is None:
+            # check if the models are in the supported list
+            for model in perplexity_models:
+                if model not in self.PERPLEXITY_MODELS:
+                    raise ValueError(f"Perplexity model '{model}' is not supported. Supported models: {self.PERPLEXITY_MODELS}")
 
         if judge_models is None:
             raise ValueError("Please specify at least one judge model."
@@ -1194,6 +1286,7 @@ Q1:"""
             6: self.prompt6,
             7: self.prompt7,
             8: self.prompt8,
+            9: self.prompt9, # prompt finale utilizzato
         }
         
         prompt_func = prompt_functions.get(prompt_type, self.prompt1)
