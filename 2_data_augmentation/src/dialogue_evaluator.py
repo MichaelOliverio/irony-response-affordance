@@ -1037,7 +1037,7 @@ Q1:"""
                         
                         # Prepara tutti i prompt per questo batch di dialoghi
                         all_prompts = []
-                        batch_metadata = []  # (row, dimension_name, dimension_info)
+                        batch_metadata = []  # (row, dimension_name, dimension_info, prompt)
                         
                         for row in batch_rows:
                             turns = row.dialogue['turns']
@@ -1057,14 +1057,14 @@ Q1:"""
                                     dataset_name=row.dataset_name
                                 )
                                 all_prompts.append(prompt)
-                                batch_metadata.append((row, dimension_name, dimension_info))
+                                batch_metadata.append((row, dimension_name, dimension_info, prompt))
                         
                         # Ottieni tutte le risposte in batch
                         llm_responses = self._get_judge_responses_batch(all_prompts)
                         
                         # Organizza i risultati per dialogo
                         current_dialogue_results = {}
-                        for (row, dimension_name, dimension_info), llm_response in zip(batch_metadata, llm_responses):
+                        for (row, dimension_name, dimension_info, prompt), llm_response in zip(batch_metadata, llm_responses):
                             row_key = (row.unique_id, row.generation_setting)
                             
                             if row_key not in current_dialogue_results:
