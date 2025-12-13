@@ -41,6 +41,12 @@ class DecoderHandler:
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
     def zero_shot(self, input_type: str):
+        self._compute_inference(input_type, prompt_strategy='zero_shot')
+
+    def chain_of_thought(self, input_type: str):
+        self._compute_inference(input_type, prompt_strategy='chain_of_thought')
+
+    def _compute_inference(self, input_type: str, prompt_strategy: str):
         self.model, self.tokenizer, self.pipe = self._load_model()
 
         if self.model is not None and self.tokenizer is not None:
@@ -49,14 +55,17 @@ class DecoderHandler:
         if input_type not in self.INPUT_TYPES:
             raise ValueError(f"Invalid input_type. Must be one of {self.INPUT_TYPES}")
 
-        output_file = self.output_dir / self.model_name.replace('/', '_') / f"zero_shot_{self.model_name.replace('/', '_')}_{self.dataset}_{input_type}.json"
+        model_output_dir = self.output_dir / self.model_name.replace('/', '_')
+        model_output_dir.mkdir(parents=True, exist_ok=True)
+
+        output_file = model_output_dir / f"{prompt_strategy}_{self.model_name.replace('/', '_')}_{self.dataset['name']}_{input_type}.csv"
         dataset_df, output_rows = self._get_existing_ids(output_file)
 
         for start in tqdm(range(0, len(dataset_df), self.inference_params['batch_size']), desc=f"Running {self.model_name}"):
             batch_df = dataset_df.iloc[start:start+self.inference_params['batch_size']]
 
             inputs = self._prepare_inputs(batch_df, input_type)
-            results = self._generate_batch_output(inputs, 'zero_shot')
+            results = self._generate_batch_output(inputs, prompt_strategy)
 
             cleaned_results = []
             for input, prompt, model_output, reasoning, answer in results:
@@ -65,7 +74,7 @@ class DecoderHandler:
                 while answer not in ['0', '1']:
                     invalid_inferences += 1
                     invalid_model_outputs.append(model_output)
-                    _, prompt, model_output, reasoning, answer = self._generate_batch_output([input], 'zero_shot')[0]
+                    _, prompt, model_output, reasoning, answer = self._generate_batch_output([input], prompt_strategy)[0]
 
                 cleaned_results.append((prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs))
 
@@ -80,12 +89,15 @@ class DecoderHandler:
                 output_rows.append(enriched)
 
             # salva ad ogni batch
-            pd.DataFrame(output_rows).to_json(
+            output_df = pd.DataFrame(output_rows)
+            
+            # Salva CSV
+            output_df.to_csv(
                 output_file,
-                orient='records',
-                indent=2,
-                force_ascii=False
+                index=False,
+                encoding='utf-8'
             )
+            
             print(f"\nBatch {start//self.inference_params['batch_size'] + 1} salvato → {output_file}")
 
         self._destroy_model()
@@ -226,13 +238,12 @@ The reasoning is:
 
         if os.path.exists(output_file):
             try:
-                with open(output_file, 'r', encoding='utf-8') as f:
-                    existing_data = json.load(f)
-                existing_ids = set([row['unique_id'] for row in existing_data])
+                existing_df = pd.read_csv(output_file, encoding='utf-8')
+                existing_ids = set(existing_df['unique_id'].tolist())
                 print(f"\nFound {len(existing_ids)} already processed entries in {output_file}")
-                output_rows.extend(existing_data) # aggiungi i dati esistenti a output_rows
+                output_rows.extend(existing_df.to_dict('records')) # aggiungi i dati esistenti a output_rows
             except Exception as e:
-                print(f"\nError loading existing JSON: {e}")
+                print(f"\nError loading existing CSV: {e}")
                 existing_ids = set()
         else:
             existing_ids = set()
@@ -259,9 +270,9 @@ The reasoning is:
 
             elif input_type == 'context_reply':
                 if self.dataset['name'] == 'MultiPICo':
-                    inputs = (f"post: {batch_df['post']}\nreply{batch_df['reply']}").tolist()
+                    inputs = (batch_df['post'] + "\nreply: " + batch_df['reply']).tolist()
                 elif self.dataset['name'] == 'CSC':
-                    inputs = (f"context: {batch_df['context']}\nreply{batch_df['reply']}").tolist()
+                    inputs = (batch_df['context'] + "\nreply: " + batch_df['reply']).tolist()
 
             elif input_type == 'conversation':
                 inputs = batch_df['dialogue'].apply(lambda d: d['turns']).tolist()

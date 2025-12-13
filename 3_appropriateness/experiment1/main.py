@@ -25,16 +25,17 @@ def main():
             # baseline1: zero-shot w context
             print("\nBaseline 1: Using context field as input...")
             decoder.zero_shot(input_type='context')
-
-            continue
+            decoder.chain_of_thought(input_type='context')
 
             # baseline2: zero-shot w context * response
             print("\nBaseline 2: Using context and response fields as input...")
             decoder.zero_shot(input_type='context_reply')
+            decoder.chain_of_thought(input_type='context_reply')
 
             # prompting w dialogue
             print("\nZero-shot with dialogue history...")
             decoder.zero_shot(input_type='conversation')
+            decoder.chain_of_thought(input_type='conversation')
 
             # fine-tuning w context
             #print("\nFine-tuning with context field...")
