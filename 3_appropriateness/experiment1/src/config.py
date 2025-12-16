@@ -77,7 +77,27 @@ ENCODER_SETTINGS = {
         "FacebookAI/xlm-roberta-base"
     ],
     'training_params': {
-        # Parametri di training specifici per i modelli encoder
+        'num_train_epochs': 5,
+        'batch_size': 8,
+        'learning_rate': 2e-5,
+        'logging_steps': 50,
+        'weight_decay': 0.01,
+        'warmup_ratio': 0.1,
+        'max_length': 512,
+        'focal_loss': {
+            'gamma': 5.0,
+            'alpha': 0.2
+        },
+        'training_args': {
+            'save_strategy': 'epoch',
+            'eval_strategy': 'epoch',
+            'logging_strategy': 'steps',
+            'overwrite_output_dir': True,
+            'report_to': 'none',
+            'load_best_model_at_end': True,
+            'metric_for_best_model': 'eval_f1',
+            'greater_is_better': True,
+        }
     },
     'output_dir': OUTPUT_DIR / "encoders"
 }
