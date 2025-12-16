@@ -4,7 +4,7 @@ from src.decoder_handler import DecoderHandler
 import argparse
 
 def main():
-    do_prompting = False
+    do_prompting = True
     do_fine_tuning = True
 
     for i, dataset_name in enumerate(DATASETS.keys()):

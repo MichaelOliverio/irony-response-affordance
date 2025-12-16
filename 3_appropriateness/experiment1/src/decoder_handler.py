@@ -247,6 +247,9 @@ class DecoderHandler:
         print(f"Train dataset size: {len(train_dataset)}")
         print(f"Eval dataset size: {len(eval_dataset)}")
         
+        # Salva input_type per usarlo in _formatting_prompts_func
+        self._current_input_type = input_type
+        
         # Caricamento modello base
         self.model, self.tokenizer = self._load_model_for_training()
         
@@ -273,7 +276,7 @@ class DecoderHandler:
                 checkpoint_dir = str(checkpoints[-1])
                 print(f"\n     Resuming from checkpoint: {checkpoint_dir}")
         
-        # Trainer
+        # Trainer con max_seq_length
         trainer = SFTTrainer(
             model=self.model,
             train_dataset=train_dataset,
@@ -282,6 +285,7 @@ class DecoderHandler:
             args=training_arguments,
             formatting_func=self._formatting_prompts_func,
             data_collator=collator,
+            tokenizer=self.tokenizer,  # Esplicitamente specificato per evitare warning
         )
         
         # Training
@@ -701,8 +705,8 @@ The reasoning is:
         
         model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
-            device_map=self.device,
-            dtype="auto",
+            torch_dtype=self.inference_params['torch_dtype'],
+            device_map="auto" if torch.cuda.is_available() else None,
             trust_remote_code=True,
         )
         tokenizer = AutoTokenizer.from_pretrained(self.model_name)
@@ -720,7 +724,7 @@ The reasoning is:
             "text-generation",
             model=model,
             tokenizer=tokenizer,
-            dtype=self.inference_params['dtype'],
+            torch_dtype=self.inference_params['torch_dtype'],
             pad_token_id=tokenizer.pad_token_id,
         )
 
@@ -768,8 +772,8 @@ The reasoning is:
         # Carica il modello base
         base_model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
-            torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
-            device_map=self.device,
+            torch_dtype=self.inference_params['torch_dtype'],
+            device_map="auto" if torch.cuda.is_available() else None,
             trust_remote_code=True,
         )
         
@@ -804,38 +808,12 @@ The reasoning is:
         """
         df = pd.DataFrame(dataset_split)
         
-        # Prepara gli input basandosi sul tipo specificato
+        # Usa _prepare_inputs per ottenere gli input formattati
+        inputs = self._prepare_inputs(df, input_type)
+        
+        # Crea il dataset per il training
         conversations = []
-        for _, row in df.iterrows():
-            if input_type == 'context':
-                # Usa solo il context/post
-                if self.dataset['name'] == 'MultiPICo':
-                    input_text = row['post']
-                elif self.dataset['name'] == 'CSC':
-                    input_text = row['context']
-                else:
-                    raise ValueError(f"Unknown dataset: {self.dataset['name']}")
-                    
-            elif input_type == 'conversation':
-                # Usa l'intero dialogo
-                turns = row['dialogue']['turns']
-                turns_copy = [dict(t) for t in turns]
-                
-                # Rimuovi l'ultima risposta di u2 per il training
-                if turns_copy and 'u2' in turns_copy[-1]:
-                    del turns_copy[-1]['u2']
-                
-                # Formatta la conversazione
-                turns_str = ""
-                for turn in turns_copy:
-                    speaker = 'u1' if 'u1' in turn else 'u2'
-                    content = turn[speaker]
-                    turns_str += f"{speaker}: {content}\n"
-                
-                input_text = turns_str
-            else:
-                raise ValueError(f"Invalid input_type: {input_type}. Must be 'context' or 'conversation'")
-            
+        for input_text, (_, row) in zip(inputs, df.iterrows()):
             conversations.append({
                 'conversation': input_text,
                 'label': str(row['label'])
@@ -846,6 +824,7 @@ The reasoning is:
     def _formatting_prompts_func(self, examples):
         """
         Formatta i prompt per il training con strategia zero-shot.
+        Riutilizza _get_prompt per garantire coerenza con l'inferenza.
         
         Args:
             examples: batch di esempi
@@ -856,27 +835,30 @@ The reasoning is:
         formatted_prompts = []
         
         for conv, label in zip(examples['conversation'], examples['label']):
-            prompt = f"""<TASK_OVERVIEW>
-You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-Determine whether it is appropriate for u2 to respond ironically to u1's last message.
-Output must be 0 (inappropriate) or 1 (appropriate).
-Provide your answer between the tags <ANSWER></ANSWER>.
-<CONVERSATION>{conv}</CONVERSATION>
-</TASK_OVERVIEW>
-The answer is:
-<ANSWER>{label}</ANSWER>"""
+            # Usa _get_prompt per ottenere il prompt base (già include <ANSWER> senza chiusura)
+            base_prompt = self._get_prompt('zero_shot', self._current_input_type, conv)
+            
+            # Aggiungi la label alla fine (base_prompt finisce già con "<ANSWER>")
+            prompt = f"{base_prompt}{label}</ANSWER>"
             
             formatted_prompts.append(prompt)
         
         return formatted_prompts
 
     def _destroy_model(self):
+        if self.pipe is not None:
+            del self.pipe
+            self.pipe = None
+        
         if self.model is not None:
             del self.model
+            self.model = None
         
         if self.tokenizer is not None:
             del self.tokenizer
+            self.tokenizer = None
 
+        gc.collect()
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
             print("\nModello distrutto e cache GPU svuotata")

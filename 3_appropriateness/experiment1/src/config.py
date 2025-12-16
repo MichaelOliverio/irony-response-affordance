@@ -29,7 +29,7 @@ DECODER_SETTINGS = {
     ],
     'training_params': {
         'lora' : {
-            'r': 64,
+            'r': 64, 
             'lora_alpha': 16,
             'lora_dropout': 0.1,
             'bias': "none",
@@ -38,15 +38,13 @@ DECODER_SETTINGS = {
         },
         'training_args': {
             'output_dir': OUTPUT_DIR / "decoders" / "fine_tuned_models",
-            'num_train_epochs': 3,
-            'per_device_train_batch_size': 2,
-            'per_device_eval_batch_size': 2,
-            'gradient_accumulation_steps': 8,
+            'num_train_epochs': 5,
+            'per_device_train_batch_size': 32,
+            'per_device_eval_batch_size': 32,
+            'gradient_accumulation_steps': 1,
             'optim': 'adamw_torch',
-            'eval_strategy': 'steps',
-            'eval_steps': 500,
-            'save_strategy': 'steps',
-            'save_steps': 500,
+            'eval_strategy': 'epoch',  # Valuta ad ogni epoca
+            'save_strategy': 'epoch',  # Salva checkpoint ad ogni epoca
             'logging_steps': 100,
             'learning_rate': 2e-4,
             'weight_decay': 0.001,
@@ -55,9 +53,10 @@ DECODER_SETTINGS = {
             'max_grad_norm': 0.3,
             'max_steps': -1,
             'warmup_ratio': 0.03,
-            'save_total_limit': 3,  # Mantiene solo gli ultimi 3 checkpoint
-            'load_best_model_at_end': True,
-            'metric_for_best_model': 'eval_loss',
+            'save_total_limit': None,  # Mantiene tutti i checkpoint (uno per epoca)
+            'load_best_model_at_end': True,  # Carica il modello migliore alla fine
+            'metric_for_best_model': 'eval_loss',  # Usa eval_loss per scegliere il migliore
+            'greater_is_better': False,  # eval_loss: più basso è meglio
             'group_by_length': True,
             'lr_scheduler_type': 'cosine',
             'report_to': 'none',
