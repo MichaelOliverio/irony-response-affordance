@@ -28,6 +28,7 @@ def main():
                 "./output/decoders/meta-llama_Llama-3.2-1B-Instruct/chain_of_thought_meta-llama_Llama-3.2-1B-Instruct_MultiPICo_context.csv",
                 "./output/decoders/meta-llama_Llama-3.2-1B-Instruct/chain_of_thought_meta-llama_Llama-3.2-1B-Instruct_MultiPICo_context_reply.csv",
                 "./output/decoders/meta-llama_Llama-3.2-1B-Instruct/chain_of_thought_meta-llama_Llama-3.2-1B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/meta-llama_Llama-3.2-1B-Instruct/fine_tuned/zero_shot_meta-llama_Llama-3.2-1B-Instruct_MultiPICo_context_finetuned.csv",
             ],
         }
     }
