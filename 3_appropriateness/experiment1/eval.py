@@ -12,6 +12,8 @@ def parse_file_info(file_path, dataset_name):
         prompting_method = "Zero-Shot"
     elif "chain_of_thought" in file_path:
         prompting_method = "Chain-of-Thought"
+    elif "fine_tuning" in file_path:
+        prompting_method = "Fine-Tuning"
     else:
         prompting_method = "Unknown"
     
@@ -121,6 +123,10 @@ def main():
             ],
         },
         'MultiPICo': { 
+            "FacebookAI_xlm-roberta-base": [
+                "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_context.csv",
+                "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_conversation.csv",
+            ],
             "Qwen_Qwen2.5-7B-Instruct": [
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context_reply.csv",
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context.csv",

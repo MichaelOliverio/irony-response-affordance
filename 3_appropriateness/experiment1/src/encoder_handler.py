@@ -125,6 +125,16 @@ class EncoderHandler:
         print(f"Train dataset size: {len(train_dataset)}")
         print(f"Validation dataset size: {len(val_dataset)}")
         
+        # Mostra distribuzione delle classi
+        train_labels = np.array(train_dataset["labels"])
+        val_labels = np.array(val_dataset["labels"])
+        print(f"\nTrain set distribution:")
+        print(f"  Class 0 (Not Appropriate): {(train_labels == 0).sum()} ({(train_labels == 0).sum() / len(train_labels) * 100:.1f}%)")
+        print(f"  Class 1 (Appropriate): {(train_labels == 1).sum()} ({(train_labels == 1).sum() / len(train_labels) * 100:.1f}%)")
+        print(f"Val set distribution:")
+        print(f"  Class 0 (Not Appropriate): {(val_labels == 0).sum()} ({(val_labels == 0).sum() / len(val_labels) * 100:.1f}%)")
+        print(f"  Class 1 (Appropriate): {(val_labels == 1).sum()} ({(val_labels == 1).sum() / len(val_labels) * 100:.1f}%)")
+        
         # compute class weight (in case labels are unbalanced)        
         try:
             labels_array = np.array(train_dataset["labels"]).astype(int)
@@ -249,7 +259,7 @@ class EncoderHandler:
         prediction_dir = self.output_dir / clean_model_name / self.dataset_name / input_type / "predictions"
         prediction_dir.mkdir(parents=True, exist_ok=True)
         
-        output_file = prediction_dir / f"predictions_{self.dataset_name}_{input_type}.csv"
+        output_file = prediction_dir / f"fine_tuning_{clean_model_name}_{self.dataset_name}_{input_type}.csv"
         
         with open(output_file, "w", newline='', encoding='utf-8') as fo:
             writer = csv.DictWriter(fo, fieldnames=["unique_id", "model_answer", "label"])
@@ -264,6 +274,25 @@ class EncoderHandler:
                     "model_answer": int(pred_label),
                     "label": int(true_label)
                 })
+        
+        # Stampa metriche
+        print("\n" + "="*60)
+        print("Test Set Results:")
+        print("="*60)
+        metrics = predictions.metrics
+        for key, value in metrics.items():
+            if key.startswith('test_'):
+                print(f"{key}: {value:.4f}")
+        
+        # Classification report dettagliato
+        pred_labels = np.argmax(predictions.predictions, axis=-1)
+        true_labels = predictions.label_ids
+        print("\nClassification Report:")
+        print(classification_report(true_labels, pred_labels, 
+                                   target_names=['Not Appropriate', 'Appropriate']))
+        
+        print(f"\n✓ Predictions saved to: {output_file}")
+        print("="*60 + "\n")
         
         # Cleanup
         self._destroy_model()
@@ -342,7 +371,7 @@ class EncoderHandler:
     
     @staticmethod
     def _compute_metrics(eval_pred):
-        """Calcola metriche di valutazione."""
+        """Calcola metriche di valutazione focalizzate sulla classe positiva (label=1)."""
         logits, labels = eval_pred
         preds = np.argmax(logits, axis=-1)
         
@@ -352,11 +381,11 @@ class EncoderHandler:
         recall_metric = load("recall")
         f1_metric = load("f1")
         
-        # Calcola tutte le metriche
+        # Calcola metriche per la classe positiva (pos_label=1, average="binary")
         accuracy = accuracy_metric.compute(predictions=preds, references=labels)["accuracy"]
-        precision = precision_metric.compute(predictions=preds, references=labels, average="weighted")["precision"]
-        recall = recall_metric.compute(predictions=preds, references=labels, average="weighted")["recall"]
-        f1 = f1_metric.compute(predictions=preds, references=labels, average="weighted")["f1"]
+        precision = precision_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["precision"]
+        recall = recall_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["recall"]
+        f1 = f1_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["f1"]
         
         return {
             "accuracy": accuracy,

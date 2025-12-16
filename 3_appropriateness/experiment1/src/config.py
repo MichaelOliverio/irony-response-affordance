@@ -65,7 +65,7 @@ DECODER_SETTINGS = {
     'inference_params': {
         'max_new_tokens': 256,
         'temperature': 0.7,
-        'batch_size': 4,
+        'batch_size': 32,
         'torch_dtype': torch.float16
     },
     'output_dir': OUTPUT_DIR / "decoders"
@@ -77,16 +77,16 @@ ENCODER_SETTINGS = {
         "FacebookAI/xlm-roberta-base"
     ],
     'training_params': {
-        'num_train_epochs': 5,
-        'batch_size': 8,
-        'learning_rate': 2e-5,
+        'num_train_epochs': 10,  # Aumentato per convergenza migliore
+        'batch_size': 32,  # Aumentato per stabilità
+        'learning_rate': 5e-6,  # Leggermente aumentato
         'logging_steps': 50,
         'weight_decay': 0.01,
         'warmup_ratio': 0.1,
         'max_length': 512,
         'focal_loss': {
             'gamma': 5.0,
-            'alpha': 0.2
+            'alpha': 0.2,
         },
         'training_args': {
             'save_strategy': 'epoch',
