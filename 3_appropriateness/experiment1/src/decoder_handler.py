@@ -335,7 +335,7 @@ class DecoderHandler:
         )
 
         results = []
-        for prompt, out in zip(prompts, outputs):
+        for input, prompt, out in zip(inputs, prompts, outputs):
             entry = out[0]
             model_output = entry['generated_text'].strip()
 
@@ -439,7 +439,7 @@ The reasoning is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of two turns and a last message of u1. Each turn encompasses a pair of messages between u1 and u2.
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -455,7 +455,7 @@ The answer is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of two turns and a last message of u1. Each turn encompasses a pair of messages between u1 and u2.
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -545,7 +545,7 @@ The reasoning is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of two turns and a last message of u1. Each turn encompasses a pair of messages between u1 and u2.
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -561,7 +561,7 @@ The answer is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of two turns and a last message of u1. Each turn encompasses a pair of messages between u1 and u2.
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -686,14 +686,17 @@ The reasoning is:
                 cleaned_inputs = []
                 for turns in inputs:
                     turns_copy = [dict(t) for t in turns]
+                    # Rimuovi SOLO l'u2 dall'ULTIMO turno (la risposta target da predire)
                     if turns_copy and 'u2' in turns_copy[-1]:
                         del turns_copy[-1]['u2']
 
                     turns_str = ""
                     for turn in turns_copy:
-                        speaker = 'u1' if 'u1' in turn else 'u2'
-                        content = turn[speaker]
-                        turns_str += f"{speaker}: {content}\n"
+                        # Ora alcuni turni avranno sia u1 che u2, l'ultimo solo u1
+                        if 'u1' in turn:
+                            turns_str += f"u1: {turn['u1']}\n"
+                        if 'u2' in turn:
+                            turns_str += f"u2: {turn['u2']}\n"
                     cleaned_inputs.append(turns_str)            
 
                 inputs = cleaned_inputs
