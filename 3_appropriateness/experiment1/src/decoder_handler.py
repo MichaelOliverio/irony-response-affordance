@@ -405,7 +405,7 @@ The reasoning is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of a pair of messages exchanged on social media.
+It consists of a message from u1 on social media, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -421,7 +421,7 @@ The answer is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of a pair of messages exchanged on social media.
+It consists of a message from u1 on social media, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.

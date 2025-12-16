@@ -50,3 +50,4 @@ my_notes/*
 2_data_augmentation/output/final_dataset/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json
 2_data_augmentation/output/final_dataset/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json
 3_appropriateness/experiment1/src/__pycache__/*
+3_appropriateness/experiment1/output/decoders/test0/*
