@@ -53,3 +53,13 @@ my_notes/*
 3_appropriateness/experiment1/output/decoders/test0/*
 3_appropriateness/experiment1/analyze_predictions.py
 3_appropriateness/experiment1/start.sh
+3_appropriateness/experiment1/output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context/final_model/*
+3_appropriateness/experiment1/output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/conversation/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/context/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/final_model/*
+3_appropriateness/experiment1/output/encoders/EuroBERT_EuroBERT-210m/CSC/context/final_model/*
+3_appropriateness/experiment1/output/encoders/EuroBERT_EuroBERT-210m/CSC/conversation/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/context/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/conversation/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context/final_model/*
+3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/conversation/final_model/
