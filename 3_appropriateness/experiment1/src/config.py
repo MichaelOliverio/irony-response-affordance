@@ -73,13 +73,15 @@ DECODER_SETTINGS = {
 
 ENCODER_SETTINGS = {
     'models': [
-        #"EuroBERT/EuroBERT-210m",
-        "FacebookAI/xlm-roberta-base"
+        "EuroBERT/EuroBERT-210m",
+        "FacebookAI/xlm-roberta-large",
+        #"EuroBERT/EuroBERT-610m",
+        #"FacebookAI/xlm-roberta-base"
     ],
     'training_params': {
-        'num_train_epochs': 10,  # Aumentato per convergenza migliore
-        'batch_size': 32,  # Aumentato per stabilità
-        'learning_rate': 5e-6,  # Leggermente aumentato
+        'num_train_epochs': 10,
+        'batch_size': 32,
+        'learning_rate': 2e-5,
         'logging_steps': 50,
         'weight_decay': 0.01,
         'warmup_ratio': 0.1,
