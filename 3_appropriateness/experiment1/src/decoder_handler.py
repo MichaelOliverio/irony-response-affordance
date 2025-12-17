@@ -675,7 +675,7 @@ The reasoning is:
                     inputs = batch_df['dialogue'].apply(lambda d: d['turns']).tolist()
                     cleaned_inputs = []
                     for turns in inputs:
-                        turns_str = turns[-1]['u1']  # Prendi solo l'ultimo messaggio di u1
+                        turns_str = "u1:" + turns[-1]['u1']  # Prendi solo l'ultimo messaggio di u1
                         cleaned_inputs.append(turns_str)
                     inputs = cleaned_inputs
 
