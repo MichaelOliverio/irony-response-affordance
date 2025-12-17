@@ -71,3 +71,5 @@ my_notes/*
 3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/last_u1_message/final_model/*
 3_appropriateness/experiment1/output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context_reply/final_model/*
 3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context_reply/final_model/*
+3_appropriateness/experiment2/src/__pycache__/*
+3_appropriateness/experiment2/output/decoders/on_test_set/*
