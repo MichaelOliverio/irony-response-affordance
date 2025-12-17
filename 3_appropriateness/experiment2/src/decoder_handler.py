@@ -112,32 +112,29 @@ class DecoderHandler:
         inputs: lista di conversazioni
         ritorna: lista di dict con prompt, model_output, answer
         """
-        
-        #controlla se il dataset source è MultiPICo e la prompt_strategy è relationship_friends o relationship_colleagues allora non eseguire
-        if not (self.dataset['name'] == 'MultiPICo' and prompt_strategy in ['relationship_friends', 'relationship_colleagues']):
-            prompts = []
-            for input in inputs:
-                prompts.append(self._get_prompt(prompt_strategy, input))
+        prompts = []
+        for input in inputs:
+            prompts.append(self._get_prompt(prompt_strategy, input))
 
-            outputs = self.pipe(
-                prompts,
-                max_new_tokens=self.inference_params['max_new_tokens'],
-                do_sample=self.inference_params['temperature'] > 0,
-                temperature=self.inference_params['temperature'],
-                return_full_text=False,
-                batch_size=self.inference_params['batch_size'],
-                pad_token_id=self.tokenizer.pad_token_id
-            )
+        outputs = self.pipe(
+            prompts,
+            max_new_tokens=self.inference_params['max_new_tokens'],
+            do_sample=self.inference_params['temperature'] > 0,
+            temperature=self.inference_params['temperature'],
+            return_full_text=False,
+            batch_size=self.inference_params['batch_size'],
+            pad_token_id=self.tokenizer.pad_token_id
+        )
 
-            results = []
-            for prompt, out in zip(prompts, outputs):
-                entry = out[0]
-                model_output = entry['generated_text'].strip()
+        results = []
+        for prompt, out in zip(prompts, outputs):
+            entry = out[0]
+            model_output = entry['generated_text'].strip()
 
-                answer = None, 
-                answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
+            answer = None, 
+            answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
 
-                results.append((input, prompt, model_output, answer))
+            results.append((input, prompt, model_output, answer))
 
         return results
 

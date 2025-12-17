@@ -40,11 +40,12 @@ def main():
             print("\Gen Y: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_y')
 
-            print("\Friends: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_friends')
+            if dataset_name == 'CSC':
+                print("\Friends: Using conversation field as input...")
+                decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_friends')
 
-            print("\Colleauges: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_colleagues')
+                print("\Colleauges: Using conversation field as input...")
+                decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_colleagues')
 
 if __name__ == "__main__":
     main()
