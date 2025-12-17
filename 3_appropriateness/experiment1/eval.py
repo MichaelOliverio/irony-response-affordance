@@ -113,6 +113,14 @@ def main():
                 "./output/encoders/FacebookAI_xlm-roberta-large/CSC/context/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_context.csv",
                 "./output/encoders/FacebookAI_xlm-roberta-large/CSC/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_conversation.csv",
             ],
+            "google_gemma-2-9b-it": [
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_context_reply.csv",
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_context.csv",
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_context_reply.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_context.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_conversation.csv",
+            ],
             "Qwen_Qwen2.5-7B-Instruct": [
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_context_reply.csv",
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_context.csv",
@@ -131,10 +139,10 @@ def main():
             ],
         },
         'MultiPICo': { 
-            "FacebookAI_xlm-roberta-base": [
-                "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_context.csv",
-                "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_conversation.csv",
-            ],
+            #"FacebookAI_xlm-roberta-base": [
+            #    "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_context.csv",
+            #    "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_conversation.csv",
+            #],
             "FacebookAI_xlm-roberta-large": [
                 "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_context.csv",
                 "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_conversation.csv",
@@ -143,6 +151,14 @@ def main():
                 "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_context.csv",
                 "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/conversation/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_conversation.csv",
             ],
+            "google_gemma-2-9b-it": [
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_context_reply.csv",
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_context.csv",
+                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_context_reply.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_context.csv",
+                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_conversation.csv",
+            ],
             "Qwen_Qwen2.5-7B-Instruct": [
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context_reply.csv",
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context.csv",
@@ -150,6 +166,8 @@ def main():
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context_reply.csv",
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context.csv",
                 "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/fine_tuned/fine_tuning_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/fine_tuned/fine_tuning_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
             ],
             "mistralai_Ministral-8B-Instruct-2410": [
                 "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_MultiPICo_context_reply.csv",
@@ -158,6 +176,7 @@ def main():
                 "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_context_reply.csv",
                 "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_context.csv",
                 "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
+
             ],
         }
     }
