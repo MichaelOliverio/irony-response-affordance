@@ -90,6 +90,12 @@ class DecoderHandler:
                 enriched['invalid_model_outputs'] = invalid_model_outputs
                 output_rows.append(enriched)
 
+            # Pulisci la memoria dopo ogni batch
+            del results
+            del cleaned_results
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+
             # salva ad ogni batch
             output_df = pd.DataFrame(output_rows)
             
@@ -127,24 +133,19 @@ class DecoderHandler:
         )
 
         results = []
-        for prompt, out in zip(prompts, outputs):
-            entry = out[0]
-            model_output = entry['generated_text'].strip()
-
-            answer = None, 
-            answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
-
-            results.append((input, prompt, model_output, answer))
-
-        results = []
         for input, prompt, out in zip(inputs, prompts, outputs):
             entry = out[0]
             model_output = entry['generated_text'].strip()
 
-            answer = None, 
+            answer = None
             answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
 
             results.append((input, prompt, model_output, answer))
+
+        # Pulisci la memoria dopo la generazione
+        del outputs
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
 
         return results
 

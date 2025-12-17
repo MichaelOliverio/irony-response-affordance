@@ -1,6 +1,8 @@
 import pandas as pd
 from evaluate import load
 from statsmodels.stats.contingency_tables import mcnemar
+from src.config import DATASETS
+import json 
 
 STRATEGY_TO_TARGET = {
     "gender_male": "aggregation_on_male",
@@ -14,12 +16,16 @@ STRATEGY_TO_TARGET = {
 }
 
 OUTPUT_CSV = "./evaluation_results_semiaggregated.csv"
+OUTPUT_JSON = "./evaluation_results_semiaggregated.json"
 
 # =========================================================
 def compute_metrics(df, target_col, accuracy_metric, precision_metric, recall_metric, f1_metric):
     df_eval = df[df[target_col].notna()].copy()
     if len(df_eval) == 0:
         return None
+    
+    # Reset index per evitare problemi con indici non consecutivi
+    df_eval = df_eval.reset_index(drop=True)
 
     df_eval["model_answer"] = df_eval["model_answer"].astype(int)
     df_eval[target_col] = df_eval[target_col].astype(int)
@@ -82,22 +88,83 @@ def main():
     results = []
 
     files = {
-        'CSC': {
-            "Llama-3.2-1B-Instruct": [
-                # ---- I TUOI FILE ----
+        'MultiPICo': {
+            "Qwen_Qwen2.5-7B-Instruct": [
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_female_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_male_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_boomer_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_x_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_y_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_z_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
             ],
         },
-        'MultiPICo': {
-            "Llama-3.2-1B-Instruct": [
-                # ---- I TUOI FILE ----
+        'CSC': {
+            "Qwen_Qwen2.5-7B-Instruct": [
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_female_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_male_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_boomer_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_x_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_y_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_z_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/relationship_colleagues_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/relationship_friends_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
             ],
-        }
+        },
     }
 
-    for dataset_name, models in files.items():
+
+    for dataset_name, models in files.items():                  
         for model_name, file_paths in models.items():
             for file_path in file_paths:
+                # Prendiamo la strategia di aggregazione dal nome del file
+                strategy = None
+                for s in STRATEGY_TO_TARGET:
+                    if s in file_path:
+                        strategy = s
+                        break
+                
+                if strategy is None:
+                    raise ValueError(f"Strategy not found in file path: {file_path}")
+                semi_col = STRATEGY_TO_TARGET[strategy]
+
+                # Escludiamo gli esempi senza voti per la strategia corrente
+                unique_ids_to_exclude = set()
+                dataset_path = DATASETS[dataset_name]['path']
+                
+                # Caricamento del dataset per ottenere gli ID unici da escludere
+                with open(dataset_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                dataset = data["entries"]
+
+                for entry in dataset:
+                    annotations = entry.get("annotations", {})
+                    exclude_entry = False
+
+                    if (not dataset_name == 'CSC') and (semi_col in ['aggregation_on_colleague', 'aggregation_on_best_friend']):
+                        continue
+
+                    vote_key = f"{semi_col}_n"
+                    if vote_key not in annotations:
+                        #print(f"Excluding entry with unique_id {entry.get('unique_id')} due to missing vote_key: {vote_key}")
+                        exclude_entry = True
+
+                    if exclude_entry:
+                        unique_ids_to_exclude.add(entry.get("unique_id"))
+
+                
+                print(f"{semi_col}: Excluding {len(unique_ids_to_exclude)} unique IDs for dataset {dataset_name}.")
+
                 df = pd.read_csv(file_path)
+                df = df[~df["unique_id"].isin(unique_ids_to_exclude)].copy()
+                
+                # Verifica se il DataFrame è vuoto dopo l'esclusione
+                if len(df) == 0:
+                    print(f"Skipping {file_path}: no samples left after exclusion.")
+                    continue
+                
+                # Reset index per evitare problemi
+                df = df.reset_index(drop=True)
                 df["model_answer"] = df["model_answer"].astype(int)
 
                 # -----------------------------
@@ -164,8 +231,27 @@ def main():
     # =====================================================
     df_results = pd.DataFrame(results)
     df_results.to_csv(OUTPUT_CSV, index=False)
+    
+    # Salvataggio JSON - converti i tipi numpy in tipi Python standard
+    results_json = []
+    for result in results:
+        result_dict = {}
+        for key, value in result.items():
+            if pd.isna(value):
+                result_dict[key] = None
+            elif isinstance(value, (pd.Int64Dtype, pd.Float64Dtype)) or hasattr(value, 'item'):
+                result_dict[key] = value.item() if hasattr(value, 'item') else value
+            elif isinstance(value, (int, float, str, bool, type(None))):
+                result_dict[key] = value
+            else:
+                result_dict[key] = str(value)
+        results_json.append(result_dict)
+    
+    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
+        json.dump(results_json, f, indent=2, ensure_ascii=False)
 
     print(f"\n Results saved to: {OUTPUT_CSV}")
+    print(f" Results saved to: {OUTPUT_JSON}")
     print(f"Total rows: {len(df_results)}")
 
 # =========================================================

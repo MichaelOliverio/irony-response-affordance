@@ -4,7 +4,7 @@ import torch
 # Root del progetto (questo file è nella root)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "experiment2" / "output"
-DATASET_DIR = PROJECT_ROOT / "datasets"
+DATASET_DIR = PROJECT_ROOT / "experiment2" / "disaggregated_dataset"
 
 RANDOM_SEED = 42
 
