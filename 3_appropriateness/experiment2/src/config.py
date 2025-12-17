@@ -25,7 +25,10 @@ DATASETS = {
 
 DECODER_SETTINGS = {
     'models': [
-        'meta-llama/Llama-3.2-1B-Instruct',
+        #'meta-llama/Llama-3.2-1B-Instruct',
+        'Qwen/Qwen2.5-7B-Instruct',
+        'mistralai/Ministral-8B-Instruct-2410',
+        'google/gemma-2-9b-it',
     ],
     'training_params': {
         # Parametri di training specifici per i modelli decoder
@@ -33,19 +36,8 @@ DECODER_SETTINGS = {
     'inference_params': {
         'max_new_tokens': 256,
         'temperature': 0.7,
-        'batch_size': 1,
+        'batch_size': 32,
         'dtype': torch.float16
     },
     'output_dir': OUTPUT_DIR / "decoders"
-}
-
-ENCODER_SETTINGS = {
-    'models': [
-        #"EuroBERT/EuroBERT-210m",
-        "FacebookAI/xlm-roberta-base"
-    ],
-    'training_params': {
-        # Parametri di training specifici per i modelli encoder
-    },
-    'output_dir': OUTPUT_DIR / "encoders"
 }

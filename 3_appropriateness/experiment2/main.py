@@ -1,4 +1,4 @@
-from src.config import DATASETS, DECODER_SETTINGS, ENCODER_SETTINGS, OUTPUT_DIR
+from src.config import DATASETS, DECODER_SETTINGS, OUTPUT_DIR
 from src.dataset_loader import DatasetLoader 
 from src.decoder_handler import DecoderHandler
 
@@ -25,26 +25,26 @@ def main():
             print("\nMale: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='gender_male')
 
-            print("\Female: Using conversation field as input...")
+            print("\nFemale: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='gender_female')
 
-            print("\Boomer: Using conversation field as input...")
+            print("\nBoomer: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='generation_boomer')
 
-            print("\Gen Z: Using conversation field as input...")
+            print("\nGen Z: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_z')
 
-            print("\Gen X: Using conversation field as input...")
+            print("\nGen X: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_x')
 
-            print("\Gen Y: Using conversation field as input...")
+            print("\nGen Y: Using conversation field as input...")
             decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_y')
 
             if dataset_name == 'CSC':
-                print("\Friends: Using conversation field as input...")
+                print("\nFriends: Using conversation field as input...")
                 decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_friends')
 
-                print("\Colleauges: Using conversation field as input...")
+                print("\nColleauges: Using conversation field as input...")
                 decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_colleagues')
 
 if __name__ == "__main__":

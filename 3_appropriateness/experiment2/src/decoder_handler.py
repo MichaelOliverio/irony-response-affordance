@@ -136,6 +136,16 @@ class DecoderHandler:
 
             results.append((input, prompt, model_output, answer))
 
+        results = []
+        for input, prompt, out in zip(inputs, prompts, outputs):
+            entry = out[0]
+            model_output = entry['generated_text'].strip()
+
+            answer = None, 
+            answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
+
+            results.append((input, prompt, model_output, answer))
+
         return results
 
     def _get_prompt(self, prompt_strategy: str, input: str) -> str:
