@@ -73,3 +73,4 @@ my_notes/*
 3_appropriateness/experiment1/output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context_reply/final_model/*
 3_appropriateness/experiment2/src/__pycache__/*
 3_appropriateness/experiment2/output/decoders/on_test_set/*
+3_appropriateness/experiment2/start.sh
