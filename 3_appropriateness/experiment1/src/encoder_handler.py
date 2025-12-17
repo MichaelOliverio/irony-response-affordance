@@ -24,11 +24,12 @@ from src.config import ENCODER_SETTINGS, RANDOM_SEED
 class EncoderHandler:
     """
     Handler per modelli encoder che permette training e inferenza
-    sia su single-turn (context) che multi-turn (conversation).
+    sia su single-turn (last_u1_message, context_reply) che multi-turn (conversation).
     """
     
     INPUT_TYPES = [
-        'context',
+        'last_u1_message',
+        'context_reply',
         'conversation',
     ]
     
@@ -63,7 +64,7 @@ class EncoderHandler:
         Esegue il fine-tuning del modello encoder.
         
         Args:
-            input_type: tipo di input ('context' per single-turn, 'conversation' per multi-turn)
+            input_type: tipo di input ('last_u1_message', 'context_reply' per single-turn, 'conversation' per multi-turn)
             force_retrain: se True, elimina il modello esistente e riallena da zero
             
         Returns:
@@ -216,7 +217,7 @@ class EncoderHandler:
         Esegue predizioni sul test set.
         
         Args:
-            input_type: tipo di input ('context' o 'conversation')
+            input_type: tipo di input ('last_u1_message', 'context_reply' o 'conversation')
             fine_tuned_model_path: percorso del modello fine-tunato (opzionale, auto-detected)
         """
         if input_type not in self.INPUT_TYPES:
@@ -303,7 +304,7 @@ class EncoderHandler:
         
         Args:
             split: lista di entry del dataset
-            input_type: 'context' o 'conversation'
+            input_type: 'last_u1_message', 'context_reply' o 'conversation'
             return_ids: se True, ritorna anche gli unique_id
         """
         ids, texts, labels = [], [], []
@@ -312,11 +313,22 @@ class EncoderHandler:
             ids.append(entry['unique_id'])
             
             # Prepara il testo in base all'input_type
-            if input_type == 'context':
+            if input_type == 'last_u1_message':
                 if self.dataset_name == 'MultiPICo':
                     text = f"{entry['post']}"
                 else:
-                    text = f"{entry['context']}"
+                    dialogue = entry['dialogue']
+                    if 'turns' in dialogue:
+                        # Prendi l'ultimo turno di u1
+                        last_turn = dialogue['turns'][-1]
+                        text = last_turn['u1']
+                    else:
+                        raise ValueError("Dialogue format not recognized. Expected 'turns' key.")
+            elif input_type == 'context_reply':
+                if self.dataset_name == 'MultiPICo':
+                    text = f"u1:{entry['post']}\nu2:{entry['post']}"
+                else:
+                    text = f"context:{entry['context']}\nu2:{entry['post']}"
             elif input_type == 'conversation':
                 # Multi-turn: usa l'intera conversazione
                 dialogue = entry['dialogue']

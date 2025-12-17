@@ -30,7 +30,7 @@ class DecoderHandler:
     ]
 
     INPUT_TYPES = [
-        'context',
+        'last_u1_message',
         'context_reply',
         'conversation',
     ]
@@ -69,7 +69,7 @@ class DecoderHandler:
         Inferenza zero-shot con modello fine-tunato.
         
         Args:
-            input_type: tipo di input ('context', 'context_reply', 'conversation')
+            input_type: tipo di input ('last_u1_message', 'context_reply', 'conversation')
             fine_tuned_model_path: percorso del modello fine-tunato (opzionale, auto-detected)
         """
         self._inference(
@@ -84,7 +84,7 @@ class DecoderHandler:
         Metodo unificato per l'inferenza.
         
         Args:
-            input_type: tipo di input ('context', 'context_reply', 'conversation')
+            input_type: tipo di input ('last_u1_message', 'context_reply', 'conversation')
             prompt_strategy: strategia di prompt ('zero_shot', 'chain_of_thought')
             is_fine_tuned: se True, usa un modello fine-tunato
             fine_tuned_model_path: percorso del modello fine-tunato (per is_fine_tuned=True)
@@ -204,15 +204,15 @@ class DecoderHandler:
         Esegue il fine-tuning del modello usando LoRA con strategia zero-shot.
         
         Args:
-            input_type: tipo di input usato per il training ('context' o 'conversation')
+            input_type: tipo di input usato per il training ('last_u1_message' o 'conversation')
             force_retrain: se True, elimina il modello esistente e riallena da zero
             resume_from_checkpoint: se True, riprende dall'ultimo checkpoint se disponibile
         
         Returns:
             str: percorso del modello fine-tunato
         """
-        if input_type not in ['context', 'conversation']:
-            raise ValueError(f"Invalid input_type for fine-tuning. Must be 'context' or 'conversation', got: {input_type}")
+        if input_type not in ['last_u1_message', 'conversation']:
+            raise ValueError(f"Invalid input_type for fine-tuning. Must be 'last_u1_message' or 'conversation', got: {input_type}")
         
         print(f"\n{'='*60}")
         print(f"Starting fine-tuning for {self.model_name}")
@@ -399,7 +399,7 @@ Provide your reasoning between the tags <REASONING></REASONING>.
 The reasoning is:
 <REASONING>"""
                 
-        elif input_type == 'context': # baseline
+        elif input_type == 'last_u1_message': # baseline
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -505,13 +505,13 @@ Provide your reasoning between the tags <REASONING></REASONING>.
 The reasoning is:
 <REASONING>"""
                 
-        elif input_type == 'context': # baseline
+        elif input_type == 'last_u1_message': # baseline
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of a description of the situation in which the dialogue happens.
+It consists of a message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -527,7 +527,7 @@ The answer is:
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
 The context affects users in what and how they chose to communicate. 
-It consists of a description of the situation in which the dialogue happens.
+It consists of a message from u1, to which u2 has to respond.
 Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
 The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
 Provide your output answer between the tags <ANSWER></ANSWER>.
@@ -668,11 +668,16 @@ The reasoning is:
             
             inputs = []
 
-            if input_type == 'context':
+            if input_type == 'last_u1_message':
                 if self.dataset['name'] == 'MultiPICo':
                     inputs = ("\nu1: " + batch_df['post']).tolist()
                 elif self.dataset['name'] == 'CSC':
-                    inputs = ("\ndescription of the situation: " + batch_df['context']).tolist()
+                    inputs = batch_df['dialogue'].apply(lambda d: d['turns']).tolist()
+                    cleaned_inputs = []
+                    for turns in inputs:
+                        turns_str = turns[-1]['u1']  # Prendi solo l'ultimo messaggio di u1
+                        cleaned_inputs.append(turns_str)
+                    inputs = cleaned_inputs
 
             elif input_type == 'context_reply':
                 if self.dataset['name'] == 'MultiPICo':
@@ -804,7 +809,7 @@ The reasoning is:
         
         Args:
             dataset_split: split del dataset (train/val/test)
-            input_type: tipo di input ('context' o 'conversation')
+            input_type: tipo di input ('last_u1_message' o 'conversation')
         
         Returns:
             Dataset Hugging Face

@@ -5,9 +5,9 @@ from src.encoder_handler import EncoderHandler
 import argparse
 
 def main():
-    do_prompting = False
+    do_prompting = True
     do_fine_tuning = False
-    do_encoder = True
+    do_encoder = False
 
     for i, dataset_name in enumerate(DATASETS.keys()):
         print(f"\nProcessing dataset: {dataset_name} ({i+1}/{len(DATASETS)})")
@@ -40,18 +40,18 @@ def main():
         
                 # prompting w context
                 print("\nPrompting with context field...")
-                decoder.zero_shot(input_type='context')
-                decoder.chain_of_thought(input_type='context')
+                decoder.zero_shot(input_type='last_u1_message')
+                decoder.chain_of_thought(input_type='last_u1_message')
 
                 # prompting w context + response
-                print("\nPrompting with context and response fields...")
-                decoder.zero_shot(input_type='context_reply')
-                decoder.chain_of_thought(input_type='context_reply')
+                #print("\nPrompting with context and response fields...")
+                #decoder.zero_shot(input_type='context_reply')
+                #decoder.chain_of_thought(input_type='context_reply')
 
                 # prompting w dialogue
-                print("\nPrompting with dialogue history...")
-                decoder.zero_shot(input_type='conversation')
-                decoder.chain_of_thought(input_type='conversation')
+                #print("\nPrompting with dialogue history...")
+                #decoder.zero_shot(input_type='conversation')
+                #decoder.chain_of_thought(input_type='conversation')
             
             if do_fine_tuning:
                 # ========================================
@@ -59,11 +59,11 @@ def main():
                 # ========================================
                 print(f"\n{'#'*80}\nFINE-TUNING\n{'#'*80}\n")
 
-                # 1. fine-tuning w context
-                print("\nFine-tuning with context field...")
-                fine_tuned_model_path = decoder.fine_tuning(input_type='context', force_retrain=False, resume_from_checkpoint=True)
-                print("\nGenerating responses after fine-tuning with context...")
-                decoder.fine_tuned_inference(input_type='context',fine_tuned_model_path=fine_tuned_model_path)
+                # 1. fine-tuning w last_u1_message
+                print("\nFine-tuning with last_u1_message field...")
+                fine_tuned_model_path = decoder.fine_tuning(input_type='last_u1_message', force_retrain=False, resume_from_checkpoint=True)
+                print("\nGenerating responses after fine-tuning with last_u1_message...")
+                decoder.fine_tuned_inference(input_type='last_u1_message',fine_tuned_model_path=fine_tuned_model_path)
 
                 # 2. fine-tuning w conversation
                 print("\nFine-tuning with dialogue history...")
@@ -85,10 +85,18 @@ def main():
                 # ========================================
                 # Fine-tuning with context (single-turn)
                 # ========================================
-                print(f"\n{'#'*80}\nENCODER FINE-TUNING - SINGLE TURN (CONTEXT)\n{'#'*80}\n")
-                fine_tuned_model_path = encoder.train(input_type='context', force_retrain=False)
-                print("\nGenerating predictions after fine-tuning with context...")
-                encoder.predict(input_type='context', fine_tuned_model_path=fine_tuned_model_path)
+                print(f"\n{'#'*80}\nENCODER FINE-TUNING - SINGLE TURN (context_reply)\n{'#'*80}\n")
+                fine_tuned_model_path = encoder.train(input_type='context_reply', force_retrain=False)
+                print("\nGenerating predictions after fine-tuning with context_reply...")
+                encoder.predict(input_type='context_reply', fine_tuned_model_path=fine_tuned_model_path)
+
+                # ========================================
+                # Fine-tuning with context (single-turn)
+                # ========================================
+                print(f"\n{'#'*80}\nENCODER FINE-TUNING - SINGLE TURN (last message of u1)\n{'#'*80}\n")
+                fine_tuned_model_path = encoder.train(input_type='last_u1_message', force_retrain=False)
+                print("\nGenerating predictions after fine-tuning with last message of u1...")
+                encoder.predict(input_type='last_u1_message', fine_tuned_model_path=fine_tuned_model_path)
 
                 # ========================================
                 # Fine-tuning with conversation (multi-turn)
