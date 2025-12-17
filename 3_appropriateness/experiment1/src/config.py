@@ -18,14 +18,17 @@ DATASETS = {
     'MultiPICo': {
         'path': f"{DATASET_DIR}/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
     },
-    #'CSC': {
-    #    'path': f"{DATASET_DIR}/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
-    #},
+    'CSC': {
+        'path': f"{DATASET_DIR}/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
+    },
 }
 
 DECODER_SETTINGS = {
     'models': [
-        'meta-llama/Llama-3.2-1B-Instruct',
+        #'meta-llama/Llama-3.2-1B-Instruct',
+        'Qwen/Qwen2.5-7B-Instruct',
+        'mistralai/Ministral-8B-Instruct-2410',
+        'google/gemma-2-9b-it',
     ],
     'training_params': {
         'lora' : {
@@ -39,9 +42,9 @@ DECODER_SETTINGS = {
         'training_args': {
             'output_dir': OUTPUT_DIR / "decoders" / "fine_tuned_models",
             'num_train_epochs': 5,
-            'per_device_train_batch_size': 32,
-            'per_device_eval_batch_size': 32,
-            'gradient_accumulation_steps': 1,
+            'per_device_train_batch_size': 1,
+            'per_device_eval_batch_size': 1,
+            'gradient_accumulation_steps': 32,
             'optim': 'adamw_torch',
             'eval_strategy': 'epoch',  # Valuta ad ogni epoca
             'save_strategy': 'epoch',  # Salva checkpoint ad ogni epoca
