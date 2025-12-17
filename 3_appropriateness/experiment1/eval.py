@@ -106,11 +106,15 @@ def main():
     files = {
         'CSC': {
             "EuroBERT_EuroBERT-210m": [
-                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/context/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_context.csv",
+                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/context_reply/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_context_reply.csv",
+                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/last_u1_message/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_last_u1_message.csv",
+                #"./output/encoders/EuroBERT_EuroBERT-210m/CSC/context/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_context.csv",
                 "./output/encoders/EuroBERT_EuroBERT-210m/CSC/conversation/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_conversation.csv",
             ],
             "FacebookAI_xlm-roberta-large": [
                 "./output/encoders/FacebookAI_xlm-roberta-large/CSC/context/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_context.csv",
+                "./output/encoders/FacebookAI_xlm-roberta-large/CSC/last_u1_message/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_last_u1_message.csv",
+                #"./output/encoders/FacebookAI_xlm-roberta-large/CSC/context_reply/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_context_reply.csv",
                 "./output/encoders/FacebookAI_xlm-roberta-large/CSC/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_conversation.csv",
             ],
             "google_gemma-2-9b-it": [
@@ -150,10 +154,12 @@ def main():
             #    "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_conversation.csv",
             #],
             "FacebookAI_xlm-roberta-large": [
+                "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context_reply/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_context_reply.csv",
                 "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_last_u1_message.csv",
                 "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_conversation.csv",
             ],
             "EuroBERT_EuroBERT-210m": [
+                "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context_reply/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_context_reply.csv",
                 "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_last_u1_message.csv",
                 "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/conversation/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_conversation.csv",
             ],
