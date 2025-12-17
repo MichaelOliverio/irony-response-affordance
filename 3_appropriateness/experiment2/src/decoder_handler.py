@@ -46,9 +46,8 @@ class DecoderHandler:
         # Create output directory if it doesn't exist
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def zero_shot(self, input_type: str. prompt_strategy: str):
+    def zero_shot(self, input_type: str, prompt_strategy: str):
         self._compute_inference(input_type, prompt_strategy)
-
 
     def _compute_inference(self, input_type: str, prompt_strategy: str):
         self.model, self.tokenizer, self.pipe = self._load_model()
@@ -115,7 +114,7 @@ class DecoderHandler:
         """
         
         #controlla se il dataset source è MultiPICo e la prompt_strategy è relationship_friends o relationship_colleagues allora non eseguire
-        if !(self.dataset['name'] == 'MultiPICo' and prompt_strategy in ['relationship_friends', 'relationship_colleagues']):
+        if not (self.dataset['name'] == 'MultiPICo' and prompt_strategy in ['relationship_friends', 'relationship_colleagues']):
             prompts = []
             for input in inputs:
                 prompts.append(self._get_prompt(prompt_strategy, input))
@@ -147,117 +146,139 @@ class DecoderHandler:
             raise ValueError(f"Not supported prompt strategy: {prompt_strategy}")
         
         if prompt_strategy == 'gender_male':
-            prompt = f"""You are male. Use this perspective when making the following decision. You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+            prompt = f"""<TASK_OVERVIEW>
+You are male. Use this perspective when making the following decision. 
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>"""
+The answer is:
+<ANSWER>"""
             
         elif prompt_strategy == 'gender_female':
             prompt = f"""<TASK_OVERVIEW>
-            You are female. Use this perspective when making the following decision. You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You are female. Use this perspective when making the following decision. 
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>"""
+The answer is:
+<ANSWER>"""
     
         elif prompt_strategy == 'generation_boomer':
             prompt = f"""<TASK_OVERVIEW>
-            You are Boomer. Use this perspective when making the following decision. You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You are Boomer. Use this perspective when making the following decision. 
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """
-
+The answer is:
+<ANSWER>"""
+            
         elif prompt_strategy == 'generation_gen_z':
             prompt = f"""<TASK_OVERVIEW>
-            You are Gen Z. Use this perspective when making the following decision.
-            You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You are Gen Z. Use this perspective when making the following decision.
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """  
+The answer is:
+<ANSWER>"""
 
         elif prompt_strategy == 'generation_gen_y':
             prompt = f"""<TASK_OVERVIEW>
-            You are Gen Y. Use this perspective when making the following decision.
-            You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You are Gen Y. Use this perspective when making the following decision.
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """      
+The answer is:
+<ANSWER>"""
 
         elif prompt_strategy == 'generation_gen_x':
             prompt = f"""<TASK_OVERVIEW>
-            You are Gen X. Use this perspective when making the following decision.
-            You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You are Gen X. Use this perspective when making the following decision.
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """
+The answer is:
+<ANSWER>"""
 
         elif prompt_strategy == 'relationship_colleagues':
             prompt = f"""<TASK_OVERVIEW>
-            You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>. You know that u1 and u2 are colleagues.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """
+The answer is:
+<ANSWER>"""
 
         elif prompt_strategy == 'relationship_friends':
             prompt = f"""<TASK_OVERVIEW>
-            You have a pair of users, u1 and u2, who are having a conversation provided between the tags <CONVERSATION>...</CONVERSATION>. You know that u1 and u2 are best friends.
-            Determine whether the context in the conversation can trigger an ironic reply from u2.
-            Output must be 0 (not irony triggering) or 1 (irony triggering).
-            Provide your answer between the tags <ANSWER></ANSWER>.
+You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are best friends.
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
 
-            <CONVERSATION>{input}</CONVERSATION>
-            </TASK_OVERVIEW>
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
 
-            The answer is:
-            <ANSWER>
-            """
-            
+The answer is:
+<ANSWER>"""
+         
         return prompt
 
     def _clean_output(self, text: str, output_type: str) -> Optional[str]:
@@ -354,32 +375,37 @@ class DecoderHandler:
             inputs = []
 
             if input_type == 'context':
-                if self.dataset['name'] == 'MultiPICo':
-                    inputs = batch_df['post'].tolist()
-                elif self.dataset['name'] == 'CSC':
-                    inputs = batch_df['context'].tolist()
+                raise NotImplementedError("Input type 'context' is not implemented yet.")
+                #if self.dataset['name'] == 'MultiPICo':
+                #    inputs = batch_df['post'].tolist()
+                #elif self.dataset['name'] == 'CSC':
+                #    inputs = batch_df['context'].tolist()
 
             elif input_type == 'context_reply':
-                if self.dataset['name'] == 'MultiPICo':
-                    inputs = (batch_df['post'] + "\nreply: " + batch_df['reply']).tolist()
-                elif self.dataset['name'] == 'CSC':
-                    inputs = (batch_df['context'] + "\nreply: " + batch_df['reply']).tolist()
+                raise NotImplementedError("Input type 'context_reply' is not implemented yet.")
+                #if self.dataset['name'] == 'MultiPICo':
+                #    inputs = (batch_df['post'] + "\nreply: " + batch_df['reply']).tolist()
+                #elif self.dataset['name'] == 'CSC':
+                #    inputs = (batch_df['context'] + "\nreply: " + batch_df['reply']).tolist()
 
             elif input_type == 'conversation':
                 inputs = batch_df['dialogue'].apply(lambda d: d['turns']).tolist()
 
                 cleaned_inputs = []
                 for turns in inputs:
-                    turns_copy = [dict(t) for t in turns]  # copia profonda
+                    turns_copy = [dict(t) for t in turns]
+                    # Rimuovi SOLO l'u2 dall'ULTIMO turno (la risposta target da predire)
                     if turns_copy and 'u2' in turns_copy[-1]:
                         del turns_copy[-1]['u2']
 
                     turns_str = ""
                     for turn in turns_copy:
-                        speaker = 'u1' if 'u1' in turn else 'u2'
-                        content = turn[speaker]
-                        turns_str += f"{speaker}: {content}\n"
-                    cleaned_inputs.append(turns_str)            
+                        # Ora alcuni turni avranno sia u1 che u2, l'ultimo solo u1
+                        if 'u1' in turn:
+                            turns_str += f"u1: {turn['u1']}\n"
+                        if 'u2' in turn:
+                            turns_str += f"u2: {turn['u2']}\n"
+                    cleaned_inputs.append(turns_str)             
 
                 inputs = cleaned_inputs
 

@@ -17,7 +17,6 @@ def main():
             'test': test_set
         }
 
-
         for decoder_model in DECODER_SETTINGS['models']:
             print(f"\nUsing decoder model: {decoder_model}")
             decoder = DecoderHandler(model_name=decoder_model, dataset=dataset)

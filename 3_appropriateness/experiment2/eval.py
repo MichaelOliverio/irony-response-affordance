@@ -8,8 +8,8 @@ STRATEGY_TO_TARGET = {
     "generation_boomer": "aggregation_on_boomer",
     "generation_gen_z": "aggregation_on_genz",
     "generation_gen_y": "aggregation_on_geny",
-    "generation_gen_x": "aggregation_on_genx"
-    "relationship_colleagues":"aggregation_on_colleague",
+    "generation_gen_x": "aggregation_on_genx",
+    "relationship_colleagues": "aggregation_on_colleague",
     "relationship_friends": "aggregation_on_best_friend",
 }
 
@@ -165,7 +165,7 @@ def main():
     df_results = pd.DataFrame(results)
     df_results.to_csv(OUTPUT_CSV, index=False)
 
-    print(f"\n✅ Results saved to: {OUTPUT_CSV}")
+    print(f"\n Results saved to: {OUTPUT_CSV}")
     print(f"Total rows: {len(df_results)}")
 
 # =========================================================
