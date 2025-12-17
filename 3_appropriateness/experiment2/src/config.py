@@ -34,7 +34,7 @@ DECODER_SETTINGS = {
         # Parametri di training specifici per i modelli decoder
     },
     'inference_params': {
-        'max_new_tokens': 256,
+        'max_new_tokens': 32,
         'temperature': 0.7,
         'batch_size': 32,
         'dtype': torch.float16

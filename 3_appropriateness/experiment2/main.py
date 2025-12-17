@@ -14,7 +14,7 @@ def main():
             'name': dataset_name,
             'train': train_set,
             'val': val_set,
-            'test': test_set
+            'test': train_set + val_set + test_set
         }
 
         for decoder_model in DECODER_SETTINGS['models']:
