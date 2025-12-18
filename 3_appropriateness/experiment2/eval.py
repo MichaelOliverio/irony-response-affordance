@@ -163,18 +163,34 @@ def main():
                     raise ValueError(f"Strategy not found in file path: {file_path}")
                 semi_col = STRATEGY_TO_TARGET[strategy]
 
-                # Escludiamo gli esempi senza voti per la strategia corrente
-                unique_ids_to_exclude = set()
+                # Caricamento del dataset originale
                 dataset_path = DATASETS[dataset_name]['path']
-                
-                # Caricamento del dataset per ottenere gli ID unici da escludere
                 with open(dataset_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 
                 dataset = data["entries"]
 
+                # Creiamo un dizionario per le label dal dataset originale
+                labels_dict = {}
+                unique_ids_to_exclude = set()
+
                 for entry in dataset:
+                    unique_id = entry.get("unique_id")
                     annotations = entry.get("annotations", {})
+                    
+                    label_key = None
+                    if dataset_name == 'CSC':
+                        label_key = "aggregate_sarcasm_label"
+                    else:
+                        label_key = "aggregate_irony_label"
+
+                    # Salviamo la label aggregata
+                    labels_dict[unique_id] = {
+                        "label": annotations.get(label_key),
+                        semi_col: annotations.get(semi_col)
+                    }
+
+                    # Escludiamo gli esempi senza voti per la strategia corrente
                     exclude_entry = False
 
                     if (not dataset_name == 'CSC') and (semi_col in ['aggregation_on_colleague', 'aggregation_on_best_friend']):
@@ -182,16 +198,22 @@ def main():
 
                     vote_key = f"{semi_col}_n"
                     if vote_key not in annotations:
-                        #print(f"Excluding entry with unique_id {entry.get('unique_id')} due to missing vote_key: {vote_key}")
                         exclude_entry = True
 
                     if exclude_entry:
-                        unique_ids_to_exclude.add(entry.get("unique_id"))
+                        unique_ids_to_exclude.add(unique_id)
 
                 
                 print(f"{semi_col}: Excluding {len(unique_ids_to_exclude)} unique IDs for dataset {dataset_name}.")
 
+                # Carichiamo il file con le predizioni del modello
                 df = pd.read_csv(file_path)
+                
+                # Aggiungiamo le label dal dataset originale
+                df["label"] = df["unique_id"].map(lambda uid: labels_dict.get(uid, {}).get("label"))
+                df[semi_col] = df["unique_id"].map(lambda uid: labels_dict.get(uid, {}).get(semi_col))
+                
+                # Escludiamo gli esempi senza voti
                 df = df[~df["unique_id"].isin(unique_ids_to_exclude)].copy()
                 
                 # Verifica se il DataFrame è vuoto dopo l'esclusione
