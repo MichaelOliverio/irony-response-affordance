@@ -12,8 +12,6 @@ def main():
 
         dataset = {
             'name': dataset_name,
-            'train': train_set,
-            'val': val_set,
             'test': train_set + val_set + test_set
         }
 
@@ -21,31 +19,34 @@ def main():
             print(f"\nUsing decoder model: {decoder_model}")
             decoder = DecoderHandler(model_name=decoder_model, dataset=dataset)
 
-            # zero-shot w conversation
             print("\nMale: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='gender_male')
+            decoder.zero_shot(input_type='conversation', prompt_strategy='no_perspective')
 
-            print("\nFemale: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='gender_female')
+            # zero-shot w conversation
+            #print("\nMale: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='gender_male')
 
-            print("\nBoomer: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='generation_boomer')
+            #print("\nFemale: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='gender_female')
 
-            print("\nGen Z: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_z')
+            #print("\nBoomer: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='generation_boomer')
 
-            print("\nGen X: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_x')
+            #print("\nGen Z: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_z')
 
-            print("\nGen Y: Using conversation field as input...")
-            decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_y')
+            #print("\nGen X: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_x')
 
-            if dataset_name == 'CSC':
-                print("\nFriends: Using conversation field as input...")
-                decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_friends')
+            #print("\nGen Y: Using conversation field as input...")
+            #decoder.zero_shot(input_type='conversation', prompt_strategy='generation_gen_y')
 
-                print("\nColleauges: Using conversation field as input...")
-                decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_colleagues')
+            #if dataset_name == 'CSC':
+                #print("\nFriends: Using conversation field as input...")
+                #decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_friends')
+
+                #print("\nColleauges: Using conversation field as input...")
+                #decoder.zero_shot(input_type='conversation', prompt_strategy='relationship_colleagues')
 
 if __name__ == "__main__":
     main()

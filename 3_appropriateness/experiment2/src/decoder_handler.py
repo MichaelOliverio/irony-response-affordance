@@ -14,6 +14,7 @@ from src.config import DECODER_SETTINGS
 
 class DecoderHandler:
     PROMPT_STRATEGIES = [
+        'no_perspective',
         'gender_male',
         'gender_female',
         'generation_boomer',
@@ -153,7 +154,23 @@ class DecoderHandler:
         if not prompt_strategy in self.PROMPT_STRATEGIES:
             raise ValueError(f"Not supported prompt strategy: {prompt_strategy}")
         
-        if prompt_strategy == 'gender_male':
+        if prompt_strategy == 'no_perspective':
+            prompt = f"""<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
+The context affects users in what and how they chose to communicate. 
+It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
+The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONVERSATION>{input}</CONVERSATION>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>"""
+
+        elif prompt_strategy == 'gender_male':
             prompt = f"""<TASK_OVERVIEW>
 You are male. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
