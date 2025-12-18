@@ -479,12 +479,15 @@ def statistical_tests(dataset_name):
         
         # Calcola sempre il ranking dei settings (media più alta)
         setting_means = df_combined.groupby('setting')[dim_col].mean().sort_values(ascending=False)
+        setting_stds = df_combined.groupby('setting')[dim_col].std()
         print(f"\n     Ranking dei settings (dal migliore):")
         for i, (setting, mean_score) in enumerate(setting_means.items(), 1):
-            print(f"   {i}. {setting}: {mean_score:.4f}")
+            std_score = setting_stds[setting]
+            print(f"   {i}. {setting}: {mean_score:.2f} (±{std_score:.2f})")
         
         # Converti setting_means in dict con valori float
         result['setting_means'] = {str(k): float(v) for k, v in setting_means.items()}
+        result['setting_stds'] = {str(k): float(v) for k, v in setting_stds.items()}
         result['best_setting'] = str(setting_means.index[0])
         
         # Se significativo, esegui Tukey HSD
@@ -537,8 +540,8 @@ def main():
         print(f"\n" + "="*70)
         print(f"     ANALISI DELLE VALUTAZIONI PER IL DATASET: {dataset_name.upper()}")
         print("="*70)
-        #statistical_tests(dataset_name)
-        correlation(dataset_name)
+        statistical_tests(dataset_name)
+        #correlation(dataset_name)
 
 
 if __name__ == "__main__":
