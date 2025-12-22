@@ -74,3 +74,5 @@ my_notes/*
 3_appropriateness/experiment2/src/__pycache__/*
 3_appropriateness/experiment2/output/decoders/on_test_set/*
 3_appropriateness/experiment2/start.sh
+3_appropriateness/decoder
+3_appropriateness/encoder
