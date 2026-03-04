@@ -1,0 +1,126 @@
+{
+  "total_datasets": 2,
+  "datasets_names": [
+    "CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2",
+    "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2"
+  ],
+  "totals": {
+    "total_dialogues": 4328,
+    "total_records": 4328,
+    "total_tokens": 523160
+  },
+  "dialogue_structure": {
+    "total_dialogues": 4328,
+    "turns_per_dialogue": {
+      "mean": 3,
+      "median": 3.0
+    },
+    "utterances_per_dialogue": {
+      "mean": 6,
+      "median": 6.0
+    },
+    "tokens_per_dialogue": {
+      "mean": 120.87800369685768,
+      "median": 116.38594704684317,
+      "total": 523160
+    }
+  },
+  "annotations": {
+    "total_records": 4328,
+    "records_with_speaker_annotation": 2946,
+    "percentage_with_speaker": 68.06839186691313,
+    "observers_per_record": {
+      "mean": 4.552449168207024,
+      "median": 4.464358452138493
+    }
+  },
+  "unified_distribution": {
+    "aggregate": {
+      "figurative": 1386,
+      "non_figurative": 2942,
+      "percentage": {
+        "figurative": 32.024029574861366,
+        "non_figurative": 67.97597042513863
+      },
+      "total": 4328
+    },
+    "speaker": {
+      "figurative": 1011,
+      "non_figurative": 1935,
+      "percentage": {
+        "figurative": 34.317718940936864,
+        "non_figurative": 65.68228105906314
+      },
+      "total": 2946
+    },
+    "observer": {
+      "figurative": 6773,
+      "non_figurative": 12930,
+      "percentage": {
+        "figurative": 34.375475815865606,
+        "non_figurative": 65.62452418413439
+      },
+      "total": 19703
+    }
+  },
+  "separate_distributions": {
+    "sarcasm": {
+      "aggregate": {
+        "sarcasm": 973,
+        "non_sarcasm": 1973,
+        "percentage": {
+          "sarcasm": 33.02783435166327,
+          "non_sarcasm": 66.97216564833673
+        },
+        "total": 2946
+      },
+      "speaker": {
+        "sarcasm": 1011,
+        "non_sarcasm": 1935,
+        "percentage": {
+          "sarcasm": 34.317718940936864,
+          "non_sarcasm": 65.68228105906314
+        },
+        "total": 2946
+      },
+      "observer": {
+        "sarcasm": 4722,
+        "non_sarcasm": 8430,
+        "percentage": {
+          "sarcasm": 35.903284671532845,
+          "non_sarcasm": 64.09671532846716
+        },
+        "total": 13152
+      }
+    },
+    "irony": {
+      "aggregate": {
+        "irony": 413,
+        "non_irony": 969,
+        "percentage": {
+          "irony": 29.88422575976845,
+          "non_irony": 70.11577424023154
+        },
+        "total": 1382
+      },
+      "speaker": {
+        "irony": 0,
+        "non_irony": 0,
+        "percentage": {
+          "irony": 0,
+          "non_irony": 0
+        },
+        "total": 0
+      },
+      "observer": {
+        "irony": 2051,
+        "non_irony": 4500,
+        "percentage": {
+          "irony": 31.3081972217982,
+          "non_irony": 68.6918027782018
+        },
+        "total": 6551
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "dataset_name": "CSC",
+    "judge_model": "google/gemma-2-9b-it",
+    "total_entries": 6620,
+    "filtered_entries_count": 2946,
+    "removed_entries_count": 3674,
+    "threshold": 0.5,
+    "weights": {
+      "Coherence": 0.3,
+      "Engagingness": 0.1,
+      "Groundedness": 0.3,
+      "Naturalness": 0.3
+    },
+    "average_score_all": 0.4918917421953676,
+    "average_score_filtered": 0.7202387417967866,
+    "dimension_averages": {
+      "Coherence": 0.431602172437203,
+      "Engagingness": 0.7326318171532021,
+      "Groundedness": 0.8421588594704684,
+      "Naturalness": 0.8828241683638833
+    }
+  },
+  "dialogue_structure": {
+    "total_dialogues": 2946,
+    "turns": {
+      "mean": 0,
+      "median": 0.0,
+      "min": 0,
+      "max": 0,
+      "stdev": 0.0
+    },
+    "utterances_per_dialogue": {
+      "mean": 0,
+      "median": 0.0,
+      "min": 0,
+      "max": 0,
+      "stdev": 0.0
+    }
+  },
+  "labels": {
+    "total_utterances_with_labels": 0,
+    "label_distribution": {
+      "appropriate": 0,
+      "inappropriate": 0
+    },
+    "label_percentages": {
+      "appropriate": 0,
+      "inappropriate": 0
+    }
+  },
+  "quality_scores": {},
+  "invalid_inferences": {
+    "total_invalid_inferences": 841,
+    "dialogues_with_invalid": 636,
+    "percentage_with_invalid": 21.58859470468432,
+    "invalid_per_dialogue": {
+      "mean": 0.28547182620502376,
+      "median": 0.0,
+      "max": 3
+    }
+  },
+  "original_distribution": {
+    "distribution": {
+      "Unknown": 2946
+    },
+    "percentages": {
+      "Unknown": 100.0
+    }
+  }
+}
