@@ -15,11 +15,11 @@ DATASET_SPLIT_RATIOS = {
 }
 
 DATASETS = {
-    #'MultiPICo': {
-    #    'path': f"{DATASET_DIR}/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
-    #},
+    'MultiPICo': {
+        'path': f"{DATASET_DIR}/MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+    },
     'CSC': {
-        'path': f"{DATASET_DIR}/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
+        'path': f"{DATASET_DIR}/CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
     },
 }
 

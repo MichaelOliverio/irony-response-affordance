@@ -79,3 +79,4 @@ my_notes/*
 notes/
 readme_old.md
 2_data_augmentation/high_similarity_dialogues.txt
+3_experiments/experiment1/output/old_outputs_without_redundancy_filtering/*
