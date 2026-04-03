@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "dataset_name": "CSC",
+    "judge_model": "google/gemma-2-9b-it",
+    "total_entries": 6620,
+    "filtered_entries_count": 2946,
+    "removed_entries_count": 3674,
+    "threshold": 0.5,
+    "weights": {
+      "Coherence": 0.3,
+      "Engagingness": 0.1,
+      "Groundedness": 0.3,
+      "Naturalness": 0.3
+    },
+    "average_score_all": 0.4918917421953676,
+    "average_score_filtered": 0.7202387417967866,
+    "dimension_averages": {
+      "Coherence": 0.431602172437203,
+      "Engagingness": 0.7326318171532021,
+      "Groundedness": 0.8421588594704684,
+      "Naturalness": 0.8828241683638833
+    }
+  },
+  "dialogue_structure": {
+    "total_dialogues": 2905,
+    "turns": {
+      "mean": 3,
+      "median": 3,
+      "min": 3,
+      "max": 3,
+      "stdev": 0.0
+    },
+    "utterances_per_dialogue": {
+      "mean": 6,
+      "median": 6,
+      "min": 6,
+      "max": 6,
+      "stdev": 0.0
+    },
+    "tokens_per_dialogue": {
+      "mean": 116.37728055077453,
+      "median": 111,
+      "min": 19,
+      "max": 319,
+      "stdev": 43.15097183959155,
+      "total": 338076
+    }
+  },
+  "annotations": {
+    "total_records": 2905,
+    "records_with_speaker_annotation": 2905,
+    "percentage_with_speaker": 100.0,
+    "observers_per_record": {
+      "mean": 4.4633390705679865,
+      "median": 4,
+      "min": 4,
+      "max": 7,
+      "stdev": 0.8051028738006271
+    },
+    "label_type": "sarcasm",
+    "aggregate_distribution": {
+      "sarcasm": 955,
+      "non_sarcasm": 1950,
+      "percentage": {
+        "sarcasm": 32.87435456110155,
+        "non_sarcasm": 67.12564543889845
+      }
+    },
+    "speaker_distribution": {
+      "sarcasm": 995,
+      "non_sarcasm": 1910,
+      "total_annotations": 2905,
+      "percentage": {
+        "sarcasm": 34.251290877796905,
+        "non_sarcasm": 65.7487091222031
+      }
+    },
+    "speaker_scores": {
+      "mean": 0.3261962134251291,
+      "median": 0.2,
+      "min": 0.0,
+      "max": 1.0,
+      "stdev": 0.35424252217560975
+    },
+    "observer_distribution": {
+      "sarcasm": 4637,
+      "non_sarcasm": 8329,
+      "total_annotations": 12966,
+      "percentage": {
+        "sarcasm": 35.76276415239858,
+        "non_sarcasm": 64.23723584760141
+      }
+    },
+    "observer_scores": {
+      "mean": 0.34872744099953723,
+      "median": 0.2,
+      "min": 0.0,
+      "max": 1.0,
+      "stdev": 0.3367403467769118
+    },
+    "average_scores_overall": {
+      "mean": 0.34720022948922546,
+      "median": 0.32,
+      "min": 0.0,
+      "max": 0.96,
+      "stdev": 0.23578101232578624
+    }
+  }
+}

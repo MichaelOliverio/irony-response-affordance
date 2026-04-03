@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "dataset_name": "MultiPICo",
+    "judge_model": "google/gemma-2-9b-it",
+    "total_entries": 2662,
+    "filtered_entries_count": 1382,
+    "removed_entries_count": 1280,
+    "threshold": 0.5,
+    "weights": {
+      "Coherence": 0.3,
+      "Engagingness": 0.1,
+      "Groundedness": 0.3,
+      "Naturalness": 0.3
+    },
+    "average_score_all": 0.5041341096919609,
+    "average_score_filtered": 0.6844995176073324,
+    "dimension_averages": {
+      "Coherence": 0.28455137481910275,
+      "Engagingness": 0.8034249879401832,
+      "Groundedness": 0.7623010130246021,
+      "Naturalness": 0.9670043415340087
+    }
+  },
+  "dialogue_structure": {
+    "total_dialogues": 1377,
+    "turns": {
+      "mean": 3,
+      "median": 3,
+      "min": 3,
+      "max": 3,
+      "stdev": 0.0
+    },
+    "utterances_per_dialogue": {
+      "mean": 6,
+      "median": 6,
+      "min": 6,
+      "max": 6,
+      "stdev": 0.0
+    },
+    "tokens_per_dialogue": {
+      "mean": 130.0479302832244,
+      "median": 113,
+      "min": 30,
+      "max": 1086,
+      "stdev": 71.49372246694938,
+      "total": 179076
+    }
+  },
+  "annotations": {
+    "total_records": 1377,
+    "records_with_speaker_annotation": 0,
+    "percentage_with_speaker": 0.0,
+    "observers_per_record": {
+      "mean": 4.738562091503268,
+      "median": 5,
+      "min": 2,
+      "max": 7,
+      "stdev": 0.8642959701050379
+    },
+    "label_type": "irony",
+    "aggregate_distribution": {
+      "irony": 412,
+      "non_irony": 965,
+      "percentage": {
+        "irony": 29.920116194626,
+        "non_irony": 70.079883805374
+      }
+    },
+    "observer_distribution": {
+      "irony": 2048,
+      "non_irony": 4477,
+      "total_annotations": 6525,
+      "percentage": {
+        "irony": 31.386973180076627,
+        "non_irony": 68.61302681992338
+      }
+    }
+  }
+}

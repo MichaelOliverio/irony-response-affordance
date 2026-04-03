@@ -611,8 +611,8 @@ def main():
     datasets_dir = Path(r"c:\Users\micha\OneDrive\Desktop\Università\Progetti\appropriateness-of-irony\3_experiments\datasets")
     
     datasets = [
-        "CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json",
-        "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_filtered.json"
+        "CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+        "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json"
     ]
     
     all_stats = []
@@ -631,7 +631,7 @@ def main():
         metadata = data.get('metadata', {})
         
         # Nome dataset per distinguere CSC da MultiPICo
-        dataset_name = dataset_file.replace('_filtered.json', '')
+        dataset_name = dataset_file.replace('_final.json', '')
         
         # Calcola statistiche
         print(f"📊 Calcolo statistiche...")

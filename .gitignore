@@ -78,3 +78,4 @@ my_notes/*
 3_experiments/encoder
 notes/
 readme_old.md
+2_data_augmentation/high_similarity_dialogues.txt

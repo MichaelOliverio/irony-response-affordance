@@ -5,12 +5,12 @@
     "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2"
   ],
   "totals": {
-    "total_dialogues": 4328,
-    "total_records": 4328,
-    "total_tokens": 523160
+    "total_dialogues": 4282,
+    "total_records": 4282,
+    "total_tokens": 517152
   },
   "dialogue_structure": {
-    "total_dialogues": 4328,
+    "total_dialogues": 4282,
     "turns_per_dialogue": {
       "mean": 3,
       "median": 3.0
@@ -20,88 +20,88 @@
       "median": 6.0
     },
     "tokens_per_dialogue": {
-      "mean": 120.87800369685768,
-      "median": 116.38594704684317,
-      "total": 523160
+      "mean": 120.77347034096216,
+      "median": 116.37728055077453,
+      "total": 517152
     }
   },
   "annotations": {
-    "total_records": 4328,
-    "records_with_speaker_annotation": 2946,
-    "percentage_with_speaker": 68.06839186691313,
+    "total_records": 4282,
+    "records_with_speaker_annotation": 2905,
+    "percentage_with_speaker": 67.84212984586642,
     "observers_per_record": {
-      "mean": 4.552449168207024,
-      "median": 4.464358452138493
+      "mean": 4.551844932274638,
+      "median": 4.4633390705679865
     }
   },
   "unified_distribution": {
     "aggregate": {
-      "figurative": 1386,
-      "non_figurative": 2942,
+      "figurative": 1367,
+      "non_figurative": 2915,
       "percentage": {
-        "figurative": 32.024029574861366,
-        "non_figurative": 67.97597042513863
+        "figurative": 31.924334423166744,
+        "non_figurative": 68.07566557683326
       },
-      "total": 4328
+      "total": 4282
     },
     "speaker": {
-      "figurative": 1011,
-      "non_figurative": 1935,
+      "figurative": 995,
+      "non_figurative": 1910,
       "percentage": {
-        "figurative": 34.317718940936864,
-        "non_figurative": 65.68228105906314
+        "figurative": 34.251290877796905,
+        "non_figurative": 65.7487091222031
       },
-      "total": 2946
+      "total": 2905
     },
     "observer": {
-      "figurative": 6773,
-      "non_figurative": 12930,
+      "figurative": 6685,
+      "non_figurative": 12806,
       "percentage": {
-        "figurative": 34.375475815865606,
-        "non_figurative": 65.62452418413439
+        "figurative": 34.29788107331589,
+        "non_figurative": 65.70211892668411
       },
-      "total": 19703
+      "total": 19491
     }
   },
   "separate_distributions": {
     "sarcasm": {
       "aggregate": {
-        "sarcasm": 973,
-        "non_sarcasm": 1973,
+        "sarcasm": 955,
+        "non_sarcasm": 1950,
         "percentage": {
-          "sarcasm": 33.02783435166327,
-          "non_sarcasm": 66.97216564833673
+          "sarcasm": 32.87435456110155,
+          "non_sarcasm": 67.12564543889845
         },
-        "total": 2946
+        "total": 2905
       },
       "speaker": {
-        "sarcasm": 1011,
-        "non_sarcasm": 1935,
+        "sarcasm": 995,
+        "non_sarcasm": 1910,
         "percentage": {
-          "sarcasm": 34.317718940936864,
-          "non_sarcasm": 65.68228105906314
+          "sarcasm": 34.251290877796905,
+          "non_sarcasm": 65.7487091222031
         },
-        "total": 2946
+        "total": 2905
       },
       "observer": {
-        "sarcasm": 4722,
-        "non_sarcasm": 8430,
+        "sarcasm": 4637,
+        "non_sarcasm": 8329,
         "percentage": {
-          "sarcasm": 35.903284671532845,
-          "non_sarcasm": 64.09671532846716
+          "sarcasm": 35.76276415239858,
+          "non_sarcasm": 64.23723584760141
         },
-        "total": 13152
+        "total": 12966
       }
     },
     "irony": {
       "aggregate": {
-        "irony": 413,
-        "non_irony": 969,
+        "irony": 412,
+        "non_irony": 965,
         "percentage": {
-          "irony": 29.88422575976845,
-          "non_irony": 70.11577424023154
+          "irony": 29.920116194626,
+          "non_irony": 70.079883805374
         },
-        "total": 1382
+        "total": 1377
       },
       "speaker": {
         "irony": 0,
@@ -113,13 +113,13 @@
         "total": 0
       },
       "observer": {
-        "irony": 2051,
-        "non_irony": 4500,
+        "irony": 2048,
+        "non_irony": 4477,
         "percentage": {
-          "irony": 31.3081972217982,
-          "non_irony": 68.6918027782018
+          "irony": 31.386973180076627,
+          "non_irony": 68.61302681992338
         },
-        "total": 6551
+        "total": 6525
       }
     }
   }
