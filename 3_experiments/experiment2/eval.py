@@ -2,7 +2,17 @@ import pandas as pd
 from evaluate import load
 from statsmodels.stats.contingency_tables import mcnemar
 from src.config import DATASETS
-import json 
+import json
+from pathlib import Path
+
+# Directory di questo file
+_HERE = Path(__file__).resolve().parent
+
+# File sorgente da cui leggere gli unique_id validi (entries filtrate dal LLM judge)
+VALID_IDS_FILES = {
+    'MultiPICo': _HERE.parent / "datasets" / "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+    'CSC': _HERE.parent / "datasets" / "CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+}
 
 STRATEGY_TO_TARGET = {
     "gender_male": "aggregation_on_male",
@@ -163,7 +173,13 @@ def main():
                     raise ValueError(f"Strategy not found in file path: {file_path}")
                 semi_col = STRATEGY_TO_TARGET[strategy]
 
-                # Caricamento del dataset originale
+                # Caricamento degli unique_id validi dai file _final.json
+                valid_ids_path = VALID_IDS_FILES[dataset_name]
+                with open(valid_ids_path, 'r', encoding='utf-8') as f:
+                    valid_ids_data = json.load(f)
+                dataset_unique_ids = {entry["unique_id"] for entry in valid_ids_data["entries"]}
+
+                # Caricamento del dataset originale (con annotazioni semi-aggregate)
                 dataset_path = DATASETS[dataset_name]['path']
                 with open(dataset_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -203,12 +219,19 @@ def main():
                     if exclude_entry:
                         unique_ids_to_exclude.add(unique_id)
 
-                
                 print(f"{semi_col}: Excluding {len(unique_ids_to_exclude)} unique IDs for dataset {dataset_name}.")
 
                 # Carichiamo il file con le predizioni del modello
                 df = pd.read_csv(file_path)
-                
+                n_before_dataset_filter = len(df)
+
+                # Filtriamo tenendo solo gli unique_id presenti nel dataset
+                df = df[df["unique_id"].isin(dataset_unique_ids)].copy()
+                n_discarded_not_in_dataset = n_before_dataset_filter - len(df)
+                print(f"  [{file_path}] Record nel CSV: {n_before_dataset_filter}, "
+                      f"scartati (non nel dataset): {n_discarded_not_in_dataset}, "
+                      f"rimasti: {len(df)}")
+
                 # Aggiungiamo le label dal dataset originale
                 df["label"] = df["unique_id"].map(lambda uid: labels_dict.get(uid, {}).get("label"))
                 df[semi_col] = df["unique_id"].map(lambda uid: labels_dict.get(uid, {}).get(semi_col))
@@ -241,6 +264,7 @@ def main():
                         "strategy": "aggregated",
                         "target_label": "label",
                         **res_label,
+                        "n_discarded_not_in_dataset": n_discarded_not_in_dataset,
                         "mcnemar_p_value": None,
                         "mcnemar_b": None,
                         "mcnemar_c": None,
@@ -279,6 +303,7 @@ def main():
                     "strategy": strategy,
                     "target_label": semi_col,
                     **res_semi,
+                    "n_discarded_not_in_dataset": n_discarded_not_in_dataset,
                     "mcnemar_p_value": None if mc is None else mc["mcnemar_p_value"],
                     "mcnemar_b": None if mc is None else mc["mcnemar_b"],
                     "mcnemar_c": None if mc is None else mc["mcnemar_c"],

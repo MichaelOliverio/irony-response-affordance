@@ -1,7 +1,17 @@
 import pandas as pd
 from evaluate import load
 from src.config import DATASETS
-import json 
+import json
+from pathlib import Path
+
+# Directory di questo file
+_HERE = Path(__file__).resolve().parent
+
+# File sorgente da cui leggere gli unique_id validi (entries filtrate dal LLM judge)
+VALID_IDS_FILES = {
+    'MultiPICo': _HERE.parent / "datasets" / "MultiPICo_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+    'CSC': _HERE.parent / "datasets" / "CSC_meta-llama_Llama-3.1-8B-Instruct_n_turn_2_final.json",
+}
 
 # Tutte le possibili ground truth labels disponibili nei dataset
 ALL_GROUND_TRUTHS = [
@@ -95,7 +105,12 @@ def main():
     for dataset_name, models in files.items():
         print(f"\nProcessing dataset: {dataset_name}")
         
-        # Caricamento del dataset originale
+        # Caricamento degli unique_id validi dai file _final.json
+        with open(VALID_IDS_FILES[dataset_name], 'r', encoding='utf-8') as f:
+            valid_ids_data = json.load(f)
+        dataset_unique_ids = {entry["unique_id"] for entry in valid_ids_data["entries"]}
+
+        # Caricamento del dataset originale (con annotazioni semi-aggregate)
         dataset_path = DATASETS[dataset_name]['path']
         with open(dataset_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -144,6 +159,12 @@ def main():
                 
                 # Carichiamo il file con le predizioni del modello
                 df = pd.read_csv(file_path)
+                n_before = len(df)
+
+                # Filtriamo tenendo solo gli unique_id presenti nel dataset _final.json
+                df = df[df["unique_id"].isin(dataset_unique_ids)].copy()
+                n_discarded = n_before - len(df)
+                print(f"      Record nel CSV: {n_before}, scartati (non nel dataset): {n_discarded}, rimasti: {len(df)}")
                 
                 # Aggiungiamo tutte le label disponibili dal dataset originale
                 for col_name in ["main_label"] + ALL_GROUND_TRUTHS:
