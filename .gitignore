@@ -80,3 +80,6 @@ notes/
 readme_old.md
 2_data_augmentation/high_similarity_dialogues.txt
 3_experiments/experiment1/output/old_outputs_without_redundancy_filtering/*
+3_experiments/experiment1/output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/last_u1_message/final_model/*
+3_experiments/experiment1/output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/last_u1_message_old/*
+3_experiments/experiment1/output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/last_u1_message/final_model/*
