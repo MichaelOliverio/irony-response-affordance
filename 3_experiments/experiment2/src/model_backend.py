@@ -1,6 +1,7 @@
 """Text-only inference backend for causal and multimodal instruction models."""
 
 from typing import List
+import time
 
 import torch
 
@@ -13,6 +14,7 @@ class TextGenerationBackend:
         GEMMA4_PREFIX,
     )
     MISTRAL3_PREFIX = "mistralai/Ministral-3"
+    MISTRAL_NO_REPEAT_NGRAM_SIZE = 8
 
     def __init__(self, model_name: str, dtype):
         self.model_name = model_name
@@ -85,10 +87,9 @@ class TextGenerationBackend:
         self, prompts: List[str], max_new_tokens: int, temperature: float
     ) -> List[str]:
         if self.model_name.startswith(self.MISTRAL3_PREFIX):
-            return [
-                self._generate_mistral_text(prompt, max_new_tokens, temperature)
-                for prompt in prompts
-            ]
+            return self._generate_mistral_texts(
+                prompts, max_new_tokens, temperature
+            )
 
         rendered_prompts = [self._render_prompt(prompt) for prompt in prompts]
         encoder = self.processor or self.tokenizer
@@ -121,27 +122,102 @@ class TextGenerationBackend:
             for output in outputs
         ]
 
-    def _generate_mistral_text(
-        self, prompt: str, max_new_tokens: int, temperature: float
-    ) -> str:
-        messages = [{"role": "user", "content": prompt}]
+    def _generate_mistral_texts(
+        self, prompts: List[str], max_new_tokens: int, temperature: float
+    ) -> List[str]:
+        conversations = [
+            [{"role": "user", "content": prompt}]
+            for prompt in prompts
+        ]
         inputs = self.tokenizer.apply_chat_template(
-            messages,
+            conversations,
             return_tensors="pt",
             return_dict=True,
             add_generation_prompt=True,
+            padding=True,
         )
         inputs = {
             key: value.to(self.model.device) if torch.is_tensor(value) else value
             for key, value in inputs.items()
         }
         input_width = inputs["input_ids"].shape[1]
+        attention_mask = inputs.get("attention_mask")
+        if attention_mask is None:
+            input_lengths = [input_width] * len(prompts)
+        else:
+            input_lengths = attention_mask.sum(dim=1).tolist()
+
+        generation_kwargs = self._generation_kwargs(
+            max_new_tokens, temperature
+        )
+        generation_kwargs["no_repeat_ngram_size"] = (
+            self.MISTRAL_NO_REPEAT_NGRAM_SIZE
+        )
+        generation_started = time.perf_counter()
         with torch.no_grad():
-            output = self.model.generate(
+            outputs = self.model.generate(
                 **inputs,
-                **self._generation_kwargs(max_new_tokens, temperature),
-            )[0]
-        return self.tokenizer.decode(output[input_width:]).strip()
+                **generation_kwargs,
+            )
+        elapsed_seconds = time.perf_counter() - generation_started
+        generated_ids = [output[input_width:] for output in outputs]
+        generated_lengths = [
+            self._generated_length(token_ids) for token_ids in generated_ids
+        ]
+        decoded_texts = [
+            self.tokenizer.decode(token_ids[:generated_length]).strip()
+            for token_ids, generated_length in zip(
+                generated_ids, generated_lengths
+            )
+        ]
+        generated_tokens = sum(generated_lengths)
+        tokens_per_second = (
+            generated_tokens / elapsed_seconds
+            if elapsed_seconds > 0
+            else float("inf")
+        )
+
+        print(
+            "\n" + "=" * 80
+            + "\nMISTRAL BATCH GENERATION DIAGNOSTICS"
+            + f"\nBatch size: {len(prompts)}"
+            + f"\nTotal generated tokens: {generated_tokens}"
+            + f"\nElapsed: {elapsed_seconds:.2f} s"
+            + f"\nBatch generation speed: {tokens_per_second:.2f} tokens/s"
+            + "\n" + "=" * 80,
+            flush=True,
+        )
+        for index, (input_length, generated_length, decoded_text) in enumerate(
+            zip(input_lengths, generated_lengths, decoded_texts), start=1
+        ):
+            print(
+                "\n" + "-" * 80
+                + f"\nMISTRAL OUTPUT {index}/{len(prompts)}"
+                + f"\nInput tokens: {int(input_length)}"
+                + f"\nGenerated tokens: {generated_length}/{max_new_tokens}"
+                + f"\nReached token limit: {generated_length >= max_new_tokens}"
+                + f"\nOUTPUT:\n{decoded_text}"
+                + "\n" + "-" * 80,
+                flush=True,
+            )
+        return decoded_texts
+
+    def _generated_length(self, generated_ids: torch.Tensor) -> int:
+        eos_token_id = getattr(self.tokenizer, "eos_token_id", None)
+        eos_token_ids = (
+            set(eos_token_id)
+            if isinstance(eos_token_id, (list, tuple, set))
+            else {eos_token_id}
+            if eos_token_id is not None
+            else set()
+        )
+        pad_token_id = getattr(self.tokenizer, "pad_token_id", None)
+        for index, token_id in enumerate(generated_ids.tolist()):
+            if token_id in eos_token_ids:
+                return index + 1
+            if pad_token_id is not None and token_id == pad_token_id:
+                return index
+        return int(generated_ids.numel())
 
     def _render_prompt(self, prompt: str) -> str:
         if self.processor is not None:

@@ -77,10 +77,26 @@ class DecoderHandler:
             for input, prompt, model_output, answer in results:
                 invalid_inferences = 0
                 invalid_model_outputs = [] 
-                while answer not in ['0', '1']:
+                max_invalid_retries = self.inference_params.get(
+                    'max_invalid_retries', 3
+                )
+                while (
+                    answer not in ['0', '1']
+                    and invalid_inferences < max_invalid_retries
+                ):
                     invalid_inferences += 1
                     invalid_model_outputs.append(model_output)
                     _, prompt, model_output, answer = self._generate_batch_output([input], prompt_strategy)[0]
+
+                if answer not in ['0', '1']:
+                    invalid_model_outputs.append(model_output)
+                    answer = None
+                    print(
+                        "\nWarning: no valid binary answer after "
+                        f"{invalid_inferences + 1} attempts; "
+                        "saving the inference as invalid.",
+                        flush=True,
+                    )
 
                 cleaned_results.append((prompt, model_output, answer, invalid_inferences, invalid_model_outputs))
 

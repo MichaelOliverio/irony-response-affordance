@@ -66,9 +66,10 @@ DECODER_SETTINGS = {
         }
     },
     'inference_params': {
-        'max_new_tokens': 256,
-        'temperature': 0.7,
+        'max_new_tokens': 512,
+        'temperature': 0,
         'batch_size': 32,
+        'max_invalid_retries': 3,
         'torch_dtype': torch.float16
     },
     'output_dir': OUTPUT_DIR / "decoders"

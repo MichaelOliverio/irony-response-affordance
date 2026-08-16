@@ -22,10 +22,10 @@ DATASET_LABELS = {
 
 MODEL_LABELS = {
     "Qwen_Qwen3.5-9B": "Qwen-3.5-9B",
-    #"mistralai_Ministral-3-8B-Instruct-2512": "Ministral-3-8B",
-    #"google_gemma-4-E4B-it": "Gemma-4-E4B",
-    #"FacebookAI_xlm-roberta-large": "XLM-RoBERTa-large",
-    #"EuroBERT_EuroBERT-210m": "EuroBERT-210M",
+    "mistralai_Ministral-3-8B-Instruct-2512": "Ministral-3-8B",
+    "google_gemma-4-E4B-it": "Gemma-4-E4B",
+    "FacebookAI_xlm-roberta-large": "XLM-RoBERTa-large",
+    "EuroBERT_EuroBERT-210m": "EuroBERT-210M",
     #"EuroBERT_EuroBERT-610m": "EuroBERT-610M",
 }
 
@@ -97,13 +97,25 @@ def compute_metrics(frame: pd.DataFrame, reference_column: str) -> dict:
     if missing_columns:
         raise ValueError(f"missing columns: {sorted(missing_columns)}")
 
-    evaluated = frame.dropna(subset=list(required_columns)).copy()
-    evaluated["model_answer"] = evaluated["model_answer"].astype(int)
-    evaluated[reference_column] = evaluated[reference_column].astype(int)
+    prediction_values = pd.to_numeric(
+        frame["model_answer"], errors="coerce"
+    )
+    reference_values = pd.to_numeric(
+        frame[reference_column], errors="coerce"
+    )
+    reference_mask = reference_values.isin([0, 1])
+    valid_prediction_mask = prediction_values.isin([0, 1])
+    evaluation_mask = reference_mask & valid_prediction_mask
+    evaluated = frame.loc[evaluation_mask].copy()
+    evaluated["model_answer"] = prediction_values.loc[evaluation_mask].astype(int)
+    evaluated[reference_column] = reference_values.loc[evaluation_mask].astype(int)
 
     if evaluated.empty:
         raise ValueError("no rows with both prediction and reference")
 
+    attempted_total = int(reference_mask.sum())
+    valid_total = len(evaluated)
+    invalid_predictions = attempted_total - valid_total
     predictions = evaluated["model_answer"]
     references = evaluated[reference_column]
     return {
@@ -120,7 +132,10 @@ def compute_metrics(frame: pd.DataFrame, reference_column: str) -> dict:
         "f1_macro": f1_score(
             references, predictions, average="macro", zero_division=0
         ),
-        "total": len(evaluated),
+        "total": valid_total,
+        "attempted_total": attempted_total,
+        "invalid_predictions": invalid_predictions,
+        "prediction_coverage": valid_total / attempted_total,
         "correct": int((predictions == references).sum()),
         "label_0": int((references == 0).sum()),
         "label_1": int((references == 1).sum()),

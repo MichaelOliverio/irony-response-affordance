@@ -35,15 +35,27 @@ BOOTSTRAP_SEED = 42
 
 # =========================================================
 def compute_metrics(df, target_col, accuracy_metric, precision_metric, recall_metric, f1_metric):
-    df_eval = df[df[target_col].notna()].copy()
+    prediction_values = pd.to_numeric(df["model_answer"], errors="coerce")
+    target_values = pd.to_numeric(df[target_col], errors="coerce")
+    target_mask = target_values.isin([0, 1])
+    valid_prediction_mask = prediction_values.isin([0, 1])
+    evaluation_mask = target_mask & valid_prediction_mask
+    df_eval = df.loc[evaluation_mask].copy()
     if len(df_eval) == 0:
         return None
-    
+
+    valid_predictions = (
+        prediction_values.loc[evaluation_mask].astype(int).to_numpy()
+    )
+    valid_targets = target_values.loc[evaluation_mask].astype(int).to_numpy()
+
     # Reset index per evitare problemi con indici non consecutivi
     df_eval = df_eval.reset_index(drop=True)
 
-    df_eval["model_answer"] = df_eval["model_answer"].astype(int)
-    df_eval[target_col] = df_eval[target_col].astype(int)
+    df_eval["model_answer"] = valid_predictions
+    df_eval[target_col] = valid_targets
+    n_attempted = int(target_mask.sum())
+    n_samples = len(df_eval)
 
     return {
         "accuracy": accuracy_metric.compute(
@@ -68,7 +80,10 @@ def compute_metrics(df, target_col, accuracy_metric, precision_metric, recall_me
             pos_label=1,
             average="binary"
         )["f1"],
-        "n_samples": len(df_eval),
+        "n_samples": n_samples,
+        "n_attempted": n_attempted,
+        "n_invalid_predictions": n_attempted - n_samples,
+        "prediction_coverage": n_samples / n_attempted,
     }
 
 def _positive_class_f1(references, predictions):
@@ -89,15 +104,21 @@ def paired_bootstrap_f1_test(
     random_seed=BOOTSTRAP_SEED,
 ):
     """Compare positive-class F1 against two references on paired items."""
-    df_eval = df.dropna(
-        subset=["model_answer", label_col, semi_col]
-    ).copy()
+    prediction_values = pd.to_numeric(df["model_answer"], errors="coerce")
+    aggregated_values = pd.to_numeric(df[label_col], errors="coerce")
+    perspective_values = pd.to_numeric(df[semi_col], errors="coerce")
+    evaluation_mask = (
+        prediction_values.isin([0, 1])
+        & aggregated_values.isin([0, 1])
+        & perspective_values.isin([0, 1])
+    )
+    df_eval = df.loc[evaluation_mask].copy()
     if len(df_eval) == 0:
         return None
 
-    predictions = df_eval["model_answer"].astype(int).to_numpy()
-    aggregated = df_eval[label_col].astype(int).to_numpy()
-    perspective = df_eval[semi_col].astype(int).to_numpy()
+    predictions = prediction_values.loc[evaluation_mask].astype(int).to_numpy()
+    aggregated = aggregated_values.loc[evaluation_mask].astype(int).to_numpy()
+    perspective = perspective_values.loc[evaluation_mask].astype(int).to_numpy()
     n_samples = len(df_eval)
 
     aggregated_f1 = _positive_class_f1(aggregated, predictions)
@@ -335,8 +356,6 @@ def main():
                 
                 # Reset index per evitare problemi
                 df = df.reset_index(drop=True)
-                df["model_answer"] = df["model_answer"].astype(int)
-
                 # -----------------------------
                 # 1) Aggregated label
                 # -----------------------------
