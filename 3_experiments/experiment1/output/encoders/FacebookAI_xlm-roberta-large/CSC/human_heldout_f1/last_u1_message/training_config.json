@@ -1,0 +1,29 @@
+{
+    "model_name": "FacebookAI/xlm-roberta-large",
+    "dataset_name": "CSC",
+    "split_protocol": "human_heldout_f1",
+    "split_ratios": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "split_sizes": {
+        "train": 1965,
+        "validation": 421,
+        "test": 422,
+        "human_test": 92
+    },
+    "input_type": "last_u1_message",
+    "num_train_epochs": 10,
+    "global_batch_size": 32,
+    "per_device_batch_size": 16,
+    "training_device_count": 2,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_length": 512,
+    "gamma": 5.0,
+    "alpha": 0.2,
+    "metric_for_best_model": "eval_f1",
+    "seed": 42
+}
