@@ -102,7 +102,7 @@ u2: I actively dislike how they look, never ☠️</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 7,12518252026964060539_12826115392138578393,reddit,,en,,He may have a point.  Does it feature child abuse?,"Well, no, but also, yes
 Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who's a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he's known for his very erotic art. Turns out ES is actually... his little [step] sister (who's like 12), who he hasn't seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety
 Its in the same universe as My Little Sister Can't Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.","{'turns': [{'u1': 'Has he talked about shows that make him uncomfortable?', 'u2': 'Yeah, a few actually. He thinks the worst one is Eromanga Sensei.'}, {'u1': ""Why's that?"", 'u2': ""Apparently it's super weird and kinda... disturbing, but also kinda cute?""}, {'u1': 'He may have a point. Does it feature child abuse?', 'u2': 'Well, no, but also, yes Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who\'s a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he\'s known for his very erotic art. Turns out ES is actually... his little [step] sister (who\'s like 12), who he hasn\'t seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety Its in the same universe as My Little Sister Can\'t Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -120,7 +120,7 @@ Its in the same universe as My Little Sister Can't Be This Cute (clearly the aut
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 8,12688524965118127904_17718319999726849196,reddit,,en,,Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.,"this is how randia used to be before it crossed 1lac mark.
 now its all news links.","{'turns': [{'u1': ""I've been browsing here for a few days now and I must say, this community is very active and engaged."", 'u2': 'what made you join?'}, {'u1': 'A friend recommended it and I was curious to see what it’s like. I’m glad I joined!', 'u2': 'your friend must be a regular here'}, {'u1': 'Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.', 'u2': 'this is how randia used to be before it crossed 1lac mark. now its all news links.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -136,7 +136,7 @@ now its all news links.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 9,12701030242307294590_13873363278082368642,reddit,,en,,"In Oz we call crisps, chips and chips, hot chips. Hard habit to break.",But crisps aren’t hot.,"{'turns': [{'u1': 'We\'re having a dinner party tonight and I was thinking we could serve some Aussie snacks. I think the term is ""chips"". Is that right?', 'u2': 'Huh? I\'m pretty sure we call them ""crisps"".'}, {'u1': 'Really? I\'m not sure. I\'ve never lived anywhere else besides Australia. What do you mean ""crisps""?', 'u2': 'It\'s a term from the UK. We also call them ""chips"" but in different contexts. It\'s confusing, I know.'}, {'u1': 'In Oz we call crisps, chips and chips, hot chips. Hard habit to break.', 'u2': 'But crisps aren’t hot.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -166,7 +166,7 @@ Genuine question (not being sarcastic): the listed symptoms for COVID are exactl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 11,12750553915393859827_625067732195999980,reddit,,en,,Um....please don’t go back to work tomorrow. You should be self isolating!,"It's OK, Lord Kilclooney has you covered:
 ""Better for everyone that you are locked up for 14 days""
 Apparently it's not a parody account, he's really that bad","{'turns': [{'u1': 'Hopefully you and your family are all doing okay. I was worried sick about you.', 'u2': ""We're all good, just a bit run down I think, but that's all. Thanks for checking in!""}, {'u1': ""I was just thinking about that news story about the outbreak in the city and I'm getting a bit anxious."", 'u2': ""Yeah, I saw that. I've been trying to avoid it, to be honest, but can't deny it's getting worse by the day.""}, {'u1': 'Um....please don’t go back to work tomorrow. You should be self isolating!', 'u2': 'It\'s OK, Lord Kilclooney has you covered: ""Better for everyone that you are locked up for 14 days"" Apparently it\'s not a parody account, he\'s really that bad'}]}",1,0,human_majority,"<TASK_OVERVIEW>
@@ -294,7 +294,7 @@ u2: Yeah I didn’t get their license plate, they weren’t driving slow. Its ok
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 19,14309441428012222287_10088140044597603282,twitter,,en,,What was the first movie you saw at the cinema?,Jungle Book,"{'turns': [{'u1': ""I'm super curious, have you ever seen a movie at the cinema?"", 'u2': ""Actually, yes! I saw 'The Lion King' at the cinema with my family when I was a kid.""}, {'u1': 'That sounds amazing! Did your family go there often for movies or was it a one-time thing?', 'u2': ""Oh, we went quite a few times! We'd always go to the cinema on Friday evenings and catch the latest Disney releases.""}, {'u1': 'What was the first movie you saw at the cinema?', 'u2': 'Jungle Book'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -350,7 +350,7 @@ u2: They should arrive in time for next Sunday’s roast!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 23,14502610576710298112_14095055713402977530,reddit,,en,,"The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases.  It's probably locked away guarded by heavily armed guards.  Imagine how much money the medical world would lose when an easily accessible cure is put on the market.","Cancer generally happens later in life.  You can charge FAR more for a cure than for a treatment.  Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.","{'turns': [{'u1': ""I've been reading this amazing stuff about researchers working on gene editing and I've been wondering, what if we could use this tech to just 'cure' cancer? Like, permanently."", 'u2': ""Ha, I highly doubt the 'powers that be' would ever let that happen. Think about all the industries that would tank if cancer just went away.""}, {'u1': ""If you're right and there are some shady interests behind the medical world, would they really keep it a secret for long? I mean, some scientists or medical professionals must be curious enough to start spreading the word."", 'u2': ""Maybe. But they'd be either blackmailed or silenced. I've seen some pretty wild stuff happen when it comes to powerful people getting in the way of big money.""}, {'u1': ""The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases. It's probably locked away guarded by heavily armed guards. Imagine how much money the medical world would lose when an easily accessible cure is put on the market."", 'u2': 'Cancer generally happens later in life. You can charge FAR more for a cure than for a treatment. Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -396,13 +396,7 @@ It is because you are rational.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","The dialogue presents a scenario where u1 expresses confusion about their lack of emotional reaction to the Queen's death, suspecting it stems from not being British despite living in the UK. u2's actual reply is simply ""No,"" directly refuting the suspicion. The provided context then adds an explanatory clause: ""It is because you are rational.""
-
-The question asks if an *ironic* response would have been a plausible and natural reply. Ironic responses typically involve saying the opposite of what is meant, often for humorous or sarcastic effect (e.g., ""Oh, absolutely! It's definitely because you're not British; that's the only thing that makes sense!"").
-
-In this specific exchange:
-1.  **Tone**: The conversation is serious and philosophical, dealing with grief and national identity. An ironic tone would feel jarring and insensitive given the subject matter (the death of a monarch and public mourning).
-2.  **Logic**: u1's premise is that they can't relate due to nationality. u2 needs to deny this. An ironic affirmation (""Yes, that's exactly why!"") would contradict the intended logical flow unless the goal was extreme sarcasm, which doesn't fit the brief, explanatory nature of the added text (""It",,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 26,15693502839761332055_2403791530965789426,twitter,,en,,"Introduce yourself by something you were called at parents evening:
 
 Hi, I'm a pleasure to teach.","Hi there, I’m Could Do So Much Better.","{'turns': [{'u1': ""I've been wondering about this conversation format. Have you used it before?"", 'u2': ""As for me, I've used different platforms to share my thoughts, but I'm curious about this one.""}, {'u1': ""Is it just a format or a platform? I've tried many and I find myself wondering about their effectiveness."", 'u2': ""Well, I think it's a bit of both, actually. It's a unique way of connecting people, but also a tool to get your point across.""}, {'u1': ""Introduce yourself by something you were called at parents evening: Hi, I'm a pleasure to teach."", 'u2': 'Hi there, I’m Could Do So Much Better.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
@@ -448,7 +442,7 @@ u2: how old are you??</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 29,15849458284151168089_12381184885274858640,twitter,,en,,Sore throat and fever full family ?,Please consult doctor ?,"{'turns': [{'u1': 'My kids have been sniffling all morning and I feel a bit under the weather myself', 'u2': 'Have they been around anyone sick recently?'}, {'u1': ""I think they were at school yesterday, so we'll need to keep an eye on them"", 'u2': 'Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids'}, {'u1': 'Sore throat and fever full family ?', 'u2': 'Please consult doctor ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -506,7 +500,7 @@ u2: Whoever did Cork's one is letting down the team too. I mean, come on, we're 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 33,16248931236252931801_18392104841748248643,twitter,,en,,What if the wheels on the bus didn't go round and round?,Up and down?,"{'turns': [{'u1': ""I love nursery rhymes! Let's play a game where we change the lyrics."", 'u2': ""That's so cool! I'm totally in!""}, {'u1': 'Okay, which one do you want to start with?', 'u2': 'Hmm, how about the wheels on the bus?'}, {'u1': ""What if the wheels on the bus didn't go round and round?"", 'u2': 'Up and down?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -638,7 +632,7 @@ u2: Good ?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 41,1733076514145292669_2994333683564165454,reddit,,en,,"I know everyone is saying don't give into the fearmongering by the media, but if you ask me it's pretty sensible to stay the fuck outta Dublin rn. The only two cases are there, and tho they've been ""contained"" there could be more, especially if they've only tested 392 people. It'll obviously get worse as the weeks go by, Paddy's day will be a melting pot for spreading it even further. It's not looking positive lads.
 Fucking hell it's only March, can 2020 just fuck off?",">  don't give into the fearmongering 
 >but if you ask me it's pretty sensible to stay the fuck outta Dublin rn
@@ -672,7 +666,7 @@ u2: The Catholic Church</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 43,17670073993875090163_1590051357433719814,twitter,,en,,Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.,"The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.","{'turns': [{'u1': 'People are still struggling with the cost of living and we need immediate action to help those who are really in need.', 'u2': ""True, it's about time the government actually did something to address the financial struggles of ordinary folk, instead of just talking about it.""}, {'u1': ""That's why we need to ensure we're not just looking at quick fixes, but also making long-term changes that benefit everyone."", 'u2': ""You can't just throw money at a problem and expect it to go away, that's not a solution. We need sustainable policies that actually work.""}, {'u1': 'Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.', 'u2': ""The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -702,7 +696,7 @@ PS: And you know what that means too, right? It means, go ahead, land on Europa.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 45,1783501927699301342_4626127304121327566,reddit,,en,,"Fill in the blanks and give it back, I think that's the game","My brother recommended posting a note saying:
 “I’ll park wherever I want you   _  _  _  _   _  _ _ “.","{'turns': [{'u1': 'I saw you parked near a fire hydrant last week! Where do you plan to park today?', 'u2': 'hahaha, oh, you want to play the parking inspector, eh?'}, {'u1': 'Seriously, you need to be more careful with parking. Some spots have time limits.', 'u2': ""Come on, don't be such a buzzkill! Parking isn't that serious""}, {'u1': ""Fill in the blanks and give it back, I think that's the game"", 'u2': 'My brother recommended posting a note saying: “I’ll park wherever I want you _ _ _ _ _ _ _ “.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -742,7 +736,7 @@ u2: Well, let's see how it all unfolds. I am not sure what the end game of AAP i
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 47,2161430649299695352_11198768799297110650,twitter,,en,,Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation.,Agreed. Houghton’s goal is just absolute perfection.,"{'turns': [{'u1': 'Can’t believe Pagliuca fell for that. How many years of work down the drain.', 'u2': 'Still waiting for someone to get us a goal. We’re so unlucky sometimes.'}, {'u1': 'Pagliuca doesn’t even know what hit him. Poor guy.', 'u2': 'And now Houghton is gonna score. My money’s on it.'}, {'u1': ""Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation."", 'u2': 'Agreed. Houghton’s goal is just absolute perfection.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -820,7 +814,7 @@ u2: Educate citizens instead of educating prime minister.  PARCIPATE &amp; bring
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 52,3030112931675079846_14390144366231528313,twitter,,en,,"If you could pick your FAVOURITE thing from ANY #SQLBits event, what would you choose?
 
 ????☕️?","That time, when a huge curtain reveal the whole fun fair at SQL Bits Party Telford","{'turns': [{'u1': 'Seen the latest line-up and I am EXCITED! Which SQL Bits event did you attend?', 'u2': 'Telford, last year! We had an awesome time The party was AMAZING'}, {'u1': 'Are you coming back this year? Any favorite memories to share?', 'u2': ""Actually, I'll be back again this year, and I'm really looking forward to it""}, {'u1': 'If you could pick your FAVOURITE thing from ANY #SQLBits event, what would you choose? ????☕️?', 'u2': 'That time, when a huge curtain reveal the whole fun fair at SQL Bits Party Telford'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -866,7 +860,7 @@ u2: Weren’t we apart of that then quit?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 55,3817741872495313694_5377329579232896270,reddit,,en,,"The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I  feel like it should’ve been Sun night if it wasn’t.","> The Clothes Show. Was that I’m after Antiques roadshow?
 IIRC it was on Sundays, but at like 3 or 4 pm?
 EDIT: Close. It was 5pm in 1993!","{'turns': [{'u1': 'have been binge-watching TV shows all day and I am getting totally confused.', 'u2': ""haha, yeah! I've been in the same boat this week! Which ones have you been watching?""}, {'u1': 'Ugh, I have no idea. I just started recording them and then lost track of which was which.', 'u2': 'That sounds super frustrating! I think I saw The Clothes Show mentioned somewhere, though.'}, {'u1': 'The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I feel like it should’ve been Sun night if it wasn’t.', 'u2': '> The Clothes Show. Was that I’m after Antiques roadshow? IIRC it was on Sundays, but at like 3 or 4 pm? EDIT: Close. It was 5pm in 1993!'}]}",1,0,human_majority,"<TASK_OVERVIEW>
@@ -884,7 +878,7 @@ EDIT: Close. It was 5pm in 1993!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 56,4061000399414624419_15458374129894293077,twitter,,en,,OMG ?????,Hahahaha my reaction everytime!,"{'turns': [{'u1': 'I feel so anxious waiting for the results of the video contest.', 'u2': 'I totally get it! It’s always a nerve-wracking experience.'}, {'u1': 'What if we do poorly? What if it’s not good enough?', 'u2': 'Let’s focus on what we can control and just have fun with it!'}, {'u1': 'OMG ?????', 'u2': 'Hahahaha my reaction everytime!'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1286,7 +1280,7 @@ u2: Baltimore too. Come on over and be gay with us.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 81,9275944914165848525_8762134853798054558,reddit,,en,,Are they cops? Why are they wearing bibs?,That's a police vest.,"{'turns': [{'u1': '""I\'m getting anxious... they keep coming closer', 'u2': '""I\'m pretty sure they\'re just volunteers, maybe from a charity event'}, {'u1': '""Wait, what are those people doing with those big signs?', 'u2': '""I think they\'re giving out samples or something'}, {'u1': 'Are they cops? Why are they wearing bibs?', 'u2': ""That's a police vest.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1330,7 +1324,7 @@ u2: No, that was the last administration.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 84,9746058821801455922_3483330736093049977,twitter,,en,,I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.,Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well,"{'turns': [{'u1': '""I just feel like everyone\'s always talking behind my back. What\'s up with that?""', 'u2': ""What's the tea, boo?""}, {'u1': ""You know, I'm one of those people who sees everything. Even if it's not in your face, I still see it. So, I'm gonna be all over that. Foh."", 'u2': 'You can try, but I got receipts'}, {'u1': 'I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.', 'u2': ""Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.

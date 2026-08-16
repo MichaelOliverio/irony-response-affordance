@@ -68,7 +68,7 @@ u1: Nah its OK you were just being neighbourly
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 4,11202598233208778581_2692220885467589558,reddit,,en,,"Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!","The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee.
 So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.","{'turns': [{'u1': ""What's all the fuss about? Did something new happen in the world of credit scores? Can't seem to get through the day without seeing some app popping up everywhere I go."", 'u2': ""Well, I think it's because there was a big change in the law regarding how credit scores are managed.""}, {'u1': 'Is it something big, then? Like, are banks going to start handing out free loans or something?', 'u2': ""No, it's actually more to do with the way credit reference agencies share information and get paid for it.""}, {'u1': ""Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!"", 'u2': 'The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee. So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -86,7 +86,7 @@ u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 5,11234414428990216662_12950867292170150292,reddit,,en,,"I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.",Bunnings snags are bulk-bought tubes of garbage.,"{'turns': [{'u1': ""I had a weird thought the other day. What if we could find a veggie sausage that's just as good as the Bunnings ones? Crazy, right?"", 'u2': ""What's wrong with Bunnings snags? They're great as is.""}, {'u1': ""I dunno, I just think maybe there's something better out there. Like a hidden gem that only us foodies know about."", 'u2': 'Doubt it. The only thing better than a Bunnings snag is two Bunnings snags.'}, {'u1': 'I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.', 'u2': 'Bunnings snags are bulk-bought tubes of garbage.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -283,7 +283,7 @@ u1: The powers that be really think we are thick as fuck.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 16,1353950569709460086_9486149106222216465,reddit,,en,,"I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.","why didn't they do this for Delhi elections ?
 Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?","{'turns': [{'u1': ""What's going on with this rape case? I feel like we've been hearing about it for months now."", 'u2': ""I know, right? It feels like a new development every week. And it's not like it's even a surprise or anything.""}, {'u1': 'Do you think the government is trying to distract us from something else?', 'u2': ""I'm not sure. But it does seem like a convenient distraction. And the timing is suspicious too.""}, {'u1': 'I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.', 'u2': ""why didn't they do this for Delhi elections ? Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -319,7 +319,7 @@ u1: Imagine sticking a tooth pick underneath your big toenail and then kicking a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 18,14059201167656705884_3962746297682231118,reddit,,en,,I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work.,"Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.","{'turns': [{'u1': 'I saw the whole thing from my office window, but I was too far to get the plate number. Did you get a glimpse?', 'u2': 'Yeah I saw it too! They were speeding like crazy, but they were way too far from me to get the plate. I was so stressed out for the person they were speeding at!'}, {'u1': ""That must have been really frightening for the driver they were passing! I'm glad you're okay, but I'm curious, did you notice if they had any passengers?"", 'u2': ""Actually, I think they were alone. I didn't see anyone else in the car. But what really got me is how reckless they were driving. They didn't even slow down for the stop sign!""}, {'u1': ""I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work."", 'u2': 'Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -387,7 +387,7 @@ u1: Have to laugh at the Collingwood fans on here who have been talking down Oll
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 22,143958186233054832_5689298038344689706,reddit,,en,,Chuck them over here for a taste test,They should arrive in time for next Sunday’s roast!,"{'turns': [{'u1': ""I heard that the local butcher has started offering special cuts, and I'm really curious to try them."", 'u2': ""I think you're thinking of last week's rumors, I don't recall seeing any announcements about new cuts.""}, {'u1': ""But I did get an invitation to the butcher's house this weekend, and I heard he'd be sharing some new recipes."", 'u2': ""Hmm, sounds interesting, maybe I'll pop by too and see what's cooking.""}, {'u1': 'Chuck them over here for a taste test', 'u2': 'They should arrive in time for next Sunday’s roast!'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -493,7 +493,7 @@ u1: I would say Barq's.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 28,15790688063554478847_4093094666083403910,reddit,,en,,"The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?",how old are you??,"{'turns': [{'u1': 'So I was thinking about all the big news stories from history, and I stumbled upon this awesome list that I just had to share.', 'u2': 'Are you on about some new social media meme?'}, {'u1': ""Not at all, it's a list of the most pivotal events that shaped the world, from the gold rush to the discovery of the XRay."", 'u2': 'I think you might be getting your history mixed up'}, {'u1': 'The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?', 'u2': 'how old are you??'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -579,7 +579,7 @@ u1: Did no-one tell the Laois folk there was supposed to be more than just the n
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 33,16248931236252931801_18392104841748248643,twitter,,en,,What if the wheels on the bus didn't go round and round?,Up and down?,"{'turns': [{'u1': ""I love nursery rhymes! Let's play a game where we change the lyrics."", 'u2': ""That's so cool! I'm totally in!""}, {'u1': 'Okay, which one do you want to start with?', 'u2': 'Hmm, how about the wheels on the bus?'}, {'u1': ""What if the wheels on the bus didn't go round and round?"", 'u2': 'Up and down?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -596,7 +596,7 @@ u1: What if the wheels on the bus didn't go round and round?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 34,16650543109753935334_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
 They voted clearly in support of devolution and that vote has been respected with it's implementation.
 Time for another vote to see if they still want devolution.
@@ -762,7 +762,7 @@ u1: What is one company you'll never do business with because of their horrible 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 43,17670073993875090163_1590051357433719814,twitter,,en,,Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.,"The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.","{'turns': [{'u1': 'People are still struggling with the cost of living and we need immediate action to help those who are really in need.', 'u2': ""True, it's about time the government actually did something to address the financial struggles of ordinary folk, instead of just talking about it.""}, {'u1': ""That's why we need to ensure we're not just looking at quick fixes, but also making long-term changes that benefit everyone."", 'u2': ""You can't just throw money at a problem and expect it to go away, that's not a solution. We need sustainable policies that actually work.""}, {'u1': 'Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.', 'u2': ""The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -797,7 +797,7 @@ u1: Jupiter gonna be wondering where the fuck all these random Irish parcels are
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 45,1783501927699301342_4626127304121327566,reddit,,en,,"Fill in the blanks and give it back, I think that's the game","My brother recommended posting a note saying:
 “I’ll park wherever I want you   _  _  _  _   _  _ _ “.","{'turns': [{'u1': 'I saw you parked near a fire hydrant last week! Where do you plan to park today?', 'u2': 'hahaha, oh, you want to play the parking inspector, eh?'}, {'u1': 'Seriously, you need to be more careful with parking. Some spots have time limits.', 'u2': ""Come on, don't be such a buzzkill! Parking isn't that serious""}, {'u1': ""Fill in the blanks and give it back, I think that's the game"", 'u2': 'My brother recommended posting a note saying: “I’ll park wherever I want you _ _ _ _ _ _ _ “.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -888,7 +888,7 @@ u1: Why do men stare at women? Women do the same thing in blink of an eye, where
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 50,2507886556808965649_6352252321123096723,reddit,,en,,Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.,That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.,"{'turns': [{'u1': 'We need to acknowledge the progress made by some countries in resolving conflicts without causing chaos. Pakistan, for instance, has played a significant role in negotiating a peace deal in Afghanistan.', 'u2': ""I don't think we should generalize the progress of other countries to justify our own failures. We have our own set of challenges that we need to address first.""}, {'u1': 'The point is that, unlike India, Pakistan has shown its ability to put aside differences and work towards a common goal. We could learn from that.', 'u2': ""That's not the point. The point is that Pakistan's past actions have been far from exemplary. They've supported groups that have caused immense harm to others.""}, {'u1': 'Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.', 'u2': ""That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -979,7 +979,7 @@ u1: Sign the Paris Agreement
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 55,3817741872495313694_5377329579232896270,reddit,,en,,"The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I  feel like it should’ve been Sun night if it wasn’t.","> The Clothes Show. Was that I’m after Antiques roadshow?
 IIRC it was on Sundays, but at like 3 or 4 pm?
 EDIT: Close. It was 5pm in 1993!","{'turns': [{'u1': 'have been binge-watching TV shows all day and I am getting totally confused.', 'u2': ""haha, yeah! I've been in the same boat this week! Which ones have you been watching?""}, {'u1': 'Ugh, I have no idea. I just started recording them and then lost track of which was which.', 'u2': 'That sounds super frustrating! I think I saw The Clothes Show mentioned somewhere, though.'}, {'u1': 'The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I feel like it should’ve been Sun night if it wasn’t.', 'u2': '> The Clothes Show. Was that I’m after Antiques roadshow? IIRC it was on Sundays, but at like 3 or 4 pm? EDIT: Close. It was 5pm in 1993!'}]}",1,0,human_majority,"<TASK_OVERVIEW>
@@ -1265,7 +1265,7 @@ u1: Americans. It’s wooster shuh.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 71,6729194111270145159_8234930110387113285,twitter,,en,,Where can I find them,My page,"{'turns': [{'u1': ""I'm not getting anywhere trying to find them. Have you talked to anyone about this?"", 'u2': ""I know someone who might know something. I'll message them.""}, {'u1': 'Do they usually respond quickly or is it going to take a while?', 'u2': ""They're pretty active on here, so I think it'll be sooner rather than later.""}, {'u1': 'Where can I find them', 'u2': 'My page'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1362,7 +1362,7 @@ u1: Any Sam Smith's. 1970s beer and 1990s prices.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 76,8212951684128818706_16286477251330022739,reddit,,en,,It's not fair to their staff. Jesus Christ how can they be so stupid?,"I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff.
 Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff.
 Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?","{'turns': [{'u1': ""u1: What does your company do? I'm really interested in learning about what it does and its mission."", 'u2': ""u2: Ah we're an IT firm. We provide software solutions for clients in the finance and insurance sector. I'm a bit torn about working here, to be honest. It's not all it's cracked up to be.""}, {'u1': ""u1: Torn? I don't get it. Is everything okay at work? Do you guys get treated unfairly by management or something?"", 'u2': ""u2: I just don't like the way management makes decisions. Sometimes they come out of nowhere and it's hard to understand their thought process.""}, {'u1': ""It's not fair to their staff. Jesus Christ how can they be so stupid?"", 'u2': 'I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff. Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff. Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -1381,7 +1381,7 @@ u1: It's not fair to their staff. Jesus Christ how can they be so stupid?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 77,8247342523670736417_10676686032279101343,twitter,,en,,Should I make a giveaway when I have 30k followers??,I am 1 winner for it already ?,"{'turns': [{'u1': ""I've been growing my audience quickly and it's crazy to think about reaching that milestone. I've been doing a few small giveaways to engage my followers, but I'm not sure if it's worth it when I'm just starting out."", 'u2': 'What do you think is the point of giveaways? Are they just a gimmick or do they actually help increase your following?'}, {'u1': ""I think they can be helpful, but only if you're doing them consistently and making them worth people's time. If it's just a cheap prize and a bunch of noise, people will lose interest quickly."", 'u2': ""I've had some luck with giveaways in the past. One of my friends won a major prize and it really helped grow their following.""}, {'u1': 'Should I make a giveaway when I have 30k followers??', 'u2': 'I am 1 winner for it already ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.

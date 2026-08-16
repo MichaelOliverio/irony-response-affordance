@@ -107,7 +107,7 @@ u1: He may have a point.  Does it feature child abuse?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 8,12688524965118127904_17718319999726849196,reddit,,en,,Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.,"this is how randia used to be before it crossed 1lac mark.
 now its all news links.","{'turns': [{'u1': ""I've been browsing here for a few days now and I must say, this community is very active and engaged."", 'u2': 'what made you join?'}, {'u1': 'A friend recommended it and I was curious to see what it’s like. I’m glad I joined!', 'u2': 'your friend must be a regular here'}, {'u1': 'Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.', 'u2': 'this is how randia used to be before it crossed 1lac mark. now its all news links.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -206,7 +206,7 @@ u1: What do people think the worst case scenario is with COVID-19? Like do peopl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 15,13282727809339500610_4345437609566393259,reddit,,en,,The powers that be really think we are thick as fuck.,I'm not sure how you can read social media and think we're not,"{'turns': [{'u1': ""They can't control our minds through social media."", 'u2': 'Not with some brainwashed sheep following blindly.'}, {'u1': 'But the masses are just too blind to see the strings being pulled.', 'u2': 'How else can you explain the blatant censorship?'}, {'u1': 'The powers that be really think we are thick as fuck.', 'u2': ""I'm not sure how you can read social media and think we're not""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -384,7 +384,7 @@ u1: I would say Barq's.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",1,,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 28,15790688063554478847_4093094666083403910,reddit,,en,,"The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?",how old are you??,"{'turns': [{'u1': 'So I was thinking about all the big news stories from history, and I stumbled upon this awesome list that I just had to share.', 'u2': 'Are you on about some new social media meme?'}, {'u1': ""Not at all, it's a list of the most pivotal events that shaped the world, from the gold rush to the discovery of the XRay."", 'u2': 'I think you might be getting your history mixed up'}, {'u1': 'The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?', 'u2': 'how old are you??'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -397,7 +397,7 @@ u1: The gold rush, the Melbourne real estate crash, Japan invading Russia, disco
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 29,15849458284151168089_12381184885274858640,twitter,,en,,Sore throat and fever full family ?,Please consult doctor ?,"{'turns': [{'u1': 'My kids have been sniffling all morning and I feel a bit under the weather myself', 'u2': 'Have they been around anyone sick recently?'}, {'u1': ""I think they were at school yesterday, so we'll need to keep an eye on them"", 'u2': 'Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids'}, {'u1': 'Sore throat and fever full family ?', 'u2': 'Please consult doctor ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -423,7 +423,7 @@ u1: Fully seriously got sent a video yesterday that said the virus is caused by 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 31,15922195893431160402_6100040146362736434,reddit,,en,,">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms.
 What?",Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.,"{'turns': [{'u1': '""What\'s the craziest thing you\'ve seen or heard in the gym?', 'u2': 'Well, I saw this new guy get rejected from playing with a bunch of regulars, but it was interesting to watch.'}, {'u1': 'Do you think the gym environment has a lot to do with how people react to new players?', 'u2': ""Yeah, I think so. It's like they form these little cliques and don't want to let outsiders in.""}, {'u1': "">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms. What?"", 'u2': ""Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -556,7 +556,7 @@ u1: YAY! This makes me so happy ❤️</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 40,16943694019747210588_17483232605586372038,twitter,,en,,"Why do we only rest in peace?
  why don't we live in peace too ?
 ?",Good ?,"{'turns': [{'u1': 'What if our minds were a battlefield? Would we find peace in our hearts too?', 'u2': 'What are you talking about?'}, {'u1': 'Think about it. Every war started with words, with arguments, with our opinions.', 'u2': 'You sound quite upset today.'}, {'u1': ""Why do we only rest in peace? why don't we live in peace too ? ?"", 'u2': 'Good ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -616,7 +616,7 @@ u1: Government says it will provide a discount on wholesale gas and electricity 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 44,1780171058630447799_11512477330405979867,reddit,,en,,Jupiter gonna be wondering where the fuck all these random Irish parcels are coming from.,"If Jupiter was going to turn into a sun, that would have happened a long time ago. I mean, even The Year We Make Contact was like ten years ago.
 PS: And you know what that means too, right? It means, go ahead, land on Europa. Knock yourself out.","{'turns': [{'u1': 'Is Jupiter finally getting all those parcels we ordered, or do we need to track those ourselves?', 'u2': ""No idea, why don't you try calling the Irish office?""}, {'u1': ""I'm a bit worried we might get a backlog of orders stuck on Jupiter's surface."", 'u2': ""We're not shipping anything to Jupiter. It's a gas giant.""}, {'u1': 'Jupiter gonna be wondering where the fuck all these random Irish parcels are coming from.', 'u2': 'If Jupiter was going to turn into a sun, that would have happened a long time ago. I mean, even The Year We Make Contact was like ten years ago. PS: And you know what that means too, right? It means, go ahead, land on Europa. Knock yourself out.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -877,7 +877,7 @@ u1: At the moment the coronavirus has a higher mortality rate than the Spanish f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 62,5130019403604504096_14088306147262813061,reddit,,en,,Jump street 21,Wth? Which part?,"{'turns': [{'u1': '\'I just saw the movie ""21 Jump Street"". So much fun! Should we go see it?', 'u2': ""We've already seen it a couple of times. Not worth it again.""}, {'u1': ""Haha I get it, but I think it's worth a second view! The action scenes are pretty awesome"", 'u2': 'The action scenes are cool, but have you seen the sequel?'}, {'u1': 'Jump street 21', 'u2': 'Wth? Which part?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -903,7 +903,7 @@ u1: Would you rather see Alex Jones bankrupt or in jail?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 64,5255578180520095660_15098117359332045192,reddit,,en,,Didn’t know we had mountains named after rashers!,"They built the mountains in honour of the rashers, I believe.
 They ran €10 billion over budget and were supposed to be like the Alps though.","{'turns': [{'u1': 'Have you guys ever been on the rasher trail? The food up there must be amazing', 'u2': ""I was wondering the same thing, but I heard it's actually the rasher 'view' that's worth the climb""}, {'u1': ""Really? I didn't know they built a trail up there for us non-hikers"", 'u2': 'No, they built it as part of the bigger project – the Rasher Resorts Complex'}, {'u1': 'Didn’t know we had mountains named after rashers!', 'u2': 'They built the mountains in honour of the rashers, I believe. They ran €10 billion over budget and were supposed to be like the Alps though.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 

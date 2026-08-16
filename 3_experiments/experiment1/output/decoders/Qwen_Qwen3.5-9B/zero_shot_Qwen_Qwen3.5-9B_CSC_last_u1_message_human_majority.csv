@@ -1,0 +1,1105 @@
+Index,unique_id,source,context_type,language,context,post,reply,dialogue,label,human_majority_label,evaluation_reference,prompt,model_output,model_reasoning,model_answer,invalid_inferences,invalid_model_outputs
+0,101_1015,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"The new year's resolution didn't solve much, did it?","{'turns': [{'u1': ""I guess I still have some work to do. I'm not exactly crushing it on the French front."", 'u2': 'You think?'}, {'u1': ""I've just been so tired lately. I was really hoping to start getting in the habit of going to the gym every morning."", 'u2': 'Tired? You just spend your whole day binge-watching sports and eating Cheetos.'}, {'u1': ""I don't know, man... it just feels like I'm not making progress anywhere."", 'u2': ""The new year's resolution didn't solve much, did it?""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't know, man... it just feels like I'm not making progress anywhere.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+1,103_1014,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,You can't keep up these days,"{'turns': [{'u1': ""You know, I'm starting to feel so left behind. All my friends are posting pictures of their travels, and I'm stuck here trying to figure out how to post a single picture."", 'u2': ""You're not left behind, man. We all struggle with this stuff.""}, {'u1': ""But seriously, how do I even get a picture up on this thing? I feel like I'm the only one who doesn't know what I'm doing."", 'u2': ""Maybe just ask the kids. They're always glued to their phones. I'm sure they can show you the ropes.""}, {'u1': ""I don't know, man... I just feel like everyone's having so much fun without me."", 'u2': ""You can't keep up these days""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't know, man... I just feel like everyone's having so much fun without me.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+2,103_1019,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,more like an old fool than young and cool,"{'turns': [{'u1': ""you're not even on Instagram!"", 'u2': ""That's probably why you can't post a picture on it""}, {'u1': ""I know, right? It's so easy to just type something and post a picture!"", 'u2': ""That's what you think. Try doing it when you're actually old and forgetful.""}, {'u1': ""Come on, I'm not that old!"", 'u2': 'more like an old fool than young and cool'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Come on, I'm not that old!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+3,103_1031,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,haha want any help?,"{'turns': [{'u1': ""Man I wish I was a pro at this stuff. Can't even post a decent pic on Instagram"", 'u2': 'How long you been trying?'}, {'u1': ""Hours! I swear it's like they want to make it impossible"", 'u2': ""Dude, I'd be happy to show you""}, {'u1': 'Ugh my thumbs too fat', 'u2': 'haha want any help?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ugh my thumbs too fat</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+4,103_1034,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,We're getting old man. We used to laugh at our parents when they did not know how to operate things. Now we are the old geysers who even struggle to post a profile picture.,"{'turns': [{'u1': ""Dude, I am going to be the coolest guy ever! I will post this picture of me doing a sick trick and everyone will be jealous. I don't care that I have no idea how to post a picture on social media. I will just figure it out."", 'u2': ""You know that's not exactly how it works, man. You're going to struggle with it like everyone else.""}, {'u1': ""Come on, u2! It can't be that hard! I just need to... wait, where do I even start?"", 'u2': ""You're making this way harder than it needs to be. Just chill and ask me for help.""}, {'u1': ""I don't know, man... I'm just really struggling with this. I feel like a total noob."", 'u2': ""We're getting old man. We used to laugh at our parents when they did not know how to operate things. Now we are the old geysers who even struggle to post a profile picture.""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't know, man... I'm just really struggling with this. I feel like a total noob.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+5,106_1037,fictionary,0,en,"Steve recently changed jobs. He is annoyed because he needs to deal with some bureaucracy regarding his health insurance. He says, ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.""",,"Yeh.. but you left your old job for a reason, it's just part of the process...","{'turns': [{'u1': ""I mean, I knew there would be some hassle, but this is ridiculous. I feel like I'm wasting my whole day dealing with this stuff."", 'u2': 'Steve, sometimes you have to take two steps back before you can take three steps forward, remember?'}, {'u1': ""That's easy for you to say, but you're not the one stuck in this paperwork nightmare. I swear, it's like they're trying to drive me crazy!"", 'u2': ""You're going to have to chill, buddy. It's not worth getting worked up over. You're going to get through this.""}, {'u1': ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap."", 'u2': ""Yeh.. but you left your old job for a reason, it's just part of the process...""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+6,106_1043,fictionary,0,en,"Steve recently changed jobs. He is annoyed because he needs to deal with some bureaucracy regarding his health insurance. He says, ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.""",,That's true but you obviously weren't happy in your old job so it'll be worth it in the end when it's all sorted.,"{'turns': [{'u1': ""Ugh, I'm at my wit's end with this health insurance nonsense. Why can't they just make things simpler for once?"", 'u2': ""Come on, Steve, don't get too worked up. It's just a minor hassle. You'll get through this, and the benefits of your new job will be worth it.""}, {'u1': 'I swear, this new job is turning out to be a never-ending cycle of paperwork and bureaucratic red tape. When do I get to just focus on my actual work?', 'u2': ""It's just part of the deal with the new job, Steve. You knew it was going to be an adjustment. You've got this, buddy.""}, {'u1': ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap."", 'u2': ""That's true but you obviously weren't happy in your old job so it'll be worth it in the end when it's all sorted.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+7,108_1009,fictionary,0,en,"Steve and you are driving in town. Steve is the driver. You notice that he keeps making abrupt stops for no reason. Steve has never been an excellent driver but he hasn't been this bad, either.",,let me take over let's get there safely,"{'turns': [{'u1': ""Man I'm just a little nervous today. This rain is making it really slippery."", 'u2': ""Dude, take it easy. We'll get there. You're not going to crash.""}, {'u1': ""I know I know, I just feel really off today. These sudden stops aren't like me."", 'u2': ""Off? You're being way more cautious than normal. Just chill.""}, {'u1': ""I don't know, man, I just don't feel safe anymore."", 'u2': ""let me take over let's get there safely""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't know, man, I just don't feel safe anymore.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+8,109_1002,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,your name is Steve she can do whatever she wants,"{'turns': [{'u1': ""I'm telling you, she has terrible taste in music. I mean, she loves Justin Bieber, of all people!"", 'u2': ""Dude, she's got a lot more going for her than just music taste.""}, {'u1': 'I know, I know, but that one song of hers always gets stuck in my head and drives me crazy!', 'u2': ""Steve, she's got a sweet voice, and that song is actually pretty catchy!""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'your name is Steve she can do whatever she wants'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I mean, she is great in many other ways, but her music taste is just horrible.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+9,109_1012,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,"Nobody's going to be 100 percent compatible with you, there's no 1, just a .67 or a .74 or if you're really lucky, a .87 that you round up to 1, nobody's perfect.","{'turns': [{'u1': ""I mean, I know she's great in a lot of other ways, but this music taste thing is really getting to me."", 'u2': 'You’re being a bit too hard on her, aren’t you? She might have some questionable tastes, but she’s clearly trying to connect with you.'}, {'u1': ""I guess I'm just expecting more from her, you know, since she's so great in other ways."", 'u2': ""Expecting perfection is a recipe for disappointment, Steve. Nobody's perfect, not even the woman you're so fond of.""}, {'u1': ""But that's the thing, she's not just any girl, she's amazing."", 'u2': ""Nobody's going to be 100 percent compatible with you, there's no 1, just a .67 or a .74 or if you're really lucky, a .87 that you round up to 1, nobody's perfect.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:But that's the thing, she's not just any girl, she's amazing.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+10,109_1041,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,She is the best thing to ever happen to you look past her bad taste in music all her other nice features make up for it.,"{'turns': [{'u1': ""I've been trying to talk her into going to that new indie music festival downtown, but she's all about Top 40 hits. She doesn't even know who that amazing band is."", 'u2': ""Come on, man, she's not that clueless! Maybe she just doesn't get into your scene.""}, {'u1': ""But seriously, have you heard her favorite song? It's just so cheesy and overplayed. I mean, how can someone have such bad taste in music?"", 'u2': ""I think you're being way too harsh. She's got a lot of other awesome qualities, like being super kind and funny. Give her a break!""}, {'u1': ""I guess what I'm saying is that I just wish she could be more into the kind of music I like. You know, we could bond over that or something."", 'u2': 'She is the best thing to ever happen to you look past her bad taste in music all her other nice features make up for it.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I guess what I'm saying is that I just wish she could be more into the kind of music I like. You know, we could bond over that or something.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+11,109_1044,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,Horrible like someone I know,"{'turns': [{'u1': ""Ugh, her music taste is literally the worst. I mean, have you heard that song she's been blasting everywhere?"", 'u2': ""What's wrong with it?""}, {'u1': ""You're kidding me, right? It's like nails on a chalkboard. How can she not see how bad it is?"", 'u2': ""I don't know, man. She's got some good qualities, like being super caring and all that.""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'Horrible like someone I know'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I mean, she is great in many other ways, but her music taste is just horrible.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+12,110_1030,fictionary,0,en,"You and Steve are playing a new video game and you are totally losing to him. Steve teases you by saying, ""come on, you can do better than that!""",,"I'm just letting you win, for once","{'turns': [{'u1': ""Really? That was an okay try, but you can do so much better than that, don't you think?"", 'u2': ""I don't know, maybe I'm just having a good time getting beat by you""}, {'u1': ""Come on, don't give up like that!"", 'u2': ""I'm just not in the right mindset for this game today""}, {'u1': ""You're so close, just make a move!"", 'u2': ""I'm just letting you win, for once""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:You're so close, just make a move!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+13,111_1025,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,"You are crazy, you just met her yesterday and already you want to quit your job and go with her. Now to me that is crazy sir.","{'turns': [{'u1': ""Oh man, I had the craziest night ever. I met this girl at the bar and we just clicked. We talked for hours and I felt like I've known her my whole life."", 'u2': ""Dude, slow down. What's going on?""}, {'u1': ""I'm telling you, she's the one. We were meant to be. I can feel it in my bones. I'm going to quit my job and join her on this backpacking trip she's been planning."", 'u2': ""Whoa, hold up, Steve. You can't be serious. That's a huge decision. You've only just met her.""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': 'You are crazy, you just met her yesterday and already you want to quit your job and go with her. Now to me that is crazy sir.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+14,113_1002,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,are you an actual idiot?,"{'turns': [{'u1': ""Dudes, I've got some great news. I spent all my savings and borrowed some from my folks on Ezillion. I've got a gut feeling it's gonna take off!"", 'u2': ""That's crazy, dude. You're gonna be broke and homeless, and you'll have nothing to show for it.""}, {'u1': ""Come on, don't be so negative! They say Ezillion is the future, and I'm all in. I'll be rich and set for life!"", 'u2': 'Rich? Set for life? Are you dreaming? Do you not remember that last time you bet the farm on some get-rich-quick scheme and ended up owing me $500?'}, {'u1': ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!"", 'u2': 'are you an actual idiot?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+15,115_1004,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,I'm not quite sure either,"{'turns': [{'u1': ""I'm starting to think he's just using Bill for his own benefit. He's always asking for loans and never paying them back. I mean, who does that? And Bill just keeps taking it, like it's no big deal!"", 'u2': 'Yeah, that sounds kinda fishy'}, {'u1': ""That's not even the worst part! He's also always canceling plans at the last minute and expecting Bill to be okay with it. Like, what kind of friend does that?"", 'u2': ""Ugh, that's super inconsiderate""}, {'u1': ""I don't get it, why is my brother even friends with that guy? I don't get it."", 'u2': ""I'm not quite sure either""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't get it, why is my brother even friends with that guy? I don't get it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+16,115_1049,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,maybe some people don't realise they are doing it,"{'turns': [{'u1': ""I have to admit, it does get on my nerves when my brother Bill complains about his friend never paying him back. It's like, come on, be responsible!"", 'u2': ""I feel like he's too laid back, he probably thinks it's no big deal""}, {'u1': ""But that's exactly what I'm saying, Bill's friend is not just careless, he's consistently making life hard for Bill with this always-asking-for-money-and-never-paying-it-back thing."", 'u2': 'Maybe Bill just feels guilty for not lending him money sometimes, you know?'}, {'u1': ""I'm really surprised my brother hasn't cut ties with him yet."", 'u2': ""maybe some people don't realise they are doing it""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I'm really surprised my brother hasn't cut ties with him yet.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+17,115_1056,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,Why am I friends with you then!  I give you money and you don't give it back to me!,"{'turns': [{'u1': ""That's a pretty good point. Your brother does seem like a bit of a leech, doesn't he?"", 'u2': ""Ugh, don't remind me. I swear, he never pays me back on time.""}, {'u1': ""I mean, I've seen him ask his other friends for money and not give it back for months!"", 'u2': ""Yeah, I know, right? It's like he thinks money just grows on trees or something!""}, {'u1': ""Why is my brother even friends with that guy? I don't get it."", 'u2': ""Why am I friends with you then! I give you money and you don't give it back to me!""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Why is my brother even friends with that guy? I don't get it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+18,121_1009,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,you should really get a trainer for him it will benefit you both,"{'turns': [{'u1': ""hey how's the little guy doing? I hope the apartment isn't in shambles yet"", 'u2': ""haha it's a total disaster, he's like a little tornado. destroyed furniture, shredded everything in sight...i'm starting to think he's a genius""}, {'u1': ""oh man i'm so sorry to hear that, i guess i underestimated the whole 'puppy' thing, are you sure you can handle it?"", 'u2': ""handle it? are you kidding me? i'm drowning over here! he's been awake since 4 am and i've already thrown out 2 pairs of shoes. it's like he has a personal vendetta against footwear""}, {'u1': 'what can i do to help? maybe i can hire a dog walker or something?', 'u2': 'you should really get a trainer for him it will benefit you both'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:what can i do to help? maybe i can hire a dog walker or something?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+19,124_1002,fictionary,0,en,"Steve says that your shirt is too tight for the occasion and says, ""I can let you borrow one of mine if you want.""",,cheers lad,"{'turns': [{'u1': ""Don't think that one will fit with the new trousers you just got, mate."", 'u2': ""I think it's fine""}, {'u1': ""You're not planning on getting all sweaty in that one, are you?"", 'u2': 'Not exactly, no'}, {'u1': 'I can let you borrow one of mine if you want.', 'u2': 'cheers lad'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I can let you borrow one of mine if you want.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+20,125_1037,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"No, it didn't... We're just friends now anyway...","{'turns': [{'u1': ""I'm just curious, how's the whole 'taking it slow' thing going so far? Are you two having any real conversations or is it just casual stuff?"", 'u2': ""Not really much more than just casual stuff, but I don't know... we just haven't really connected, I guess""}, {'u1': ""I'm starting to think that it might not have been such a bad idea to just jump in and be your usual self, you know? Maybe being'slow' was just an excuse for you to stay in the friend zone"", 'u2': ""I think you might be right... I do feel like we're stuck in this weird in-between place...""}, {'u1': 'Dude, did my advice work or what? Any progress so far?', 'u2': ""No, it didn't... We're just friends now anyway...""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Dude, did my advice work or what? Any progress so far?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+21,125_1052,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"no they've totally friendzoned me, thanks for that","{'turns': [{'u1': ""I've been thinking, maybe I was wrong about taking things slow. You're not really going anywhere with this, are you?"", 'u2': ""nah, we've just hung out a few times and talked. I don't feel like there's any chemistry on their part.""}, {'u1': ""That's probably the issue - they're still getting over their ex. You've got to find someone who's more receptive."", 'u2': ""I've tried to ask them about their ex, but they get really distant and change the subject""}, {'u1': ""Yeah, that's never a good sign. It sounds like they're not ready to move on yet."", 'u2': ""no they've totally friendzoned me, thanks for that""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Yeah, that's never a good sign. It sounds like they're not ready to move on yet.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+22,125_1058,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"Nah, I don't think she's interested.","{'turns': [{'u1': ""Maybe I was too cautious. How's the approach going so far? Any signs of interest?"", 'u2': ""Honestly, I've only had the chance to talk to her a few times since then. I think she's still healing from that last relationship.""}, {'u1': ""Yeah, that's a good point. She did just get out of a pretty rough one. I can imagine she's still trying to figure things out. How's your conversation been going so far?"", 'u2': ""We've been having some decent conversations, but it's all been pretty casual. I'm starting to think she just sees me as a friend.""}, {'u1': ""I don't want to be a downer, but I have to ask, have you noticed any signals that might indicate she's open to something more?"", 'u2': ""Nah, I don't think she's interested.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't want to be a downer, but I have to ask, have you noticed any signals that might indicate she's open to something more?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+23,129_1035,fictionary,1,en,"You are helping Steve move into a new apartment. After an hour, you realize that Steve is only carrying light stuff and you are doing all the heavy lifting.  Steve says, ""ugh, moving is always so stressful and chaotic...""",,"can we switch the job, you carry this and I will carry yours","{'turns': [{'u1': ""What's up with you, why are you not lifting anything heavy?"", 'u2': ""Honestly, you're doing all the heavy stuff. You can carry that box for a change.""}, {'u1': ""Oh come on, I'm not doing that much. I'm just carrying some light stuff."", 'u2': ""That's not true, you're clearly not feeling the weight of this move. Let's switch off, I'll take some of your stuff.""}, {'u1': 'Ugh, moving is always so stressful and chaotic...', 'u2': 'can we switch the job, you carry this and I will carry yours'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ugh, moving is always so stressful and chaotic...</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+24,129_1043,fictionary,1,en,"You are helping Steve move into a new apartment. After an hour, you realize that Steve is only carrying light stuff and you are doing all the heavy lifting.  Steve says, ""ugh, moving is always so stressful and chaotic...""",,So stressful with your doing all that heavy lifting!,"{'turns': [{'u1': 'Why do I always get to deal with the fun stuff?', 'u2': ""While you're having fun unpacking the plates, I'm here carrying all this heavy furniture.""}, {'u1': 'I swear, moving is never as easy as it looks online.', 'u2': ""Yeah, and it doesn't help that I'm doing all the heavy lifting and you're just casually tossing boxes around like they're feathers.""}, {'u1': 'ugh, moving is always so stressful and chaotic...', 'u2': 'So stressful with your doing all that heavy lifting!'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:ugh, moving is always so stressful and chaotic...</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+25,130_1017,fictionary,0,en,"Steve and you are hanging out, and he invites his other friends. You like them because they are fun.  Steve says, ""I invited some other people, hope you don't mind.""",,"Not at all, man.","{'turns': [{'u1': ""Hey, I was thinking it'd be awesome if we invited a few more people over."", 'u2': 'That sounds like a blast!'}, {'u1': 'Actually, I was thinking of calling Rachel and Mike.', 'u2': ""They're always down to party!""}, {'u1': ""I invited some other people, hope you don't mind."", 'u2': 'Not at all, man.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I invited some other people, hope you don't mind.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+26,130_1056,fictionary,0,en,"Steve and you are hanging out, and he invites his other friends. You like them because they are fun.  Steve says, ""I invited some other people, hope you don't mind.""",,Why would I.  It means I'm not stuck with you for the whole night!,"{'turns': [{'u1': ""I was thinking of inviting a couple of other people to join us, see if it's more fun for everyone."", 'u2': ""Oh, really? I hope I don't get stuck with your aunt or cousin or something.""}, {'u1': ""Yeah, I thought about that, but actually, I invited Rachel and Alex, they're always up for a good time."", 'u2': ""They're cool, I like them.""}, {'u1': ""I invited some other people, hope you don't mind."", 'u2': ""Why would I. It means I'm not stuck with you for the whole night!""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I invited some other people, hope you don't mind.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+27,131_1017,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,As soon as return the other items mate.,"{'turns': [{'u1': ""It's been a while since I took your toaster, but I needed it then. What's the big deal about borrowing stuff from you, mate?"", 'u2': ""It's not about the borrowing. It's about you not returning stuff. Two months for the charger, one month for the toaster. You're not exactly known for your punctuality when it comes to returning favors.""}, {'u1': ""Don't be like that, mate. I'll return the toaster and the charger as soon as I can. It's not a big deal, really."", 'u2': ""Not a big deal? You've had them for ages. My old phone's been lying around with a dead battery, and I need it back. Can't you just make some time to return what you owe?""}, {'u1': ""What's the hurry, mate? Can't you see I'm busy?"", 'u2': 'As soon as return the other items mate.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:What's the hurry, mate? Can't you see I'm busy?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+28,131_1020,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"When I get my charger and toaster back, yes","{'turns': [{'u1': ""Hey man, I've been meaning to return some stuff to you, but I've been really busy. I think it's been a couple of months now, right? Anyway, can I get some space to return them this weekend?"", 'u2': ""Steve, we talked about this last week. I need those items back, especially the charger. It's not a matter of giving you space, it's about getting your own stuff back. When are you bringing them over?""}, {'u1': ""Look, I know I haven't returned your toaster yet, but I'll try to bring it over this weekend. Does that sound good to you?"", 'u2': ""Don't make promises you don't intend to keep, Steve. If you can't even be bothered to return the charger two months after you took it, I won't believe you'll bring back the toaster. Return them both or don't bother asking to borrow anything else.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'When I get my charger and toaster back, yes'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Can I borrow your suitcase? I need one for my trip next week.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+29,131_1028,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Will I get it back? Tell you what, you can borrow my suitcase as soon as I get my charger and toaster back.","{'turns': [{'u1': ""Hey, buddy! I'm really in a bind for my trip next week. Can I borrow your suitcase?"", 'u2': ""What's the plan? Are you gonna return my charger and toaster?""}, {'u1': 'Dude, I was going to return them to you, but I just got busy, you know?', 'u2': ""Busy? Two months have passed since you borrowed my charger, and a month since my toaster. That's not 'busy', that's 'forgetful'.""}, {'u1': ""Come on, man! It's just a few days for my trip, and I'll bring both back."", 'u2': 'Will I get it back? Tell you what, you can borrow my suitcase as soon as I get my charger and toaster back.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Come on, man! It's just a few days for my trip, and I'll bring both back.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+30,131_1060,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!","{'turns': [{'u1': ""I'm in a bit of a bind here, I've left my suitcase at my brother's place and I really need one for my trip next week."", 'u2': ""Really? You forgot it at your brother's place? That's pretty careless, dude!""}, {'u1': ""Haha, well, I'm not perfect! Can I borrow your suitcase instead? I promise I'll return it as soon as I get back."", 'u2': ""You're kidding me, right? You still haven't returned my phone charger and my toaster, and now you want to borrow something else from me?""}, {'u1': ""Ah, yeah, about that... I'm really sorry, I've been meaning to return them but I just haven't gotten around to it yet."", 'u2': ""Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ah, yeah, about that... I'm really sorry, I've been meaning to return them but I just haven't gotten around to it yet.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+31,132_1054,fictionary,0,en,"You and Steve applied for the same part-time job and only he got it. You didn't care about getting the job too much, but then you see that Steve is feeling really bad about it.  Steve says, ""I'm so sorry I got the job and you didn't.""",,it must have been meant for you don't worry ill find something else,"{'turns': [{'u1': ""it's not like it's a huge deal, really. i just feel bad because i know you were kind of hoping for it."", 'u2': ""yeah i guess you're right. it's just that it would've been nice.""}, {'u1': ""i mean, honestly, i'm not even sure why they picked me over you. your qualifications are way stronger."", 'u2': ""no it's fine, honestly. you're way more suited for that kind of job.""}, {'u1': ""you're going to get another job, and it's going to be even better, i just know it."", 'u2': ""it must have been meant for you don't worry ill find something else""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:you're going to get another job, and it's going to be even better, i just know it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+32,201_2046,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,This is an interesting fashion choice...,"{'turns': [{'u1': ""Hey, man, I'm feeling pretty bold today. I picked up this red tank top on sale and I thought, why not?"", 'u2': 'You know me, always up for a bold look, but that is quite... eye-catching'}, {'u1': 'I know, right? I was thinking of pushing the envelope a bit. What do you think of these shorts?', 'u2': ""Oh, they're... interesting. Are those green shorts with white polka dots or just... a unique stain?""}, {'u1': ""Haha, no, no polka dots, just green! I'm trying to bring a little tropical vibe to the outfit."", 'u2': 'This is an interesting fashion choice...'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Haha, no, no polka dots, just green! I'm trying to bring a little tropical vibe to the outfit.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+33,201_2092,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,"Hello, how are you doing","{'turns': [{'u1': ""What's up, dude?"", 'u2': 'Hey, not much. What about you?'}, {'u1': ""Check out my new outfit. I've got a sweet red tank top on"", 'u2': ""Whoa, that's quite a bold choice. Green shorts and yellow sneakers are a bit much, though""}, {'u1': ""I know it's a bit out there, but I'm feeling adventurous tonight"", 'u2': 'Hello, how are you doing'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I know it's a bit out there, but I'm feeling adventurous tonight</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+34,203_2087,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,and that ladies and gentlemen is how an idiot  draws a unicorn,"{'turns': [{'u1': ""you think a carrot on the head makes a big difference? i mean, a carrot doesn't make it a unicorn!"", 'u2': 'well, for starters, a carrot is definitely not on the head of a unicorn'}, {'u1': ""ha! don't be so picky! a horse with a carrot is basically the same thing!"", 'u2': 'basically the same thing? are you even taking this seriously?!'}, {'u1': ""now that's a unicorn!"", 'u2': 'and that ladies and gentlemen is how an idiot draws a unicorn'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:now that's a unicorn!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+35,203_2109,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Hahha such a good disguise he'd make a great criminal mastermind,"{'turns': [{'u1': ""I think I might be a bit off. I don't see a horn anywhere. And what's with the carrot?"", 'u2': ""I mean it does look pretty convincing from where I'm standing""}, {'u1': ""Ah, no, no, no! It's perfect. I was going for a, uh, a very subtle unicorn."", 'u2': 'Subtle? I think you just wanted to draw a horse'}, {'u1': ""Now that's a unicorn!"", 'u2': ""Hahha such a good disguise he'd make a great criminal mastermind""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Now that's a unicorn!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+36,209_2015,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"I know, it's beyond me!","{'turns': [{'u1': ""Here, you just think it's normal that he asks for money all the time and then does nothing in return?"", 'u2': 'Pretty normal, I guess. But I get what you mean, though.'}, {'u1': ""He's not even a good conversationalist. Always dominates the conversation and talks about himself."", 'u2': ""Yeah, I've noticed that. But, like, what's the point of cutting him off?""}, {'u1': ""Why is my brother even friends with that guy? I don't get it."", 'u2': ""I know, it's beyond me!""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Why is my brother even friends with that guy? I don't get it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+37,209_2026,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,They're just used to each other.,"{'turns': [{'u1': ""You would think that he'd get tired of always lending him money and never hearing back."", 'u2': ""Yeah, that'd make sense, but I think Bill's just gotten too comfortable with their friendship.""}, {'u1': ""I mean, Bill's always saying how they have a blast together, but every time I talk to him, he's complaining about something his friend did."", 'u2': ""They've just learned to roll with it, you know?""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': ""They're just used to each other.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:why is my brother even friends with that guy? I don't get it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+38,209_2058,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,he stays with what is familiar. The apple rarely falls far from the tree.,"{'turns': [{'u1': ""You know what I really don't get is why he's friends with Bill. They always do the same stuff, like asking for money and never paying it back. What's the point?"", 'u2': ""I think they bond over being reckless. Bill's always borrowing stuff from me and not returning it. Their behaviors seem to be two sides of the same coin.""}, {'u1': ""It's actually pretty interesting. They're so similar. They probably have some underlying reasons for their behavior, like insecurity or something."", 'u2': ""People often gravitate towards those who share similar flaws. It's like they're drawn to a common weakness or a pattern. Maybe they feel more at ease around each other because they're not judged as harshly.""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'he stays with what is familiar. The apple rarely falls far from the tree.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:why is my brother even friends with that guy? I don't get it.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+39,209_2066,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,What do you see as the main problem with him?,"{'turns': [{'u1': ""I'm telling you, it's like he's draining our whole crew of all our money. Does he ever give anyone back?"", 'u2': ""That is part of it, but it's not just about money. He can be really needy and whiny, too.""}, {'u1': ""You know, I'm starting to think that he's just a huge time waster. We're always trying to hang out, but he's always coming up with some lame excuse."", 'u2': ""Yeah, that's definitely a problem. And it's not just the time wasting – it's the fact that he's so inconsistent.""}, {'u1': ""I don't get why my brother even hangs out with him."", 'u2': 'What do you see as the main problem with him?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I don't get why my brother even hangs out with him.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+40,209_2114,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,Maybe your friend isn’t doing well financially go and ask him if everything is alright,"{'turns': [{'u1': ""I really don't get how someone so inconsiderate can be friends with my brother."", 'u2': ""Maybe they have some underlying issues, I don't know. But the way he's been treating Bill lately is not cool.""}, {'u1': ""Bill says he's always asking for money and never pays it back."", 'u2': ""Yeah, I've noticed that about Steve's friend too. It's like he has no concept of responsibility.""}, {'u1': 'I swear, Bill deserves better than someone who just takes advantage of him.', 'u2': 'Maybe your friend isn’t doing well financially go and ask him if everything is alright'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I swear, Bill deserves better than someone who just takes advantage of him.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+41,210_2062,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,Do you have the money from the other day?  That just reminded me that I really need it.,"{'turns': [{'u1': ""Seriously man, I'm getting a bit worried about this bike of mine. My friend said he'd return it like two weeks ago and I haven't seen it yet. I swear, people can't be trusted."", 'u2': ""Dude, that's rough. But you gotta admit, you're a bit behind on things too. We had that lunch at that cash-only place and you said you'd pay me back... yet?""}, {'u1': ""Ah, come on! I said I'd pay you back, I'm good for it! I'll get that to you this weekend, don't worry."", 'u2': ""Easy for you to say. You're not the one waiting around for something that never comes. When's the last time you actually followed through on a promise?""}, {'u1': ""I just talked to him and he said he's been really busy. I'm sure he'll return it soon, no big deal."", 'u2': 'Do you have the money from the other day? That just reminded me that I really need it.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I just talked to him and he said he's been really busy. I'm sure he'll return it soon, no big deal.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+42,211_2014,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,Haha now you know how it feels when you leave stuff until the last minute,"{'turns': [{'u1': ""Do you think you guys are even going to get anything done? They're all so laid back!"", 'u2': ""Yeah, I'm sure you're going to be the only one to get anything done before the deadline""}, {'u1': ""That's what I thought, they're always saying 'just a few more days' or 'I'll get right on it', but I swear, nothing ever gets done"", 'u2': ""It's like they're all in a different time zone or something""}, {'u1': ""Gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!"", 'u2': 'Haha now you know how it feels when you leave stuff until the last minute'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+43,211_2046,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,This is how you make everyone else feel!,"{'turns': [{'u1': ""I swear, if only I could get some motivation out of them! We need to get this project done ASAP, or we're all gonna be so screwed when the deadline hits."", 'u2': ""Like, you're not exactly known for being the most punctual guy around here...""}, {'u1': ""But seriously, I've sent them all reminders and stuff. I even offered to meet up with them over the weekend to get some work done, and they just ghosted me."", 'u2': ""They know they can rely on you to pick up the slack. It's kinda sweet, but also kinda infuriating.""}, {'u1': ""Yeah, it's super frustrating when they leave everything for me to handle."", 'u2': 'This is how you make everyone else feel!'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Yeah, it's super frustrating when they leave everything for me to handle.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+44,211_2062,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,It can be frustrating when that happens.  Perhaps you should contact them and let them know the urgency.,"{'turns': [{'u1': ""I don't know how people can do this, but I'm getting really worried. It's already Wednesday and we still haven't even started working on the assignment. How are we going to finish it on time?"", 'u2': ""I can see why you'd be worried. It's a big task, and you're right, it's already quite late. But, let's try to stay positive.""}, {'u1': ""I'm so sick of being the only one doing all the work around here. Everyone else is just chillin', while I'm sweating bullets to get everything done. It's so unfair!"", 'u2': ""I understand why you feel that way, but have you talked to them about how you're feeling? Sometimes just sharing your concerns with them can help to get things moving.""}, {'u1': ""Gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!"", 'u2': 'It can be frustrating when that happens. Perhaps you should contact them and let them know the urgency.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+45,212_2068,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Says the pot calling the kettle black!,"{'turns': [{'u1': ""I'm so sick of this, man. I know I keep forgetting to flush, but it's like, come on!"", 'u2': ""You'd be the last one to lecture me on common courtesy, Steve!""}, {'u1': ""What's wrong with people these days? Can't they even clean up after their pets?"", 'u2': ""Sounds to me like you're more worried about your own bathroom habits!""}, {'u1': 'Ugh, someone needs to teach them about responsibility!', 'u2': 'Says the pot calling the kettle black!'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ugh, someone needs to teach them about responsibility!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+46,212_2079,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"If only they could ""flush"" it away just like my toilet does when you visit","{'turns': [{'u1': ""It's a miracle! The world is so inconsiderate and careless! Dog poop everywhere, what's next? People peeing on the sidewalk?"", 'u2': 'At least your toilets always get a good flush, huh?'}, {'u1': ""Ha ha, that's a great point, but honestly, I'm still stuck on the grossness of this poop"", 'u2': 'Yeah, and we can\'t even count on you to ""flush"" the after effects of your own bathroom usage'}, {'u1': ""Hey, that's not fair! I always mean to flush, I just get distracted"", 'u2': 'If only they could ""flush"" it away just like my toilet does when you visit'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Hey, that's not fair! I always mean to flush, I just get distracted</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+47,214_2068,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,Coming from the guy who was charged a small fortune because he was too lazy to send back a package on time.,"{'turns': [{'u1': ""I swear, I wish I knew how you spend your money before I spent 120 bucks on that one package. I'm still trying to figure that out."", 'u2': 'Yeah, like I said, Amazon got their money, but at least the new TV works fine now.'}, {'u1': ""Dude, this coffee is ridiculously expensive! You're practically paying for the vibe."", 'u2': ""You think the vibe is expensive? You're the one who's been drinking the overpriced cold brew from that place.""}, {'u1': 'wow, you really should watch how you spend your money.', 'u2': 'Coming from the guy who was charged a small fortune because he was too lazy to send back a package on time.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:wow, you really should watch how you spend your money.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+48,218_2118,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,There's nothing wrong with planning 'a head.',"{'turns': [{'u1': ""I was thinking of this pompadour hairstyle, what do you think? It's really on trend right now."", 'u2': ""Why do you need to be 'on trend'? You're going to be you, no matter what haircut you get.""}, {'u1': ""Because it's a classic, okay? I don't want to be seen as uncool."", 'u2': ""You're starting to sound like my aunt, Steve.""}, {'u1': ""What's wrong with that? My aunt has great taste."", 'u2': ""There's nothing wrong with planning 'a head.'""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:What's wrong with that? My aunt has great taste.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+49,221_2086,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"i don't think I believe in this, but I appreciate you do.","{'turns': [{'u1': ""You really think it's a hoax then? I swear, this footage is too real to be faked. Maybe humans can't replicate it, but what if it's not of this world? You have to admit, this is some wild stuff!"", 'u2': ""Dude, calm down. You're getting way too excited. Can't you just enjoy the video without getting all worked up?""}, {'u1': ""No way, this is proof! Aliens are out there and they're more advanced than us. You're not seeing the bigger picture here."", 'u2': ""Okay, okay. Let's take a step back. I get that you're into this UFO stuff, but can't you just leave me out of it?""}, {'u1': ""Come on, u2! Just watch the video! It's not every day we get to see this kind of thing!"", 'u2': ""i don't think I believe in this, but I appreciate you do.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Come on, u2! Just watch the video! It's not every day we get to see this kind of thing!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+50,222_2004,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,No thanks mate,"{'turns': [{'u1': ""I found this one last night, and I think it's really good. It's called 'Izlel e Delyo Hogiov'."", 'u2': 'No thanks'}, {'u1': ""This one is by a really talented singer from the Rhodope Mountains. I've been listening to it nonstop all day!"", 'u2': 'Not really my cup of tea'}, {'u1': ""I finally found one you'll like! This one is really good. Come on!"", 'u2': 'No thanks mate'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I finally found one you'll like! This one is really good. Come on!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+51,222_2019,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,I hope it's better than the last one.,"{'turns': [{'u1': ""I found this one last week! It was really something, I tell you. But it's worth another try."", 'u2': 'Really? You said it was good then.'}, {'u1': ""Actually, no, you didn't like the last one either. That's why I'm determined to find one you'll like."", 'u2': ""I appreciate that. But I do have to say, I'm a bit worried.""}, {'u1': 'This one is really good. Come on!', 'u2': ""I hope it's better than the last one.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:This one is really good. Come on!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+52,224_2104,fictionary,1,en,"Steve recently inherited a fancy watch from his dead grandfather. And he keeps showing it to you and talking about it. For the fifth time, Steve says, ""look, look how shiny this watch is.""",,"Yeah, Yeah Steve - it is really shiny still","{'turns': [{'u1': ""Hey, check out this watch. Isn't it something? I'm telling you, it's worth a fortune. It was Grandpa's favorite."", 'u2': ""Yeah, I can see why it's special. You should really take care of it, though.""}, {'u1': ""I know, I know, I'm going to take good care of it. But I just can't stop looking at it, it's so amazing. Look at this detail, this intricate design."", 'u2': 'That is really cool. I like how the light reflects off it.'}, {'u1': 'Look, look how shiny this watch is.', 'u2': 'Yeah, Yeah Steve - it is really shiny still'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Look, look how shiny this watch is.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+53,230_2001,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"Oh, ok, I suppose. What does he need? I don't have any stuff for a dog.","{'turns': [{'u1': ""I'm so sorry to just drop this on you, buddy, but I've got an emergency at work and I really need to get out of town for 3 days. I know this is last minute, but would you be a lifesaver and watch my dog for me?"", 'u2': 'What kind of emergency? Did someone get hurt?'}, {'u1': ""No, it's not that bad, but I do need to work remotely from a different city and they're really pressing me to get out ASAP. The dog's name is Max and he's really friendly, I'm sure you'll get along great."", 'u2': ""Okay, but I don't have any dog food or a leash or anything. How's Max supposed to, um, 'hold it' while he's here?""}, {'u1': ""Ah, yeah, I totally forgot to grab some stuff for Max's stayover, didn't I? Let me just check what I have in the car... oh yeah, I've got some of his food and his leash, but you're right, we should probably get some more supplies before I head out."", 'u2': ""Oh, ok, I suppose. What does he need? I don't have any stuff for a dog.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ah, yeah, I totally forgot to grab some stuff for Max's stayover, didn't I? Let me just check what I have in the car... oh yeah, I've got some of his food and his leash, but you're right, we should probably get some more supplies before I head out.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+54,231_2005,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"No (proceeds to talk about the other times), you really need to pay me back because it's not fair","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""It has happened like four times now, you're consistently free to hang out and I'm always the one covering your expenses. It's getting a bit ridiculous""}, {'u1': ""that's not true!"", 'u2': ""I'm not kidding, Steve, we've had plenty of nights out at the pub and I've always been the one footing the bill. You need to start paying me back or stop expecting me to cover your tab.""}, {'u1': ""I'm telling you, it was just one time!"", 'u2': ""No (proceeds to talk about the other times), you really need to pay me back because it's not fair""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I'm telling you, it was just one time!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+55,231_2055,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"Yeah nah, remember when we were at a pub downtown on my birthday? And the other local pub a few weeks ago as well? And you called that 'one time'? Your 'one time' seems to happen a lot mate.","{'turns': [{'u1': ""Why did you have to be such a buzzkill? Can't you just let it go?"", 'u2': ""Come on, it's happened several times, I'm starting to feel like I'm your personal ATM or something""}, {'u1': ""One time, that's all I said! I didn't mean it like it's a regular thing"", 'u2': ""Mate, you've been saying that for years and it's still the same, I'm paying for you every single time""}, {'u1': 'Come on, it happened like one time!', 'u2': ""Yeah nah, remember when we were at a pub downtown on my birthday? And the other local pub a few weeks ago as well? And you called that 'one time'? Your 'one time' seems to happen a lot mate.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Come on, it happened like one time!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+56,231_2069,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"Really?  Which time would that be?  Nevermind, are you still coming over to help me with that project tomorrow?  Bring a pizza with you, no pineapple this time!","{'turns': [{'u1': 'Come on, it happened like one time!', 'u2': 'Seriously, man? How many times do I have to remind you that I paid for your meal last month too?'}, {'u1': ""So, what's the big deal? I'll repay you next week. Just chill!"", 'u2': ""You've been saying that for three weeks now, so don't count on it. How about I just stop helping you with stuff till then?""}, {'u1': 'Come on, this has never happened before!', 'u2': 'Really? Which time would that be? Nevermind, are you still coming over to help me with that project tomorrow? Bring a pizza with you, no pineapple this time!'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Come on, this has never happened before!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+57,233_2097,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,Ohhhh man!!!1 you look amazing and colourful tonight.,"{'turns': [{'u1': 'Your outfit looks like something that could be in a fashion magazine, I love it.', 'u2': ""That's what I was going for! Did you do some shopping this weekend?""}, {'u1': ""Ha, no I didn't, but I do have a few new shirts that my sister sent me from her travels. I thought this one fit the bill for tonight."", 'u2': 'Your sister must have great taste! That color looks amazing on you!'}, {'u1': ""Yeah, she's always sending me cool stuff, and I try to wear it out so she doesn't think I'm just hoarding it all."", 'u2': 'Ohhhh man!!!1 you look amazing and colourful tonight.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Yeah, she's always sending me cool stuff, and I try to wear it out so she doesn't think I'm just hoarding it all.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+58,233_2105,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,"wow, i hope no one saw you","{'turns': [{'u1': 'You look sharp today, man! I love the yellow sneakers. You really pulled off the entire green and yellow combo.', 'u2': ""Yeah, but isn't it a bit... loud? I don't know if I'd wear that to a client meeting""}, {'u1': ""Ha! You're such a worrywart. I'm just trying to express myself, you know? I'm feeling bold today"", 'u2': ""I get it, but I just don't want to get laughed at for dressing like a walking traffic cone""}, {'u1': ""Oh man, don't be like that! It's just a tank top. You're not going to get fired over a little red fabric"", 'u2': 'wow, i hope no one saw you'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Oh man, don't be like that! It's just a tank top. You're not going to get fired over a little red fabric</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+59,236_2042,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"ha ha ha, you are not going to get much work done like that.","{'turns': [{'u1': ""you're getting a little carried away with that Mr. Shoehand business, aren't you?"", 'u2': ""yeah, you're not taking this very seriously, are you?""}, {'u1': ""come on, u2, don't be such a skeptic! I'm just expressing myself!"", 'u2': ""you're really confusing 'expression' with 'distraction', aren't you?""}, {'u1': ""look at me! I'm Mr. Shoehand!"", 'u2': 'ha ha ha, you are not going to get much work done like that.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:look at me! I'm Mr. Shoehand!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+60,237_2017,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,"Steve's pissed, again.","{'turns': [{'u1': 'hey, look, I made something delicious!', 'u2': 'Ugh, what is that?'}, {'u1': 'No, seriously, I put love into this concoction.', 'u2': ""Love doesn't taste like ketchup and orange juice mixed with potato chips and mustard""}, {'u1': ""Then you're just not sophisticated enough to appreciate the subtlety."", 'u2': ""Steve's pissed, again.""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Then you're just not sophisticated enough to appreciate the subtlety.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+61,238_2020,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,"Steve, maybe it wasn't meant to be. Let's leave the social media to the younger generation","{'turns': [{'u1': ""I've got this. I'm just going to quickly take a selfie and post it. How hard can it be, right?"", 'u2': 'Hmm, Steve, are you sure about this? I\'ve seen your selfies before, and they don\'t exactly scream ""young and cool""'}, {'u1': ""Ah, come on! I just need to look a bit more relaxed. What's the worst that could happen?"", 'u2': ""I don't know, man. It seems like you're putting a lot of pressure on this one selfie. What's really going on here?""}, {'u1': 'How do I even get started with posting something?', 'u2': ""Steve, maybe it wasn't meant to be. Let's leave the social media to the younger generation""}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:How do I even get started with posting something?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+62,239_2051,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,"Haha, I do that sometimes.","{'turns': [{'u1': ""You know, sometimes I wonder if it's me or you who always messes up the volume when we're watching TV."", 'u2': ""I don't think it's either of us, we just have different standards, I guess.""}, {'u1': ""I swear, the last time I turned the volume down to 9, you immediately turned it back up to 11. What's up with that?"", 'u2': 'Ah, yeah, I just like it a little louder than you do.'}, {'u1': ""I just tried to turn it down to 7 and you switched it to 10. This isn't funny anymore."", 'u2': 'Haha, I do that sometimes.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I just tried to turn it down to 7 and you switched it to 10. This isn't funny anymore.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+63,239_2062,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,Why are you being awkward?,"{'turns': [{'u1': ""You're turning it up to eleven again. Can you keep it down?"", 'u2': ""I'm just watching my show. It's not that loud.""}, {'u1': ""I don't think eleven is very considerate to your roommate."", 'u2': ""What's it to you?""}, {'u1': ""You're going to wake them up."", 'u2': 'Why are you being awkward?'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:You're going to wake them up.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+64,240_2057,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,shall we ask for a separate plate?,"{'turns': [{'u1': ""What are you looking at? Can't you see I'm trying to eat?"", 'u2': 'Are you okay, man? You seem a bit agitated.'}, {'u1': ""I'm just... it's just the fries, okay? They keep touching the burger."", 'u2': 'Maybe if we...?'}, {'u1': 'Fries touching the burger again!', 'u2': 'shall we ask for a separate plate?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Fries touching the burger again!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+65,240_2108,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Why are you doing that?,"{'turns': [{'u1': ""Let's just enjoy our meal. Don't make a big deal out of it."", 'u2': ""But why can't French fries and a burger just be on the same plate?""}, {'u1': ""It just doesn't feel right, you know? It's like they're mixing flavors and textures in a weird way."", 'u2': ""That's a pretty weird reason not to let them touch.""}, {'u1': ""A French fry just touched my burger, I'm pushing them apart."", 'u2': 'Why are you doing that?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:A French fry just touched my burger, I'm pushing them apart.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+66,241_2068,fictionary,1,en,"Steve has a friend Bill. Bill often feels annoyed by his colleague. The reasons that Bill finds his colleague annoying are the same as the reasons why you find Steve annoying sometimes (for example, both Bill's colleague and Steve make loud noises in the office).  Steve says, ""Must be tough for Bill to have to deal with noisy colleagues all the time!""",,"Yeah, must be hellish.","{'turns': [{'u1': ""I'm sure Bill wishes his colleague would keep their phone on silent mode, especially during important calls."", 'u2': ""You'd think that's common sense!""}, {'u1': ""Some days I feel like I'm the only one who realizes that our office could benefit from some noise-cancelling headphones."", 'u2': ""Not that it'd solve the problem, but it might help a bit.""}, {'u1': ""I'm sure Bill feels frustrated when his colleague talks loudly on the phone all day."", 'u2': 'Yeah, must be hellish.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I'm sure Bill feels frustrated when his colleague talks loudly on the phone all day.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+67,241_2085,fictionary,1,en,"Steve has a friend Bill. Bill often feels annoyed by his colleague. The reasons that Bill finds his colleague annoying are the same as the reasons why you find Steve annoying sometimes (for example, both Bill's colleague and Steve make loud noises in the office).  Steve says, ""Must be tough for Bill to have to deal with noisy colleagues all the time!""",,Poor Bill having to work with you :),"{'turns': [{'u1': ""Sorry to hear that you've had some issues with your colleague"", 'u2': 'Glad someone understands! We both get annoyed sometimes'}, {'u1': ""What makes you think they're so annoying?"", 'u2': ""It's like they think they own the place and no one else matters""}, {'u1': ""I can relate to Bill's frustrations"", 'u2': 'Poor Bill having to work with you :)'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I can relate to Bill's frustrations</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+68,242_2025,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,same goes for you,"{'turns': [{'u1': ""hey buddy, my friend just borrowed my bike a week ago and he's still not giving it back. I lent it to him because I trust him, but this is just ridiculous. I'm starting to think people take advantage of me."", 'u2': ""sounds about right for people who can't pay their debts on time.""}, {'u1': ""what's that supposed to mean?"", 'u2': ""well, I had to pay for your lunch the other day because you didn't have cash, and you still owe me back.""}, {'u1': ""oh, yeah, I'll pay you back, don't worry about it"", 'u2': 'same goes for you'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:oh, yeah, I'll pay you back, don't worry about it</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+69,243_2070,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,"well you should have thought about that ages ago and not last minute, now you see how this feels","{'turns': [{'u1': ""I've been saying it all along that we need to plan ahead, but does anyone listen? Now we're facing a deadline and it's all coming together so fast - it's a miracle, really! - and I'm still waiting for our team to pull their weight. It's like they're on a different time zone!"", 'u2': 'Steve, you need to start leading by example.'}, {'u1': ""Come on, you're not going to blame me for this, am I? I'm the one who's always been telling them to speed up, to move forward. Now you're saying I should lead by example? That's rich."", 'u2': ""Well, you've been saying it, but how many times have you actually done it?""}, {'u1': ""I swear, it's like nobody ever listens to me! If they did, we wouldn't be in this mess right now. Frustrating doesn't even begin to cover it!"", 'u2': 'well you should have thought about that ages ago and not last minute, now you see how this feels'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I swear, it's like nobody ever listens to me! If they did, we wouldn't be in this mess right now. Frustrating doesn't even begin to cover it!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+70,243_2094,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,"Yeah, I can imagine","{'turns': [{'u1': ""Have you noticed how some people just don't understand the value of deadlines?"", 'u2': 'It seems like they have this weird notion that things will magically happen on their own.'}, {'u1': ""Sometimes I feel like I'm the only one who cares about meeting targets."", 'u2': ""That can be frustrating, but you can't let it get to you.""}, {'u1': 'This joint proposal is going to be delayed yet again because of their laziness.', 'u2': 'Yeah, I can imagine'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:This joint proposal is going to be delayed yet again because of their laziness.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+71,243_2095,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,do you think?,"{'turns': [{'u1': ""I swear, I've already asked everyone to contribute their bits, but nothing's happening. I'm getting a bit worried that we'll miss the deadline."", 'u2': 'How far behind schedule are you?'}, {'u1': ""Honestly, I'm about 2 days behind. I was hoping to get some work done last weekend, but nothing happened. Now I'm getting anxious."", 'u2': ""That doesn't sound good. Do you want me to help?""}, {'u1': 'Yeah, I could really use your help. Have you talked to the team from the other department yet?', 'u2': 'do you think?'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Yeah, I could really use your help. Have you talked to the team from the other department yet?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+72,244_2081,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Like you got room to talk you don't even flush the toilet after you use it.,"{'turns': [{'u1': ""I know, right? Like some people can't even be bothered to pick up after their dogs. It's just gross!"", 'u2': ""Yeah, and I've seen you do that exact same thing at my house, like a million times, and I've told you multiple times to stop, but you just laugh it off!""}, {'u1': ""I mean, come on! It's just one little thing. What's the big deal?"", 'u2': ""That's exactly the kind of attitude I'm talking about. If it's not a big deal for you, why is it such a big deal for the dog owners not to pick up after their dogs?""}, {'u1': ""Dude, I'll try to remember to flush the toilet, okay?"", 'u2': ""Like you got room to talk you don't even flush the toilet after you use it.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Dude, I'll try to remember to flush the toilet, okay?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+73,244_2092,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,yes they are,"{'turns': [{'u1': ""it's not that hard to put the toilet seat back, is it?"", 'u2': ""I know, right? It's just lazy. And now, anyway, I see someone letting their dog poop on the sidewalk.""}, {'u1': ""Come on, it's not the end of the world! Can't we just let it go?"", 'u2': ""No way, I'm calling animal control""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'yes they are'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:ew, people are so inconsiderate!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+74,245_2036,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,Did I have a choice?,"{'turns': [{'u1': ""You shouldn't have said yes, that's not your job!"", 'u2': ""I'm a bit torn about this. I don't want to disappoint him but I really can't afford to run errands all day.""}, {'u1': ""But don't you think it's weird that your boss is asking you to do his personal errands?"", 'u2': ""That's exactly what I'm trying to say. I think it's unfair that I'm the one who gets asked to do this. What if I said no?""}, {'u1': 'The boss asked you to go to the bank for him, right?', 'u2': 'Did I have a choice?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:The boss asked you to go to the bank for him, right?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+75,245_2106,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,because he's my boss,"{'turns': [{'u1': ""I totally get why you're upset. I would have been in your shoes too, I probably would have said no to that too."", 'u2': ""I said yes, and that's all I can do, I guess. Not much I can do about it now""}, {'u1': ""It can't be that easy to just say no to your boss, can it? How do people do that?"", 'u2': 'It depends on the boss and the situation. I guess it depends on how much you value your job versus your personal boundaries.'}, {'u1': ""It makes me wonder why you didn't just say no to begin with."", 'u2': ""because he's my boss""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:It makes me wonder why you didn't just say no to begin with.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+76,248_2035,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,Hmm.. probably sounds like how when you speak french,"{'turns': [{'u1': ""I'm trying to be kind but honestly, Steve's English is nowhere near as rough as Steve's French"", 'u2': ""You're telling me... that French sounds like a cat in distress""}, {'u1': 'But seriously, I think that guy should improve his English', 'u2': ""Well, that's coming from the guy who thought était was pronounced 'eat it'""}, {'u1': ""that person should work on their English, don't you think?"", 'u2': 'Hmm.. probably sounds like how when you speak french'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:that person should work on their English, don't you think?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+77,251_2052,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,Where did you go when you were in Japan?,"{'turns': [{'u1': 'People here always eat burgers with their hands. You know, in Japan, people use chopsticks.', 'u2': ""That's crazy. I've been using chopsticks my whole life. Do people in the US actually use them too?""}, {'u1': ""Yeah, I met a lot of people who used them, but it's not as common as using a fork or knife. But that's the interesting thing - in Japan, eating is very much about the presentation and the company you're with."", 'u2': ""Oh, yeah? I can see how presentation would be important. And the company - that's what makes dinner so special, right?""}, {'u1': 'Exactly! And the food itself is just amazing. The variety of flavors and textures... I was really blown away.', 'u2': 'Where did you go when you were in Japan?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Exactly! And the food itself is just amazing. The variety of flavors and textures... I was really blown away.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+78,251_2084,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"I wish we had a bit more Japanese food culture here, I always feel drawn to it too but I guess not everything can be Japanese! I do appreciate other foods and cultures too.","{'turns': [{'u1': ""I've got a great recipe for tonkatsu, you've got to try it. In Japan, it's all about the breading, they take it very seriously."", 'u2': ""Yeah, I've had tonkatsu before, it's delicious! But the breading does make a big difference. I've always thought Japanese food was very precise and detailed.""}, {'u1': 'When I was in Japan, I used to eat at this tiny ramen shop near my apartment. The owner would always be experimenting with new flavors, it was so inspiring.', 'u2': ""That sounds amazing! I love trying new foods and flavors. I think that's one of the things I appreciate about Japanese culture, the emphasis on trying new things and being open to change.""}, {'u1': 'Remember when we went to that sushi place downtown? They did it just like they do in Japan, with all the precision and care.', 'u2': 'I wish we had a bit more Japanese food culture here, I always feel drawn to it too but I guess not everything can be Japanese! I do appreciate other foods and cultures too.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Remember when we went to that sushi place downtown? They did it just like they do in Japan, with all the precision and care.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+79,253_2082,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"Yes Steve, aliens alone","{'turns': [{'u1': ""Look at this and tell me what you think it could be, it's obviously some kind of alien technology, no human could possibly create something like that!"", 'u2': ""That's some pretty wild stuff Steve, but let's not jump to conclusions, we need more info before we start speculating about aliens.""}, {'u1': ""But humans can't even land on the moon anymore, how are we supposed to make something like this? It's just too advanced!"", 'u2': ""I get what you're saying, but it's also possible that the person who made this has a lot of resources and expertise, let's not count out the possibility that it's a human creation.""}, {'u1': ""What else could it be, really? It's either aliens or government secrets, and I think we all know which one is more likely."", 'u2': 'Yes Steve, aliens alone'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:What else could it be, really? It's either aliens or government secrets, and I think we all know which one is more likely.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+80,255_2077,fictionary,1,en,"Steve is very opinionated about shoes. He thinks that black shoes are boring. Your shoes happen to be black. Though you don't have strong opinions about shoes, Steve says to you, ""you know, my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.""",,"That's great if you are into the latest trends, but that's your thing, not mine. It's like pushing certain diets, religion or politics onto others... we are all entitled to our own views Steve, and I like my black shoes.","{'turns': [{'u1': ""I just can't get on board with the whole black shoe trend. It's so... basic. I mean, have you seen the latest issue of Fashion Weekly? They barely even mention black shoes anymore."", 'u2': ""I get what you're saying, Steve, but honestly, I don't put a lot of thought into my shoes. They're just something to get from point A to point B.""}, {'u1': ""Come on, don't you ever want to be on the cutting edge of fashion? I mean, my shoes are actually featured in the next issue of Men's Style magazine!"", 'u2': ""I appreciate the enthusiasm, but I'm not really into that sort of thing. And besides, I'm not sure I'd be comfortable wearing shoes that are that trendy.""}, {'u1': 'my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.', 'u2': ""That's great if you are into the latest trends, but that's your thing, not mine. It's like pushing certain diets, religion or politics onto others... we are all entitled to our own views Steve, and I like my black shoes.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+81,257_2044,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Yeah sure, just drop off the charger and toaster when you pick the suitcase up","{'turns': [{'u1': ""Hey u2, hope you're doing well. I was wondering if I could borrow your suitcase for my upcoming trip. I have an amazing sale to get to and I'll be on stage for the presentation. I'll make sure to return it as soon as I can."", 'u2': 'Dude, when are you going to return my charger and toaster? You borrowed those like two months ago and now you want to borrow my suitcase?'}, {'u1': ""Ah, yeah, sorry about that. I know I've been a bit forgetful lately. But this trip is really important for my career and I promise to get your stuff back to you ASAP."", 'u2': ""Your stuff? You mean the charger and toaster I lent you, and you've still not returned? Yeah, that's your stuff, all right. I'm starting to think you're just going to keep it all.""}, {'u1': ""Ha ha, no, no, I swear it's not like that! I'll return the charger and toaster before you know it. Can I please just borrow your suitcase now?"", 'u2': 'Yeah sure, just drop off the charger and toaster when you pick the suitcase up'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Ha ha, no, no, I swear it's not like that! I'll return the charger and toaster before you know it. Can I please just borrow your suitcase now?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+82,260_2074,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,cos your rubbish at driving and i like my car in one piece so no you cant drive it but im happy to drive you in it,"{'turns': [{'u1': 'hey mate i was thinking maybe you could let me borrow your new car to pick up my girlfriend from work,', 'u2': 'no'}, {'u1': ""come on, why can't I borrow it? Don't you trust me?"", 'u2': ""it's not that i dont trust you but its a brand new car and i just got it yesterday so i dont want it getting scratched or worse in an accident""}, {'u1': ""i was just in an accident and mine is in the shop, that's why i need your car"", 'u2': 'cos your rubbish at driving and i like my car in one piece so no you cant drive it but im happy to drive you in it'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:i was just in an accident and mine is in the shop, that's why i need your car</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+83,263_2041,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"No, it's happened way too many times now and I can't keep giving you money any more.","{'turns': [{'u1': ""come on, it's just one time! I've never asked you for anything before."", 'u2': ""That's not true, you've done it several times before and I've always covered the bill.""}, {'u1': 'Okay, but this is the one time I need a favor, right?', 'u2': ""You know exactly what I mean and it's not the one time I can just keep doing this for you.""}, {'u1': 'It really has only happened once, I swear!', 'u2': ""No, it's happened way too many times now and I can't keep giving you money any more.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:It really has only happened once, I swear!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+84,264_2106,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,"sure, sorry about that. i'll replace them","{'turns': [{'u1': 'oh man, i loved those glasses!', 'u2': 'are you okay?'}, {'u1': ""no, no, i'm fine. just really disappointed in those glasses. they were unique."", 'u2': 'what happened to them?'}, {'u1': 'you broke them, while moving in the heavy box', 'u2': ""sure, sorry about that. i'll replace them""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:you broke them, while moving in the heavy box</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+85,265_2014,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,Make sure you bring it back,"{'turns': [{'u1': ""I'd really appreciate it. It's my project due date tomorrow and I forgot my own USB."", 'u2': 'Take care of your project then'}, {'u1': ""I'll definitely return it as soon as I can."", 'u2': ""Make sure you don't lose it or leave it behind""}, {'u1': 'Thanks for lending it to me.', 'u2': 'Make sure you bring it back'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Thanks for lending it to me.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+86,265_2070,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,no worries,"{'turns': [{'u1': ""Hey, I've been looking everywhere for it, can I borrow your USB stick? I really need it for a presentation today."", 'u2': ""What's the presentation about?""}, {'u1': ""Thanks, I've got to make a good impression, it's for a job interview!"", 'u2': ""That's awesome, you've been preparing for this for ages, right?""}, {'u1': ""Yeah, I'm pretty nervous, but thanks for being supportive!"", 'u2': 'no worries'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Yeah, I'm pretty nervous, but thanks for being supportive!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+87,265_2102,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,You are welcome but can you bring it back when you are done please.,"{'turns': [{'u1': 'I need that USB stick to show this presentation to the team', 'u2': 'Oh, you need it to show the team? How long will you be?'}, {'u1': 'Just a couple of hours, why?', 'u2': 'Okay, I guess I can do without it that long then'}, {'u1': 'Thanks for lending it to me!', 'u2': 'You are welcome but can you bring it back when you are done please.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Thanks for lending it to me!</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+88,266_2020,fictionary,0,en,"You spilled coffee on Steve's shirt. When you apologize to him, Steve says ""it's alright. I didn't even like this shirt anyway.""",,Let me buy you a drink to make up for it!,"{'turns': [{'u1': ""You can just forget about it, dude. It's nothing!"", 'u2': 'Nah, I feel really bad about it!'}, {'u1': ""No worries, seriously. It's an old shirt and it's not like it's super valuable or anything."", 'u2': ""Are you sure? I'm gonna get it cleaned and stuff!""}, {'u1': ""I didn't even like this shirt anyway."", 'u2': 'Let me buy you a drink to make up for it!'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I didn't even like this shirt anyway.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+89,268_2036,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,Nice shoes!!,"{'turns': [{'u1': ""Hey, I just got these new shoes yesterday and I have to say, they really go well with this outfit I'm wearing today. The leather is so smooth, I feel like a million bucks"", 'u2': 'Whoa, nice get! How much did they set you back?'}, {'u1': 'Haha, no, it was actually a splurge after finishing that big project at work, but I feel like I deserved it. You know what they say, you only live once, right?', 'u2': ""Yeah, but did you have to live large like this? I'm still paying off my student loans""}, {'u1': ""Just kidding, I didn't break the bank... okay, fine, I might have spent a bit more than I should have"", 'u2': 'Nice shoes!!'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Just kidding, I didn't break the bank... okay, fine, I might have spent a bit more than I should have</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+90,269_2007,fictionary,0,en,"You and Steve applied for the same part-time job and only he got it. You didn't care about getting the job too much, but then you see that Steve is feeling really bad about it.  Steve says, ""I'm so sorry I got the job and you didn't.""",,"Hey, it's okay. We both need jobs, I'm sure I'll land something eventually.","{'turns': [{'u1': ""I'm really struggling with this. I know how much I wanted the job too, and it sucks that you didn't get it. I feel terrible about it."", 'u2': ""Hey, stop beating yourself up over it. You got the job, and that's what matters. I'm sure I'll be fine.""}, {'u1': ""But I'm telling you, u2, it really is my fault. If I hadn't gotten it, maybe they would've offered it to you."", 'u2': ""No, no, no. That's not how it works. They pick who they want, and we both knew it was a long shot from the start.""}, {'u1': ""I guess I was just hoping you'd get it because... well, because you're my best friend, and I know how much you need a job."", 'u2': ""Hey, it's okay. We both need jobs, I'm sure I'll land something eventually.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:I guess I was just hoping you'd get it because... well, because you're my best friend, and I know how much you need a job.</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+91,270_2043,fictionary,0,en,"Steve and you are hanging out, and he wants to invite his other friends. Steve says, ""Mind if some of my friends join?""",,"Yeah, if you want to?","{'turns': [{'u1': 'Hey, I was thinking we could invite Rachel and Alex to join us?', 'u2': 'Is Rachel cool with meeting new people?'}, {'u1': ""No, she's shy. But Alex would be down for sure."", 'u2': 'Alright, cool. Just ask Alex then.'}, {'u1': 'Mind if some of my friends join?', 'u2': 'Yeah, if you want to?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1:Mind if some of my friends join?</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
