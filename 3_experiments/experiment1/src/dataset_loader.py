@@ -2,12 +2,17 @@ import json
 from typing import List, Dict, Optional
 from pathlib import Path
 from collections import Counter
+import pandas as pd
 from sklearn.model_selection import train_test_split
-from src.config import RANDOM_SEED, DATASET_SPLIT_RATIOS
+from src.config import (
+    HUMAN_ANNOTATION_SETTINGS,
+    RANDOM_SEED,
+    DATASET_SPLIT_RATIOS,
+)
 
 class DatasetLoader:
     @staticmethod
-    def load_aggregated_dataset(file_path: str, verbose: bool = False) -> List[Dict]:
+    def load_cleaned_dataset(file_path: str) -> List[Dict]:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
@@ -45,6 +50,11 @@ class DatasetLoader:
 
             dataset.append(cleaned_entry)
         
+        return dataset
+
+    @staticmethod
+    def load_aggregated_dataset(file_path: str, verbose: bool = False) -> List[Dict]:
+        dataset = DatasetLoader.load_cleaned_dataset(file_path)
         train_set, val_set, test_set = DatasetLoader.balanced_split(dataset)
         if verbose:
             print(f"Loaded {len(dataset)} entries from {file_path}")
@@ -60,6 +70,96 @@ class DatasetLoader:
             DatasetLoader.get_label_distribution(test_set)
 
         return train_set, val_set, test_set
+
+    @staticmethod
+    def load_human_majority_labels(dataset_name: str) -> Dict[str, int]:
+        """Reproduce the majority-vote labels built in human/ann_analysis.ipynb."""
+        settings = HUMAN_ANNOTATION_SETTINGS
+        accepted_labels = set(settings['label_mapping'])
+        annotator_frames = []
+        invalid_ids = set()
+
+        for annotator in settings['annotators']:
+            annotation_path = settings['directory'] / f"{annotator}.xlsx"
+            frame = pd.read_excel(annotation_path, sheet_name=dataset_name)
+            frame = frame.rename(columns={settings['label_column']: 'human_label'})
+
+            required_columns = {'unique_id', 'human_label'}
+            missing_columns = required_columns.difference(frame.columns)
+            if missing_columns:
+                raise ValueError(
+                    f"Missing columns {sorted(missing_columns)} in {annotation_path} "
+                    f"(sheet {dataset_name})."
+                )
+            if frame['unique_id'].duplicated().any():
+                raise ValueError(
+                    f"Duplicate unique_id values in {annotation_path} "
+                    f"(sheet {dataset_name})."
+                )
+
+            frame['unique_id'] = frame['unique_id'].astype(str)
+            invalid_ids.update(
+                frame.loc[
+                    ~frame['human_label'].isin(accepted_labels), 'unique_id'
+                ].tolist()
+            )
+            annotator_frames.append(frame[['unique_id', 'human_label']])
+
+        common_ids = set(annotator_frames[0]['unique_id'])
+        for frame in annotator_frames[1:]:
+            common_ids.intersection_update(frame['unique_id'])
+        valid_ids = sorted(common_ids.difference(invalid_ids))
+
+        labels = {}
+        for unique_id in valid_ids:
+            votes = [
+                frame.loc[frame['unique_id'] == unique_id, 'human_label'].iloc[0]
+                for frame in annotator_frames
+            ]
+            positive_votes = sum(label == 'triggering' for label in votes)
+            labels[unique_id] = int(positive_votes >= (len(votes) // 2 + 1))
+
+        return labels
+
+    @staticmethod
+    def load_human_annotated_ids(dataset_name: str) -> set[str]:
+        """Return every annotated ID, including rows with invalid/missing labels."""
+        settings = HUMAN_ANNOTATION_SETTINGS
+        annotated_ids = set()
+
+        for annotator in settings['annotators']:
+            annotation_path = settings['directory'] / f"{annotator}.xlsx"
+            frame = pd.read_excel(
+                annotation_path,
+                sheet_name=dataset_name,
+                usecols=['unique_id'],
+            )
+            annotated_ids.update(frame['unique_id'].dropna().astype(str))
+
+        return annotated_ids
+
+    @staticmethod
+    def build_human_evaluation_set(
+        dataset: List[Dict], dataset_name: str
+    ) -> List[Dict]:
+        majority_labels = DatasetLoader.load_human_majority_labels(dataset_name)
+        entries_by_id = {str(entry['unique_id']): entry for entry in dataset}
+        missing_ids = sorted(set(majority_labels).difference(entries_by_id))
+        if missing_ids:
+            print(
+                f"Warning: excluding {len(missing_ids)} human-annotated IDs "
+                f"that are absent from the redundancy-filtered {dataset_name} "
+                f"dataset; examples: {missing_ids[:5]}"
+            )
+
+        evaluation_set = []
+        for unique_id, human_label in majority_labels.items():
+            if unique_id not in entries_by_id:
+                continue
+            entry = dict(entries_by_id[unique_id])
+            entry['human_majority_label'] = human_label
+            evaluation_set.append(entry)
+        return evaluation_set
 
     @staticmethod
     def balanced_split(dataset: List[Dict]):

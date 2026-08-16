@@ -14,13 +14,28 @@ def main():
         dataset_path = DATASETS[dataset_name]['path']
 
         print("\nSplitting dataset into train, validation, and test sets...")
-        train_set, val_set, test_set  = DatasetLoader.load_aggregated_dataset(dataset_path, verbose=False)
+        all_entries = DatasetLoader.load_cleaned_dataset(dataset_path)
+        human_annotated_ids = DatasetLoader.load_human_annotated_ids(
+            dataset_name
+        )
+        non_human_entries = [
+            entry
+            for entry in all_entries
+            if str(entry['unique_id']) not in human_annotated_ids
+        ]
+        train_set, val_set, test_set = DatasetLoader.balanced_split(
+            non_human_entries
+        )
+        human_test_set = DatasetLoader.build_human_evaluation_set(
+            all_entries, dataset_name
+        )
 
         dataset = {
             'name': dataset_name,
             'train': train_set,
             'val': val_set,
-            'test': test_set
+            'test': test_set,
+            'human_test': human_test_set,
         }
 
         # ========================================
@@ -89,6 +104,11 @@ def main():
                 fine_tuned_model_path = encoder.train(input_type='context_reply', force_retrain=False)
                 print("\nGenerating predictions after fine-tuning with context_reply...")
                 encoder.predict(input_type='context_reply', fine_tuned_model_path=fine_tuned_model_path)
+                encoder.predict(
+                    input_type='context_reply',
+                    fine_tuned_model_path=fine_tuned_model_path,
+                    evaluation_split='human_test',
+                )
 
                 # ========================================
                 # Fine-tuning with context (single-turn)
@@ -97,6 +117,11 @@ def main():
                 fine_tuned_model_path = encoder.train(input_type='last_u1_message', force_retrain=False)
                 print("\nGenerating predictions after fine-tuning with last message of u1...")
                 encoder.predict(input_type='last_u1_message', fine_tuned_model_path=fine_tuned_model_path)
+                encoder.predict(
+                    input_type='last_u1_message',
+                    fine_tuned_model_path=fine_tuned_model_path,
+                    evaluation_split='human_test',
+                )
 
                 # ========================================
                 # Fine-tuning with conversation (multi-turn)
@@ -105,6 +130,11 @@ def main():
                 fine_tuned_model_path = encoder.train(input_type='conversation', force_retrain=False)
                 print("\nGenerating predictions after fine-tuning with conversation...")
                 encoder.predict(input_type='conversation', fine_tuned_model_path=fine_tuned_model_path)
+                encoder.predict(
+                    input_type='conversation',
+                    fine_tuned_model_path=fine_tuned_model_path,
+                    evaluation_split='human_test',
+                )
 
 if __name__ == "__main__":
     main()

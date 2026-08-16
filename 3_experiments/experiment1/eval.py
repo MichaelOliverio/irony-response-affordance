@@ -1,328 +1,290 @@
-import pandas as pd
-from evaluate import load
-from datetime import datetime
+"""Evaluate Experiment 1 predictions against dataset and human references."""
+
 from pathlib import Path
 
+import pandas as pd
+from sklearn.metrics import (
+    accuracy_score,
+    f1_score,
+    precision_score,
+    recall_score,
+)
 
-def parse_file_info(file_path, dataset_name):
-    """Estrae informazioni dal nome del file."""
-    input_type = file_path.split(f"_{dataset_name}_")[1].split(".csv")[0]
-    
-    if "zero_shot" in file_path:
-        prompting_method = "Zero-Shot"
-    elif "chain_of_thought" in file_path:
-        prompting_method = "Chain-of-Thought"
-    elif "fine_tuning" in file_path:
-        prompting_method = "Fine-Tuning"
+
+EXPERIMENT_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = EXPERIMENT_DIR / "output"
+ENCODER_SPLIT_PROTOCOL = "human_heldout_f1"
+
+DATASET_LABELS = {
+    "CSC": "CANTRIP CSC",
+    "MultiPICo": "CANTRIP MP",
+}
+
+MODEL_LABELS = {
+    "Qwen_Qwen3.5-9B": "Qwen-3.5-9B",
+    #"mistralai_Ministral-3-8B-Instruct-2512": "Ministral-3-8B",
+    #"google_gemma-4-E4B-it": "Gemma-4-E4B",
+    #"FacebookAI_xlm-roberta-large": "XLM-RoBERTa-large",
+    #"EuroBERT_EuroBERT-210m": "EuroBERT-210M",
+    #"EuroBERT_EuroBERT-610m": "EuroBERT-610M",
+}
+
+INPUT_TYPES = (
+    "context_reply",
+    "last_u1_message",
+    "conversation",
+)
+
+
+def parse_prediction_info(file_path: Path) -> dict:
+    """Extract model, dataset, input, method, and reference from a path."""
+    stem = file_path.stem
+    dataset_name = next(
+        (
+            dataset
+            for dataset in DATASET_LABELS
+            if f"_{dataset}_" in stem
+        ),
+        None,
+    )
+    if dataset_name is None:
+        raise ValueError("dataset name not found in filename")
+
+    input_type = next(
+        (input_name for input_name in INPUT_TYPES if input_name in stem),
+        None,
+    )
+    if input_type is None:
+        raise ValueError("input type not found in filename")
+
+    if stem.startswith("zero_shot_"):
+        technique = "Zero-Shot"
+        technique_short = "ZS"
+    elif stem.startswith("chain_of_thought_"):
+        technique = "Chain-of-Thought"
+        technique_short = "CT"
+    elif stem.startswith("fine_tuning_"):
+        technique = "Fine-Tuning"
+        technique_short = "FT"
     else:
-        prompting_method = "Unknown"
-    
-    return input_type, prompting_method
+        raise ValueError("prompting/training method not found in filename")
 
+    relative_parts = file_path.relative_to(OUTPUT_DIR).parts
+    if len(relative_parts) < 3:
+        raise ValueError("unexpected output path")
+    model_name = relative_parts[1]
 
-def compute_metrics(df, accuracy_metric, precision_metric, recall_metric, f1_metric):
-    """Calcola tutte le metriche per un dataset."""
-    df["model_answer"] = df["model_answer"].astype(int)
-    
-    accuracy = accuracy_metric.compute(
-        predictions=df["model_answer"], 
-        references=df["label"]
-    )["accuracy"]
-    
-    precision = precision_metric.compute(
-        predictions=df["model_answer"], 
-        references=df["label"], 
-        pos_label=1,
-        average="binary"
-    )["precision"]
-    
-    recall = recall_metric.compute(
-        predictions=df["model_answer"], 
-        references=df["label"], 
-        pos_label=1,
-        average="binary"
-    )["recall"]
-    
-    f1 = f1_metric.compute(
-        predictions=df["model_answer"], 
-        references=df["label"], 
-        pos_label=1,
-        average="binary"
-    )["f1"]
-    
-    # Statistiche aggiuntive
-    total = len(df)
-    correct = (df["model_answer"] == df["label"]).sum()
-    label_0 = (df["label"] == 0).sum()
-    label_1 = (df["label"] == 1).sum()
-    pred_0 = (df["model_answer"] == 0).sum()
-    pred_1 = (df["model_answer"] == 1).sum()
-    
+    is_human_cohort = stem.endswith("_human_majority")
     return {
-        "accuracy": accuracy,
-        "precision": precision,
-        "recall": recall,
-        "f1": f1,
-        "total": total,
-        "correct": correct,
-        "label_0": label_0,
-        "label_1": label_1,
-        "pred_0": pred_0,
-        "pred_1": pred_1
+        "dataset": dataset_name,
+        "dataset_label": DATASET_LABELS[dataset_name],
+        "model": model_name,
+        "model_label": MODEL_LABELS.get(model_name, model_name),
+        "input_type": input_type,
+        "technique": technique,
+        "technique_short": technique_short,
+        "cohort": (
+            "Human held-out"
+            if is_human_cohort
+            else "Standard test"
+        ),
     }
 
 
-def print_console_results(results_data):
-    """Stampa i risultati in console in formato leggibile."""
-    for dataset_name, dataset_results in results_data.items():
-        print("\n" + "=" * 100)
-        print(f"DATASET: {dataset_name}".center(100))
-        print("=" * 100)
-        
-        for model_name, model_results in dataset_results.items():
-            print(f"\n{'MODEL: ' + model_name}".center(100, '-'))
-            
-            # Stampa header della tabella
-            print(f"\n{'Technique':<20} {'Input Type':<20} {'Acc':<8} {'Prec':<8} {'Rec':<8} {'F1':<8} {'Samples':<10}")
-            print("-" * 100)
-            
-            for result in model_results:
-                print(f"{result['technique']:<20} {result['input_type']:<20} "
-                      f"{result['metrics']['accuracy']:<8.4f} "
-                      f"{result['metrics']['precision']:<8.4f} "
-                      f"{result['metrics']['recall']:<8.4f} "
-                      f"{result['metrics']['f1']:<8.4f} "
-                      f"{result['metrics']['total']:<10}")
+def compute_metrics(frame: pd.DataFrame, reference_column: str) -> dict:
+    required_columns = {"model_answer", reference_column}
+    missing_columns = required_columns.difference(frame.columns)
+    if missing_columns:
+        raise ValueError(f"missing columns: {sorted(missing_columns)}")
+
+    evaluated = frame.dropna(subset=list(required_columns)).copy()
+    evaluated["model_answer"] = evaluated["model_answer"].astype(int)
+    evaluated[reference_column] = evaluated[reference_column].astype(int)
+
+    if evaluated.empty:
+        raise ValueError("no rows with both prediction and reference")
+
+    predictions = evaluated["model_answer"]
+    references = evaluated[reference_column]
+    return {
+        "accuracy": accuracy_score(references, predictions),
+        "precision": precision_score(
+            references, predictions, pos_label=1, zero_division=0
+        ),
+        "recall": recall_score(
+            references, predictions, pos_label=1, zero_division=0
+        ),
+        "f1": f1_score(
+            references, predictions, pos_label=1, zero_division=0
+        ),
+        "f1_macro": f1_score(
+            references, predictions, average="macro", zero_division=0
+        ),
+        "total": len(evaluated),
+        "correct": int((predictions == references).sum()),
+        "label_0": int((references == 0).sum()),
+        "label_1": int((references == 1).sum()),
+        "pred_0": int((predictions == 0).sum()),
+        "pred_1": int((predictions == 1).sum()),
+    }
 
 
-def generate_summary_csv(results_data, output_path="./output/summary_results.csv"):
-    """Genera un CSV con i risultati in formato tabellare come richiesto."""
-    
-    # Mapping degli input types
-    input_type_mapping = {
-        'context_reply': 'context_reply', #'C0 + MU2',
-        'last_u1_message': 'last_u1_message', #'MU1',
-        'conversation': 'conversation' #'T0 + T1 + MU1'
-    }
-    
-    # Mapping dei modelli con short names
-    model_mapping = {
-        'Qwen_Qwen2.5-7B-Instruct': 'Qwen-2.5-7B',
-        'mistralai_Ministral-8B-Instruct-2410': 'Ministral-8B',
-        'google_gemma-2-9b-it': 'Gemma-2-9b',
-        'FacebookAI_xlm-roberta-large': 'XLM-RoBERTa-large',
-        'EuroBERT_EuroBERT-210m': 'EuroBERT-210M'
-    }
-    
-    # Dataset mapping
-    dataset_mapping = {
-        'CSC': 'CANTRIP CSC',
-        'MultiPICo': 'CANTRIP MP'
-    }
-    
-    # Struttura per raccogliere i dati
+def discover_and_evaluate() -> pd.DataFrame:
     rows = []
-    
-    for dataset_name, dataset_results in results_data.items():
-        dataset_label = dataset_mapping.get(dataset_name, dataset_name)
-        
-        # Per ogni tipo di input
-        for input_key, input_label in input_type_mapping.items():
-            row = {
-                'Dataset': dataset_label,
-                'Input': input_label
-            }
-            
-            # Per ogni modello
-            for model_full_name, model_short_name in model_mapping.items():
-                if model_full_name not in dataset_results:
-                    continue
-                
-                model_results = dataset_results[model_full_name]
-                
-                # Trova i risultati per questo input type
-                for result in model_results:
-                    if result['input_type'] == input_key:
-                        technique = result['technique']
-                        f1_score = result['metrics']['f1']
-                        
-                        # Crea la colonna appropriata
-                        if technique == 'Zero-Shot':
-                            col_name = f"{model_short_name}_ZS"
-                        elif technique == 'Chain-of-Thought':
-                            col_name = f"{model_short_name}_CT"
-                        elif technique == 'Fine-Tuning':
-                            col_name = f"{model_short_name}_FT"
-                        else:
-                            continue
-                        
-                        row[col_name] = round(f1_score, 2)
-            
-            if len(row) > 2:  # Se ci sono risultati oltre Dataset e Input
-                rows.append(row)
-    
-    # Crea DataFrame e riordina le colonne
-    df = pd.DataFrame(rows)
-    
-    # Definisci l'ordine delle colonne
-    column_order = ['Dataset', 'Input']
-    for model in ['Qwen-2.5-7B', 'Ministral-8B', 'Gemma-2-9b', 'XLM-RoBERTa-large', 'EuroBERT-210M']:
-        for technique in ['ZS', 'CT', 'FT']:
-            col = f"{model}_{technique}"
-            if col in df.columns:
-                column_order.append(col)
-    
-    # Riordina le colonne
-    df = df[column_order]
-    
-    # Ordina per Dataset e Input
-    df = df.sort_values(['Dataset', 'Input'])
-    
-    # Salva il CSV
-    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(output_path, index=False)
-    
-    print(f"\n✓ Summary CSV saved to: {output_path}")
-    
-    return df
+    skipped = []
 
-def main():
-    # Carica le metriche da Hugging Face Evaluate
-    print("Loading evaluation metrics...")
-    accuracy_metric = load("accuracy")
-    precision_metric = load("precision")
-    recall_metric = load("recall")
-    f1_metric = load("f1")
+    prediction_roots = [
+        OUTPUT_DIR / "decoders",
+        OUTPUT_DIR / "encoders",
+    ]
+    prediction_files = [
+        file_path
+        for root in prediction_roots
+        if root.exists()
+        for file_path in root.rglob("*.csv")
+    ]
 
-    # File da valutare
-    files = {
-        'MultiPICo': { 
-            #"FacebookAI_xlm-roberta-base": [
-            #    "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/context/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_last_u1_message.csv",
-            #    "./output/encoders/FacebookAI_xlm-roberta-base/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-base_MultiPICo_conversation.csv",
-            #],
-            "FacebookAI_xlm-roberta-large": [
-                "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/context_reply/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_context_reply.csv",
-                "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/last_u1_message/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_last_u1_message.csv",
-                "./output/encoders/FacebookAI_xlm-roberta-large/MultiPICo/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_MultiPICo_conversation.csv",
-            ],
-            "EuroBERT_EuroBERT-210m": [
-                "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/context_reply/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_context_reply.csv",
-                "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/last_u1_message/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_last_u1_message.csv",
-                "./output/encoders/EuroBERT_EuroBERT-210m/MultiPICo/conversation/predictions/fine_tuning_EuroBERT_EuroBERT-210m_MultiPICo_conversation.csv",
-            ],
-            "google_gemma-2-9b-it": [
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_context_reply.csv",
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_last_u1_message.csv",
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_context_reply.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_last_u1_message.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-            ],
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context_reply.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_last_u1_message.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_context_reply.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_last_u1_message.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                #"./output/decoders/Qwen_Qwen2.5-7B-Instruct/fine_tuned/fine_tuning_Qwen_Qwen2.5-7B-Instruct_MultiPICo_last_u1_message.csv",
-                #"./output/decoders/Qwen_Qwen2.5-7B-Instruct/fine_tuned/fine_tuning_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-            ],
-            "mistralai_Ministral-8B-Instruct-2410": [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_MultiPICo_context_reply.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_MultiPICo_last_u1_message.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_context_reply.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_last_u1_message.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
+    for file_path in sorted(prediction_files):
+        try:
+            frame = pd.read_csv(file_path)
+            if "model_answer" not in frame.columns:
+                continue
+            relative_parts = file_path.relative_to(OUTPUT_DIR).parts
+            if (
+                relative_parts[0] == "encoders"
+                and ENCODER_SPLIT_PROTOCOL not in relative_parts
+            ):
+                continue
+            info = parse_prediction_info(file_path)
+            if info["model"] not in MODEL_LABELS:
+                continue
+            reference_specs = (
+                [("Human majority vote", "human_majority_label")]
+                if info["cohort"] == "Human held-out"
+                else [("Dataset ground truth", "label")]
+            )
 
-            ],
-        },
-        'CSC': {
-            "EuroBERT_EuroBERT-210m": [
-                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/context_reply/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_context_reply.csv",
-                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/last_u1_message/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_last_u1_message.csv",
-                #"./output/encoders/EuroBERT_EuroBERT-210m/CSC/context/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_context.csv",
-                "./output/encoders/EuroBERT_EuroBERT-210m/CSC/conversation/predictions/fine_tuning_EuroBERT_EuroBERT-210m_CSC_conversation.csv",
-            ],
-            "FacebookAI_xlm-roberta-large": [
-                "./output/encoders/FacebookAI_xlm-roberta-large/CSC/context_reply/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_context_reply.csv",
-                "./output/encoders/FacebookAI_xlm-roberta-large/CSC/last_u1_message/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_last_u1_message.csv",
-                # "./output/encoders/FacebookAI_xlm-roberta-large/CSC/context/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_context.csv",
-                "./output/encoders/FacebookAI_xlm-roberta-large/CSC/conversation/predictions/fine_tuning_FacebookAI_xlm-roberta-large_CSC_conversation.csv",
-            ],
-            "google_gemma-2-9b-it": [
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_context_reply.csv",
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_last_u1_message.csv",
-                #"./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_context.csv",
-                "./output/decoders/google_gemma-2-9b-it/zero_shot_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_context_reply.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_last_u1_message.csv",
-                #"./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_context.csv",
-                "./output/decoders/google_gemma-2-9b-it/chain_of_thought_google_gemma-2-9b-it_CSC_conversation.csv",
-            ],
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_context_reply.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_last_u1_message.csv",
-                #"./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_context.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/zero_shot_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_CSC_context_reply.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_CSC_last_u1_message.csv",
-                #"./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_CSC_context.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/chain_of_thought_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-            ],
-            "mistralai_Ministral-8B-Instruct-2410": [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_CSC_context_reply.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_CSC_last_u1_message.csv",
-                #"./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_CSC_context.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/zero_shot_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_CSC_context_reply.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_CSC_last_u1_message.csv",
-                #"./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_CSC_context.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/chain_of_thought_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-            ],
+            for reference_name, reference_column in reference_specs:
+                metrics = compute_metrics(frame, reference_column)
+                rows.append(
+                    {
+                        **info,
+                        "reference": reference_name,
+                        **metrics,
+                        "file_path": str(file_path),
+                    }
+                )
+        except (OSError, ValueError, pd.errors.ParserError) as error:
+            skipped.append((file_path, str(error)))
+
+    if skipped:
+        print("\nSkipped prediction files:")
+        for file_path, reason in skipped:
+            print(f"  - {file_path}: {reason}")
+
+    if not rows:
+        raise FileNotFoundError(
+            f"No valid prediction CSV files found under {OUTPUT_DIR}"
+        )
+    return pd.DataFrame(rows)
+
+
+def generate_summary_csv(results: pd.DataFrame) -> pd.DataFrame:
+    summary_source = results.copy()
+    summary_source["model_technique"] = (
+        summary_source["model_label"]
+        + "_"
+        + summary_source["technique_short"]
+    )
+    summary = summary_source.pivot_table(
+        index=["cohort", "reference", "dataset_label", "input_type"],
+        columns="model_technique",
+        values="f1",
+        aggfunc="first",
+    ).reset_index()
+    summary.columns.name = None
+    summary = summary.rename(
+        columns={
+            "cohort": "Cohort",
+            "reference": "Reference",
+            "dataset_label": "Dataset",
+            "input_type": "Input",
         }
-    }
+    )
+    summary.to_csv(OUTPUT_DIR / "summary_results.csv", index=False)
 
-    # Struttura per memorizzare tutti i risultati
-    results_data = {}
-    
-    print("\nEvaluating models...\n")
+    macro_summary = summary_source.pivot_table(
+        index=["cohort", "reference", "dataset_label", "input_type"],
+        columns="model_technique",
+        values="f1_macro",
+        aggfunc="first",
+    ).reset_index()
+    macro_summary.columns.name = None
+    macro_summary = macro_summary.rename(
+        columns={
+            "cohort": "Cohort",
+            "reference": "Reference",
+            "dataset_label": "Dataset",
+            "input_type": "Input",
+        }
+    )
+    macro_summary.to_csv(
+        OUTPUT_DIR / "summary_results_macro_f1.csv",
+        index=False,
+    )
+    return summary
 
-    for dataset_name, dataset_files in files.items():
-        results_data[dataset_name] = {}
-        
-        for model_name, file_paths in dataset_files.items():
-            results_data[dataset_name][model_name] = []
-            
-            for file_path in file_paths:
-                # Parsing delle informazioni dal file
-                input_type, prompting_method = parse_file_info(file_path, dataset_name)
-                
-                # Carica e valuta
-                df = pd.read_csv(file_path)
-                metrics = compute_metrics(df, accuracy_metric, precision_metric, recall_metric, f1_metric)
-                
-                # Salva i risultati
-                results_data[dataset_name][model_name].append({
-                    'file_path': file_path,
-                    'input_type': input_type,
-                    'technique': prompting_method,
-                    'metrics': metrics
-                })
-                
-                print(f"✓ Evaluated: {dataset_name} - {model_name} - {prompting_method} - {input_type}")
-    
-    # Stampa risultati in console
-    print_console_results(results_data)
-    
-    # Genera il CSV di riepilogo
-    summary_df = generate_summary_csv(results_data, "./output/summary_results.csv")
-    
-    print(f"\n" + "=" * 100)
-    print(f"✓ Report generated successfully!")
-    print("=" * 100)
+
+def print_console_results(results: pd.DataFrame) -> None:
+    display_columns = [
+        "cohort",
+        "reference",
+        "dataset_label",
+        "model_label",
+        "technique",
+        "input_type",
+        "accuracy",
+        "precision",
+        "recall",
+        "f1",
+        "f1_macro",
+        "total",
+    ]
+    display = results[display_columns].sort_values(
+        [
+            "cohort",
+            "reference",
+            "dataset_label",
+            "model_label",
+            "technique",
+            "input_type",
+        ]
+    )
+    print("\n" + display.to_string(index=False, float_format=lambda value: f"{value:.4f}"))
+
+
+def main() -> None:
+    results = discover_and_evaluate()
+    results = results.sort_values(
+        [
+            "cohort",
+            "reference",
+            "dataset_label",
+            "model_label",
+            "technique",
+            "input_type",
+        ]
+    )
+    results.to_csv(OUTPUT_DIR / "evaluation_results.csv", index=False)
+    summary = generate_summary_csv(results)
+    print_console_results(results)
+    print(f"\nDetailed results: {OUTPUT_DIR / 'evaluation_results.csv'}")
+    print(f"F1 summary: {OUTPUT_DIR / 'summary_results.csv'}")
+    print(
+        "Macro-F1 summary: "
+        f"{OUTPUT_DIR / 'summary_results_macro_f1.csv'}"
+    )
+    print(f"Summary rows: {len(summary)}")
 
 
 if __name__ == "__main__":

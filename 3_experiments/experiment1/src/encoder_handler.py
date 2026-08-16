@@ -19,7 +19,7 @@ from sklearn.metrics import classification_report
 from tqdm import tqdm
 from evaluate import load
 
-from src.config import ENCODER_SETTINGS, RANDOM_SEED
+from src.config import DATASET_SPLIT_RATIOS, ENCODER_SETTINGS, RANDOM_SEED
 
 class EncoderHandler:
     """
@@ -44,9 +44,13 @@ class EncoderHandler:
         self.model_name = model_name
         self.dataset = dataset
         self.dataset_name = dataset['name']
+        # Versione distinta per non riutilizzare checkpoint selezionati
+        # in precedenza tramite macro-F1.
+        self.split_protocol = 'human_heldout_f1'
         self.train_split = dataset['train']
         self.val_split = dataset['val']
         self.test_split = dataset['test']
+        self.human_test_split = dataset.get('human_test', [])
         
         # Carica parametri dal config
         self.training_params = ENCODER_SETTINGS['training_params']
@@ -81,13 +85,21 @@ class EncoderHandler:
         
         # Configurazione path
         clean_model_name = self.model_name.replace('/', '_')
-        model_output_dir = self.output_dir / clean_model_name / self.dataset_name / input_type
+        model_output_dir = (
+            self.output_dir
+            / clean_model_name
+            / self.dataset_name
+            / self.split_protocol
+            / input_type
+        )
         
+        final_model_path = model_output_dir / "final_model"
+
         # Verifica se il modello esiste già
-        if model_output_dir.exists() and not force_retrain:
-            print(f"✓ Model already trained at: {model_output_dir}")
+        if final_model_path.exists() and not force_retrain:
+            print(f"✓ Model already trained at: {final_model_path}")
             print("Use force_retrain=True to retrain from scratch")
-            return str(model_output_dir)
+            return str(final_model_path)
         
         # Se force_retrain, elimina il modello esistente
         if force_retrain and model_output_dir.exists():
@@ -96,6 +108,21 @@ class EncoderHandler:
             print(f"✓ Removed existing model at {model_output_dir}")
         
         model_output_dir.mkdir(parents=True, exist_ok=True)
+
+        global_batch_size = self.training_params['batch_size']
+        distributed_world_size = int(os.environ.get('WORLD_SIZE', '1'))
+        training_device_count = (
+            distributed_world_size
+            if distributed_world_size > 1
+            else max(torch.cuda.device_count(), 1)
+        )
+        if global_batch_size % training_device_count != 0:
+            raise ValueError('Global batch size must be divisible by training device count')
+        per_device_batch_size = global_batch_size // training_device_count
+        print(
+            f'Batch size: {global_batch_size} global = '
+            f'{per_device_batch_size} per device x {training_device_count} devices'
+        )
         
         # Salva la configurazione degli hyperparametri
         config_file = model_output_dir / "training_config.json"
@@ -103,23 +130,42 @@ class EncoderHandler:
             json.dump({
                 "model_name": self.model_name,
                 "dataset_name": self.dataset_name,
+                "split_protocol": self.split_protocol,
+                "split_ratios": {
+                    "train": DATASET_SPLIT_RATIOS['train'],
+                    "validation": DATASET_SPLIT_RATIOS['val'],
+                    "test": DATASET_SPLIT_RATIOS['test'],
+                },
+                "split_sizes": {
+                    "train": len(self.train_split),
+                    "validation": len(self.val_split),
+                    "test": len(self.test_split),
+                    "human_test": len(self.human_test_split),
+                },
                 "input_type": input_type,
                 "num_train_epochs": self.training_params['num_train_epochs'],
-                "batch_size": self.training_params['batch_size'],
+                "global_batch_size": global_batch_size,
+                "per_device_batch_size": per_device_batch_size,
+                "training_device_count": training_device_count,
                 "learning_rate": self.training_params['learning_rate'],
                 "weight_decay": self.training_params['weight_decay'],
                 "warmup_ratio": self.training_params['warmup_ratio'],
                 "max_length": self.training_params['max_length'],
                 "gamma": self.training_params['focal_loss']['gamma'],
                 "alpha": self.training_params['focal_loss']['alpha'],
+                "metric_for_best_model": self.training_params[
+                    'training_args'
+                ]['metric_for_best_model'],
                 "seed": RANDOM_SEED
             }, fo, indent=4)
         
+        # Imposta il seed prima di inizializzare la testa di classificazione.
+        set_seed(RANDOM_SEED)
+
         # Carica modello e tokenizer
         self._load_model()
         
         # Prepara i dataset
-        set_seed(RANDOM_SEED)
         train_dataset = self._prepare_dataset(self.train_split, input_type)
         val_dataset = self._prepare_dataset(self.val_split, input_type)
         
@@ -152,22 +198,23 @@ class EncoderHandler:
         # Training arguments
         training_args = TrainingArguments(
             seed=RANDOM_SEED,
+            data_seed=RANDOM_SEED,
             output_dir=str(model_output_dir),
             num_train_epochs=self.training_params['num_train_epochs'],
             learning_rate=self.training_params['learning_rate'],
-            per_device_train_batch_size=self.training_params['batch_size'],
-            per_device_eval_batch_size=self.training_params['batch_size'],
+            per_device_train_batch_size=per_device_batch_size,
+            per_device_eval_batch_size=per_device_batch_size,
             save_strategy=self.training_params['training_args']['save_strategy'],
             eval_strategy=self.training_params['training_args']['eval_strategy'],
             logging_strategy=self.training_params['training_args']['logging_strategy'],
             logging_steps=self.training_params['logging_steps'],
-            overwrite_output_dir=self.training_params['training_args']['overwrite_output_dir'],
             report_to=self.training_params['training_args']['report_to'],
             load_best_model_at_end=self.training_params['training_args']['load_best_model_at_end'],
             metric_for_best_model=self.training_params['training_args']['metric_for_best_model'],
             greater_is_better=self.training_params['training_args']['greater_is_better'],
             weight_decay=self.training_params['weight_decay'],
-            warmup_ratio=self.training_params['warmup_ratio']
+            # Transformers 5 interprets a float in [0, 1) as a warmup ratio.
+            warmup_steps=self.training_params['warmup_ratio']
         )
         
         # Trainer con Focal Loss
@@ -192,7 +239,6 @@ class EncoderHandler:
         trainer.train()
         
         # Salva il modello finale
-        final_model_path = model_output_dir / "final_model"
         trainer.save_model(str(final_model_path))
         self.tokenizer.save_pretrained(str(final_model_path))
         print(f"\n✓ Model saved to: {final_model_path}")
@@ -212,36 +258,67 @@ class EncoderHandler:
         
         return str(final_model_path)
     
-    def predict(self, input_type: str, fine_tuned_model_path: Optional[str] = None):
+    def predict(
+        self,
+        input_type: str,
+        fine_tuned_model_path: Optional[str] = None,
+        evaluation_split: str = 'test',
+    ):
         """
         Esegue predizioni sul test set.
         
         Args:
             input_type: tipo di input ('last_u1_message', 'context_reply' o 'conversation')
             fine_tuned_model_path: percorso del modello fine-tunato (opzionale, auto-detected)
+            evaluation_split: 'test' oppure 'human_test'
         """
         if input_type not in self.INPUT_TYPES:
             raise ValueError(f"input_type must be one of {self.INPUT_TYPES}, got {input_type}")
+        if evaluation_split not in {'test', 'human_test'}:
+            raise ValueError(
+                "evaluation_split must be 'test' or 'human_test', "
+                f"got {evaluation_split}"
+            )
         
         # Auto-detect model path se non specificato
         if fine_tuned_model_path is None:
             clean_model_name = self.model_name.replace('/', '_')
             fine_tuned_model_path = str(
-                self.output_dir / clean_model_name / self.dataset_name / input_type / "final_model"
+                self.output_dir
+                / clean_model_name
+                / self.dataset_name
+                / self.split_protocol
+                / input_type
+                / "final_model"
             )
         
         print(f"\n{'='*60}")
         print(f"Running predictions for {self.model_name}")
         print(f"Dataset: {self.dataset_name}")
         print(f"Input type: {input_type}")
+        print(f"Evaluation split: {evaluation_split}")
         print(f"Model path: {fine_tuned_model_path}")
         print(f"{'='*60}\n")
         
         # Carica il modello fine-tunato
         self._load_fine_tuned_model(fine_tuned_model_path)
         
-        # Prepara il test dataset
-        test_dataset, test_ids = self._prepare_dataset(self.test_split, input_type, return_ids=True)
+        evaluation_entries = (
+            self.test_split
+            if evaluation_split == 'test'
+            else self.human_test_split
+        )
+        reference_label_field = (
+            'human_majority_label'
+            if evaluation_split == 'human_test'
+            else 'label'
+        )
+        test_dataset, test_ids = self._prepare_dataset(
+            evaluation_entries,
+            input_type,
+            return_ids=True,
+            label_field=reference_label_field,
+        )
         
         print(f"Test dataset size: {len(test_dataset)}")
         
@@ -257,28 +334,56 @@ class EncoderHandler:
         
         # Salva risultati
         clean_model_name = self.model_name.replace('/', '_')
-        prediction_dir = self.output_dir / clean_model_name / self.dataset_name / input_type / "predictions"
+        prediction_dir = (
+            self.output_dir
+            / clean_model_name
+            / self.dataset_name
+            / self.split_protocol
+            / input_type
+            / "predictions"
+        )
         prediction_dir.mkdir(parents=True, exist_ok=True)
         
-        output_file = prediction_dir / f"fine_tuning_{clean_model_name}_{self.dataset_name}_{input_type}.csv"
+        filename_suffix = (
+            '' if evaluation_split == 'test' else '_human_majority'
+        )
+        output_file = prediction_dir / (
+            f"fine_tuning_{clean_model_name}_{self.dataset_name}_"
+            f"{input_type}{filename_suffix}.csv"
+        )
         
         with open(output_file, "w", newline='', encoding='utf-8') as fo:
-            writer = csv.DictWriter(fo, fieldnames=["unique_id", "model_answer", "label"])
+            fieldnames = ["unique_id", "model_answer", "label"]
+            if evaluation_split == 'human_test':
+                fieldnames.append("human_majority_label")
+            writer = csv.DictWriter(fo, fieldnames=fieldnames)
             writer.writeheader()
             
             pred_labels = np.argmax(predictions.predictions, axis=-1)
-            true_labels = predictions.label_ids
+            reference_labels = predictions.label_ids
             
-            for unique_id, pred_label, true_label in zip(test_ids, pred_labels, true_labels):
-                writer.writerow({
+            for index, (unique_id, pred_label) in enumerate(
+                zip(test_ids, pred_labels)
+            ):
+                row = {
                     "unique_id": unique_id,
                     "model_answer": int(pred_label),
-                    "label": int(true_label)
-                })
+                    "label": int(evaluation_entries[index]["label"])
+                }
+                if evaluation_split == 'human_test':
+                    row["human_majority_label"] = int(
+                        reference_labels[index]
+                    )
+                writer.writerow(row)
         
         # Stampa metriche
         print("\n" + "="*60)
-        print("Test Set Results:")
+        reference_name = (
+            'human majority ground truth'
+            if evaluation_split == 'human_test'
+            else 'dataset ground truth'
+        )
+        print(f"Test Set Results ({reference_name}):")
         print("="*60)
         metrics = predictions.metrics
         for key, value in metrics.items():
@@ -298,7 +403,13 @@ class EncoderHandler:
         # Cleanup
         self._destroy_model()
     
-    def _prepare_dataset(self, split: List[Dict], input_type: str, return_ids: bool = False):
+    def _prepare_dataset(
+        self,
+        split: List[Dict],
+        input_type: str,
+        return_ids: bool = False,
+        label_field: str = 'label',
+    ):
         """
         Prepara il dataset per training o inferenza.
         
@@ -306,6 +417,7 @@ class EncoderHandler:
             split: lista di entry del dataset
             input_type: 'last_u1_message', 'context_reply' o 'conversation'
             return_ids: se True, ritorna anche gli unique_id
+            label_field: campo da usare come ground truth
         """
         ids, texts, labels = [], [], []
         
@@ -326,9 +438,12 @@ class EncoderHandler:
                         raise ValueError("Dialogue format not recognized. Expected 'turns' key.")
             elif input_type == 'context_reply':
                 if self.dataset_name == 'MultiPICo':
-                    text = f"u1:{entry['post']}\nu2:{entry['post']}"
+                    text = f"u1: {entry['post']}\nu2: {entry['reply']}"
                 else:
-                    text = f"context:{entry['context']}\nu2:{entry['post']}"
+                    text = (
+                        f"description of the situation: {entry['context']}\n"
+                        f"u2: {entry['reply']}"
+                    )
             elif input_type == 'conversation':
                 # Multi-turn: usa l'intera conversazione
                 dialogue = entry['dialogue']
@@ -354,7 +469,12 @@ class EncoderHandler:
                 raise ValueError(f"input_type must be one of {self.INPUT_TYPES}, got {input_type}")
             
             texts.append(text)
-            labels.append(entry['label'])
+            if label_field not in entry:
+                raise KeyError(
+                    f"Missing reference field '{label_field}' for "
+                    f"entry {entry['unique_id']}"
+                )
+            labels.append(entry[label_field])
         
         # Crea dataset
         df = pd.DataFrame({"text": texts, "labels": labels})
@@ -398,12 +518,18 @@ class EncoderHandler:
         precision = precision_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["precision"]
         recall = recall_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["recall"]
         f1 = f1_metric.compute(predictions=preds, references=labels, pos_label=1, average="binary")["f1"]
+        f1_macro = f1_metric.compute(
+            predictions=preds,
+            references=labels,
+            average="macro",
+        )["f1"]
         
         return {
             "accuracy": accuracy,
             "precision": precision,
             "recall": recall,
-            "f1": f1
+            "f1": f1,
+            "f1_macro": f1_macro,
         }
     
     def _load_model(self):
@@ -411,15 +537,13 @@ class EncoderHandler:
         print(f"\nLoading model: {self.model_name}")
         
         self.tokenizer = AutoTokenizer.from_pretrained(
-            self.model_name, 
-            trust_remote_code=True
+            self.model_name
         )
         print(f"✓ Loaded tokenizer for {self.model_name}")
         
         self.model = AutoModelForSequenceClassification.from_pretrained(
             self.model_name, 
-            num_labels=2, 
-            trust_remote_code=True
+            num_labels=2
         )
         self.model.to(self.device)
         print(f"✓ Loaded model for sequence classification with 2 labels")
@@ -433,14 +557,12 @@ class EncoderHandler:
             raise FileNotFoundError(f"Model not found at {model_path}")
         
         self.tokenizer = AutoTokenizer.from_pretrained(
-            model_path, 
-            trust_remote_code=True
+            model_path
         )
         print(f"✓ Loaded tokenizer")
         
         self.model = AutoModelForSequenceClassification.from_pretrained(
-            model_path,
-            trust_remote_code=True
+            model_path
         )
         self.model.to(self.device)
         print(f"✓ Loaded fine-tuned model")
@@ -490,15 +612,34 @@ class CustomTrainer(Trainer):
         real_model = model.module if hasattr(model, "module") else model
         num_labels = real_model.config.num_labels
         
-        # Cross Entropy Loss con class weights
-        loss_fct = torch.nn.CrossEntropyLoss(
-            weight=torch.tensor(self.class_weights, device=logits.device)
+        flat_logits = logits.reshape(-1, num_labels)
+        flat_labels = labels.reshape(-1)
+
+        # Calcola CE e probabilita della classe corretta per ciascun esempio.
+        # Il fattore focal deve essere applicato prima della riduzione sul batch.
+        ce_loss = torch.nn.functional.cross_entropy(
+            flat_logits,
+            flat_labels,
+            reduction='none',
         )
-        
-        BCEloss = loss_fct(logits.view(-1, num_labels), labels.view(-1))
-        
-        # Focal Loss
-        pt = torch.exp(-BCEloss)
-        loss = self.alpha * (1 - pt) ** self.gamma * BCEloss
+        pt = torch.softmax(flat_logits, dim=-1).gather(
+            dim=1,
+            index=flat_labels.unsqueeze(1),
+        ).squeeze(1)
+
+        class_weights = torch.as_tensor(
+            self.class_weights,
+            dtype=logits.dtype,
+            device=logits.device,
+        )
+        sample_weights = class_weights[flat_labels]
+
+        focal_loss = (
+            self.alpha
+            * sample_weights
+            * (1.0 - pt).pow(self.gamma)
+            * ce_loss
+        )
+        loss = focal_loss.mean()
         
         return (loss, outputs) if return_outputs else loss

@@ -79,26 +79,26 @@ def main():
 
     files = {
         'MultiPICo': {
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/no_perspective_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+            "Qwen_Qwen3.5-9B": [
+                "./output/decoders/Qwen_Qwen3.5-9B/no_perspective_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
             ],
-            'mistralai_Ministral-8B-Instruct-2410': [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/no_perspective_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-            ],
-            'google_gemma-2-9b-it': [
-                "./output/decoders/google_gemma-2-9b-it/no_perspective_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-            ]
+            #'mistralai_Ministral-3-8B-Instruct-2512': [
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/no_perspective_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+            #],
+            #'google_gemma-4-E4B-it': [
+            #    "./output/decoders/google_gemma-4-E4B-it/no_perspective_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+            #]
         },
         'CSC': {
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/no_perspective_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+            "Qwen_Qwen3.5-9B": [
+                "./output/decoders/Qwen_Qwen3.5-9B/no_perspective_Qwen_Qwen3.5-9B_CSC_conversation.csv",
             ],
-            'mistralai_Ministral-8B-Instruct-2410': [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/no_perspective_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-            ],
-            'google_gemma-2-9b-it': [
-                "./output/decoders/google_gemma-2-9b-it/no_perspective_google_gemma-2-9b-it_CSC_conversation.csv",
-            ],
+            #'mistralai_Ministral-3-8B-Instruct-2512': [
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/no_perspective_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #],
+            #'google_gemma-4-E4B-it': [
+            #    "./output/decoders/google_gemma-4-E4B-it/no_perspective_google_gemma-4-E4B-it_CSC_conversation.csv",
+            #],
         },
     }
 

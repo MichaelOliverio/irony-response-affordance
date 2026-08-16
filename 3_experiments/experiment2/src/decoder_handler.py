@@ -1,4 +1,5 @@
 import torch
+import gc
 from typing import Tuple, Optional, List, Dict, Any
 from typing import Optional
 import re
@@ -11,6 +12,7 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 
 from src.config import DECODER_SETTINGS
+from src.model_backend import TextGenerationBackend
 
 class DecoderHandler:
     PROMPT_STRATEGIES = [
@@ -123,20 +125,16 @@ class DecoderHandler:
         for input in inputs:
             prompts.append(self._get_prompt(prompt_strategy, input))
 
-        outputs = self.pipe(
+        generated_texts = self.pipe.generate_texts(
             prompts,
             max_new_tokens=self.inference_params['max_new_tokens'],
-            do_sample=self.inference_params['temperature'] > 0,
             temperature=self.inference_params['temperature'],
-            return_full_text=False,
-            batch_size=self.inference_params['batch_size'],
-            pad_token_id=self.tokenizer.pad_token_id
         )
 
         results = []
-        for input, prompt, out in zip(inputs, prompts, outputs):
-            entry = out[0]
-            model_output = entry['generated_text'].strip()
+        for input, prompt, model_output in zip(
+            inputs, prompts, generated_texts
+        ):
 
             answer = None
             answer = self._clean_output(f"<ANSWER>{model_output}", "answer")
@@ -144,7 +142,6 @@ class DecoderHandler:
             results.append((input, prompt, model_output, answer))
 
         # Pulisci la memoria dopo la generazione
-        del outputs
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
@@ -157,11 +154,9 @@ class DecoderHandler:
         if prompt_strategy == 'no_perspective':
             prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -174,11 +169,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are male. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -191,11 +184,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -208,11 +199,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -225,11 +214,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -242,11 +229,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -259,11 +244,9 @@ The answer is:
             prompt = f"""<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -275,11 +258,9 @@ The answer is:
         elif prompt_strategy == 'relationship_colleagues':
             prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -291,11 +272,9 @@ The answer is:
         elif prompt_strategy == 'relationship_friends':
             prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are best friends.
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONVERSATION>{input}</CONVERSATION>
@@ -438,31 +417,10 @@ The answer is:
 
     def _load_model(self):
         print(f"\nCaricamento modello: {self.model_name}")
-        
-        model = AutoModelForCausalLM.from_pretrained(
-            self.model_name,
-            device_map=self.device,
-            dtype="auto",
-            trust_remote_code=True,
+        backend = TextGenerationBackend(
+            self.model_name, self.inference_params['dtype']
         )
-        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-
-        # Se manca pad token, usiamo eos come pad
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
-            tokenizer.pad_token_id = tokenizer.eos_token_id
-
-        # Impostiamo padding_side='left' per decoder-only models
-        tokenizer.padding_side = "left"
-
-        # Creiamo la pipeline
-        pipe = pipeline(
-            "text-generation",
-            model=model,
-            tokenizer=tokenizer,
-            dtype=self.inference_params['dtype'],
-            pad_token_id=tokenizer.pad_token_id,
-        )
+        model, tokenizer, pipe = backend.load()
 
         print(f"\nModello caricato: {self.model_name}")
         print(f"\n  Device: {'GPU (CUDA)' if torch.cuda.is_available() else 'CPU'}")
@@ -470,12 +428,19 @@ The answer is:
         return model, tokenizer, pipe
 
     def _destroy_model(self):
+        if self.pipe is not None:
+            del self.pipe
+            self.pipe = None
+
         if self.model is not None:
             del self.model
+            self.model = None
         
         if self.tokenizer is not None:
             del self.tokenizer
+            self.tokenizer = None
 
+        gc.collect()
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
             print("\nModello distrutto e cache GPU svuotata")

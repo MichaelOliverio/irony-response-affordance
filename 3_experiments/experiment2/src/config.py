@@ -25,10 +25,9 @@ DATASETS = {
 
 DECODER_SETTINGS = {
     'models': [
-        #'meta-llama/Llama-3.2-1B-Instruct',
-        'Qwen/Qwen2.5-7B-Instruct',
-        'mistralai/Ministral-8B-Instruct-2410',
-        'google/gemma-2-9b-it',
+        'Qwen/Qwen3.5-9B',
+        'mistralai/Ministral-3-8B-Instruct-2512',
+        'google/gemma-4-E4B-it',
     ],
     'training_params': {
         # Parametri di training specifici per i modelli decoder

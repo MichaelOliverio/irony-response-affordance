@@ -1,6 +1,7 @@
 import pandas as pd
+import numpy as np
 from evaluate import load
-from statsmodels.stats.contingency_tables import mcnemar
+from statsmodels.stats.multitest import multipletests
 from src.config import DATASETS
 import json
 from pathlib import Path
@@ -27,6 +28,10 @@ STRATEGY_TO_TARGET = {
 
 OUTPUT_CSV = "./evaluation_results_semiaggregated.csv"
 OUTPUT_JSON = "./evaluation_results_semiaggregated.json"
+
+BOOTSTRAP_ITERATIONS = 10_000
+BOOTSTRAP_ALPHA = 0.05
+BOOTSTRAP_SEED = 42
 
 # =========================================================
 def compute_metrics(df, target_col, accuracy_metric, precision_metric, recall_metric, f1_metric):
@@ -66,27 +71,111 @@ def compute_metrics(df, target_col, accuracy_metric, precision_metric, recall_me
         "n_samples": len(df_eval),
     }
 
-def mcnemar_test(df, label_col, semi_col):
-    df_eval = df[df[semi_col].notna()].copy()
+def _positive_class_f1(references, predictions):
+    """Compute binary F1 for label 1, with zero_division=0 semantics."""
+    true_positive = np.count_nonzero((references == 1) & (predictions == 1))
+    false_positive = np.count_nonzero((references == 0) & (predictions == 1))
+    false_negative = np.count_nonzero((references == 1) & (predictions == 0))
+    denominator = (2 * true_positive) + false_positive + false_negative
+    return 0.0 if denominator == 0 else (2 * true_positive) / denominator
+
+
+def paired_bootstrap_f1_test(
+    df,
+    label_col,
+    semi_col,
+    n_iterations=BOOTSTRAP_ITERATIONS,
+    alpha=BOOTSTRAP_ALPHA,
+    random_seed=BOOTSTRAP_SEED,
+):
+    """Compare positive-class F1 against two references on paired items."""
+    df_eval = df.dropna(
+        subset=["model_answer", label_col, semi_col]
+    ).copy()
     if len(df_eval) == 0:
         return None
 
-    correct_label = df_eval["model_answer"] == df_eval[label_col]
-    correct_semi = df_eval["model_answer"] == df_eval[semi_col]
+    predictions = df_eval["model_answer"].astype(int).to_numpy()
+    aggregated = df_eval[label_col].astype(int).to_numpy()
+    perspective = df_eval[semi_col].astype(int).to_numpy()
+    n_samples = len(df_eval)
 
-    b = ((correct_label == True) & (correct_semi == False)).sum()
-    c = ((correct_label == False) & (correct_semi == True)).sum()
+    aggregated_f1 = _positive_class_f1(aggregated, predictions)
+    perspective_f1 = _positive_class_f1(perspective, predictions)
 
-    table = [[0, b],
-             [c, 0]]
+    rng = np.random.default_rng(random_seed)
+    bootstrap_deltas = np.empty(n_iterations, dtype=float)
+    for iteration in range(n_iterations):
+        sampled_indices = rng.integers(0, n_samples, size=n_samples)
+        sampled_predictions = predictions[sampled_indices]
+        bootstrap_deltas[iteration] = (
+            _positive_class_f1(
+                perspective[sampled_indices], sampled_predictions
+            )
+            - _positive_class_f1(
+                aggregated[sampled_indices], sampled_predictions
+            )
+        )
 
-    result = mcnemar(table, exact=(b + c < 25))
+    ci_low, ci_high = np.quantile(
+        bootstrap_deltas, [alpha / 2, 1 - (alpha / 2)]
+    )
+    lower_tail = (
+        np.count_nonzero(bootstrap_deltas <= 0) + 1
+    ) / (n_iterations + 1)
+    upper_tail = (
+        np.count_nonzero(bootstrap_deltas >= 0) + 1
+    ) / (n_iterations + 1)
+    p_value = min(1.0, 2 * min(lower_tail, upper_tail))
 
     return {
-        "mcnemar_p_value": result.pvalue,
-        "mcnemar_b": b,
-        "mcnemar_c": c,
+        "f1_aggregated": aggregated_f1,
+        "f1_perspective": perspective_f1,
+        "f1_delta": perspective_f1 - aggregated_f1,
+        "f1_bootstrap_ci_low": float(ci_low),
+        "f1_bootstrap_ci_high": float(ci_high),
+        "f1_bootstrap_p_value": float(p_value),
+        "f1_bootstrap_significant_uncorrected": bool(
+            ci_low > 0 or ci_high < 0
+        ),
+        "bootstrap_iterations": n_iterations,
+        "bootstrap_seed": random_seed,
     }
+
+
+def apply_holm_correction(results, alpha=BOOTSTRAP_ALPHA):
+    """Correct bootstrap p-values within each dataset-model family."""
+    families = {}
+    for index, result in enumerate(results):
+        p_value = result.get("f1_bootstrap_p_value")
+        if p_value is None:
+            continue
+        family = (result["dataset"], result["model"])
+        families.setdefault(family, []).append(index)
+
+    for result_indices in families.values():
+        raw_p_values = [
+            results[index]["f1_bootstrap_p_value"]
+            for index in result_indices
+        ]
+        rejected, adjusted_p_values, _, _ = multipletests(
+            raw_p_values,
+            alpha=alpha,
+            method="holm",
+        )
+        family_size = len(result_indices)
+        for index, adjusted_p, is_significant in zip(
+            result_indices, adjusted_p_values, rejected
+        ):
+            results[index]["f1_bootstrap_p_value_holm"] = float(
+                adjusted_p
+            )
+            results[index]["f1_bootstrap_significant_holm"] = bool(
+                is_significant
+            )
+            results[index]["holm_family_size"] = family_size
+
+    return results
 
 # =========================================================
 def main():
@@ -99,61 +188,61 @@ def main():
 
     files = {
         'MultiPICo': {
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_female_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_male_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_boomer_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_x_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_y_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_z_Qwen_Qwen2.5-7B-Instruct_MultiPICo_conversation.csv",
+            "Qwen_Qwen3.5-9B": [
+                "./output/decoders/Qwen_Qwen3.5-9B/gender_female_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/gender_male_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_boomer_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_x_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_y_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_z_Qwen_Qwen3.5-9B_MultiPICo_conversation.csv",
             ],
-            'mistralai_Ministral-8B-Instruct-2410': [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/gender_female_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/gender_male_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_boomer_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_x_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_y_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_z_mistralai_Ministral-8B-Instruct-2410_MultiPICo_conversation.csv",
+            'mistralai_Ministral-3-8B-Instruct-2512': [
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/gender_female_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/gender_male_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_boomer_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_x_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_y_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
+                "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_z_mistralai_Ministral-3-8B-Instruct-2512_MultiPICo_conversation.csv",
             ],
-            'google_gemma-2-9b-it': [
-                "./output/decoders/google_gemma-2-9b-it/gender_female_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/gender_male_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_boomer_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_x_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_y_google_gemma-2-9b-it_MultiPICo_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_z_google_gemma-2-9b-it_MultiPICo_conversation.csv",
+            'google_gemma-4-E4B-it': [
+                "./output/decoders/google_gemma-4-E4B-it/gender_female_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/gender_male_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_boomer_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_x_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_y_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_z_google_gemma-4-E4B-it_MultiPICo_conversation.csv",
             ]
         },
         'CSC': {
-            "Qwen_Qwen2.5-7B-Instruct": [
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_female_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/gender_male_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_boomer_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_x_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_y_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/generation_gen_z_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/relationship_colleagues_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
-                "./output/decoders/Qwen_Qwen2.5-7B-Instruct/relationship_friends_Qwen_Qwen2.5-7B-Instruct_CSC_conversation.csv",
+            "Qwen_Qwen3.5-9B": [
+                "./output/decoders/Qwen_Qwen3.5-9B/gender_female_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/gender_male_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_boomer_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_x_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_y_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/generation_gen_z_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/relationship_colleagues_Qwen_Qwen3.5-9B_CSC_conversation.csv",
+                "./output/decoders/Qwen_Qwen3.5-9B/relationship_friends_Qwen_Qwen3.5-9B_CSC_conversation.csv",
             ],
-            'mistralai_Ministral-8B-Instruct-2410': [
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/gender_female_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/gender_male_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_boomer_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_x_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_y_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/generation_gen_z_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/relationship_colleagues_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-                "./output/decoders/mistralai_Ministral-8B-Instruct-2410/relationship_friends_mistralai_Ministral-8B-Instruct-2410_CSC_conversation.csv",
-            ],
-            'google_gemma-2-9b-it': [
-                "./output/decoders/google_gemma-2-9b-it/gender_female_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/gender_male_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_boomer_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_x_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_y_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/generation_gen_z_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/relationship_colleagues_google_gemma-2-9b-it_CSC_conversation.csv",
-                "./output/decoders/google_gemma-2-9b-it/relationship_friends_google_gemma-2-9b-it_CSC_conversation.csv",
+            #'mistralai_Ministral-3-8B-Instruct-2512': [
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/gender_female_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/gender_male_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_boomer_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_x_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_y_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/generation_gen_z_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/relationship_colleagues_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #    "./output/decoders/mistralai_Ministral-3-8B-Instruct-2512/relationship_friends_mistralai_Ministral-3-8B-Instruct-2512_CSC_conversation.csv",
+            #],
+            'google_gemma-4-E4B-it': [
+                "./output/decoders/google_gemma-4-E4B-it/gender_female_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/gender_male_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_boomer_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_x_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_y_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/generation_gen_z_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/relationship_colleagues_google_gemma-4-E4B-it_CSC_conversation.csv",
+                "./output/decoders/google_gemma-4-E4B-it/relationship_friends_google_gemma-4-E4B-it_CSC_conversation.csv",
             ],
         },
     }
@@ -265,9 +354,6 @@ def main():
                         "target_label": "label",
                         **res_label,
                         "n_discarded_not_in_dataset": n_discarded_not_in_dataset,
-                        "mcnemar_p_value": None,
-                        "mcnemar_b": None,
-                        "mcnemar_c": None,
                     })
 
                 # -----------------------------
@@ -294,7 +380,11 @@ def main():
                 if res_semi is None:
                     continue
 
-                mc = mcnemar_test(df, "label", semi_col)
+                bootstrap = paired_bootstrap_f1_test(
+                    df, "label", semi_col
+                )
+                if bootstrap is None:
+                    continue
 
                 results.append({
                     "dataset": dataset_name,
@@ -303,15 +393,14 @@ def main():
                     "strategy": strategy,
                     "target_label": semi_col,
                     **res_semi,
+                    **bootstrap,
                     "n_discarded_not_in_dataset": n_discarded_not_in_dataset,
-                    "mcnemar_p_value": None if mc is None else mc["mcnemar_p_value"],
-                    "mcnemar_b": None if mc is None else mc["mcnemar_b"],
-                    "mcnemar_c": None if mc is None else mc["mcnemar_c"],
                 })
 
     # =====================================================
     # SALVATAGGIO
     # =====================================================
+    results = apply_holm_correction(results)
     df_results = pd.DataFrame(results)
     df_results.to_csv(OUTPUT_CSV, index=False)
     

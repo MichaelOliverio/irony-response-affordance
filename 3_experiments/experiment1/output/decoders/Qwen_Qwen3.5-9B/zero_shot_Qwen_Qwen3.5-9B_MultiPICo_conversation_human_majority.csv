@@ -1,0 +1,1521 @@
+Index,unique_id,source,context_type,language,context,post,reply,dialogue,label,human_majority_label,evaluation_reference,prompt,model_output,model_reasoning,model_answer,invalid_inferences,invalid_model_outputs
+0,10337112102209865485_8696374145885740917,twitter,,en,,"I hear a lot of people complaining that in LA it's hard to find good friends when the better question is, are you a good friend?",Yup I am lol,"{'turns': [{'u1': 'I was talking to a friend and she mentioned how people in big cities tend to move around a lot.', 'u2': ""Yeah that's true""}, {'u1': ""Yeah, but it seems like even when we're stationary, we still struggle to form meaningful connections with others."", 'u2': 'I know what you mean, LA can be a tough place to put down roots'}, {'u1': ""I hear a lot of people complaining that in LA it's hard to find good friends when the better question is, are you a good friend?"", 'u2': 'Yup I am lol'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I was talking to a friend and she mentioned how people in big cities tend to move around a lot.
+u2: Yeah that's true
+u1: Yeah, but it seems like even when we're stationary, we still struggle to form meaningful connections with others.
+u2: I know what you mean, LA can be a tough place to put down roots
+u1: I hear a lot of people complaining that in LA it's hard to find good friends when the better question is, are you a good friend?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+1,10651819805544561833_12160947194752610245,twitter,,en,,I think if im right in saying it was  and @MacMate_,Ye mate. F channel rise up,"{'turns': [{'u1': '@MacMate_ can u explain why u think we should be on discord instead of here?', 'u2': ""Discord is so much better fam, got all the sick communities, can't get any of that here""}, {'u1': ""what's the best community on discord that you think we should join?"", 'u2': 'u should def check out F channel, all my mates are on it'}, {'u1': 'I think if im right in saying it was and @MacMate_', 'u2': 'Ye mate. F channel rise up'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: @MacMate_ can u explain why u think we should be on discord instead of here?
+u2: Discord is so much better fam, got all the sick communities, can't get any of that here
+u1: what's the best community on discord that you think we should join?
+u2: u should def check out F channel, all my mates are on it
+u1: I think if im right in saying it was and @MacMate_
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+2,10904259160091450557_8207995468124232526,reddit,,en,,read the article!  This place smashed out 80000 cups a year. Expected to boost sales by 20000 cups. Will pay for itself within a year! This is a good investment.,">Expected to boost sales by 20000 cups. Will pay for itself within a year
+Uh... $20 profit per cup?
+I'll have tap water thanks.","{'turns': [{'u1': ""this place is amazing, I've been looking at their production numbers and they're going crazy. I really think we should invest in this business."", 'u2': ""I'm still skeptical, I don't want to pour my money into something that's just a flash in the pan.""}, {'u1': ""but this place is a real business with real results, they're not just some fly by night operation. And they have a clear plan for growth."", 'u2': ""That's all well and good, but have you seen their profit margins? I'm not sure it's worth the risk.""}, {'u1': 'read the article! This place smashed out 80000 cups a year. Expected to boost sales by 20000 cups. Will pay for itself within a year! This is a good investment.', 'u2': "">Expected to boost sales by 20000 cups. Will pay for itself within a year Uh... $20 profit per cup? I'll have tap water thanks.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: this place is amazing, I've been looking at their production numbers and they're going crazy. I really think we should invest in this business.
+u2: I'm still skeptical, I don't want to pour my money into something that's just a flash in the pan.
+u1: but this place is a real business with real results, they're not just some fly by night operation. And they have a clear plan for growth.
+u2: That's all well and good, but have you seen their profit margins? I'm not sure it's worth the risk.
+u1: read the article! This place smashed out 80000 cups a year. Expected to boost sales by 20000 cups. Will pay for itself within a year! This is a good investment.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+3,11189210978241817175_7522724991330648109,reddit,,en,,Nah its OK you were just being neighbourly,Thank you for your kind words but I'm still eating my Sunday roast with a side of mortification.,"{'turns': [{'u1': ""Hey, no need to overthink this! You're just trying to be friendly."", 'u2': 'Yeah, maybe, but I was really trying to avoid inviting you over for lunch yesterday'}, {'u1': 'Ah, that was my bad for misunderstanding. We should hang out sometime, though!', 'u2': ""Only if you promise to cook. My wife's been bugging me to get some restarant quality food at home""}, {'u1': 'Nah its OK you were just being neighbourly', 'u2': ""Thank you for your kind words but I'm still eating my Sunday roast with a side of mortification.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Hey, no need to overthink this! You're just trying to be friendly.
+u2: Yeah, maybe, but I was really trying to avoid inviting you over for lunch yesterday
+u1: Ah, that was my bad for misunderstanding. We should hang out sometime, though!
+u2: Only if you promise to cook. My wife's been bugging me to get some restarant quality food at home
+u1: Nah its OK you were just being neighbourly
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+4,11202598233208778581_2692220885467589558,reddit,,en,,"Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!","The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee.
+So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.","{'turns': [{'u1': ""What's all the fuss about? Did something new happen in the world of credit scores? Can't seem to get through the day without seeing some app popping up everywhere I go."", 'u2': ""Well, I think it's because there was a big change in the law regarding how credit scores are managed.""}, {'u1': 'Is it something big, then? Like, are banks going to start handing out free loans or something?', 'u2': ""No, it's actually more to do with the way credit reference agencies share information and get paid for it.""}, {'u1': ""Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!"", 'u2': 'The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee. So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What's all the fuss about? Did something new happen in the world of credit scores? Can't seem to get through the day without seeing some app popping up everywhere I go.
+u2: Well, I think it's because there was a big change in the law regarding how credit scores are managed.
+u1: Is it something big, then? Like, are banks going to start handing out free loans or something?
+u2: No, it's actually more to do with the way credit reference agencies share information and get paid for it.
+u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+5,11234414428990216662_12950867292170150292,reddit,,en,,"I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.",Bunnings snags are bulk-bought tubes of garbage.,"{'turns': [{'u1': ""I had a weird thought the other day. What if we could find a veggie sausage that's just as good as the Bunnings ones? Crazy, right?"", 'u2': ""What's wrong with Bunnings snags? They're great as is.""}, {'u1': ""I dunno, I just think maybe there's something better out there. Like a hidden gem that only us foodies know about."", 'u2': 'Doubt it. The only thing better than a Bunnings snag is two Bunnings snags.'}, {'u1': 'I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.', 'u2': 'Bunnings snags are bulk-bought tubes of garbage.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I had a weird thought the other day. What if we could find a veggie sausage that's just as good as the Bunnings ones? Crazy, right?
+u2: What's wrong with Bunnings snags? They're great as is.
+u1: I dunno, I just think maybe there's something better out there. Like a hidden gem that only us foodies know about.
+u2: Doubt it. The only thing better than a Bunnings snag is two Bunnings snags.
+u1: I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+6,11511568951113336561_664144740275927289,twitter,,en,,Dyson is amazing! You can also look at Berkinstock as well?,"I actively dislike how they look, never ☠️","{'turns': [{'u1': ""'You have some really cool gadgets at home. Are they from Dyson?"", 'u2': ""'Huh, I think most of them are, but I don't know about the new vacuum cleaner. I need to check the manual.""}, {'u1': ""'Dyson is so trendy right now. They have a new product line, have you seen it?"", 'u2': ""'I don't think so. I'm not really into trendy stuff. What's the point of having the latest gadgets?""}, {'u1': 'Dyson is amazing! You can also look at Berkinstock as well?', 'u2': 'I actively dislike how they look, never ☠️'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: 'You have some really cool gadgets at home. Are they from Dyson?
+u2: 'Huh, I think most of them are, but I don't know about the new vacuum cleaner. I need to check the manual.
+u1: 'Dyson is so trendy right now. They have a new product line, have you seen it?
+u2: 'I don't think so. I'm not really into trendy stuff. What's the point of having the latest gadgets?
+u1: Dyson is amazing! You can also look at Berkinstock as well?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+7,12518252026964060539_12826115392138578393,reddit,,en,,He may have a point.  Does it feature child abuse?,"Well, no, but also, yes
+Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who's a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he's known for his very erotic art. Turns out ES is actually... his little [step] sister (who's like 12), who he hasn't seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety
+Its in the same universe as My Little Sister Can't Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.","{'turns': [{'u1': 'Has he talked about shows that make him uncomfortable?', 'u2': 'Yeah, a few actually. He thinks the worst one is Eromanga Sensei.'}, {'u1': ""Why's that?"", 'u2': ""Apparently it's super weird and kinda... disturbing, but also kinda cute?""}, {'u1': 'He may have a point. Does it feature child abuse?', 'u2': 'Well, no, but also, yes Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who\'s a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he\'s known for his very erotic art. Turns out ES is actually... his little [step] sister (who\'s like 12), who he hasn\'t seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety Its in the same universe as My Little Sister Can\'t Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Has he talked about shows that make him uncomfortable?
+u2: Yeah, a few actually. He thinks the worst one is Eromanga Sensei.
+u1: Why's that?
+u2: Apparently it's super weird and kinda... disturbing, but also kinda cute?
+u1: He may have a point. Does it feature child abuse?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+8,12688524965118127904_17718319999726849196,reddit,,en,,Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.,"this is how randia used to be before it crossed 1lac mark.
+now its all news links.","{'turns': [{'u1': ""I've been browsing here for a few days now and I must say, this community is very active and engaged."", 'u2': 'what made you join?'}, {'u1': 'A friend recommended it and I was curious to see what it’s like. I’m glad I joined!', 'u2': 'your friend must be a regular here'}, {'u1': 'Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.', 'u2': 'this is how randia used to be before it crossed 1lac mark. now its all news links.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been browsing here for a few days now and I must say, this community is very active and engaged.
+u2: what made you join?
+u1: A friend recommended it and I was curious to see what it’s like. I’m glad I joined!
+u2: your friend must be a regular here
+u1: Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+9,12701030242307294590_13873363278082368642,reddit,,en,,"In Oz we call crisps, chips and chips, hot chips. Hard habit to break.",But crisps aren’t hot.,"{'turns': [{'u1': 'We\'re having a dinner party tonight and I was thinking we could serve some Aussie snacks. I think the term is ""chips"". Is that right?', 'u2': 'Huh? I\'m pretty sure we call them ""crisps"".'}, {'u1': 'Really? I\'m not sure. I\'ve never lived anywhere else besides Australia. What do you mean ""crisps""?', 'u2': 'It\'s a term from the UK. We also call them ""chips"" but in different contexts. It\'s confusing, I know.'}, {'u1': 'In Oz we call crisps, chips and chips, hot chips. Hard habit to break.', 'u2': 'But crisps aren’t hot.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: We're having a dinner party tonight and I was thinking we could serve some Aussie snacks. I think the term is ""chips"". Is that right?
+u2: Huh? I'm pretty sure we call them ""crisps"".
+u1: Really? I'm not sure. I've never lived anywhere else besides Australia. What do you mean ""crisps""?
+u2: It's a term from the UK. We also call them ""chips"" but in different contexts. It's confusing, I know.
+u1: In Oz we call crisps, chips and chips, hot chips. Hard habit to break.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+10,12743820680089700992_8917188627913633928,reddit,,en,,I think it's a serious threat to our society. But I've known quite a few still think it's just a flu.,"> But I've known quite a few still think it's just a flu.
+Genuine question (not being sarcastic): the listed symptoms for COVID are exactly the same as the symptoms I get when I have the flu. So why is this so much worse?","{'turns': [{'u1': ""I don't think people fully understand the risks, they're not taking it seriously enough."", 'u2': ""Honestly, I've seen some pretty wild misinformation going around. It's not helping.""}, {'u1': ""The fact that it's airborne and highly contagious scares me."", 'u2': ""I know, it's like they're playing roulette with their health.""}, {'u1': ""I think it's a serious threat to our society. But I've known quite a few still think it's just a flu."", 'u2': ""> But I've known quite a few still think it's just a flu. Genuine question (not being sarcastic): the listed symptoms for COVID are exactly the same as the symptoms I get when I have the flu. So why is this so much worse?""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I don't think people fully understand the risks, they're not taking it seriously enough.
+u2: Honestly, I've seen some pretty wild misinformation going around. It's not helping.
+u1: The fact that it's airborne and highly contagious scares me.
+u2: I know, it's like they're playing roulette with their health.
+u1: I think it's a serious threat to our society. But I've known quite a few still think it's just a flu.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+11,12750553915393859827_625067732195999980,reddit,,en,,Um....please don’t go back to work tomorrow. You should be self isolating!,"It's OK, Lord Kilclooney has you covered:
+""Better for everyone that you are locked up for 14 days""
+Apparently it's not a parody account, he's really that bad","{'turns': [{'u1': 'Hopefully you and your family are all doing okay. I was worried sick about you.', 'u2': ""We're all good, just a bit run down I think, but that's all. Thanks for checking in!""}, {'u1': ""I was just thinking about that news story about the outbreak in the city and I'm getting a bit anxious."", 'u2': ""Yeah, I saw that. I've been trying to avoid it, to be honest, but can't deny it's getting worse by the day.""}, {'u1': 'Um....please don’t go back to work tomorrow. You should be self isolating!', 'u2': 'It\'s OK, Lord Kilclooney has you covered: ""Better for everyone that you are locked up for 14 days"" Apparently it\'s not a parody account, he\'s really that bad'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Hopefully you and your family are all doing okay. I was worried sick about you.
+u2: We're all good, just a bit run down I think, but that's all. Thanks for checking in!
+u1: I was just thinking about that news story about the outbreak in the city and I'm getting a bit anxious.
+u2: Yeah, I saw that. I've been trying to avoid it, to be honest, but can't deny it's getting worse by the day.
+u1: Um....please don’t go back to work tomorrow. You should be self isolating!
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+12,12845670384771362842_5254760285988529167,reddit,,en,,I'm bald bitch,Is that the new. Bitch I'm madonna?,"{'turns': [{'u1': '""You\'re not exactly rocking the whole hair thing anymore', 'u2': ""What? I still look great! A little thinning doesn't define me""}, {'u1': 'Haha, thinning? You mean BALD?', 'u2': ""Madonna doesn't go bald!""}, {'u1': ""I'm bald bitch"", 'u2': ""Is that the new. Bitch I'm madonna?""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: ""You're not exactly rocking the whole hair thing anymore
+u2: What? I still look great! A little thinning doesn't define me
+u1: Haha, thinning? You mean BALD?
+u2: Madonna doesn't go bald!
+u1: I'm bald bitch
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+13,12868720517617604007_16124457615261572688,twitter,,en,,"It appears I've missed an important day.  Belated birthday wishes,  .","No probs,I’m still celebrating??Ian","{'turns': [{'u1': ""still haven't wished you a happy birthday."", 'u2': ""Thanks, I was getting worried you'd forgotten""}, {'u1': 'Do I even know your birthday in the first place? Did you tell me?', 'u2': 'I guess I mentioned it to you in one of our conversations a while back'}, {'u1': ""It appears I've missed an important day. Belated birthday wishes, ."", 'u2': 'No probs,I’m still celebrating??Ian'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: still haven't wished you a happy birthday.
+u2: Thanks, I was getting worried you'd forgotten
+u1: Do I even know your birthday in the first place? Did you tell me?
+u2: I guess I mentioned it to you in one of our conversations a while back
+u1: It appears I've missed an important day. Belated birthday wishes, .
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+14,12913573499050718126_9401841510351485236,reddit,,en,,"What do people think the worst case scenario is with COVID-19? Like do people think we'll get the country shut down for two weeks or what? Genuine question, I know it's something the government/international bodies don't want to talk about yet/at all so I'm curious what people imagine it to be","OK, so, assuming for some reason that we do get a major fucking outbreak with say 200-300,000  infected, people are going to have to be treated at home  while holed up in their rooms. 
+Mild cases just need food, supplies and maybe money - middling cases should be treated by community nurses and a few doctors (freed up by the canceling of all elective procedures) who check in on them wearing a full set of NBC protection).  Their transport would be arranged by the army, who'd take charge of hosing them down between visits.   
+The Civil Defense would be in charge of distributing supplies like anti-inflammatories and food, fresh water etc.
+AGS would take care of civil order and all limits on overtime for all branches would be lifted. 
+That's a broad-brush look at how we might tackle things, and while we're honestly not familiar with this type of regime and it'd be a very odd time I think on the whole Irish people would help pitch in and be helpful.","{'turns': [{'u1': ""I've been seeing so much about the spread of COVID-19 all over the world and I'm genuinely worried about its impact on our country. What are your thoughts on it?"", 'u2': ""Honestly, I'm more concerned about the response from our government. They seem really slow to act, and that's making me nervous.""}, {'u1': ""I know you said you're worried about the government's response, but do you think we'll be in a situation where we need to take drastic measures like closing schools or putting in place travel restrictions?"", 'u2': ""Yeah, I think it's definitely possible. We've already seen countries like Italy and China take extreme measures to slow the spread of the virus, and it's only a matter of time before we need to consider something similar here.""}, {'u1': ""What do people think the worst case scenario is with COVID-19? Like do people think we'll get the country shut down for two weeks or what? Genuine question, I know it's something the government/international bodies don't want to talk about yet/at all so I'm curious what people imagine it to be"", 'u2': ""OK, so, assuming for some reason that we do get a major fucking outbreak with say 200-300,000 infected, people are going to have to be treated at home while holed up in their rooms. Mild cases just need food, supplies and maybe money - middling cases should be treated by community nurses and a few doctors (freed up by the canceling of all elective procedures) who check in on them wearing a full set of NBC protection). Their transport would be arranged by the army, who'd take charge of hosing them down between visits. The Civil Defense would be in charge of distributing supplies like anti-inflammatories and food, fresh water etc. AGS would take care of civil order and all limits on overtime for all branches would be lifted. That's a broad-brush look at how we might tackle things, and while we're honestly not familiar with this type of regime and it'd be a very odd time I think on the whole Irish people would help pitch in and be helpful.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been seeing so much about the spread of COVID-19 all over the world and I'm genuinely worried about its impact on our country. What are your thoughts on it?
+u2: Honestly, I'm more concerned about the response from our government. They seem really slow to act, and that's making me nervous.
+u1: I know you said you're worried about the government's response, but do you think we'll be in a situation where we need to take drastic measures like closing schools or putting in place travel restrictions?
+u2: Yeah, I think it's definitely possible. We've already seen countries like Italy and China take extreme measures to slow the spread of the virus, and it's only a matter of time before we need to consider something similar here.
+u1: What do people think the worst case scenario is with COVID-19? Like do people think we'll get the country shut down for two weeks or what? Genuine question, I know it's something the government/international bodies don't want to talk about yet/at all so I'm curious what people imagine it to be
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+15,13282727809339500610_4345437609566393259,reddit,,en,,The powers that be really think we are thick as fuck.,I'm not sure how you can read social media and think we're not,"{'turns': [{'u1': ""They can't control our minds through social media."", 'u2': 'Not with some brainwashed sheep following blindly.'}, {'u1': 'But the masses are just too blind to see the strings being pulled.', 'u2': 'How else can you explain the blatant censorship?'}, {'u1': 'The powers that be really think we are thick as fuck.', 'u2': ""I'm not sure how you can read social media and think we're not""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: They can't control our minds through social media.
+u2: Not with some brainwashed sheep following blindly.
+u1: But the masses are just too blind to see the strings being pulled.
+u2: How else can you explain the blatant censorship?
+u1: The powers that be really think we are thick as fuck.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+16,1353950569709460086_9486149106222216465,reddit,,en,,"I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.","why didn't they do this for Delhi elections ?
+Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?","{'turns': [{'u1': ""What's going on with this rape case? I feel like we've been hearing about it for months now."", 'u2': ""I know, right? It feels like a new development every week. And it's not like it's even a surprise or anything.""}, {'u1': 'Do you think the government is trying to distract us from something else?', 'u2': ""I'm not sure. But it does seem like a convenient distraction. And the timing is suspicious too.""}, {'u1': 'I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.', 'u2': ""why didn't they do this for Delhi elections ? Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What's going on with this rape case? I feel like we've been hearing about it for months now.
+u2: I know, right? It feels like a new development every week. And it's not like it's even a surprise or anything.
+u1: Do you think the government is trying to distract us from something else?
+u2: I'm not sure. But it does seem like a convenient distraction. And the timing is suspicious too.
+u1: I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+17,1391172399908503032_10070870326222354663,reddit,,en,,"Imagine sticking a tooth pick underneath your big toenail and then kicking a wall
+Or imagine getting paper cuts in the webbing of all fingers",No. Imagine.... baby shark doo doo doodoo,"{'turns': [{'u1': ""Ugh, do you get that one pain that doesn't quite go away no matter how much you shift around?"", 'u2': ""What's going on?""}, {'u1': 'Ugh, the ones you get in the nail bed. That one spot that throbs and throbs. You know those ones?', 'u2': 'Eww, yeah...'}, {'u1': 'Imagine sticking a tooth pick underneath your big toenail and then kicking a wall Or imagine getting paper cuts in the webbing of all fingers', 'u2': 'No. Imagine.... baby shark doo doo doodoo'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Ugh, do you get that one pain that doesn't quite go away no matter how much you shift around?
+u2: What's going on?
+u1: Ugh, the ones you get in the nail bed. That one spot that throbs and throbs. You know those ones?
+u2: Eww, yeah...
+u1: Imagine sticking a tooth pick underneath your big toenail and then kicking a wall Or imagine getting paper cuts in the webbing of all fingers
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+18,14059201167656705884_3962746297682231118,reddit,,en,,I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work.,"Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.","{'turns': [{'u1': 'I saw the whole thing from my office window, but I was too far to get the plate number. Did you get a glimpse?', 'u2': 'Yeah I saw it too! They were speeding like crazy, but they were way too far from me to get the plate. I was so stressed out for the person they were speeding at!'}, {'u1': ""That must have been really frightening for the driver they were passing! I'm glad you're okay, but I'm curious, did you notice if they had any passengers?"", 'u2': ""Actually, I think they were alone. I didn't see anyone else in the car. But what really got me is how reckless they were driving. They didn't even slow down for the stop sign!""}, {'u1': ""I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work."", 'u2': 'Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I saw the whole thing from my office window, but I was too far to get the plate number. Did you get a glimpse?
+u2: Yeah I saw it too! They were speeding like crazy, but they were way too far from me to get the plate. I was so stressed out for the person they were speeding at!
+u1: That must have been really frightening for the driver they were passing! I'm glad you're okay, but I'm curious, did you notice if they had any passengers?
+u2: Actually, I think they were alone. I didn't see anyone else in the car. But what really got me is how reckless they were driving. They didn't even slow down for the stop sign!
+u1: I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+19,14309441428012222287_10088140044597603282,twitter,,en,,What was the first movie you saw at the cinema?,Jungle Book,"{'turns': [{'u1': ""I'm super curious, have you ever seen a movie at the cinema?"", 'u2': ""Actually, yes! I saw 'The Lion King' at the cinema with my family when I was a kid.""}, {'u1': 'That sounds amazing! Did your family go there often for movies or was it a one-time thing?', 'u2': ""Oh, we went quite a few times! We'd always go to the cinema on Friday evenings and catch the latest Disney releases.""}, {'u1': 'What was the first movie you saw at the cinema?', 'u2': 'Jungle Book'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm super curious, have you ever seen a movie at the cinema?
+u2: Actually, yes! I saw 'The Lion King' at the cinema with my family when I was a kid.
+u1: That sounds amazing! Did your family go there often for movies or was it a one-time thing?
+u2: Oh, we went quite a few times! We'd always go to the cinema on Friday evenings and catch the latest Disney releases.
+u1: What was the first movie you saw at the cinema?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+20,14315872057140083402_7688405361863179161,reddit,,en,,I like that people always are worried that Epstein was murdered instead of suicide. What if this was a ploy to cover up that he just escaped or paid his way out of prison?,Well considering his cell mate was Nicholas Tartaglione I’m pretty sure Epstein was murdered.,"{'turns': [{'u1': ""People always say that the Jeffrey Epstein case has been swept under the rug, but the truth is we don't have all the facts yet."", 'u2': ""I think the government would have made sure that we do have all the facts. I'm starting to think there was foul play involved with his death.""}, {'u1': 'It’s a bit weird how so many prominent figures have been linked to Epstein’s crimes.', 'u2': 'Absolutely. The Epstein case has been a huge scandal and his connections to powerful people are still making waves.'}, {'u1': 'I like that people always are worried that Epstein was murdered instead of suicide. What if this was a ploy to cover up that he just escaped or paid his way out of prison?', 'u2': 'Well considering his cell mate was Nicholas Tartaglione I’m pretty sure Epstein was murdered.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: People always say that the Jeffrey Epstein case has been swept under the rug, but the truth is we don't have all the facts yet.
+u2: I think the government would have made sure that we do have all the facts. I'm starting to think there was foul play involved with his death.
+u1: It’s a bit weird how so many prominent figures have been linked to Epstein’s crimes.
+u2: Absolutely. The Epstein case has been a huge scandal and his connections to powerful people are still making waves.
+u1: I like that people always are worried that Epstein was murdered instead of suicide. What if this was a ploy to cover up that he just escaped or paid his way out of prison?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+21,1432336763630430362_1035671515632301051,twitter,,en,,Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough,I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!,"{'turns': [{'u1': ""u1 was quick to comment on Ollie Henry's trade request, wondering if Collingwood was really being offered enough in return."", 'u2': ""I'm not sure what the big deal is, he's been underwhelming for most of his career, if Geelong wants him that badly, let them have him!""}, {'u1': ""Fair enough, I guess, but you have to admit it's a bit rich for Collingwood fans to be so quick to criticise Ollie, especially when some of our own big names have been offloaded without much fuss."", 'u2': ""Buckley sold us down the river, no question about it, but that's management for you""}, {'u1': 'Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough', 'u2': ""I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!""}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: u1 was quick to comment on Ollie Henry's trade request, wondering if Collingwood was really being offered enough in return.
+u2: I'm not sure what the big deal is, he's been underwhelming for most of his career, if Geelong wants him that badly, let them have him!
+u1: Fair enough, I guess, but you have to admit it's a bit rich for Collingwood fans to be so quick to criticise Ollie, especially when some of our own big names have been offloaded without much fuss.
+u2: Buckley sold us down the river, no question about it, but that's management for you
+u1: Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+22,143958186233054832_5689298038344689706,reddit,,en,,Chuck them over here for a taste test,They should arrive in time for next Sunday’s roast!,"{'turns': [{'u1': ""I heard that the local butcher has started offering special cuts, and I'm really curious to try them."", 'u2': ""I think you're thinking of last week's rumors, I don't recall seeing any announcements about new cuts.""}, {'u1': ""But I did get an invitation to the butcher's house this weekend, and I heard he'd be sharing some new recipes."", 'u2': ""Hmm, sounds interesting, maybe I'll pop by too and see what's cooking.""}, {'u1': 'Chuck them over here for a taste test', 'u2': 'They should arrive in time for next Sunday’s roast!'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I heard that the local butcher has started offering special cuts, and I'm really curious to try them.
+u2: I think you're thinking of last week's rumors, I don't recall seeing any announcements about new cuts.
+u1: But I did get an invitation to the butcher's house this weekend, and I heard he'd be sharing some new recipes.
+u2: Hmm, sounds interesting, maybe I'll pop by too and see what's cooking.
+u1: Chuck them over here for a taste test
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+23,14502610576710298112_14095055713402977530,reddit,,en,,"The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases.  It's probably locked away guarded by heavily armed guards.  Imagine how much money the medical world would lose when an easily accessible cure is put on the market.","Cancer generally happens later in life.  You can charge FAR more for a cure than for a treatment.  Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.","{'turns': [{'u1': ""I've been reading this amazing stuff about researchers working on gene editing and I've been wondering, what if we could use this tech to just 'cure' cancer? Like, permanently."", 'u2': ""Ha, I highly doubt the 'powers that be' would ever let that happen. Think about all the industries that would tank if cancer just went away.""}, {'u1': ""If you're right and there are some shady interests behind the medical world, would they really keep it a secret for long? I mean, some scientists or medical professionals must be curious enough to start spreading the word."", 'u2': ""Maybe. But they'd be either blackmailed or silenced. I've seen some pretty wild stuff happen when it comes to powerful people getting in the way of big money.""}, {'u1': ""The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases. It's probably locked away guarded by heavily armed guards. Imagine how much money the medical world would lose when an easily accessible cure is put on the market."", 'u2': 'Cancer generally happens later in life. You can charge FAR more for a cure than for a treatment. Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been reading this amazing stuff about researchers working on gene editing and I've been wondering, what if we could use this tech to just 'cure' cancer? Like, permanently.
+u2: Ha, I highly doubt the 'powers that be' would ever let that happen. Think about all the industries that would tank if cancer just went away.
+u1: If you're right and there are some shady interests behind the medical world, would they really keep it a secret for long? I mean, some scientists or medical professionals must be curious enough to start spreading the word.
+u2: Maybe. But they'd be either blackmailed or silenced. I've seen some pretty wild stuff happen when it comes to powerful people getting in the way of big money.
+u1: The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases. It's probably locked away guarded by heavily armed guards. Imagine how much money the medical world would lose when an easily accessible cure is put on the market.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+24,15043765114991269464_4944826392878906022,reddit,,en,,Dont we all hate Irish rail ?,The rest of Ireland hates it. We just don’t have it,"{'turns': [{'u1': ""I'm so done with their incompetence!"", 'u2': ""Yeah I know what you mean. They always seem to be 'on strike' or something.""}, {'u1': 'They really need to sort themselves out!', 'u2': 'The whole country would probably be better off without it'}, {'u1': 'Dont we all hate Irish rail ?', 'u2': 'The rest of Ireland hates it. We just don’t have it'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm so done with their incompetence!
+u2: Yeah I know what you mean. They always seem to be 'on strike' or something.
+u1: They really need to sort themselves out!
+u2: The whole country would probably be better off without it
+u1: Dont we all hate Irish rail ?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+25,15342642770078985313_16643049812401160830,twitter,,en,,Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?,"No
+
+It is because you are rational.","{'turns': [{'u1': ""I've been following the news and social media coverage of the Queen's death, and I must admit I'm having a hard time connecting with all the emotional outpouring."", 'u2': 'Emotional outpouring? You think this is just about feelings?'}, {'u1': ""No, I mean, it's all about the way everyone's reacting as if they've lost a family member when, for me, the Queen was just a public figure."", 'u2': ""You think you're the only one who can see that?""}, {'u1': ""Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?"", 'u2': 'No It is because you are rational.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been following the news and social media coverage of the Queen's death, and I must admit I'm having a hard time connecting with all the emotional outpouring.
+u2: Emotional outpouring? You think this is just about feelings?
+u1: No, I mean, it's all about the way everyone's reacting as if they've lost a family member when, for me, the Queen was just a public figure.
+u2: You think you're the only one who can see that?
+u1: Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+26,15693502839761332055_2403791530965789426,twitter,,en,,"Introduce yourself by something you were called at parents evening:
+
+Hi, I'm a pleasure to teach.","Hi there, I’m Could Do So Much Better.","{'turns': [{'u1': ""I've been wondering about this conversation format. Have you used it before?"", 'u2': ""As for me, I've used different platforms to share my thoughts, but I'm curious about this one.""}, {'u1': ""Is it just a format or a platform? I've tried many and I find myself wondering about their effectiveness."", 'u2': ""Well, I think it's a bit of both, actually. It's a unique way of connecting people, but also a tool to get your point across.""}, {'u1': ""Introduce yourself by something you were called at parents evening: Hi, I'm a pleasure to teach."", 'u2': 'Hi there, I’m Could Do So Much Better.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been wondering about this conversation format. Have you used it before?
+u2: As for me, I've used different platforms to share my thoughts, but I'm curious about this one.
+u1: Is it just a format or a platform? I've tried many and I find myself wondering about their effectiveness.
+u2: Well, I think it's a bit of both, actually. It's a unique way of connecting people, but also a tool to get your point across.
+u1: Introduce yourself by something you were called at parents evening: Hi, I'm a pleasure to teach.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+27,1570032956852589300_3502564318171229019,reddit,,en,,I would say Barq's.,Because it has bite?,"{'turns': [{'u1': ""I'm still torn between two root beers. Which one do you prefer?"", 'u2': ""Dr Pepper has a unique flavor I just can't resist.""}, {'u1': ""Ahsley, that's fair, but Barq's is a classic for a reason."", 'u2': ""That's true, but it can't beat the Dr Pepper edge.""}, {'u1': ""I would say Barq's."", 'u2': 'Because it has bite?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm still torn between two root beers. Which one do you prefer?
+u2: Dr Pepper has a unique flavor I just can't resist.
+u1: Ahsley, that's fair, but Barq's is a classic for a reason.
+u2: That's true, but it can't beat the Dr Pepper edge.
+u1: I would say Barq's.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+28,15790688063554478847_4093094666083403910,reddit,,en,,"The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?",how old are you??,"{'turns': [{'u1': 'So I was thinking about all the big news stories from history, and I stumbled upon this awesome list that I just had to share.', 'u2': 'Are you on about some new social media meme?'}, {'u1': ""Not at all, it's a list of the most pivotal events that shaped the world, from the gold rush to the discovery of the XRay."", 'u2': 'I think you might be getting your history mixed up'}, {'u1': 'The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?', 'u2': 'how old are you??'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: So I was thinking about all the big news stories from history, and I stumbled upon this awesome list that I just had to share.
+u2: Are you on about some new social media meme?
+u1: Not at all, it's a list of the most pivotal events that shaped the world, from the gold rush to the discovery of the XRay.
+u2: I think you might be getting your history mixed up
+u1: The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+29,15849458284151168089_12381184885274858640,twitter,,en,,Sore throat and fever full family ?,Please consult doctor ?,"{'turns': [{'u1': 'My kids have been sniffling all morning and I feel a bit under the weather myself', 'u2': 'Have they been around anyone sick recently?'}, {'u1': ""I think they were at school yesterday, so we'll need to keep an eye on them"", 'u2': 'Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids'}, {'u1': 'Sore throat and fever full family ?', 'u2': 'Please consult doctor ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: My kids have been sniffling all morning and I feel a bit under the weather myself
+u2: Have they been around anyone sick recently?
+u1: I think they were at school yesterday, so we'll need to keep an eye on them
+u2: Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids
+u1: Sore throat and fever full family ?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+30,1585847090319967408_18127032344945120201,reddit,,en,,Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up,But someone did already...?,"{'turns': [{'u1': 'I was talking to a coworker about the lockdown and they mentioned something about 5G', 'u2': ""That's not surprising, 5G has been in the news lately""}, {'u1': ""Apparently they think it's linked to the virus somehow"", 'u2': ""I've heard people mention that too, but it seems like a pretty baseless claim to me""}, {'u1': ""Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up"", 'u2': 'But someone did already...?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I was talking to a coworker about the lockdown and they mentioned something about 5G
+u2: That's not surprising, 5G has been in the news lately
+u1: Apparently they think it's linked to the virus somehow
+u2: I've heard people mention that too, but it seems like a pretty baseless claim to me
+u1: Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+31,15922195893431160402_6100040146362736434,reddit,,en,,">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms.
+What?",Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.,"{'turns': [{'u1': '""What\'s the craziest thing you\'ve seen or heard in the gym?', 'u2': 'Well, I saw this new guy get rejected from playing with a bunch of regulars, but it was interesting to watch.'}, {'u1': 'Do you think the gym environment has a lot to do with how people react to new players?', 'u2': ""Yeah, I think so. It's like they form these little cliques and don't want to let outsiders in.""}, {'u1': "">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms. What?"", 'u2': ""Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: ""What's the craziest thing you've seen or heard in the gym?
+u2: Well, I saw this new guy get rejected from playing with a bunch of regulars, but it was interesting to watch.
+u1: Do you think the gym environment has a lot to do with how people react to new players?
+u2: Yeah, I think so. It's like they form these little cliques and don't want to let outsiders in.
+u1: >How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms. What?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+32,1624580175472901311_5705924890865632006,reddit,,en,,Did no-one tell the Laois folk there was supposed to be more than just the name?,"Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!","{'turns': [{'u1': ""What's all this then? Laois is getting a monument? Haven't we more pressing things to worry about? We're going to be known for something that's going to be the size of a bus!"", 'u2': ""It's about time! I'm not saying it has to be huge, but at least make it worth our while. Remember that statue in Cork? The one with the big ball on top? Now that's what I call a monument!""}, {'u1': ""But isn't it about quality over quantity? The name is nice, I suppose, but is that really enough? We want something that will make people stop and stare, not just drive by and think, 'Ah, it's just Laois'."", 'u2': ""Quality over quantity? That's just something the historians and the artsy-fartsy crowd would say. I say, what about something grand, something that says, 'We're Cork, hear us roar!'?""}, {'u1': 'Did no-one tell the Laois folk there was supposed to be more than just the name?', 'u2': ""Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What's all this then? Laois is getting a monument? Haven't we more pressing things to worry about? We're going to be known for something that's going to be the size of a bus!
+u2: It's about time! I'm not saying it has to be huge, but at least make it worth our while. Remember that statue in Cork? The one with the big ball on top? Now that's what I call a monument!
+u1: But isn't it about quality over quantity? The name is nice, I suppose, but is that really enough? We want something that will make people stop and stare, not just drive by and think, 'Ah, it's just Laois'.
+u2: Quality over quantity? That's just something the historians and the artsy-fartsy crowd would say. I say, what about something grand, something that says, 'We're Cork, hear us roar!'?
+u1: Did no-one tell the Laois folk there was supposed to be more than just the name?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+33,16248931236252931801_18392104841748248643,twitter,,en,,What if the wheels on the bus didn't go round and round?,Up and down?,"{'turns': [{'u1': ""I love nursery rhymes! Let's play a game where we change the lyrics."", 'u2': ""That's so cool! I'm totally in!""}, {'u1': 'Okay, which one do you want to start with?', 'u2': 'Hmm, how about the wheels on the bus?'}, {'u1': ""What if the wheels on the bus didn't go round and round?"", 'u2': 'Up and down?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I love nursery rhymes! Let's play a game where we change the lyrics.
+u2: That's so cool! I'm totally in!
+u1: Okay, which one do you want to start with?
+u2: Hmm, how about the wheels on the bus?
+u1: What if the wheels on the bus didn't go round and round?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+34,16650543109753935334_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
+They voted clearly in support of devolution and that vote has been respected with it's implementation.
+Time for another vote to see if they still want devolution.
+A lot has changed since then.
+Is that how it works?",The Bunnett understanding how elections work. Next he’ll be expecting manifestos to be implemented. Good Lord.,"{'turns': [{'u1': ""Do the devolution laws need to be re-written or re-evaluated now that the world has changed? Does the Scotland Act 1998 require updates? That's what happens in other jurisdictions isn't it?"", 'u2': 'Oh, this isn’t about law, this is about the will of the people. Don’t overcomplicate things.'}, {'u1': ""But surely if the world has changed, the people's will could be re-expressed now? Maybe a new referendum is needed?"", 'u2': ""If you start second-guessing the democratic process, we'll be here all day.""}, {'u1': ""The people of Scotland had a vote on devolution in 1997. They voted clearly in support of devolution and that vote has been respected with it's implementation. Time for another vote to see if they still want devolution. A lot has changed since then. Is that how it works?"", 'u2': 'The Bunnett understanding how elections work. Next he’ll be expecting manifestos to be implemented. Good Lord.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Do the devolution laws need to be re-written or re-evaluated now that the world has changed? Does the Scotland Act 1998 require updates? That's what happens in other jurisdictions isn't it?
+u2: Oh, this isn’t about law, this is about the will of the people. Don’t overcomplicate things.
+u1: But surely if the world has changed, the people's will could be re-expressed now? Maybe a new referendum is needed?
+u2: If you start second-guessing the democratic process, we'll be here all day.
+u1: The people of Scotland had a vote on devolution in 1997. They voted clearly in support of devolution and that vote has been respected with it's implementation. Time for another vote to see if they still want devolution. A lot has changed since then. Is that how it works?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+35,16706234939258333146_1856662399580585102,twitter,,en,,"We just outraised Greg Abbott — again.
+
+Now we’re going to defeat him. That’s how we overcome his extremism and move Texas forward.",Money won’t get you elected,"{'turns': [{'u1': 'u1 is leading in the polls, but we need to keep the momentum going. Every little bit counts!', 'u2': ""Polls don't necessarily translate to votes, though.""}, {'u1': 'Our grassroots effort is picking up steam! More volunteers, more donations, more Texas for the win!', 'u2': ""It's great that you're enthusiastic, but let's not forget that our opponents have a lot of money behind them.""}, {'u1': 'We just outraised Greg Abbott — again. Now we’re going to defeat him. That’s how we overcome his extremism and move Texas forward.', 'u2': 'Money won’t get you elected'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: u1 is leading in the polls, but we need to keep the momentum going. Every little bit counts!
+u2: Polls don't necessarily translate to votes, though.
+u1: Our grassroots effort is picking up steam! More volunteers, more donations, more Texas for the win!
+u2: It's great that you're enthusiastic, but let's not forget that our opponents have a lot of money behind them.
+u1: We just outraised Greg Abbott — again. Now we’re going to defeat him. That’s how we overcome his extremism and move Texas forward.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+36,16871708060347662994_17221143262976393795,twitter,,en,,"With the union firmly secured because the Queen died, what now for the SNP and Sturgeon's Yes movement? We'll ask some unionists.","Union firmly secured "" ? ?
+Haaaaaaaaaaaaaaaaaaaaaaaaaww !
+Their capacity for self-delusion is limitless !","{'turns': [{'u1': 'What are the real priorities for Scotland, for the people, not just the SNP and its leaders?', 'u2': 'The priorities are the same as always: Scottish nationalism, independence, and the destruction of the union'}, {'u1': 'What about the economic implications of Scottish independence? Have they been properly addressed?', 'u2': 'Those implications are a non-issue, a mere trifle compared to our glorious future'}, {'u1': ""With the union firmly secured because the Queen died, what now for the SNP and Sturgeon's Yes movement? We'll ask some unionists."", 'u2': 'Union firmly secured "" ? ? Haaaaaaaaaaaaaaaaaaaaaaaaaww ! Their capacity for self-delusion is limitless !'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What are the real priorities for Scotland, for the people, not just the SNP and its leaders?
+u2: The priorities are the same as always: Scottish nationalism, independence, and the destruction of the union
+u1: What about the economic implications of Scottish independence? Have they been properly addressed?
+u2: Those implications are a non-issue, a mere trifle compared to our glorious future
+u1: With the union firmly secured because the Queen died, what now for the SNP and Sturgeon's Yes movement? We'll ask some unionists.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+37,16873054711772305548_6725044516132975537,reddit,,en,,My first girlfriend gave me the same nickname.,Guess that explains the username.,"{'turns': [{'u1': 'You have no idea how I got my username, do you?', 'u2': ""Actually, I'm pretty curious, how did you come up with it?""}, {'u1': ""It's a story I only tell my closest friends."", 'u2': ""Aww, you're making me feel left out, share!""}, {'u1': 'My first girlfriend gave me the same nickname.', 'u2': 'Guess that explains the username.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: You have no idea how I got my username, do you?
+u2: Actually, I'm pretty curious, how did you come up with it?
+u1: It's a story I only tell my closest friends.
+u2: Aww, you're making me feel left out, share!
+u1: My first girlfriend gave me the same nickname.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+38,16881123392039255146_7052580710796190837,reddit,,en,,"They're like that Pewdiepie fella for me. Nothing against them, don't dislike them, but they're not at all funny and I cannot comprehend how they are popular as they are.",I don't find him funny either. I watched a video of his to try and understand the appeal and I almost fell asleep,"{'turns': [{'u1': ""You have probably heard of Pewdiepie, he's the popular YouTuber."", 'u2': ""Yeah, I've seen him on YouTube. I'm not sure how he managed to get so many subscribers, though.""}, {'u1': ""His channel is super popular, but I'm not a fan of his style."", 'u2': ""I think he does a lot of gaming content, which isn't really my thing.""}, {'u1': ""They're like that Pewdiepie fella for me. Nothing against them, don't dislike them, but they're not at all funny and I cannot comprehend how they are popular as they are."", 'u2': ""I don't find him funny either. I watched a video of his to try and understand the appeal and I almost fell asleep""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: You have probably heard of Pewdiepie, he's the popular YouTuber.
+u2: Yeah, I've seen him on YouTube. I'm not sure how he managed to get so many subscribers, though.
+u1: His channel is super popular, but I'm not a fan of his style.
+u2: I think he does a lot of gaming content, which isn't really my thing.
+u1: They're like that Pewdiepie fella for me. Nothing against them, don't dislike them, but they're not at all funny and I cannot comprehend how they are popular as they are.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+39,16930140052016113886_3080448594291864074,twitter,,en,,YAY! This makes me so happy ❤️,Jody is amazing (as you know). Equally amazing is her work training teams of clinicians and educators to build their capacity for human-centered and healing-centered work. #inspired,"{'turns': [{'u1': ""So I just talked to Jody, and she's amazing!"", 'u2': 'Ha! I knew that already 🙂'}, {'u1': 'We need more people like Jody to be doing this kind of work! 😊', 'u2': ""She's definitely one of the leaders in this field, but also one of the most humble.""}, {'u1': 'YAY! This makes me so happy ❤️', 'u2': 'Jody is amazing (as you know). Equally amazing is her work training teams of clinicians and educators to build their capacity for human-centered and healing-centered work. #inspired'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: So I just talked to Jody, and she's amazing!
+u2: Ha! I knew that already 🙂
+u1: We need more people like Jody to be doing this kind of work! 😊
+u2: She's definitely one of the leaders in this field, but also one of the most humble.
+u1: YAY! This makes me so happy ❤️
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+40,16943694019747210588_17483232605586372038,twitter,,en,,"Why do we only rest in peace?
+ why don't we live in peace too ?
+?",Good ?,"{'turns': [{'u1': 'What if our minds were a battlefield? Would we find peace in our hearts too?', 'u2': 'What are you talking about?'}, {'u1': 'Think about it. Every war started with words, with arguments, with our opinions.', 'u2': 'You sound quite upset today.'}, {'u1': ""Why do we only rest in peace? why don't we live in peace too ? ?"", 'u2': 'Good ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What if our minds were a battlefield? Would we find peace in our hearts too?
+u2: What are you talking about?
+u1: Think about it. Every war started with words, with arguments, with our opinions.
+u2: You sound quite upset today.
+u1: Why do we only rest in peace? why don't we live in peace too ? ?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+41,1733076514145292669_2994333683564165454,reddit,,en,,"I know everyone is saying don't give into the fearmongering by the media, but if you ask me it's pretty sensible to stay the fuck outta Dublin rn. The only two cases are there, and tho they've been ""contained"" there could be more, especially if they've only tested 392 people. It'll obviously get worse as the weeks go by, Paddy's day will be a melting pot for spreading it even further. It's not looking positive lads.
+Fucking hell it's only March, can 2020 just fuck off?",">  don't give into the fearmongering 
+>but if you ask me it's pretty sensible to stay the fuck outta Dublin rn
+....","{'turns': [{'u1': ""still reeling from the whole China virus outbreak. It's like we're just pretending it's not a thing, and that the cases in Italy aren't gonna spread."", 'u2': ""I get your concerns, but we don't have any cases here, and the government is on top of it""}, {'u1': ""yeah, I guess, but they're just not being upfront about it. And what about the people who've already traveled to Italy? They're basically ticking timebombs"", 'u2': ""that's a fair point, but we still don't know if the people in Italy have been able to infect others, so let's not jump to conclusions""}, {'u1': 'I know everyone is saying don\'t give into the fearmongering by the media, but if you ask me it\'s pretty sensible to stay the fuck outta Dublin rn. The only two cases are there, and tho they\'ve been ""contained"" there could be more, especially if they\'ve only tested 392 people. It\'ll obviously get worse as the weeks go by, Paddy\'s day will be a melting pot for spreading it even further. It\'s not looking positive lads. Fucking hell it\'s only March, can 2020 just fuck off?', 'u2': ""> don't give into the fearmongering >but if you ask me it's pretty sensible to stay the fuck outta Dublin rn ....""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: still reeling from the whole China virus outbreak. It's like we're just pretending it's not a thing, and that the cases in Italy aren't gonna spread.
+u2: I get your concerns, but we don't have any cases here, and the government is on top of it
+u1: yeah, I guess, but they're just not being upfront about it. And what about the people who've already traveled to Italy? They're basically ticking timebombs
+u2: that's a fair point, but we still don't know if the people in Italy have been able to infect others, so let's not jump to conclusions
+u1: I know everyone is saying don't give into the fearmongering by the media, but if you ask me it's pretty sensible to stay the fuck outta Dublin rn. The only two cases are there, and tho they've been ""contained"" there could be more, especially if they've only tested 392 people. It'll obviously get worse as the weeks go by, Paddy's day will be a melting pot for spreading it even further. It's not looking positive lads. Fucking hell it's only March, can 2020 just fuck off?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+42,17457646054318905579_2168687590666378141,twitter,,en,,What is one company you'll never do business with because of their horrible politics?,The Catholic Church,"{'turns': [{'u1': 'have you heard anything about the environmental practices of some of the large corporations in the US?', 'u2': 'Eggs from CA Perdue. Their chicken farms are a nightmare.'}, {'u1': 'I’ve read a lot about those terrible conditions. What else do you feel strongly about?', 'u2': 'I’m a fan of companies that stand up for what they believe in and treat their employees fairly.'}, {'u1': ""What is one company you'll never do business with because of their horrible politics?"", 'u2': 'The Catholic Church'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: have you heard anything about the environmental practices of some of the large corporations in the US?
+u2: Eggs from CA Perdue. Their chicken farms are a nightmare.
+u1: I’ve read a lot about those terrible conditions. What else do you feel strongly about?
+u2: I’m a fan of companies that stand up for what they believe in and treat their employees fairly.
+u1: What is one company you'll never do business with because of their horrible politics?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+43,17670073993875090163_1590051357433719814,twitter,,en,,Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.,"The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.","{'turns': [{'u1': 'People are still struggling with the cost of living and we need immediate action to help those who are really in need.', 'u2': ""True, it's about time the government actually did something to address the financial struggles of ordinary folk, instead of just talking about it.""}, {'u1': ""That's why we need to ensure we're not just looking at quick fixes, but also making long-term changes that benefit everyone."", 'u2': ""You can't just throw money at a problem and expect it to go away, that's not a solution. We need sustainable policies that actually work.""}, {'u1': 'Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.', 'u2': ""The government is going to get a slap from the Speaker. These things should be announced in Parliament first not to the media. No excuse, the Commons will be sitting in an hour's time.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: People are still struggling with the cost of living and we need immediate action to help those who are really in need.
+u2: True, it's about time the government actually did something to address the financial struggles of ordinary folk, instead of just talking about it.
+u1: That's why we need to ensure we're not just looking at quick fixes, but also making long-term changes that benefit everyone.
+u2: You can't just throw money at a problem and expect it to go away, that's not a solution. We need sustainable policies that actually work.
+u1: Government says it will provide a discount on wholesale gas and electricity prices for all non-domestic customers.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+44,1780171058630447799_11512477330405979867,reddit,,en,,Jupiter gonna be wondering where the fuck all these random Irish parcels are coming from.,"If Jupiter was going to turn into a sun, that would have happened a long time ago. I mean, even The Year We Make Contact was like ten years ago.
+PS: And you know what that means too, right? It means, go ahead, land on Europa. Knock yourself out.","{'turns': [{'u1': 'Is Jupiter finally getting all those parcels we ordered, or do we need to track those ourselves?', 'u2': ""No idea, why don't you try calling the Irish office?""}, {'u1': ""I'm a bit worried we might get a backlog of orders stuck on Jupiter's surface."", 'u2': ""We're not shipping anything to Jupiter. It's a gas giant.""}, {'u1': 'Jupiter gonna be wondering where the fuck all these random Irish parcels are coming from.', 'u2': 'If Jupiter was going to turn into a sun, that would have happened a long time ago. I mean, even The Year We Make Contact was like ten years ago. PS: And you know what that means too, right? It means, go ahead, land on Europa. Knock yourself out.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Is Jupiter finally getting all those parcels we ordered, or do we need to track those ourselves?
+u2: No idea, why don't you try calling the Irish office?
+u1: I'm a bit worried we might get a backlog of orders stuck on Jupiter's surface.
+u2: We're not shipping anything to Jupiter. It's a gas giant.
+u1: Jupiter gonna be wondering where the fuck all these random Irish parcels are coming from.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+45,1783501927699301342_4626127304121327566,reddit,,en,,"Fill in the blanks and give it back, I think that's the game","My brother recommended posting a note saying:
+“I’ll park wherever I want you   _  _  _  _   _  _ _ “.","{'turns': [{'u1': 'I saw you parked near a fire hydrant last week! Where do you plan to park today?', 'u2': 'hahaha, oh, you want to play the parking inspector, eh?'}, {'u1': 'Seriously, you need to be more careful with parking. Some spots have time limits.', 'u2': ""Come on, don't be such a buzzkill! Parking isn't that serious""}, {'u1': ""Fill in the blanks and give it back, I think that's the game"", 'u2': 'My brother recommended posting a note saying: “I’ll park wherever I want you _ _ _ _ _ _ _ “.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I saw you parked near a fire hydrant last week! Where do you plan to park today?
+u2: hahaha, oh, you want to play the parking inspector, eh?
+u1: Seriously, you need to be more careful with parking. Some spots have time limits.
+u2: Come on, don't be such a buzzkill! Parking isn't that serious
+u1: Fill in the blanks and give it back, I think that's the game
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+46,18245809656707693871_12995656546816460726,reddit,,en,,"BETRAYAL 
+That's why AAP comes out as worst in this whole issue.
+Congress wants to win LS, and they didn't hide it.
+BJP wants to destroy democracy and establish Brahmin Patriarchy and they are not hiding it.
+~~AAP~~ Kejriwal portrayed  himself as savior and a hero, one who fights for 'AAM AADMI' and when we needed him the most he showed his true colours, hiding in his cave like a snake in complete silence, Enjoying his CM ship for next 5 years, their would be another jumla the next election comes. A true politician.
+You can check my comment history, I called him hero time to time and i know many of you too.","Well, let's see how it all unfolds. I am not sure what the end game of AAP is, or what they were thinking when they didn't step up for the violence or let this sedition case happen. We will know in time. As said, AAP is another political party and is no different than others. That being said, perhaps someone should clariify exactly what made them take these decisions.","{'turns': [{'u1': 'You know what is shocking? the so called aam aadmi is silent on this major crisis. Kejriwal must have given up on his people. We expected more, but I think he is no different than other politicians who are only interested in their power and prestige. The biggest betrayal.', 'u2': ""It's hard to tell what Kejriwal's priorities are right now. He hasn't been as vocal as one might expect. Could be that he's trying to tread carefully given the political landscape.""}, {'u1': ""It's clear now, AAP is not what they claim to be. The party that promised to be a breath of fresh air is just another bunch of power-hungry politicians. The hypocrisy is staggering."", 'u2': ""I'm not so sure we can generalize AAP based on this one incident. We need more context to understand their decision-making process.""}, {'u1': ""BETRAYAL That's why AAP comes out as worst in this whole issue. Congress wants to win LS, and they didn't hide it. BJP wants to destroy democracy and establish Brahmin Patriarchy and they are not hiding it. ~~AAP~~ Kejriwal portrayed himself as savior and a hero, one who fights for 'AAM AADMI' and when we needed him the most he showed his true colours, hiding in his cave like a snake in complete silence, Enjoying his CM ship for next 5 years, their would be another jumla the next election comes. A true politician. You can check my comment history, I called him hero time to time and i know many of you too."", 'u2': ""Well, let's see how it all unfolds. I am not sure what the end game of AAP is, or what they were thinking when they didn't step up for the violence or let this sedition case happen. We will know in time. As said, AAP is another political party and is no different than others. That being said, perhaps someone should clariify exactly what made them take these decisions.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: You know what is shocking? the so called aam aadmi is silent on this major crisis. Kejriwal must have given up on his people. We expected more, but I think he is no different than other politicians who are only interested in their power and prestige. The biggest betrayal.
+u2: It's hard to tell what Kejriwal's priorities are right now. He hasn't been as vocal as one might expect. Could be that he's trying to tread carefully given the political landscape.
+u1: It's clear now, AAP is not what they claim to be. The party that promised to be a breath of fresh air is just another bunch of power-hungry politicians. The hypocrisy is staggering.
+u2: I'm not so sure we can generalize AAP based on this one incident. We need more context to understand their decision-making process.
+u1: BETRAYAL That's why AAP comes out as worst in this whole issue. Congress wants to win LS, and they didn't hide it. BJP wants to destroy democracy and establish Brahmin Patriarchy and they are not hiding it. ~~AAP~~ Kejriwal portrayed himself as savior and a hero, one who fights for 'AAM AADMI' and when we needed him the most he showed his true colours, hiding in his cave like a snake in complete silence, Enjoying his CM ship for next 5 years, their would be another jumla the next election comes. A true politician. You can check my comment history, I called him hero time to time and i know many of you too.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+47,2161430649299695352_11198768799297110650,twitter,,en,,Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation.,Agreed. Houghton’s goal is just absolute perfection.,"{'turns': [{'u1': 'Can’t believe Pagliuca fell for that. How many years of work down the drain.', 'u2': 'Still waiting for someone to get us a goal. We’re so unlucky sometimes.'}, {'u1': 'Pagliuca doesn’t even know what hit him. Poor guy.', 'u2': 'And now Houghton is gonna score. My money’s on it.'}, {'u1': ""Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation."", 'u2': 'Agreed. Houghton’s goal is just absolute perfection.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Can’t believe Pagliuca fell for that. How many years of work down the drain.
+u2: Still waiting for someone to get us a goal. We’re so unlucky sometimes.
+u1: Pagliuca doesn’t even know what hit him. Poor guy.
+u2: And now Houghton is gonna score. My money’s on it.
+u1: Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+48,2172729134312177266_15802185063629380999,twitter,,en,,yes you are. ???,You are going to lose your crush?,"{'turns': [{'u1': 'Youre getting pretty bold out here. What do you have to say for yourself?', 'u2': 'Is this about what happened at the party over the weekend?'}, {'u1': 'I dont think anyone thought youd have the guts to text her yourself. She said no, btw.', 'u2': 'I swear I had nothing to do with it. Youre freaking out over nothing.'}, {'u1': 'yes you are. ???', 'u2': 'You are going to lose your crush?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Youre getting pretty bold out here. What do you have to say for yourself?
+u2: Is this about what happened at the party over the weekend?
+u1: I dont think anyone thought youd have the guts to text her yourself. She said no, btw.
+u2: I swear I had nothing to do with it. Youre freaking out over nothing.
+u1: yes you are. ???
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+49,2194523057646503309_13266086147575505433,twitter,,en,,"Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?",Never thought in this direction. ?,"{'turns': [{'u1': ""Do you ever feel like men do that weird, lingering stare? I mean, it's like they're trying to devour you with their eyes. Ugh, makes me so uncomfortable!"", 'u2': ""Haha, actually, I do think some guys can be a bit too intense sometimes. But I've noticed it's not always the case. What makes you think that, though?""}, {'u1': ""I guess I just think we're more aware of it now, since we're always on the lookout for it. Plus, I've seen guys get into trouble for it. But I'm still trying to wrap my head around why they do it in the first place..."", 'u2': ""I see what you mean. It's like we've become more vigilant about it. But have you ever stopped to think that maybe there's a scientific explanation behind it? I mean, our brains are wired differently, after all...""}, {'u1': 'Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?', 'u2': 'Never thought in this direction. ?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Do you ever feel like men do that weird, lingering stare? I mean, it's like they're trying to devour you with their eyes. Ugh, makes me so uncomfortable!
+u2: Haha, actually, I do think some guys can be a bit too intense sometimes. But I've noticed it's not always the case. What makes you think that, though?
+u1: I guess I just think we're more aware of it now, since we're always on the lookout for it. Plus, I've seen guys get into trouble for it. But I'm still trying to wrap my head around why they do it in the first place...
+u2: I see what you mean. It's like we've become more vigilant about it. But have you ever stopped to think that maybe there's a scientific explanation behind it? I mean, our brains are wired differently, after all...
+u1: Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+50,2507886556808965649_6352252321123096723,reddit,,en,,Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.,That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.,"{'turns': [{'u1': 'We need to acknowledge the progress made by some countries in resolving conflicts without causing chaos. Pakistan, for instance, has played a significant role in negotiating a peace deal in Afghanistan.', 'u2': ""I don't think we should generalize the progress of other countries to justify our own failures. We have our own set of challenges that we need to address first.""}, {'u1': 'The point is that, unlike India, Pakistan has shown its ability to put aside differences and work towards a common goal. We could learn from that.', 'u2': ""That's not the point. The point is that Pakistan's past actions have been far from exemplary. They've supported groups that have caused immense harm to others.""}, {'u1': 'Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.', 'u2': ""That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: We need to acknowledge the progress made by some countries in resolving conflicts without causing chaos. Pakistan, for instance, has played a significant role in negotiating a peace deal in Afghanistan.
+u2: I don't think we should generalize the progress of other countries to justify our own failures. We have our own set of challenges that we need to address first.
+u1: The point is that, unlike India, Pakistan has shown its ability to put aside differences and work towards a common goal. We could learn from that.
+u2: That's not the point. The point is that Pakistan's past actions have been far from exemplary. They've supported groups that have caused immense harm to others.
+u1: Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+51,2893202046812202955_17487538081252840433,twitter,,en,,"Where is BETI PARHAO BETI BACHAO  ?
+Gujarat ranking very poor  in girl child education
+Only 10%  girls in Gujarat complete graduation
+20% per cent of girls don't reach class 10.
+Gujarat  at the bottom in education of girls in the age group 10-14 years.",Educate citizens instead of educating prime minister.  PARCIPATE &amp; bring change you wish to see. Don't seek Ministerial berth alone.,"{'turns': [{'u1': 'Has the Government of India fulfilled its promises of #BetiBachaoBetiPadhao? I demand to know where has the initiative been used effectively?', 'u2': ""A lot has been done but more needs to be done. The scheme is a step in the right direction. Let's focus on its implementation and not just its announcements.""}, {'u1': 'Is #BetiBachaoBetiPadhao just a political slogan or is it an actual initiative to improve the lives of girls? If not, what are the tangible results we can see?', 'u2': 'The initiative is a genuine effort to improve the lives of girls. However, it needs to be strengthened with more funding and better implementation. The current results are encouraging but not satisfactory.'}, {'u1': ""Where is BETI PARHAO BETI BACHAO ? Gujarat ranking very poor in girl child education Only 10% girls in Gujarat complete graduation 20% per cent of girls don't reach class 10. Gujarat at the bottom in education of girls in the age group 10-14 years."", 'u2': ""Educate citizens instead of educating prime minister. PARCIPATE &amp; bring change you wish to see. Don't seek Ministerial berth alone.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Has the Government of India fulfilled its promises of #BetiBachaoBetiPadhao? I demand to know where has the initiative been used effectively?
+u2: A lot has been done but more needs to be done. The scheme is a step in the right direction. Let's focus on its implementation and not just its announcements.
+u1: Is #BetiBachaoBetiPadhao just a political slogan or is it an actual initiative to improve the lives of girls? If not, what are the tangible results we can see?
+u2: The initiative is a genuine effort to improve the lives of girls. However, it needs to be strengthened with more funding and better implementation. The current results are encouraging but not satisfactory.
+u1: Where is BETI PARHAO BETI BACHAO ? Gujarat ranking very poor in girl child education Only 10% girls in Gujarat complete graduation 20% per cent of girls don't reach class 10. Gujarat at the bottom in education of girls in the age group 10-14 years.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+52,3030112931675079846_14390144366231528313,twitter,,en,,"If you could pick your FAVOURITE thing from ANY #SQLBits event, what would you choose?
+
+????☕️?","That time, when a huge curtain reveal the whole fun fair at SQL Bits Party Telford","{'turns': [{'u1': 'Seen the latest line-up and I am EXCITED! Which SQL Bits event did you attend?', 'u2': 'Telford, last year! We had an awesome time The party was AMAZING'}, {'u1': 'Are you coming back this year? Any favorite memories to share?', 'u2': ""Actually, I'll be back again this year, and I'm really looking forward to it""}, {'u1': 'If you could pick your FAVOURITE thing from ANY #SQLBits event, what would you choose? ????☕️?', 'u2': 'That time, when a huge curtain reveal the whole fun fair at SQL Bits Party Telford'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Seen the latest line-up and I am EXCITED! Which SQL Bits event did you attend?
+u2: Telford, last year! We had an awesome time The party was AMAZING
+u1: Are you coming back this year? Any favorite memories to share?
+u2: Actually, I'll be back again this year, and I'm really looking forward to it
+u1: If you could pick your FAVOURITE thing from ANY #SQLBits event, what would you choose? ????☕️?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+53,3039945136729552914_3658013811211409339,reddit,,en,,So finally the stupid have outnumbered the sane,"Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail","{'turns': [{'u1': ""I see what's happening in my town, all these uneducated people getting brainwashed by the media."", 'u2': ""The uneducated are usually the first to get their information from sensationalized news. Can't blame them for being misinformed""}, {'u1': ""Exactly! The way the news portrays things is always so biased. It's no wonder they get caught up in all this fake narrative."", 'u2': ""News outlets just serve as a propaganda machine nowadays. That's what's so frustrating about our world today""}, {'u1': 'So finally the stupid have outnumbered the sane', 'u2': 'Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I see what's happening in my town, all these uneducated people getting brainwashed by the media.
+u2: The uneducated are usually the first to get their information from sensationalized news. Can't blame them for being misinformed
+u1: Exactly! The way the news portrays things is always so biased. It's no wonder they get caught up in all this fake narrative.
+u2: News outlets just serve as a propaganda machine nowadays. That's what's so frustrating about our world today
+u1: So finally the stupid have outnumbered the sane
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+54,3081572222681915429_7010743532332502600,reddit,,en,,Sign the Paris Agreement,Weren’t we apart of that then quit?,"{'turns': [{'u1': 'It is our moral obligation to protect the environment for future generations.', 'u2': 'I don’t want to have kids if I know they’ll be living in a dying world.'}, {'u1': 'This is not about being parents, this is about responsibility towards the planet. Every country should take action.', 'u2': 'Not everyone believes that it’s our responsibility, they think it’s too costly and it’s someone else’s problem.'}, {'u1': 'Sign the Paris Agreement', 'u2': 'Weren’t we apart of that then quit?'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: It is our moral obligation to protect the environment for future generations.
+u2: I don’t want to have kids if I know they’ll be living in a dying world.
+u1: This is not about being parents, this is about responsibility towards the planet. Every country should take action.
+u2: Not everyone believes that it’s our responsibility, they think it’s too costly and it’s someone else’s problem.
+u1: Sign the Paris Agreement
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+55,3817741872495313694_5377329579232896270,reddit,,en,,"The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I  feel like it should’ve been Sun night if it wasn’t.","> The Clothes Show. Was that I’m after Antiques roadshow?
+IIRC it was on Sundays, but at like 3 or 4 pm?
+EDIT: Close. It was 5pm in 1993!","{'turns': [{'u1': 'have been binge-watching TV shows all day and I am getting totally confused.', 'u2': ""haha, yeah! I've been in the same boat this week! Which ones have you been watching?""}, {'u1': 'Ugh, I have no idea. I just started recording them and then lost track of which was which.', 'u2': 'That sounds super frustrating! I think I saw The Clothes Show mentioned somewhere, though.'}, {'u1': 'The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I feel like it should’ve been Sun night if it wasn’t.', 'u2': '> The Clothes Show. Was that I’m after Antiques roadshow? IIRC it was on Sundays, but at like 3 or 4 pm? EDIT: Close. It was 5pm in 1993!'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: have been binge-watching TV shows all day and I am getting totally confused.
+u2: haha, yeah! I've been in the same boat this week! Which ones have you been watching?
+u1: Ugh, I have no idea. I just started recording them and then lost track of which was which.
+u2: That sounds super frustrating! I think I saw The Clothes Show mentioned somewhere, though.
+u1: The Clothes Show. Was that I’m after Antiques roadshow? Maybe it was a Sat? Also, Time Team, I feel like it should’ve been Sun night if it wasn’t.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+56,4061000399414624419_15458374129894293077,twitter,,en,,OMG ?????,Hahahaha my reaction everytime!,"{'turns': [{'u1': 'I feel so anxious waiting for the results of the video contest.', 'u2': 'I totally get it! It’s always a nerve-wracking experience.'}, {'u1': 'What if we do poorly? What if it’s not good enough?', 'u2': 'Let’s focus on what we can control and just have fun with it!'}, {'u1': 'OMG ?????', 'u2': 'Hahahaha my reaction everytime!'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I feel so anxious waiting for the results of the video contest.
+u2: I totally get it! It’s always a nerve-wracking experience.
+u1: What if we do poorly? What if it’s not good enough?
+u2: Let’s focus on what we can control and just have fun with it!
+u1: OMG ?????
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+57,4074268006523460659_3733842516058183024,twitter,,en,,"That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.","You have explained this very well. In fact, many people look at our  image and judge everything, but in real life, not everything is like that.","{'turns': [{'u1': ""I think people often forget that our online persona is not necessarily who we are in real life. It's like wearing a different costume to a party. We might feel more confident or less anxious in certain situations, but that doesn't define our true nature."", 'u2': ""That's a great point, but what about people who do carry their online behavior into real life? I've known folks who are super aggressive or condescending online and end up being the same way in person.""}, {'u1': ""However, I think even those individuals can have their good sides, it's just that those traits might not be as prominent or easily visible in their online presence. We tend to focus on the negative aspects, don't we?"", 'u2': ""True, we often focus on the most extreme examples or the things that go viral, which isn't always a fair representation of the person or group. But what about when people are intentionally being misleading or deceptive online?""}, {'u1': 'That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.', 'u2': 'You have explained this very well. In fact, many people look at our image and judge everything, but in real life, not everything is like that.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I think people often forget that our online persona is not necessarily who we are in real life. It's like wearing a different costume to a party. We might feel more confident or less anxious in certain situations, but that doesn't define our true nature.
+u2: That's a great point, but what about people who do carry their online behavior into real life? I've known folks who are super aggressive or condescending online and end up being the same way in person.
+u1: However, I think even those individuals can have their good sides, it's just that those traits might not be as prominent or easily visible in their online presence. We tend to focus on the negative aspects, don't we?
+u2: True, we often focus on the most extreme examples or the things that go viral, which isn't always a fair representation of the person or group. But what about when people are intentionally being misleading or deceptive online?
+u1: That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+58,4420244673364894268_12857390679024756023,twitter,,en,,Next up the 747? ?,No point. We don’t move enough of them. We have some contractors to use on the occasion they come up.,"{'turns': [{'u1': ""What's the largest plane you've seen moving lately?"", 'u2': 'Nothing impressive. We just moved some light cargo yesterday.'}, {'u1': ""Any chance we'll get to move some bigger stuff soon?"", 'u2': ""Doubtful. Our usual clients aren't really in the market for anything that large.""}, {'u1': 'Next up the 747? ?', 'u2': 'No point. We don’t move enough of them. We have some contractors to use on the occasion they come up.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What's the largest plane you've seen moving lately?
+u2: Nothing impressive. We just moved some light cargo yesterday.
+u1: Any chance we'll get to move some bigger stuff soon?
+u2: Doubtful. Our usual clients aren't really in the market for anything that large.
+u1: Next up the 747? ?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+59,452015173105250262_1929604048844990661,reddit,,en,,I'm trying to read reddit with one eye  .,Which eye?,"{'turns': [{'u1': 'Just spent an hour trying to find my reading glasses.', 'u2': 'Ahaha, where did you finally find them?'}, {'u1': 'Ugh, still nowhere to be found. I had to ask my roommate to borrow some of his.', 'u2': 'Ha! Good thing for roommate assistance, right?'}, {'u1': ""I'm trying to read reddit with one eye ."", 'u2': 'Which eye?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Just spent an hour trying to find my reading glasses.
+u2: Ahaha, where did you finally find them?
+u1: Ugh, still nowhere to be found. I had to ask my roommate to borrow some of his.
+u2: Ha! Good thing for roommate assistance, right?
+u1: I'm trying to read reddit with one eye .
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+60,4895824813506931180_3385576044469113281,reddit,,en,,What new band are you listening to?,Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :),"{'turns': [{'u1': 'Looking for some fresh music', 'u2': ""Ahaha I just got into that new indie scene myself! Who's your favorite artist from it?""}, {'u1': 'Have you listened to that new pop-punk band?', 'u2': ""I know that one! I think they're pretty awesome!""}, {'u1': 'What new band are you listening to?', 'u2': 'Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :)'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Looking for some fresh music
+u2: Ahaha I just got into that new indie scene myself! Who's your favorite artist from it?
+u1: Have you listened to that new pop-punk band?
+u2: I know that one! I think they're pretty awesome!
+u1: What new band are you listening to?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+61,4971118703939679484_6413654437956599910,reddit,,en,,"At the moment the coronavirus has a higher mortality rate than the Spanish flu, it also seems to spread very quickly and can live on surfaces for upto 9 days. Given that it wouldn’t take much for Irish hospitals to become overwhelmed, how bad do you think this could get?","It wouldn’t take much for already limited resources to become overwhelmed. But the HSE have been getting prepared for this and the infectious disease units are ready and waiting for serious cases.
+Not going to lie to anyone, it’s going to get worse before it gets better. But the vast majority of cases will be mild, we just need to keep on top and take it serious if we’re told to self isolate.","{'turns': [{'u1': ""Just reading this study on the coronavirus and I'm a bit worried about how fast it's spreading. Do you think our healthcare system will be able to cope?"", 'u2': ""We do have some of the best medical facilities in Europe, but it's not just about the equipment and staff - it's also about preparedness and planning. What's your source on this study?""}, {'u1': ""I'm reading a report that says the virus has already spread to several cities worldwide. It's like nothing we've ever seen before. What do you think is the biggest concern here?"", 'u2': ""Definitely the rate of spread and the fact that it's airborne. That makes it much harder to contain than a typical flu outbreak. But I'm sure our health authorities are working hard to stay on top of it.""}, {'u1': 'At the moment the coronavirus has a higher mortality rate than the Spanish flu, it also seems to spread very quickly and can live on surfaces for upto 9 days. Given that it wouldn’t take much for Irish hospitals to become overwhelmed, how bad do you think this could get?', 'u2': 'It wouldn’t take much for already limited resources to become overwhelmed. But the HSE have been getting prepared for this and the infectious disease units are ready and waiting for serious cases. Not going to lie to anyone, it’s going to get worse before it gets better. But the vast majority of cases will be mild, we just need to keep on top and take it serious if we’re told to self isolate.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Just reading this study on the coronavirus and I'm a bit worried about how fast it's spreading. Do you think our healthcare system will be able to cope?
+u2: We do have some of the best medical facilities in Europe, but it's not just about the equipment and staff - it's also about preparedness and planning. What's your source on this study?
+u1: I'm reading a report that says the virus has already spread to several cities worldwide. It's like nothing we've ever seen before. What do you think is the biggest concern here?
+u2: Definitely the rate of spread and the fact that it's airborne. That makes it much harder to contain than a typical flu outbreak. But I'm sure our health authorities are working hard to stay on top of it.
+u1: At the moment the coronavirus has a higher mortality rate than the Spanish flu, it also seems to spread very quickly and can live on surfaces for upto 9 days. Given that it wouldn’t take much for Irish hospitals to become overwhelmed, how bad do you think this could get?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+62,5130019403604504096_14088306147262813061,reddit,,en,,Jump street 21,Wth? Which part?,"{'turns': [{'u1': '\'I just saw the movie ""21 Jump Street"". So much fun! Should we go see it?', 'u2': ""We've already seen it a couple of times. Not worth it again.""}, {'u1': ""Haha I get it, but I think it's worth a second view! The action scenes are pretty awesome"", 'u2': 'The action scenes are cool, but have you seen the sequel?'}, {'u1': 'Jump street 21', 'u2': 'Wth? Which part?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: 'I just saw the movie ""21 Jump Street"". So much fun! Should we go see it?
+u2: We've already seen it a couple of times. Not worth it again.
+u1: Haha I get it, but I think it's worth a second view! The action scenes are pretty awesome
+u2: The action scenes are cool, but have you seen the sequel?
+u1: Jump street 21
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+63,5228608070889845790_3437472600991932343,twitter,,en,,Would you rather see Alex Jones bankrupt or in jail?,So hard to choose…….let’s do both!,"{'turns': [{'u1': '""I\'m so frustrated with Alex Jones and his misinformation. It\'s time someone held him accountable!', 'u2': ""Honestly, I've lost track of what he's been saying lately. He's just a spectacle to me.""}, {'u1': ""I think it's interesting that his followers still support him despite all the evidence against him. Do you think they're just that brainwashed or what?"", 'u2': ""That's a good question. I think some of them really believe what he's saying, but others are just in it for the drama.""}, {'u1': 'Would you rather see Alex Jones bankrupt or in jail?', 'u2': 'So hard to choose…….let’s do both!'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: ""I'm so frustrated with Alex Jones and his misinformation. It's time someone held him accountable!
+u2: Honestly, I've lost track of what he's been saying lately. He's just a spectacle to me.
+u1: I think it's interesting that his followers still support him despite all the evidence against him. Do you think they're just that brainwashed or what?
+u2: That's a good question. I think some of them really believe what he's saying, but others are just in it for the drama.
+u1: Would you rather see Alex Jones bankrupt or in jail?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+64,5255578180520095660_15098117359332045192,reddit,,en,,Didn’t know we had mountains named after rashers!,"They built the mountains in honour of the rashers, I believe.
+They ran €10 billion over budget and were supposed to be like the Alps though.","{'turns': [{'u1': 'Have you guys ever been on the rasher trail? The food up there must be amazing', 'u2': ""I was wondering the same thing, but I heard it's actually the rasher 'view' that's worth the climb""}, {'u1': ""Really? I didn't know they built a trail up there for us non-hikers"", 'u2': 'No, they built it as part of the bigger project – the Rasher Resorts Complex'}, {'u1': 'Didn’t know we had mountains named after rashers!', 'u2': 'They built the mountains in honour of the rashers, I believe. They ran €10 billion over budget and were supposed to be like the Alps though.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Have you guys ever been on the rasher trail? The food up there must be amazing
+u2: I was wondering the same thing, but I heard it's actually the rasher 'view' that's worth the climb
+u1: Really? I didn't know they built a trail up there for us non-hikers
+u2: No, they built it as part of the bigger project – the Rasher Resorts Complex
+u1: Didn’t know we had mountains named after rashers!
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+65,5401568270236027876_7394103012939129894,reddit,,en,,There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?,Yes.  They have the meats.,"{'turns': [{'u1': ""That reminds me, have you tried any new restaurants lately? I'm getting a little tired of the same old places."", 'u2': 'Arby’s actually! I went there last week. It was pretty meh.'}, {'u1': 'Yeah, that’s kind of what I was thinking... they don’t seem to be doing anything right. Do you think people just love the roast beef?', 'u2': 'Hmm, maybe? But I think there are some other factors at play here...'}, {'u1': 'There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?', 'u2': 'Yes. They have the meats.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: That reminds me, have you tried any new restaurants lately? I'm getting a little tired of the same old places.
+u2: Arby’s actually! I went there last week. It was pretty meh.
+u1: Yeah, that’s kind of what I was thinking... they don’t seem to be doing anything right. Do you think people just love the roast beef?
+u2: Hmm, maybe? But I think there are some other factors at play here...
+u1: There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+66,5511082206665196221_3783865121451681205,reddit,,en,,I get a yearly raise which is supposed to be in line with inflation but every year they tell us how many millions in profit they make and how it's not enough to give us all inflation rates so every year I effectively work for 1-2% less than I did the year before.,I see you obviously work at the same place I do :-(,"{'turns': [{'u1': ""Just saw our company's profits for the quarter and I am so disappointed but not surprised. The numbers are staggering... another year of record profits... the employees deserve so much better than this."", 'u2': ""I know, right? The CEO is always talking about how we need to cut costs to keep up with the competition. Meanwhile, they're making more than enough to cover our raises, don't you think?""}, {'u1': ""Exactly! And it's not just the money; the company culture has become so toxic with all the stress and pressure to perform. It's like they're only looking out for their shareholders, not their employees."", 'u2': ""Ugh, I know what you mean. It feels like we're just cogs in a machine, not human beings with needs and concerns. Sometimes I wonder if we're even making a difference in the company's overall success...""}, {'u1': ""I get a yearly raise which is supposed to be in line with inflation but every year they tell us how many millions in profit they make and how it's not enough to give us all inflation rates so every year I effectively work for 1-2% less than I did the year before."", 'u2': 'I see you obviously work at the same place I do :-('}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Just saw our company's profits for the quarter and I am so disappointed but not surprised. The numbers are staggering... another year of record profits... the employees deserve so much better than this.
+u2: I know, right? The CEO is always talking about how we need to cut costs to keep up with the competition. Meanwhile, they're making more than enough to cover our raises, don't you think?
+u1: Exactly! And it's not just the money; the company culture has become so toxic with all the stress and pressure to perform. It's like they're only looking out for their shareholders, not their employees.
+u2: Ugh, I know what you mean. It feels like we're just cogs in a machine, not human beings with needs and concerns. Sometimes I wonder if we're even making a difference in the company's overall success...
+u1: I get a yearly raise which is supposed to be in line with inflation but every year they tell us how many millions in profit they make and how it's not enough to give us all inflation rates so every year I effectively work for 1-2% less than I did the year before.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+67,5584588494722402477_10152125475423888733,twitter,,en,,Anybody got a parking pass they won’t be using for Sunday’s Titans-Raiders game?,"If the Titans man up and win this weekend, they’re right back in it this season. It’s way too early to write them off completely! But my confidence is low after what we saw the past two weeks ?
+
+Colts vs Chiefs
+Jags @ Chargers","{'turns': [{'u1': 'Do you think the Titans have a shot at winning on Sunday?', 'u2': ""Honestly, their odds aren't great. They've been having a tough time lately and the Raiders are looking strong this season.""}, {'u1': ""Anybody else think the Titans need to step up their game? They can't keep relying on last year's success."", 'u2': ""If they don't show some real improvement soon, they'll be sitting at the bottom of the standings in no time.""}, {'u1': 'Anybody got a parking pass they won’t be using for Sunday’s Titans-Raiders game?', 'u2': 'If the Titans man up and win this weekend, they’re right back in it this season. It’s way too early to write them off completely! But my confidence is low after what we saw the past two weeks ? Colts vs Chiefs Jags @ Chargers'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Do you think the Titans have a shot at winning on Sunday?
+u2: Honestly, their odds aren't great. They've been having a tough time lately and the Raiders are looking strong this season.
+u1: Anybody else think the Titans need to step up their game? They can't keep relying on last year's success.
+u2: If they don't show some real improvement soon, they'll be sitting at the bottom of the standings in no time.
+u1: Anybody got a parking pass they won’t be using for Sunday’s Titans-Raiders game?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+68,5789343992485073204_4900369182476203542,twitter,,en,,"Cashless Bail MUST be REPEALED!
+
+Judges need discretion to weigh dangerousness.
+
+Criminals shouldn’t be able to chop up tables &amp; walls of a McDonald’s, swinging the hatchet wildly at customers, &amp; be released from custody before the fries get cold.
+
+We must take back our streets!",What about the group of guys that were beating on him first?  Shouldn’t they have been arrested as well?,"{'turns': [{'u1': 'These politicians are more interested in coddling the bad guys than in keeping our streets safe! Who’s next?', 'u2': 'Don’t forget that the accused has a right to a fair trial.'}, {'u1': 'Do you really think a trial would do any good? Look at the judges they appoint to the bench! What we really need is judges who can make the tough calls and keep our communities safe.', 'u2': 'But that’s not how it works, and you know it.'}, {'u1': 'Cashless Bail MUST be REPEALED! Judges need discretion to weigh dangerousness. Criminals shouldn’t be able to chop up tables &amp; walls of a McDonald’s, swinging the hatchet wildly at customers, &amp; be released from custody before the fries get cold. We must take back our streets!', 'u2': 'What about the group of guys that were beating on him first? Shouldn’t they have been arrested as well?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: These politicians are more interested in coddling the bad guys than in keeping our streets safe! Who’s next?
+u2: Don’t forget that the accused has a right to a fair trial.
+u1: Do you really think a trial would do any good? Look at the judges they appoint to the bench! What we really need is judges who can make the tough calls and keep our communities safe.
+u2: But that’s not how it works, and you know it.
+u1: Cashless Bail MUST be REPEALED! Judges need discretion to weigh dangerousness. Criminals shouldn’t be able to chop up tables &amp; walls of a McDonald’s, swinging the hatchet wildly at customers, &amp; be released from custody before the fries get cold. We must take back our streets!
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+69,5900538012500337839_10194397940853410924,reddit,,en,,What an absolute load of garbage. I read those books as a kid. They were great. Not even close,The most disappointing trailer since... well... cant remember the last time I was so disappointed,"{'turns': [{'u1': ""I saw the trailer and I'm extremely disappointed. I was hyped for this movie."", 'u2': ""I know, right? It looks like a complete cash grab. They've ruined it for me.""}, {'u1': ""I've read the books that the movie is based on. The authors did a much better job. I remember the story being so well-written."", 'u2': ""I haven't read the books, but I can tell you that the movie doesn't seem to do the books justice. It looks like they're trying to appeal to a younger audience.""}, {'u1': 'What an absolute load of garbage. I read those books as a kid. They were great. Not even close', 'u2': 'The most disappointing trailer since... well... cant remember the last time I was so disappointed'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I saw the trailer and I'm extremely disappointed. I was hyped for this movie.
+u2: I know, right? It looks like a complete cash grab. They've ruined it for me.
+u1: I've read the books that the movie is based on. The authors did a much better job. I remember the story being so well-written.
+u2: I haven't read the books, but I can tell you that the movie doesn't seem to do the books justice. It looks like they're trying to appeal to a younger audience.
+u1: What an absolute load of garbage. I read those books as a kid. They were great. Not even close
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+70,6005609496907645847_15690297714193139865,reddit,,en,,"Americans. 
+It’s wooster shuh.","No, no it's not, it's just Wooster, you have to go and live in France now, your rights are revoked.","{'turns': [{'u1': 'I heard that the English name for some French town is also Wooster, isn’t it?', 'u2': 'That has nothing to do with what you think it does, move along.'}, {'u1': ""Oh, so you think I'm being paranoid then? My great-aunt Mildred used to tell me that story about Americans and Wooster, and I believe her."", 'u2': 'Your great-aunt Mildred probably had too much wine at dinner, that’s all.'}, {'u1': 'Americans. It’s wooster shuh.', 'u2': ""No, no it's not, it's just Wooster, you have to go and live in France now, your rights are revoked.""}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I heard that the English name for some French town is also Wooster, isn’t it?
+u2: That has nothing to do with what you think it does, move along.
+u1: Oh, so you think I'm being paranoid then? My great-aunt Mildred used to tell me that story about Americans and Wooster, and I believe her.
+u2: Your great-aunt Mildred probably had too much wine at dinner, that’s all.
+u1: Americans. It’s wooster shuh.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+71,6729194111270145159_8234930110387113285,twitter,,en,,Where can I find them,My page,"{'turns': [{'u1': ""I'm not getting anywhere trying to find them. Have you talked to anyone about this?"", 'u2': ""I know someone who might know something. I'll message them.""}, {'u1': 'Do they usually respond quickly or is it going to take a while?', 'u2': ""They're pretty active on here, so I think it'll be sooner rather than later.""}, {'u1': 'Where can I find them', 'u2': 'My page'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm not getting anywhere trying to find them. Have you talked to anyone about this?
+u2: I know someone who might know something. I'll message them.
+u1: Do they usually respond quickly or is it going to take a while?
+u2: They're pretty active on here, so I think it'll be sooner rather than later.
+u1: Where can I find them
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+72,6819006717190778124_10270205743788679897,reddit,,en,,"Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star Wars prequels, but George Lucas screwed up the directing and then chickened out after seeing the public reception of the character.
+See also r/darthjarjar",Oh the possibilities. I loved jar jar.,"{'turns': [{'u1': ""I'm reading the Star Wars wiki right now and it's insane how many ideas and concepts got scrapped during the prequels. I'm pretty sure I know why Anakin's fall was watered down."", 'u2': ""Interesting. I was wondering if he just wasn't given enough to do.""}, {'u1': ""It's possible that Anakin just wasn't the right fit for a fall like that. Lucasfilm's track record with strong villains is pretty spotty, and it seems like they always try to redeem them in the end."", 'u2': ""I'm not so sure. It feels like they just wanted to make a kid's movie with a cool spaceship and forgot to actually make a compelling story.""}, {'u1': 'Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star Wars prequels, but George Lucas screwed up the directing and then chickened out after seeing the public reception of the character. See also r/darthjarjar', 'u2': 'Oh the possibilities. I loved jar jar.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm reading the Star Wars wiki right now and it's insane how many ideas and concepts got scrapped during the prequels. I'm pretty sure I know why Anakin's fall was watered down.
+u2: Interesting. I was wondering if he just wasn't given enough to do.
+u1: It's possible that Anakin just wasn't the right fit for a fall like that. Lucasfilm's track record with strong villains is pretty spotty, and it seems like they always try to redeem them in the end.
+u2: I'm not so sure. It feels like they just wanted to make a kid's movie with a cool spaceship and forgot to actually make a compelling story.
+u1: Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star Wars prequels, but George Lucas screwed up the directing and then chickened out after seeing the public reception of the character. See also r/darthjarjar
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+73,6899861667396480758_6969123579575091136,twitter,,en,,"If you're in a city with time to kill, what's the first thing you do?","Walking tour. Ideally a food tour, if there's time.","{'turns': [{'u1': 'I always love exploring cities. What are your favorite ways to pass the time?', 'u2': ""I'm a big fan of museums. There's something about art and history that really speaks to me.""}, {'u1': ""I've had some amazing experiences at museums, but I also love trying new foods."", 'u2': 'Definitely! Food is a big part of the culture in so many cities. Do you have a favorite type of cuisine?'}, {'u1': ""If you're in a city with time to kill, what's the first thing you do?"", 'u2': ""Walking tour. Ideally a food tour, if there's time.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I always love exploring cities. What are your favorite ways to pass the time?
+u2: I'm a big fan of museums. There's something about art and history that really speaks to me.
+u1: I've had some amazing experiences at museums, but I also love trying new foods.
+u2: Definitely! Food is a big part of the culture in so many cities. Do you have a favorite type of cuisine?
+u1: If you're in a city with time to kill, what's the first thing you do?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+74,694348653451657143_7304807344363100836,twitter,,en,,"Q3. What is the resolution of the #GalaxyZFlip3 main camera?
+A. 8MP
+B. 10MP
+C. 12MP
+D. 16MP
+
+#FlipAtFlipkart #GalaxyZFlip3 #GalaxyZFlip3Giveaway #stufflistingsarmy","C. 12MP
+
+#GalaxyZFlip3 
+#FlipAtFlipkart #GalaxyZFlip3 
+#GalaxyZFlip3Giveaway 
+#stufflistingsarmy","{'turns': [{'u1': ""What's the verdict on the #GalaxyZFlip3 camera? Is it a game-changer or just another phone with a mediocre camera?"", 'u2': ""I've seen the camera specs, but can't say I've had a chance to personally test it out.""}, {'u1': 'Have you heard about the camera resolution of the #GalaxyZFlip3? Anyone know what it is?', 'u2': ""From what I've read online, it's pretty high up there... I think it's 12MP or something similar.""}, {'u1': 'Q3. What is the resolution of the #GalaxyZFlip3 main camera? A. 8MP B. 10MP C. 12MP D. 16MP #FlipAtFlipkart #GalaxyZFlip3 #GalaxyZFlip3Giveaway #stufflistingsarmy', 'u2': 'C. 12MP #GalaxyZFlip3 #FlipAtFlipkart #GalaxyZFlip3 #GalaxyZFlip3Giveaway #stufflistingsarmy'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: What's the verdict on the #GalaxyZFlip3 camera? Is it a game-changer or just another phone with a mediocre camera?
+u2: I've seen the camera specs, but can't say I've had a chance to personally test it out.
+u1: Have you heard about the camera resolution of the #GalaxyZFlip3? Anyone know what it is?
+u2: From what I've read online, it's pretty high up there... I think it's 12MP or something similar.
+u1: Q3. What is the resolution of the #GalaxyZFlip3 main camera? A. 8MP B. 10MP C. 12MP D. 16MP #FlipAtFlipkart #GalaxyZFlip3 #GalaxyZFlip3Giveaway #stufflistingsarmy
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+75,8095750965635916790_13386441966722862550,reddit,,en,,Any Sam Smith's. 1970s beer and 1990s prices.,It's a shame the beer is mostly awful.,"{'turns': [{'u1': ""Can't wait for the new Sam Smith's pub to open near me. It's supposed to have an amazing selection of craft beers and comfy seating areas. I heard they're having a soft opening soon."", 'u2': ""Just saw the ads, too! I'm super stoked about it. I've been hearing rave reviews about their beer list and cozy vibe.""}, {'u1': ""Hoping it'll be more reasonably priced than the overpriced places downtown. Ugh, I'm still bitter about how expensive beer is downtown."", 'u2': ""I totally get it! I've been meaning to check out some of the smaller breweries that pop up in the area. Maybe they'll offer better prices and a more authentic experience?""}, {'u1': ""Any Sam Smith's. 1970s beer and 1990s prices."", 'u2': ""It's a shame the beer is mostly awful.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Can't wait for the new Sam Smith's pub to open near me. It's supposed to have an amazing selection of craft beers and comfy seating areas. I heard they're having a soft opening soon.
+u2: Just saw the ads, too! I'm super stoked about it. I've been hearing rave reviews about their beer list and cozy vibe.
+u1: Hoping it'll be more reasonably priced than the overpriced places downtown. Ugh, I'm still bitter about how expensive beer is downtown.
+u2: I totally get it! I've been meaning to check out some of the smaller breweries that pop up in the area. Maybe they'll offer better prices and a more authentic experience?
+u1: Any Sam Smith's. 1970s beer and 1990s prices.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+76,8212951684128818706_16286477251330022739,reddit,,en,,It's not fair to their staff. Jesus Christ how can they be so stupid?,"I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff.
+Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff.
+Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?","{'turns': [{'u1': ""u1: What does your company do? I'm really interested in learning about what it does and its mission."", 'u2': ""u2: Ah we're an IT firm. We provide software solutions for clients in the finance and insurance sector. I'm a bit torn about working here, to be honest. It's not all it's cracked up to be.""}, {'u1': ""u1: Torn? I don't get it. Is everything okay at work? Do you guys get treated unfairly by management or something?"", 'u2': ""u2: I just don't like the way management makes decisions. Sometimes they come out of nowhere and it's hard to understand their thought process.""}, {'u1': ""It's not fair to their staff. Jesus Christ how can they be so stupid?"", 'u2': 'I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff. Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff. Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: u1: What does your company do? I'm really interested in learning about what it does and its mission.
+u2: u2: Ah we're an IT firm. We provide software solutions for clients in the finance and insurance sector. I'm a bit torn about working here, to be honest. It's not all it's cracked up to be.
+u1: u1: Torn? I don't get it. Is everything okay at work? Do you guys get treated unfairly by management or something?
+u2: u2: I just don't like the way management makes decisions. Sometimes they come out of nowhere and it's hard to understand their thought process.
+u1: It's not fair to their staff. Jesus Christ how can they be so stupid?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+77,8247342523670736417_10676686032279101343,twitter,,en,,Should I make a giveaway when I have 30k followers??,I am 1 winner for it already ?,"{'turns': [{'u1': ""I've been growing my audience quickly and it's crazy to think about reaching that milestone. I've been doing a few small giveaways to engage my followers, but I'm not sure if it's worth it when I'm just starting out."", 'u2': 'What do you think is the point of giveaways? Are they just a gimmick or do they actually help increase your following?'}, {'u1': ""I think they can be helpful, but only if you're doing them consistently and making them worth people's time. If it's just a cheap prize and a bunch of noise, people will lose interest quickly."", 'u2': ""I've had some luck with giveaways in the past. One of my friends won a major prize and it really helped grow their following.""}, {'u1': 'Should I make a giveaway when I have 30k followers??', 'u2': 'I am 1 winner for it already ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I've been growing my audience quickly and it's crazy to think about reaching that milestone. I've been doing a few small giveaways to engage my followers, but I'm not sure if it's worth it when I'm just starting out.
+u2: What do you think is the point of giveaways? Are they just a gimmick or do they actually help increase your following?
+u1: I think they can be helpful, but only if you're doing them consistently and making them worth people's time. If it's just a cheap prize and a bunch of noise, people will lose interest quickly.
+u2: I've had some luck with giveaways in the past. One of my friends won a major prize and it really helped grow their following.
+u1: Should I make a giveaway when I have 30k followers??
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+78,8336774367812583750_14763836213667415646,twitter,,en,,"11 GOP AGs just asked 11th Cir. to side w/Trump &amp; Cannon over DOJ — not by arguing law or facts but by saying Biden’s gov’t dsn’t deserve the usual deference due Executive, just as Cannon said Trump deserves better treatment than other people! So much for equality before the law.",They should all lose their job.  #VoteBlue,"{'turns': [{'u1': ""Did u see the recent lawsuit against the admin? Trump's lawyers are really trying to turn this into some kind of partisan witch hunt."", 'u2': ""That's so typical of the current GOP. They can't even accept the fact that Biden won. Get over it and move on!""}, {'u1': ""Now it seems they're getting the 11 GOP AGs to go along with this, saying the admin doesn't deserve the usual deference in court."", 'u2': ""That's just another power play to undermine the gov't and push their agenda. They have no shame.""}, {'u1': '11 GOP AGs just asked 11th Cir. to side w/Trump &amp; Cannon over DOJ — not by arguing law or facts but by saying Biden’s gov’t dsn’t deserve the usual deference due Executive, just as Cannon said Trump deserves better treatment than other people! So much for equality before the law.', 'u2': 'They should all lose their job. #VoteBlue'}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: Did u see the recent lawsuit against the admin? Trump's lawyers are really trying to turn this into some kind of partisan witch hunt.
+u2: That's so typical of the current GOP. They can't even accept the fact that Biden won. Get over it and move on!
+u1: Now it seems they're getting the 11 GOP AGs to go along with this, saying the admin doesn't deserve the usual deference in court.
+u2: That's just another power play to undermine the gov't and push their agenda. They have no shame.
+u1: 11 GOP AGs just asked 11th Cir. to side w/Trump &amp; Cannon over DOJ — not by arguing law or facts but by saying Biden’s gov’t dsn’t deserve the usual deference due Executive, just as Cannon said Trump deserves better treatment than other people! So much for equality before the law.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+79,8499311884991561823_14629087237954923095,twitter,,en,,"Been having them for weeks now, thought it was stress or weather related. Any good remedies?",I haven’t found anything yet unfortunately. Just hustle through it,"{'turns': [{'u1': 'I was thinking about trying some essential oils', 'u2': 'I’m not really sure about the oils, I tried chamomile tea before but it didn’t help much'}, {'u1': 'Any other options? Maybe supplements or something?', 'u2': 'I haven’t explored those yet, I was thinking more of lifestyle changes to be honest'}, {'u1': 'Been having them for weeks now, thought it was stress or weather related. Any good remedies?', 'u2': 'I haven’t found anything yet unfortunately. Just hustle through it'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I was thinking about trying some essential oils
+u2: I’m not really sure about the oils, I tried chamomile tea before but it didn’t help much
+u1: Any other options? Maybe supplements or something?
+u2: I haven’t explored those yet, I was thinking more of lifestyle changes to be honest
+u1: Been having them for weeks now, thought it was stress or weather related. Any good remedies?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+80,9257685538188465174_10141672000707831773,reddit,,en,,"Philadelphia is where it's at, we're gay af",Baltimore too. Come on over and be gay with us.,"{'turns': [{'u1': ""I'm finally free to explore this city and all its gay bars with my boo!"", 'u2': ""OMG, that's amazing! We've been trying to get you to come out to our side of the Chesapeake Bay for ages!""}, {'u1': ""Philadelphia is the perfect place for a queer celebration, don't you think?"", 'u2': ""Totally agree, but Baltimore has a certain charm and vibe that's just as fabulous.""}, {'u1': ""Philadelphia is where it's at, we're gay af"", 'u2': 'Baltimore too. Come on over and be gay with us.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: I'm finally free to explore this city and all its gay bars with my boo!
+u2: OMG, that's amazing! We've been trying to get you to come out to our side of the Chesapeake Bay for ages!
+u1: Philadelphia is the perfect place for a queer celebration, don't you think?
+u2: Totally agree, but Baltimore has a certain charm and vibe that's just as fabulous.
+u1: Philadelphia is where it's at, we're gay af
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+81,9275944914165848525_8762134853798054558,reddit,,en,,Are they cops? Why are they wearing bibs?,That's a police vest.,"{'turns': [{'u1': '""I\'m getting anxious... they keep coming closer', 'u2': '""I\'m pretty sure they\'re just volunteers, maybe from a charity event'}, {'u1': '""Wait, what are those people doing with those big signs?', 'u2': '""I think they\'re giving out samples or something'}, {'u1': 'Are they cops? Why are they wearing bibs?', 'u2': ""That's a police vest.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: ""I'm getting anxious... they keep coming closer
+u2: ""I'm pretty sure they're just volunteers, maybe from a charity event
+u1: ""Wait, what are those people doing with those big signs?
+u2: ""I think they're giving out samples or something
+u1: Are they cops? Why are they wearing bibs?
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+82,9393707267382047502_2627531786957967134,reddit,,en,,"You are still making ""Australia Day"" about the British monarchy so I don't think changing the date to today is going to fly with the people protesting about the current date... of course I don't think any date is going to suit them.","Nah, I’m making it about parliamentary and judicial sovereignty, not the monarchy. The Queen can stay in England and have fuck all to do with Australia, thanks.
+Australia is a de facto republic anyway (‘commonwealth’ is actually a synonym for ‘republic’) and while I’d like to become a real republic, I reckon the Australia Acts are way more constitutionally important to us as a sovereign country than the arrival of the first fleet.","{'turns': [{'u1': 'We’re discussing the date for Australia Day, not the Queen’s involvement. The Queen’s got nothing to do with the day, just the anniversary of the first fleet.', 'u2': 'So, if we change the date, do we then have to remove all references to the Crown from our constitution or parliament?'}, {'u1': 'That’s not what we’re arguing about, it’s about whether we keep the current date or change it. We can keep the Queen as our head of state and still celebrate on the new date.', 'u2': 'I reckon that’s a cop-out. If we really want to be independent, we should ditch the monarchy altogether.'}, {'u1': 'You are still making ""Australia Day"" about the British monarchy so I don\'t think changing the date to today is going to fly with the people protesting about the current date... of course I don\'t think any date is going to suit them.', 'u2': 'Nah, I’m making it about parliamentary and judicial sovereignty, not the monarchy. The Queen can stay in England and have fuck all to do with Australia, thanks. Australia is a de facto republic anyway (‘commonwealth’ is actually a synonym for ‘republic’) and while I’d like to become a real republic, I reckon the Australia Acts are way more constitutionally important to us as a sovereign country than the arrival of the first fleet.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: We’re discussing the date for Australia Day, not the Queen’s involvement. The Queen’s got nothing to do with the day, just the anniversary of the first fleet.
+u2: So, if we change the date, do we then have to remove all references to the Crown from our constitution or parliament?
+u1: That’s not what we’re arguing about, it’s about whether we keep the current date or change it. We can keep the Queen as our head of state and still celebrate on the new date.
+u2: I reckon that’s a cop-out. If we really want to be independent, we should ditch the monarchy altogether.
+u1: You are still making ""Australia Day"" about the British monarchy so I don't think changing the date to today is going to fly with the people protesting about the current date... of course I don't think any date is going to suit them.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+83,9714725961542251387_10499620974501743230,twitter,,en,,We are living through the government that our founders warned us about.,"No, that was the last administration.","{'turns': [{'u1': ""It's like we're living in a dream and can't wake up."", 'u2': 'I know what you mean, but we have to stay grounded in reality.'}, {'u1': ""Everything around us is falling apart, and it feels like no one's taking responsibility."", 'u2': ""That's exactly what I'm saying, we can't just point fingers at the last administration.""}, {'u1': 'We are living through the government that our founders warned us about.', 'u2': 'No, that was the last administration.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: It's like we're living in a dream and can't wake up.
+u2: I know what you mean, but we have to stay grounded in reality.
+u1: Everything around us is falling apart, and it feels like no one's taking responsibility.
+u2: That's exactly what I'm saying, we can't just point fingers at the last administration.
+u1: We are living through the government that our founders warned us about.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+84,9746058821801455922_3483330736093049977,twitter,,en,,I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.,Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well,"{'turns': [{'u1': '""I just feel like everyone\'s always talking behind my back. What\'s up with that?""', 'u2': ""What's the tea, boo?""}, {'u1': ""You know, I'm one of those people who sees everything. Even if it's not in your face, I still see it. So, I'm gonna be all over that. Foh."", 'u2': 'You can try, but I got receipts'}, {'u1': 'I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.', 'u2': ""Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well""}]}",1,0,human_majority,"<TASK_OVERVIEW>
+You have a pair of users, u1 and u2, involved in a dialogue. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
+Provide your output answer between the tags <ANSWER></ANSWER>.
+
+<CONTEXT>u1: ""I just feel like everyone's always talking behind my back. What's up with that?""
+u2: What's the tea, boo?
+u1: You know, I'm one of those people who sees everything. Even if it's not in your face, I still see it. So, I'm gonna be all over that. Foh.
+u2: You can try, but I got receipts
+u1: I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.
+</CONTEXT>
+</TASK_OVERVIEW>
+
+The answer is:
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]

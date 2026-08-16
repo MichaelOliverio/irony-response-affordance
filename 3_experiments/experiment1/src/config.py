@@ -5,6 +5,7 @@ import torch
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "experiment1" / "output"
 DATASET_DIR = PROJECT_ROOT / "datasets"
+HUMAN_ANNOTATIONS_DIR = PROJECT_ROOT / "human" / "annotations"
 
 RANDOM_SEED = 42
 
@@ -25,10 +26,9 @@ DATASETS = {
 
 DECODER_SETTINGS = {
     'models': [
-        #'meta-llama/Llama-3.2-1B-Instruct',
-        'Qwen/Qwen2.5-7B-Instruct',
-        'mistralai/Ministral-8B-Instruct-2410',
-        'google/gemma-2-9b-it',
+        'Qwen/Qwen3.5-9B',
+        'mistralai/Ministral-3-8B-Instruct-2512',
+        'google/gemma-4-E4B-it',
     ],
     'training_params': {
         'lora' : {
@@ -83,6 +83,7 @@ ENCODER_SETTINGS = {
     ],
     'training_params': {
         'num_train_epochs': 10,
+        # Batch globale: EncoderHandler lo divide tra le GPU/processi disponibili.
         'batch_size': 32,
         'learning_rate': 2e-5,
         'logging_steps': 50,
@@ -97,7 +98,6 @@ ENCODER_SETTINGS = {
             'save_strategy': 'epoch',
             'eval_strategy': 'epoch',
             'logging_strategy': 'steps',
-            'overwrite_output_dir': True,
             'report_to': 'none',
             'load_best_model_at_end': True,
             'metric_for_best_model': 'eval_f1',
@@ -105,4 +105,20 @@ ENCODER_SETTINGS = {
         }
     },
     'output_dir': OUTPUT_DIR / "encoders"
+}
+
+HUMAN_ANNOTATION_SETTINGS = {
+    'directory': HUMAN_ANNOTATIONS_DIR,
+    'annotators': [
+        '001_Adam',
+        '003_Javier',
+        '004_Marino',
+    ],
+    'label_column': (
+        'Given this conversational context, is an ironic response likely or natural?'
+    ),
+    'label_mapping': {
+        'non-triggering': 0,
+        'triggering': 1,
+    },
 }

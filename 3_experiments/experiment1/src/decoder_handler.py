@@ -9,11 +9,8 @@ import shutil
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
-    TrainingArguments,
     pipeline,
 )
-from peft import LoraConfig, PeftModel
-from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
 from datasets import Dataset
 import os
 import json
@@ -22,6 +19,7 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 
 from src.config import DECODER_SETTINGS
+from src.model_backend import TextGenerationBackend
 
 class DecoderHandler:
     PROMPT_STRATEGIES = [
@@ -139,65 +137,116 @@ class DecoderHandler:
         if input_type not in self.INPUT_TYPES:
             raise ValueError(f"Invalid input_type. Must be one of {self.INPUT_TYPES}")
 
-        # Preparazione directory output
         clean_model_name = self.model_name.replace('/', '_')
+        model_output_dir = self.output_dir / clean_model_name
         if is_fine_tuned:
-            model_output_dir = self.output_dir / clean_model_name / "fine_tuned"
-            output_file = model_output_dir / f"{prompt_strategy}_{clean_model_name}_{self.dataset['name']}_{input_type}_finetuned.csv"
-        else:
-            model_output_dir = self.output_dir / clean_model_name
-            output_file = model_output_dir / f"{prompt_strategy}_{clean_model_name}_{self.dataset['name']}_{input_type}.csv"
-        
+            model_output_dir = model_output_dir / "fine_tuned"
         model_output_dir.mkdir(parents=True, exist_ok=True)
-        dataset_df, output_rows = self._get_existing_ids(output_file)
 
-        # Inferenza batch
-        for start in tqdm(range(0, len(dataset_df), self.inference_params['batch_size']), 
-                         desc=f"Running {'fine-tuned' if is_fine_tuned else 'baseline'} {self.model_name}"):
-            batch_df = dataset_df.iloc[start:start+self.inference_params['batch_size']]
+        evaluation_sets = [('dataset_ground_truth', 'test', '')]
+        if not is_fine_tuned and self.dataset.get('human_test'):
+            evaluation_sets.append(
+                ('human_majority', 'human_test', '_human_majority')
+            )
 
-            inputs = self._prepare_inputs(batch_df, input_type)
-            results = self._generate_batch_output(inputs, input_type, prompt_strategy)
+        for reference_name, split_name, filename_suffix in evaluation_sets:
+            if is_fine_tuned:
+                filename = (
+                    f"{prompt_strategy}_{clean_model_name}_{self.dataset['name']}_"
+                    f"{input_type}_finetuned.csv"
+                )
+            else:
+                filename = (
+                    f"{prompt_strategy}_{clean_model_name}_{self.dataset['name']}_"
+                    f"{input_type}{filename_suffix}.csv"
+                )
+            output_file = model_output_dir / filename
+            dataset_df, output_rows = self._get_existing_ids(
+                output_file, split_name
+            )
 
-            cleaned_results = []
-            for input, prompt, model_output, reasoning, answer in results:
-                invalid_inferences = 0
-                invalid_model_outputs = [] 
-                while answer not in ['0', '1']:
-                    invalid_inferences += 1
-                    invalid_model_outputs.append(model_output)
-                    _, prompt, model_output, reasoning, answer = self._generate_batch_output([input], input_type, prompt_strategy)[0]
+            for start in tqdm(
+                range(0, len(dataset_df), self.inference_params['batch_size']),
+                desc=(
+                    f"Running {'fine-tuned' if is_fine_tuned else 'baseline'} "
+                    f"{self.model_name} [{reference_name}]"
+                ),
+            ):
+                batch_df = dataset_df.iloc[
+                    start:start + self.inference_params['batch_size']
+                ]
+                inputs = self._prepare_inputs(batch_df, input_type)
+                results = self._generate_batch_output(
+                    inputs, input_type, prompt_strategy
+                )
 
-                cleaned_results.append((prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs))
+                cleaned_results = []
+                for input_text, prompt, model_output, reasoning, answer in results:
+                    invalid_inferences = 0
+                    invalid_model_outputs = []
+                    while answer not in ['0', '1']:
+                        invalid_inferences += 1
+                        invalid_model_outputs.append(model_output)
+                        (
+                            _,
+                            prompt,
+                            model_output,
+                            reasoning,
+                            answer,
+                        ) = self._generate_batch_output(
+                            [input_text], input_type, prompt_strategy
+                        )[0]
+                    cleaned_results.append(
+                        (
+                            prompt,
+                            model_output,
+                            reasoning,
+                            answer,
+                            invalid_inferences,
+                            invalid_model_outputs,
+                        )
+                    )
 
-            for row, (prompt, model_output, reasoning, answer, invalid_inferences, invalid_model_outputs) in zip(batch_df.itertuples(), cleaned_results):
-                enriched = row._asdict()
-                enriched['prompt'] = prompt
-                enriched['model_output'] = model_output
-                enriched['model_reasoning'] = reasoning
-                enriched['model_answer'] = answer
-                enriched['invalid_inferences'] = invalid_inferences
-                enriched['invalid_model_outputs'] = invalid_model_outputs
-                output_rows.append(enriched)
+                for row, generated in zip(
+                    batch_df.itertuples(), cleaned_results
+                ):
+                    (
+                        prompt,
+                        model_output,
+                        reasoning,
+                        answer,
+                        invalid_inferences,
+                        invalid_model_outputs,
+                    ) = generated
+                    enriched = row._asdict()
+                    enriched['evaluation_reference'] = reference_name
+                    enriched['prompt'] = prompt
+                    enriched['model_output'] = model_output
+                    enriched['model_reasoning'] = reasoning
+                    enriched['model_answer'] = answer
+                    enriched['invalid_inferences'] = invalid_inferences
+                    enriched['invalid_model_outputs'] = invalid_model_outputs
+                    output_rows.append(enriched)
 
-            # Salva ad ogni batch
-            output_df = pd.DataFrame(output_rows)
-            output_df.to_csv(output_file, index=False, encoding='utf-8')
-            
-            print(f"\nBatch {start//self.inference_params['batch_size'] + 1} saved → {output_file}")
-            
-            # Pulizia memoria periodica
-            if (start // self.inference_params['batch_size'] + 1) % 5 == 0:
-                gc.collect()
-                if torch.cuda.is_available():
-                    torch.cuda.empty_cache()
+                pd.DataFrame(output_rows).to_csv(
+                    output_file, index=False, encoding='utf-8'
+                )
+                print(
+                    f"\nBatch "
+                    f"{start // self.inference_params['batch_size'] + 1} "
+                    f"saved -> {output_file}"
+                )
+                if (
+                    start // self.inference_params['batch_size'] + 1
+                ) % 5 == 0:
+                    gc.collect()
+                    if torch.cuda.is_available():
+                        torch.cuda.empty_cache()
+
+            print(f"\nInference completed [{reference_name}]")
+            print(f"Output saved to: {output_file}")
 
         self._destroy_model()
-        
-        print(f"\n{'='*60}")
-        print(f"Inference completed")
-        print(f"Output saved to: {output_file}")
-        print(f"{'='*60}\n")
 
     def fine_tuning(self, input_type: str, force_retrain: bool = False, resume_from_checkpoint: bool = True):
         """
@@ -211,6 +260,10 @@ class DecoderHandler:
         Returns:
             str: percorso del modello fine-tunato
         """
+        from peft import LoraConfig
+        from transformers import TrainingArguments
+        from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
+
         if input_type not in ['last_u1_message', 'conversation']:
             raise ValueError(f"Invalid input_type for fine-tuning. Must be 'last_u1_message' or 'conversation', got: {input_type}")
         
@@ -324,20 +377,30 @@ class DecoderHandler:
         for input in inputs:
             prompts.append(self._get_prompt(prompt_strategy, input_type, input))
 
-        outputs = self.pipe(
-            prompts,
-            max_new_tokens=self.inference_params['max_new_tokens'],
-            do_sample=self.inference_params['temperature'] > 0,
-            temperature=self.inference_params['temperature'],
-            return_full_text=False,
-            batch_size=self.inference_params['batch_size'],
-            pad_token_id=self.tokenizer.pad_token_id
-        )
+        if isinstance(self.pipe, TextGenerationBackend):
+            generated_texts = self.pipe.generate_texts(
+                prompts,
+                max_new_tokens=self.inference_params['max_new_tokens'],
+                temperature=self.inference_params['temperature'],
+            )
+        else:
+            outputs = self.pipe(
+                prompts,
+                max_new_tokens=self.inference_params['max_new_tokens'],
+                do_sample=self.inference_params['temperature'] > 0,
+                temperature=self.inference_params['temperature'],
+                return_full_text=False,
+                batch_size=self.inference_params['batch_size'],
+                pad_token_id=self.tokenizer.pad_token_id
+            )
+            generated_texts = [
+                output[0]['generated_text'].strip() for output in outputs
+            ]
 
         results = []
-        for input, prompt, out in zip(inputs, prompts, outputs):
-            entry = out[0]
-            model_output = entry['generated_text'].strip()
+        for input, prompt, model_output in zip(
+            inputs, prompts, generated_texts
+        ):
 
             answer, reasoning = None, None
             if prompt_strategy in ['zero_shot']:
@@ -369,11 +432,9 @@ class DecoderHandler:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate.
-It consists of a pair of messages exchanged on social media.
-Your task involves taking as input the context to determine if it is irony triggering, taking into account how u2 actually replied. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
+Taking into account u2's observed reply, would an ironic response by u2 have been a plausible and natural reply to u1's preceding message?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -385,11 +446,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate.
-It consists of a pair of messages exchanged on social media.
-Your task involves taking as input the context to determine if it is irony triggering, taking into account how u2 actually replied. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
+Taking into account u2's observed reply, would an ironic response by u2 have been a plausible and natural reply to u1's preceding message?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -403,11 +462,9 @@ The reasoning is:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of a message from u1 on social media, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -419,11 +476,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of a message from u1 on social media, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -437,11 +492,9 @@ The reasoning is:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -453,11 +506,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -475,11 +526,9 @@ The reasoning is:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate.
-It consists of a description of the situation in which the dialogue happen and the reply of u2.
-Your task involves taking as input the context to determine if it is irony triggering, taking into account how u2 actually replied. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
+Taking into account u2's observed reply, would an ironic response by u2 have been a plausible and natural reply in the preceding situation?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -491,11 +540,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate.
-It consists of a description of the situation in which the dialogue happen and the reply of u2.
-Your task involves taking as input the context to determine if it is irony triggering, taking into account how u2 actually replied. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
+Taking into account u2's observed reply, would an ironic response by u2 have been a plausible and natural reply in the preceding situation?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -509,11 +556,9 @@ The reasoning is:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of a message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -525,11 +570,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of a message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -543,11 +586,9 @@ The reasoning is:
             if prompt_strategy == 'zero_shot':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 
 <CONTEXT>{input}</CONTEXT>
@@ -559,11 +600,9 @@ The answer is:
             elif prompt_strategy == 'chain_of_thought':
                 prompt = f"""<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
-The context, shown between the tags <CONTEXT>...</CONTEXT>, encodes the prior situation in which the dialogue happens. 
-The context affects users in what and how they chose to communicate. 
-It consists of two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
-Your task involves taking as input the context to determine if u2 is triggered to answer ironically to u1. 
-The output must be 0 (not irony triggering context) or 1 (irony triggering context), encoding whether the context triggers an ironic response by u2. 
+The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
+Given this dialogue history, would an ironic response be a plausible and natural continuation for u2, the upcoming respondent?
+The output must be 0 (not afforded) or 1 (afforded).
 Provide your output answer between the tags <ANSWER></ANSWER>.
 Provide your reasoning between the tags <REASONING></REASONING>.
 
@@ -639,7 +678,7 @@ The reasoning is:
         else:
             raise ValueError("Invalid output_type. Must be 'answer' or 'reasoning'.")
 
-    def _get_existing_ids(self, output_file):
+    def _get_existing_ids(self, output_file, split_name='test'):
         output_rows = []
 
         if os.path.exists(output_file):
@@ -654,8 +693,8 @@ The reasoning is:
         else:
             existing_ids = set()
 
-        dataset_df = pd.DataFrame(self.dataset['test'])
-        print(f"\nTotal entries in test set: {len(dataset_df)}")
+        dataset_df = pd.DataFrame(self.dataset[split_name])
+        print(f"\nTotal entries in {split_name}: {len(dataset_df)}")
         dataset_df = dataset_df[~dataset_df['unique_id'].isin(existing_ids)] # filtra dataset_df per saltare già processati
         dataset_df = dataset_df.reset_index(drop=True)
         print(f"\nEntries to process: {len(dataset_df)}")
@@ -710,31 +749,10 @@ The reasoning is:
 
     def _load_model(self):
         print(f"\nCaricamento modello: {self.model_name}")
-        
-        model = AutoModelForCausalLM.from_pretrained(
-            self.model_name,
-            torch_dtype=self.inference_params['torch_dtype'],
-            device_map="auto" if torch.cuda.is_available() else None,
-            trust_remote_code=True,
+        backend = TextGenerationBackend(
+            self.model_name, self.inference_params['torch_dtype']
         )
-        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-
-        # Se manca pad token, usiamo eos come pad
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
-            tokenizer.pad_token_id = tokenizer.eos_token_id
-
-        # Impostiamo padding_side='left' per decoder-only models
-        tokenizer.padding_side = "left"
-
-        # Creiamo la pipeline
-        pipe = pipeline(
-            "text-generation",
-            model=model,
-            tokenizer=tokenizer,
-            torch_dtype=self.inference_params['torch_dtype'],
-            pad_token_id=tokenizer.pad_token_id,
-        )
+        model, tokenizer, pipe = backend.load()
 
         print(f"\nModello caricato: {self.model_name}")
         print(f"\n  Device: {'GPU (CUDA)' if torch.cuda.is_available() else 'CPU'}")
@@ -775,6 +793,8 @@ The reasoning is:
         Returns:
             model, tokenizer
         """
+        from peft import PeftModel
+
         print(f"\nLoading fine-tuned model from: {fine_tuned_model_path}")
         
         # Carica il modello base
