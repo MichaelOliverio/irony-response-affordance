@@ -126,7 +126,7 @@ u1: jack black… forever my celeb crush</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 9,8041786099222194284_14317703387417873895,twitter,,en,,whaaaaa i want it!,"When I was a kid they were at least twice as long as this ?
 
 They are still delicious though","{'turns': [{'u1': 'i think those were way better because they were homemade!', 'u2': ""Oh man, that's so true! I still remember helping my mom in the kitchen""}, {'u1': 'nothing beats the taste of fresh cookies!', 'u2': 'totally agree! Fresh-baked cookies are like a hug for your taste buds'}, {'u1': 'whaaaaa i want it!', 'u2': 'When I was a kid they were at least twice as long as this ? They are still delicious though'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
@@ -169,7 +169,7 @@ They'll keep doing it. That's what this is all about, isn't it?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 12,14871822332202285480_10288257812089796212,twitter,,en,,It’s very worrying.,Very very worrying. Hard decisions coming soon. Very sad.,"{'turns': [{'u1': 'This thing has been getting worse since the incident.', 'u2': 'I know. It’s been on my mind nonstop.'}, {'u1': 'There are already reports of similar cases in the area.', 'u2': 'It’s a disaster waiting to happen.'}, {'u1': 'It’s very worrying.', 'u2': 'Very very worrying. Hard decisions coming soon. Very sad.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -379,7 +379,7 @@ u1: Some  says im aggressive .people  lables very  easily .without  knowing   th
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 28,2933222000053668587_6845486303308876971,reddit,,en,,"Iirc it was launched to cash on the 2003 world cup. Looked like kerosene, tasted sweet-sour. Loved it",That flair is mad.,"{'turns': [{'u1': 'Do you guys know any popular soft drinks that got their start from major events?', 'u2': 'There was that Coke campaign for the 1998 world cup'}, {'u1': 'I remember a drink that launched during a cricket match in 2003', 'u2': ""Cricket match in 2003? That's a good clue!""}, {'u1': 'Iirc it was launched to cash on the 2003 world cup. Looked like kerosene, tasted sweet-sour. Loved it', 'u2': 'That flair is mad.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -458,7 +458,7 @@ u1: I don't think I've ever stopped someone from doing anything ever, unless it 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 34,5329340972170396356_14682421897831218349,twitter,,en,,"If I send a photo to your phone on Whatsapp, will you reply to me? ??",Yes so send to +14042467953,"{'turns': [{'u1': ""What's your phone number so I can send you a pic?"", 'u2': ""I don't know if I should share that online...""}, {'u1': 'How about you just check your Whatsapp for my photos sometimes?', 'u2': ""That's not the same as you sending a pic to my phone""}, {'u1': 'If I send a photo to your phone on Whatsapp, will you reply to me? ??', 'u2': 'Yes so send to +14042467953'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -497,7 +497,7 @@ u1: It’s all very “they just don’t realize they are Irish not British, and
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 37,16884906529175794845_18106892867125335972,reddit,,en,,"C'mon man. Making an absurd statement and following it up with,""What would you do?"" or ""How fucked are you?"" is the weakest form of r/AskReddit post.
 You're capable of better.","You are a higher level of intellectual ability, I wish all posts were by people like you.
 So sick of ass posts on almost every sub now a days.","{'turns': [{'u1': ""I've noticed that lately, people in subreddits have been trying to provoke reactions instead of actually sharing meaningful experiences or stories. This is sad."", 'u2': ""Not just subreddits, I feel like it's gotten worse across all social media platforms.""}, {'u1': ""When someone asks a thoughtless question that tries to elicit shock or outrage, it's like watching a train wreck in slow motion – you can't look away, but you don't want to look at it either."", 'u2': 'Some people seem to think that being provocative is the same as being profound, which is just wrong.'}, {'u1': 'C\'mon man. Making an absurd statement and following it up with,""What would you do?"" or ""How fucked are you?"" is the weakest form of r/AskReddit post. You\'re capable of better.', 'u2': 'You are a higher level of intellectual ability, I wish all posts were by people like you. So sick of ass posts on almost every sub now a days.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
@@ -526,7 +526,7 @@ u1: They're all crooks sooner they are held to account the better im sick of the
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 39,13614501772916060422_7060177088560503102,twitter,,en,,bro not ready for this in the morning,Samee im on an empty stomach all nauseous,"{'turns': [{'u1': ""You're gonna get up tomorrow and expect the same performance? Not a chance!"", 'u2': ""I'm pretty sure I'd still be out late celebrating, you know that's a tradition for us""}, {'u1': ""We did have a blast last night, I admit, but don't you think we should at least get some sleep before we start our day?"", 'u2': ""But we always push it to the limit, bro, we can't let a little sleep get in the way of our legendary mornings""}, {'u1': 'bro not ready for this in the morning', 'u2': 'Samee im on an empty stomach all nauseous'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -645,7 +645,7 @@ u1: What does this mean? Can somebody ELI5 to somebody who has literally no idea
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 46,2403860982869378717_14616998667380279766,reddit,,en,,"Wasnt it said that the coronavirus wont survive in warm climates and that's why regions like Europe are under major threat and regions like Africa and India are relatively safe from a major outbreak ?
 Or was that another myth of COVID?
 Just googled it and this is the best answer I could find.Guardian
@@ -669,7 +669,7 @@ Most scientists counsel caution, however. “The disease has only just arrived i
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 47,10314823582136639898_18115552514282280011,reddit,,en,,Personally I have the Contigo Autoseal and honestly love it! I’ve heard many good things about Frank Green as a whole but also seen mixed reviews on the coffee cups.,"I see. I won't lie, I kinda like the Frank Green's design. 
 As far as I know, they make only coffee cups, are you referring to any particular product or that you've heard good things about FG overall?","{'turns': [{'u1': ""I've got a few different insulated tumblers and this one is my go-to. What's your take on insulated tumblers in general? Do you like them?"", 'u2': ""Honestly, I don't have much experience with insulated tumblers. I've only had a few. But I do love my coffee!""}, {'u1': ""Cool! I'm super particular about my coffee mug selection. I like to mix it up sometimes to keep things interesting. What about you?"", 'u2': ""Well, I have a pretty small collection. But I'm really particular about aesthetics, so I only get cups that I really like. Frank Green's design does catch my eye.""}, {'u1': 'Personally I have the Contigo Autoseal and honestly love it! I’ve heard many good things about Frank Green as a whole but also seen mixed reviews on the coffee cups.', 'u2': ""I see. I won't lie, I kinda like the Frank Green's design. As far as I know, they make only coffee cups, are you referring to any particular product or that you've heard good things about FG overall?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -793,7 +793,7 @@ u1: Many congratulations</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 56,8316135339211069667_4038671494104862665,reddit,,en,,"If you can access fresh coconut, jaggery and poached rice, there's a Goan dish called fao which takes less than 5 minutes.",I think you meant pounded rice?,"{'turns': [{'u1': ""Hey, I've been craving this super spicy Goan snack that I only get to have when I visit my mom. Can you think of what I might be talking about?"", 'u2': 'What do you mean? Is it that sweet dish with the coconut?'}, {'u1': ""Not really sweet. It's savory and spicy. Let me try to remember... We've had this conversation before, haven't we?"", 'u2': ""Hmm, I don't think so. But I'm curious now! Try to recall anything.""}, {'u1': ""If you can access fresh coconut, jaggery and poached rice, there's a Goan dish called fao which takes less than 5 minutes."", 'u2': 'I think you meant pounded rice?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -851,7 +851,7 @@ u1: Claims the US/West denied defense equipment to India seem unfair &amp; incom
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 60,2042487995973821250_10598338738882835220,twitter,,en,,Congratulations ? ?,Thank you,"{'turns': [{'u1': ""You're crushing this exam prep! How's the studying going?"", 'u2': 'Studying is going good! Just got through my math section'}, {'u1': ""That's amazing! Your hard work is really paying off. What's your favorite subject in the class?"", 'u2': ""Actually, I really enjoy learning about the history of the subject, it's fascinating""}, {'u1': 'Congratulations ? ?', 'u2': 'Thank you'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1055,7 +1055,7 @@ u1: From next season, the next generation Chevrolet Camaro will replace the Hold
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 75,15216748537342795471_8887200497313792608,twitter,,en,,"A question: is it typical that people in Frome drive like absolute arseholes at pre-7.30am ? 
 
 Because I'm going to tell you a little story:","So, i woke up just before 6am in this house my friend is renting.... We arrived last night after dark with a car absolutely stuffed to the roof with every wordly possession &amp; 12bt of wine #WinemakerThugLife","{'turns': [{'u1': 'I have been meaning to ask, do you think people in Frome drive more recklessly than people in other places?', 'u2': ""Hmm, I think Frome has its own unique brand of chaos on the roads. We've had a few near misses since moving here.""}, {'u1': ""You know, I'm getting really frustrated with the morning commute to work. Is it just me, or do people in Frome think the speed limit is a suggestion?"", 'u2': ""Ugh, I feel your pain. I've been stuck behind a few reckless drivers this morning already. And to make matters worse, the roads are a nightmare in the mornings.""}, {'u1': ""A question: is it typical that people in Frome drive like absolute arseholes at pre-7.30am ? Because I'm going to tell you a little story:"", 'u2': 'So, i woke up just before 6am in this house my friend is renting.... We arrived last night after dark with a car absolutely stuffed to the roof with every wordly possession &amp; 12bt of wine #WinemakerThugLife'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
@@ -1085,7 +1085,7 @@ u1: Ring joe on Monday, thats insane</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 77,17034604432508923781_3092643763447025099,twitter,,en,,Absolutely scandalous pricing and can't believe they even charge postage!,£5 delivery for standard shipping and a week delivery time ?‍?,"{'turns': [{'u1': 'really want to try out the new product from that brand.', 'u2': 'have you seen the price tag on that?!'}, {'u1': ""I know, I was thinking of buying it in-store instead, but I really don't have time."", 'u2': ""Yeah, I've had similar thoughts. The convenience is nice, but the delivery costs add up!""}, {'u1': ""Absolutely scandalous pricing and can't believe they even charge postage!"", 'u2': '£5 delivery for standard shipping and a week delivery time ?\u200d?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1121,7 +1121,7 @@ If you do not accept an idea from an opposition party and at least consider it, 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 79,3415753665407240484_12423550685481290222,reddit,,en,,Guy is my longtime fb friend. Very measured and rational person. Goes to show what happens to you if you criticize the PM or his riotous followers if you don't have any political backing and you live in BJP ruled state.,At his point your best bet is to lay low and work and when the opportunity arrives emigrate.,"{'turns': [{'u1': 'What is it like being an outspoken critic in a BJP ruled state?', 'u2': 'Not a good idea.'}, {'u1': ""My friend from college was in a similar situation and had to leave the state because he couldn't handle the threats."", 'u2': ""Yeah, it's scary when people start coming after you for no reason.""}, {'u1': ""Guy is my longtime fb friend. Very measured and rational person. Goes to show what happens to you if you criticize the PM or his riotous followers if you don't have any political backing and you live in BJP ruled state."", 'u2': 'At his point your best bet is to lay low and work and when the opportunity arrives emigrate.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1134,7 +1134,7 @@ u1: Guy is my longtime fb friend. Very measured and rational person. Goes to sho
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 80,14260838477893950744_1411233831406874300,reddit,,en,,"everyone from Lincoln simultaneously: 'Did you know the Cathedral was once the world's tallest building?' 
 Source: from Lincoln.","I love the board in the Cathedral with the various incarnations of the Cathedral over the years. ""That one burned down, fell over and then sank into the swamp, but this one stayed up!"" (until the spire fell off).","{'turns': [{'u1': ""I saw your Instagram stories about our city's cathedral and I loved them! What's your take on this iconic landmark?"", 'u2': ""It's definitely a gem! I went there during the renovation and saw the temporary roof being put in place. Quite the sight!""}, {'u1': 'I visited the Cathedral and was amazed by the sheer scale of it. The architecture is so unique and blends perfectly with the surrounding area.', 'u2': ""I know exactly what you mean! The Cathedral's design is so cleverly done. I'm fascinated by the stories behind it though, like the fact that it was built on a former burial ground...""}, {'u1': ""everyone from Lincoln simultaneously: 'Did you know the Cathedral was once the world's tallest building?' Source: from Lincoln."", 'u2': 'I love the board in the Cathedral with the various incarnations of the Cathedral over the years. ""That one burned down, fell over and then sank into the swamp, but this one stayed up!"" (until the spire fell off).'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1194,7 +1194,7 @@ u1: I think bhakts are seeing the change in Indian politics and will change soon
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 84,5281627314722925169_1667111906462633003,twitter,,en,,"There was no foul there… surely? ?
 #MCYvWUN",Pathetic officiating already?,"{'turns': [{'u1': ""Really enjoying this game so far, WUN's defense is looking sharp!"", 'u2': ""I'm starting to get worried, their goalkeeper has already spilled two crosses.""}, {'u1': ""Come on, WUN, you've got this! The crowd is with you!"", 'u2': 'But the refs are totally missing the obvious fouls. We need a break to turn this around!'}, {'u1': 'There was no foul there… surely? ? #MCYvWUN', 'u2': 'Pathetic officiating already?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1291,7 +1291,7 @@ u1: What do you love about each other?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 91,18195669974235162963_8698114625484792617,twitter,,en,,Fandabidozy well done???,Thanks so much. ❤️❤️??,"{'turns': [{'u1': ""u1: 'I heard your game night went super well! How was it?'"", 'u2': 'We had an amazing time. The food was incredible and the company was even better'}, {'u1': ""I'm so glad to hear that. Your team must have been thrilled."", 'u2': ""Yeah, they were over the moon. We're already planning the next one""}, {'u1': 'Fandabidozy well done???', 'u2': 'Thanks so much. ❤️❤️??'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1317,7 +1317,7 @@ u1: Are you on WhatsApp ...?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",1,,1,0,[]
 93,5544311565202102485_5234380768296412039,twitter,,en,,"And then there were four
 
 Clare v Kilkenny 
@@ -1390,7 +1390,7 @@ u1: So close to 9ct</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 98,17998806469816158398_9707489468759579520,reddit,,en,,"9/11, no matter what you say or think, that was absolutely, 100% guaranteed... An inside, controlled demolition based, Governmental job.","Think of the amount of people and coordination it would take to pull off something of that magnitude. Meetings, planning, logistics, coordinating travel, allocating resources, phone calls, emails and all those people totally cool commuting the worst terrorist attack in US history. Nothing of substance gets leaked, no one had a change of heart?","{'turns': [{'u1': ""u1 doesn't believe the official story on 9/11, claims there are inconsistencies and suspicious behavior, like how people in the towers seemed to have foreknowledge of the attack. They wonder why so many things just fell into place like that."", 'u2': ""Maybe they just happened to be on the right place at the right time, or maybe there were some other circumstances. Let's not be too hasty to jump to conclusions without all the facts.""}, {'u1': ""u1 starts to theorize that the government might be involved, citing the'mossad connection', and suggests the 1993 world trade center bombing was a dry run for 9/11."", 'u2': ""There's no evidence of that. The official investigation concluded that it was an act of terrorism by Al-Qaeda.""}, {'u1': '9/11, no matter what you say or think, that was absolutely, 100% guaranteed... An inside, controlled demolition based, Governmental job.', 'u2': 'Think of the amount of people and coordination it would take to pull off something of that magnitude. Meetings, planning, logistics, coordinating travel, allocating resources, phone calls, emails and all those people totally cool commuting the worst terrorist attack in US history. Nothing of substance gets leaked, no one had a change of heart?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1496,7 +1496,7 @@ u1: I think anarchism is going on the right wing campaigning</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 106,11429970853381804377_15464467139262406645,twitter,,en,,"I've seen jazz described as ""appropriating black culture""... Where does influence end and ""appropriation"" begin? Not a trivial question.","“Can white guys play the Blues?”, and other assorted clichés?","{'turns': [{'u1': ""I've been thinking a lot about the origins of Jazz and the role of Black American musicians in shaping its sound. Some argue that White musicians who draw inspiration from these roots are somehow profiting off Black cultural expression without giving credit."", 'u2': ""I see your point. But isn't it also true that many White Jazz musicians have worked hard to perfect their craft, and in doing so, have contributed to the evolution of the genre?""}, {'u1': ""What does it mean to 'perfect' a craft when your starting point is rooted in someone else's cultural heritage? Is it simply a matter of talent and hard work, or is there a more nuanced dynamic at play?"", 'u2': ""That's a tough question. Maybe it's about acknowledging the historical context and the power dynamics that have led to the cultural exchange we see today.""}, {'u1': 'I\'ve seen jazz described as ""appropriating black culture""... Where does influence end and ""appropriation"" begin? Not a trivial question.', 'u2': '“Can white guys play the Blues?”, and other assorted clichés?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1602,7 +1602,7 @@ u1: Am I the only one not freaking out about this virus? Sure, I might take more
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 114,11493543145097920677_548964096743363250,twitter,,en,,If I’ve read the press notes correctly doesn’t he get free coffee for a year or something for being there first?,"That's right. Still, very impressive","{'turns': [{'u1': 'I think I just saw some crazy queue out there for the coffee shop.', 'u2': ""They've been advertising it for weeks, it's no surprise people showed up early!""}, {'u1': 'Apparently they were giving out some sort of rewards for the first n customers.', 'u2': ""I've heard they're also offering some kind of limited edition merchandise.""}, {'u1': 'If I’ve read the press notes correctly doesn’t he get free coffee for a year or something for being there first?', 'u2': ""That's right. Still, very impressive""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1744,7 +1744,7 @@ Quit. Panicking.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 123,2102699511482722339_11380484910538085908,twitter,,en,,Absolutely not but cute. ?,Thank you ?,"{'turns': [{'u1': ""This one's a tough decision for me. What's your take on it?"", 'u2': ""Hmm, I don't know...what are we talking about?""}, {'u1': ""Okay, let's talk about the movie. I've heard it's adorable."", 'u2': ""Yeah, I've seen some cute scenes from the trailer!""}, {'u1': 'Absolutely not but cute. ?', 'u2': 'Thank you ?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1836,7 +1836,7 @@ u1: Good morning Lee. Have a good day. Take care ?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 130,9030176830177025605_13596778555070237699,twitter,,en,,Your collars are absolutely gorgeous ??,Oh wow thank you,"{'turns': [{'u1': 'Love your sense of style', 'u2': 'Thanks so much'}, {'u1': ""I'm a huge fan of collars btw"", 'u2': ""Aww thanks! They're one of my faves too""}, {'u1': 'Your collars are absolutely gorgeous ??', 'u2': 'Oh wow thank you'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1875,7 +1875,7 @@ u1: I went back to Uni at 50 and changed my career so 38 is very doable.</CONTEX
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 133,3614787346958717904_7304807344363100836,twitter,,en,,"Q3. What is the resolution of the #GalaxyZFlip3 main camera?
 A. 8MP
 B. 10MP
@@ -1915,7 +1915,7 @@ u1: Because of Julius and Augustus Caesar</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 135,11818991551092973960_2349566952055691192,reddit,,en,,Giving up just for Sunday or forever starting Sunday? The sentence is confusing.,It is but sounds like he will give it up starting Sunday. He's going to keep us posted .,"{'turns': [{'u1': ""Can we assume that 'forever' means the rest of the week or are we just talking about Sundays from now on? Asking for clarity."", 'u2': ""I think he means the rest of the week, but I'll wait for confirmation.""}, {'u1': ""I'm still a bit confused. Can you get a bit more context about this 'forever'?"", 'u2': ""I'm asking him the same thing. We'll see what he says.""}, {'u1': 'Giving up just for Sunday or forever starting Sunday? The sentence is confusing.', 'u2': ""It is but sounds like he will give it up starting Sunday. He's going to keep us posted .""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1995,7 +1995,7 @@ u1: Ok I will buy for u eventually</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 141,12663845807463110373_7284691197642954501,twitter,,en,,Have a great safe day?????☕️☕️☕️,Thank you Deacon.❤,"{'turns': [{'u1': ""I'm worried sick about you, heading out there today! Be careful, okay? Weather looks pretty grim.?"", 'u2': ""Aw, thanks for the concern! I'll be fine. I've got my gear and my wits. Don't worry about me.""}, {'u1': ""Still not convinced. What kind of gear do you have that's gonna help with this rain and the forecasted wind?"", 'u2': ""You know I've got my trusty old waterproof jacket and some rope. It's gonna be a bit of a challenge, but I've done this before.""}, {'u1': 'Have a great safe day?????☕️☕️☕️', 'u2': 'Thank you Deacon.❤'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -2008,7 +2008,7 @@ u1: Have a great safe day?????☕️☕️☕️</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 142,6142177861197870344_4805175435571151929,reddit,,en,,"The theory that Epstein didn't kill himself. Memes aside, he could've probably exposed a lot more rich people for their sex crimes. They just bumped him off before he could do so.",The fact it blew up as a meme made so that now more people know that he didn't kill himself,"{'turns': [{'u1': 'I think this is a sign of how much they fear their power structures being dismantled.', 'u2': 'You know a lot of people are still in denial about this kind of stuff, though'}, {'u1': ""But don't get it twisted, this has nothing to do with sympathy for him. This is about accountability and exposing those who enabled him."", 'u2': ""Exactly, and I think that's where this story gets really interesting, especially if it's true""}, {'u1': ""The theory that Epstein didn't kill himself. Memes aside, he could've probably exposed a lot more rich people for their sex crimes. They just bumped him off before he could do so."", 'u2': ""The fact it blew up as a meme made so that now more people know that he didn't kill himself""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -2080,7 +2080,7 @@ u1: What's going to happen with the empty space on the left of photo (south of t
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 147,10142223588101156086_1273413070250307420,twitter,,en,,"Listen to the advice of older people. Not because they're right, but because they have the most experience being wrong.",Not all the old people are wise. Some are really dumb af.,"{'turns': [{'u1': ""I've been thinking a lot about what wisdom is, and whether it's really earned or just a product of experience."", 'u2': ""I don't know, man. I've seen some super old and experienced people who still think the earth is flat.""}, {'u1': ""So I started wondering, what's the correlation between age and wisdom? Do older people just get wiser as they get older, or is it just a societal thing?"", 'u2': ""I'm not sure, but it seems like the older you get, the more set in their ways people become. And I'm pretty sure that's not wise.""}, {'u1': ""Listen to the advice of older people. Not because they're right, but because they have the most experience being wrong."", 'u2': 'Not all the old people are wise. Some are really dumb af.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -2123,7 +2123,7 @@ But of course that means nothing compared with the greed of the universities for
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 150,10408087883859871256_17587244775472175219,reddit,,en,,Yet strangely the seas are not rising in Sydney Harbour,"or anywhere else including the Maldives  URL , this headline is a scaremongering farce.","{'turns': [{'u1': 'u1 is concerned about the polar ice caps and is referencing a recent study. ""Just came across a study claiming that polar ice caps are melting at alarming rates. Can’t believe the IPCC is not more vocal about it.', 'u2': ""I think there's more to the story, we should dig deeper into the research methods and data collection.""}, {'u1': 'u1 is looking for external validation and is seeking input from a global expert. ""Just found this article by a renowned oceanographer on the impact of ocean currents on sea levels. What are your thoughts?', 'u2': ""I've spoken to a few colleagues who specialize in ocean currents and they're not as convinced by the current state of research.""}, {'u1': 'Yet strangely the seas are not rising in Sydney Harbour', 'u2': 'or anywhere else including the Maldives URL , this headline is a scaremongering farce.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -2264,7 +2264,7 @@ u1: Get his number and report him to the police.   URL</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 160,13817872920436793918_547664807464875919,reddit,,en,,"Our old neighbour used to have a Nissan skyline he used to rev the shit out of between 5am and 6.30am every damn day. I thought it would stop when he swapped it for a land rover discovery 3 but nope. He would rev the shit out of that too and then leave it to ""warm up"". Where he parked used to be more or less directly under my bedroom window. He was such a wanker. So glad we moved.",I don't understand why people can be so selfish.,"{'turns': [{'u1': ""I'm having a hard time falling asleep today. I've been awake since 4:30 and I can hear the neighbour's car roaring. Not a big deal for most people, I know, but the racket is right outside my window and it's bloody torture."", 'u2': 'Sorry to hear that. That can be really frustrating.'}, {'u1': ""It's not just the noise. I'm starting to think the neighbour has some sort of unhealthy obsession with his cars. I mean, who revs their engine that long every day?"", 'u2': 'Hmm, that is a bit weird.'}, {'u1': 'Our old neighbour used to have a Nissan skyline he used to rev the shit out of between 5am and 6.30am every damn day. I thought it would stop when he swapped it for a land rover discovery 3 but nope. He would rev the shit out of that too and then leave it to ""warm up"". Where he parked used to be more or less directly under my bedroom window. He was such a wanker. So glad we moved.', 'u2': ""I don't understand why people can be so selfish.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -2699,7 +2699,7 @@ u1: Happy birthday</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 190,6868541453503913744_15400349669284670441,reddit,,en,,"I always believed that Partitioned shouldn’t have happened and we should have been all living in one unified india. I am a Pakistani living in Los Angeles and have a lot of Indian friends. 
 Today my views have changed, I am glad Muslims have Pakistan.","> Today my views have changed, I am glad Muslims have Pakistan.
 Well you should learn history of Pakistan and Bangladesh. Jinnah was right when he said Muslims and Hindus cannot live together but only half. Punjabi Muslims couldn't even peacefully live with Bengali Muslims and they had an entire country between them.","{'turns': [{'u1': 'I’m an American citizen but I have Pakistani roots and I love both countries.', 'u2': ""Your roots are in Pakistan, but you're living in America. It's not the same, it's not the same for Indians living in Pakistan either.""}, {'u1': 'Having said that, I think India and Pakistan should be close friends, trade with each other and cooperate on defense and other areas. I think the partition was a historical tragedy.', 'u2': ""A tragedy, yes, but also a result of deep-seated differences that can't be ignored. You can't just wish away the fact that Muslims and Hindus have different worldviews and values.""}, {'u1': 'I always believed that Partitioned shouldn’t have happened and we should have been all living in one unified india. I am a Pakistani living in Los Angeles and have a lot of Indian friends. Today my views have changed, I am glad Muslims have Pakistan.', 'u2': ""> Today my views have changed, I am glad Muslims have Pakistan. Well you should learn history of Pakistan and Bangladesh. Jinnah was right when he said Muslims and Hindus cannot live together but only half. Punjabi Muslims couldn't even peacefully live with Bengali Muslims and they had an entire country between them.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>

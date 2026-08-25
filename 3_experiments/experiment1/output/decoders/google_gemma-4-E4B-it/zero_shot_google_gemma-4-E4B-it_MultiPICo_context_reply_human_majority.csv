@@ -12,7 +12,7 @@ u2: Yup I am lol</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 1,10651819805544561833_12160947194752610245,twitter,,en,,I think if im right in saying it was  and @MacMate_,Ye mate. F channel rise up,"{'turns': [{'u1': '@MacMate_ can u explain why u think we should be on discord instead of here?', 'u2': ""Discord is so much better fam, got all the sick communities, can't get any of that here""}, {'u1': ""what's the best community on discord that you think we should join?"", 'u2': 'u should def check out F channel, all my mates are on it'}, {'u1': 'I think if im right in saying it was and @MacMate_', 'u2': 'Ye mate. F channel rise up'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -58,7 +58,7 @@ u2: Thank you for your kind words but I'm still eating my Sunday roast with a si
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 4,11202598233208778581_2692220885467589558,reddit,,en,,"Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!","The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee.
 So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.","{'turns': [{'u1': ""What's all the fuss about? Did something new happen in the world of credit scores? Can't seem to get through the day without seeing some app popping up everywhere I go."", 'u2': ""Well, I think it's because there was a big change in the law regarding how credit scores are managed.""}, {'u1': 'Is it something big, then? Like, are banks going to start handing out free loans or something?', 'u2': ""No, it's actually more to do with the way credit reference agencies share information and get paid for it.""}, {'u1': ""Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!"", 'u2': 'The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee. So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -120,7 +120,7 @@ Its in the same universe as My Little Sister Can't Be This Cute (clearly the aut
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 8,12688524965118127904_17718319999726849196,reddit,,en,,Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.,"this is how randia used to be before it crossed 1lac mark.
 now its all news links.","{'turns': [{'u1': ""I've been browsing here for a few days now and I must say, this community is very active and engaged."", 'u2': 'what made you join?'}, {'u1': 'A friend recommended it and I was curious to see what it’s like. I’m glad I joined!', 'u2': 'your friend must be a regular here'}, {'u1': 'Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.', 'u2': 'this is how randia used to be before it crossed 1lac mark. now its all news links.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -198,7 +198,7 @@ u2: Is that the new. Bitch I'm madonna?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 13,12868720517617604007_16124457615261572688,twitter,,en,,"It appears I've missed an important day.  Belated birthday wishes,  .","No probs,I’m still celebrating??Ian","{'turns': [{'u1': ""still haven't wished you a happy birthday."", 'u2': ""Thanks, I was getting worried you'd forgotten""}, {'u1': 'Do I even know your birthday in the first place? Did you tell me?', 'u2': 'I guess I mentioned it to you in one of our conversations a while back'}, {'u1': ""It appears I've missed an important day. Belated birthday wishes, ."", 'u2': 'No probs,I’m still celebrating??Ian'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -248,7 +248,7 @@ u2: I'm not sure how you can read social media and think we're not</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 16,1353950569709460086_9486149106222216465,reddit,,en,,"I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.","why didn't they do this for Delhi elections ?
 Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?","{'turns': [{'u1': ""What's going on with this rape case? I feel like we've been hearing about it for months now."", 'u2': ""I know, right? It feels like a new development every week. And it's not like it's even a surprise or anything.""}, {'u1': 'Do you think the government is trying to distract us from something else?', 'u2': ""I'm not sure. But it does seem like a convenient distraction. And the timing is suspicious too.""}, {'u1': 'I think they are trying to keep this thing in the news until Bihar elections, just before the election they will execute them and ask for votes on that.', 'u2': ""why didn't they do this for Delhi elections ? Anyway, I wonder who is financing these rapists to file so many petitions, pay for lawyers ?""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -264,7 +264,7 @@ Anyway, I wonder who is financing these rapists to file so many petitions, pay f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 17,1391172399908503032_10070870326222354663,reddit,,en,,"Imagine sticking a tooth pick underneath your big toenail and then kicking a wall
 Or imagine getting paper cuts in the webbing of all fingers",No. Imagine.... baby shark doo doo doodoo,"{'turns': [{'u1': ""Ugh, do you get that one pain that doesn't quite go away no matter how much you shift around?"", 'u2': ""What's going on?""}, {'u1': 'Ugh, the ones you get in the nail bed. That one spot that throbs and throbs. You know those ones?', 'u2': 'Eww, yeah...'}, {'u1': 'Imagine sticking a tooth pick underneath your big toenail and then kicking a wall Or imagine getting paper cuts in the webbing of all fingers', 'u2': 'No. Imagine.... baby shark doo doo doodoo'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -280,7 +280,7 @@ u2: No. Imagine.... baby shark doo doo doodoo</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 18,14059201167656705884_3962746297682231118,reddit,,en,,I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work.,"Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.","{'turns': [{'u1': 'I saw the whole thing from my office window, but I was too far to get the plate number. Did you get a glimpse?', 'u2': 'Yeah I saw it too! They were speeding like crazy, but they were way too far from me to get the plate. I was so stressed out for the person they were speeding at!'}, {'u1': ""That must have been really frightening for the driver they were passing! I'm glad you're okay, but I'm curious, did you notice if they had any passengers?"", 'u2': ""Actually, I think they were alone. I didn't see anyone else in the car. But what really got me is how reckless they were driving. They didn't even slow down for the stop sign!""}, {'u1': ""I think they can get points on their licence for that but if you didn't get the plate your just have to try and forget about and get dry using those hand dryers at work."", 'u2': 'Yeah I didn’t get their license plate, they weren’t driving slow. Its ok though, karma will do their thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -294,7 +294,7 @@ u2: Yeah I didn’t get their license plate, they weren’t driving slow. Its ok
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 19,14309441428012222287_10088140044597603282,twitter,,en,,What was the first movie you saw at the cinema?,Jungle Book,"{'turns': [{'u1': ""I'm super curious, have you ever seen a movie at the cinema?"", 'u2': ""Actually, yes! I saw 'The Lion King' at the cinema with my family when I was a kid.""}, {'u1': 'That sounds amazing! Did your family go there often for movies or was it a one-time thing?', 'u2': ""Oh, we went quite a few times! We'd always go to the cinema on Friday evenings and catch the latest Disney releases.""}, {'u1': 'What was the first movie you saw at the cinema?', 'u2': 'Jungle Book'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -378,7 +378,7 @@ u2: The rest of Ireland hates it. We just don’t have it</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 25,15342642770078985313_16643049812401160830,twitter,,en,,Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?,"No
 
 It is because you are rational.","{'turns': [{'u1': ""I've been following the news and social media coverage of the Queen's death, and I must admit I'm having a hard time connecting with all the emotional outpouring."", 'u2': 'Emotional outpouring? You think this is just about feelings?'}, {'u1': ""No, I mean, it's all about the way everyone's reacting as if they've lost a family member when, for me, the Queen was just a public figure."", 'u2': ""You think you're the only one who can see that?""}, {'u1': ""Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?"", 'u2': 'No It is because you are rational.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -442,7 +442,7 @@ u2: how old are you??</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 29,15849458284151168089_12381184885274858640,twitter,,en,,Sore throat and fever full family ?,Please consult doctor ?,"{'turns': [{'u1': 'My kids have been sniffling all morning and I feel a bit under the weather myself', 'u2': 'Have they been around anyone sick recently?'}, {'u1': ""I think they were at school yesterday, so we'll need to keep an eye on them"", 'u2': 'Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids'}, {'u1': 'Sore throat and fever full family ?', 'u2': 'Please consult doctor ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -514,7 +514,7 @@ u2: Up and down?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 34,16650543109753935334_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
 They voted clearly in support of devolution and that vote has been respected with it's implementation.
 Time for another vote to see if they still want devolution.
@@ -572,7 +572,7 @@ Their capacity for self-delusion is limitless !</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 37,16873054711772305548_6725044516132975537,reddit,,en,,My first girlfriend gave me the same nickname.,Guess that explains the username.,"{'turns': [{'u1': 'You have no idea how I got my username, do you?', 'u2': ""Actually, I'm pretty curious, how did you come up with it?""}, {'u1': ""It's a story I only tell my closest friends."", 'u2': ""Aww, you're making me feel left out, share!""}, {'u1': 'My first girlfriend gave me the same nickname.', 'u2': 'Guess that explains the username.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -586,7 +586,7 @@ u2: Guess that explains the username.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 38,16881123392039255146_7052580710796190837,reddit,,en,,"They're like that Pewdiepie fella for me. Nothing against them, don't dislike them, but they're not at all funny and I cannot comprehend how they are popular as they are.",I don't find him funny either. I watched a video of his to try and understand the appeal and I almost fell asleep,"{'turns': [{'u1': ""You have probably heard of Pewdiepie, he's the popular YouTuber."", 'u2': ""Yeah, I've seen him on YouTube. I'm not sure how he managed to get so many subscribers, though.""}, {'u1': ""His channel is super popular, but I'm not a fan of his style."", 'u2': ""I think he does a lot of gaming content, which isn't really my thing.""}, {'u1': ""They're like that Pewdiepie fella for me. Nothing against them, don't dislike them, but they're not at all funny and I cannot comprehend how they are popular as they are."", 'u2': ""I don't find him funny either. I watched a video of his to try and understand the appeal and I almost fell asleep""}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -600,7 +600,7 @@ u2: I don't find him funny either. I watched a video of his to try and understan
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 39,16930140052016113886_3080448594291864074,twitter,,en,,YAY! This makes me so happy ❤️,Jody is amazing (as you know). Equally amazing is her work training teams of clinicians and educators to build their capacity for human-centered and healing-centered work. #inspired,"{'turns': [{'u1': ""So I just talked to Jody, and she's amazing!"", 'u2': 'Ha! I knew that already 🙂'}, {'u1': 'We need more people like Jody to be doing this kind of work! 😊', 'u2': ""She's definitely one of the leaders in this field, but also one of the most humble.""}, {'u1': 'YAY! This makes me so happy ❤️', 'u2': 'Jody is amazing (as you know). Equally amazing is her work training teams of clinicians and educators to build their capacity for human-centered and healing-centered work. #inspired'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -712,7 +712,7 @@ u2: My brother recommended posting a note saying:
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 46,18245809656707693871_12995656546816460726,reddit,,en,,"BETRAYAL 
 That's why AAP comes out as worst in this whole issue.
 Congress wants to win LS, and they didn't hide it.
@@ -750,7 +750,7 @@ u2: Agreed. Houghton’s goal is just absolute perfection.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 48,2172729134312177266_15802185063629380999,twitter,,en,,yes you are. ???,You are going to lose your crush?,"{'turns': [{'u1': 'Youre getting pretty bold out here. What do you have to say for yourself?', 'u2': 'Is this about what happened at the party over the weekend?'}, {'u1': 'I dont think anyone thought youd have the guts to text her yourself. She said no, btw.', 'u2': 'I swear I had nothing to do with it. Youre freaking out over nothing.'}, {'u1': 'yes you are. ???', 'u2': 'You are going to lose your crush?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -764,7 +764,7 @@ u2: You are going to lose your crush?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 49,2194523057646503309_13266086147575505433,twitter,,en,,"Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?",Never thought in this direction. ?,"{'turns': [{'u1': ""Do you ever feel like men do that weird, lingering stare? I mean, it's like they're trying to devour you with their eyes. Ugh, makes me so uncomfortable!"", 'u2': ""Haha, actually, I do think some guys can be a bit too intense sometimes. But I've noticed it's not always the case. What makes you think that, though?""}, {'u1': ""I guess I just think we're more aware of it now, since we're always on the lookout for it. Plus, I've seen guys get into trouble for it. But I'm still trying to wrap my head around why they do it in the first place..."", 'u2': ""I see what you mean. It's like we've become more vigilant about it. But have you ever stopped to think that maybe there's a scientific explanation behind it? I mean, our brains are wired differently, after all...""}, {'u1': 'Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?', 'u2': 'Never thought in this direction. ?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -832,7 +832,7 @@ u2: That time, when a huge curtain reveal the whole fun fair at SQL Bits Party T
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 53,3039945136729552914_3658013811211409339,reddit,,en,,So finally the stupid have outnumbered the sane,"Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail","{'turns': [{'u1': ""I see what's happening in my town, all these uneducated people getting brainwashed by the media."", 'u2': ""The uneducated are usually the first to get their information from sensationalized news. Can't blame them for being misinformed""}, {'u1': ""Exactly! The way the news portrays things is always so biased. It's no wonder they get caught up in all this fake narrative."", 'u2': ""News outlets just serve as a propaganda machine nowadays. That's what's so frustrating about our world today""}, {'u1': 'So finally the stupid have outnumbered the sane', 'u2': 'Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1036,7 +1036,7 @@ u2: I see you obviously work at the same place I do :-(</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 67,5584588494722402477_10152125475423888733,twitter,,en,,Anybody got a parking pass they won’t be using for Sunday’s Titans-Raiders game?,"If the Titans man up and win this weekend, they’re right back in it this season. It’s way too early to write them off completely! But my confidence is low after what we saw the past two weeks ?
 
 Colts vs Chiefs
@@ -1112,7 +1112,7 @@ u2: No, no it's not, it's just Wooster, you have to go and live in France now, y
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 71,6729194111270145159_8234930110387113285,twitter,,en,,Where can I find them,My page,"{'turns': [{'u1': ""I'm not getting anywhere trying to find them. Have you talked to anyone about this?"", 'u2': ""I know someone who might know something. I'll message them.""}, {'u1': 'Do they usually respond quickly or is it going to take a while?', 'u2': ""They're pretty active on here, so I think it'll be sooner rather than later.""}, {'u1': 'Where can I find them', 'u2': 'My page'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1156,7 +1156,7 @@ u2: Walking tour. Ideally a food tour, if there's time.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 74,694348653451657143_7304807344363100836,twitter,,en,,"Q3. What is the resolution of the #GalaxyZFlip3 main camera?
 A. 8MP
 B. 10MP
@@ -1206,7 +1206,7 @@ u2: It's a shame the beer is mostly awful.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 76,8212951684128818706_16286477251330022739,reddit,,en,,It's not fair to their staff. Jesus Christ how can they be so stupid?,"I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff.
 Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff.
 Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?","{'turns': [{'u1': ""u1: What does your company do? I'm really interested in learning about what it does and its mission."", 'u2': ""u2: Ah we're an IT firm. We provide software solutions for clients in the finance and insurance sector. I'm a bit torn about working here, to be honest. It's not all it's cracked up to be.""}, {'u1': ""u1: Torn? I don't get it. Is everything okay at work? Do you guys get treated unfairly by management or something?"", 'u2': ""u2: I just don't like the way management makes decisions. Sometimes they come out of nowhere and it's hard to understand their thought process.""}, {'u1': ""It's not fair to their staff. Jesus Christ how can they be so stupid?"", 'u2': 'I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff. Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff. Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -1280,7 +1280,7 @@ u2: Baltimore too. Come on over and be gay with us.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 81,9275944914165848525_8762134853798054558,reddit,,en,,Are they cops? Why are they wearing bibs?,That's a police vest.,"{'turns': [{'u1': '""I\'m getting anxious... they keep coming closer', 'u2': '""I\'m pretty sure they\'re just volunteers, maybe from a charity event'}, {'u1': '""Wait, what are those people doing with those big signs?', 'u2': '""I think they\'re giving out samples or something'}, {'u1': 'Are they cops? Why are they wearing bibs?', 'u2': ""That's a police vest.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.

@@ -166,7 +166,7 @@ Genuine question (not being sarcastic): the listed symptoms for COVID are exactl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 11,12750553915393859827_625067732195999980,reddit,,en,,Um....please don’t go back to work tomorrow. You should be self isolating!,"It's OK, Lord Kilclooney has you covered:
 ""Better for everyone that you are locked up for 14 days""
 Apparently it's not a parody account, he's really that bad","{'turns': [{'u1': 'Hopefully you and your family are all doing okay. I was worried sick about you.', 'u2': ""We're all good, just a bit run down I think, but that's all. Thanks for checking in!""}, {'u1': ""I was just thinking about that news story about the outbreak in the city and I'm getting a bit anxious."", 'u2': ""Yeah, I saw that. I've been trying to avoid it, to be honest, but can't deny it's getting worse by the day.""}, {'u1': 'Um....please don’t go back to work tomorrow. You should be self isolating!', 'u2': 'It\'s OK, Lord Kilclooney has you covered: ""Better for everyone that you are locked up for 14 days"" Apparently it\'s not a parody account, he\'s really that bad'}]}",1,0,human_majority,"<TASK_OVERVIEW>
@@ -294,7 +294,7 @@ u2: Yeah I didn’t get their license plate, they weren’t driving slow. Its ok
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 19,14309441428012222287_10088140044597603282,twitter,,en,,What was the first movie you saw at the cinema?,Jungle Book,"{'turns': [{'u1': ""I'm super curious, have you ever seen a movie at the cinema?"", 'u2': ""Actually, yes! I saw 'The Lion King' at the cinema with my family when I was a kid.""}, {'u1': 'That sounds amazing! Did your family go there often for movies or was it a one-time thing?', 'u2': ""Oh, we went quite a few times! We'd always go to the cinema on Friday evenings and catch the latest Disney releases.""}, {'u1': 'What was the first movie you saw at the cinema?', 'u2': 'Jungle Book'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -308,7 +308,7 @@ u2: Jungle Book</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 20,14315872057140083402_7688405361863179161,reddit,,en,,I like that people always are worried that Epstein was murdered instead of suicide. What if this was a ploy to cover up that he just escaped or paid his way out of prison?,Well considering his cell mate was Nicholas Tartaglione I’m pretty sure Epstein was murdered.,"{'turns': [{'u1': ""People always say that the Jeffrey Epstein case has been swept under the rug, but the truth is we don't have all the facts yet."", 'u2': ""I think the government would have made sure that we do have all the facts. I'm starting to think there was foul play involved with his death.""}, {'u1': 'It’s a bit weird how so many prominent figures have been linked to Epstein’s crimes.', 'u2': 'Absolutely. The Epstein case has been a huge scandal and his connections to powerful people are still making waves.'}, {'u1': 'I like that people always are worried that Epstein was murdered instead of suicide. What if this was a ploy to cover up that he just escaped or paid his way out of prison?', 'u2': 'Well considering his cell mate was Nicholas Tartaglione I’m pretty sure Epstein was murdered.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -396,7 +396,7 @@ It is because you are rational.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 26,15693502839761332055_2403791530965789426,twitter,,en,,"Introduce yourself by something you were called at parents evening:
 
 Hi, I'm a pleasure to teach.","Hi there, I’m Could Do So Much Better.","{'turns': [{'u1': ""I've been wondering about this conversation format. Have you used it before?"", 'u2': ""As for me, I've used different platforms to share my thoughts, but I'm curious about this one.""}, {'u1': ""Is it just a format or a platform? I've tried many and I find myself wondering about their effectiveness."", 'u2': ""Well, I think it's a bit of both, actually. It's a unique way of connecting people, but also a tool to get your point across.""}, {'u1': ""Introduce yourself by something you were called at parents evening: Hi, I'm a pleasure to teach."", 'u2': 'Hi there, I’m Could Do So Much Better.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
@@ -486,7 +486,9 @@ u2: Not in religious sense. It's like a new badminton player comes and existing 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>","<ANSWER>
+0
+</ANSWER>",,0,0,[]
 32,1624580175472901311_5705924890865632006,reddit,,en,,Did no-one tell the Laois folk there was supposed to be more than just the name?,"Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!","{'turns': [{'u1': ""What's all this then? Laois is getting a monument? Haven't we more pressing things to worry about? We're going to be known for something that's going to be the size of a bus!"", 'u2': ""It's about time! I'm not saying it has to be huge, but at least make it worth our while. Remember that statue in Cork? The one with the big ball on top? Now that's what I call a monument!""}, {'u1': ""But isn't it about quality over quantity? The name is nice, I suppose, but is that really enough? We want something that will make people stop and stare, not just drive by and think, 'Ah, it's just Laois'."", 'u2': ""Quality over quantity? That's just something the historians and the artsy-fartsy crowd would say. I say, what about something grand, something that says, 'We're Cork, hear us roar!'?""}, {'u1': 'Did no-one tell the Laois folk there was supposed to be more than just the name?', 'u2': ""Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!""}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -500,7 +502,7 @@ u2: Whoever did Cork's one is letting down the team too. I mean, come on, we're 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 33,16248931236252931801_18392104841748248643,twitter,,en,,What if the wheels on the bus didn't go round and round?,Up and down?,"{'turns': [{'u1': ""I love nursery rhymes! Let's play a game where we change the lyrics."", 'u2': ""That's so cool! I'm totally in!""}, {'u1': 'Okay, which one do you want to start with?', 'u2': 'Hmm, how about the wheels on the bus?'}, {'u1': ""What if the wheels on the bus didn't go round and round?"", 'u2': 'Up and down?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -652,7 +654,7 @@ u2: >  don't give into the fearmongering
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 42,17457646054318905579_2168687590666378141,twitter,,en,,What is one company you'll never do business with because of their horrible politics?,The Catholic Church,"{'turns': [{'u1': 'have you heard anything about the environmental practices of some of the large corporations in the US?', 'u2': 'Eggs from CA Perdue. Their chicken farms are a nightmare.'}, {'u1': 'I’ve read a lot about those terrible conditions. What else do you feel strongly about?', 'u2': 'I’m a fan of companies that stand up for what they believe in and treat their employees fairly.'}, {'u1': ""What is one company you'll never do business with because of their horrible politics?"", 'u2': 'The Catholic Church'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -750,7 +752,7 @@ u2: Agreed. Houghton’s goal is just absolute perfection.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 48,2172729134312177266_15802185063629380999,twitter,,en,,yes you are. ???,You are going to lose your crush?,"{'turns': [{'u1': 'Youre getting pretty bold out here. What do you have to say for yourself?', 'u2': 'Is this about what happened at the party over the weekend?'}, {'u1': 'I dont think anyone thought youd have the guts to text her yourself. She said no, btw.', 'u2': 'I swear I had nothing to do with it. Youre freaking out over nothing.'}, {'u1': 'yes you are. ???', 'u2': 'You are going to lose your crush?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -892,7 +894,7 @@ u2: Hahahaha my reaction everytime!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 57,4074268006523460659_3733842516058183024,twitter,,en,,"That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.","You have explained this very well. In fact, many people look at our  image and judge everything, but in real life, not everything is like that.","{'turns': [{'u1': ""I think people often forget that our online persona is not necessarily who we are in real life. It's like wearing a different costume to a party. We might feel more confident or less anxious in certain situations, but that doesn't define our true nature."", 'u2': ""That's a great point, but what about people who do carry their online behavior into real life? I've known folks who are super aggressive or condescending online and end up being the same way in person.""}, {'u1': ""However, I think even those individuals can have their good sides, it's just that those traits might not be as prominent or easily visible in their online presence. We tend to focus on the negative aspects, don't we?"", 'u2': ""True, we often focus on the most extreme examples or the things that go viral, which isn't always a fair representation of the person or group. But what about when people are intentionally being misleading or deceptive online?""}, {'u1': 'That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.', 'u2': 'You have explained this very well. In fact, many people look at our image and judge everything, but in real life, not everything is like that.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -920,7 +922,7 @@ u2: No point. We don’t move enough of them. We have some contractors to use on
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 59,452015173105250262_1929604048844990661,reddit,,en,,I'm trying to read reddit with one eye  .,Which eye?,"{'turns': [{'u1': 'Just spent an hour trying to find my reading glasses.', 'u2': 'Ahaha, where did you finally find them?'}, {'u1': 'Ugh, still nowhere to be found. I had to ask my roommate to borrow some of his.', 'u2': 'Ha! Good thing for roommate assistance, right?'}, {'u1': ""I'm trying to read reddit with one eye ."", 'u2': 'Which eye?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -934,7 +936,7 @@ u2: Which eye?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",1,,1,0,[]
 60,4895824813506931180_3385576044469113281,reddit,,en,,What new band are you listening to?,Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :),"{'turns': [{'u1': 'Looking for some fresh music', 'u2': ""Ahaha I just got into that new indie scene myself! Who's your favorite artist from it?""}, {'u1': 'Have you listened to that new pop-punk band?', 'u2': ""I know that one! I think they're pretty awesome!""}, {'u1': 'What new band are you listening to?', 'u2': 'Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :)'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1022,7 +1024,7 @@ u2: Yes.  They have the meats.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 66,5511082206665196221_3783865121451681205,reddit,,en,,I get a yearly raise which is supposed to be in line with inflation but every year they tell us how many millions in profit they make and how it's not enough to give us all inflation rates so every year I effectively work for 1-2% less than I did the year before.,I see you obviously work at the same place I do :-(,"{'turns': [{'u1': ""Just saw our company's profits for the quarter and I am so disappointed but not surprised. The numbers are staggering... another year of record profits... the employees deserve so much better than this."", 'u2': ""I know, right? The CEO is always talking about how we need to cut costs to keep up with the competition. Meanwhile, they're making more than enough to cover our raises, don't you think?""}, {'u1': ""Exactly! And it's not just the money; the company culture has become so toxic with all the stress and pressure to perform. It's like they're only looking out for their shareholders, not their employees."", 'u2': ""Ugh, I know what you mean. It feels like we're just cogs in a machine, not human beings with needs and concerns. Sometimes I wonder if we're even making a difference in the company's overall success...""}, {'u1': ""I get a yearly raise which is supposed to be in line with inflation but every year they tell us how many millions in profit they make and how it's not enough to give us all inflation rates so every year I effectively work for 1-2% less than I did the year before."", 'u2': 'I see you obviously work at the same place I do :-('}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1082,7 +1084,7 @@ u2: What about the group of guys that were beating on him first?  Shouldn’t th
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 69,5900538012500337839_10194397940853410924,reddit,,en,,What an absolute load of garbage. I read those books as a kid. They were great. Not even close,The most disappointing trailer since... well... cant remember the last time I was so disappointed,"{'turns': [{'u1': ""I saw the trailer and I'm extremely disappointed. I was hyped for this movie."", 'u2': ""I know, right? It looks like a complete cash grab. They've ruined it for me.""}, {'u1': ""I've read the books that the movie is based on. The authors did a much better job. I remember the story being so well-written."", 'u2': ""I haven't read the books, but I can tell you that the movie doesn't seem to do the books justice. It looks like they're trying to appeal to a younger audience.""}, {'u1': 'What an absolute load of garbage. I read those books as a kid. They were great. Not even close', 'u2': 'The most disappointing trailer since... well... cant remember the last time I was so disappointed'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1310,7 +1312,7 @@ Australia is a de facto republic anyway (‘commonwealth’ is actually a synony
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 83,9714725961542251387_10499620974501743230,twitter,,en,,We are living through the government that our founders warned us about.,"No, that was the last administration.","{'turns': [{'u1': ""It's like we're living in a dream and can't wake up."", 'u2': 'I know what you mean, but we have to stay grounded in reality.'}, {'u1': ""Everything around us is falling apart, and it feels like no one's taking responsibility."", 'u2': ""That's exactly what I'm saying, we can't just point fingers at the last administration.""}, {'u1': 'We are living through the government that our founders warned us about.', 'u2': 'No, that was the last administration.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a pair of messages exchanged on social media.
@@ -1338,4 +1340,6 @@ u2: Ain't no one getting over like a fat rock on you that's what's up. ? Good mo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>","The response from u2 is sarcastic and ironic (comparing u1 to a ""fat rock""), but it is not a natural or plausible reply to u1's specific message. U1's message expresses feelings of isolation, internal conflict, and a desire for people to avoid bringing them ""bullshit."" Responding with a greeting (""Good morning as well"") alongside a strange, negative simile about being a ""fat rock"" creates a disjointed and confusing interaction that does not logically follow or address the emotional tone of u1's post. The mix of a completely unrelated greeting with a bizarre insult makes it an unnatural conversational flow.
+
+<ANSWER>0</ANSWER>",,1,0,[]

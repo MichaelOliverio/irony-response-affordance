@@ -773,7 +773,7 @@ u1: Yet they Ok the return of torque converter automatics smh
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 41,9533685635832716114_9314040326057470046,twitter,,en,,Be safe and have a great day!,You to ??☕️,"{'turns': [{'u1': 'really nice to catch up with you after a while, hows everything going?', 'u2': 'same old, still busy though, you know how it is'}, {'u1': ""yep, i'm sure you are! you deserve a break, want to grab a coffee together?"", 'u2': 'haha, sounds good to me, but can we make it a quick one? ☕️'}, {'u1': 'Be safe and have a great day!', 'u2': 'You to ??☕️'}]}",0,0.0,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -865,7 +865,7 @@ u1: My company have basically said we can work from home if we feel safer doing 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 46,10287179429827134569_14617976032954898120,reddit,,en,,So BJP-RSS folk need to fear NSG ? Kinda contradictory no ?,Has this guy any shame left.  He should be behind bars!,"{'turns': [{'u1': ""u1's party is trying to make use of the NSG for political mileage and it does not seem to be an honest attempt to ensure national security"", 'u2': ""I just don't trust that guy anymore. He has lost all credibility in my opinion""}, {'u1': 'BJP-RSS has been making some shady deals and using the NSG as a tool for their own gains', 'u2': 'I completely agree with you. He is just a puppet in their game'}, {'u1': 'So BJP-RSS folk need to fear NSG ? Kinda contradictory no ?', 'u2': 'Has this guy any shame left. He should be behind bars!'}]}",0,1.0,0.0,0.0,1.0,0.0,,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -883,7 +883,7 @@ u1: So BJP-RSS folk need to fear NSG ? Kinda contradictory no ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 47,14394358609127883110_11443331867192402512,reddit,,en,,"Lol. They said they will demand resignation of HM. 
 Aiming for the stars I guess",With that attitude. We still would have been slaves of britishers.,"{'turns': [{'u1': 'What a joke! They think a simple rally or a tweetstorm will topple the HM.', 'u2': 'The people are awakening! The establishment is in trouble now.'}, {'u1': ""What's next? Will they demand the crown next?"", 'u2': ""At least we're not under the thumb of the crown anymore, my friend.""}, {'u1': 'Lol. They said they will demand resignation of HM. Aiming for the stars I guess', 'u2': 'With that attitude. We still would have been slaves of britishers.'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -902,7 +902,7 @@ u1: Lol. They said they will demand resignation of HM. Aiming for the stars I gu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 48,18016076446245323761_11560096923782319413,twitter,,en,,Happy Sunday Lana ☀️,"Happy Sunday John, ??","{'turns': [{'u1': ""I'm thinking of taking my surfboard out today, Lana. What's your surf game like?"", 'u2': ""You know I've been trying to get back into it! Been working on my pop-up. I've been having some issues with speed, though.""}, {'u1': 'Speed issues can be tough to fix. You might want to consider getting some fins with a bit more area to compensate. What kind of board are you riding these days?', 'u2': ""I'm still using my old Softboard. It's been with me through some rough waves, but I'm not sure if it's still performing as well as it used to.""}, {'u1': 'Happy Sunday Lana ☀️', 'u2': 'Happy Sunday John, ??'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1236,7 +1236,7 @@ u1: Not me spending €60 in Boots when all I needed was toothpaste.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 66,8654513760411466645_15969160122743203139,twitter,,en,,"By 2030, nearly 600 million people could still live on less than $2.15 daily.
 
 @WorldBank’s latest Poverty and Shared Prosperity Report looks at the global poverty landscape after COVID &amp; other crises &amp; recommends policies to help countries correct course.",Nice ?,"{'turns': [{'u1': 'I try to stay optimistic but the reality is that many people still struggle to afford the basic necessities.', 'u2': ""That's heartbreaking""}, {'u1': ""It's been decades since we've made any significant progress in reducing poverty, and I'm starting to lose hope."", 'u2': ""I've heard the same stats, it's concerning""}, {'u1': 'By 2030, nearly 600 million people could still live on less than $2.15 daily. @WorldBank’s latest Poverty and Shared Prosperity Report looks at the global poverty landscape after COVID &amp; other crises &amp; recommends policies to help countries correct course.', 'u2': 'Nice ?'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,"<TASK_OVERVIEW>
@@ -1484,7 +1484,7 @@ u1: Americans. It’s wooster shuh.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 79,17091512765802921252_8735726914411658796,reddit,,en,,Holy shit it’s been so long since I’ve watched this. I used to love it when I was like 10,I love it too! It reminds me of granny babysitting on Saturday nights!,"{'turns': [{'u1': ""what's this on netflix? I was browsing through and stumbled upon this old thing from when I was a kid."", 'u2': 'Wait, is it that 90s cartoon show? I loved it back in the day!'}, {'u1': ""Haha yeah it is! And I think it's on there because they have all these old shows."", 'u2': 'I know right? I was just thinking that my younger cousins would love this stuff.'}, {'u1': 'Holy shit it’s been so long since I’ve watched this. I used to love it when I was like 10', 'u2': 'I love it too! It reminds me of granny babysitting on Saturday nights!'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1672,7 +1672,7 @@ u1: What happened to the pandemic? The ending seemed awfully anticlimactic, no?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 89,2087891341690024000_14331869771840568431,reddit,,en,,"Donald Trump is purposefully handling the Corona Virus poorly so that it reaches pandemic state and he can declare Martial Law.
 Martial law: is the imposition of direct military control of normal civilian functions by a government, especially in response to a temporary emergency such as invasion or major disaster, or in an occupied territory.",If this is true he’s way smarter than I would want to give him credit for.,"{'turns': [{'u1': 'u1: There’s been a massive uptick in COVID-19 cases over the last 24 hours.', 'u2': 'I read that. Sounds like he’s botching this whole thing'}, {'u1': 'I keep thinking his strategy is to let it spread until he can impose some kind of military control.', 'u2': 'But that’s just conspiracy theory talk. He’s not capable of that level of planning.'}, {'u1': 'Donald Trump is purposefully handling the Corona Virus poorly so that it reaches pandemic state and he can declare Martial Law. Martial law: is the imposition of direct military control of normal civilian functions by a government, especially in response to a temporary emergency such as invasion or major disaster, or in an occupied territory.', 'u2': 'If this is true he’s way smarter than I would want to give him credit for.'}]}",1,0.0,1.0,1.0,1.0,,,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -3034,7 +3034,7 @@ u1: The theory that Epstein didn't kill himself. Memes aside, he could've probab
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 162,12949991018441521779_16890826121342956459,twitter,,en,,"Man creates bondage, grief, tension and problems through action. He creates enemies through action; and when he performs good action, he achieves God through action. #AsharamjiBapuQuotes","Sant Shri Asharamji Bapu कहते हैं शरीर की मृत्यु यह तुम्हारी मृत्यु नहीं, शरीर के जाते हुए भी तुम इतने के इतने ही पूर्ण हो । #Bapuji #AsharamjiBapuQuotes","{'turns': [{'u1': '""There is a divine purpose behind every event. Even if an event appears to be negative, there is an opportunity for spiritual growth. ""', 'u2': '""Asharamji Bapu ji has written the book that helps us to live in the present. This is really a great teaching. ""'}, {'u1': '""Sant Shri Asharamji Bapu explains that everything in life is not what it seems. This is a truth that is profound and spiritual. ""', 'u2': '""Sant Shri Asharamji Bapu ki kathas sunne se kai sakaratmak parivartan hote hai. Pichhle janam ke patah ke sabhi rahasya jaante hain. ""'}, {'u1': 'Man creates bondage, grief, tension and problems through action. He creates enemies through action; and when he performs good action, he achieves God through action. #AsharamjiBapuQuotes', 'u2': 'Sant Shri Asharamji Bapu कहते हैं शरीर की मृत्यु यह तुम्हारी मृत्यु नहीं, शरीर के जाते हुए भी तुम इतने के इतने ही पूर्ण हो । #Bapuji #AsharamjiBapuQuotes'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -3352,7 +3352,7 @@ u1: I've done a similar thing. I live in China and McDonald's deliver 24/7, but 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 179,15922195893431160402_6100040146362736434,reddit,,en,,">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms.
 What?",Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.,"{'turns': [{'u1': '""What\'s the craziest thing you\'ve seen or heard in the gym?', 'u2': 'Well, I saw this new guy get rejected from playing with a bunch of regulars, but it was interesting to watch.'}, {'u1': 'Do you think the gym environment has a lot to do with how people react to new players?', 'u2': ""Yeah, I think so. It's like they form these little cliques and don't want to let outsiders in.""}, {'u1': "">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms. What?"", 'u2': ""Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.""}]}",1,1.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -4165,7 +4165,7 @@ u1: Ek din mene JP ko fake birthday wish kiya tha. Sab karne lage. Phir pta chal
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 223,10402570674233780126_1496561720441567112,reddit,,en,,"I don’t get why the term living in your parent’s basement is an insult?
 I thought Indians took great pride in living together.
 Probably western culture focuses more on self dependence and living independently. That’s bizarre. Or marybe I’m an orthodox bigot","It's just difference of opinion. 
@@ -4355,7 +4355,7 @@ u1: Describe Ron DeSantis in two words.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 233,12900448541087373893_818527298780778530,twitter,,en,,"My favourite thing about having insomnia for 3 decades is people telling me how to cure it as if I haven't tried everything imaginable to avoid 10,000 sleep-deprived nights.",Me too....me too,"{'turns': [{'u1': ""People always think they have the solution to my insomnia just because they've read a self-help book or watched one TV show on the topic."", 'u2': 'Ugh, I know, right?'}, {'u1': ""And I'm always politely trying to educate them on how long I've been struggling, but it falls on deaf ears."", 'u2': ""Yeah, it's like they think it's just something I need to snap out of or something.""}, {'u1': ""My favourite thing about having insomnia for 3 decades is people telling me how to cure it as if I haven't tried everything imaginable to avoid 10,000 sleep-deprived nights."", 'u2': 'Me too....me too'}]}",0,0.0,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4463,7 +4463,7 @@ u1: Absolutely not but cute. ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 239,6482055484317490665_8020386412691191095,reddit,,en,,"Maybe this sounds ridiculous, I don’t know. But in a social setting, if it’s not a good cuppa, I’ll ‘forget’ about it. If it’s in an office, I genuinely can forget about it. If it’s not a cup that makes me want to come back to it every few minutes, it’s not on my mind to drink it. Sometimes it comes too light, too dark, sometimes it’s been threatened with milk. Sometimes it’s like dishwater, syrup at the bottom. In every team of every company, there’s usually only one that I trust. I’m of the mindset that it’d be ruder to exclude myself from the tea round system and make myself tea. Is that nuts?",">Sometimes it comes too light, too dark
 Some invaluable information my Dad passed to me was that a good brew should be the exact colour of He-Man. I live my life by this mantra.","{'turns': [{'u1': ""I do love a good cuppa, but I've always been a bit fussy about how it's brewed. What's the worst thing that's happened to you when it comes to tea?"", 'u2': 'I once drank a cuppa that had been left to sit for hours and it was basically undrinkable. The tea leaves had stewed and it tasted like old socks.'}, {'u1': ""That's definitely not ideal. I've had my fair share of bad tea, but I've learned to just politely decline and have a water or something instead. What do you do in situations like that?"", 'u2': ""Well, I think the worst thing is when people insist on putting loads of sugar in it. I mean, come on, it's tea, not a sweet drink!""}, {'u1': 'Maybe this sounds ridiculous, I don’t know. But in a social setting, if it’s not a good cuppa, I’ll ‘forget’ about it. If it’s in an office, I genuinely can forget about it. If it’s not a cup that makes me want to come back to it every few minutes, it’s not on my mind to drink it. Sometimes it comes too light, too dark, sometimes it’s been threatened with milk. Sometimes it’s like dishwater, syrup at the bottom. In every team of every company, there’s usually only one that I trust. I’m of the mindset that it’d be ruder to exclude myself from the tea round system and make myself tea. Is that nuts?', 'u2': '>Sometimes it comes too light, too dark Some invaluable information my Dad passed to me was that a good brew should be the exact colour of He-Man. I live my life by this mantra.'}]}",0,0.0,1.0,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -4737,7 +4737,7 @@ u1: Bet you’re glad you can now do beer tweets ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 254,15878862390442679669_5355962305897979354,reddit,,en,,It’s Official! I’m Irish!,Paper Irish*,"{'turns': [{'u1': '“Going through some genealogy stuff and I came across a fascinating connection to the Emerald Isle!', 'u2': 'Cool, what have you found out?'}, {'u1': 'It seems my 5th great-grandmother was actually from a small village in rural Ireland. Can’t wait to learn more!', 'u2': ""Sounds like you're really tracing your roots. What do you think it means for you?""}, {'u1': 'It’s Official! I’m Irish!', 'u2': 'Paper Irish*'}]}",1,1.0,,,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5929,7 +5929,7 @@ u1: It’s eeth not eh-th. It’s bay-see, not bake. It’s en eff tees, not nif
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 318,18001295869004183724_18347445412921407868,reddit,,en,,Rice looks a bit overcooked or is it broken rice?,Rice is overcooked :),"{'turns': [{'u1': 'I love your cooking, it smells amazing!', 'u2': 'Thanks! I tried a new recipe today'}, {'u1': ""Mmm, can't wait to dig in! What's on the menu today?"", 'u2': 'Just some plain rice with a bit of seasoning'}, {'u1': 'Rice looks a bit overcooked or is it broken rice?', 'u2': 'Rice is overcooked :)'}]}",0,0.0,1.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6193,7 +6193,7 @@ u1: My mom has been beating the ‘you make less money in Germany so you need to
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 332,1529259886277198122_4712038252241532113,twitter,,en,,Thought you’d enjoy this @phil_couser,Has Kwarteng pinched your nickname?,"{'turns': [{'u1': ""u1 just put up a nice post on his blog. I'm planning to share it here."", 'u2': 'That sounds great. Did you like the topic he discussed?'}, {'u1': 'Actually, I was impressed with how he presented his ideas. Very clear and concise.', 'u2': ""That's really good to know. I might have to check it out""}, {'u1': 'Thought you’d enjoy this @phil_couser', 'u2': 'Has Kwarteng pinched your nickname?'}]}",0,0.0,1.0,1.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6465,7 +6465,7 @@ u1: Yeah but it’s funny because it’ll do nothing to stop the spread of coron
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 346,10907935960219220306_7767425648978380399,reddit,,en,,"Apropos of nothing, that fireplace hasn't seen many fires.",Glow of big Mick warms the heart and the hearth.,"{'turns': [{'u1': ""I wonder what's going on inside those walls. It's been empty for ages."", 'u2': ""I know, it's a shame. I'd love to see it renovated one day.""}, {'u1': 'A cozy fireplace can make a house feel so inviting.', 'u2': ""It does, doesn't it? But this one looks like it hasn't been used in years.""}, {'u1': ""Apropos of nothing, that fireplace hasn't seen many fires."", 'u2': 'Glow of big Mick warms the heart and the hearth.'}]}",0,0.0,1.0,1.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7503,7 +7503,7 @@ u1: There was always one mental kid who would go on it upside down.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 401,11352465718599297792_11912757531296846791,twitter,,en,,Damn this photography skills?,Thaaanks :D,"{'turns': [{'u1': 'Just took some snaps at the beach. What do you think of my new DSLR?', 'u2': 'Awesome pics! You really improved your photography skills'}, {'u1': ""Yeah, I've been practicing a lot since last summer."", 'u2': ""It shows! You're a natural now.""}, {'u1': 'Damn this photography skills?', 'u2': 'Thaaanks :D'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8473,7 +8473,7 @@ u1: Election Predictions: Republicans will win the House! Stacey Abrams will los
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 454,11818991551092973960_2349566952055691192,reddit,,en,,Giving up just for Sunday or forever starting Sunday? The sentence is confusing.,It is but sounds like he will give it up starting Sunday. He's going to keep us posted .,"{'turns': [{'u1': ""Can we assume that 'forever' means the rest of the week or are we just talking about Sundays from now on? Asking for clarity."", 'u2': ""I think he means the rest of the week, but I'll wait for confirmation.""}, {'u1': ""I'm still a bit confused. Can you get a bit more context about this 'forever'?"", 'u2': ""I'm asking him the same thing. We'll see what he says.""}, {'u1': 'Giving up just for Sunday or forever starting Sunday? The sentence is confusing.', 'u2': ""It is but sounds like he will give it up starting Sunday. He's going to keep us posted .""}]}",1,0.0,1.0,,1.0,1.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9329,7 +9329,7 @@ u1: no one looks good in traditionals lets just say it together...
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 500,16064730116675937930_13956985472080481092,twitter,,en,,song was such a banger,"Is such a banger, excuse me","{'turns': [{'u1': 'I just saw that new video of u1 performing that song', 'u2': 'haha that was so funny'}, {'u1': 'u1 killed it on that stage!', 'u2': 'yesssssss u1 you slayed'}, {'u1': 'song was such a banger', 'u2': 'Is such a banger, excuse me'}]}",1,1.0,1.0,,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9517,7 +9517,7 @@ u1: If I’ve read the press notes correctly doesn’t he get free coffee for a 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 510,15849458284151168089_12381184885274858640,twitter,,en,,Sore throat and fever full family ?,Please consult doctor ?,"{'turns': [{'u1': 'My kids have been sniffling all morning and I feel a bit under the weather myself', 'u2': 'Have they been around anyone sick recently?'}, {'u1': ""I think they were at school yesterday, so we'll need to keep an eye on them"", 'u2': 'Yeah, schools can be breeding grounds for germs Keep them home and make them drink plenty of fluids'}, {'u1': 'Sore throat and fever full family ?', 'u2': 'Please consult doctor ?'}]}",0,0.0,0.0,1.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9572,7 +9572,7 @@ u1: I don’t know in what world people are living in where they believe #Ukrain
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 513,7047096941308855087_11274159060400637193,twitter,,en,,The Left's problem is it can only entertain one narrative -  that all Tories are evil Thatcherites who put fiscal parsimony above everything else. They can't get their heads round what Truss is actually doing.,"I reinforce my thinking by checking Richard Burgons tweets daily.
 Clueless.","{'turns': [{'u1': 'This Truss business is a complete embarrassment for the Tories.', 'u2': ""Why do you think the left can't figure it out?""}, {'u1': ""It's a constant narrative from the left - they paint the entire party with the same brush."", 'u2': ""I guess they just don't see the nuances like we do.""}, {'u1': ""The Left's problem is it can only entertain one narrative - that all Tories are evil Thatcherites who put fiscal parsimony above everything else. They can't get their heads round what Truss is actually doing."", 'u2': 'I reinforce my thinking by checking Richard Burgons tweets daily. Clueless.'}]}",1,1.0,0.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -9609,7 +9609,7 @@ u1: I think you must be mistaken. NI are lagging behind terribly. Suella Braverm
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 515,6752791521887885893_570606861707445801,twitter,,en,,"er, if that's a wild fox, that's so abnormal that you should be concerned and cautious.  it may be ill, as in  . . . rabies . . ..","No rabies in the uk, fortunately. It looked healthy. They’re just scavengers and came in to have a look round.","{'turns': [{'u1': ""That's a wild fox in my garden, I've never seen one here before! We don't get them around here that much, do we?"", 'u2': 'Yeah, I think they are more common than people realize. My friend had one visiting their garden just the other day!'}, {'u1': ""But don't they usually roam in packs? I thought they were pretty territorial."", 'u2': 'Not always, they do travel alone sometimes. Some of them might have their own territory, while others wander between different areas.'}, {'u1': ""er, if that's a wild fox, that's so abnormal that you should be concerned and cautious. it may be ill, as in . . . rabies . . .."", 'u2': 'No rabies in the uk, fortunately. It looked healthy. They’re just scavengers and came in to have a look round.'}]}",0,1.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10475,7 +10475,7 @@ u1: Dundalk fans singing “your from tallaght, scruffy tallaght” is like a ho
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 562,8095750965635916790_13386441966722862550,reddit,,en,,Any Sam Smith's. 1970s beer and 1990s prices.,It's a shame the beer is mostly awful.,"{'turns': [{'u1': ""Can't wait for the new Sam Smith's pub to open near me. It's supposed to have an amazing selection of craft beers and comfy seating areas. I heard they're having a soft opening soon."", 'u2': ""Just saw the ads, too! I'm super stoked about it. I've been hearing rave reviews about their beer list and cozy vibe.""}, {'u1': ""Hoping it'll be more reasonably priced than the overpriced places downtown. Ugh, I'm still bitter about how expensive beer is downtown."", 'u2': ""I totally get it! I've been meaning to check out some of the smaller breweries that pop up in the area. Maybe they'll offer better prices and a more authentic experience?""}, {'u1': ""Any Sam Smith's. 1970s beer and 1990s prices."", 'u2': ""It's a shame the beer is mostly awful.""}]}",0,0.0,0.0,,0.0,1.0,,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11385,7 +11385,7 @@ u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 611,9769578398316647293_8046990025530836412,reddit,,en,,Avatar: the last airbender,I came here to say this,"{'turns': [{'u1': '""What\'s the best TV show on Netflix right now?""', 'u2': 'The one with Aang and his friends, I forgot the title...'}, {'u1': ""I think you're thinking of 'Avatar: The Last Airbender'?"", 'u2': ""That's the one! The one with Aang and his friends.""}, {'u1': 'Avatar: the last airbender', 'u2': 'I came here to say this'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11666,7 +11666,7 @@ u1: Is anyone actually afraid? I see stories but not one person I know cares abo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 626,10408087883859871256_17587244775472175219,reddit,,en,,Yet strangely the seas are not rising in Sydney Harbour,"or anywhere else including the Maldives  URL , this headline is a scaremongering farce.","{'turns': [{'u1': 'u1 is concerned about the polar ice caps and is referencing a recent study. ""Just came across a study claiming that polar ice caps are melting at alarming rates. Can’t believe the IPCC is not more vocal about it.', 'u2': ""I think there's more to the story, we should dig deeper into the research methods and data collection.""}, {'u1': 'u1 is looking for external validation and is seeking input from a global expert. ""Just found this article by a renowned oceanographer on the impact of ocean currents on sea levels. What are your thoughts?', 'u2': ""I've spoken to a few colleagues who specialize in ocean currents and they're not as convinced by the current state of research.""}, {'u1': 'Yet strangely the seas are not rising in Sydney Harbour', 'u2': 'or anywhere else including the Maldives URL , this headline is a scaremongering farce.'}]}",0,1.0,0.0,1.0,0.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11762,7 +11762,7 @@ u1: With the amount of money that has been donated, it's impossible that a cure 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 631,18340110029748714246_3368844001339390696,reddit,,en,,Good Lord!,Very Good Lord!,"{'turns': [{'u1': ""You are probably thinking I've finally lost it. But seriously, I've been seeing this strange guy everywhere I go."", 'u2': 'Huh? What strange guy?'}, {'u1': ""Everywhere I go, I catch a glimpse of him. And when I turn around, he's gone. It's freaky."", 'u2': ""That does sound freaky. But what makes you think it's the same guy?""}, {'u1': 'Good Lord!', 'u2': 'Very Good Lord!'}]}",1,1.0,0.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11914,7 +11914,7 @@ u1: Fucking hell how can you be that degenerate? And how do you have the money f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 639,12418498870394243648_18224327229344491548,twitter,,en,,"I don't think it's as dichotomous as that. Lots of men start up new relationships with the women they're cheating with too - and I find that worse, actually! Lots of public examples (Matt Hancock springs to mind!)",There are certainly exceptions.,"{'turns': [{'u1': ""My dad always said men can't handle women being happy in a relationship. I'm starting to think there's some truth to that. Every cheating scandal I see has this pattern."", 'u2': ""Do you think it's more about power and control? The man's sense of entitlement?""}, {'u1': ""That's a good point, but I think it's deeper than that. I've seen so many cases where it's not just about power, but about the man not being emotionally prepared to move on."", 'u2': 'Emotionally prepared? You mean, like, to handle the thought of being alone or something?'}, {'u1': ""I don't think it's as dichotomous as that. Lots of men start up new relationships with the women they're cheating with too - and I find that worse, actually! Lots of public examples (Matt Hancock springs to mind!)"", 'u2': 'There are certainly exceptions.'}]}",0,0.0,1.0,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12343,7 +12343,7 @@ u1: Save it
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 662,16873054711772305548_6725044516132975537,reddit,,en,,My first girlfriend gave me the same nickname.,Guess that explains the username.,"{'turns': [{'u1': 'You have no idea how I got my username, do you?', 'u2': ""Actually, I'm pretty curious, how did you come up with it?""}, {'u1': ""It's a story I only tell my closest friends."", 'u2': ""Aww, you're making me feel left out, share!""}, {'u1': 'My first girlfriend gave me the same nickname.', 'u2': 'Guess that explains the username.'}]}",1,0.0,1.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13528,7 +13528,7 @@ u1: Could be worse. I have a friend that wears flipflops in snow.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 725,9322912336812955076_12098413285645425962,twitter,,en,,"If you want to know what life would be like under a Labour government then look at the crime in London under Sadiq Khan, Look at the NHS in Wales, Look at the police in Manchester, Look at the financial mismanagement in Liverpool
 
 Now imagine it all over the country",Look at twelve years of misrule in every other place you failed to mention....,"{'turns': [{'u1': 'Are you prepared to be a subject of the policies that Sadiq Khan has implemented in London? You have a pretty clear picture of what that would be like under a Labour government.', 'u2': 'Of course, the policies of London are not a universal representation of Labour policies.'}, {'u1': ""But isn't the London mayorship essentially a pilot for Labour policies? And the results aren't exactly what I'd call successful."", 'u2': 'A pilot is just a pilot, and pilots can fail or succeed. This is about the larger implications of Labour policies across the country.'}, {'u1': 'If you want to know what life would be like under a Labour government then look at the crime in London under Sadiq Khan, Look at the NHS in Wales, Look at the police in Manchester, Look at the financial mismanagement in Liverpool Now imagine it all over the country', 'u2': 'Look at twelve years of misrule in every other place you failed to mention....'}]}",1,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
@@ -14359,7 +14359,7 @@ u1: In fairness, a British van would be on the hard shoulder.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 769,5693200061729023680_3185171831298607458,twitter,,en,,What is the sense of the job DeSantis is doing wrt hurricane recovery?  Does she have an opinion?,"Honestly, he seems to be doing well there, to her, and even my, perspective. He’s not dumb and decent in a crisis. But, it’s his views and lies that got her.","{'turns': [{'u1': 'Have you been keeping up with the DeSantis hurricane recovery efforts? That was a big storm!', 'u2': 'Yeah, I saw the updates, and he seems to be doing a good job responding to the situation.'}, {'u1': ""That's reassuring to hear, but I still wonder about his overall leadership style and qualifications."", 'u2': ""I think he's been okay, but his views on certain issues do worry me. And I know he's not my top pick.""}, {'u1': 'What is the sense of the job DeSantis is doing wrt hurricane recovery? Does she have an opinion?', 'u2': 'Honestly, he seems to be doing well there, to her, and even my, perspective. He’s not dumb and decent in a crisis. But, it’s his views and lies that got her.'}]}",0,0.0,0.0,,0.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15059,7 +15059,7 @@ u1: You’re a bitch
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 807,17638647095265275996_15065137387819053976,reddit,,en,,"read this.
  URL 
 &#x200B;
@@ -15265,7 +15265,7 @@ u1: It’s the day nineteen days before Spring starts?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 818,1307193071725482053_4093094666083403910,reddit,,en,,"The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?",Dream of the 1890s....,"{'turns': [{'u1': 'Do you know what was happening in Australia around this time? The gold rush was going on for years!', 'u2': 'Some people were making a killing, but most were stuck in the dirt.'}, {'u1': 'What about the state of real estate? Was anyone making smart investments?', 'u2': 'Some were, but others were losing their shirts in Melbourne'}, {'u1': 'The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?', 'u2': 'Dream of the 1890s....'}]}",1,1.0,1.0,1.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15519,7 +15519,7 @@ u1: Black Tower Leibraumilch. Too sweet for me now.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 832,14107432776105131874_9242691818694079033,twitter,,en,,please share your advice .,Just saw. Will do ?????,"{'turns': [{'u1': 'What brings you here today?', 'u2': 'I just got back from a trip. It was amazing. Got some great photos'}, {'u1': ""I'm actually planning a trip of my own and I could use some tips from you"", 'u2': 'Oh wow! That sounds exciting. What destination are you considering?'}, {'u1': 'please share your advice .', 'u2': 'Just saw. Will do ?????'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16683,7 +16683,7 @@ u1: I've seen jazz described as ""appropriating black culture""... Where does in
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 892,17586037273674873401_16799206859776305579,twitter,,en,,He still playing?,Injuries never leave old footy players #ouch,"{'turns': [{'u1': '""Are you talking about the Footy Championship?', 'u2': 'Yeah, heard the top scorer from last season got severely hurt'}, {'u1': '""What do you mean\'severely hurt\'? Is he out for a while?', 'u2': ""Bad news, it's a knee injury. Surgery this week, at least 6 weeks off""}, {'u1': 'He still playing?', 'u2': 'Injuries never leave old footy players #ouch'}]}",0,1.0,0.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17175,7 +17175,7 @@ u1: I'm allowed to go for a cig break every 3 hours. EDIT: On a more serious not
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 918,3433000482665130609_683060642204678066,reddit,,en,,At least you’re not upstairs on a double decker stuck on the Redheugh bridge. That’s the stuff of nightmares.,"As someone who has had to drive deckers across multiple times, I assure you, the driver seat is worse especially when you get a slight side wind, almost needed to change on the other side","{'turns': [{'u1': ""I drove a bus to work today but at least it wasn't a double decker... or so I thought."", 'u2': ""Don't pretend you're innocent. We all know you've been behind the wheel of a decker. Tell the truth.""}, {'u1': ""No way! I'm totally innocent! How about you, though?"", 'u2': ""Well, I've driven plenty of deckers in my time. But trust me, it's not just the drivers who have stories...""}, {'u1': 'At least you’re not upstairs on a double decker stuck on the Redheugh bridge. That’s the stuff of nightmares.', 'u2': 'As someone who has had to drive deckers across multiple times, I assure you, the driver seat is worse especially when you get a slight side wind, almost needed to change on the other side'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17307,7 +17307,7 @@ u1: Apparently Reece Mogg will be making a statement within the hour. It's not g
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 925,17265696462063752239_17130894861449707422,twitter,,en,,"Go u!
 Sleep is what gets me though the day ?
 And my dogs ?","I occasionally indulge in nanna naps, too. ?","{'turns': [{'u1': 'What time do you get to bed, u2?', 'u2': 'Usually around midnight! I watch a late-night show.'}, {'u1': 'Late-night show? What do you like about it?', 'u2': ""It's just relaxing. The host is funny.""}, {'u1': 'Go u! Sleep is what gets me though the day ? And my dogs ?', 'u2': 'I occasionally indulge in nanna naps, too. ?'}]}",0,1.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
@@ -17492,7 +17492,7 @@ u1: Least he’s got the minerals too face the fans while them rats are smoking 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 935,3810418066221949269_7318238342427704815,reddit,,en,,"So much for sticking up for the little guy, Nick?
 Hopefully now people see Xenophon's true colours, and they aren't those of a ""sensible centrist,"" but a cynical opportunist.",fuck i hate that guy hope he rots with the rest of them!,"{'turns': [{'u1': ""I'm really disappointed in Nick's latest vote. Thought he was better than that."", 'u2': ""yeah i saw that i know he's just a politician trying to get reelected though""}, {'u1': ""That's easy for you to say, but you're not the one who's been let down by him before."", 'u2': 'i guess you just expect too much from people'}, {'u1': 'So much for sticking up for the little guy, Nick? Hopefully now people see Xenophon\'s true colours, and they aren\'t those of a ""sensible centrist,"" but a cynical opportunist.', 'u2': 'fuck i hate that guy hope he rots with the rest of them!'}]}",0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -18566,7 +18566,7 @@ u1: >""What's not to like? Custard, good. Jam, good. Beef, GOOD!""
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 993,13556674363389926916_9547501430383162241,twitter,,en,,Love this! Gorgeous ??,Thank you ??❤️,"{'turns': [{'u1': 'just watched a beautiful sunset with friends. The sky was painted with hues of orange and pink.', 'u2': 'Sounds amazing!'}, {'u1': ""And to think it's not even the weekend yet"", 'u2': 'What a lovely preview of the weekend!'}, {'u1': 'Love this! Gorgeous ??', 'u2': 'Thank you ??❤️'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19362,7 +19362,7 @@ u1: If you are wearing this mask for screening corona virus whole day, you will 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1035,16017134084113034176_8159459641426529682,reddit,,en,,So close to 9ct,I kept dropping it on the scales hoping somehow it would tip over but it didn't :-(,"{'turns': [{'u1': ""I'm starting to get a little worried that it's going to be just shy of the mark again"", 'u2': 'Me too!'}, {'u1': ""Do you think the assayer would give us a partial 9ct certification if it's really close?"", 'u2': ""Hmm, not sure, I'd love to know!""}, {'u1': 'So close to 9ct', 'u2': ""I kept dropping it on the scales hoping somehow it would tip over but it didn't :-(""}]}",0,0.0,1.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20719,7 +20719,7 @@ u1: Former supporter, last night: “Joe, you’re a Democrat. Just admit it.”
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1107,6305314444756483056_8204580866885001374,reddit,,en,,"be prepared to be called a Hindu Apologist, a leftish libtard and a weak, beta fiberal.","Hahaha, I've been called all three in this thread itself. It's absurd, I thought denouncing those who rape, murder and pillage would unite people rather than have them insult me.","{'turns': [{'u1': ""What is your stance on India's Citizenship Amendment Act (CAA)?"", 'u2': ""My stance on CAA is very clear: I think it is a Hindu nationalist agenda that marginalizes the Muslim minority. It's undemocratic and goes against the secular principles of India.""}, {'u1': ""I think it's not quite that simple. The bill aims to grant citizenship to persecuted minorities from neighboring countries."", 'u2': ""A classic deflection! The real issue is not about granting citizenship, but about the government's motivations and the way it has implemented this bill. It's about protecting the rights of the Muslim minority, not just granting them citizenship.""}, {'u1': 'be prepared to be called a Hindu Apologist, a leftish libtard and a weak, beta fiberal.', 'u2': ""Hahaha, I've been called all three in this thread itself. It's absurd, I thought denouncing those who rape, murder and pillage would unite people rather than have them insult me.""}]}",1,1.0,1.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20918,7 +20918,7 @@ u1: Dont we all hate Irish rail ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1118,2916846425774207804_17467383445105279977,reddit,,en,,I am a germophobe and ATMs and shopping trolleys definitely make me uncomfortable.,"Then you don't want to think about bus and train poles, public bathroom doors/knobs (like Central station) and 711 hot dogs!","{'turns': [{'u1': '""Do you know how often people press elevator buttons with their greasy fingers?', 'u2': ""Yeah, it's gross, but at least those buttons get cleaned regularly""}, {'u1': 'But not everyone cleans their shopping carts! Have you ever seen someone put their toddler on a cart and not even wipe it down?', 'u2': ""Ew, don't even get me started on those things! But, I guess you're more concerned about germs than, like, actual cleanliness.""}, {'u1': 'I am a germophobe and ATMs and shopping trolleys definitely make me uncomfortable.', 'u2': ""Then you don't want to think about bus and train poles, public bathroom doors/knobs (like Central station) and 711 hot dogs!""}]}",1,0.0,1.0,1.0,1.0,1.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -21123,7 +21123,7 @@ u1: To busy raiding the ABC for whistleblowers who outed the government's corrup
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1129,7710478676036742985_6470997799316854399,reddit,,en,,"Wallace and Grommet: Vampire Bunnies. 
 I was very young, and scared. But the rest of the class was laughing their butts off.",I thought it was only me who was fucking scared of that movie.,"{'turns': [{'u1': 'Had to watch some weird movies at school.', 'u2': 'Yeah, my school was the same!'}, {'u1': ""One of my favorite childhood memories is still being traumatized by a 'classical animation'!"", 'u2': ""Oh man, I'm with you there. I remember watching one and just wanting to get out of there!""}, {'u1': 'Wallace and Grommet: Vampire Bunnies. I was very young, and scared. But the rest of the class was laughing their butts off.', 'u2': 'I thought it was only me who was fucking scared of that movie.'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -21680,7 +21680,7 @@ u1: *Grabs Popcorn* Oh wait, this post will get on front page.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1157,7584216364213994042_3347393525505188725,twitter,,en,,"I’ve already got one Diggs, a second one would be pretty amazing.",It'd be fun. But you telling me you wouldn't want two all star pass rushers on the edges?,"{'turns': [{'u1': ""u1's been a solid player, I was thinking about him for the starter spot."", 'u2': ""He's had his ups and downs, but he's definitely got the potential to be a game-changer.""}, {'u1': 'I’m not sure, I was thinking more of someone like Diggs, a bit more experience under his belt.', 'u2': 'But Diggs is a great player, have you seen him play?'}, {'u1': 'I’ve already got one Diggs, a second one would be pretty amazing.', 'u2': ""It'd be fun. But you telling me you wouldn't want two all star pass rushers on the edges?""}]}",0,1.0,0.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22119,7 +22119,7 @@ u1: Is amazon reading whatsapp messages or Google keep notes? I'm getting ads (i
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1181,18425719312303860297_10731381668674498400,twitter,,en,,We don’t need this crap here!  time for an inquiry in to media diversity and dominance.,Yes an inquiry from a left wing government to crush all media that isn't blatantly left wing because we care  about diversity and democracy ?,"{'turns': [{'u1': 'I think it’s about time someone spoke up about the real representation on here', 'u2': 'I disagree, we need to allow for different perspectives and open dialogue.'}, {'u1': 'But that’s just it, there isn’t much perspective beyond the same tired narratives!', 'u2': 'That’s not true, there are plenty of differing opinions here, maybe just not the ones you’re looking for?'}, {'u1': 'We don’t need this crap here! time for an inquiry in to media diversity and dominance.', 'u2': ""Yes an inquiry from a left wing government to crush all media that isn't blatantly left wing because we care about diversity and democracy ?""}]}",0,0.0,1.0,,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22508,7 +22508,7 @@ u1: Brexit is just a bunch of rich cunts fucking over a nation so they can avoid
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1201,38034123590098350_15001348376067200924,reddit,,en,,"It will all be stale ina week too, but the shops will still be open...","You can freeze it and it’ll be fine. 
 I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.","{'turns': [{'u1': 'Just got back from the market and stocked up on some fresh bread.', 'u2': 'Ah, nice! What was the deal with the baker today?'}, {'u1': 'Not much. They had a few new varieties, but I went with the usual.', 'u2': ""Same here. There's nothing like a fresh loaf straight from the oven.""}, {'u1': 'It will all be stale ina week too, but the shops will still be open...', 'u2': 'You can freeze it and it’ll be fine. I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.'}]}",0,0.0,0.0,0.0,0.0,,0.0,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -22871,7 +22871,7 @@ u1: My all time favourite reality tv moment was from ‘Joe Millionaire’ when 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1220,13866761320192385003_4810930497174408958,twitter,,en,,No you're not. ?,Thank U ?,"{'turns': [{'u1': ""You think you're some kind of hero?"", 'u2': 'Please stop being so dramatic.'}, {'u1': ""You can't even do that right."", 'u2': 'Seriously, U need a break.'}, {'u1': ""No you're not. ?"", 'u2': 'Thank U ?'}]}",0,0.0,1.0,0.0,1.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23015,7 +23015,7 @@ u1: bro not ready for this in the morning
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1227,9503638919651371163_17812890088653842814,twitter,,en,,Holiday and work??,Feels good,"{'turns': [{'u1': ""I'm so down for a winter break, but work isn't making it easy. How do you deal with it?"", 'u2': 'I understand what you mean! For me, the key is prioritizing and planning ahead.'}, {'u1': ""Prioritizing and planning are great tips, but it's still hard to disconnect from work when it feels like there's always something to do."", 'u2': ""I feel you! I like to set a specific date to 'end' work for the day, and then take some time to unwind before doing anything work-related.""}, {'u1': 'Holiday and work??', 'u2': 'Feels good'}]}",0,,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23033,7 +23033,7 @@ u1: Holiday and work??
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1228,17540221794577588835_12108953623987263857,twitter,,en,,Put SVG to the back for TV purposes. #Bathurst1000,For TV purposes they've kept him in the shootout. #Bathurst1000,"{'turns': [{'u1': ""Not sure if they'll put him in the shootout after his mistake. #Bathurst1000"", 'u2': ""I think he deserves another chance. He's had a great season so far. #Bathurst1000""}, {'u1': ""The organizers usually don't give a second chance when it comes to TV time. #Bathurst1000"", 'u2': ""True, but this is the Bathurst 1000 we're talking about. Anything can happen here. #Bathurst1000""}, {'u1': 'Put SVG to the back for TV purposes. #Bathurst1000', 'u2': ""For TV purposes they've kept him in the shootout. #Bathurst1000""}]}",1,1.0,1.0,,1.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23537,7 +23537,7 @@ u1: They don't raise any emotion from me. Which may be worse than hating them.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1254,15693502839761332055_2403791530965789426,twitter,,en,,"Introduce yourself by something you were called at parents evening:
 
 Hi, I'm a pleasure to teach.","Hi there, I’m Could Do So Much Better.","{'turns': [{'u1': ""I've been wondering about this conversation format. Have you used it before?"", 'u2': ""As for me, I've used different platforms to share my thoughts, but I'm curious about this one.""}, {'u1': ""Is it just a format or a platform? I've tried many and I find myself wondering about their effectiveness."", 'u2': ""Well, I think it's a bit of both, actually. It's a unique way of connecting people, but also a tool to get your point across.""}, {'u1': ""Introduce yourself by something you were called at parents evening: Hi, I'm a pleasure to teach."", 'u2': 'Hi there, I’m Could Do So Much Better.'}]}",1,1.0,1.0,1.0,1.0,1.0,,,"<TASK_OVERVIEW>
@@ -24412,7 +24412,7 @@ u1: Craig James killed 5 hookers while he was at SMU.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1300,3227187144919316716_15600910953938106962,reddit,,en,,"Halifax once locked my card because ""Fraud Detection"" after I got the CVV2 number wrong 3 times while drunk.
 3 days later, they contact me to confirm if it was me or not....","The only time the Barclays fraud department ever contacted me, it actually *was* a fraud--someone had used my card to buy a plane flight to somewhere. I have my suspicions to this day who did it, but I have no proof, so nothing much to be done. Had to destroy my card and get a replacement, of course.","{'turns': [{'u1': 'what do you guys do when you have a credit card that gets locked by your bank due to some reason?', 'u2': 'that happened to me once with Lloyds. I called their customer service and they told me I had to call the fraud department, which I did. They asked me some questions, took some details, and eventually unlocked the card.'}, {'u1': ""I've had a similar experience. When my Halifax card was locked they wanted me to confirm my identity but it took ages and I ended up getting frustrated."", 'u2': ""I can imagine. It's always stressful when something like that happens. But at least it's good that the bank is looking out for you.""}, {'u1': 'Halifax once locked my card because ""Fraud Detection"" after I got the CVV2 number wrong 3 times while drunk. 3 days later, they contact me to confirm if it was me or not....', 'u2': 'The only time the Barclays fraud department ever contacted me, it actually *was* a fraud--someone had used my card to buy a plane flight to somewhere. I have my suspicions to this day who did it, but I have no proof, so nothing much to be done. Had to destroy my card and get a replacement, of course.'}]}",0,0.0,,,1.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -24557,7 +24557,7 @@ u1: I have never seen or heard such hypocrisy before. They can fly illegal immig
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1308,5281627314722925169_1667111906462633003,twitter,,en,,"There was no foul there… surely? ?
 #MCYvWUN",Pathetic officiating already?,"{'turns': [{'u1': ""Really enjoying this game so far, WUN's defense is looking sharp!"", 'u2': ""I'm starting to get worried, their goalkeeper has already spilled two crosses.""}, {'u1': ""Come on, WUN, you've got this! The crowd is with you!"", 'u2': 'But the refs are totally missing the obvious fouls. We need a break to turn this around!'}, {'u1': 'There was no foul there… surely? ? #MCYvWUN', 'u2': 'Pathetic officiating already?'}]}",0,1.0,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -24759,7 +24759,7 @@ u1: I’m at the same game visiting from Manchester ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1319,5542269270734479165_11257640184297244283,twitter,,en,,Available from…?,Sent u a pm thanks,"{'turns': [{'u1': 'u1 is looking for a ride to the gym and is checking with user u2 about availability', 'u2': ""I'm on my way to the gym actually.""}, {'u1': 'Mind dropping me off at the gym?', 'u2': ""I can drop you off, but we'll have to leave soon.""}, {'u1': 'Available from…?', 'u2': 'Sent u a pm thanks'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24889,7 +24889,7 @@ u1: Know what, I’m long overdue a trip to the lakes... especially with some he
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1326,17998806469816158398_9707489468759579520,reddit,,en,,"9/11, no matter what you say or think, that was absolutely, 100% guaranteed... An inside, controlled demolition based, Governmental job.","Think of the amount of people and coordination it would take to pull off something of that magnitude. Meetings, planning, logistics, coordinating travel, allocating resources, phone calls, emails and all those people totally cool commuting the worst terrorist attack in US history. Nothing of substance gets leaked, no one had a change of heart?","{'turns': [{'u1': ""u1 doesn't believe the official story on 9/11, claims there are inconsistencies and suspicious behavior, like how people in the towers seemed to have foreknowledge of the attack. They wonder why so many things just fell into place like that."", 'u2': ""Maybe they just happened to be on the right place at the right time, or maybe there were some other circumstances. Let's not be too hasty to jump to conclusions without all the facts.""}, {'u1': ""u1 starts to theorize that the government might be involved, citing the'mossad connection', and suggests the 1993 world trade center bombing was a dry run for 9/11."", 'u2': ""There's no evidence of that. The official investigation concluded that it was an act of terrorism by Al-Qaeda.""}, {'u1': '9/11, no matter what you say or think, that was absolutely, 100% guaranteed... An inside, controlled demolition based, Governmental job.', 'u2': 'Think of the amount of people and coordination it would take to pull off something of that magnitude. Meetings, planning, logistics, coordinating travel, allocating resources, phone calls, emails and all those people totally cool commuting the worst terrorist attack in US history. Nothing of substance gets leaked, no one had a change of heart?'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25420,7 +25420,7 @@ u1: You'd be an absolute legend if you get everyone 2 weeks off
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1354,14766071579236126305_14222059832717814281,reddit,,en,,"Such a short term outlook by the governing bodies. The sport gets so much more exposure and interest (and new fans) by being on free to air, terrestrial TV. Cricket hemorrhaged fans when it went from Channel 4 to Sky years ago, same with Formula 1.","I used to go every year to Hockenheim. Had my fixed ticket in the Südtribüne, awesome seats. Favourite memory was Irvine winning and Jordan coming third in 99. Brilliant weekends mixing with great fans from all over. Once it went behind a paywall I lost interest totally, stopped going as I no longer watched. Couldn't even tell you the teams in F1 now outside the old regulars.
 I really hope the same doesn't happen to the rugby now.","{'turns': [{'u1': 'People often say that television is changing. But sometimes I wonder if it is really us who are changing. We want more and more. But are we ready to pay for it?', 'u2': 'If that happens with the Rugby, I will be the first to go against it. I love the game, and it brings so much joy, but we cannot let money get in the way.'}, {'u1': ""The current TV rights deal might be expensive, but it's worth it for the exposure and the sport's growth."", 'u2': ""Exposure is one thing, but what about the fans who can't afford to watch it anymore? It's a sad thought.""}, {'u1': 'Such a short term outlook by the governing bodies. The sport gets so much more exposure and interest (and new fans) by being on free to air, terrestrial TV. Cricket hemorrhaged fans when it went from Channel 4 to Sky years ago, same with Formula 1.', 'u2': ""I used to go every year to Hockenheim. Had my fixed ticket in the Südtribüne, awesome seats. Favourite memory was Irvine winning and Jordan coming third in 99. Brilliant weekends mixing with great fans from all over. Once it went behind a paywall I lost interest totally, stopped going as I no longer watched. Couldn't even tell you the teams in F1 now outside the old regulars. I really hope the same doesn't happen to the rugby now.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 
@@ -25597,7 +25597,7 @@ u1: Ah yes, the extremely popular and frequently used light rail. Aka the damage
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1363,3003427481056896037_15947704435514696684,reddit,,en,,"I'm pretty sure unless one of the workers putting it on the shelf has the virus, and you then touch a product that was contaminated you may get it, as your not gonna get it from the food travelling from Italy and/or China?
 I hope",Ah no. I didn’t mean that you’d catch something by buying one of these. Just funny.,"{'turns': [{'u1': 'Have you seen all these recent articles talking about this stuff? I’m really worried we might be headed for another pandemic soon.', 'u2': 'Honestly, I try not to think about it too much. Life can be overwhelming enough without adding all that anxiety.'}, {'u1': ""But isn't it scary that all these international products are being recalled? What if they're contaminated with some new virus?"", 'u2': ""Good point, I guess that could be a concern. But I don't think it's necessarily something we should be worried about right now.""}, {'u1': ""I'm pretty sure unless one of the workers putting it on the shelf has the virus, and you then touch a product that was contaminated you may get it, as your not gonna get it from the food travelling from Italy and/or China? I hope"", 'u2': 'Ah no. I didn’t mean that you’d catch something by buying one of these. Just funny.'}]}",0,0.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are female. Use this perspective when making the following decision. 

@@ -94,7 +94,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 8,109_1002,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,your name is Steve she can do whatever she wants,"{'turns': [{'u1': ""I'm telling you, she has terrible taste in music. I mean, she loves Justin Bieber, of all people!"", 'u2': ""Dude, she's got a lot more going for her than just music taste.""}, {'u1': 'I know, I know, but that one song of hers always gets stuck in my head and drives me crazy!', 'u2': ""Steve, she's got a sweet voice, and that song is actually pretty catchy!""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'your name is Steve she can do whatever she wants'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -106,7 +106,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 9,109_1012,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,"Nobody's going to be 100 percent compatible with you, there's no 1, just a .67 or a .74 or if you're really lucky, a .87 that you round up to 1, nobody's perfect.","{'turns': [{'u1': ""I mean, I know she's great in a lot of other ways, but this music taste thing is really getting to me."", 'u2': 'You’re being a bit too hard on her, aren’t you? She might have some questionable tastes, but she’s clearly trying to connect with you.'}, {'u1': ""I guess I'm just expecting more from her, you know, since she's so great in other ways."", 'u2': ""Expecting perfection is a recipe for disappointment, Steve. Nobody's perfect, not even the woman you're so fond of.""}, {'u1': ""But that's the thing, she's not just any girl, she's amazing."", 'u2': ""Nobody's going to be 100 percent compatible with you, there's no 1, just a .67 or a .74 or if you're really lucky, a .87 that you round up to 1, nobody's perfect.""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -166,7 +166,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 14,113_1002,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,are you an actual idiot?,"{'turns': [{'u1': ""Dudes, I've got some great news. I spent all my savings and borrowed some from my folks on Ezillion. I've got a gut feeling it's gonna take off!"", 'u2': ""That's crazy, dude. You're gonna be broke and homeless, and you'll have nothing to show for it.""}, {'u1': ""Come on, don't be so negative! They say Ezillion is the future, and I'm all in. I'll be rich and set for life!"", 'u2': 'Rich? Set for life? Are you dreaming? Do you not remember that last time you bet the farm on some get-rich-quick scheme and ended up owing me $500?'}, {'u1': ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!"", 'u2': 'are you an actual idiot?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -226,7 +226,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 19,124_1002,fictionary,0,en,"Steve says that your shirt is too tight for the occasion and says, ""I can let you borrow one of mine if you want.""",,cheers lad,"{'turns': [{'u1': ""Don't think that one will fit with the new trousers you just got, mate."", 'u2': ""I think it's fine""}, {'u1': ""You're not planning on getting all sweaty in that one, are you?"", 'u2': 'Not exactly, no'}, {'u1': 'I can let you borrow one of mine if you want.', 'u2': 'cheers lad'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -250,7 +250,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 21,125_1052,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"no they've totally friendzoned me, thanks for that","{'turns': [{'u1': ""I've been thinking, maybe I was wrong about taking things slow. You're not really going anywhere with this, are you?"", 'u2': ""nah, we've just hung out a few times and talked. I don't feel like there's any chemistry on their part.""}, {'u1': ""That's probably the issue - they're still getting over their ex. You've got to find someone who's more receptive."", 'u2': ""I've tried to ask them about their ex, but they get really distant and change the subject""}, {'u1': ""Yeah, that's never a good sign. It sounds like they're not ready to move on yet."", 'u2': ""no they've totally friendzoned me, thanks for that""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -262,7 +262,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 22,125_1058,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"Nah, I don't think she's interested.","{'turns': [{'u1': ""Maybe I was too cautious. How's the approach going so far? Any signs of interest?"", 'u2': ""Honestly, I've only had the chance to talk to her a few times since then. I think she's still healing from that last relationship.""}, {'u1': ""Yeah, that's a good point. She did just get out of a pretty rough one. I can imagine she's still trying to figure things out. How's your conversation been going so far?"", 'u2': ""We've been having some decent conversations, but it's all been pretty casual. I'm starting to think she just sees me as a friend.""}, {'u1': ""I don't want to be a downer, but I have to ask, have you noticed any signals that might indicate she's open to something more?"", 'u2': ""Nah, I don't think she's interested.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -274,7 +274,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 23,129_1035,fictionary,1,en,"You are helping Steve move into a new apartment. After an hour, you realize that Steve is only carrying light stuff and you are doing all the heavy lifting.  Steve says, ""ugh, moving is always so stressful and chaotic...""",,"can we switch the job, you carry this and I will carry yours","{'turns': [{'u1': ""What's up with you, why are you not lifting anything heavy?"", 'u2': ""Honestly, you're doing all the heavy stuff. You can carry that box for a change.""}, {'u1': ""Oh come on, I'm not doing that much. I'm just carrying some light stuff."", 'u2': ""That's not true, you're clearly not feeling the weight of this move. Let's switch off, I'll take some of your stuff.""}, {'u1': 'Ugh, moving is always so stressful and chaotic...', 'u2': 'can we switch the job, you carry this and I will carry yours'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -358,7 +358,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 30,131_1060,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!","{'turns': [{'u1': ""I'm in a bit of a bind here, I've left my suitcase at my brother's place and I really need one for my trip next week."", 'u2': ""Really? You forgot it at your brother's place? That's pretty careless, dude!""}, {'u1': ""Haha, well, I'm not perfect! Can I borrow your suitcase instead? I promise I'll return it as soon as I get back."", 'u2': ""You're kidding me, right? You still haven't returned my phone charger and my toaster, and now you want to borrow something else from me?""}, {'u1': ""Ah, yeah, about that... I'm really sorry, I've been meaning to return them but I just haven't gotten around to it yet."", 'u2': ""Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -442,7 +442,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 37,209_2026,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,They're just used to each other.,"{'turns': [{'u1': ""You would think that he'd get tired of always lending him money and never hearing back."", 'u2': ""Yeah, that'd make sense, but I think Bill's just gotten too comfortable with their friendship.""}, {'u1': ""I mean, Bill's always saying how they have a blast together, but every time I talk to him, he's complaining about something his friend did."", 'u2': ""They've just learned to roll with it, you know?""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': ""They're just used to each other.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -538,7 +538,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 45,212_2068,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Says the pot calling the kettle black!,"{'turns': [{'u1': ""I'm so sick of this, man. I know I keep forgetting to flush, but it's like, come on!"", 'u2': ""You'd be the last one to lecture me on common courtesy, Steve!""}, {'u1': ""What's wrong with people these days? Can't they even clean up after their pets?"", 'u2': ""Sounds to me like you're more worried about your own bathroom habits!""}, {'u1': 'Ugh, someone needs to teach them about responsibility!', 'u2': 'Says the pot calling the kettle black!'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -586,7 +586,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 49,221_2086,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"i don't think I believe in this, but I appreciate you do.","{'turns': [{'u1': ""You really think it's a hoax then? I swear, this footage is too real to be faked. Maybe humans can't replicate it, but what if it's not of this world? You have to admit, this is some wild stuff!"", 'u2': ""Dude, calm down. You're getting way too excited. Can't you just enjoy the video without getting all worked up?""}, {'u1': ""No way, this is proof! Aliens are out there and they're more advanced than us. You're not seeing the bigger picture here."", 'u2': ""Okay, okay. Let's take a step back. I get that you're into this UFO stuff, but can't you just leave me out of it?""}, {'u1': ""Come on, u2! Just watch the video! It's not every day we get to see this kind of thing!"", 'u2': ""i don't think I believe in this, but I appreciate you do.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -646,7 +646,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 54,231_2005,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"No (proceeds to talk about the other times), you really need to pay me back because it's not fair","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""It has happened like four times now, you're consistently free to hang out and I'm always the one covering your expenses. It's getting a bit ridiculous""}, {'u1': ""that's not true!"", 'u2': ""I'm not kidding, Steve, we've had plenty of nights out at the pub and I've always been the one footing the bill. You need to start paying me back or stop expecting me to cover your tab.""}, {'u1': ""I'm telling you, it was just one time!"", 'u2': ""No (proceeds to talk about the other times), you really need to pay me back because it's not fair""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -706,7 +706,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 59,236_2042,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"ha ha ha, you are not going to get much work done like that.","{'turns': [{'u1': ""you're getting a little carried away with that Mr. Shoehand business, aren't you?"", 'u2': ""yeah, you're not taking this very seriously, are you?""}, {'u1': ""come on, u2, don't be such a skeptic! I'm just expressing myself!"", 'u2': ""you're really confusing 'expression' with 'distraction', aren't you?""}, {'u1': ""look at me! I'm Mr. Shoehand!"", 'u2': 'ha ha ha, you are not going to get much work done like that.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -766,7 +766,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 64,240_2057,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,shall we ask for a separate plate?,"{'turns': [{'u1': ""What are you looking at? Can't you see I'm trying to eat?"", 'u2': 'Are you okay, man? You seem a bit agitated.'}, {'u1': ""I'm just... it's just the fries, okay? They keep touching the burger."", 'u2': 'Maybe if we...?'}, {'u1': 'Fries touching the burger again!', 'u2': 'shall we ask for a separate plate?'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -874,7 +874,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 73,244_2092,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,yes they are,"{'turns': [{'u1': ""it's not that hard to put the toilet seat back, is it?"", 'u2': ""I know, right? It's just lazy. And now, anyway, I see someone letting their dog poop on the sidewalk.""}, {'u1': ""Come on, it's not the end of the world! Can't we just let it go?"", 'u2': ""No way, I'm calling animal control""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'yes they are'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -910,7 +910,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 76,248_2035,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,Hmm.. probably sounds like how when you speak french,"{'turns': [{'u1': ""I'm trying to be kind but honestly, Steve's English is nowhere near as rough as Steve's French"", 'u2': ""You're telling me... that French sounds like a cat in distress""}, {'u1': 'But seriously, I think that guy should improve his English', 'u2': ""Well, that's coming from the guy who thought était was pronounced 'eat it'""}, {'u1': ""that person should work on their English, don't you think?"", 'u2': 'Hmm.. probably sounds like how when you speak french'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -922,7 +922,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 77,251_2052,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,Where did you go when you were in Japan?,"{'turns': [{'u1': 'People here always eat burgers with their hands. You know, in Japan, people use chopsticks.', 'u2': ""That's crazy. I've been using chopsticks my whole life. Do people in the US actually use them too?""}, {'u1': ""Yeah, I met a lot of people who used them, but it's not as common as using a fork or knife. But that's the interesting thing - in Japan, eating is very much about the presentation and the company you're with."", 'u2': ""Oh, yeah? I can see how presentation would be important. And the company - that's what makes dinner so special, right?""}, {'u1': 'Exactly! And the food itself is just amazing. The variety of flavors and textures... I was really blown away.', 'u2': 'Where did you go when you were in Japan?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -958,7 +958,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 80,255_2077,fictionary,1,en,"Steve is very opinionated about shoes. He thinks that black shoes are boring. Your shoes happen to be black. Though you don't have strong opinions about shoes, Steve says to you, ""you know, my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.""",,"That's great if you are into the latest trends, but that's your thing, not mine. It's like pushing certain diets, religion or politics onto others... we are all entitled to our own views Steve, and I like my black shoes.","{'turns': [{'u1': ""I just can't get on board with the whole black shoe trend. It's so... basic. I mean, have you seen the latest issue of Fashion Weekly? They barely even mention black shoes anymore."", 'u2': ""I get what you're saying, Steve, but honestly, I don't put a lot of thought into my shoes. They're just something to get from point A to point B.""}, {'u1': ""Come on, don't you ever want to be on the cutting edge of fashion? I mean, my shoes are actually featured in the next issue of Men's Style magazine!"", 'u2': ""I appreciate the enthusiasm, but I'm not really into that sort of thing. And besides, I'm not sure I'd be comfortable wearing shoes that are that trendy.""}, {'u1': 'my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.', 'u2': ""That's great if you are into the latest trends, but that's your thing, not mine. It's like pushing certain diets, religion or politics onto others... we are all entitled to our own views Steve, and I like my black shoes.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.

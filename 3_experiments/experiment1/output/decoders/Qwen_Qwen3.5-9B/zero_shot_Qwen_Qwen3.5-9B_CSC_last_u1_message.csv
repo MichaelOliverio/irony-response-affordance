@@ -82,7 +82,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 7,255_2024,fictionary,1,en,"Steve is very opinionated about shoes. He thinks that black shoes are boring. Your shoes happen to be black. Though you don't have strong opinions about shoes, Steve says to you, ""you know, my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.""",,I prefer black shoes as they are timeless and classic.,"{'turns': [{'u1': ""I just love the way my red boots make a statement. You know, my shoes are so much more interesting than anything you're wearing right now. The magazines are all about bold, trendy styles, and they never feature plain black shoes like yours."", 'u2': ""Actually, I've never understood why people feel the need to follow fashion trends. I like what I like, and if it's not fashionable, then so be it.""}, {'u1': ""I don't see how black shoes are classic, they're just basic. All the fashionistas are saying that this season's must-haves are bright colors and patterns. Black shoes are so last season."", 'u2': ""I think that's what I like about black shoes. They're simple, understated, and don't follow every trend that comes along.""}, {'u1': ""I just don't get it, your black shoes are so... ordinary. Fashion is all about making a statement, and black shoes just blend in."", 'u2': 'I prefer black shoes as they are timeless and classic.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -118,7 +118,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 10,233_2051,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,Nothing. It's not appropriate to comment on this.,"{'turns': [{'u1': ""What's up man? I just got done with a killer workout and I'm feeling great."", 'u2': 'Sounds good Steve, but why are you dressed in that getup?'}, {'u1': ""What getup? I just put on my favorite tank top and shorts. They're pretty sweet if I do say so myself."", 'u2': ""I don't know Steve, it's a lot going on.""}, {'u1': ""Ha! So you're saying I look like a traffic cone out there?"", 'u2': ""Nothing. It's not appropriate to comment on this.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -178,7 +178,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 15,121_1020,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,I've had to deal with loads of accidents so I better get a bottle of wine,"{'turns': [{'u1': ""how's it going? how's the puppy? I'm dying to know how my new furball is doing"", 'u2': ""I'm managing. Thanks for asking""}, {'u1': ""my puppy, what's his name again? is he giving you a hard time?"", 'u2': ""Just the usual. He's still destroying everything""}, {'u1': ""I was really hoping he'd be better by now. is everything okay? the destruction is a bit concerning"", 'u2': ""I've had to deal with loads of accidents so I better get a bottle of wine""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -214,7 +214,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 18,107_1019,fictionary,1,en,Steve gives you a watering can on your birthday while smiling at you with a strange expression. But you don't even have a single plant.,,that's so very useful not,"{'turns': [{'u1': ""you seem so confused, like you've seen something and I'm trying to get you to react. What's going on, man?"", 'u2': ""Nothing's going on. I'm just... waiting for my birthday to actually make sense, I guess.""}, {'u1': 'Okay, okay, I get it. So, I get you a gift, and you just... appreciate the thought, I guess?', 'u2': ""appreciate the thought? You gave me a watering can, Steve. For what, the indoor plants I don't have?""}, {'u1': ""what do you mean you don't have any plants? I know you've been saying you want some for ages"", 'u2': ""that's so very useful not""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -226,7 +226,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 19,126_1043,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,"Yeah, that'd be great!","{'turns': [{'u1': ""I'm so excited for tonight. Have you heard when we're heading out to the wine bar?"", 'u2': 'I just checked the invite. It says 7pm. Does that sound right to you?'}, {'u1': ""That's perfect! I was thinking of meeting up with some old colleagues around 8:30. What time do you think you'll be leaving the party?"", 'u2': ""I'm not sure yet. What time were you thinking I'd still be there?""}, {'u1': 'I might join later if you are still there then.', 'u2': ""Yeah, that'd be great!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -274,7 +274,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 23,112_1046,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"Steve, it's for a fundraiser. Just go with it!","{'turns': [{'u1': ""Ugh, why me?! I suck at soccer. I'm gonna be the worst player ever. I'm basically a liability on the field."", 'u2': ""Dude, everyone's gonna be bad at first. Just pick up the ball and kick it. It's not rocket science.""}, {'u1': 'But what if I trip over my own feet? What if I get kicked in the shins?!', 'u2': ""Okay, okay. You'll be fine. But seriously, Steve, it's for charity. Can you really not just pretend to care for like an hour?""}, {'u1': ""I guess you're right... It's for a good cause and all that jazz."", 'u2': ""Steve, it's for a fundraiser. Just go with it!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -298,7 +298,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",1,,1,0,[]
 25,231_2012,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,I'll do it this one last time. From now on if you don't have your wallet I will no longer paying for you. I also want paid back for what I buy today.,"{'turns': [{'u1': ""That's one time, I know, I know... Just this once!"", 'u2': ""Are you kidding me? This is like the third time this month! I'm getting a bit tired of being your wallet.""}, {'u1': ""It's not like I've been doing it that often, come on!"", 'u2': ""It's not funny anymore. If you can't even remember having your wallet with you before, how can I trust you with paying me back?""}, {'u1': 'Come on, it happened like one time!', 'u2': ""I'll do it this one last time. From now on if you don't have your wallet I will no longer paying for you. I also want paid back for what I buy today.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -334,7 +334,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 28,104_1007,fictionary,0,en,You and Steve have a mutual friend. She is getting married in two weeks. You are both invited to the wedding. You hate weddings but Steve seems to be pretty excited about potentially meeting somebody there. He is already picking out his suit and making a fuss.,,"Hey, just be lucky that I am in a suit as I don't even want to go to this wedding.","{'turns': [{'u1': ""I know you're probably not looking forward to this, but I really think this could be a great opportunity for us to meet some new people and maybe even find someone special. You know how it is, never know what could happen!"", 'u2': ""Oh please, don't start with that. I'm only going because I have to. You're the one who's acting like a total wedding enthusiast.""}, {'u1': ""Come on, it'll be fun, I promise! We can make a night of it and hit the bars after the ceremony. Plus, I really think my suit is going to turn heads."", 'u2': ""You're such a jokester, but I still don't see the point of all this. And, by the way, don't expect me to keep up with you in the dance floor, I have two left feet.""}, {'u1': ""You're really getting worked up about this, aren't you? Just relax, it'll be a good time!"", 'u2': ""Hey, just be lucky that I am in a suit as I don't even want to go to this wedding.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -370,7 +370,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 31,208_2075,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Why didn't you just ask for them to be served on different plates.,"{'turns': [{'u1': ""I don't know, man. I just thought it was normal to have French fries with a burger. But every time they touch, I get a little annoyed."", 'u2': ""Really? You're usually not that fussy.""}, {'u1': ""But they're not even on the same level. The fries are all greasy and messy. It's just not the same vibe as the burger."", 'u2': ""I get what you're saying, but still, couldn't you have asked them to separate them?""}, {'u1': ""Hmm, I guess I didn't think of that. We should've asked for them to be on different plates."", 'u2': ""Why didn't you just ask for them to be served on different plates.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -430,7 +430,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 36,208_2082,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,you should ask for another plate steve,"{'turns': [{'u1': 'u2: i dont get it, why are you doing that.', 'u2': 'wait, are you mad about the french fries touching your burger?'}, {'u1': 'yeah, it freaks me out when they touch.', 'u2': ""but that's kinda weird. just separate the fries and burger.""}, {'u1': 'ok fine, but i wish we had a different plate, like, one of those big platters with little sections.', 'u2': 'you should ask for another plate steve'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -562,7 +562,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 47,221_2110,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"yeahhh i guess so mate, some things are hard to explain","{'turns': [{'u1': ""Hey, mate, you have to see this – I was just browsing and I found this crazy video. They say it's aliens."", 'u2': ""Dude, it's just some viral video. I don't know why you're getting all excited.""}, {'u1': ""No way, I'm telling you, this is serious. Look at the lights and the movements – it's not something humans could do!"", 'u2': ""It's a lot of weird stuff online. People love to sensationalize it, man.""}, {'u1': ""Look, it must be an alien because humans can't do that. What else could it be?"", 'u2': 'yeahhh i guess so mate, some things are hard to explain'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -586,7 +586,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 49,212_2101,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"That's rich, coming from someone who doesn't know how to flush a toilet!","{'turns': [{'u1': ""Dude, I'm seriously getting fed up with you not flushing the toilet. Every time you come over, I have to deal with it. It's not a big deal, but it's getting annoying."", 'u2': ""Yeah, I know, I know, but I just forget. It's not like I'm doing it on purpose or anything.""}, {'u1': ""Forget? You're always talking about how people should be more considerate and stuff. Do you ever think about being considerate to me?"", 'u2': ""Oh, come on, that's just not the same thing. You're being really dramatic about a toilet.""}, {'u1': ""It's not just about a toilet! You're being super inconsiderate and it's always about you."", 'u2': ""That's rich, coming from someone who doesn't know how to flush a toilet!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -718,7 +718,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 60,231_2059,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,No it didn't! I'll get these ones but it's not happening again Steve,"{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""That's not how I remember it, buddy.""}, {'u1': 'How many times do I have to owe you before you stop lending me money?', 'u2': ""You're not listening, man. It happens more often than you think""}, {'u1': 'Come on, it only happened once!', 'u2': ""No it didn't! I'll get these ones but it's not happening again Steve""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -778,7 +778,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 65,218_2040,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,Let's have a quick look then,"{'turns': [{'u1': 'I just saw this awesome pompadour hairstyle online. I think I want to try it out! What do you think?', 'u2': ""I don't care. Just pick one and get it over with.""}, {'u1': ""Alright, alright! Don't be like that! But seriously, have you seen this undercuts hairstyle? I'm thinking about trying it out."", 'u2': ""Ugh, that one doesn't suit you at all.""}, {'u1': 'I just found another one that I think would look great on me! This messy texture haircut, what do you think?', 'u2': ""Let's have a quick look then""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -910,7 +910,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 76,228_2048,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,Its brand new and Im not letting anyone drive it. Plus you arent insured.,"{'turns': [{'u1': ""Can't I just pick up my girlfriend, I'll be super quick and I promise I'll be extra careful"", 'u2': 'What if you get a ticket or damage it?'}, {'u1': ""Ah, come on, I've driven your old car plenty of times!"", 'u2': ""That's the point, this is my brand new car and I'm not letting you get your hands on it""}, {'u1': ""Come on, why can't I borrow it? Don't you trust me?"", 'u2': 'Its brand new and Im not letting anyone drive it. Plus you arent insured.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -934,7 +934,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 78,203_2050,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Best unicorn I've ever seen,"{'turns': [{'u1': ""That's what I call creative liberty!"", 'u2': ""Haha, you're a genius, Steve!""}, {'u1': ""But wait, what's that on the horse's forehead?"", 'u2': ""Oh, that's probably a carrot, yeah, totally like a horn""}, {'u1': ""now that's a unicorn!"", 'u2': ""Best unicorn I've ever seen""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1006,7 +1006,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 84,227_2031,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,steve lets save some money through my app as we can then use the cash for something else,"{'turns': [{'u1': 'it would be easier and faster for you to just hail a cab and be on your way.', 'u2': ""no way, that's so old school, I'll just use the app to get a better deal""}, {'u1': ""I don't know, I was thinking it would be more convenient if you called one for me."", 'u2': 'there are cabs right there, we could just get one of those. why bother calling?'}, {'u1': 'but you have an app for calling cabs. I know it gives you a discount!', 'u2': 'steve lets save some money through my app as we can then use the cash for something else'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1078,7 +1078,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 90,236_2040,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,Oh god grow up,"{'turns': [{'u1': ""Your outfit looks a bit off today, Steve. What's with the shoes?"", 'u2': ""I don't see why you're making a big deal about it.""}, {'u1': ""Oh, it's just my new look. Mr. Shoehand, that's me!"", 'u2': ""This is why people think you're weird.""}, {'u1': ""Look at me! I'm Mr. Shoehand!"", 'u2': 'Oh god grow up'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1174,7 +1174,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 98,205_2022,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,Make sure you finish your creation! no food waste in my house!,"{'turns': [{'u1': ""hey, I just added some more OJ, and I'm telling you, it's gonna change the flavor profile!"", 'u2': 'Steve, maybe you should calm down and focus on not spilling anything on the floor.'}, {'u1': ""I'm just experimenting with new taste combinations. I call it... Steve-Style Fusion Cuisine!"", 'u2': ""Umm, isn't that what they call a mess on the floor when you drop something?""}, {'u1': 'Hey, look, I made something delicious!', 'u2': 'Make sure you finish your creation! no food waste in my house!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1378,7 +1378,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 115,126_1017,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,That will be great!,"{'turns': [{'u1': ""I'm getting ready to head over to the wine bar. I was thinking of grabbing a drink and then heading home around 9 or 10. What's your plan?"", 'u2': ""Same, probably. I'm going to try and get there around 8.""}, {'u1': ""I'll make sure to arrive before 9 then. Will you be still there at 9?"", 'u2': ""Yeah, probably. I'm planning to stick around for a bit after you leave.""}, {'u1': 'I might join later if you are still there then.', 'u2': 'That will be great!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1474,7 +1474,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 123,207_2115,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,superstitious much?,"{'turns': [{'u1': ""Come on, I'm just trying to get a better view. What's wrong with the volume?"", 'u2': ""That's not the point. It's always the same with you – if it's an odd number, you change it.""}, {'u1': ""Ah, come on, don't be so paranoid! It's just a coincidence."", 'u2': ""Paranoid? You're the one who's always 'coincidentally' changing the volume to even numbers!""}, {'u1': ""So you're saying I'm superstitious? Ha!"", 'u2': 'superstitious much?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1534,7 +1534,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",1,,1,0,[]
 128,240_2074,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,i pass him a spare knife from the table and tell him to place it as a divider so he doesnt get annoyed,"{'turns': [{'u1': 'can you pass the ketchup?', 'u2': 'here you go. by the way, why are you being so particular about your fries touching the burger?'}, {'u1': ""it's just something i don't like about the presentation. it's all about aesthetics for me"", 'u2': 'fair enough. but honestly, have you thought about using a knife as a divider to solve your fries-burger problem?'}, {'u1': 'oh wow, i never thought of that', 'u2': 'i pass him a spare knife from the table and tell him to place it as a divider so he doesnt get annoyed'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1582,7 +1582,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 132,210_2072,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,Hahahaha... (I would bring up the restaurant another time),"{'turns': [{'u1': ""You know, I swear, it's people like that that really ruin things for everyone. They borrow stuff and then just leave you hanging."", 'u2': ""Actually, I've had to deal with that before""}, {'u1': ""What's that supposed to mean?"", 'u2': ""Yeah, like when we had lunch last week and you didn't have cash.""}, {'u1': ""Ugh, come on, don't bring that up now."", 'u2': 'Hahahaha... (I would bring up the restaurant another time)'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1642,7 +1642,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 137,204_2004,fictionary,1,en,"You walk into the room and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,You ok hun?,"{'turns': [{'u1': ""Hey buddy, check it out, I've got my shoes on my hands! Isn't it cool?"", 'u2': ""What's going on with you, Steve?""}, {'u1': ""See? I'm a master of the footwear universe! Mr. Shoehand, at your service!"", 'u2': ""You've lost your mind, dude.""}, {'u1': ""Look at me! I'm Mr. Shoehand!"", 'u2': 'You ok hun?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1894,7 +1894,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 158,230_2033,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"yeah of course i can no problem, does he need walking and what food does he need? are you okay, why do you need to leave all of a sudden","{'turns': [{'u1': ""really sorry to do this on short notice, but i need to fly out to LA tomorrow for this work thing and i'll be gone for three days. it's a bit of a long story, but the thing is, i have to take my dog with me because my sister is going to be house-sitting for me and she's allergic. i feel terrible for not giving you more notice, but i promise it's not a bad trip, it's just super last-minute."", 'u2': ""uh, no worries, but LA? isn't that a pretty long trip at the last minute? didn't you already have plans?""}, {'u1': ""yeah, it's a bit of a pain, but apparently my company needs me to resolve this thing on site. and no, i didn't have plans, per se, but i was thinking about taking a weekend getaway to the mountains. anyway, thanks for understanding, man"", 'u2': ""understandable, but what's going on in LA that can't be handled remotely? sounds like a lot of extra hassle for you""}, {'u1': ""to be honest, it's a pretty big deal and i'd be in a lot of trouble if i didn't get it sorted out ASAP. can you really watch him for me?"", 'u2': 'yeah of course i can no problem, does he need walking and what food does he need? are you okay, why do you need to leave all of a sudden'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1978,7 +1978,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 165,250_2071,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,"ok, but I don't know anything about hair - so might be good to ask someone else","{'turns': [{'u1': ""hey man, I'm thinking of trying out that new fade haircut. What do you think?"", 'u2': ""I don't care. Just pick one and get it over with.""}, {'u1': ""I'm not sure I want to get it, but I'm still curious what people think."", 'u2': 'Honestly, it looks like every other guy in the office with that haircut'}, {'u1': ""I don't need a haircut right now. But I want to be well-informed when I do!"", 'u2': ""ok, but I don't know anything about hair - so might be good to ask someone else""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -1990,7 +1990,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 166,131_1048,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"where are my other stuff? not this time, return my other stuff then we can talk","{'turns': [{'u1': ""hey man, I need a favor. I've got this big meeting coming up next week and I'm not sure if I'll have time to buy a new suitcase. Would you happen to have one I could borrow?"", 'u2': ""haven't heard from you in ages. first things first, return my phone charger and toaster""}, {'u1': ""I'll get those back to you, no worries! I just got slammed with work and haven't had a chance yet."", 'u2': ""a month has passed and still nothing. I'm starting to think I'll never see my stuff again""}, {'u1': ""It's coming along, I promise. I'll get them to you as soon as I can."", 'u2': 'where are my other stuff? not this time, return my other stuff then we can talk'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2002,7 +2002,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 167,219_2012,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,That's really interesting.,"{'turns': [{'u1': ""You know, in Japan, when you eat sushi, you typically eat it with your hands. It's not uncommon to see people eating it with chopsticks, but really, it's more authentic to just use your fingers."", 'u2': ""I've tried it both ways actually.""}, {'u1': 'And in Japan, the way they serve their food is always super organized and thought out. I mean, they think about the presentation and the order of everything.', 'u2': ""It's really impressive how much they care about the presentation.""}, {'u1': 'You know, in Japan, people do it this way.', 'u2': ""That's really interesting.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2098,7 +2098,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 175,246_2107,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"i work hard for my money, i can treat myself now and again.","{'turns': [{'u1': ""come on, we both know you can't afford this coffee, do you want to get into a financial hole like I did when I forgot to return that Amazon order?"", 'u2': 'we all have our financial priorities, and for me, this coffee is worth it today'}, {'u1': ""I still don't think it's worth it. Have you looked at your budget lately? I swear, you're going to end up in debt over some fancy coffee"", 'u2': ""i'm choosing to prioritize my happiness over saving a few bucks, and that's all that matters""}, {'u1': 'you really should be more careful with your spending, especially when it comes to impulse buys like that coffee', 'u2': 'i work hard for my money, i can treat myself now and again.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2110,7 +2110,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 176,131_1053,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,Can you bring back the charger and toaster before you take the suitcase?,"{'turns': [{'u1': ""I need a suitcase ASAP for my trip, so I'd really appreciate it if you could lend me yours."", 'u2': ""I don't think I'd be too happy lending you something else without getting back the things you've already borrowed.""}, {'u1': ""I had no idea you were still holding onto that. I've been meaning to bring my charger back, but it slipped my mind."", 'u2': ""Two months have passed, and you've also taken my toaster a month ago, without even asking. Bring them back first.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'Can you bring back the charger and toaster before you take the suitcase?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2170,7 +2170,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 181,244_2106,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,it reminds me of you,"{'turns': [{'u1': 'u2:', 'u2': ""Can't you just take care of your own mess?""}, {'u1': ""You're such a downer, u2"", 'u2': ""I've learned to just expect the worst from people""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'it reminds me of you'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2218,7 +2218,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 185,105_1042,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,"Looking colourful, are we?","{'turns': [{'u1': 'I like it, mate. That new tank top looks awesome.', 'u2': 'Just got it yesterday, thanks.'}, {'u1': ""And the shorts aren't too green, right?"", 'u2': ""Haha, I think they're a bit too green, but I'm not complaining.""}, {'u1': 'Looking good, friend!', 'u2': 'Looking colourful, are we?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2242,7 +2242,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 187,253_2036,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,A video effect?,"{'turns': [{'u1': ""Look at this! A spacecraft from another planet has landed and an alien is coming out! It must be an alien because humans can't do that."", 'u2': ""No kidding, what's so special about it?""}, {'u1': ""Well, just watch and you'll see. They're doing things we've never seen before, like making these weird symbols in the air and communicating with each other in a language we can't understand."", 'u2': 'That could be some kind of effect.'}, {'u1': ""What else could it be? It's not just a random video effect, that's just it."", 'u2': 'A video effect?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2386,7 +2386,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 199,214_2013,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"Yeah, as long as I get good use out of it, it should be ok though.","{'turns': [{'u1': ""You gotta think about this, mate. You dropped $40 on a bag of coffee. That's like, a whole week's worth of groceries. Do you really get that much use out of it?"", 'u2': ""I mean, I'm not exactly a coffee connoisseur, but I like it, you know?""}, {'u1': ""I don't get it. You said you like it, but do you really use it that often? I'm starting to think it's just an impulse buy."", 'u2': ""Maybe a bit, but I've been getting a lot of compliments on it, so it's worth it, right?""}, {'u1': 'Wow, you really did drop a pretty penny on that coffee.', 'u2': 'Yeah, as long as I get good use out of it, it should be ok though.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2458,7 +2458,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 205,259_2102,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,Yeah but these are right here so we can get where we are going so lets just grab this one.,"{'turns': [{'u1': 'Steve, it can take a while to get a cab booked through the app.', 'u2': ""Yeah, it's worth the wait though, isn't it?""}, {'u1': 'But it does give you a discount, right?', 'u2': ""I guess, but like I said, it takes a while to get a cab, so it's not always a discount.""}, {'u1': 'But you have an app for calling cabs. I know it gives you a discount!', 'u2': 'Yeah but these are right here so we can get where we are going so lets just grab this one.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2650,7 +2650,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 221,219_2028,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"That's interesting, I'd love to go to Japan","{'turns': [{'u1': ""That's what I'm saying, though. I mean, the sushi at those restaurants we went to last night, I bet they're doing it wrong too."", 'u2': ""Come on, they can't be that bad""}, {'u1': ""I mean, when I was in Japan, they cut the fish right before serving, you know? And they have all these different vinegar flavors to choose from. I don't think we're getting that here."", 'u2': ""That's really cool, I had no idea""}, {'u1': 'You know, in Japan, people eat ramen with chopsticks, not forks.', 'u2': ""That's interesting, I'd love to go to Japan""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2686,7 +2686,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 224,216_2034,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,"But Steve, I thought you were a French language extroadinaire.","{'turns': [{'u1': 'I know you think you can impress the locals, but honestly, speaking French is more like torturing them.', 'u2': ""Oh, come on Steve, that's not fair. You're being way too hard on yourself.""}, {'u1': ""No way, I'm just stating the facts. I've been speaking French to every French person we meet, and they all look like they're about to scream."", 'u2': ""That's because they're trying to understand you, Steve. And sometimes, even though they're speaking the same language, people just don't connect.""}, {'u1': ""This guy doesn't even speak English that well, he should really work on that."", 'u2': 'But Steve, I thought you were a French language extroadinaire.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2710,7 +2710,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 226,250_2054,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,go with whatever you like best,"{'turns': [{'u1': ""I just saw a picture of David Beckham's latest haircut and I'm thinking of copying it. Do you think it looks good on him?"", 'u2': ""Honestly, I think it's too trendy for you. You're more suited to a classic look""}, {'u1': ""That's not what I want to hear. I want to try something new and edgy. I'm thinking of going to that new barber that does all the celebrities"", 'u2': ""Are you sure that's a good idea? I've heard mixed reviews about that place. Plus, it's not like you're a celebrity""}, {'u1': ""Whatever, I'm going to go there anyway. But I need someone to support me, and that's why I'm coming to you for advice"", 'u2': 'go with whatever you like best'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2746,7 +2746,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 229,238_2018,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,Do you want help posting a picture steve?,"{'turns': [{'u1': ""I'm getting older and I'm not as hip as I used to be. I'm determined to be young and cool. I just uploaded a picture of myself trying to look cool, but I'm not sure if it was a success."", 'u2': ""Maybe you could try taking a selfie? I've seen some people take pretty good selfies with their phones.""}, {'u1': ""I'm not even sure how to post a selfie on this thing. Do you guys use Instagram or what?"", 'u2': ""I think it's just called social media now. Don't worry about it, I'll show you sometime when I'm on my break.""}, {'u1': ""I'm really struggling to post a picture on this thing. Can you give me a hand?"", 'u2': 'Do you want help posting a picture steve?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2758,7 +2758,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 230,252_2031,fictionary,1,en,"Steve has a very strong opinion about the recent political scandal. You are not interested in it and would rather talk about something else. Steve says, ""jeez, only idiots would vote for that piece of crap, don't you think so? ",,yeah but lets just ignore it politics is all nonsense,"{'turns': [{'u1': ""that's what I'm talking about! If you think about it, only a handful of ignorant people will support something so clearly wrong. You have to wonder what kind of propaganda they've been fed!"", 'u2': ""i mean i get what you're saying but people have different opinions""}, {'u1': ""I'm telling you, it's all about manipulation. They use clever words to sound convincing but it's all just a show!"", 'u2': ""i'm not sure, I think it's just people trying to get something out of it""}, {'u1': ""you have to be kidding me, are you even listening? The facts are right there, it's not that hard to understand!"", 'u2': 'yeah but lets just ignore it politics is all nonsense'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2830,7 +2830,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 236,227_2039,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,"That means I'll be paying, so no!","{'turns': [{'u1': ""I'm not getting out there to get a cab, it's freezing!"", 'u2': ""Then you're not moving, are you?""}, {'u1': ""Just call the app then, it's so much easier than waiting outside."", 'u2': ""We're on your tab, buddy""}, {'u1': 'but you have an app for calling cabs. I know it gives you a discount!', 'u2': ""That means I'll be paying, so no!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2842,7 +2842,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 237,272_2007,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,It's nice seeing everyone happy!,"{'turns': [{'u1': 'How do you like the team so far?', 'u2': 'They seem like a nice bunch'}, {'u1': 'Your friends always know how to make me laugh!', 'u2': ""I'm just glad you're enjoying yourself!""}, {'u1': ""You're doing great at introducing me to everyone."", 'u2': ""It's nice seeing everyone happy!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2854,7 +2854,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 238,126_1011,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,"ok, see you later","{'turns': [{'u1': 'Hey, do you know what time the party usually starts at the wine bar? I was thinking of grabbing a snack beforehand.', 'u2': ""it's at 6, same as every year""}, {'u1': ""Yeah, that makes sense. So, do you think we'll be leaving around the same time when it gets late?"", 'u2': 'yeah, we usually stick together, i guess'}, {'u1': 'Awesome, I might join later if you are still there then.', 'u2': 'ok, see you later'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -2878,7 +2878,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 240,201_2012,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,Cool outfit!,"{'turns': [{'u1': ""You're really making an effort with the outfit tonight, buddy!"", 'u2': ""You're just jealous that you didn't think to wear something bold yourself!""}, {'u1': ""I'm just going for a little fun with the colors, you know? It's not every day I get to wear my favorite yellow sneakers."", 'u2': 'And you thought those green shorts were a good idea?'}, {'u1': ""You're looking pretty sharp yourself, man."", 'u2': 'Cool outfit!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3190,7 +3190,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 266,235_2005,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Yeah cool!,"{'turns': [{'u1': ""I've got the inspiration now, and I'm going to draw a beautiful unicorn!"", 'u2': ""Ha! You'll probably end up drawing a cow instead, again.""}, {'u1': ""Ha! No, I mean it this time. I've seen some reference images online and it's all about the mane."", 'u2': ""Don't forget the sparkly stuff, Steve.""}, {'u1': ""now that's a unicorn!"", 'u2': 'Yeah cool!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3418,7 +3418,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 285,244_2058,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"at least it is not in my bathroom.  I hate it when people dont flush, and who does that in someone else's house anyway!","{'turns': [{'u1': ""I was just at my house for lunch yesterday and I swear I saw you still here after your wife had left, and I'm pretty sure you went to the bathroom because I heard the water running. But when I went in to get a drink, the toilet was still up, and I was like 'Steve, did you flush?'"", 'u2': ""That was one time, and it was an emergency, I had a stomach bug. Don't you remember? You were really understanding about it and even helped me clean it up.""}, {'u1': ""Ugh, and it's not like it's just one or two times, it's every time I come over! Every. Single. Time."", 'u2': ""I guess I've just gotten used to it then. It's really not that big of a deal.""}, {'u1': ""I just saw someone walking their dog on the sidewalk, and it pooped right there, and the owner just kept walking! I'm getting really annoyed by people's lack of responsibility."", 'u2': ""at least it is not in my bathroom. I hate it when people dont flush, and who does that in someone else's house anyway!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3454,7 +3454,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 288,261_2048,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"Im going to the toilet, why dont you get them in while im out.","{'turns': [{'u1': 'lets get one more round, mate. What do you reckon?', 'u2': ""You're getting it, Steve's getting it, what's next?""}, {'u1': 'Hey, mate, how about you get me another one too?', 'u2': ""Seriously, Steve, I'm trying to help you stop getting drunk""}, {'u1': ""Cheers, mate! Get another one for me while you're up."", 'u2': 'Im going to the toilet, why dont you get them in while im out.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3490,7 +3490,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 291,253_2009,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,I have no idea Steve.,"{'turns': [{'u1': ""I showed you this video because it's just too good to be true, and I thought you'd appreciate it. It's aliens for sure."", 'u2': ""It's a bit too good to be true, don't you think?""}, {'u1': ""No way, the website is legit! They're experts on UFOs. You just don't want to believe, that's all."", 'u2': ""I don't know Steve, I just don't see it.""}, {'u1': ""What else could it be? Humans can't do that kind of thing!"", 'u2': 'I have no idea Steve.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3550,7 +3550,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 296,253_2027,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,There are about a hundred things within the realm of possibility that it could be. An alien life-form is the option you have left after you've exhausted all possible rational explanations. Why are you so obsessed with this stuff?,"{'turns': [{'u1': 'I just saw the most incredible video on YouTube and you have to check it out!', 'u2': ""What's the video about? Another one of your UFO sightings?""}, {'u1': ""It's a video from a super reliable source and it shows aliens flying saucers, no joke!"", 'u2': ""Steve, this is not the first time you've shown me stuff like this. What do you hope to accomplish with all these videos?""}, {'u1': ""look, it must be an alien because humans can't do that. What else could it be?"", 'u2': ""There are about a hundred things within the realm of possibility that it could be. An alien life-form is the option you have left after you've exhausted all possible rational explanations. Why are you so obsessed with this stuff?""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3610,7 +3610,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 301,221_2066,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"I don't know, maybe the video equivalent of Photoshop?!","{'turns': [{'u1': ""I swear, it's real this time! They finally caught something on camera, and it's a game-changer! Look at that thing moving so fast and leaving a trail behind it! That's not some aircraft or drone; that's an alien spaceship for sure!"", 'u2': 'Uh, Steve, did you consider the fact that it could just be a high-speed drone with some fancy tech?'}, {'u1': ""But what about the lights? Those are definitely not lights from any aircraft I've ever seen! It's got to be aliens!"", 'u2': ""I'm not sure, maybe they're just some sort of advanced laser or strobe effect?""}, {'u1': ""What else could it be? It's a video of an alien spacecraft, no question!"", 'u2': ""I don't know, maybe the video equivalent of Photoshop?!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3802,7 +3802,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 317,201_2015,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,"Dude, have you gone colour blind?","{'turns': [{'u1': 'What do you think of this new tank top?', 'u2': 'Not bad, I guess. What makes you like this colour so much?'}, {'u1': ""I don't know, I just really like red, I guess."", 'u2': 'But, man, it clashes so much with your green shorts!'}, {'u1': 'Oh, you think so? I was hoping for a better reaction.', 'u2': 'Dude, have you gone colour blind?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3982,7 +3982,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 332,242_2086,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,Remember you still owe me the money from the other night.,"{'turns': [{'u1': ""come on, it's not that much. You're not broke, right?"", 'u2': 'I am, actually.'}, {'u1': ""okay, okay. I'll bring it on Monday. Don't worry, I've got it."", 'u2': 'Monday is still a week away. I need it now.'}, {'u1': ""Hey, what's up?"", 'u2': 'Remember you still owe me the money from the other night.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -3994,7 +3994,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 333,268_2038,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,You're shoes really match your outfit!,"{'turns': [{'u1': 'Hey, you noticed those shoes I got? I just got them this weekend.', 'u2': ""How could I not? You're practically glowing in that outfit today!""}, {'u1': 'This project was a huge deal for me at work, and I wanted to treat myself to something nice.', 'u2': 'Fair enough. You definitely deserve it! You worked really hard on that project.'}, {'u1': ""I'm glad I decided to splurge on these. They're really making the outfit pop!"", 'u2': ""You're shoes really match your outfit!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4078,7 +4078,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 340,266_2009,fictionary,0,en,"You spilled coffee on Steve's shirt. When you apologize to him, Steve says ""it's alright. I didn't even like this shirt anyway.""",,So i did you a favour then?,"{'turns': [{'u1': ""You're not exactly making a good case for how sorry you are."", 'u2': 'What do you mean?'}, {'u1': ""I mean, you're more worried about my shirt than actually apologizing."", 'u2': ""I'm sorry! I just really like this shirt and I feel awful about ruining it!""}, {'u1': ""it's alright. I didn't even like this shirt anyway."", 'u2': 'So i did you a favour then?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4126,7 +4126,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 344,232_2117,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,"Yeah sure, il buy you better ones, love you, sorry","{'turns': [{'u1': 'Oh no, are you okay? I feel so bad for breaking your glasses, man. Here, let me put that box down for you.', 'u2': 'Nah i m fine, just a bit frustrated with u right now.'}, {'u1': ""You're a lifesaver, dude! Thanks for taking care of me like this. Now that I think about it, those glasses really were my favorite. Do you think you could get me another pair that looks kinda similar?"", 'u2': 'I don t know, but i ll try'}, {'u1': 'Can you clean up the pieces?', 'u2': 'Yeah sure, il buy you better ones, love you, sorry'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4270,7 +4270,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 356,201_2107,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,wow powerful colour combination going on.,"{'turns': [{'u1': ""what do you think about the new tank top I got? I thought it'd be cool to wear something a bit more flashy for once."", 'u2': ""yeah, you're definitely... eye-catching.""}, {'u1': 'haha, I know, I know! But seriously, I was thinking of pairing it with these bright green shorts I found in my drawer.', 'u2': ""green's not really your colour, Steve.""}, {'u1': ""nice one! But I've already decided, I'm wearing them. I even got new yellow sneakers to match."", 'u2': 'wow powerful colour combination going on.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4282,7 +4282,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 357,263_2106,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"pay for yourself, i'm not buying you endless beers","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""seriously, steve, that's not how it works""}, {'u1': ""fine, whatever, but just one round, that's all"", 'u2': ""we're just getting started, you're buying again""}, {'u1': ""aw, c'mon, don't be like that"", 'u2': ""pay for yourself, i'm not buying you endless beers""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4306,7 +4306,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 359,263_2048,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,You can get the drinks in next time.,"{'turns': [{'u1': ""You can't keep doing this, I've had to pay for you so many times before. How come I always have to be the one to cover your tab?"", 'u2': 'I was just having a bad day, let me pay you back.'}, {'u1': ""It was just one little mistake, don't make such a big deal out of it."", 'u2': ""Come on, that's not just one little mistake, you've forgotten your wallet a few times already.""}, {'u1': 'Come on, it happened like one time!', 'u2': 'You can get the drinks in next time.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4342,7 +4342,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 362,263_2091,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,This is the last time and then no more.,"{'turns': [{'u1': ""Come on, it's just one time! I'll pay you back as soon as I get home."", 'u2': ""I'm starting to think that 'one time' is a lie""}, {'u1': ""Steve: That's not true! I paid you back the last time I asked for a favor!"", 'u2': 'You left your wallet at my place, not the other way around'}, {'u1': 'Steve: It only happened one time!', 'u2': 'This is the last time and then no more.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4426,7 +4426,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 369,201_2030,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,Looking vibrant!,"{'turns': [{'u1': ""Just got my new tank top. You're going to hate it."", 'u2': 'Nice try. What color is it?'}, {'u1': 'Just wearing it. Can you see?', 'u2': 'Actually, I think I just saw a splash of red out of the corner of my eye.'}, {'u1': ""This one's a bit out there."", 'u2': 'Looking vibrant!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4450,7 +4450,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 371,109_1034,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,"Bro, there are numerous women out there who will have excellent music taste but won't be good people. You need to be able to compromise or else you will lose out on a good woman. Besides if you guys get married you will definitely need that horrible music to keep you awake during road trips.","{'turns': [{'u1': ""You're really missing out because you're not appreciating her for who she is. I mean, I get it, you have your own preferences when it comes to music, but I think she's trying her best to find common ground."", 'u2': ""Dude, you're being ridiculous. You're always finding faults in her. You need to relax and appreciate what you have.""}, {'u1': ""But it's not just that she has bad music taste, it's that she doesn't even care about my preferences, she just plays it loud all the time."", 'u2': ""Bro, music taste is subjective. Just because she doesn't share your preferences doesn't mean she doesn't care about you. It just means she has her own tastes. Besides, if you guys are serious about each other, you need to learn to compromise.""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': ""Bro, there are numerous women out there who will have excellent music taste but won't be good people. You need to be able to compromise or else you will lose out on a good woman. Besides if you guys get married you will definitely need that horrible music to keep you awake during road trips.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4498,7 +4498,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 375,243_2022,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,Could you explain to them that?,"{'turns': [{'u1': ""You know, I've been trying to be patient, but honestly, it's really frustrating that we're already past Tuesday and we still haven't even discussed the outline. I'm starting to feel like I'm the only one who cares about meeting this deadline."", 'u2': 'Have you tried talking to them about your concerns?'}, {'u1': ""I have, but it feels like they're not taking it seriously. I'm starting to feel like I'm shouldering the whole workload because I'm the only one pushing forward."", 'u2': ""I'm not sure explaining is the right approach. Sometimes people just need a gentle nudge or a reminder of what we're working towards.""}, {'u1': ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!"", 'u2': 'Could you explain to them that?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4522,7 +4522,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 377,261_2074,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"i think its your turn to go lazy git,  we said we would alternate trips to the bar so it didnt cost either of us to much","{'turns': [{'u1': 'hey, can i get another round over there? it looks like youve had one', 'u2': ""nah, go get another one and i'll just stick with this one, cheers""}, {'u1': 'no, no, no, get another one for me too, dont make me get up', 'u2': ""come on, we said we'd alternate, now you're getting us into debt""}, {'u1': ""oh, come on, can't you just get another round for me too?"", 'u2': 'i think its your turn to go lazy git, we said we would alternate trips to the bar so it didnt cost either of us to much'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4534,7 +4534,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 378,130_1047,fictionary,0,en,"Steve and you are hanging out, and he invites his other friends. You like them because they are fun.  Steve says, ""I invited some other people, hope you don't mind.""",,no problem your friends are my friends too.,"{'turns': [{'u1': ""I'm inviting a few friends over, it's going to be a blast!"", 'u2': 'That sounds awesome! The more, the merrier!'}, {'u1': ""I've invited Alex and Ryan, hope you like them."", 'u2': ""I've met them before, they're super cool!""}, {'u1': ""I invited some other people, hope you don't mind."", 'u2': 'no problem your friends are my friends too.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4630,7 +4630,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 386,125_1039,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"no, i think i need to be more straightforward and quit beating around the bushes","{'turns': [{'u1': ""you know what? i think i was being a bit too cautious in my previous advice. maybe taking things slow isn't working. it's been a month and nothing has happened. you need to be more direct and take some initiative."", 'u2': ""i know, i've been feeling like that for a while now. but every time i try to do something, i feel like i'm being too aggressive and i'm scaring him off.""}, {'u1': ""come on, don't be too hard on yourself! we've all been in that position before. you just need to find the right balance. maybe try to casually hang out with him a bit more often?"", 'u2': ""i'm trying, i really am. but i think that's been my approach for the past month too and it's not working.""}, {'u1': 'so, did my advice work or what? any progress so far?', 'u2': 'no, i think i need to be more straightforward and quit beating around the bushes'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4690,7 +4690,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 391,242_2110,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"that reminds me, mind if i grab that money you owe me. Im trying to save at the moment","{'turns': [{'u1': ""that's all in the past, u2, and besides, it's not a big deal. don't sweat it."", 'u2': ""it kinda is to me, though. i'm still waiting for the cash""}, {'u1': ""i swear, people these days are so unreliable, you know? that's why i think i'm doing you a favor"", 'u2': ""yeah, except when it's about people like me, right? anyway, that's beside the point, let's just get this straight – i'm still waiting for you to pay me back""}, {'u1': ""come on, u2, don't be like that. we're good, okay?"", 'u2': 'that reminds me, mind if i grab that money you owe me. Im trying to save at the moment'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4726,7 +4726,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 394,101_1035,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"Steve, should look of realistic resolutions, and stick to it, this is not great to keep breaking it","{'turns': [{'u1': ""I know you wanted to start learning French and hit the gym every day, but, man, watching sports and eating popcorn sounds way better than slogging through grammar rules and getting a sweat going. Can't it be just one day a week, though?"", 'u2': ""That's exactly my point, though. If you don't hold yourself to the commitments you make, you're gonna be stuck in this pattern of making grand resolutions and then giving up.""}, {'u1': ""I know it's been a bit longer than a week now, but come on, I'm only taking it easy while the games are on. It's a one-time thing, I swear!"", 'u2': ""One-time thing? That's exactly what it's been for three weeks, and we're not getting any younger, Steve. You should be putting your energy into something that's going to give you a sense of accomplishment, not just temporary entertainment.""}, {'u1': ""But it's not fair to expect me to be motivated 24/7, dude! Can't I just indulge every now and then?"", 'u2': 'Steve, should look of realistic resolutions, and stick to it, this is not great to keep breaking it'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4966,7 +4966,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 414,266_2061,fictionary,0,en,"You spilled coffee on Steve's shirt. When you apologize to him, Steve says ""it's alright. I didn't even like this shirt anyway.""",,"That's a relief, but sorry anyway","{'turns': [{'u1': ""I'm just glad it's not a favorite shirt. I was getting attached to it."", 'u2': ""That's a good point, but I still feel terrible about it.""}, {'u1': 'I was about to get rid of it anyway, to be honest.', 'u2': 'That makes me feel slightly better, but still...'}, {'u1': ""it's alright. I didn't even like this shirt anyway."", 'u2': ""That's a relief, but sorry anyway""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -4978,7 +4978,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 415,268_2039,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,Nice shoes.,"{'turns': [{'u1': ""Man, you won't believe how good it feels to be wearing these bad boys after the project I finished yesterday. They're worth every penny!"", 'u2': 'Congrats on the project finishing, buddy!'}, {'u1': 'Yeah, it was a beast of a project, but the sense of accomplishment is amazing. Plus, these shoes are just the icing on the cake.', 'u2': 'The shoes are a nice touch, dude!'}, {'u1': 'So, what do you think? Do they match the outfit?', 'u2': 'Nice shoes.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.
@@ -5002,7 +5002,7 @@ Provide your output answer between the tags <ANSWER></ANSWER>.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 417,257_2046,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"That depends, can I have my charger and toaster back first?","{'turns': [{'u1': 'I completely forgot you asked me about the charger and toaster a while back. Honestly, I still need them for some work-related projects.', 'u2': ""You're still using my stuff? That's a bit awkward.""}, {'u1': ""I know it's been a while, but I'll get to returning them eventually. Right now, I'm super busy with a project."", 'u2': ""Eventually? You've had them for two months and a month, respectively. I'm starting to think you've forgotten they belong to me.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'That depends, can I have my charger and toaster back first?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1, to which u2 has to respond.

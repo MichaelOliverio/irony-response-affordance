@@ -1,5 +1,6 @@
 """Evaluate Experiment 1 predictions against dataset and human references."""
 
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -34,6 +35,16 @@ INPUT_TYPES = (
     "last_u1_message",
     "conversation",
 )
+
+
+def readable_path(file_path: Path) -> str:
+    """Return a path that also supports paths longer than 260 chars on Windows."""
+    path = str(file_path.resolve())
+    if os.name != "nt" or path.startswith("\\\\?\\"):
+        return path
+    if path.startswith("\\\\"):
+        return "\\\\?\\UNC\\" + path.lstrip("\\")
+    return "\\\\?\\" + path
 
 
 def parse_prediction_info(file_path: Path) -> dict:
@@ -89,6 +100,24 @@ def parse_prediction_info(file_path: Path) -> dict:
             else "Standard test"
         ),
     }
+
+
+def valid_evaluation_ids(frame: pd.DataFrame, reference_column: str) -> set[str]:
+    """Return IDs with both a binary prediction and a binary reference."""
+    required_columns = {"unique_id", "model_answer", reference_column}
+    missing_columns = required_columns.difference(frame.columns)
+    if missing_columns:
+        raise ValueError(f"missing columns: {sorted(missing_columns)}")
+
+    unique_ids = frame["unique_id"].astype("string")
+    prediction_values = pd.to_numeric(frame["model_answer"], errors="coerce")
+    reference_values = pd.to_numeric(frame[reference_column], errors="coerce")
+    valid_mask = (
+        unique_ids.notna()
+        & prediction_values.isin([0, 1])
+        & reference_values.isin([0, 1])
+    )
+    return set(unique_ids.loc[valid_mask].tolist())
 
 
 def compute_metrics(frame: pd.DataFrame, reference_column: str) -> dict:
@@ -147,6 +176,8 @@ def compute_metrics(frame: pd.DataFrame, reference_column: str) -> dict:
 def discover_and_evaluate() -> pd.DataFrame:
     rows = []
     skipped = []
+    evaluations = []
+    block_members = {}
 
     prediction_roots = [
         OUTPUT_DIR / "decoders",
@@ -160,8 +191,11 @@ def discover_and_evaluate() -> pd.DataFrame:
     ]
 
     for file_path in sorted(prediction_files):
+        if not any(input_name in file_path.stem for input_name in INPUT_TYPES):
+            continue
+
         try:
-            frame = pd.read_csv(file_path)
+            frame = pd.read_csv(readable_path(file_path))
             if "model_answer" not in frame.columns:
                 continue
             relative_parts = file_path.relative_to(OUTPUT_DIR).parts
@@ -180,15 +214,27 @@ def discover_and_evaluate() -> pd.DataFrame:
             )
 
             for reference_name, reference_column in reference_specs:
-                metrics = compute_metrics(frame, reference_column)
-                rows.append(
+                valid_ids = valid_evaluation_ids(frame, reference_column)
+                if not valid_ids:
+                    raise ValueError(
+                        "no rows with both prediction and reference"
+                    )
+                block_key = (
+                    info["cohort"],
+                    reference_name,
+                    info["dataset_label"],
+                )
+                evaluations.append(
                     {
-                        **info,
+                        "frame": frame,
+                        "info": info,
                         "reference": reference_name,
-                        **metrics,
-                        "file_path": str(file_path),
+                        "reference_column": reference_column,
+                        "file_path": file_path,
+                        "block_key": block_key,
                     }
                 )
+                block_members.setdefault(block_key, []).append(valid_ids)
         except (OSError, ValueError, pd.errors.ParserError) as error:
             skipped.append((file_path, str(error)))
 
@@ -196,6 +242,39 @@ def discover_and_evaluate() -> pd.DataFrame:
         print("\nSkipped prediction files:")
         for file_path, reason in skipped:
             print(f"  - {file_path}: {reason}")
+
+    common_ids_by_block = {}
+    print("\nCommon valid samples per evaluation block:")
+    for block_key, valid_id_sets in sorted(block_members.items()):
+        common_ids = set.intersection(*valid_id_sets)
+        if not common_ids:
+            raise ValueError(
+                f"no common valid predictions for block {block_key}"
+            )
+        common_ids_by_block[block_key] = common_ids
+        cohort, reference, dataset = block_key
+        print(
+            f"  - {cohort} | {reference} | {dataset}: "
+            f"{len(common_ids)} samples"
+        )
+
+    for evaluation in evaluations:
+        frame = evaluation["frame"]
+        common_ids = common_ids_by_block[evaluation["block_key"]]
+        normalized_ids = frame["unique_id"].astype("string")
+        common_frame = frame.loc[normalized_ids.isin(common_ids)].copy()
+        metrics = compute_metrics(
+            common_frame,
+            evaluation["reference_column"],
+        )
+        rows.append(
+            {
+                **evaluation["info"],
+                "reference": evaluation["reference"],
+                **metrics,
+                "file_path": str(evaluation["file_path"]),
+            }
+        )
 
     if not rows:
         raise FileNotFoundError(

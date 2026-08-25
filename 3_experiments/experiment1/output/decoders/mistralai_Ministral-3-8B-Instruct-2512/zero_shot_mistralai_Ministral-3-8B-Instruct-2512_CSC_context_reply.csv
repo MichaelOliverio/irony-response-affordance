@@ -26,7 +26,7 @@ u2: Don't you think you are exaggerating a bit, my friend, your girlfriend is am
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 2,265_2071,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,no worries,"{'turns': [{'u1': 'hey man, I could really use a USB stick for this presentation', 'u2': ""it's right here on my desk""}, {'u1': 'thanks so much!', 'u2': ""you know I've got your back""}, {'u1': 'thank you', 'u2': 'no worries'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -152,7 +152,9 @@ u2: Nothing. It's not appropriate to comment on this.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+The observed reply from u2 (""Nothing. It's not appropriate to comment..."") is a straightforward, non-ironic rejection of potential sarcasm or criticism. Given the context—Steve's colorful outfit—an ironic reply would have likely involved playful teasing (e.g., ""Wow, what a *subtle* fashion statement..."") or exaggerated praise (e.g., ""Uh… this is actually genius?""). The observed response lacks the verbal cues (e.g., sarcastic tone, exaggeration, contrast) that would indicate irony. Instead, it conveys disinterest or discomfort with commentary, making irony implausible.</s>",,0,0,[]
 11,105_1008,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,when you can't choose one colour you wear them all...,"{'turns': [{'u1': ""dude, what's with the getup? looks like you got the colours mixed up"", 'u2': ""haha, nah, I'm trying something new""}, {'u1': 'dude, new? this is like a palette of horrors!', 'u2': ""I know, I know, but you have to admit, it's kinda bold""}, {'u1': ""what's that supposed to mean, bold? you look like you've been painted by a toddler"", 'u2': ""when you can't choose one colour you wear them all...""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -320,7 +322,7 @@ u2: i wouldn't pay for him</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 23,112_1046,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"Steve, it's for a fundraiser. Just go with it!","{'turns': [{'u1': ""Ugh, why me?! I suck at soccer. I'm gonna be the worst player ever. I'm basically a liability on the field."", 'u2': ""Dude, everyone's gonna be bad at first. Just pick up the ball and kick it. It's not rocket science.""}, {'u1': 'But what if I trip over my own feet? What if I get kicked in the shins?!', 'u2': ""Okay, okay. You'll be fine. But seriously, Steve, it's for charity. Can you really not just pretend to care for like an hour?""}, {'u1': ""I guess you're right... It's for a good cause and all that jazz."", 'u2': ""Steve, it's for a fundraiser. Just go with it!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -376,7 +378,7 @@ u2: Yeah sorry mate no problem</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 27,209_2092,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,Often difficult to know why people are friends,"{'turns': [{'u1': ""I mean, why do you think people get along with that guy? You're usually pretty good at reading people."", 'u2': ""Yeah, I've known him since high school, and he's always been a bit of a freeloader.""}, {'u1': ""That's exactly what I don't get about him – he's constantly asking for favors, and he never pays anyone back."", 'u2': ""I know, it's weird. Sometimes I feel like people just like the idea of having a friend, not the actual person.""}, {'u1': ""I don't get it, I really don't."", 'u2': 'Often difficult to know why people are friends'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -390,7 +392,7 @@ u2: Often difficult to know why people are friends</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 28,104_1007,fictionary,0,en,You and Steve have a mutual friend. She is getting married in two weeks. You are both invited to the wedding. You hate weddings but Steve seems to be pretty excited about potentially meeting somebody there. He is already picking out his suit and making a fuss.,,"Hey, just be lucky that I am in a suit as I don't even want to go to this wedding.","{'turns': [{'u1': ""I know you're probably not looking forward to this, but I really think this could be a great opportunity for us to meet some new people and maybe even find someone special. You know how it is, never know what could happen!"", 'u2': ""Oh please, don't start with that. I'm only going because I have to. You're the one who's acting like a total wedding enthusiast.""}, {'u1': ""Come on, it'll be fun, I promise! We can make a night of it and hit the bars after the ceremony. Plus, I really think my suit is going to turn heads."", 'u2': ""You're such a jokester, but I still don't see the point of all this. And, by the way, don't expect me to keep up with you in the dance floor, I have two left feet.""}, {'u1': ""You're really getting worked up about this, aren't you? Just relax, it'll be a good time!"", 'u2': ""Hey, just be lucky that I am in a suit as I don't even want to go to this wedding.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -404,7 +406,8 @@ u2: Hey, just be lucky that I am in a suit as I don't even want to go to this we
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+The response by u2 is plausible as irony in this context. Given Steve's enthusiasm and preparation for the wedding (picking a suit, etc.), u2's sarcastic comment (""just be lucky that I am in a *suit* as I don't even want to *go* to this wedding"") humorously highlights their disdain for the event while appearing to jokingly acknowledge Steve's effort. The contrast between their expressed reluctance and the mention of a suit creates a sharp, ironic tone.</s>",,1,0,[]
 29,101_1059,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,Maybe you should watch a French speaking exercise show.,"{'turns': [{'u1': 'Maybe you should just try to do a little bit each day. Start with something simple.', 'u2': 'I know you said you wanted to learn French, but honestly, have you even cracked open a textbook?'}, {'u1': ""Oh, it's just that I'm really not feeling it today. Maybe I'll do it tomorrow..."", 'u2': ""That's just it, tomorrow never comes. You've been saying that for three weeks now.""}, {'u1': ""Well, how about this: I was going to go to the gym, but I'm feeling a bit lazy. Maybe if I watch some sports and eat some popcorn, it'll get me in the mood."", 'u2': 'Maybe you should watch a French speaking exercise show.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -432,7 +435,8 @@ u2: When you're good friends with someone often you can overlook some of the les
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The response by u2 contains subtle irony. While it superficially appears supportive—acknowledging flaws and imperfection—it undermines the underlying frustration expressed by Steve about Bill's judgment in tolerating an annoying friend. The phrasing (""None of us are perfect, I'm *sure* I do things you don't like"") implies Steve’s annoyance with *himself* (i.e., Bill) rather than the friend, subtly mocking Steve’s perspective while avoiding direct confrontation.)*</s>",,1,0,[]
 31,208_2075,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Why didn't you just ask for them to be served on different plates.,"{'turns': [{'u1': ""I don't know, man. I just thought it was normal to have French fries with a burger. But every time they touch, I get a little annoyed."", 'u2': ""Really? You're usually not that fussy.""}, {'u1': ""But they're not even on the same level. The fries are all greasy and messy. It's just not the same vibe as the burger."", 'u2': ""I get what you're saying, but still, couldn't you have asked them to separate them?""}, {'u1': ""Hmm, I guess I didn't think of that. We should've asked for them to be on different plates."", 'u2': ""Why didn't you just ask for them to be served on different plates.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -446,7 +450,8 @@ u2: Why didn't you just ask for them to be served on different plates.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The remark is plausible as an ironic reply, given Steve's repeated frustration about the shared plate formatting.)*</s>",,1,0,[]
 32,221_2096,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,I have absolutely no idea and honestly don't care,"{'turns': [{'u1': ""That's incredible, look at how it's moving, I'm telling you, this is real, aliens are out there"", 'u2': 'Not sure about that, but it does look pretty intense'}, {'u1': ""Exactly, we're seeing things we can't explain, it's a doorway to the unknown"", 'u2': ""You're really getting into this, aren't you?""}, {'u1': ""What else could it be, humans can't build something like this"", 'u2': ""I have absolutely no idea and honestly don't care""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -502,7 +507,11 @@ u2: Maybe not today Steve, I'm a bit tired from the week. We should definitely a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","The response ""Maybe not today Steve, I'm a **bit tired** from the week"" in this context is sarcastic (or at least subtly pushback) because it contrasts with the actual fact that Steve is inviting his friends to join. The tone suggests reluctance or resistance, even though the literal phrase ""Maybe not today"" could be taken at face value.
+
+Given the implied tension between the literal phrasing and the underlying sentiment, u2's reply is **ironic**—either intentionally or unintentionally. Thus, it would be a **plausible and natural ironic response** in this situation.
+
+<ANSWER>1</ANSWER></s>",,1,0,[]
 36,208_2082,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,you should ask for another plate steve,"{'turns': [{'u1': 'u2: i dont get it, why are you doing that.', 'u2': 'wait, are you mad about the french fries touching your burger?'}, {'u1': 'yeah, it freaks me out when they touch.', 'u2': ""but that's kinda weird. just separate the fries and burger.""}, {'u1': 'ok fine, but i wish we had a different plate, like, one of those big platters with little sections.', 'u2': 'you should ask for another plate steve'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -572,7 +581,9 @@ u2: It's beautiful, you're very lucky he left it to you. Just be careful about s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+(u2's response is ironically plausible because it contrasts the sincerity of the praise (""It's beautiful"") with a darkly humorous warning (""somebody might steal it""), given the context of Steve's boastful remarks about his new watch.)</s>",,1,0,[]
 41,233_2021,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,nice outfit,"{'turns': [{'u1': 'you look great today, hows it going?', 'u2': 'you look pretty sharp yourself'}, {'u1': 'i thought it would be a casual night, guess i was wrong huh?', 'u2': ""nah, you're still on point""}, {'u1': ""i just picked this outfit at random, hoping you wouldn't judge me"", 'u2': 'nice outfit'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -628,7 +639,7 @@ u2: i dont have time to read fashion mags and i like to spend my money on stuff 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 45,218_2003,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,You could save the pictures for when you do want to get a haircut and show me then.,"{'turns': [{'u1': ""I don't get why you're showing me all these pictures. I really don't need a haircut right now."", 'u2': ""Why do you think you'll need a haircut? You look fine to me.""}, {'u1': ""Yeah, I guess I just like the idea of having a fresh look. I've seen some cool haircuts lately."", 'u2': ""Okay, just take the pictures and show them to me when you're serious about getting a haircut.""}, {'u1': ""I don't need a haircut right now. But I want to be well-informed when I do!"", 'u2': 'You could save the pictures for when you do want to get a haircut and show me then.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -670,7 +681,9 @@ u2: yeahhh i guess so mate, some things are hard to explain</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Explanation:** u2's reply (""yeahhh i guess so mate, some *things* are hard to explain"") carries a subtle, sarcastic tone. The observed phrase ""some things"" implies a dismissive acknowledgment of Steve's claim while subtly suggesting skepticism—an ironic undercutting of the UFO theory. The exaggerated ""yeahhh"" and the phrasing ""some things"" (as opposed to the specific claim) make it plausible as an ironic response, even if not overtly. The context (Steve's repetitive UFO obsession and lack of genuine mutual interest) provides fertile ground for such a response.</s>",,1,0,[]
 48,210_2012,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"Yes, that's really annoying. Why don't you call your friend and ask for it back?","{'turns': [{'u1': ""Man, I'm getting really fed up with people. Like I lent my friend a bike and they haven't given it back yet."", 'u2': 'Oh, yeah? That sucks. When did you lend it to them?'}, {'u1': ""Ugh, it was like two weeks ago! And I've been trying to reach them nonstop, but they're MIA."", 'u2': ""That's super frustrating. Have you talked to them recently?""}, {'u1': ""Dude, I just said I've been trying to reach them nonstop."", 'u2': ""Yes, that's really annoying. Why don't you call your friend and ask for it back?""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -726,7 +739,8 @@ u2: Thank you my able chef and friend😜😜😜😜</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","1
+</ANSWER></s>",,1,0,[]
 52,109_1049,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,just put on the music you like then,"{'turns': [{'u1': 'I mean, she is great in many other ways, but her music taste is just horrible. It is like listening to nails on a chalkboard.', 'u2': 'Why do you let it bother you so much? She is amazing in every other way.'}, {'u1': ""But it's not just a little off, it's like she's completely clueless. I mean, I'm no music expert, but even I know some of the stuff she listens to is terrible."", 'u2': ""You're not exactly a fan of all the same music as everyone else, are you?""}, {'u1': ""She's always trying to get me to listen to her favorite band, and it's just so bad. I don't get why she likes it."", 'u2': 'just put on the music you like then'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -782,7 +796,8 @@ u2: okay mate</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(Ironic or sarcastic undertones are plausible here, as ""okay mate"" could imply indifference, fatigue, or even mild sarcasm toward the vague invitation (""if you are still there then""), suggesting Steve's comment implied a low likelihood of attendance.)*</s>",,1,0,[]
 56,214_2027,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"I do watch how I spend my money! I thought very carefully about whether 40 dollars was a reasonable price for a bag of coffee that would last me a month and that I'd get a lot of enjoyment from, and I decided it was worth it. Besides, you can't talk - you just lost 120 dollars because you never got around to returning that thing you bought on Amazon! Talk about the pot calling the kettle black.","{'turns': [{'u1': ""You spent 40 bucks on a bag of coffee today. That's some pricey coffee."", 'u2': ""What's wrong with that? It's a great coffee and it's been helping me get through the day.""}, {'u1': ""Well, I guess I'm just used to you being more careful with your money."", 'u2': ""I am careful with my money. I think about each purchase and decide if it's worth it. And this coffee was worth it.""}, {'u1': 'Wow, you really should watch how you spend your money.', 'u2': ""I do watch how I spend my money! I thought very carefully about whether 40 dollars was a reasonable price for a bag of coffee that would last me a month and that I'd get a lot of enjoyment from, and I decided it was worth it. Besides, you can't talk - you just lost 120 dollars because you never got around to returning that thing you bought on Amazon! Talk about the pot calling the kettle black.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -810,7 +825,9 @@ u2: it has happened multiple times. I'll do it this time but I am expecting this
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+*(While u2's response is a direct and non-ironic acknowledgment of the recurring situation, irony would not be a natural or plausible reply in this context. The tone is factual, and the phrasing ""I'll do it this time but I expect this to be paid back"" is a clear and earnest statement of intent—not an ironic remark.)*</s>",,0,0,[]
 58,201_2039,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,Like your outfit!,"{'turns': [{'u1': 'Hey, I just got a new tank top. What do you think?', 'u2': ""That looks sweet. I'm loving the color.""}, {'u1': ""Yeah, I'm feeling the red on me. I was thinking maybe we could grab some burgers after this."", 'u2': 'Sounds good to me.'}, {'u1': ""I'm really glad I wore these green shorts, you don't see me in this color often."", 'u2': 'Like your outfit!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -824,7 +841,7 @@ u2: Like your outfit!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 59,239_2076,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,"[nothing, no point engaging]","{'turns': [{'u1': 'hey buddy! why are you changing the volume all the time?', 'u2': ""what's your business here?""}, {'u1': ""I'm just trying to keep things at a reasonable level"", 'u2': 'stop messing with the remote'}, {'u1': ""what's your problem now"", 'u2': '[nothing, no point engaging]'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -852,7 +869,8 @@ u2: No it didn't! I'll get these ones but it's not happening again Steve</CONTEX
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(Steve's reply (""come on, it happened like one-time!"") is dismissive and minimizes the truth, so u2's emphatic denial and threat (""No it didn't! I'll get *these* ones but it's not happening again"") carries an ironic undertone—exaggerating generosity (""I'll get these ones"") as a sarcastic rejoinder to the prior unresolved debts while subtly calling out the pattern. The context affords this ironic framing.)*</s>",,1,0,[]
 61,205_2061,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,"Stop making a mess, man","{'turns': [{'u1': 'Man, I\'m telling you, this is gonna be a masterpiece. We\'ll call it the Steve-Special! ""', 'u2': ""Dude, that's not even a recipe. You can't just throw stuff together.""}, {'u1': 'I\'m a visionary, man! Don\'t be a skeptic! We\'re pushing the boundaries of culinary greatness! ""', 'u2': ""Steve, please, just stop... You're making a mess.""}, {'u1': 'Look, I made something delicious!', 'u2': 'Stop making a mess, man'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -894,7 +912,8 @@ u2: It's all for a good cause</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","1
+</ANSWER></s>",,1,0,[]
 64,259_2085,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,Nah lets just jump in one of those it's much quicker,"{'turns': [{'u1': 'There are cabs right there. Why not just get one of those?', 'u2': 'But what about the discount?'}, {'u1': ""Ah, isn't that app pretty slow?"", 'u2': ""But it's worth the discount!""}, {'u1': ""But you're already in front of several cabs"", 'u2': ""Nah lets just jump in one of those it's much quicker""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -936,7 +955,7 @@ u2: looking  sharp Steve</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 67,265_2044,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,no problem,"{'turns': [{'u1': 'can you lend me your USB stick?', 'u2': 'Here you go, help yourself'}, {'u1': 'Thanks, I really appreciate it!', 'u2': ""You're welcome, happy to help""}, {'u1': ""Thanks again, you're a lifesaver!"", 'u2': 'no problem'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -992,7 +1011,7 @@ u2: buddy I thought you were gonna try to get into shape. Maybe we should gym to
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 71,265_2104,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,No worries Steve,"{'turns': [{'u1': ""Hey, can I borrow your USB stick? Mine's dead."", 'u2': ""What's wrong with yours?""}, {'u1': 'Yeah, it just stopped working. Must have got a virus or something.', 'u2': 'You should run a virus scan then.'}, {'u1': 'Oh, yeah! I was gonna do that, thanks for reminding me.', 'u2': 'No worries Steve'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1034,7 +1053,7 @@ u2: Sorry, I'm busy right now.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 74,101_1045,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"Hey mate, what exactly is going on, remember you were so fired up about learning French and hitting the gym regularly to stay in shape? Open up to me buddy, what is going on?","{'turns': [{'u1': ""I've been really busy with work and stuff, but I'm trying to make it up this weekend. Maybe I'll start going to the gym on Monday, and I'll look for an online French course to follow."", 'u2': ""Work, work, work, right? That's the oldest excuse in the book, mate. You're not fooling anyone with that.""}, {'u1': ""Ah, come on! It's hard to motivate myself after a long day. I know I need to get back on track, but it feels like everything else is taking over."", 'u2': ""That's just a crutch, Steve. You're letting your busy schedule be an excuse for your lack of commitment. What's really going on? Is everything okay?""}, {'u1': ""Honestly, I just don't feel like it right now. Watching sports and eating popcorn sounds way more appealing than going to the gym or learning French."", 'u2': 'Hey mate, what exactly is going on, remember you were so fired up about learning French and hitting the gym regularly to stay in shape? Open up to me buddy, what is going on?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1076,7 +1095,8 @@ u2: Its brand new and Im not letting anyone drive it. Plus you arent insured.</C
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+*(The response from u2 is not ironic; it directly aligns with the scenario's logical reasoning—denying the request due to practical reasons (brand newness, insurance) without any layer of sarcasm or contrast between surface meaning and intended meaning.)*</s>",,0,0,[]
 77,262_2120,fictionary,1,en,"Steve shows up at your desk with a giant pile of paper and says, ""I have to go out of town for 3 days. Can you please finish this report instead of me?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"Sorry, I have a full list of tasks for the next few days.  Can you talk to your manager about delaying the report until you are back?","{'turns': [{'u1': ""Hey, u2, I'm in a bit of a bind. My team lead is breathing down my neck, and I need you to cover my workload for the next few days."", 'u2': ""I see. That's quite a last-minute ask. Can you at least provide me with a rough outline of what I'll be working on so I can plan accordingly?""}, {'u1': ""Alright, I'll send you the report specs and the timelines. But to be clear, it's not just a matter of just sending you the report specs and the timelines. There are some key stakeholders that need to be consulted and looped in."", 'u2': ""I understand the gravity of the situation. I'm still a bit concerned that I'm being asked to take on a significant amount of work with little notice. If I do this, are there any deadlines or key milestones that I need to prioritize?""}, {'u1': ""Look, u2, I'm really counting on you here. Can you please just focus on finishing this report as soon as possible?"", 'u2': 'Sorry, I have a full list of tasks for the next few days. Can you talk to your manager about delaying the report until you are back?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1104,7 +1124,8 @@ u2: Best unicorn I've ever seen</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The reply ""Best unicorn I've ever seen"" is ironic because it humorously compliments Steve's unconventional and creative take on a ""unicorn,"" knowing it's not a true unicorn.)*</s>",,1,0,[]
 79,265_2050,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,You're welcome,"{'turns': [{'u1': ""what's the USB stick doing on your desk?"", 'u2': 'I was just working on that project for a bit and forgot to put it back'}, {'u1': 'I need it to borrow it from you, can I use it?', 'u2': ""Help yourself, I'm done with it""}, {'u1': 'thank you', 'u2': ""You're welcome""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1132,7 +1153,8 @@ u2: You can borrow the suitcase once i get my toaster and charger back, drop the
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2's response is ironic given the context—it seems sarcastic or exaggeratedly formal, playfully emphasizing the conditions of returning the charger and toaster before allowing Steve to borrow the suitcase.)*</s>",,1,0,[]
 81,263_2016,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"No I will not buy you a drink, tough shit!","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""you're just trying to get out of it. how about you pay me back this time?""}, {'u1': ""that's just an exaggeration, don't be dramatic"", 'u2': ""you've done this before, and each time you've left me hanging""}, {'u1': ""it happened once, you're overreacting"", 'u2': 'No I will not buy you a drink, tough shit!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1188,7 +1210,7 @@ u2: steve lets save some money through my app as we can then use the cash for so
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 85,260_2084,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,It's not that but I'd rather not go through setting up the insurance to cover you just for this one time and I've only just sorted out all the paperwork with the car being new. Sorry I don't mean to be unhelpful but is there any alternative to borrowing it?,"{'turns': [{'u1': 'I really need it today, could you do me a huge favour and lend it to me for a bit?', 'u2': ""What's the hurry, I've just got the thing, can't you use your other car?""}, {'u1': ""It's my girlfriend, she's at work and can't make it home without a ride. I know it's a lot to ask but"", 'u2': ""That's tough, but do you know if she has a ride from work? That would help, right?""}, {'u1': ""No, she doesn't have a ride, that's why I need to pick her up"", 'u2': ""It's not that but I'd rather not go through setting up the insurance to cover you just for this one time and I've only just sorted out all the paperwork with the car being new. Sorry I don't mean to be unhelpful but is there any alternative to borrowing it?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1328,7 +1350,7 @@ u2: That's fair enough. It's important to be confident in yourself so I think it
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 95,106_1038,fictionary,0,en,"Steve recently changed jobs. He is annoyed because he needs to deal with some bureaucracy regarding his health insurance. He says, ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.""",,"Yeah man I hate dealing with bureaucracy too it's annoying as hell. But hey, you changed jobs for a reason right? Just deal with this crap and then you'll be done and won't have to worry about it anymore.","{'turns': [{'u1': ""It's just frustrating because it feels like all this paperwork and hassle could have been avoided if I had just stuck with my old job. I know it wasn't perfect, but at least I knew what to expect."", 'u2': ""Yeah man I hate dealing with bureaucracy too it's annoying as hell. I had to do the same thing with my own health insurance when I switched companies. It's like they assume you have no idea what you're doing.""}, {'u1': ""I swear, if I had known it would be this much work, I never would have made the switch. I'm starting to regret it. All this extra stress on top of my actual work is killing me."", 'u2': ""Well, you knew it would be some extra work, but you also knew it would be worth it in the long run. You landed a great job, didn't you? You're making more money and have more responsibilities. It's not all bad.""}, {'u1': ""I'm so done with this bureaucratic stuff. Can't they just make it easier?"", 'u2': ""Yeah man I hate dealing with bureaucracy too it's annoying as hell. But hey, you changed jobs for a reason right? Just deal with this crap and then you'll be done and won't have to worry about it anymore.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1342,7 +1364,7 @@ u2: Yeah man I hate dealing with bureaucracy too it's annoying as hell. But hey,
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 96,111_1038,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,"Man, you are fucking serious right now? You're going to quit your job and travel with some girl you just met last night while drunk? No girl is worth quitting your job and screwing your life over, especially not a girl you just met last night.","{'turns': [{'u1': ""Dude, I'm telling you, she's the one. I've never felt this way about anyone before. I have to take a chance and see where it goes."", 'u2': ""Dude, you're not thinking clearly right now. You're drunk and I'm pretty sure you don't even remember her name.""}, {'u1': ""I'm telling you, man, this girl is something special. I can feel it. We're meant to be together."", 'u2': ""You're high on something, my friend. You're not thinking clearly about what you're saying. I'm not sure if you're even remembering what happened last night.""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': ""Man, you are fucking serious right now? You're going to quit your job and travel with some girl you just met last night while drunk? No girl is worth quitting your job and screwing your life over, especially not a girl you just met last night.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1370,7 +1392,7 @@ u2: sure I wait you</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 98,205_2022,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,Make sure you finish your creation! no food waste in my house!,"{'turns': [{'u1': ""hey, I just added some more OJ, and I'm telling you, it's gonna change the flavor profile!"", 'u2': 'Steve, maybe you should calm down and focus on not spilling anything on the floor.'}, {'u1': ""I'm just experimenting with new taste combinations. I call it... Steve-Style Fusion Cuisine!"", 'u2': ""Umm, isn't that what they call a mess on the floor when you drop something?""}, {'u1': 'Hey, look, I made something delicious!', 'u2': 'Make sure you finish your creation! no food waste in my house!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1398,7 +1420,9 @@ u2: way to go on your gyming schedule</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>
+1
+</ANSWER></s>",,1,0,[]
 100,213_2005,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,"I don't know, I feel like I can't say no to him","{'turns': [{'u1': '- What was it?', 'u2': 'I got asked to pick up some dry cleaning and drop it off at the post office'}, {'u1': 'That sounds totally random.', 'u2': ""I know, right? It's just so frustrating. I hate being asked to do stuff that's not even related to work""}, {'u1': 'Why did you agree to do it?', 'u2': ""I don't know, I feel like I can't say no to him""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1412,7 +1436,7 @@ u2: I don't know, I feel like I can't say no to him</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",0</s>,,0,0,[]
 101,131_1042,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure, bud. Enjoy.","{'turns': [{'u1': ""That's awesome, man! I've been looking for a new suitcase for months. Can you lend it to me? I promise to return it within the week."", 'u2': ""You borrowed my toaster a month ago, remember? I think it's time for you to return that before you get your hands on my suitcase.""}, {'u1': ""I've had the toaster for so long, I've almost gotten used to it. It's still in my garage, and I can promise to return it soon. Can we talk about the suitcase now?"", 'u2': 'Your garage? You mean you still have my toaster? How many things of mine do you plan on keeping, man?'}, {'u1': ""I'll bring it over today, and we can settle this once and for all."", 'u2': 'Sure, bud. Enjoy.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1496,7 +1520,8 @@ u2: That's great - you're super excited about it. It's nice that you have someth
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+*(While u2's response could be interpreted as sarcastic or dismissive, it is not overtly ironic—it lacks the contrast between literal and implied meaning that typically defines irony. The tone is more bluntly negative or even condescending rather than ironically ""playful with expectation."")*</s>",,0,0,[]
 107,122_1024,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""hey, this is fun. I'm having a great time.""",,yeah me too,"{'turns': [{'u1': 'so what do you think of the team? anyone standing out?', 'u2': ""yeah they're all great""}, {'u1': 'oh, good! glad to hear that. how about me, then?', 'u2': ""ha! you're definitely a favorite already!""}, {'u1': ""hey, this is fun. I'm having a great time."", 'u2': 'yeah me too'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1524,7 +1549,7 @@ u2: That's fair enough mate. Sorry, I'm just not that fussed about hairstyles so
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 109,236_2015,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"Nope, you're an idiot!","{'turns': [{'u1': ""What's gotten into you today?"", 'u2': ""Ugh, don't even start!""}, {'u1': ""Haha, you're just mad because you don't have the guts to pull off my amazing Shoehand look!"", 'u2': 'Shut up!'}, {'u1': ""Haha, you're such a grump!"", 'u2': ""Nope, you're an idiot!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1566,7 +1591,8 @@ u2: I don't believe in aliens</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+(While u2's literal reply ""I don't believe in aliens"" is a straightforward response, it *could also* carry irony given the context—u2 might be mocking Steve's hyperbolic certainty or the absurdity of the argument, especially if they genuinely find the topic trivial or laughable. The framing (""humans can't do that"") is exaggerated, making irony plausible.)</s>",,1,0,[]
 112,224_2110,fictionary,1,en,"Steve recently inherited a fancy watch from his dead grandfather. And he keeps showing it to you and talking about it. For the fifth time, Steve says, ""look, look how shiny this watch is.""",,hmmm lovely mate,"{'turns': [{'u1': ""look, it's a family heirloom, you know. My granddad wore it on all sorts of adventures."", 'u2': ""that's really cool steve""}, {'u1': ""it's really old, check out the intricate design on the back."", 'u2': ""it's beautiful, steve""}, {'u1': 'look, look how shiny this watch is.', 'u2': 'hmmm lovely mate'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1678,7 +1704,8 @@ u2: I like the outfit, but I'm not sure which country's flag you're trying to be
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2's reply is ironically sardonic, plausibly responding to a bold or unconventional outfit choice by mocking Steve's ""national flag ensemble,"" which would be a natural response in this social context.)*</s>",,1,0,[]
 120,221_2100,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,It could be a lot of things. Can we change the subject? You know I hate talking about UFO stuff.,"{'turns': [{'u1': ""Do you see it? It's definitely an alien! This is conclusive proof! They're out there!"", 'u2': ""That's not conclusive proof of anything. It's just a weird video on the internet.""}, {'u1': ""No way, it's not weird! It's an alien spaceship! The government is covering it up, I'm telling you."", 'u2': ""The government is covering up a lot of things, Steve. That doesn't mean we have to believe every wild conspiracy theory that comes our way.""}, {'u1': ""look, it must be an alien because humans can't do that. What else could it be?"", 'u2': 'It could be a lot of things. Can we change the subject? You know I hate talking about UFO stuff.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1804,7 +1831,7 @@ u2: i pass him a spare knife from the table and tell him to place it as a divide
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 129,244_2056,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Like when you never flush the toilet.,"{'turns': [{'u1': ""Hey, we just saw some guy not pick up after his dog, right? That's just inconsiderate!"", 'u2': ""It's the same thing as not picking up after yourself in the bathroom.""}, {'u1': ""I mean, come on, how hard is it to pick up a few dog droppings? It's not like it's a big deal."", 'u2': ""It's a big deal when you never flush the toilet after you're done.""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'Like when you never flush the toilet.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1846,7 +1873,10 @@ u2: Woah Steve chill out a sec, you sure? I mean hey it could be cool I guess. I
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Explanation:**
+Steve's response is euphoric and impulsive, given the context of heavy drinking. u2’s reply includes exaggerated skepticism (""who the hell is this by the way?!"") and playful sarcasm (""Haha you sure she's trustworthy""), which aligns with an ironic tone—mocking Steve’s exaggerated enthusiasm and reckless decision-making while also expressing concern. The sarcastic, exaggerated questioning implies irony is plausible and natural in this situation.</s>",,1,0,[]
 132,210_2072,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,Hahahaha... (I would bring up the restaurant another time),"{'turns': [{'u1': ""You know, I swear, it's people like that that really ruin things for everyone. They borrow stuff and then just leave you hanging."", 'u2': ""Actually, I've had to deal with that before""}, {'u1': ""What's that supposed to mean?"", 'u2': ""Yeah, like when we had lunch last week and you didn't have cash.""}, {'u1': ""Ugh, come on, don't bring that up now."", 'u2': 'Hahahaha... (I would bring up the restaurant another time)'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -1930,7 +1960,10 @@ u2: You ok hun?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Reasoning:**
+u2's response *""You ok hun?""* in this absurd and playful situation would naturally carry a layer of irony or absurdity to match the situation. Given the surreal nature of Steve's behavior (""Mr. Shoehand""), the user's reply can be seen as a sarcastic or ironic way to acknowledge the absurdity, implying either amused acknowledgment (""you're not okay—this is ridiculous"") or a playfully detached reaction to the bizarre situation.</s>",,1,0,[]
 138,109_1032,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,"But if you love her, why should her music taste bother you? Just learn to like it.","{'turns': [{'u1': ""Steve just doesn't get why I'd date someone with such bad taste."", 'u2': ""Man, that's some shallow stuff right there. Maybe she's more than just a pretty face.""}, {'u1': ""Okay, okay, she's more than that. But can't she see my musical genius and give me more credit? I mean, I've listened to like, all of Mozart's symphonies, multiple times."", 'u2': ""Dude, that's not even relevant to her taste in music. She probably just likes catchy tunes like everyone else.""}, {'u1': ""But it's just that her music taste is so awful, it's actually affecting my love for her. Like, when she puts on some pop song, I just cringe and feel embarrassed to be with her."", 'u2': 'But if you love her, why should her music taste bother you? Just learn to like it.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2000,7 +2033,10 @@ u2: Why not do what you can for now? then add the final touches</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Explanation:**
+u2's response, *""Why not do what you can for now, then add the final touches""*, carries an **ironic** undertone given the context. While the reply appears superficially helpful or pragmatic, it subtly contradicts Steve’s self-righteous complaint that *everyone else* is procrastinating while he alone is ""trying to get things moving."" The implication is that Steve’s self-imposed last-minute chaos could be mitigated by simply starting sooner or contributing incrementally—mocking his hypocrisy and the absurdity of waiting until the deadline. Thus, irony is afforded.</s>",,1,0,[]
 143,240_2085,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Haha come on,"{'turns': [{'u1': 'Just what I needed, a hamburger that touches its own fries. You know, personal space.', 'u2': ""It's not that weird.""}, {'u1': 'So they touch each other as soon as I try to take a bite. Okay, moving this thing.', 'u2': 'Just separate them or something.'}, {'u1': 'I pushed them apart. Can you stop looking at me like that?', 'u2': 'Haha come on'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2028,7 +2064,8 @@ u2: Steve mate, you are so last minute all the time! Nobody procrastinates as mu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The response is ironically plausible in this context, as u2's remark subtly calls out Steve's hypocrisy by mirroring his own procrastinating behavior while appearing to sympathize with him, creating a sarcastic yet natural reply.)*</s>",,1,0,[]
 145,205_2071,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,Hope you enjoy it steve.,"{'turns': [{'u1': 'hey, look, I made something delicious!', 'u2': ""That's... quite a unique combination of ingredients, Steve.""}, {'u1': 'Trust me, this is the next big thing!', 'u2': ""You know Steve, I think I'm going to go get some more juice. Do you want any?""}, {'u1': ""I mixed it all together, I call it Steve's Delight"", 'u2': 'Hope you enjoy it steve.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2042,7 +2079,8 @@ u2: Hope you enjoy it steve.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(Yes, u2's reply is plausibly ironic given Steve's bizarre and nonsensical creation.)*</s>",,1,0,[]
 146,263_2028,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"OK look I'll buy you a drink this last time, but please make sure you bring your wallet next time OK?","{'turns': [{'u1': 'Come on, it happened like one time!', 'u2': ""Really? I don't remember that. Anyway, I've helped you out a lot of times and you've never paid me back. It's not like I'm doing it out of the goodness of my heart.""}, {'u1': ""It's not like I always do this. I just had a bad day, okay?"", 'u2': ""A bad day? Are you kidding me? This has happened multiple times, and each time I've covered for you. It's not fair to me, man.""}, {'u1': ""Come on, don't be like that, I'll owe you one for sure!"", 'u2': ""OK look I'll buy you a drink this last time, but please make sure you bring your wallet next time OK?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2056,7 +2094,7 @@ u2: OK look I'll buy you a drink this last time, but please make sure you bring 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 147,228_2077,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"Sorry Steve, I don't have third party insurance on my car.","{'turns': [{'u1': ""Come on, it's just for a little bit. I need to pick her up from work."", 'u2': ""I know you need a ride, but I just got my new car and I'm not letting anyone drive it, especially after what happened with your car.""}, {'u1': ""What do you mean 'after what happened with my car'?"", 'u2': ""Well, you crashed it, got it in the shop... You know, I just don't want my new car to end up like that.""}, {'u1': ""Come on, why can't I borrow it? Don't you trust me?"", 'u2': ""Sorry Steve, I don't have third party insurance on my car.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2070,7 +2108,9 @@ u2: Sorry Steve, I don't have third party insurance on my car.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","0
+<bias reasoning:</b>
+The statement ""Sorry Steve, I don't have third-party insurance on my car"" offers a clear, plausible explanation for why the speaker (u2) is refusing to lend their car, rather than implying sarcasm or irony. Since there is no contextual clue (e.g., prior jokes, exaggerated tone, or understatements) to suggest irony, the reply is straightforward and literal. Thus, irony is not afforded in this instance.</s>",,0,0,[]
 148,122_1022,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""hey, this is fun. I'm having a great time.""",,that's the life everyday,"{'turns': [{'u1': ""hey, you're really fitting in here, I like seeing that"", 'u2': ""not hard to when you're the life of the party""}, {'u1': ""this team's energy is infectious, I'm getting hyped"", 'u2': ""you're just getting started""}, {'u1': ""you're having a great time"", 'u2': ""that's the life everyday""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2140,7 +2180,10 @@ u2: I don't know much about trending hairstyles. Besides your current look is fi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+**Explanation:**
+While u2's reply (*""I don't know much about trending styles. Besides, your current look is fine, you shouldn't change it""*) could be read as dismissive (similar to an ironic response), the **context suggests a sincere lack of enthusiasm or expertise**, not outright irony. Steve’s prior intent was playful (showing hairstyle pics for feedback), and u2’s reply seems **genuine**—unlike an ironic jab it is more **passive-aggressive** or indifferent, not overtly mocking. Irony usually involves a contrast between words and intent (e.g., sarcasm), but u2’s statement doesn’t imply a hidden layer of humor or contradict their stated position. Thus, a fully ironic reply is **not afforded**.</s>",,0,0,[]
 153,268_2022,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,"Wow, looking trapper","{'turns': [{'u1': ""That's a sick new pair of kicks you got there, Steve, congrats on crushing that project"", 'u2': ""What's the occasion, getting ready to take on the world?""}, {'u1': 'Just a little reward for all my hard work, had to treat myself', 'u2': ""Fair enough, you deserve it, now go rock those shoes like they're going out of style""}, {'u1': ""Thanks, man, they match perfectly with today's outfit"", 'u2': 'Wow, looking trapper'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2238,7 +2281,7 @@ u2: I think maybe you're letting your imagination run away from you</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 160,126_1047,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,okay great.,"{'turns': [{'u1': ""I'm really looking forward to it. Are you planning on going a bit early to secure a spot at the bar?"", 'u2': 'yeah, probably'}, {'u1': ""How late do you think the party will go on? Maybe I'll meet you there if it's going to wrap up by 9 PM?"", 'u2': ""honestly i don't know, never paid attention""}, {'u1': 'I might join later if you are still there then.', 'u2': 'okay great.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2252,7 +2295,7 @@ u2: okay great.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 161,260_2126,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"I'm really sorry. I'm not comfortable lending out my new car. I'm still learning it's quirks and don't trust it, yet.","{'turns': [{'u1': ""I'm just really strapped for time today. I don't know how I'm going to get to my girlfriend's work to pick her up on time without your car."", 'u2': ""I'm not really sure, Steve. I said no, remember?""}, {'u1': ""You're killing me, u2. My car's in the shop. Can't I just borrow yours for a few hours?"", 'u2': ""No, I'm still learning how to drive this car. I don't want to risk anything happening to it.""}, {'u1': ""Don't you trust me?"", 'u2': ""I'm really sorry. I'm not comfortable lending out my new car. I'm still learning it's quirks and don't trust it, yet.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2350,7 +2393,12 @@ u2: That's really interesting.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Rationale:**
+Contextually, Steve's repetitive and somewhat repetitive cultural commentary about how ""in Japan, people do it this way"" suggests a **sarcastic or exaggerated tone** over time. His consistent habit of inserting this phrase, even when it feels overplayed or redundant, implies u2 might perceive it as ironic.
+
+Given u2's polite but flat response (""*That's really interesting*""), it could easily be intended as **ironic**—acknowledging Steve’s claim but subtly signaling weariness or disbelief due to the frequent repetition. The response is plausible as a natural ironic reply under the circumstances.</s>",,1,0,[]
 168,101_1046,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,Steve. What happened with the French and Gym? It's not good for you to be watching tv all day? As for the popcorn - that's just for when I call over to watch movies!,"{'turns': [{'u1': 'You know, u2, I was thinking about this, and maybe I should just take it slow, get the feel for French, you know, not rush it.', 'u2': ""Dude, come on. You've got 3 weeks already. What's the holdup?""}, {'u1': ""I know, I know, but it's just not as easy as it looks, you know? I've been trying, but I'm still on the basics - Je suis, tu es... I don't know, it's just not clicking."", 'u2': ""That's not a reason to give up, man! You've got this! Besides, I think I'll come over tonight and we'll have a movie night. I'll bring some snacks - but not too much. You're still on that diet thing, right?""}, {'u1': ""I guess I just lost my motivation, u2. It's just really hard to get to the gym when I know I can just relax at home and watch TV."", 'u2': ""Steve. What happened with the French and Gym? It's not good for you to be watching tv all day? As for the popcorn - that's just for when I call over to watch movies!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2378,7 +2426,8 @@ u2: how could you not notice you sound like a flipping cow.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The ironic reply by u2—mockingly exaggerating the noise while playfully mocking Steve's over-the-top reaction—aligns well with the context of teasing a small faux-pas, especially when Steve's ""Jeez, sorry"" suggests a self-deprecating or defensive tone, leaving room for playful irony.)*</s>",,1,0,[]
 170,212_2126,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"Like you've got room to talk. You never flush the toilet. It's sick, ain't it?","{'turns': [{'u1': ""I'm saying, come on, it's just basic manners. You'd think people would pick up after their dog."", 'u2': ""Oh, come on, don't be such a neat freak!""}, {'u1': ""I mean, I've seen some gross stuff on the sidewalks before, but this takes the cake."", 'u2': ""Whatever, dude. You're not exactly the poster child for cleanliness yourself.""}, {'u1': ""Dude, have you seen the state of the toilet at my place? I'm starting to think it's a petri dish!"", 'u2': ""Like you've got room to talk. You never flush the toilet. It's sick, ain't it?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2434,7 +2483,8 @@ u2: what about you losing 120 dollars because you didn't send that product back 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2's reply is a plausible and natural ironic response, as it subtly calls out Steve's hypocrisy by referencing his own costly mistake in a sarcastic manner.)*</s>",,1,0,[]
 174,253_2099,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,Must be aliens,"{'turns': [{'u1': ""I'm telling you, this video is proof. Look at the craft and the beings. It's clear we're not alone in the universe."", 'u2': ""It's an interesting video, but we can't jump to conclusions.""}, {'u1': ""Now you're a skeptic. But what if I told you that this is just one of many eyewitness accounts from around the world? We're talking about a global phenomenon here."", 'u2': ""I'm just saying we should look at the evidence before jumping to conclusions.""}, {'u1': ""Humans can't do that. The technology is just too advanced. It must be an alien."", 'u2': 'Must be aliens'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2504,7 +2554,10 @@ u2: shut your face!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Reasoning:**
+In this context, u2's reply (""shut your face!"") is not just a literal command but also carries an **ironic, frustrated, or even sarcastic** undertone. Given that u1 is losing badly to Steve and their exchange is playful teasing, u2's response is a natural reaction—expressing exasperation while still engaging in a banter-like dynamic. The phrase is commonly used ironically in such situations to convey frustration rather than a literal demand. Thus, the response is **afforded**.</s>",,1,0,[]
 179,254_2125,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,"Not again, give it up!","{'turns': [{'u1': ""I just found this traditional Bulgarian song and I think you'll love it. The rhythm is infectious!"", 'u2': ""Not a chance, you're always doing this!""}, {'u1': ""This one's got a nice harmony to it. You can't deny the Bulgarian folk magic!"", 'u2': ""Oh please, we're not in a Bulgarian restaurant, Steve!""}, {'u1': 'This traditional Bulgarian music will really speak to you, trust me!', 'u2': 'Not again, give it up!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2546,7 +2599,9 @@ u2: it reminds me of you</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>
+1
+</ANSWER></s>",,1,0,[]
 182,203_2069,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,That is a unicorn in your little universe!  He's more likely to try to eat that than let you ride him.,"{'turns': [{'u1': ""Great idea! I'll just draw a carrot on his forehead and he'll be magical!"", 'u2': ""Wait, what? No, that's not a carrot. That's an apple. And it's not just any apple, it's a shiny red one!""}, {'u1': ""Ah, but that's what makes it special! The shiny red apple on his forehead is what gives him his magic."", 'u2': ""I still don't think that's what unicorns are supposed to have. Maybe we can add some sparkles or a rainbow mane to make him more believable?""}, {'u1': ""He's got a carrot on his forehead, not an apple, by the way!"", 'u2': ""That is a unicorn in your little universe! He's more likely to try to eat that than let you ride him.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2574,7 +2629,8 @@ u2: close enough to be fair, better than anything I can draw</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","1
+</ANSWER></s>",,1,0,[]
 184,264_2026,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,Sure and I'll buy you some more,"{'turns': [{'u1': ""Oh man, these glasses were really good to me. I mean, I know I shouldn't have worn them when I knew we were moving stuff around, but they were worth it."", 'u2': ""Hey, accidents happen! That's why we have insurance, right?""}, {'u1': ""Yeah, but it's not just about the monetary value. Those glasses held sentimental value. My grandma used to wear a pair that looked just like them."", 'u2': ""Aww, that's really sweet. Maybe we can find a way to fix or even get you a similar pair.""}, {'u1': 'I just broke them when you dropped that heavy box.', 'u2': ""Sure and I'll buy you some more""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2714,7 +2770,17 @@ u2: you're so silly</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+### Explanation:
+The context describes an absurdly playful and creative statement by u1 (""look at me! I'm Mr.Shoehand!""), where the situation is inherently humorous due to the nonsensical imagery. The reply ""You're so silly"" is a straightforward, literal response to the act of joking or being silly—not ironic. Irony would imply a contrast between what is said and what is meant, often highlighting sarcasm, irony, or deep implications. Here, the reply aligns with the actual meaning of u1's statement (""you are silly""), so no ironic intent is present. Instead, it's simply a direct acknowledgment.
+
+If u2 had replied ironically, they may have said something like:
+- ""Wow, Steve, you're so *original*. I've never seen such a creative way to 'elevate' your footwear."" (sarcasm)
+or
+- ""Yes, I'm sure this is the most common fashion statement in history."" (exaggeration for irony)
+
+Thus, **0 (not afforded)** is correct.</s>",,0,0,[]
 194,237_2066,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,"Hey Steve, do me a favour and let me handle the snacks!","{'turns': [{'u1': ""Hey guys, look what I made! A little experiment in culinary art, combining ketchup, mustard, and potato chips with a splash of OJ. Isn't it amazing? It tastes like... well, like nothing I've ever tasted before!"", 'u2': ""That's... quite a creation, Steve. I think you might need to rethink this whole experiment.""}, {'u1': ""Okay, okay, I get it. It's a bit... unorthodox. But just try it! It's got to be good for something. It's like a flavor bomb just waiting to blow your taste buds away!"", 'u2': ""Steve, seriously, let's not poison ourselves. We have enough good food without that abomination on the table.""}, {'u1': 'And I added some more of that amazing orange juice, just to give it a bit more zing!', 'u2': 'Hey Steve, do me a favour and let me handle the snacks!'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2756,7 +2822,17 @@ u2: Not at all!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+### Reasoning:
+The situation describes Steve asking, *""Mind if some of my friends join?""* (an indirect inquiry about permission). The observed reply from u2 is, *""Not at all!""*—a literal, friendly, and warm welcome. This response aligns straightforwardly with the context: it is sincerely open and cooperative.
+
+Irony in this case would require a mismatch between the literal meaning and the implied meaning. For example, ironic responses might include:
+- *""Oh no, not at all!""* (with sarcastic emphasis),
+- *""I’d love to have them!""* (while visibly uninterested), or
+- *""Not at all!""* uttered with exaggerated sarcasm (e.g., with a tone implying disinterest).
+
+However, the given reply *""Not at all!""* in the context of a sincere invitation is not ironic. It lacks the necessary linguistic or tonal cues to suggest irony (such as sarcastic intonation, double meanings, or exaggerated phrasing). Thus, irony is not afforded here.</s>",,0,0,[]
 197,265_2112,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,"Please don't forget to get it back to me though, I need the important documents on there.","{'turns': [{'u1': ""I'd really appreciate it if you could lend me that USB stick, I need it for a meeting this afternoon."", 'u2': ""What's the meeting about?""}, {'u1': ""It's about a new project I've been working on, I need to present some data and documents from that stick."", 'u2': ""Okay, just make sure you don't lose it, it's got some important files on there that I need.""}, {'u1': ""Don't worry, I'll take good care of it."", 'u2': ""Please don't forget to get it back to me though, I need the important documents on there.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2812,7 +2888,8 @@ u2: Does this come with instructions?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+(Yes, u2's response, ""Does this come with instructions?"" would be a plausible **ironic** reply in this context. The sarcastic undertone suggests they're playfully mocking the absurdity of receiving a watering can with no plants to water, thereby highlighting the mismatch between the gift and their lack of gardening interests.)</s>",,1,0,[]
 201,103_1003,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,You should ask someone who is familiar with social media to assist you,"{'turns': [{'u1': ""I'm so frustrated! I don't get why I'm not able to post anything. It's like my phone is working against me!"", 'u2': 'Hey, calm down. Maybe you should try restarting your phone.'}, {'u1': ""I did that already, and it still doesn't work! Do you think I'm just really clueless when it comes to technology?"", 'u2': ""Steve, come on. You're not clueless. You're just a little... outdated when it comes to some of these new things.""}, {'u1': 'Ugh, I hate being this helpless! Maybe I should just ask someone for help.', 'u2': 'You should ask someone who is familiar with social media to assist you'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2938,7 +3015,10 @@ u2: How interesting. I've not been to Japan tell me more</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+**Reasoning:**
+In this context, u2's reply (""How interesting. I've not been toJapan tell me more"") is sincere and literally matches the observed reply. There is no evidence of irony, sarcasm, or underlying critique. u2 is genuinely expressing curiosity about Steve's experiences and inviting more details. The situation does not afford irony because u2's response aligns with a natural, straightforward reaction to Steve's informative sharing of his cultural insights.</s>",,0,0,[]
 210,101_1038,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,Hey man what happened to your new year's resolution? I thought you were going to keep studying french and going to the gym every day?,"{'turns': [{'u1': ""I've been meaning to start, I've just been really busy with work and haven't had a chance to sit down and study yet. I know it's a lame excuse, but I promise I'll get back to it soon."", 'u2': ""Dude, come on! You've been saying that for weeks now and nothing's changed. You're still binge-watching sports on the couch and eating popcorn.""}, {'u1': ""I don't know, man... I just get so tired after work and all I want to do is chill out on the couch. I know it's not the best, but it's just been really hard to motivate myself lately."", 'u2': ""That's not an excuse, Steve! You're always talking about how you want to get in shape and learn a new language. If you want to do it, you have to make time for it. Why don't we set up a schedule together and make it more fun?""}, {'u1': ""I'm actually really bored with the couch right now, I was thinking maybe I'd try to watch some movies in French"", 'u2': ""Hey man what happened to your new year's resolution? I thought you were going to keep studying french and going to the gym every day?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2952,7 +3032,8 @@ u2: Hey man what happened to your new year's resolution? I thought you were goin
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(While u2's reply itself is not explicitly ironic, the situation—where Steve has abandoned his resolutions in favor of couch activities—creates a natural inference for u2's underlying sarcasm or irony. A more overtly ironic response (e.g., ""Wow, you’re crushing it!"") would have been even more plausible here, but the observed reply still carries the potential for irony due to the contrast between Steve’s stated intentions and his actual behavior.)*</s>",,1,0,[]
 211,240_2059,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Are you OK?,"{'turns': [{'u1': ""*I know what's going on, buddy! You're just trying to mess with my fries and burger setup. Don't do that. I like my fries and burger separate, it's just how I like it!"", 'u2': 'Are you always this particular about your food?'}, {'u1': ""Seriously, just leave my fries and burger alone. It's not that complicated!"", 'u2': 'I think you might be overreacting.'}, {'u1': 'Stop pushing the fries away!', 'u2': 'Are you OK?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -2994,7 +3075,7 @@ u2: What happened to your new year's resolution?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 214,216_2114,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,"I laugh & say that Steve your French isn’t any good either maybe you should work on that too, as a joke obviously","{'turns': [{'u1': 'Who do you think is worse at French? You or him?', 'u2': ""That's a valid question isn't it?""}, {'u1': 'Yeah right, I mean have you heard me try to order a baguette? It sounds like gibberish!', 'u2': 'Gibberish isn’t it though, I mean that sounds impressive actually.'}, {'u1': ""that person should work on their English, don't you think?"", 'u2': 'I laugh & say that Steve your French isn’t any good either maybe you should work on that too, as a joke obviously'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3050,7 +3131,9 @@ u2: you could do a lot worse, she is a keeper!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","```
+<ANSWER>1</ANSWER>
+```</s>",,1,0,[]
 218,115_1013,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,The two of you are actually quite similar,"{'turns': [{'u1': ""I swear, my brother's friend is like the worst. Always asking for money and never paying it back."", 'u2': ""I can see why you'd think that, but maybe you're just judging him from a different perspective.""}, {'u1': ""How can someone be that selfish and expect everyone else to cover for them? It's ridiculous."", 'u2': ""You're being pretty hard on your brother's friend. What's really going on here?""}, {'u1': ""Why is my brother even friends with that guy? I don't get it."", 'u2': 'The two of you are actually quite similar'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3092,7 +3175,7 @@ u2: I don't know much about dogs and I don't know if I'll be around enough.  Is 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 221,219_2028,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"That's interesting, I'd love to go to Japan","{'turns': [{'u1': ""That's what I'm saying, though. I mean, the sushi at those restaurants we went to last night, I bet they're doing it wrong too."", 'u2': ""Come on, they can't be that bad""}, {'u1': ""I mean, when I was in Japan, they cut the fish right before serving, you know? And they have all these different vinegar flavors to choose from. I don't think we're getting that here."", 'u2': ""That's really cool, I had no idea""}, {'u1': 'You know, in Japan, people eat ramen with chopsticks, not forks.', 'u2': ""That's interesting, I'd love to go to Japan""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3106,7 +3189,9 @@ u2: That's interesting, I'd love to go to Japan</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>
+0
+</ANSWER></s>",,0,0,[]
 222,205_2002,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,I'm definitely not eating it but you should,"{'turns': [{'u1': ""Oh, you gotta try this new mix of ketchup and mustard. It's a game changer!"", 'u2': ""You've been eating too much at the party already, Steve.""}, {'u1': ""But I'm adding the magic of potato chips to this recipe... and orange juice!"", 'u2': ""Steve, you're drunk, right?""}, {'u1': ""Come on, try a sip! It's my famous Steve Sauce!"", 'u2': ""I'm definitely not eating it but you should""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3134,7 +3219,11 @@ u2: Steve, you're already cool. Why do you feel the need to impress people you d
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(Yes, the ironic reply is afforded.)*
+
+**Reasoning:**
+The observed reply by u2 (*""Steve, you're already cool. Why...""*) is ironically contradicting the premise that Steve *needs* to ""prove"" he's cool by posting a pic. Given his failure (implying insecurity or vanity), u2’s words carry a sarcastic undertone mocking his motives—a natural response when the context suggests hypocrisy or self-consciousness. The irony works because Steve’s behavior (despite already being ""cool"") aligns with the audience’s assumption of his insecurity.</s>",,1,0,[]
 224,216_2034,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,"But Steve, I thought you were a French language extroadinaire.","{'turns': [{'u1': 'I know you think you can impress the locals, but honestly, speaking French is more like torturing them.', 'u2': ""Oh, come on Steve, that's not fair. You're being way too hard on yourself.""}, {'u1': ""No way, I'm just stating the facts. I've been speaking French to every French person we meet, and they all look like they're about to scream."", 'u2': ""That's because they're trying to understand you, Steve. And sometimes, even though they're speaking the same language, people just don't connect.""}, {'u1': ""This guy doesn't even speak English that well, he should really work on that."", 'u2': 'But Steve, I thought you were a French language extroadinaire.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3316,7 +3405,7 @@ u2: That means I'll be paying, so no!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 237,272_2007,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,It's nice seeing everyone happy!,"{'turns': [{'u1': 'How do you like the team so far?', 'u2': 'They seem like a nice bunch'}, {'u1': 'Your friends always know how to make me laugh!', 'u2': ""I'm just glad you're enjoying yourself!""}, {'u1': ""You're doing great at introducing me to everyone."", 'u2': ""It's nice seeing everyone happy!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3330,7 +3419,12 @@ u2: It's nice seeing everyone happy!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Explanation:**
+The context suggests that u2's actual reply (""It's nice seeing everyone happy!"") contrasts with the implied tone of Steve's statement (""I'm having fun. What about *you*?""). Steve's question is lighthearted and invites others to join in the enjoyment, while u2's reply could subtly imply satisfaction with others' happiness without engaging directly with Steve's playful tone. This creates a slight ironic undercurrent: u2's praise of everyone's happiness could be seen as a polite way to deflect or distance themselves from participating fully in the fun—perhaps playing along with the irony of being the only one not actively joining the conviviality, even if unintentionally.
+
+Thus, an ironic response by u2 is **plausible** as a natural follow-up in this situation.</s>",,1,0,[]
 238,126_1011,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,"ok, see you later","{'turns': [{'u1': 'Hey, do you know what time the party usually starts at the wine bar? I was thinking of grabbing a snack beforehand.', 'u2': ""it's at 6, same as every year""}, {'u1': ""Yeah, that makes sense. So, do you think we'll be leaving around the same time when it gets late?"", 'u2': 'yeah, we usually stick together, i guess'}, {'u1': 'Awesome, I might join later if you are still there then.', 'u2': 'ok, see you later'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3344,7 +3438,7 @@ u2: ok, see you later</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 239,209_2016,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,You do that aswell!,"{'turns': [{'u1': ""Seriously, you guys have been friends for like, what, 3 years now and I've seen him do this same pattern over and over again - borrow money and never pay it back. It's getting old, man. I just don't get why he can't just be responsible with his own money."", 'u2': ""He's not the only one who does that, is he?""}, {'u1': ""That's not even the worst of it, though. He's also always canceling plans at the last minute, and then expecting us to still hang out with him like nothing happened. It's like, dude, respect people's time!"", 'u2': 'And he always tells the best stories!'}, {'u1': ""I don't get it"", 'u2': 'You do that aswell!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3372,7 +3466,8 @@ u2: Cool outfit!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The reply ""Cool outfit!"" could plausibly be ironic here, given the clashing, primary colors and lack of intentional style—it might convey sarcasm or amusement at the mismatched or gaudy look.)*</s>",,1,0,[]
 241,248_2002,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,That's not very fair when your french is a bit terrible,"{'turns': [{'u1': ""Oh, come on, I'm not that bad!"", 'u2': 'Really? The other day you introduced yourself to Madame Dupont as ""Bonjour, je suis Steve, and I am here to eat a cheeseburger.""'}, {'u1': 'Well, she laughed and said something back, so I guess that means I did okay, right?', 'u2': ""I'm not so sure. I think she was being polite. You barely understood each other.""}, {'u1': ""But I'm sure I did all right. I'm making good progress!"", 'u2': ""That's not very fair when your french is a bit terrible""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3400,7 +3495,8 @@ u2: Um thanks?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(An ironic response by u2—e.g., ""Oh wow, you read my mind! I was *just* planning to start a cactus collection!""—would be plausible and natural given Steve's bizarre gift in contrast to u2's lack of plants and the awkward smile. u2's ""Um thanks?"" itself subtly hints at irony.)*</s>",,1,0,[]
 243,243_2109,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,"Mmhmm, well it's good to be proactive isn't it?","{'turns': [{'u1': ""I'm starting to get a bit worried that I'll have to spend another sleepless night working on this proposal. The others in the team just don't seem to be pulling their weight. I've sent out reminders and emails, but nothing seems to be getting done."", 'u2': ""Yeah, we all know you're a go-getter, but maybe it's worth trying to break it down into smaller tasks and making a schedule for each of you.""}, {'u1': ""But that's the problem, we need to have a cohesive strategy, and it's hard to do that when nobody else seems to be taking the initiative. It's all just a big mess."", 'u2': ""Have you talked to them about how you're feeling? Maybe there's a misunderstanding or something that's causing the delays?""}, {'u1': ""I swear, I'm the only one trying to get this done around here!"", 'u2': ""Mmhmm, well it's good to be proactive isn't it?""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3442,7 +3538,8 @@ u2: I'll pay, but the next one is on you.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The response is ironic because Steve's comment ""it happened like one time!"" belies a much larger history of unpaid favors, making his insistence that ""I'll pay"" (without actually resolving past debts) a sarcastic, self-contradictory remark. The ""next one is on you"" implies an unresolved dynamic.)*</s>",,1,0,[]
 246,226_2128,fictionary,1,en,"Steve asks you to get him some coffee from a coffee shop nearby. But he doesn't seem to be particularly busy right now. When you say ""why can't you get it yourself?"", he simply says, ""oh, no reason. I just wanted you to do it for me.""",,alright lets go together then,"{'turns': [{'u1': ""you're making me sound like a total slacker now"", 'u2': 'haha yeah I guess you kinda are'}, {'u1': ""oh come on, don't make me feel bad about it"", 'u2': ""I'm just trying to figure out why you need me to get coffee for you""}, {'u1': 'no reason, I just wanted you to do it for me', 'u2': 'alright lets go together then'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3456,7 +3553,13 @@ u2: alright lets go together then</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+In this context, u2's observed reply (""oh, no reason. I just *wanted you to do it for me*"") is sarcastic/ironic (playfully implying helplessness or laziness despite being able to do the task). Their follow-up, ""alright, let's go together then,"" *could* be an ironic response as well—read as a backhanded way of saying:
+*""Fine, if that’s the way it’s going to be, but I’ll tag along while you handle it your way,""*
+or even a subtle, playful rejection of Steve’s demand (""If you insist on controlling the situation, I’ll just go along for the ride"").
+
+The reply maintains a light, conversational tone but carries an undercurrent of irony given the earlier sarcasm. It’s plausible and natural in this context.</s>",,1,0,[]
 247,219_2058,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"wow, I did not know that, you loved being in Japan didn't you?  Do you have any plans to go back?  Is there any way to get a secondment to the Japan office?  I think you really thrived over there. Maybe you should think about it while you are still young.","{'turns': [{'u1': 'by the way, when i was in japan, i used to love walking around the street food stalls in shibuya.', 'u2': 'oh yeah? what kind of food stalls were your favorite?'}, {'u1': 'you know, in japan, they serve yakitori in skewers. you should try making them sometime!', 'u2': ""ha! i think i'll leave that to the pros, but can you teach me about the different flavors of sake?""}, {'u1': ""the ramen shops in fukuoka were amazing - they'd spend hours perfecting the broth."", 'u2': ""wow, I did not know that, you loved being in Japan didn't you? Do you have any plans to go back? Is there any way to get a secondment to the Japan office? I think you really thrived over there. Maybe you should think about it while you are still young.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3484,7 +3587,7 @@ u2: My coffee is something I like to treat myself with, 40 dollars isn't really 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 249,231_2037,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,I have a list.,"{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""How can I trust you to pay back when you can't even remember how many times you owe me?""}, {'u1': ""This is ridiculous! I've only borrowed money from you once!"", 'u2': ""You've borrowed money from me 5 times and still you can't even keep track!""}, {'u1': ""That's not true! It happened once, I swear!"", 'u2': 'I have a list.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3694,7 +3797,7 @@ u2: of course! Do you have all of the dogs things and everything I will need to 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 264,272_2046,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,Yeah. It's good that you get along with everyone.,"{'turns': [{'u1': ""I'm really glad I got to meet your colleagues, they all seem like great people."", 'u2': 'They seem to be really into your humor.'}, {'u1': ""And I have to say, you've been an amazing host today."", 'u2': ""I'm just glad I could show you around.""}, {'u1': ""I'm having fun. What about you?"", 'u2': ""Yeah. It's good that you get along with everyone.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3708,7 +3811,7 @@ u2: Yeah. It's good that you get along with everyone.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 265,265_2099,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,all good,"{'turns': [{'u1': 'Hey, I need that USB stick for a project. Can I have it?', 'u2': ""It's yours, dude.""}, {'u1': 'Thanks, I owe you one.', 'u2': 'No problem, but hurry back, I need it back tomorrow.'}, {'u1': ""Don't worry, I'll return it before then."", 'u2': 'all good'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3722,7 +3825,7 @@ u2: all good</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 266,235_2005,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Yeah cool!,"{'turns': [{'u1': ""I've got the inspiration now, and I'm going to draw a beautiful unicorn!"", 'u2': ""Ha! You'll probably end up drawing a cow instead, again.""}, {'u1': ""Ha! No, I mean it this time. I've seen some reference images online and it's all about the mane."", 'u2': ""Don't forget the sparkly stuff, Steve.""}, {'u1': ""now that's a unicorn!"", 'u2': 'Yeah cool!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3736,7 +3839,8 @@ u2: Yeah cool!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(U2's ""Yeah cool!"" can plausibly be ironic here—given the absurdity of Steve's self-declaration, the reply could be sarcastically dismissive of the joke or humorous exaggeration.)*</s>",,1,0,[]
 267,118_1015,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,Looking smart brother,"{'turns': [{'u1': 'I just got a new pair of shoes. Really love how they fit with my outfit today.', 'u2': 'New shoes?'}, {'u1': 'Yeah, I decided to splurge a bit after finishing that big project at work. Needed a treat.', 'u2': 'Worth it?'}, {'u1': 'I just finished that huge presentation and I felt like I deserved a celebration.', 'u2': 'Looking smart brother'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3750,7 +3854,7 @@ u2: Looking smart brother</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 268,244_2003,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"Maybe they just forgot, like you forget to flush the toilet.","{'turns': [{'u1': ""You know, we should call the owner to remind them to clean up their pet's poop."", 'u2': ""I get that, but I just find it frustrating when people don't take care of their pets.""}, {'u1': ""Well, at least they're not leaving their dog's poop in my yard. That would be really inconsiderate."", 'u2': ""But it's still not nice that they're leaving it on the sidewalk for others to step in.""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'Maybe they just forgot, like you forget to flush the toilet.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3792,7 +3896,7 @@ u2: You need to appreciate your girlfriend because everyone is different, you ar
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 271,240_2094,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,"Nothing, some people are funny about that","{'turns': [{'u1': ""You're not going to start lecturing me about it too, are you?"", 'u2': ""I'm just curious why you're being so finicky.""}, {'u1': ""Look, I just don't like them to be touching. It's annoying."", 'u2': ""Some people might find it weird, but I think it's just a quirk.""}, {'u1': ""This is ridiculous. There's a French fry right on the burger."", 'u2': 'Nothing, some people are funny about that'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3820,7 +3924,8 @@ u2: Shocked to hear that coming from you</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+**Explanation**: In this context, u2's reply is ironically plausible because Steve's complaint about being the ""only one trying to get the stuff moving"" is undercut by his own notorious procrastination behavior (as noted in the opening description). The sarcastic phrasing—*""Shocked to hear that coming from you""*—highlights the inconsistency, making it a natural ironic reply to his hypocrisy.</s>",,1,0,[]
 273,201_2038,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,I love it!,"{'turns': [{'u1': ""You look so casual, so relaxed. You're rocking that tank top and those green shorts. I love the way you wear your colors!"", 'u2': ""Thanks man! You're always so stylish, Steve. I'm a bit jealous, though.""}, {'u1': ""What's your secret? How do you always manage to put together such cool outfits?"", 'u2': ""Ha! I have no secret. I just like to pick colors I like and go for it. It's all about having fun with fashion, right?""}, {'u1': ""I was worried I'd show up looking like a total slob tonight, but I think I pulled it off!"", 'u2': 'I love it!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3834,7 +3939,8 @@ u2: I love it!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+(Steve's outfit is a visually striking but random and mismatched combination, but it's not inherently ironic or sarcastic. U2's reply ""I love it!"" could be sincere or even a polite response to show enjoyment, but it lacks the contrast or unexpectedness required for irony. Without additional context suggesting u2's actual sentiment (e.g., Steve's outfit being unusual or u2's usual preferences), irony is not afforded.)</s>",,0,0,[]
 274,116_1035,fictionary,0,en,"Steve has been going out non-stop for the past two months because he needs a distraction from his recent breakup.  You are worried that he might be becoming a bit too destructive.  Steve says, ""ugh, worst hangover yet. I feel like crap.""",,stop it steve and move on....,"{'turns': [{'u1': ""you know, I'm starting to feel like I'm losing myself in all this partying. It's not as fun as it used to be. I'm tired of waking up in random hotel rooms with no memory of the night before. I'm scared I'm gonna get arrested for something stupid."", 'u2': ""Steve, we've talked about this. You're using this as an excuse to avoid dealing with your feelings about Rachel. You can't keep running from your problems.""}, {'u1': ""Whatever, u2. You don't understand. I'm fine. I just need to take my mind off things. And besides, it's not like I'm hurting anyone. I'm just having a good time."", 'u2': ""That's exactly what I'm worried about - you are hurting yourself. And it's not just about Rachel. It's about taking responsibility for your actions and getting your life back on track.""}, {'u1': 'ugh, worst hangover yet. I feel like crap.', 'u2': 'stop it steve and move on....'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3862,7 +3968,8 @@ u2: English is actually a really complex language to learn.  You should know how
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The sarcastic remark by u2 (""English is actually a really complex language to *learn*"") is a plausible and natural ironic response to Steve’s hypocritical comment. It highlights the absurdity of Steve criticizing someone else’s language skills after his own obvious struggles.)*</s>",,1,0,[]
 276,225_2070,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,yes of course but first you need to return charger and toaster,"{'turns': [{'u1': ""Hey dude, do you remember that charger I borrowed from you like, two months ago? I promise I'll return it this week."", 'u2': ""Seriously? You've had it for two months already! Yeah, I'm still waiting for that. Charger first, then we can discuss borrowing anything else.""}, {'u1': ""Ah, man, I totally forgot I still had your toaster. I mean, I'm good, I don't really need it, but... what can I say? It's here and it's in perfect working condition, right?"", 'u2': ""Not perfect working condition for you, Steve! You borrowed it, used it, and now it's just collecting dust here. Don't play dumb. Return the toaster too, or don't borrow anything else.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'yes of course but first you need to return charger and toaster'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -3932,7 +4039,8 @@ u2: Obsessed much?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(An ironic response like ""Obsessed much?"" could plausibly follow the described situation, as it sarcastically acknowledges Steve’s obsessive behavior while highlighting the absurdity of his habit—implying exaggerated criticism or amusement.)*</s>",,1,0,[]
 281,208_2097,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,"hahahaha Steve, are you fighting with this fry or is the french fry fighting with you.... you are such a funny dude","{'turns': [{'u1': ""I'm just trying to eat my burger and fries in harmony, u2. I swear they're plotting against me."", 'u2': ""haha what's going on, Steve?""}, {'u1': ""I don't know, man! It's like they have a magnetic attraction to each other or something. Every time one tries to sneak up on the other, I have to intervene!"", 'u2': ""Dude, you're such a weirdo Steve""}, {'u1': ""This French fry is seriously invading my burger's personal space, u2! Help me out here!"", 'u2': 'hahahaha Steve, are you fighting with this fry or is the french fry fighting with you.... you are such a funny dude'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4002,7 +4110,9 @@ u2: at least it is not in my bathroom.  I hate it when people dont flush, and wh
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>
+0
+</ANSWER></s>",,0,0,[]
 286,107_1008,fictionary,1,en,Steve gives you a watering can on your birthday while smiling at you with a strange expression. But you don't even have a single plant.,,"thanks, pal","{'turns': [{'u1': 'Hey, bro, I saw this watering can and thought of you on your birthday. What do you say?', 'u2': ""I don't even have a plant, man. I think you might've gotten the wrong guy.""}, {'u1': ""Haha, yeah, I guess I did. But I figured it's always better to have a watering can than not. Besides, you never know when you'll want one."", 'u2': ""Yeah, I guess that's a good point. But I still don't see the point of owning one. It's just gonna gather dust.""}, {'u1': ""Oh, come on, it's a gift! Don't make me feel bad for trying to give you something nice."", 'u2': 'thanks, pal'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4044,7 +4154,9 @@ u2: Im going to the toilet, why dont you get them in while im out.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+Though the context involves repeated requests for Steve to ""get another one for me too,"" u2's ironic response (""*I'm going to the toilet, why don't you get them in while I'm out?*"") carries a natural undercurrent of sarcasm or passive-aggression. Given the context of Steve's consistent requests combined with the shared drunken setting, it's plausible to interpret u2's reply as an exaggerated, ironic jab—likely highlighting the absurdity of Steve's recurring demand while subtly reinforcing the dynamic. This makes the response **afforded** (1).</s>",,1,0,[]
 289,125_1059,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"Yeah, we're friends, not lovers.","{'turns': [{'u1': ""hey man, how's the crush going? any progress yet?"", 'u2': 'Nothing yet, still just being buddies.'}, {'u1': ""Buddies huh? that doesn't sound like the breakthrough I was hoping for."", 'u2': ""Yeah, I feel like I'm stuck in neutral, man.""}, {'u1': 'Well, did my advice work or what? Any progress so far?', 'u2': ""Yeah, we're friends, not lovers.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4156,7 +4268,7 @@ u2: There are about a hundred things within the realm of possibility that it cou
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 297,206_2121,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,I think we should leave the social media posts for the kids to do. We are well past the young and cool stage man.,"{'turns': [{'u1': 'Steve I am literally having the worst day ever. First I spilled coffee all over my shirt, then I got into a car accident on the way to work, and now I just saw the most annoying selfie of my coworker and I am DYING to get back at her for that stupid social media post from last week.', 'u2': ""Well, well, well, look who's having a bad day. Maybe you should take a deep breath and let go of all that anger. And by the way, I'm not sure why you're getting worked up over some coworker's selfie.""}, {'u1': ""Come on man, don't be like that! I'm just saying that social media is the key to being young and cool. All the influencers and celebrities have tons of followers, and they're all just a bunch of 20-year-olds posting selfies and funny memes. It's like they have some sort of magic formula for staying young and hip."", 'u2': ""Yeah, yeah, I've seen the 'influencers' too, and honestly, I think they're just a bunch of people who are desperate for attention. I mean, who posts 12 selfies a day just to get likes and followers? And what's the point of it all, anyway?""}, {'u1': 'Wait, I just realized, I want to post something on social media to show everyone how cool I am! Do you think I should just make a funny meme and post it, or should I try to take a selfie with a funny caption?', 'u2': 'I think we should leave the social media posts for the kids to do. We are well past the young and cool stage man.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4170,7 +4282,7 @@ u2: I think we should leave the social media posts for the kids to do. We are we
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 298,243_2104,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,I'm sure you'll get in finished on time Steve.,"{'turns': [{'u1': ""I have to admit, I'm getting a bit stressed out about this project. We're running out of time, and I'm the one doing all the legwork. Can you remind me when the deadline is?"", 'u2': ""Don't worry, we'll all chip in and get it done on time.""}, {'u1': ""I swear, nobody in this team is taking this seriously. It's like they think it's going to magically happen on its own. We need to push this project forward ASAP!"", 'u2': ""I think you're being a bit too hard on them, Steve. Let's not forget that we're all trying to do our best here.""}, {'u1': ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!"", 'u2': ""I'm sure you'll get in finished on time Steve.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4198,7 +4310,9 @@ u2: I can't lend you my car I have an appointment out of town I need to get to.<
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+**Explanation:** The context describes a clear, plausible irony or double standard by u2 (in this case, u1) when refusing to lend his car to Steve, given that Steve is also facing a legitimate need (picking up his girlfriend). However, the observed reply (""I can't lend you my car, I have an appointment out of town"") does **not** exhibit irony—it simply provides a straightforward, non-subversive excuse for declining the request. The reply lacks the tone or intent to imply contradiction or sarcasm, so irony is not afforded in this scenario.</s>",,0,0,[]
 300,271_2034,fictionary,0,en,"You are going to a party later today. You ask if Steve wants to join. He says, ""I'm interested. When does the party start?""",,When we get there! 7.30,"{'turns': [{'u1': ""really looking forward to this party tonight. You've been talking about it for weeks. What's the venue like?"", 'u2': ""You know what? I'll send you the address. It's a private house.""}, {'u1': ""That's great, I really appreciate it! Can you also tell me if it's a costume party or not?"", 'u2': ""Nah, it's not a costume party. But you should wear something nice, you're my plus one after all!""}, {'u1': ""Awesome, thanks for the details! So, what's the plan for getting there?"", 'u2': 'When we get there! 7.30'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4296,7 +4410,9 @@ u2: Get up off your arse mate - you look like shit and smell like shit. How are 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+(While u2's reply is sarcastic and critical, it is not *ironic*—irony typically involves a contrast between stated and implied meaning where the opposite is intended (e.g., ""Oh, fantastic, another traffic jam!"" after a near miss). Here, the statement is bluntly literal with no layered subtext or exaggerated contrast. Thus, irony is not afforded.)</s>",,0,0,[]
 307,221_2004,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,Could be some other mythical creature,"{'turns': [{'u1': ""I'm telling you, Steve, this is it, we finally got some real proof of alien life! The video quality is insane!"", 'u2': 'I highly doubt that.'}, {'u1': ""Come on, the stuff they're doing in that video can't be replicated by humans, it's just too advanced! Don't you see the implications?"", 'u2': 'Not necessarily, it could be some kind of advanced technology from another civilization or something.'}, {'u1': ""look, it must be an alien because humans can't do that. What else could it be?"", 'u2': 'Could be some other mythical creature'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4310,7 +4426,8 @@ u2: Could be some other mythical creature</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The response ""Could be some other mythical creature"" is plausible as an ironic reply, subtly mocking Steve's overconfident assertion (""humans can't do that"") while playfully engaging with the absurdity of his UFO claim. It aligns with the context of u2's disengagement and subtle resistance.)*</s>",,1,0,[]
 308,239_2079,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,Even aye? Are you against odd values?,"{'turns': [{'u1': ""volume's up to 11, can you believe that?"", 'u2': ""And now it's back down to 10, thanks to you, again.""}, {'u1': ""Don't be stubborn about the volume, let's just keep it even!"", 'u2': ""Fine, so we're now at volume 8. Who made this odd-even rule anyway?""}, {'u1': ""Don't make me take control again!"", 'u2': 'Even aye? Are you against odd values?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4338,7 +4455,12 @@ u2: well how much is the discount?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Reasoning:**
+In this context, Steve initially dismisses the nearby cabs in favor of using an app (likely due to perceived convenience or a discount). His reply to the user (""I know it gives you a discount!"") contains an implicit sarcastic or ironic undertone—implying that the user might benefit from the discount while Steve is being denied it. When the user replies by asking ""well how much is the discount?"", Steve's follow-up (""but you have an app for calling..."") was a lighthearted jab, and his question ""how much is the discount?"" could plausibly be seen as ironic understatement. This aligns with his earlier sarcasm: he’s playfully teasing the user's privileges while framing his own question in a way that suggests he’s genuinely curious but knows better. The reply is natural and ironically plausible.
+
+Thus, **1** (ironic reply was afforded).</s>",,1,0,[]
 310,235_2089,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,please get back to work.,"{'turns': [{'u1': ""Okay, I think I finally got the idea down. Now that I've drawn a horse with a carrot on its head, I can definitely picture a unicorn in my mind!"", 'u2': ""You think you're a comic book artist now, Steve.""}, {'u1': ""Yeah, I'm totally drawing inspiration from the classics. I mean, what's more magical than a horse with a carrot?"", 'u2': ""That's not what I paid you for, Steve.""}, {'u1': ""now that's a unicorn!"", 'u2': 'please get back to work.'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4352,7 +4474,11 @@ u2: please get back to work.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+---
+**Explanation:**
+The observed reply by *u2* (""please get back to work"") is plausibly ironic in this context. Steve's self-deprecating joke (""now that's a unicorn!"") about his absurdly creative (or humorous) drawing can be seen as playful laziness or a deliberate evasion of ""real"" work. *u2*’s response could ironically underscore Steve’s avoidance of productivity, framing the joke as a missed opportunity to focus. The humor arises from the contrast between the expectation of serious effort and Steve’s whimsical deflection.</s>",,1,0,[]
 311,265_2055,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,No worries,"{'turns': [{'u1': 'hey, you got any snacks?', 'u2': ""I've got a stash somewhere in my bag.""}, {'u1': 'Can I borrow your USB stick?', 'u2': ""Help yourself, it's in my backpack.""}, {'u1': 'thank you', 'u2': 'No worries'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4478,7 +4604,9 @@ u2: I think she is very similar your ex</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+In this case, u2's reply (""I think she is very similar to your ex"") is ironic in context because it directly acknowledges Steve's ex-girlfriend without affirming warmth or approval (which the speaker's earlier phrasing about admiration for Steve's new partner might suggest). The comment carries a subtle, understated critique or commentary, making it a plausible and natural ironic response to Steve's question.</s>",,1,0,[]
 320,247_2039,fictionary,1,en,"Steve says to you, ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."" At the same time, you notice that Steve is getting his 8th cup of coffee of the day.",,They're probably drinking as much caffeine as you!,"{'turns': [{'u1': ""Have you ever seen what they put in those energy drinks? It's like a toxic cocktail of sugar, caffeine, and God-knows-what-else. I don't know how kids can handle it."", 'u2': ""I'm sure it's not just the energy drinks, but maybe their diet in general. You're not exactly setting a good example with all those cups of coffee you're consuming.""}, {'u1': ""Cups of coffee? I'm a functioning member of society, I'm just making sure I get through the day! Besides, coffee is good for you in moderation."", 'u2': ""Moderation? You're on your 8th cup of the day. I'd say you've crossed into 'overdoing it' territory by now.""}, {'u1': ""So what's your point?"", 'u2': ""They're probably drinking as much caffeine as you!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4534,7 +4662,20 @@ u2: oh jeez steve they look amazing and fit so well with your outfit!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+```markdown
+### Reasoning:
+- **Contextual Analysis**: Steve just finished a big work project and bought expensive shoes, which align with his style today. U2's reply (""oh jeez steve they look amazing..."") is genuinely enthusiastic, praising the shoes and fit without any underlying sarcasm or irony.
+
+- **Ironic Tone Check**: Ironic responses typically involve a contrast between what is said and what is actually meant to mock or highlight an absurdity. For example:
+  - *""Oh, perfect timing. The shoes match your new reputation as the office’s overachiever!""* (ironic)
+  - *""Wow, you *finally* bought shoes that don’t match your mood.""* (ironic)
+  U2’s reply lacks this verbal subtext; it’s a straightforward compliment.
+
+- **Naturality of U2’s Reply**: In this context, U2’s statement is a natural, positive reaction. Irony would be out of place because there’s no reason to imply criticism or sarcasm—Steve’s shoes *are* impressive and well-coordinated.
+
+### Output:
+<ANSWER>0</ANSXER></s>",,0,0,[]
 324,101_1031,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"What happened to the new year's resolutions, dude?","{'turns': [{'u1': ""hey, man, i've been really trying to get into this French thing, but I think i need some extra help. Do you have a spare hour this week to meet up and practice with me?"", 'u2': ""Haha, sure, but are you kidding me with the gym thing? That's been out the window for weeks, dude.""}, {'u1': ""yeah, I know, I just got really tired of the gym, man. It's so repetitive, and I feel like I'm not even getting better. Maybe I'll try something different when i get back from work today"", 'u2': ""Tired of the gym? I think you mean you're tired of trying, Steve. You said three weeks ago that this was your year to shape up.""}, {'u1': ""aw, come on! Don't be so hard on me, dude. I'm trying to get back on track, i swear"", 'u2': ""What happened to the new year's resolutions, dude?""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4618,7 +4759,7 @@ u2: you leave the heavy stuff to me and you just do the light work, it's not fai
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 330,272_2098,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,"Sure, mate, sure.  Looks like you've hit the right note there.","{'turns': [{'u1': ""The guys are all looking at you like you're some sort of comedy legend."", 'u2': ""Ha! Nice one, mate. I think they're just entertained by your introductions.""}, {'u1': ""You know, I think they're actually starting to like me."", 'u2': ""Of course they do! You're like a breath of fresh air. The perfect antidote to the usual office banter.""}, {'u1': ""I'm having fun. What about you?"", 'u2': ""Sure, mate, sure. Looks like you've hit the right note there.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4660,7 +4801,10 @@ u2: Remember you still owe me the money from the other night.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","1
+</ANSWER>
+
+**Explanation:** u2's reply is clearly **ironic** in context. By pointing out that Steve still owes him money while Steve simultaneously complains about others' unreliability, u2 sarcastically highlights Steve's hypocrisy—using the very trait he criticizes (unreliability) against him. This makes the response a natural and plausible ironic reply.</s>",,1,0,[]
 333,268_2038,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,You're shoes really match your outfit!,"{'turns': [{'u1': 'Hey, you noticed those shoes I got? I just got them this weekend.', 'u2': ""How could I not? You're practically glowing in that outfit today!""}, {'u1': 'This project was a huge deal for me at work, and I wanted to treat myself to something nice.', 'u2': 'Fair enough. You definitely deserve it! You worked really hard on that project.'}, {'u1': ""I'm glad I decided to splurge on these. They're really making the outfit pop!"", 'u2': ""You're shoes really match your outfit!""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4688,7 +4832,10 @@ u2: I think he needs a bit of training to be honest.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+*(Not afforded)*
+
+The response by u2 lacks the **tonal contrast** required for irony. The statement *""I think he needs a bit of training""* is a **straightforward, literal critique** of the puppy’s behavior, not an ironic or sarcastic understatement (which would typically contrast with the expected enthusiasm). Given the context (Steve’s assumption that the puppy was well-behaved), irony would likely have involved a **surface-level agreeableness** followed by a stark implication of the opposite (e.g., *""Oh, he’s adorable! Just perfect… completely untrained""* or *""He’s *so* well-behaved—no marks at all!""*). Here, u2’s reply is **affirmative of Steve’s implicit claim**, even if subtly undermining it, but not ironic.</s>",,0,0,[]
 335,111_1009,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,Steve don't be silly you have a stable job and this girl is just some random person please think carefully before making rash decisions,"{'turns': [{'u1': ""I've been thinking about my life, and I realize that I've been living the same routine for too long. I'm excited about this opportunity to break free and start fresh with her. She's an amazing person, and I feel like I've finally found what I've been looking for."", 'u2': ""That's a nice thought but have you thought this through? You can't just quit your job and travel without a plan, what about your responsibilities?""}, {'u1': ""I know it sounds crazy, but I feel like I'm meant to be with her. I've never felt this way about anyone before. We connected on a deep level, and I know we can make this work."", 'u2': ""Steve, I get that you're excited, but you need to be realistic. You're not thinking about the logistics, are you? You have bills to pay, a job to maintain, and a life to keep going. This isn't just about you and this girl.""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': ""Steve don't be silly you have a stable job and this girl is just some random person please think carefully before making rash decisions""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4702,7 +4849,13 @@ u2: Steve don't be silly you have a stable job and this girl is just some random
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+---
+**Reasoning:** While the context creates a plausible scenario where Steve's impulsive declaration could be met with skepticism or caution, **irony** (a statement that implies the opposite of its literal meaning to convey sarcasm or wit) is not naturally afforded here. The reply from u2 is straightforwardly dismissive and pragmatic, not ironic. Irony would require a more layered or understated response, such as:
+- *""Wow, that’s *so* responsible of you…""* (sarcastic) *or*
+- *""I’m sure she’s totally fine with you dropping everything for her.""* (mocking)
+
+The observed reply is earnestly cautious, not ironic. Thus, irony is **not plausible** in this case.</s>",,0,0,[]
 336,253_2010,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"Who knows, it's crazy.","{'turns': [{'u1': ""Hey, look at this footage of this incredible flying disc. I told you, it's not of this world. The technology they have is so far beyond anything we can imagine. We're talking intergalactic travel here!"", 'u2': ""I'm not really sure what to make of it, Steve.""}, {'u1': ""What else could it be, huh? The angles, the speeds, the maneuvers... it's all so precise. It's not just some trick or a simulation. It's real, and it's out there!"", 'u2': ""That's really interesting.""}, {'u1': ""It must be an alien because humans can't do that. What else could it be?"", 'u2': ""Who knows, it's crazy.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4758,7 +4911,7 @@ u2: I would rather not this time</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 340,266_2009,fictionary,0,en,"You spilled coffee on Steve's shirt. When you apologize to him, Steve says ""it's alright. I didn't even like this shirt anyway.""",,So i did you a favour then?,"{'turns': [{'u1': ""You're not exactly making a good case for how sorry you are."", 'u2': 'What do you mean?'}, {'u1': ""I mean, you're more worried about my shirt than actually apologizing."", 'u2': ""I'm sorry! I just really like this shirt and I feel awful about ruining it!""}, {'u1': ""it's alright. I didn't even like this shirt anyway."", 'u2': 'So i did you a favour then?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4772,7 +4925,17 @@ u2: So i did you a favour then?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>
+1
+</ANSWER>
+
+### Explanation:
+The observed reply by u2 (""So I did you a favour then?"") is **ironic** in context. Here's why:
+1. **Surface-level interpretation** of Steve's response (""it's alright. I didn't like this shirt anyway"") might seem like he's being gracious. However, u2's follow-up implies sarcasm or playful irony, suggesting that Steve's words have a double meaning: *you ruined my shirt, but now I don't care anymore—so in a way, you helped me avoid dealing with it*.
+2. This aligns with common conversational irony where someone appears to accept something undesirable as a ""favor"" humorously or critically. The tone and phrasing of u2's reply (""So I did you a favour"") explicitly critiques Steve's apparent indifference as a *backhanded compliment*.
+3. The response is **afforded** because it fits naturally in a dialogue where emotional subtext (e.g., mild irritation, teasing, or disdain) is implied by Steve's tone or history with the shirt.
+
+In short: The irony is plausible given the potential for Steve's statement to carry hidden meaning.</s>",,1,0,[]
 341,210_2076,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"Ha, well, where's my $20 then buddy?","{'turns': [{'u1': ""come on, it's not a big deal, you know I'll pay you back!"", 'u2': ""Actually, it's a big deal when I'm the one bailing you out all the time""}, {'u1': ""Well, what do you want me to do? I've been meaning to get to an ATM all week!"", 'u2': ""You've been meaning to for weeks, Steve. How about now?""}, {'u1': ""Aww, man, I'll pay you back as soon as I can, buddy!"", 'u2': ""Ha, well, where's my $20 then buddy?""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4814,7 +4977,7 @@ u2: Yeah sure</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 344,232_2117,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,"Yeah sure, il buy you better ones, love you, sorry","{'turns': [{'u1': 'Oh no, are you okay? I feel so bad for breaking your glasses, man. Here, let me put that box down for you.', 'u2': 'Nah i m fine, just a bit frustrated with u right now.'}, {'u1': ""You're a lifesaver, dude! Thanks for taking care of me like this. Now that I think about it, those glasses really were my favorite. Do you think you could get me another pair that looks kinda similar?"", 'u2': 'I don t know, but i ll try'}, {'u1': 'Can you clean up the pieces?', 'u2': 'Yeah sure, il buy you better ones, love you, sorry'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4828,7 +4991,7 @@ u2: Yeah sure, il buy you better ones, love you, sorry</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 345,232_2126,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,"Oh god, I'm so sorry. Of course, I'll clean things up. I feel dreadful. I'll see if I can replace them.","{'turns': [{'u1': ""I was really attached to those glasses. They're not just any ordinary pair."", 'u2': ""I remember you telling me that. You'd worn them on that trip we took to the mountains, right?""}, {'u1': ""Yeah, and that's why I was so attached to them. They brought back good memories."", 'u2': 'Sorry to see them go, then. Maybe I can help you pick out a new pair?'}, {'u1': 'Thanks, man. That would be great. First, though, can you clean up the pieces?', 'u2': ""Oh god, I'm so sorry. Of course, I'll clean things up. I feel dreadful. I'll see if I can replace them.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4842,7 +5005,7 @@ u2: Oh god, I'm so sorry. Of course, I'll clean things up. I feel dreadful. I'll
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 346,229_2117,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"NO, GO GET IT YOURSELF","{'turns': [{'u1': 'hey, buddy, can you grab me another one?', 'u2': 'seriously, get it yourself for once'}, {'u1': ""come on, man, I'm buying! get me another one"", 'u2': ""i don't care if you're buying, i'm not your beer butler""}, {'u1': 'alright, just get me one more, okay?', 'u2': 'NO, GO GET IT YOURSELF'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4856,7 +5019,10 @@ u2: NO, GO GET IT YOURSELF</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","Given the context—where u2 (Steve) has repeatedly asked u1 to fetch beer for him while they are both intoxicated—u2's reply *""NO, GO GET IT YOURSELF""* carries a clear subtext of frustration, exasperation, or playful defiance. This response is **ironic in tone** because it contradicts u2's usual behavior (demanding u1 fetch beer repeatedly) while also implying a momentary shift in power dynamics or exhaustion.
+
+Given the situational context (intoxication, repeated requests), this reply is **afforded** as a natural, ironic, and plausible response.
+<ANSWER>1</ANSWER></s>",,1,0,[]
 347,121_1028,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,"It wrecked my place, why didn't you train the thing? You should have let me know before dumping it on me.","{'turns': [{'u1': ""I'm so sorry you're having a tough time with the puppy! I know how much I was looking forward to getting back home and seeing my furry little buddy, but I'm sure he's not making it easy for you."", 'u2': ""Thanks for apologizing, but it's not just a tough time, it's utter chaos. The little guy destroyed my living room, and I've found at least 5 chewed-up shoes.""}, {'u1': 'I had no idea things were that bad. I swear, I was getting some good reports from the dog sitter before you took over - she said he was doing great.', 'u2': ""That's not what I'm seeing. He's a puppy, Steve. He's supposed to be destroying things, right? Maybe you should've told me about the potential mess before just sending him over to me.""}, {'u1': ""I didn't think about it that way...I just thought you'd be fine taking care of him. I'll make sure to send over some extra cash to help with the damages."", 'u2': ""It wrecked my place, why didn't you train the thing? You should have let me know before dumping it on me.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -4870,7 +5036,7 @@ u2: It wrecked my place, why didn't you train the thing? You should have let me 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
 348,111_1012,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,Maybe get to know her first,"{'turns': [{'u1': 'dude, I met the most incredible woman last night! she is out of this world and I can see us traveling the world together. we clicked on so many levels and I feel like we can talk about anything. I am totally smitten!', 'u2': ""That's awesome, but maybe ask her out for coffee or something before jumping to conclusions""}, {'u1': ""dude, I know what you're saying but I just feel it in my bones - this girl is the one! I can feel it in my heart and I'm not gonna let that go. I'm gonna ask her if she wants to travel with me!"", 'u2': ""I get that you're excited, but have you even asked her how she feels? Don't wanna get your heart broken""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': 'Maybe get to know her first'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5010,7 +5176,8 @@ u2: pay for yourself, i'm not buying you endless beers</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2's response is ironically plausible because Steve’s dismissive ""one time"" claim contradicts the history of repeated incidents, making the blunt ""pay for yourself"" remark a sarcastic and ironic retort.)*</s>",,1,0,[]
 358,254_2049,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,Ok you never know,"{'turns': [{'u1': ""I think this one is gonna be it. You'll love this traditional Bulgarian folk music song!"", 'u2': 'Maybe'}, {'u1': ""That song I told you about last week was really nothing compared to this one! I've been searching everywhere for something that will make you smile, and I finally found it!"", 'u2': 'Doubtful'}, {'u1': 'This one is really good. Come on!', 'u2': 'Ok you never know'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5024,7 +5191,10 @@ u2: Ok you never know</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Reasoning:**
+u2's reply *""Ok you never know""* is a natural ironic response given Steve's consistent pattern of enthusiasm for songs he claims ""will be liked."" The irony lies in the contrast between Steve's confident assertion (""I finally found one you'll like"") and u2's passive-aggressive or skeptical reply, implying prior disappointment while avoiding direct confrontation. The phrasing subtly mocks Steve's overconfidence without outright sarcasm, making it a plausible, though subtle, ironic response.</s>",,1,0,[]
 359,263_2048,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,You can get the drinks in next time.,"{'turns': [{'u1': ""You can't keep doing this, I've had to pay for you so many times before. How come I always have to be the one to cover your tab?"", 'u2': 'I was just having a bad day, let me pay you back.'}, {'u1': ""It was just one little mistake, don't make such a big deal out of it."", 'u2': ""Come on, that's not just one little mistake, you've forgotten your wallet a few times already.""}, {'u1': 'Come on, it happened like one time!', 'u2': 'You can get the drinks in next time.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5052,7 +5222,14 @@ u2: yeah everyone seems to really like you!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**(Explanation):**
+u2's reply, *""yeah everyone seems to really like you!""*, is ironic in this context because:
+1. **Contextual Contrast**: Steve's statement *""I'm having fun. What about **you**?""* suggests he is self-deprecatingly trying to downplay his own appeal while indirectly inviting others to claim their own charisma. His phrasing implies he might not feel similarly complimented by others.
+2. **u2's Response**: By echoing the compliment (*""everyone seems to really like you!""*), u2 subtly contradicts Steve's implied self-doubt, implying that Steve’s own statement was intentionally modest—a classic case of indirect irony. This aligns with the observed dynamic where Steve is indeed charming and people genuinely admire him.
+
+Thus, u2’s reply is **plausibly ironic** under the given context.</s>",,1,0,[]
 361,268_2101,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,"Nice shoes, you look good today!","{'turns': [{'u1': 'Hey, I just finished that big project at work and was looking forward to treating myself to something nice.', 'u2': ""Yeah, you deserve it, you've been working hard for that!""}, {'u1': ""I got these new shoes and I'm super excited to show them off. How do you like them?"", 'u2': ""Whoa, they're super stylish! The color goes well with your outfit.""}, {'u1': ""Thanks, man! I'm glad you like them. I was a bit worried they might not go with my usual style."", 'u2': 'Nice shoes, you look good today!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5136,7 +5313,9 @@ u2: could be, as no one has ever seen one.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+The phrase *""could be, as no one has ever been able to see one""* is indeed a plausible ironic reply from **u2** here. It follows a sarcastic tone by mocking Steve's claim—even though Steve was joking—by framing it as an absurdly unprovable statement (since unicorns are mythical). This matches Steve's playful, exaggerated assertion and adds a layer of irony about the impossibility of scientifically verifying a unicorn's existence.</s>",,1,0,[]
 367,111_1056,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,Go for it Steve.  You'll get to be with this amazing girl and have a great backpacking trip as well.,"{'turns': [{'u1': 'Dude, I know I might sound crazy, but I think I found someone special. I was talking to her all night and we just clicked.', 'u2': ""What do you mean you 'found someone special'? What happened last night?""}, {'u1': ""She's everything I've ever wanted in a partner. Smart, beautiful, funny... I don't know how it's possible, but I just feel a deep connection."", 'u2': ""That does sound pretty intense. You've been talking about finding the one for a while now. Do you really think she's the one?""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': ""Go for it Steve. You'll get to be with this amazing girl and have a great backpacking trip as well.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5178,7 +5357,9 @@ u2: Looking vibrant!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+
+The phrase ""Looking vibrant!"" is not ironic in this context. It is a straightforward, positive compliment that aligns with the literal appearance of Steve's colorful and cheerful outfit. There is no underlying sarcasm or contrast between Steve's appearance and the comment, so an ironic reply does not fit naturally here.</s>",,0,0,[]
 370,250_2022,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,"I really fancy this bob cut, blue color","{'turns': [{'u1': 'What do you think of this edgy fade with a little pompadour?', 'u2': ""I don't know, it's not really my style. But the pompadour does add some flair.""}, {'u1': 'I like it, the edgy fade is really trendy right now! What about this messy undercut with the spiky top?', 'u2': ""Hmmm, it's an interesting combination. But it might be a bit too crazy for work.""}, {'u1': ""Okay, I'm really sold on the undercut now! I was thinking of asking Alex about it. What about this bob cut, blue color?"", 'u2': 'I really fancy this bob cut, blue color'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5234,7 +5415,11 @@ u2: I didn't feel like I could say no.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+**Explanation:** Steve’s response (u2’s observed reply) could plausibly be ironic in this context. The statement *""wow, that doesn’t sound good. Why did you say *yes*?""* contrasts sharply with the user’s actual complaint about the unfairness of being asked to do personal errands. The irony lies in Steve’s seemingly uncritical or even dismissive reaction (as if the user’s decision to comply was puzzling rather than obvious) while the user had clearly expressed frustration.
+
+His follow-up *""I didn’t feel like I could say no""* suggests they recognized the underlying pressure or social expectation to comply, highlighting the absurdity of Steve’s reaction. Hence, the scenario affords irony.</s>",,1,0,[]
 374,256_2088,fictionary,1,en,"Steve recently inherited a fancy watch from his dead grandfather. And he keeps showing it to you and talking about it. For the fifth time, Steve says, ""look, look how shiny this watch is.""",,"Yeh, it's really nice.","{'turns': [{'u1': ""It's such a fine watch. You can tell it's of high quality just by looking at it."", 'u2': ""Yes, it's really impressive.""}, {'u1': ""Do you think it's worth something? I don't know if I should sell it or keep it as a memory."", 'u2': 'Well, it depends on its condition and whether there are any historical records that prove its value.'}, {'u1': ""I've been thinking about it a lot, and I think I might just keep it as a reminder of Grandpa."", 'u2': ""Yeh, it's really nice.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5248,7 +5433,8 @@ u2: Yeh, it's really nice.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(In this case, u2's response ""Yeh, it's really nice"" could plausibly carry an ironic or dismissive undertone, especially given Steve's repetitive enthusiasm over something that might not be particularly noteworthy to u2. The context suggests Steve is over-the-top in his praise, making u2's flat reply a natural (or even ironic) reaction.)*</s>",,1,0,[]
 375,243_2022,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,Could you explain to them that?,"{'turns': [{'u1': ""You know, I've been trying to be patient, but honestly, it's really frustrating that we're already past Tuesday and we still haven't even discussed the outline. I'm starting to feel like I'm the only one who cares about meeting this deadline."", 'u2': 'Have you tried talking to them about your concerns?'}, {'u1': ""I have, but it feels like they're not taking it seriously. I'm starting to feel like I'm shouldering the whole workload because I'm the only one pushing forward."", 'u2': ""I'm not sure explaining is the right approach. Sometimes people just need a gentle nudge or a reminder of what we're working towards.""}, {'u1': ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!"", 'u2': 'Could you explain to them that?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5262,7 +5448,13 @@ u2: Could you explain to them that?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","The response from u2 (""Could you explain to them that?"") seems sincere and neutral rather than ironic. Given Steve's complaint about the other team's procrastination while also criticizing his own team for being ""laid back,"" an ironic reply would likely involve highlighting the inconsistency in his behavior or attitude. For example:
+- *""Ah yes, you *do* have a reputation for last-minute heroics…""* (implying sarcasm about Steve’s self-described urgency)
+- *""I hear you’re the only one pulling their weight—how does that feel?""* (calling out the hypocrisy)
+
+Since u2’s reply doesn’t convey irony or mockery, but rather a straightforward prompt to intervene, the answer is:
+
+<ANSWER>0</ANSWER></s>",,0,0,[]
 376,270_2011,fictionary,0,en,"Steve and you are hanging out, and he wants to invite his other friends. Steve says, ""Mind if some of my friends join?""",,"Sure, the more the merrier.","{'turns': [{'u1': ""Hey, not at all. I'm actually glad you could make it, but I've been thinking it would be great to catch up with some other friends too. What do you think?"", 'u2': 'Sounds good to me!'}, {'u1': ""Yeah, and I was thinking, we could actually have a bigger gathering if we invite a few more people. It'll be more fun that way."", 'u2': ""That's a great idea!""}, {'u1': 'Mind if some of my friends join?', 'u2': 'Sure, the more the merrier.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5318,7 +5510,9 @@ u2: Maybe he has other qualities that make up for the money issues?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+
+The response by u2 (""Maybe he has other qualities that make up..."") can be interpreted as ironic in this context. Given the shared annoyance Steve and Bill feel toward Steve's friend (which overlaps with Bill's annoyance of the same traits in Steve), Bill's statement plausibly carries a layer of sarcasm, subtly acknowledging the money issues while insinuating that Bill is either ignoring or downplaying those traits. The phrasing suggests Bill might be rationalizing or justifying the friendship in a way that feels dismissive of the actual problem, making it ironically plausible.</s>",,1,0,[]
 380,272_2060,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,"Yes, I'm so glad you like them","{'turns': [{'u1': ""I'm really enjoying everyone's company. This is a great team you have here!"", 'u2': ""Absolutely! They're all wonderful people""}, {'u1': ""I've been laughing non-stop since you introduced me to your colleagues. They're hilarious!"", 'u2': ""I told you they're a great bunch. What's not to love about them?""}, {'u1': ""I'm having fun. What about you?"", 'u2': ""Yes, I'm so glad you like them""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5332,7 +5526,8 @@ u2: Yes, I'm so glad you like them</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(The reply ""Yes, I'm so glad you like *them*"" contains an implicit sarcastic/ironic twist—u2 is actually reacting to the fact that Steve is liked by the group, rather than simply affirming the question about their own enjoyment, making irony plausible.)*</s>",,1,0,[]
 381,230_2015,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"Yeh sure, not a problem","{'turns': [{'u1': ""Sorry to spring this on you, I know you've got a lot going on, but I really need to get out of town for a few days. Can I leave the dog with you?"", 'u2': ""Not a problem, what's going on?""}, {'u1': ""Just some work stuff, nothing to worry about. I'll be back before you know it, though. Can you give me a list of what his routine is like at home? Food, walk times, all that jazz?"", 'u2': ""He's pretty low maintenance, eats twice a day, goes out for a 30 minute walk in the morning. That's about it.""}, {'u1': 'Awesome, thanks for taking care of him! I owe you one.', 'u2': 'Yeh sure, not a problem'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5430,7 +5625,7 @@ u2: I just don't want anything to happen to it.</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
 388,259_2126,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,The app doesn't work like that. I can send you a link to download it and then you can get a discount whenever you need a cab.,"{'turns': [{'u1': 'I was thinking we could order a cab online through this app I have on my phone, it would be so much faster than calling a taxi company.', 'u2': ""But wouldn't that just take away from the taxi drivers' business? I think we should just grab one of the cabs parked over there instead.""}, {'u1': ""But what about the discount I mentioned? I'm pretty sure the app offers a discount for repeat customers."", 'u2': ""Well, I'm not sure about that. I've heard of apps giving discounts for referrals, but I'm not sure if this one does that.""}, {'u1': 'Do you have the app on your phone?', 'u2': ""The app doesn't work like that. I can send you a link to download it and then you can get a discount whenever you need a cab.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5514,7 +5709,8 @@ u2: no worries</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2’s reply ""no worries"" is an ironically ironic response in this context: while it literally means ""no problem,"" the tone suggests Steve should have been more grateful for the USB stick, making the actual lack of fuss a subtle (or overt) exaggeration of politeness.)*</s>",,1,0,[]
 394,101_1035,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"Steve, should look of realistic resolutions, and stick to it, this is not great to keep breaking it","{'turns': [{'u1': ""I know you wanted to start learning French and hit the gym every day, but, man, watching sports and eating popcorn sounds way better than slogging through grammar rules and getting a sweat going. Can't it be just one day a week, though?"", 'u2': ""That's exactly my point, though. If you don't hold yourself to the commitments you make, you're gonna be stuck in this pattern of making grand resolutions and then giving up.""}, {'u1': ""I know it's been a bit longer than a week now, but come on, I'm only taking it easy while the games are on. It's a one-time thing, I swear!"", 'u2': ""One-time thing? That's exactly what it's been for three weeks, and we're not getting any younger, Steve. You should be putting your energy into something that's going to give you a sense of accomplishment, not just temporary entertainment.""}, {'u1': ""But it's not fair to expect me to be motivated 24/7, dude! Can't I just indulge every now and then?"", 'u2': 'Steve, should look of realistic resolutions, and stick to it, this is not great to keep breaking it'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5640,7 +5836,8 @@ u2: Stop complaining, you're very lucky</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+*(u2's reply, ""Stop complaining, you're very lucky,"" is plausible as an ironic response to Steve's complaint about his girlfriend's music taste while acknowledging her many other positive qualities. The tone suggests u2 is likely rolling their eyes at Steve's perceived ungratefulness.)*</s>",,1,0,[]
 403,119_1060,fictionary,1,en,"You and Steve have long been planning to go to a new bar in town. But, he has canceled on you three times without telling you why. And just now, he calls you and says, ""I'm so sorry, but I'm gonna have to bail again. Next time?""",,"Sal good dude! BUT I swear to god though if we haven't seen this bar by this time next week I will never let you forget it, capiche?!","{'turns': [{'u1': ""I know, I know, it's been a while and I'm really sorry about bailing on you last minute, but things have been crazy at work and I just can't seem to get a break."", 'u2': ""Crazy at work, huh? That's all I've been hearing for the past three weeks now.""}, {'u1': ""Look, I promise this time is different, I swear. I just can't shake off this feeling that I've got to push this thing back again. Can't it wait one more week?"", 'u2': ""One more week?! Come on, Steve, we've been saying that for months now. When are we going to make this happen?""}, {'u1': ""Sorry, buddy, I know this is getting ridiculous, but I'll make it up to you, I swear on my life. I just can't make it happen this week."", 'u2': ""Sal good dude! BUT I swear to god though if we haven't seen this bar by this time next week I will never let you forget it, capiche?!""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5724,7 +5921,11 @@ u2: Do you want me to ask for another plate?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>
+</ANSWER>
+
+---
+**Explanation:** The context reveals Steve's exaggerated annoyance at the mere *contact* between French fries and his hamburger—an irrational or pedantic reaction given the normal nature of plating. U2’s offer to ""ask for another plate"" is a sarcastic/ironic response that mocks Steve's overcomplicating of a trivial situation, aligning with the absurdity of his behavior rather than a literal request. Thus, it is both plausible and natural in the given dynamic.</s>",,1,0,[]
 409,115_1015,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"It is your brother's choice to be friends with him, I know you're not a fan, but it's his choice.","{'turns': [{'u1': ""I don't get why he never pays me back, you know? And he's always asking me for loans, no matter how much I give him, he's always back for more. He's such a freeloader!"", 'u2': ""I know, right? It's like he thinks you're his own personal bank.""}, {'u1': ""And it's not just that. He's always talking about himself, and never asks how you're doing or anything. Self-centered, through and through."", 'u2': ""Yeah, I've noticed that too. He's one of those people who only care about themselves and their own problems.""}, {'u1': ""I was just saying, I don't get why my brother hangs out with him, he's such a jerk."", 'u2': ""It is your brother's choice to be friends with him, I know you're not a fan, but it's his choice.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5780,7 +5981,12 @@ u2: you will have it done in no time don't stress about it</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>
+---
+**Explanation:**
+Steve's statement conveys genuine frustration, anger, and resignation about the new job's bureaucracy. His tone reflects an earnest, if exasperated, perspective (e.g., ""should have just stayed,"" ""dealing with so much crap""). In this context, **irony**—a discrepancy between what is said and what is implied—would require a **deliberate contrast** between literal words and underlying meaning, often suggesting sarcasm or playful ambiguity.
+
+U2's reply (""you will have it done in no time, don't stress"") is **sincere, reassuring, and flat**, lacking the subtle cues (e.g., exaggerated positivity, abrupt shift in tone, or nonverbal cues like eye-rolling) that typically accompany irony. It directly addresses Steve’s pain point without undermining or mocking his emotions, which makes irony **unafforded** here. Instead, it treats Steve’s frustration with empathy.</s>",,0,0,[]
 413,108_1024,fictionary,0,en,"Steve and you are driving in town. Steve is the driver. You notice that he keeps making abrupt stops for no reason. Steve has never been an excellent driver but he hasn't been this bad, either.",,is everything ok,"{'turns': [{'u1': ""hey man what's going on I just slammed on the brakes, I didn't see anything but I thought it was a kid about to run into us"", 'u2': ""dude are you alright yeah I'm fine too but like, what is going on with the driving here""}, {'u1': ""I don't know, man, I'm just getting spooked I keep seeing things out of the corner of my eye I think I need to get my eyes checked or something"", 'u2': ""steve relax dude it's probably just fatigue we're almost home just keep going""}, {'u1': ""what was that thing we just passed? I'm pretty sure it was a car but it looked weird for a second"", 'u2': 'is everything ok'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a description of the situation and the observed reply of u2.
@@ -5906,4 +6112,4 @@ u2: i really am not interested in your dinosaurs</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER></s>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER></s>,,0,0,[]

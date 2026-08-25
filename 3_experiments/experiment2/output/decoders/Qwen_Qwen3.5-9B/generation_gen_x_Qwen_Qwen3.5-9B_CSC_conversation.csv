@@ -304,7 +304,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 17,112_1030,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"Just give it your best and try to enjoy yourself, no pressure. No one said you have to go there and be some Christian Ronaldo","{'turns': [{'u1': ""I don't know how much more of this I can take, u2. I really need to kick the ball into the goal, but every time I try, it goes flying in the wrong direction."", 'u2': ""Haha, well, you're gonna be the first person to ever score with a backhanded kick!""}, {'u1': ""The worst part is that it's not even a casual game, it's for charity. I'll be representing our whole school. If I mess up, it's gonna be all over social media."", 'u2': ""Dude, people will probably be more worried about donating money than your soccer skills. They'll just laugh it off, and you'll be the life of the party!""}, {'u1': ""I guess I'm just really nervous about being that guy on the field who everyone laughs at."", 'u2': 'Just give it your best and try to enjoy yourself, no pressure. No one said you have to go there and be some Christian Ronaldo'}]}",0,0.0,0.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -754,7 +754,7 @@ u1: But it's 31, let's make it 30.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 42,263_2040,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"Last time, and you better pay me","{'turns': [{'u1': ""It's fine, really, it was just a slip-up, and I'm good for it this time."", 'u2': ""Don't get me wrong, but this has happened more often than I'd care to admit.""}, {'u1': ""I'm telling you, it was a one-time thing, I'm a responsible guy."", 'u2': ""We've had this conversation before, Steve.""}, {'u1': 'Come on, it happened like one time!', 'u2': 'Last time, and you better pay me'}]}",0,0.0,0.0,0.0,,0.0,,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1204,7 +1204,7 @@ u1: You should really just let me pay for the app fee. You get so many rides wit
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 67,204_2101,fictionary,1,en,"You walk into the room and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,You're such a weirdo,"{'turns': [{'u1': ""I've been practicing for weeks, I'm a natural!"", 'u2': ""Don't be ridiculous, you're just wearing shoes on your hands.""}, {'u1': ""I'm not just wearing them, I'm channeling my inner Mr. Shoehand!"", 'u2': ""That's just crazy talk, Steve!""}, {'u1': ""look at me! I'm Mr. Shoehand!"", 'u2': ""You're such a weirdo""}]}",0,0.0,1.0,,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1960,7 +1960,7 @@ u1: haha, nice! how's the puppy doing? is it still eating all the shoes?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 109,268_2022,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,"Wow, looking trapper","{'turns': [{'u1': ""That's a sick new pair of kicks you got there, Steve, congrats on crushing that project"", 'u2': ""What's the occasion, getting ready to take on the world?""}, {'u1': 'Just a little reward for all my hard work, had to treat myself', 'u2': ""Fair enough, you deserve it, now go rock those shoes like they're going out of style""}, {'u1': ""Thanks, man, they match perfectly with today's outfit"", 'u2': 'Wow, looking trapper'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1978,7 +1978,7 @@ u1: Thanks, man, they match perfectly with today's outfit
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 110,228_2012,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"I'm sorry, I do trust you but I need my car just now.","{'turns': [{'u1': ""come on, why can't I borrow it? Don't you trust me?"", 'u2': ""I'm not saying I don't trust you, but you know how I feel about lending out my new car, it's still under warranty.""}, {'u1': ""But I really need it today, I promised Sarah I'd pick her up from work and it's already 5 pm."", 'u2': ""I'm not sure what to say, Steve. I know you're in a tight spot but you also know I just got this car and I really don't want anything to happen to it.""}, {'u1': ""I'm really sorry, man. I feel terrible about my car being in the shop right now, I guess I was hoping to borrow yours as a temporary fix."", 'u2': ""I'm sorry, I do trust you but I need my car just now.""}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2680,7 +2680,7 @@ u1: I swear, I'm the only adult in this group. I'm starting to think we'll never
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 149,272_2050,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,"Yeah me too, i'm glad you're getting on with everyone!","{'turns': [{'u1': ""This place is always so lively, I'm loving the energy here!"", 'u2': 'I know, right? The atmosphere is infectious!'}, {'u1': ""How do you know everyone here so well, u2? You're like the ultimate networker!"", 'u2': ""Ha! I've been coming here for ages, so I've got some pretty solid connections!""}, {'u1': ""I'm having fun. What about you?"", 'u2': ""Yeah me too, i'm glad you're getting on with everyone!""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -3364,7 +3364,7 @@ u1: Dude, what's up with your reaction? I thought you'd be stoked about my new s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 187,268_2080,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,You look great today Steve!,"{'turns': [{'u1': 'Just wrapped up that huge project at work, and I finally have some well-deserved free time to treat myself.', 'u2': 'Congrats on wrapping up the project, buddy!'}, {'u1': ""I decided to pick up these brand new shoes I've had my eye on for a while now."", 'u2': 'Those shoes go perfectly with your outfit today!'}, {'u1': 'You know, they match my new blazer perfectly, and I feel like a million bucks.', 'u2': 'You look great today Steve!'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -3598,7 +3598,7 @@ u1: can i borrow your suitcase? I need one for my trip next week
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 200,104_1052,fictionary,0,en,You and Steve have a mutual friend. She is getting married in two weeks. You are both invited to the wedding. You hate weddings but Steve seems to be pretty excited about potentially meeting somebody there. He is already picking out his suit and making a fuss.,,look at you trying to go all out and pick up someone at this wedding!,"{'turns': [{'u1': ""look, I am really getting excited about this wedding. There are going to be some great people there and who knows maybe I'll even meet someone special."", 'u2': 'oh please, you and romance'}, {'u1': ""come on, it can't be that bad! We'll have some fun, enjoy some drinks, and you never know what might happen."", 'u2': ""yeah, sure, you're just looking for some instant gratification. Don't even get me started on the suits you're planning on wearing""}, {'u1': ""I'm just trying to make a good impression, that's all!"", 'u2': 'look at you trying to go all out and pick up someone at this wedding!'}]}",1,1.0,1.0,0.0,1.0,1.0,0.0,,,0.0,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4336,7 +4336,7 @@ u1: oh, I just wanted you to do it for me
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 241,270_2013,fictionary,0,en,"Steve and you are hanging out, and he wants to invite his other friends. Steve says, ""Mind if some of my friends join?""",,"Yeah, that's totally cool!","{'turns': [{'u1': 'How many people do you think we can fit in here?', 'u2': ""Hmm, I don't know, but I'm sure it'll be fun trying to figure it out.""}, {'u1': 'Who do you think we should invite?', 'u2': 'Well, have you talked to Mike or Emily lately?'}, {'u1': 'Mind if some of my friends join?', 'u2': ""Yeah, that's totally cool!""}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4534,7 +4534,7 @@ u1: Steve: It only happened one time!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 252,250_2021,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,ok fine,"{'turns': [{'u1': ""I'm thinking of trying out a side swept fringe, I've been seeing it everywhere and I think it'd look great on me"", 'u2': ""Ugh, really? It's so last season.""}, {'u1': ""I know it's been around, but I think it's due for a comeback! Have you ever considered a pompadour?"", 'u2': 'No'}, {'u1': ""I don't need a haircut right now. But I want to be well-informed when I do!"", 'u2': 'ok fine'}]}",0,,0.0,,1.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4930,7 +4930,7 @@ u1: have you noticed that kids these days drink energy drinks all the time? That
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 274,106_1042,fictionary,0,en,"Steve recently changed jobs. He is annoyed because he needs to deal with some bureaucracy regarding his health insurance. He says, ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.""",,"True. But you didn't, so good luck.","{'turns': [{'u1': ""I'm still getting used to the new system, and I don't know how much longer I can keep this up."", 'u2': ""Well, isn't this a fun way to start the year. Insurance, what's next?""}, {'u1': ""I swear, it's like they intentionally made it this difficult."", 'u2': 'Sounds like they did.'}, {'u1': ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap."", 'u2': ""True. But you didn't, so good luck.""}]}",0,0.0,0.0,0.0,1.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5020,7 +5020,7 @@ u1: come on, you can do better than that!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 279,118_1015,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,Looking smart brother,"{'turns': [{'u1': 'I just got a new pair of shoes. Really love how they fit with my outfit today.', 'u2': 'New shoes?'}, {'u1': 'Yeah, I decided to splurge a bit after finishing that big project at work. Needed a treat.', 'u2': 'Worth it?'}, {'u1': 'I just finished that huge presentation and I felt like I deserved a celebration.', 'u2': 'Looking smart brother'}]}",0,1.0,0.0,,0.0,0.0,0.0,,,0.0,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5416,7 +5416,7 @@ u1: wow, you really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 301,268_2017,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,They look nice.,"{'turns': [{'u1': ""Steve is really trying to impress you with his new shoes, haha. Can't blame him though, they're quite the statement piece."", 'u2': 'Why the need to impress me?'}, {'u1': ""Nah, it's just because I landed a big project at work and wanted to treat myself. It was a long time coming."", 'u2': 'Congrats on the project, dude!'}, {'u1': 'Thanks, I was really looking forward to wearing these out today. Do you like them?', 'u2': 'They look nice.'}]}",0,0.0,1.0,0.0,,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6101,7 +6101,7 @@ u1: Oh, man, I'm so sorry about that. I totally spaced on returning them. I'll d
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 339,262_2064,fictionary,1,en,"Steve shows up at your desk with a giant pile of paper and says, ""I have to go out of town for 3 days. Can you please finish this report instead of me?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,i'm sorry steve i havent got time to do it. you'll have to do this by yourself this time,"{'turns': [{'u1': ""I know I'm asking you at the last minute, but I've got an emergency situation at home and I have to get out of town ASAP. I've got a deadline to meet, so I was wondering if you could finish this report for me. Can you please do me a huge favor and wrap it up for me in the next 3 days?"", 'u2': ""I'm really busy with other projects right now. I don't know if I can fit it in.""}, {'u1': ""Come on, it's just 3 days. You've got plenty of time to finish it. I'm counting on you. I really appreciate it."", 'u2': ""I understand you're in a tight spot, but you should have thought of that before dumping this on me with so little notice.""}, {'u1': ""Okay, fine. Look, I'm really in a bind here. I need to get out of town and I have to leave this report with someone, and I thought you were a good choice."", 'u2': ""i'm sorry steve i havent got time to do it. you'll have to do this by yourself this time""}]}",0,0.0,1.0,,1.0,0.0,,0.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6659,7 +6659,7 @@ u1: This joint proposal is going to be delayed yet again because of their lazine
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 370,122_1028,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""hey, this is fun. I'm having a great time.""",,"Me too my man, I wish they liked me this much!","{'turns': [{'u1': ""Great to see you guys enjoying yourselves. You've really got a knack for making people laugh!"", 'u2': ""Nah, it's all about the group, they're just as funny as you are, but in their own way!""}, {'u1': ""I don't know, I just seem to hit all the right notes with these guys."", 'u2': ""That's what makes you so lovable, they just click with you and that's infectious!""}, {'u1': 'I love being around people who appreciate my sense of humor.', 'u2': 'Me too my man, I wish they liked me this much!'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7019,7 +7019,7 @@ u1: You're making a huge issue out of nothing!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 390,257_2014,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"No can do, I believe you still have my charger and toaster, can I have those back? I am not lending you anymore stuff","{'turns': [{'u1': ""I was thinking of heading out of town next week and I'm in need of a new suitcase. Do you think you could lend me yours?"", 'u2': ""I'm not sure about that. When do you plan on returning my charger and toaster that you've had for a couple of months now?""}, {'u1': ""I'm a bit short on time and I really need to get everything sorted for this trip. I'll try to remember to return your stuff later."", 'u2': ""That's not exactly reassuring, Steve. It's been months since you took my charger and toaster. Could you please prioritize returning those before I consider lending you anything else?""}, {'u1': ""Sorry, I really need to finalize my packing list for next week and I don't have time to sort out our stuff."", 'u2': 'No can do, I believe you still have my charger and toaster, can I have those back? I am not lending you anymore stuff'}]}",0,0.0,1.0,0.0,0.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7145,7 +7145,7 @@ u1: First, the volume was at 21, an odd number, and now you're asking me to ligh
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 397,118_1057,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,Nice one Brad Pitt.,"{'turns': [{'u1': 'I just got these new kicks and I am totally loving them! They match my outfit perfectly.', 'u2': 'Those look really good on you. Very stylish.'}, {'u1': 'I know, right? I splurged a bit on myself since I just finished that big project at work.', 'u2': 'You definitely deserve it after all that hard work.'}, {'u1': 'Thanks, I feel like I needed a little pick-me-up after that project, and these shoes are just what the doctor ordered.', 'u2': 'Nice one Brad Pitt.'}]}",1,1.0,1.0,0.0,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7901,7 +7901,7 @@ u1: You really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 439,232_2108,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,sorry mate. I'll buy you replacements.,"{'turns': [{'u1': ""oh man, I was really looking forward to wearing those to our game night tonight. Now they're broken?"", 'u2': ""ah, don't worry, it's just stuff. We can get you a new pair.""}, {'u1': 'They were my favorite pair, and I was kinda attached to them.', 'u2': ""I know you were, but like I said, we can get you a new one. It's not that big of a deal.""}, {'u1': 'can you clean up the pieces?', 'u2': ""sorry mate. I'll buy you replacements.""}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7955,7 +7955,7 @@ u1: You said something about a plan!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 442,258_2059,fictionary,1,en,"Steve asks you to get him some coffee from a coffee shop nearby. But he doesn't seem to be particularly busy right now. When you say ""why can't you get it yourself?"", he simply says, ""oh, no reason. I just wanted you to do it for me.""",,"That's really weird man, I'm not gonna get you a coffee","{'turns': [{'u1': ""What's going on with that request? You're not busy, and I could grab it for myself."", 'u2': 'But you said you wanted me to get it for you?'}, {'u1': ""I don't know, I just thought it would be easier if you got it."", 'u2': ""But it's literally right next to our office. You're not going to have to walk that far, and it's not like you're going to die if you have to get up from your chair""}, {'u1': 'Oh, no reason. I just wanted you to do it for me.', 'u2': ""That's really weird man, I'm not gonna get you a coffee""}]}",0,0.0,0.0,,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8243,7 +8243,7 @@ u1: this has happened several times and you have never paid me back
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 458,208_2065,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,What are you doing? That is an odd superstition,"{'turns': [{'u1': ""As long as they don't touch, I'm good."", 'u2': ""Dude, you're going to draw attention to us if you keep pushing the fries around.""}, {'u1': ""I don't know, it just feels weird when they're together."", 'u2': ""Feels weird? You're really obsessed with not having French fries and hamburgers touching, aren't you?""}, {'u1': ""Can't you just help me keep them apart?"", 'u2': 'What are you doing? That is an odd superstition'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8531,7 +8531,7 @@ u1: jeez, sorry, I didn't notice.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 474,240_2052,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,How's the burger?,"{'turns': [{'u1': ""How's the food? Do you think the service here is okay?"", 'u2': ""Yeah, it's alright. I'm a bit annoyed by the French fry situation though.""}, {'u1': ""What situation? Ha ha, I'm not touching that thing, it's mine!"", 'u2': 'The French fry and burger thing. Every time they touch, you freak out.'}, {'u1': ""Ugh, don't even joke about that, it's disturbing me."", 'u2': ""How's the burger?""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8621,7 +8621,7 @@ u1: you know, in Japan, people do it this way
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 479,255_2024,fictionary,1,en,"Steve is very opinionated about shoes. He thinks that black shoes are boring. Your shoes happen to be black. Though you don't have strong opinions about shoes, Steve says to you, ""you know, my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.""",,I prefer black shoes as they are timeless and classic.,"{'turns': [{'u1': ""I just love the way my red boots make a statement. You know, my shoes are so much more interesting than anything you're wearing right now. The magazines are all about bold, trendy styles, and they never feature plain black shoes like yours."", 'u2': ""Actually, I've never understood why people feel the need to follow fashion trends. I like what I like, and if it's not fashionable, then so be it.""}, {'u1': ""I don't see how black shoes are classic, they're just basic. All the fashionistas are saying that this season's must-haves are bright colors and patterns. Black shoes are so last season."", 'u2': ""I think that's what I like about black shoes. They're simple, understated, and don't follow every trend that comes along.""}, {'u1': ""I just don't get it, your black shoes are so... ordinary. Fashion is all about making a statement, and black shoes just blend in."", 'u2': 'I prefer black shoes as they are timeless and classic.'}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8819,7 +8819,7 @@ u1: Hey, I'm a great driver, and I'll take good care of your ride. You can't tru
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 490,248_2079,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,You're still working on your french which is bad at the best of times,"{'turns': [{'u1': ""Who does that guy think he is? Speaking like this with a French person around and he can't even understand a word. He needs to brush up his English!"", 'u2': ""Yeah, but we all know your French skills aren't exactly... enviable. Maybe we should all take lessons together.""}, {'u1': ""Come on, it's not that hard! Bonjour, comment ça va? That's all I need to know!"", 'u2': ""Good luck with that. I'm sure he'll be impressed by your grammatical errors.""}, {'u1': ""That person should work on their English, don't you think?"", 'u2': ""You're still working on your french which is bad at the best of times""}]}",1,,1.0,0.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9701,7 +9701,7 @@ u1: this girl is totally amazing and I'm not gonna miss the opportunity to be wi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 539,236_2097,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,smiles... that is qutie funny though,"{'turns': [{'u1': ""What's up with the shoes, buddy?"", 'u2': 'what is this, some kind of prank?'}, {'u1': ""I'm telling you, I'm Mr. Shoehand now!"", 'u2': ""you've gone crazy, haven't you?""}, {'u1': ""Look at me! I'm Mr. Shoehand!"", 'u2': 'smiles... that is qutie funny though'}]}",0,1.0,0.0,1.0,0.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9881,7 +9881,7 @@ u1: look, I promise to return your charger and toaster the moment I get back. ju
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 549,259_2086,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,I guess it is better to try and save a bit of money these days.,"{'turns': [{'u1': ""So what's the hold up? You're always talking about saving money. Can't you just use the app for once and get the discount?"", 'u2': ""I'm just a bit skeptical about relying on apps for everything.""}, {'u1': ""I don't get it. What's wrong with the app? It's convenient and you get a discount."", 'u2': ""I guess I just don't like the feeling of being tracked and monitored by companies when I use their services.""}, {'u1': 'But you have an app for calling cabs. I know it gives you a discount!', 'u2': 'I guess it is better to try and save a bit of money these days.'}]}",0,0.0,,0.0,0.0,0.0,,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10349,7 +10349,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 575,263_2104,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"No, So no I'm not paying for you again until you've payed me back.","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""That's not even close. You've done it way more often than that. I'm not paying for your free beers anymore.""}, {'u1': ""What's your problem, it was just a tiny little mistake!"", 'u2': ""Mistake? You keep forgetting your wallet and I'm the one who always has to bail you out. That's not a mistake, that's a habit. And habits are hard to break.""}, {'u1': 'It really was just the once, I swear!', 'u2': ""No, So no I'm not paying for you again until you've payed me back.""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10367,7 +10367,7 @@ u1: It really was just the once, I swear!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 576,265_2127,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,You are welcome,"{'turns': [{'u1': 'can I borrow your USB stick?', 'u2': 'Of course!'}, {'u1': 'thank you.', 'u2': ""You're welcome""}, {'u1': 'no problem', 'u2': 'You are welcome'}]}",0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10475,7 +10475,7 @@ u1: Just add the orange juice!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 582,107_1044,fictionary,1,en,Steve gives you a watering can on your birthday while smiling at you with a strange expression. But you don't even have a single plant.,,Should I drink alcohol from this can,"{'turns': [{'u1': ""Dude, that's the coolest watering can ever. I got it just for you, since it's your birthday and all."", 'u2': ""What are you even saying, Steve? You know I don't have any plants, right?""}, {'u1': ""Come on, man, it's a great gift, and I thought it would be a nice addition to your new pad!"", 'u2': ""That's just it, Steve. I don't even have a pad. You know I'm still crashing with Sarah.""}, {'u1': 'Ha! Oh, right. I forgot about that. But I still think this watering can will bring good luck to your place!', 'u2': 'Should I drink alcohol from this can'}]}",1,1.0,1.0,1.0,1.0,0.0,0.0,,,,1.0,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10547,7 +10547,7 @@ u1: it happened like one time!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 586,103_1035,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,"I will help in doing it, it is not rocket science, just focus","{'turns': [{'u1': 'oh man, I am literally having the most epic fails posting a pic online', 'u2': 'Seriously? How hard can it be?'}, {'u1': ""Dude, I don't know... I've tried like 5 different buttons now"", 'u2': ""Maybe if you stopped hitting the wrong ones and took a closer look, you'd figure it out""}, {'u1': 'Uh, I thought the plus sign was the post button... doh', 'u2': 'I will help in doing it, it is not rocket science, just focus'}]}",1,1.0,1.0,0.0,1.0,,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10655,7 +10655,7 @@ u1: Now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 592,212_2111,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Reminds me of you and not flushing the toilet,"{'turns': [{'u1': ""I think we've discussed this before. I'm pretty sure I don't have a sign on my forehead saying 'Please flush the toilet'."", 'u2': 'Then why do you keep forgetting?'}, {'u1': ""I know I'm not perfect, but come on, it's just one little thing! I'll try to remember next time."", 'u2': 'One little thing that has been bothering me for a while now...'}, {'u1': 'People are inconsiderate about a lot of things. Like not picking up after their dogs.', 'u2': 'Reminds me of you and not flushing the toilet'}]}",1,1.0,0.0,1.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11087,7 +11087,7 @@ u1: You think so? Alright, alright... But honestly, I've been looking at pompado
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 616,130_1055,fictionary,0,en,"Steve and you are hanging out, and he invites his other friends. You like them because they are fun.  Steve says, ""I invited some other people, hope you don't mind.""",,"no it is cool, I am enjoying the company.","{'turns': [{'u1': ""I thought we were just hanging out and then I saw some text messages from some other friends saying they were coming over. I didn't mean to get everyone together like this."", 'u2': 'That sounds kinda cool, who are they?'}, {'u1': ""Actually I invited Sarah and Tom, they're really fun and they're also into board games like we are."", 'u2': 'Awesome, I like their sense of humor.'}, {'u1': ""I invited some other people, hope you don't mind."", 'u2': 'no it is cool, I am enjoying the company.'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11375,7 +11375,7 @@ u1: They say it's going to change the world. It's like the future of money or so
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 632,270_2123,fictionary,0,en,"Steve and you are hanging out, and he wants to invite his other friends. Steve says, ""Mind if some of my friends join?""",,"no, go ahead","{'turns': [{'u1': 'Hey, u2, I was thinking of grabbing dinner tonight. You free?', 'u2': ""Yeah, I'm in.""}, {'u1': ""Actually, I was thinking, maybe we can invite some friends. I've got a few buddies who'd love to join us."", 'u2': 'That sounds like fun.'}, {'u1': 'Mind if some of my friends join?', 'u2': 'no, go ahead'}]}",0,0.0,0.0,0.0,,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11447,7 +11447,7 @@ u1: can I borrow your suitcase?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 636,238_2085,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,"here, let me show you","{'turns': [{'u1': 'Ah man, I have the perfect picture to post. I just know my followers will love it.', 'u2': 'Wait, let me take a look.'}, {'u1': ""Ugh, my phone's so slow. Why won't it let me post it?"", 'u2': ""Here, let me show you what you're doing wrong.""}, {'u1': 'Okay, I think I know how to do it now. Can you help me set up the hashtag?', 'u2': 'here, let me show you'}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11753,7 +11753,7 @@ u1: I can let you borrow one of mine if you want.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 653,213_2046,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,So I don't get into his bad books.,"{'turns': [{'u1': ""That's not really cool. He's taking advantage of you. You're always the one running errands for him."", 'u2': ""I guess I didn't think about it that way. But it's not like I'm doing anything big.""}, {'u1': ""But honestly, how many times can one person be asked to run errands? It's like, you're his personal assistant!"", 'u2': ""I don't know. It's just what I do, I suppose.""}, {'u1': ""That's not a good enough reason to let him take advantage of you."", 'u2': ""So I don't get into his bad books.""}]}",0,0.0,1.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12167,7 +12167,7 @@ u1: I'm serious this time, mate. I need your suitcase for my trip. Can I borrow 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 676,228_2047,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"Not after your last car, I don't mind driving you there but you are NOT getting the keys to my car","{'turns': [{'u1': ""Hey, bro, can you please lend me your new car? I really need to pick up my girlfriend from work. Mine is still in the shop and I've got to have it fixed."", 'u2': ""Are you kidding me? You just bought that car. I don't want you ruining it like you did your last one.""}, {'u1': ""It's just a little dent, nothing too serious. And I've been driving safe since the accident."", 'u2': ""Save it for the insurance company. I'm not buying it.""}, {'u1': ""Come on, why can't I borrow it? Don't you trust me?"", 'u2': ""Not after your last car, I don't mind driving you there but you are NOT getting the keys to my car""}]}",0,1.0,0.0,1.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12689,7 +12689,7 @@ u1: ugh, worst hangover yet. I feel like crap.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 705,246_2070,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,That's really bold coming from you considering your spending habits,"{'turns': [{'u1': ""I'm just saying, 120 dollars is a lot to waste on something you could've sent back for free. It was on Amazon, and you just threw that money away."", 'u2': ""Come on, that's ancient history. Move on already""}, {'u1': ""Hey, at least my 120 dollars was spent on something useful, not on some fancy bag of coffee you're probably going to get tired of in a week."", 'u2': ""Tired of it in a week? That's the beauty of it - you're not me, so you have no idea what I'm looking for.""}, {'u1': 'Wow, you really should watch how you spend your money.', 'u2': ""That's really bold coming from you considering your spending habits""}]}",1,1.0,1.0,,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13013,7 +13013,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 723,215_2054,fictionary,1,en,"Steve says to you, ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."" At the same time, you notice that Steve is getting his 8th cup of coffee of the day.",,probably the same with the amount of coffee our generation drinks,"{'turns': [{'u1': ""I mean, I've seen it. The kids these days are hooked on that Red Bull stuff and the energy drinks in general. It's just so unhealthy. Their livers are going to pay for it in 10 years."", 'u2': ""You're telling me. I'm pretty sure my grandma used to have a similar addiction to this Excedrin stuff back in the day""}, {'u1': ""That's true, but at least Excedrin is for headaches, right? These energy drinks are like a gateway to an addiction and a dependency on caffeine."", 'u2': ""Yeah, that's what they say, but I still don't see the difference between that and what my dad used to down back in the 80s when he thought he was the king of Wall Street""}, {'u1': ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."", 'u2': 'probably the same with the amount of coffee our generation drinks'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13733,7 +13733,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 763,203_2109,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Hahha such a good disguise he'd make a great criminal mastermind,"{'turns': [{'u1': ""I think I might be a bit off. I don't see a horn anywhere. And what's with the carrot?"", 'u2': ""I mean it does look pretty convincing from where I'm standing""}, {'u1': ""Ah, no, no, no! It's perfect. I was going for a, uh, a very subtle unicorn."", 'u2': 'Subtle? I think you just wanted to draw a horse'}, {'u1': ""Now that's a unicorn!"", 'u2': ""Hahha such a good disguise he'd make a great criminal mastermind""}]}",1,1.0,1.0,0.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13841,7 +13841,7 @@ u1: Actually, yeah, I guess I did borrow that too.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 769,223_2002,fictionary,1,en,"Steve is very opinionated about shoes. He thinks that black shoes are boring. Your shoes happen to be black. Though you don't have strong opinions about shoes, Steve says to you, ""you know, my shoes are more fashionable than yours. You should hear about how all the fashionable magazines actually avoid featuring black shoes.""",,Fair enough but I like my black shoes so it doesn't matter to me,"{'turns': [{'u1': 'Steve, come on! Black shoes are so bland and plain. They lack the style that I love to flaunt with my red and purple shoes.', 'u2': ""I guess that's your opinion about black shoes, but to me they're simple and elegant.""}, {'u1': 'Fashion magazines should be ashamed for not featuring black shoes more often. Black is such a classic color!', 'u2': ""I'm not sure I agree. I think fashion magazines just go for what's trendy and right now black isn't that.""}, {'u1': ""They can't possibly know good taste if they avoid featuring black shoes. You should really consider changing to a more stylish pair."", 'u2': ""Fair enough but I like my black shoes so it doesn't matter to me""}]}",0,0.0,0.0,1.0,0.0,,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14237,7 +14237,7 @@ u1: Okay, okay, no more dancing, are we cool now?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 791,207_2042,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,Steve you are funny with your quirks.,"{'turns': [{'u1': ""You're being annoying again, u2, can't you just set the volume to an even number for once?"", 'u2': 'I like to mix things up, buddy'}, {'u1': 'Mixing it up? You mean making me fix it every five seconds?', 'u2': ""Yeah, you're pretty handy with the remote""}, {'u1': ""I'm not handy, I'm just the remote police, keeping the volume in check!"", 'u2': 'Steve you are funny with your quirks.'}]}",1,1.0,1.0,1.0,1.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14669,7 +14669,7 @@ u1: Why is my brother even friends with that guy? I don't get it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 815,236_2053,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,Are you Mr Sockhand underneath ?,"{'turns': [{'u1': ""Look at me, I'm the master of footwear! I've got my shoes on my hands, and I'm ready to take on the world!"", 'u2': ""That's a great start, but I'm not convinced you've thought this through. Have you considered the ergonomic implications of wearing shoes on your hands?""}, {'u1': ""Oh, come on, don't be such a skeptic! I've got the perfect balance of comfort and style going on here. These shoes were made for hand-wearing!"", 'u2': ""I'm still not sold. What about when you need to use your hands to type or do other office work? Won't this be a bit of a hindrance?""}, {'u1': ""But that's the beauty of it – I'm Mr. Shoehand! I can do everything with my feet!"", 'u2': 'Are you Mr Sockhand underneath ?'}]}",1,1.0,1.0,,,1.0,,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14723,7 +14723,7 @@ u1: I'm so sorry I got the job and you didn't.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 818,272_2031,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,"yeah its a great night, im glad you got on with my work colleagues well","{'turns': [{'u1': ""I must say, I love the vibe here. Everyone's really friendly and seems to enjoy themselves."", 'u2': 'yeah they can be a bit intense at times'}, {'u1': ""You're a great host, and it's clear you're really popular with the team. I'm sure it's due to your sense of humor and kindness."", 'u2': 'yeah they just respond well to banter'}, {'u1': ""I'm having fun. What about you?"", 'u2': 'yeah its a great night, im glad you got on with my work colleagues well'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15407,7 +15407,7 @@ u1: Ah, I see what you mean. I'll definitely get those back to you once I get ba
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 856,251_2014,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,Hmm that's interesting,"{'turns': [{'u1': ""I love trying new foods, and I'm really curious to see how Japanese food is different from what we have here. You know, in Japan, people really emphasize freshness and using only the best ingredients."", 'u2': ""That's really interesting, because when I'm cooking at home, I always try to use fresh ingredients.""}, {'u1': ""And it's not just about the ingredients, you know, in Japan, they also have this really cool tradition of eating sushi with your hands."", 'u2': ""Ew, that's not something I'm sure I'd be comfortable with.""}, {'u1': 'You know, in Japan, people have been doing it that way for generations.', 'u2': ""Hmm that's interesting""}]}",1,1.0,0.0,1.0,1.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15533,7 +15533,7 @@ u1: So, how is my puppy doing?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 863,118_1018,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,"The new shoes are nice, where did you get them?","{'turns': [{'u1': ""I finished a huge project at work, and I treated myself to a new pair of shoes. You've got to see them – they go amazingly well with my outfit today!"", 'u2': ""Congrats on finishing the project. That's great. So, what made you want to get shoes?""}, {'u1': ""I don't know, man, I just felt like I deserved something special after putting in all that extra work. And these shoes just felt like the right choice."", 'u2': ""I can see why you'd want something nice after all that effort. I'm just not sure how you're going to keep them looking this good for long""}, {'u1': 'Ah, I was thinking of getting a shoe tree to help keep the shape, and maybe taking them to the cobbler for a quick polish every now and then.', 'u2': 'The new shoes are nice, where did you get them?'}]}",0,0.0,0.0,,1.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15983,7 +15983,7 @@ u1: Ha! No, I'm not that desperate. But I do want to make a good impression. So 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 888,206_2027,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,Do you want me to show you how to do it? It's pretty easy once you get the hang of it.,"{'turns': [{'u1': ""I've been looking through my old high school yearbooks and I wish I could still look like that."", 'u2': ""You still look pretty good for your age, Steve. You're just missing a few years of experience.""}, {'u1': ""Ugh, I'm not old, I'm just mature. And I want to post this pic of me with my guitar on social media."", 'u2': ""Okay, well, what's stopping you from posting it? You've got the picture, right?""}, {'u1': ""I've got the picture, but I have no idea how to do it. I'm trying to use this weird button thingy on my phone and it just won't work."", 'u2': ""Do you want me to show you how to do it? It's pretty easy once you get the hang of it.""}]}",0,0.0,1.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16091,7 +16091,7 @@ u1: I don't know, I see people littering on the sidewalk and stuff, but they don
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 894,127_1048,fictionary,1,en,"Steve asks you to get him some coffee from a coffee shop nearby. But he doesn't seem to be particularly busy right now. When you ask him ""why can't you get it yourself?"", he simply says, ""oh, no reason. I just thought maybe you could do it for me.""",,piss off,"{'turns': [{'u1': ""It's no big deal, I'm not in a rush, but it would be a huge help if you could get me a coffee from the shop down the street. I'd owe you one for sure."", 'u2': ""What's going on, Steve? You're not exactly starving over here.""}, {'u1': 'I know it sounds silly, but I just thought it would be nice if you got it for me. You know, a small favor.', 'u2': 'Are you kidding me?'}, {'u1': 'Oh, no reason. I just thought maybe you could do it for me.', 'u2': 'piss off'}]}",0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17189,7 +17189,7 @@ u1: oooh, what's the plan?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 955,261_2077,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"Sorry Steve, I'm out of money.","{'turns': [{'u1': ""come on buddy, just get another one for me too, I'll owe you one someday."", 'u2': ""That's like the 5th time you've asked me this, Steve.""}, {'u1': ""don't worry about it, man, just grab one for me too, okay?"", 'u2': ""Steve, I'm getting sick of getting up every time you want another beer.""}, {'u1': ""Hey man, grab one for me when you get up, I'm low on cash."", 'u2': ""Sorry Steve, I'm out of money.""}]}",0,0.0,0.0,,0.0,1.0,,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17603,7 +17603,7 @@ u1: Ugh, yeah, I know. I'll get to it eventually.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 978,125_1006,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"Advice was fine, but don't think it's gonna work out. Thanks though","{'turns': [{'u1': ""I'm glad I could help! So, how's it been going with him/her? Any chance you guys have been hanging out a lot?"", 'u2': ""Things have been cool, but I think it's just friend zone stuff. They seem really hesitant to do much more than just talk.""}, {'u1': ""Aww, man... Yeah, you said they were coming out of a relationship. That can take some time. But don't give up yet! Keep trying to get some actual dates out of them."", 'u2': ""Eh, I don't know...I feel like they're just really nice to me and that's about it. Like, I don't really have that spark""}, {'u1': ""Ugh, that's frustrating! You'd think they'd be more receptive to you since you've been friends for a while. Okay, what's the plan? Are you gonna make a move or just keep hanging out as friends?"", 'u2': ""Advice was fine, but don't think it's gonna work out. Thanks though""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17819,7 +17819,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 990,211_2011,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,"Haha, now you know how I feel.","{'turns': [{'u1': ""I don't get why none of you are taking this seriously. It's just one group assignment, but you'd think it's a thesis we're working on."", 'u2': ""Dude, chill. We've got plenty of time.""}, {'u1': ""No we don't. It's almost the end of the week, and I'm the only one who's actually done anything."", 'u2': ""Ah, come on Steve. You're not exactly the most punctual guy, are you?""}, {'u1': ""Gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!"", 'u2': 'Haha, now you know how I feel.'}]}",1,1.0,1.0,1.0,,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18305,7 +18305,7 @@ u1: But have you seen the way it moves? That's not something a drone can do. It'
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1017,115_1012,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"They've been friends a while, those things matter less the more you've been friends with them.","{'turns': [{'u1': ""really, like every time I talk to him I have to lend him money. It's getting out of hand!"", 'u2': ""That's not really how friendships work. He's not going to change because you lend him money or don't.""}, {'u1': ""But it's annoying because he never pays me back! It's like he knows I can afford it and just takes it for granted."", 'u2': ""Those things don't define the whole friendship, Steve.""}, {'u1': ""But it's not just that – he always shows up late, never remembers my birthday, and just generally treats me like dirt."", 'u2': ""They've been friends a while, those things matter less the more you've been friends with them.""}]}",0,0.0,1.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18395,7 +18395,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1022,131_1060,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!","{'turns': [{'u1': ""I'm in a bit of a bind here, I've left my suitcase at my brother's place and I really need one for my trip next week."", 'u2': ""Really? You forgot it at your brother's place? That's pretty careless, dude!""}, {'u1': ""Haha, well, I'm not perfect! Can I borrow your suitcase instead? I promise I'll return it as soon as I get back."", 'u2': ""You're kidding me, right? You still haven't returned my phone charger and my toaster, and now you want to borrow something else from me?""}, {'u1': ""Ah, yeah, about that... I'm really sorry, I've been meaning to return them but I just haven't gotten around to it yet."", 'u2': ""Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18593,7 +18593,7 @@ u1: Il ne parle que bas français, il doit travailler son anglais!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1033,115_1010,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"I mean, you're not always the fastest to pay back a loan either ....","{'turns': [{'u1': ""come on Bill, just be honest with your friend about how he's been treating you."", 'u2': ""I don't think honesty would help, he gets really defensive whenever that's brought up.""}, {'u1': ""Bill should just stop lending him money, it's not worth it."", 'u2': ""But Bill's always saying that this time will be different, that he's changed and will pay him back.""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': ""I mean, you're not always the fastest to pay back a loan either ....""}]}",0,1.0,0.0,1.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19313,7 +19313,7 @@ u1: It's unbelievable how many people are still drinking the Kool-Aid, even afte
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1073,213_2076,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,Don't you do the same thing?,"{'turns': [{'u1': ""Ah, well, yeah... To be honest, it is pretty common for my boss to ask me to do stuff outside of work hours. Like, last week I had to pick up some groceries for him because he said he was too busy. I guess it's just part of the job, but it's definitely not ideal."", 'u2': ""I get that, but this time I feel like it's really not fair. I'm not getting paid to run his personal errands. Why do you think I should just accept it?""}, {'u1': ""To be honest, u2, I can see why you're upset. If I were in your shoes, I'd probably be pretty frustrated too. Maybe we should talk to our boss and explain how we feel about being asked to do non-work related tasks during work hours?"", 'u2': ""No way, man. He doesn't listen to us. And even if he did, I don't think it would make a difference. He's always going to find ways to get us to do his bidding, no matter what.""}, {'u1': ""That's a pretty cynical view, u2. But I guess I can see why you'd feel that way. You've been dealing with this a lot lately, haven't you?"", 'u2': ""Don't you do the same thing?""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19367,7 +19367,7 @@ u1: I think they go pretty well with this outfit though.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1076,272_2027,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""I'm having fun. What about you?""",,I'm having fun too. I knew they'd love you as much as I do.,"{'turns': [{'u1': ""I'm glad you set me up with your colleagues. They're an interesting bunch."", 'u2': ""Yeah, we've got a good mix of people. They're all really into our project.""}, {'u1': 'What do you think of my joke earlier?', 'u2': ""Everyone was laughing, so that's a win!""}, {'u1': ""I'm having fun. What about you?"", 'u2': ""I'm having fun too. I knew they'd love you as much as I do.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19601,7 +19601,7 @@ u1: Thanks for getting that round for me too, u2! You're a lifesaver!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1089,229_2117,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"NO, GO GET IT YOURSELF","{'turns': [{'u1': 'hey, buddy, can you grab me another one?', 'u2': 'seriously, get it yourself for once'}, {'u1': ""come on, man, I'm buying! get me another one"", 'u2': ""i don't care if you're buying, i'm not your beer butler""}, {'u1': 'alright, just get me one more, okay?', 'u2': 'NO, GO GET IT YOURSELF'}]}",0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19979,7 +19979,7 @@ u1: It's alright. I didn't even like this shirt anyway.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1110,268_2103,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,You are looking suave man out to impress!,"{'turns': [{'u1': 'really hoping the boss will like the presentation tomorrow.', 'u2': ""So am I, but you've got this covered. Now let's focus on the celebration of your hard work - like those new shoes you just got.""}, {'u1': ""Haha, yeah I guess I did splurge a bit on them. But they're worth it, don't you think?"", 'u2': 'They definitely are. You pull them off perfectly.'}, {'u1': ""You're looking good yourself, by the way!"", 'u2': 'You are looking suave man out to impress!'}]}",0,1.0,0.0,0.0,1.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20177,7 +20177,7 @@ u1: I don't get it, Bill's friend is always coming to him for money, and Bill ju
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1121,221_2054,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"i dunno, i guess it could be but i think i'd need more proof to believe it","{'turns': [{'u1': ""man, you gotta check this out it's a live video of these aliens they're so close you can see their faces!"", 'u2': ""uh, i'm not sure what you're trying to show me. it just looks like a group of people in costumes""}, {'u1': ""no way, dude they're definitely not humans they're flying all around in this saucer thingy it's crazy!"", 'u2': ""i'm not saying they're not aliens or whatever, but maybe it's just a really good prank?""}, {'u1': ""this is definitely proof of alien life! look, it must be an alien because humans can't do that. What else could it be?"", 'u2': ""i dunno, i guess it could be but i think i'd need more proof to believe it""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20681,7 +20681,7 @@ u1: it must be an alien because humans can't do that. What else could it be?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1149,229_2039,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"I think it's your round this time, don't you?","{'turns': [{'u1': 'get another one for me too, will you?', 'u2': 'Come on Steve, get your own.'}, {'u1': ""Haha, no way, man, I'm too lazy!"", 'u2': ""Well, you've been lazy enough to let me order for you this whole time, so I'm calling it even.""}, {'u1': 'Aww, come on, buddy, just one more!', 'u2': ""I think it's your round this time, don't you?""}]}",1,1.0,1.0,0.0,1.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20951,7 +20951,7 @@ u1: gosh, it's so frustrating that I'm the only one trying to get the stuff movi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1164,265_2055,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,No worries,"{'turns': [{'u1': 'hey, you got any snacks?', 'u2': ""I've got a stash somewhere in my bag.""}, {'u1': 'Can I borrow your USB stick?', 'u2': ""Help yourself, it's in my backpack.""}, {'u1': 'thank you', 'u2': 'No worries'}]}",0,0.0,0.0,,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -21581,7 +21581,7 @@ u1: I mean, she is great in many other ways, but her music taste is just horribl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1199,124_1038,fictionary,0,en,"Steve says that your shirt is too tight for the occasion and says, ""I can let you borrow one of mine if you want.""",,"Really you think it's too tight? shit, okay well I'll at least try on your shirt and see which one I prefer. thanks man","{'turns': [{'u1': ""I'm a bit worried your shirt might be too tight for the party tonight."", 'u2': 'What are you talking about? This is the same shirt I wore to the bar last week.'}, {'u1': 'Actually, the guys from work looked at you like you were about to pop out of it.', 'u2': ""Oh man, they were just joking. I'm sure it's fine.""}, {'u1': ""I think it's worth checking out. I've got a few nice ones that might fit you better."", 'u2': ""Really you think it's too tight? shit, okay well I'll at least try on your shirt and see which one I prefer. thanks man""}]}",0,0.0,0.0,,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22193,7 +22193,7 @@ u1: I should have just stayed at my old job. If it hadn't been for this new job,
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1233,109_1001,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,"Dude! get it together, how about appreciating the side of her that you like?","{'turns': [{'u1': ""you know, sometimes I think she's more annoying than anything, she just doesn't get me at all."", 'u2': ""C'mon Steve, you're always on her case about something. Lighten up a bit!""}, {'u1': ""actually, I think her music tastes are really a big deal for me, it's not just something I can ignore."", 'u2': ""Dude, so you're saying that she's great in most ways, but her music taste is this huge flaw? That's still super unbalanced, man.""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'Dude! get it together, how about appreciating the side of her that you like?'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22427,7 +22427,7 @@ u1: Now that you're wearing those expensive shoes, you look absolutely sharp
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1246,125_1018,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"No, your advice was terrible","{'turns': [{'u1': ""Hey, how's it going? I was just thinking about our previous convo and I want to make sure I'm not influencing your decisions too much. You're the one who needs to figure out what's best for you, but I'm curious - have you started making moves on him/her?"", 'u2': ""You're just saying that because you want me to confess so you can give me a 'I told you so' moment. Let's just drop it, okay?""}, {'u1': ""No, really! I'm trying to be honest here. You know I want the best for you, and if I gave you advice that was wrong, I want to know. Maybe we can discuss some other approaches?"", 'u2': ""Fine. So I have talked to him/her a couple times since then. Nothing really interesting happened. Just small talk. It's like we're just friends, and I'm starting to think that's all we'll ever be""}, {'u1': 'Did my advice work or what? Any progress so far?', 'u2': 'No, your advice was terrible'}]}",1,1.0,1.0,,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22719,7 +22719,7 @@ u1: Get another one for me too, will you?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1262,226_2099,fictionary,1,en,"Steve asks you to get him some coffee from a coffee shop nearby. But he doesn't seem to be particularly busy right now. When you say ""why can't you get it yourself?"", he simply says, ""oh, no reason. I just wanted you to do it for me.""",,"Oh ok, give us your wallet then","{'turns': [{'u1': 'Look, just make sure to get me a medium coffee with extra sugar. I really need this caffeine.', 'u2': ""Dude, why can't you get it yourself?""}, {'u1': ""I don't know, I just want you to get it for me, okay? I'm kind of... preoccupied."", 'u2': ""No, you're not. You're just being lazy.""}, {'u1': 'Seriously, just get the coffee, okay?', 'u2': 'Oh ok, give us your wallet then'}]}",0,0.0,1.0,,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23799,7 +23799,7 @@ u1: oh, yeah, I'll pay you back, don't worry about it
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1322,111_1053,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,"Steve, aren't you going far ahead of yourselves, give it another week before you decide.","{'turns': [{'u1': ""I'm serious, man! She's the one! I can just feel it. We had an instant connection, you know?"", 'u2': ""Dude, I've seen you get crushes before, this isn't the first time I've heard you talk about someone like this. Maybe slow down, give it some time?""}, {'u1': ""I know what you're thinking, but trust me, I've never felt this way about anyone before. I think I'm really in love with her."", 'u2': ""Steve, I just want to make sure you're not getting too caught up in the moment. You've been drinking a lot, maybe you should sleep on this and talk to me about it tomorrow?""}, {'u1': ""Dude, I didn't drink that much, I'm perfectly sober! And yeah, I guess we did have a few drinks, but that doesn't change how I feel. I'm telling you, this is real."", 'u2': ""Steve, aren't you going far ahead of yourselves, give it another week before you decide.""}]}",0,0.0,0.0,0.0,,0.0,0.0,,,0.0,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23817,7 +23817,7 @@ u1: Dude, I didn't drink that much, I'm perfectly sober! And yeah, I guess we di
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1323,129_1023,fictionary,1,en,"You are helping Steve move into a new apartment. After an hour, you realize that Steve is only carrying light stuff and you are doing all the heavy lifting.  Steve says, ""ugh, moving is always so stressful and chaotic...""",,Yet you're only carrying the easy stuff l am the one doing all the work here,"{'turns': [{'u1': 'ugh, moving is always so stressful and chaotic...', 'u2': ""Dude, you're just setting up the couch, and I'm lugging boxes up and down the stairs.""}, {'u1': ""I don't know, I just feel overwhelmed with all this stuff."", 'u2': ""It's not the stuff that's overwhelming, it's you carrying those few light boxes like they're featherweights while I'm doing all the heavy lifting.""}, {'u1': ""uhh, yeah I guess that's kinda true"", 'u2': ""Yet you're only carrying the easy stuff l am the one doing all the work here""}]}",0,0.0,0.0,1.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24033,7 +24033,7 @@ u1: Must be tough for Bill to have to deal with noisy colleagues all the time!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1335,264_2041,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,I will and let me know how much they cost as I'd like to replace them if I can.,"{'turns': [{'u1': 'Oh no! These were really nice! My optometrist is supposed to get a new shipment in today, actually. Do you think we could swing by their place and get a replacement?', 'u2': ""I'm happy to go with you. Just give me a minute to take care of this mess here.""}, {'u1': ""They're really not that pricey, so I don't mind too much. I'm just bummed about losing them, I guess."", 'u2': ""Yeah, I can understand that. Accidents happen, and it's always a shame to lose something you've grown attached to.""}, {'u1': 'Oh man, I loved those glasses! Well, can you clean up the pieces?', 'u2': ""I will and let me know how much they cost as I'd like to replace them if I can.""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24141,7 +24141,7 @@ u1: You really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1341,131_1056,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,Sure no problem.  Bring back the charger and the toaster and you can have a loan of the suitcase!,"{'turns': [{'u1': ""hey buddy, hope you're doing well! just wanted to check if you've got a few minutes to hang out this weekend?"", 'u2': ""I don't know, Steve. I'm really busy with work right now. And also, you still haven't returned my phone charger and toaster. What's up with that?""}, {'u1': ""haha, sorry about that! I got really busy too, but I'll make sure to drop by soon and return those. Maybe I can even bring some food over for you."", 'u2': ""I'd appreciate that. But please make it soon. And, by the way, I need my charger and toaster back. I've been looking for them everywhere and I have a feeling you've got them.""}, {'u1': ""hey, sorry again! I know I've had them for a while. I'll bring them over as soon as I can. By the way, I need a favor. Can I borrow your suitcase? I'm planning a trip next week."", 'u2': 'Sure no problem. Bring back the charger and the toaster and you can have a loan of the suitcase!'}]}",1,1.0,1.0,1.0,,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24861,7 +24861,7 @@ u1: Who cares about the boss? I just tried to post it but I don't even know how 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1381,211_2081,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,"Well now you see how you are, waiting till the last minute to get things done.","{'turns': [{'u1': ""It's really piling up now. We have to turn in this assignment soon."", 'u2': ""Geez, we've got time, relax.""}, {'u1': 'Everyone else in the group seems to be taking their sweet time.', 'u2': ""I've been noticing that too. You're always last minute, remember?""}, {'u1': ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!"", 'u2': 'Well now you see how you are, waiting till the last minute to get things done.'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24969,7 +24969,7 @@ u1: I wouldn't dream of it! But seriously, do you think I'd be better off just w
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1387,210_2092,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,You still owe me cash from yesterday!,"{'turns': [{'u1': ""Seriously, what's the deal with people who borrow things and never give them back? I swear, it's like they expect everyone else to be responsible and reliable!"", 'u2': ""You're one to talk after what happened yesterday, right? I lent you cash because you were cash-strapped, and I'm still waiting to get paid back.""}, {'u1': ""Come on, that's completely different. You're my best friend and I'll pay you back, just give me a little time!"", 'u2': ""I'm not asking for much, but a few days later and I still haven't seen any cash from you. That's not exactly the kind of reliable behavior you're talking about.""}, {'u1': ""Okay, fine, I owe you cash, but like I said, it'll get paid back, okay?"", 'u2': 'You still owe me cash from yesterday!'}]}",0,0.0,1.0,1.0,,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25005,7 +25005,7 @@ u1: Why did you agree to do it?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1389,131_1012,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"No, I don't know where it is actually","{'turns': [{'u1': 'Hey, buddy, can I ask you something?', 'u2': ""What's up? What's on your mind?""}, {'u1': ""I'm planning a road trip for next week. I need a spare charger and a toaster to make some sandwiches on the go. Where are those things?"", 'u2': 'Seriously, Steve? Those are both still missing. I swear I lent them to you months ago.'}, {'u1': ""You're still mad about that? Can I borrow your suitcase for the trip?"", 'u2': ""No, I don't know where it is actually""}]}",0,0.0,1.0,1.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25059,7 +25059,7 @@ u1: i just picked this outfit at random, hoping you wouldn't judge me
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1392,218_2075,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,You'll get more information from the pictures than I can provide.,"{'turns': [{'u1': ""Hey, man! Check out this slick fade. I've been thinking about getting it. What do you think?"", 'u2': ""I don't care. Just pick one and get it over with.""}, {'u1': ""Alright, alright, I get it. You're not my stylist. But seriously, have you seen the pompadour? It's been popping lately."", 'u2': ""So what? It's just a hairstyle.""}, {'u1': ""You know, I've been doing some research and these new haircuts are really popular among the celebrities."", 'u2': ""You'll get more information from the pictures than I can provide.""}]}",0,1.0,0.0,,1.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25131,7 +25131,7 @@ u1: People are so inconsiderate!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1396,260_2033,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,no steve i need it,"{'turns': [{'u1': ""no steve i need it for work, it's my only car and I have an important meeting today"", 'u2': ""I already told you I don't want you borrowing it""}, {'u1': ""please, I'm doing really bad with transportation right now and your new car would be a huge help"", 'u2': 'no, I said no'}, {'u1': ""come on, why can't I borrow it? Don't you trust me?"", 'u2': 'no steve i need it'}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25329,7 +25329,7 @@ u1: Wow, you really did drop a pretty penny on that coffee.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1407,111_1036,fictionary,1,en,"You and Steve went out last night and drank a lot. The next day, Steve excitedly says that he fell in love with the girl he met last night and that he is going to quit his job and join her on a backpacking trip.  Steve says, ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!""",,yeah well it's a great idea see you in 2 weeks after you realised it was a mistake,"{'turns': [{'u1': ""Steve, you've been drinking a lot, maybe we should have a little chat about this idea of quitting your job and traveling with someone you met last night."", 'u2': ""Dude, I'm sure you're just being paranoid. You're just a little hungover. Come on, you'll feel better in a few hours and all will be forgotten.""}, {'u1': ""No way, I'm serious about this! I know it sounds crazy, but I've never felt this way before. I think I'm really meant to be with her."", 'u2': ""Okay, Steve, let's just chill for a minute. Have you considered that she might just be a tourist and you'll never see her again, or even worse, she'll just leave you in some foreign country?""}, {'u1': ""this girl is totally amazing and I'm not gonna miss the opportunity to be with her. I'm quitting my job and traveling with her!"", 'u2': ""yeah well it's a great idea see you in 2 weeks after you realised it was a mistake""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25365,7 +25365,7 @@ u1: That's a good point, but your job is to do your actual job, not to be a pers
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1409,266_2028,fictionary,0,en,"You spilled coffee on Steve's shirt. When you apologize to him, Steve says ""it's alright. I didn't even like this shirt anyway.""",,"Still I feel bad, let me know if you want me to launder it for you","{'turns': [{'u1': ""I appreciate the apology, but honestly, it's not that big of a deal."", 'u2': 'I was worried it would ruin it completely'}, {'u1': ""Yeah, it's not a loss for me either way."", 'u2': 'But still, accidents like this can be pretty annoying'}, {'u1': ""it's alright. I didn't even like this shirt anyway."", 'u2': 'Still I feel bad, let me know if you want me to launder it for you'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25815,7 +25815,7 @@ u1: How many rounds we had now?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1434,239_2019,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,That's a strange thing to do. Are you superstitious?,"{'turns': [{'u1': 'Hey, I just noticed something funny. When you set the volume to an odd number, I take the remote and change it to an even number.', 'u2': ""That's a pretty clever way to deal with a problem like that.""}, {'u1': 'I did it again! You just set the volume to 43, and I quickly changed it to 44.', 'u2': ""That's getting a bit old. Can't you just let me change the volume in peace?""}, {'u1': ""You're trying to set it to 73 again, aren't you?"", 'u2': ""That's a strange thing to do. Are you superstitious?""}]}",0,0.0,1.0,,0.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -26175,7 +26175,7 @@ u1: don't pressure me! I'm working on it, alright?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1454,225_2036,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,Of course you can mate - but only after you give my charger and toaster back to me!,"{'turns': [{'u1': ""Dude, I'm glad you're doing well, but I totally forgot that I borrowed your charger. Can you just remind me to return it next time we meet?"", 'u2': ""Come on Steve, it's been two months! I really need that charger back.""}, {'u1': ""Sorry mate, I know I've been holding onto the toaster for a bit too long. I'll make sure to bring it back to you soon."", 'u2': ""It's been a month already! I'm starting to think you've just forgotten about it like with the charger. Please bring it back as soon as you can!""}, {'u1': 'Can I borrow your suitcase, I need one for my trip next week?', 'u2': 'Of course you can mate - but only after you give my charger and toaster back to me!'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -27435,7 +27435,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1524,203_2055,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,That looks more like the kid of a horse and Olaf to me lol.,"{'turns': [{'u1': ""I'm trying something different today! Drawing a unicorn with a twist. Just think about all the cool things you could add to make it extra special."", 'u2': ""That's what I'm worried about. The more you add, the less unicorn-y it looks.""}, {'u1': ""Haha, fair point! I've got it! I'll draw a carrot on its forehead. That's gotta be a unicorn, right?"", 'u2': ""Hmm, I don't know...It's kinda looking like a horse with a weird attachment.""}, {'u1': ""now that's a unicorn!"", 'u2': 'That looks more like the kid of a horse and Olaf to me lol.'}]}",1,1.0,0.0,,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -27453,7 +27453,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1525,238_2018,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,Do you want help posting a picture steve?,"{'turns': [{'u1': ""I'm getting older and I'm not as hip as I used to be. I'm determined to be young and cool. I just uploaded a picture of myself trying to look cool, but I'm not sure if it was a success."", 'u2': ""Maybe you could try taking a selfie? I've seen some people take pretty good selfies with their phones.""}, {'u1': ""I'm not even sure how to post a selfie on this thing. Do you guys use Instagram or what?"", 'u2': ""I think it's just called social media now. Don't worry about it, I'll show you sometime when I'm on my break.""}, {'u1': ""I'm really struggling to post a picture on this thing. Can you give me a hand?"", 'u2': 'Do you want help posting a picture steve?'}]}",0,0.0,0.0,,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -28983,7 +28983,7 @@ u1: what's the story with your friend not paying you back?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1610,262_2052,fictionary,1,en,"Steve shows up at your desk with a giant pile of paper and says, ""I have to go out of town for 3 days. Can you please finish this report instead of me?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,I'll do my best. Is there anything here I should know about?,"{'turns': [{'u1': ""I'm so sorry to dump this on you like this, but I've got an emergency come up and need to leave town ASAP. The report is due in 3 days and I just can't get it done before I leave. Can you please finish it for me?"", 'u2': ""Can you give me a brief overview of what's been done so far?""}, {'u1': ""Not much, I'm afraid. I just started it yesterday and was only able to get the outline and some initial research done. I was planning on starting the actual writing today."", 'u2': ""Okay, I think I can work with that. Can you point me in the direction of the sources you've used so far?""}, {'u1': ""The sources are all listed in the outline, which you can find in the top folder. I also had a call with the team lead yesterday to discuss the report's direction, but I haven't written down any of the details yet."", 'u2': ""I'll do my best. Is there anything here I should know about?""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -29091,7 +29091,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1616,228_2119,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"No Steve, you've just smashed your car up so you ain't having mine.","{'turns': [{'u1': ""Listen, man, I'm in a tight spot here. Emily's got to pick up, and I don't want to be late. I was wondering if I could borrow your car for just a few hours? It's a big ask, I know, but I promise to return it spotless."", 'u2': ""No way, Steve. I just bought it, and I'm not handing over my new wheels to someone who can't even take care of his own vehicle.""}, {'u1': ""Alright, alright, I get it. You don't want to lend me your car. But I'm still gonna need a ride. Can I just borrow it for, like, 10 minutes? I swear I'll be right back."", 'u2': ""Nah, mate. You've had your chances. If you can't even keep track of your own driving, then you're gonna have to find another way.""}, {'u1': ""Why can't I borrow it? Don't you trust me?"", 'u2': ""No Steve, you've just smashed your car up so you ain't having mine.""}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -29397,7 +29397,7 @@ u1: Whatever it is, let's just drop it. Can we talk about something else?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1633,246_2088,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,I like coffee so i'm happy to spend a little on it ok?!,"{'turns': [{'u1': ""Steve, you're not helping. I still haven't paid off the debt from that stupid Amazon purchase."", 'u2': ""I don't see why you're getting so upset. It's just a bit of money""}, {'u1': ""Steve: You're really not listening, are you? I've been struggling to pay my bills because of that Amazon fiasco."", 'u2': ""I'm listening, Steve, but you're not letting me get a word in edgewise""}, {'u1': 'Steve: The coffee you just bought, for instance. You should really watch how you spend your money.', 'u2': ""I like coffee so i'm happy to spend a little on it ok?!""}]}",0,0.0,1.0,0.0,0.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -29613,7 +29613,7 @@ u1: hmm, so maybe the advice didn't quite work out, did my advice work or what? 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1645,265_2077,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,"No worries, but make sure that you return it.","{'turns': [{'u1': 'thanks for lending me your USB stick!', 'u2': 'No problem'}, {'u1': 'where did I put that USB stick I borrowed from you?', 'u2': 'I think you had it at your place'}, {'u1': 'I found it, thanks for reminding me!', 'u2': 'No worries, but make sure that you return it.'}]}",0,0.0,0.0,,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -29685,7 +29685,7 @@ u1: You're kidding, right? All the fashionistas swear by other colors. Have you 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1649,214_2094,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"Yeah, I'll bear that in mind.","{'turns': [{'u1': ""Look, I know that coffee you bought is nice and all, but honestly, it's 40 bucks? I paid 120 for a bunch of junk on Amazon because I was lazy, and it's eating at me. Just saying."", 'u2': 'I can handle my spending, Steve.'}, {'u1': ""Come on, don't play dumb with me. You know exactly what I'm talking about. You're the one who's always talking about being mindful of your money."", 'u2': ""I'm not playing dumb, I just think there's more to life than cutting corners.""}, {'u1': ""That's not the point, okay? The point is that you dropped 40 bucks on coffee and I'm still feeling the pinch of my own wastefulness."", 'u2': ""Yeah, I'll bear that in mind.""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -30441,7 +30441,7 @@ u1: Exactly, that's why I got it. To encourage you to get one.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1691,202_2076,fictionary,1,en,"You did something that upset Steve the other day. You wanted to apologize to him, so you went to Steve's house. Steve opens the door, does a funny dance for two seconds, and smiles pointing his finger at his hair.",,Hell yeah. Is it different?,"{'turns': [{'u1': 'You could try, but probably not gonna make a difference, bro. Just chill, man. It was just a funny joke, anyway.', 'u2': 'Dude, are you really gonna start laughing about it?'}, {'u1': ""I was just trying to lighten the mood a little. Didn't mean to be rude, bro. What did I do, anyway?"", 'u2': 'You said I looked like a homeless guy at the party'}, {'u1': 'I was just joking about your hair', 'u2': 'Hell yeah. Is it different?'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -30693,7 +30693,7 @@ u1: Now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1705,268_2127,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,That shoe is good on you,"{'turns': [{'u1': ""'I see you finally finished that big project last night. You definitely deserve a celebration."", 'u2': 'Yeah, I was up till 3 am trying to meet the deadline.'}, {'u1': ""You're really making a good use of your time off, man. Which store did you end up buying those from?"", 'u2': ""Gucci. I found this amazing outlet store online, it's really hard to pass up the deals.""}, {'u1': ""They go really well with that outfit today, don't they?"", 'u2': 'That shoe is good on you'}]}",0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -30837,7 +30837,7 @@ u1: That's exactly my point, it's just a matter of trust! You're my colleague, y
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1713,240_2110,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,you alright over there stvee?,"{'turns': [{'u1': 'really wish they could keep the fries and the hamburger on opposite sides of the plate.', 'u2': 'it is a weird request, steve, right?'}, {'u1': ""i know, right? now they're touching."", 'u2': ""oh, you're getting all anxious again, steve""}, {'u1': ""i'm just trying to enjoy my meal in peace."", 'u2': 'you alright over there stvee?'}]}",1,1.0,1.0,1.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -31089,7 +31089,7 @@ u1: Okay, okay, I get it. You want to be a human traffic cone, got it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1727,113_1018,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,You're a mug,"{'turns': [{'u1': ""You're gonna love this! I've been telling you about Ezillion for months now!"", 'u2': ""What's wrong with you?""}, {'u1': ""Dude, this is gonna make me a millionaire! They're already talking about getting listed on the major exchanges!"", 'u2': 'Have you lost it?'}, {'u1': ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!"", 'u2': ""You're a mug""}]}",0,0.0,1.0,,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -31341,7 +31341,7 @@ u1: Ugh, I don't even know why I signed up for this. I'm such a terrible athlete
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1741,244_2056,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,Like when you never flush the toilet.,"{'turns': [{'u1': ""Hey, we just saw some guy not pick up after his dog, right? That's just inconsiderate!"", 'u2': ""It's the same thing as not picking up after yourself in the bathroom.""}, {'u1': ""I mean, come on, how hard is it to pick up a few dog droppings? It's not like it's a big deal."", 'u2': ""It's a big deal when you never flush the toilet after you're done.""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'Like when you never flush the toilet.'}]}",0,0.0,0.0,0.0,,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -31377,7 +31377,7 @@ u1: this girl is totally amazing and I'm not gonna miss the opportunity to be wi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1743,209_2038,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,Steve... same reason I am friends with you.,"{'turns': [{'u1': ""you know, u2, you seem like a cool guy, but i just dont get how we hang out. you always get us into trouble and never really help out. what's the deal with you?"", 'u2': ""steve, you're just mad cuz i got us out of that speeding ticket last time.""}, {'u1': ""i get that we've had some wild times together, but seriously, do you think it's fair to expect people to constantly bail you out? don't you think that's, well, a bit of a one-way friendship?"", 'u2': 'fair? who talks about fairness in a friendship, steve?'}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'Steve... same reason I am friends with you.'}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -31431,7 +31431,7 @@ u1: I told you I'd be fine, I know what I'm doing!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1746,235_2039,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,Odd looking unicorn,"{'turns': [{'u1': ""I'm telling you, it's going to be the best unicorn ever! I'm really inspired by the equine models at the museum."", 'u2': ""I'm not sure, Steve. I was thinking a unicorn would have wings or a horn.""}, {'u1': ""Come on, that's way too conventional. I'm a creative genius!"", 'u2': ""Okay, okay, but you're still going to make it a horse, aren't you?""}, {'u1': ""Now that's a unicorn!"", 'u2': 'Odd looking unicorn'}]}",1,1.0,1.0,1.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -32259,7 +32259,7 @@ u1: In that case no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1792,101_1004,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,"Steve, I don't mean to sound like your father but dude, you really need to keep your word.","{'turns': [{'u1': ""I know I said I was gonna hit the gym today, but I was up really late watching the game last night and I just don't feel like getting up early. Can I start tomorrow instead?"", 'u2': ""Dude, you know how you feel in the morning, it's always the same story. You promised us three weeks ago that you were gonna get in shape for the summer, and you've done nothing but slack off since then.""}, {'u1': ""Okay, fine. But just for one day, and just because I'm really hungry and don't feel like going out for breakfast. I'll make some protein shake and that's it."", 'u2': ""That's not even a good excuse, Steve. And what's with the protein shake? You've been on about that for months now. You're starting to sound like a supplement commercial""}, {'u1': ""I'm telling you, man, I'm really struggling with the language lessons. I've been trying to watch French TV shows, but I just can't seem to keep up. I think I'm gonna switch to an online course instead."", 'u2': ""Steve, I don't mean to sound like your father but dude, you really need to keep your word.""}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -32277,7 +32277,7 @@ u1: I'm telling you, man, I'm really struggling with the language lessons. I've 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1793,228_2040,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"I trust you, but it's my new car and i just don't want anyone else using it right now. Sorrry Steve.","{'turns': [{'u1': ""come on, why can't I borrow it? Don't you trust me?"", 'u2': ""Sorry man, but it's not even a week since I got it, I need some time to get used to it""}, {'u1': ""But I really need to pick up Rachel. She's been working late every night this week and I'm the only one who can get her. It's an emergency!"", 'u2': ""I know you do, but can't you get her another way? Like, call a cab or something?""}, {'u1': ""You know I can take care of your car, I've been driving it for you since I'm your best friend and you know I'm reliable. I'm not asking for much, just a little help out"", 'u2': ""I trust you, but it's my new car and i just don't want anyone else using it right now. Sorrry Steve.""}]}",0,0.0,0.0,0.0,,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -32709,7 +32709,7 @@ u1: That person should work on their English, don't you think?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1817,224_2008,fictionary,1,en,"Steve recently inherited a fancy watch from his dead grandfather. And he keeps showing it to you and talking about it. For the fifth time, Steve says, ""look, look how shiny this watch is.""",,"It's nice your grandfather had great taste, but keep it somewhere safe no need to keep playing around with it.","{'turns': [{'u1': 'I wonder if this watch still works. I was really close to my grandfather.', 'u2': ""That's a great memory. I can see why you're attached to it.""}, {'u1': ""You know what's even more amazing about this watch? The gold back is engraved with his initials."", 'u2': ""That's a nice touch, but I'm starting to get a little worried that you might lose it or break it.""}, {'u1': 'look, look how shiny this watch is.', 'u2': ""It's nice your grandfather had great taste, but keep it somewhere safe no need to keep playing around with it.""}]}",0,1.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -32871,7 +32871,7 @@ u1: I'm serious, when the fries and burger are right next to each other, it make
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1826,265_2016,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,I want it back.,"{'turns': [{'u1': 'thanks again for letting me borrow it,', 'u2': 'no problem, dude'}, {'u1': ""hey, i'll give it back to you soon"", 'u2': 'when can i expect it?'}, {'u1': 'later today, i promise', 'u2': 'I want it back.'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -33213,7 +33213,7 @@ u1: I'm just trying to understand the perspective of the other team, and maybe w
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1845,115_1047,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,sometimes you overlook the bad qualities in a good friend.,"{'turns': [{'u1': 'I really think you guys are different, Bill seems to be way more understanding and calm about this.', 'u2': 'Maybe Bill has learned to accept those qualities in his friend and has found ways to deal with them.'}, {'u1': ""I mean, I just can't wrap my head around it. It's always take, take, take with that guy."", 'u2': ""I've seen Bill's friend make mistakes and still manage to be a good person. Maybe that's what Bill sees too.""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'sometimes you overlook the bad qualities in a good friend.'}]}",0,1.0,0.0,1.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -33321,7 +33321,7 @@ u1: I'm just getting my 8th cup of the day, actually.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1851,260_2034,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"Nope, I don't trust anyone with my vehicle, not even family.","{'turns': [{'u1': ""Look, I'm really in a bind here. My car is being fixed and I've got a ride to get from work. I know this is a lot to ask, but can I borrow your new car?"", 'u2': 'What do you take me for? I just got this car yesterday.'}, {'u1': ""I promise to return it in one piece and I'll even give you a ride back to your place to pick it up. Come on, we're colleagues."", 'u2': ""You're my colleague, but that's no reason to take advantage of me.""}, {'u1': ""Come on, why can't I borrow it? Don't you trust me?"", 'u2': ""Nope, I don't trust anyone with my vehicle, not even family.""}]}",0,0.0,0.0,0.0,0.0,,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -33699,7 +33699,7 @@ u1: I was just going to ask if I could borrow your suitcase for my trip next wee
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1872,241_2120,fictionary,1,en,"Steve has a friend Bill. Bill often feels annoyed by his colleague. The reasons that Bill finds his colleague annoying are the same as the reasons why you find Steve annoying sometimes (for example, both Bill's colleague and Steve make loud noises in the office).  Steve says, ""Must be tough for Bill to have to deal with noisy colleagues all the time!""",,It sure is.,"{'turns': [{'u1': 'I can relate to what you mean about sometimes feeling annoyed at coworkers.', 'u2': 'Yeah, it can be tough to deal with.'}, {'u1': ""I've had similar experiences with Bill being bothered by his noisy colleague."", 'u2': ""That's probably part of why he gets frustrated so easily.""}, {'u1': 'Must be tough for Bill to have to deal with noisy colleagues all the time!', 'u2': 'It sure is.'}]}",1,1.0,1.0,1.0,0.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -33969,7 +33969,7 @@ u1: Haha, I'm almost out, grab another one for me too?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1887,251_2010,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,Well we're not in Japan are we?,"{'turns': [{'u1': ""I was just thinking about this great ramen place I went to in Japan. You know, in Japan, they put the noodles on the side, and then you add them to the broth. It's all about the balance of flavors and textures."", 'u2': 'Balance of flavors and textures? Really? That sounds like a lot of work.'}, {'u1': ""You know, in Japan, when you're eating a meal, it's not just about filling your belly, it's about the experience. The atmosphere, the service, the company... it all comes together."", 'u2': ""Yeah, yeah, I get it. It's all about the experience, but I'm still hungry.""}, {'u1': 'You know, in Japan, we would often have a special dish at the end of the meal, like mochi or manju, to cleanse your palate.', 'u2': ""Well we're not in Japan are we?""}]}",1,1.0,1.0,1.0,,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -34383,7 +34383,7 @@ u1: I can let you borrow one of mine if you want.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1910,240_2055,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Sooner or later they will all be in your mouth. What's the point of doing that?,"{'turns': [{'u1': 'Why do you always have to make such a big deal about a little thing like food on a plate?', 'u2': ""Are you kidding me? You've been doing this since we were kids.""}, {'u1': ""I'm just trying to keep things organized, okay?"", 'u2': ""Organized? It's a plate of food, not a science experiment!""}, {'u1': ""They're going to touch eventually, just relax."", 'u2': ""Sooner or later they will all be in your mouth. What's the point of doing that?""}]}",1,1.0,1.0,,1.0,1.0,,1.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -34743,7 +34743,7 @@ u1: music taste is just horrible
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1930,241_2018,fictionary,1,en,"Steve has a friend Bill. Bill often feels annoyed by his colleague. The reasons that Bill finds his colleague annoying are the same as the reasons why you find Steve annoying sometimes (for example, both Bill's colleague and Steve make loud noises in the office).  Steve says, ""Must be tough for Bill to have to deal with noisy colleagues all the time!""",,I think sometimes people don't realise their being loud and inconsiderate...,"{'turns': [{'u1': ""That really helps explain why Bill often has a bad day when he's at the office"", 'u2': ""I've noticed that too, I think he gets stressed when he can't focus because of the noise""}, {'u1': ""It's funny how some people just don't seem to get that constant noise affects us"", 'u2': ""Exactly, and it's not just the noise, it's the lack of consideration for others around them""}, {'u1': 'Must be tough for Bill to have to deal with noisy colleagues all the time!', 'u2': ""I think sometimes people don't realise their being loud and inconsiderate...""}]}",0,1.0,0.0,,0.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -34833,7 +34833,7 @@ u1: That's the best part, bro! I wanted to see you smile, and I figure this'll d
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1935,116_1010,fictionary,0,en,"Steve has been going out non-stop for the past two months because he needs a distraction from his recent breakup.  You are worried that he might be becoming a bit too destructive.  Steve says, ""ugh, worst hangover yet. I feel like crap.""",,Maybe you should ease up a bit ... You've been partying pretty hard lately.,"{'turns': [{'u1': ""you guys had such a blast at that party last night, I had to join in! It's been way too quiet lately and I needed something to take my mind off things."", 'u2': ""I get it, but aren't you starting to overdo it a bit? I'm worried about you, man.""}, {'u1': ""nonsense, I'm fine. I can handle my liquor, and it's just a distraction from the breakup. I need to keep myself occupied."", 'u2': ""I know, I know, but your parties are getting wilder by the week. I'm starting to get a bit concerned about your well-being.""}, {'u1': 'ugh, worst hangover yet. I feel like crap', 'u2': ""Maybe you should ease up a bit ... You've been partying pretty hard lately.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -34887,7 +34887,7 @@ u1: I can let you borrow one of mine if you want.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1938,213_2018,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,"Because its the boss and sometimes its scary to say no to them, just incase it looks bad on me. Also you do it all the time Steve!","{'turns': [{'u1': ""Come on, it can't be that bad. You're not one to shy away from a challenge, right?"", 'u2': ""Yeah, I know, but I'm not sure about this one. What if saying no is seen as unprofessional?""}, {'u1': ""But doesn't your boss trust you? I'm sure he wouldn't think less of you for saying no."", 'u2': ""I hope you're right, Steve, but it's not that simple. I've seen what happens to people who refuse their boss's requests. They get stuck on the bottom rung.""}, {'u1': ""That's exactly my point. It sounds like you're being taken advantage of. You should definitely say no."", 'u2': 'Because its the boss and sometimes its scary to say no to them, just incase it looks bad on me. Also you do it all the time Steve!'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -35013,7 +35013,7 @@ u1: Oh, so it's about paying me?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1945,209_2006,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"you should, its exactly what you do to me","{'turns': [{'u1': ""I'm telling you, u2, your behavior is one of the reasons why I think you're annoying. You're always taking my money and never paying it back."", 'u2': 'you just love being in control and making people do your bidding'}, {'u1': ""I don't get it, I swear, my brother has so much better taste than that. He can't be friends with someone that's so clearly self-centered."", 'u2': 'because, just like you, he likes to get things for free'}, {'u1': ""Why is my brother even friends with that guy? I don't get it."", 'u2': 'you should, its exactly what you do to me'}]}",0,1.0,0.0,1.0,0.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -35301,7 +35301,7 @@ u1: I'm so sorry I got the job and you didn't.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1961,125_1003,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,No nothing,"{'turns': [{'u1': ""I've been thinking about what I said the last time we talked, and I'm curious to know if you've made any moves on our coworker."", 'u2': 'Yeah I have talked to him/her a few times'}, {'u1': ""I figured it was time to follow up on our previous conversation, and I'm hoping to hear that things have progressed a bit. Have you guys talked about anything meaningful or personal?"", 'u2': ""Yeah a little but I'm starting to feel like we're just stuck in this friend zone and I don't know how to break out of it""}, {'u1': 'Did my advice work or what? Any progress so far?', 'u2': 'No nothing'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -35499,7 +35499,7 @@ u1: I am focused, trust me! It's just that GPS can be a bit finicky sometimes.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1972,254_2125,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,"Not again, give it up!","{'turns': [{'u1': ""I just found this traditional Bulgarian song and I think you'll love it. The rhythm is infectious!"", 'u2': ""Not a chance, you're always doing this!""}, {'u1': ""This one's got a nice harmony to it. You can't deny the Bulgarian folk magic!"", 'u2': ""Oh please, we're not in a Bulgarian restaurant, Steve!""}, {'u1': 'This traditional Bulgarian music will really speak to you, trust me!', 'u2': 'Not again, give it up!'}]}",0,0.0,1.0,0.0,0.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -35643,7 +35643,7 @@ u1: You look totally stylin' with that red tank top, green shorts, and yellow sn
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1980,231_2086,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"Well ok, this is the last time I sub you. Next time you can buy the beers.","{'turns': [{'u1': 'come on, it happened like one time!', 'u2': ""That's not the point, Steve. It happened multiple times.""}, {'u1': ""I'm sure it was just that one time..."", 'u2': ""Steve, really, it's happened more than once. Get your wallet.""}, {'u1': 'It was just one time, I swear!', 'u2': 'Well ok, this is the last time I sub you. Next time you can buy the beers.'}]}",0,0.0,,1.0,0.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -35751,7 +35751,7 @@ u1: Just trying to lighten the mood, you know?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1986,222_2022,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,Could you please translate lyrics for me!,"{'turns': [{'u1': ""That one by Naidenovo hypnotyzma was so good last week. I found this one by Trakiyska Horo and it's my new favorite, come on!"", 'u2': ""I've seen Trakiyska Horo live, how was it? Did you find them on YouTube?""}, {'u1': ""Actually, I found them on a Bulgarian folk music streaming platform, it's a hidden gem! But I'm so glad you know them too."", 'u2': 'Oh, you have to try that new platform, I was thinking of checking it out, is it free?'}, {'u1': ""It's a free trial, but after that you have to pay, which is a bummer. But the selection of Bulgarian folk music is incredible!"", 'u2': 'Could you please translate lyrics for me!'}]}",0,0.0,1.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -36399,7 +36399,7 @@ u1: ew, people are so inconsiderate!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2022,215_2064,fictionary,1,en,"Steve says to you, ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."" At the same time, you notice that Steve is getting his 8th cup of coffee of the day.",,its not so similar to coffee you know,"{'turns': [{'u1': ""That can't be healthy, right? I mean, I love coffee, but energy drinks? All those extras and no regulation. It's like they're playing roulette with kids' health."", 'u2': ""You're one to talk with 5 cups of coffee already today, don't you think?""}, {'u1': ""Like, I get that, but it's not the same thing, is it? Coffee's got some established safety net, and caffeine content is regulated. Energy drinks can have god knows what in them and we have no idea how it's affecting people's bodies."", 'u2': ""But so many people have always been able to drink coffee and be fine. It's a huge difference in moderation.""}, {'u1': ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."", 'u2': 'its not so similar to coffee you know'}]}",1,1.0,1.0,,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -36579,7 +36579,7 @@ u1: did my advice work or what? Any progress so far?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2032,216_2115,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,don't be so harsh- you're trying to learn a new language too so you should know how difficult it is,"{'turns': [{'u1': ""I've been trying to say 'hello' and 'goodbye' in French, but I'm pretty sure I've been butchering it."", 'u2': ""haha that's an understatement. Try 'bonjour' and 'au revoir' and see how you do.""}, {'u1': 'Yeah, I did that too and it still sounds like a cat in pain.', 'u2': ""that's because you're pronouncing it wrong, mate.""}, {'u1': ""that person should work on their English, don't you think?"", 'u2': ""don't be so harsh- you're trying to learn a new language too so you should know how difficult it is""}]}",1,1.0,1.0,1.0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -36651,7 +36651,7 @@ u1: I feel terrible about it, and I promise it won't happen again. Can I at leas
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2036,125_1048,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,you are not seriously asking me that... are you?,"{'turns': [{'u1': ""What's up, man? I'm still curious to know if my advice about taking it slow helped you make any progress with your crush. Was the 'just out of a relationship' thing a valid concern, or was it just an excuse?"", 'u2': ""You think I'm just going to launch into a detailed play-by-play of my interactions with this person and get all introspective about it, don't you?""}, {'u1': ""Come on, dude, I'm just asking because I'm genuinely interested in how things are going. Don't make me beg for details here."", 'u2': ""If you're genuinely interested, maybe you should be asking me instead of making assumptions about the situation?""}, {'u1': 'did my advice work or what? Any progress so far?', 'u2': 'you are not seriously asking me that... are you?'}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -38109,7 +38109,7 @@ u1: I mean, she is great in many other ways, but her music taste is just horribl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2117,121_1028,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,"It wrecked my place, why didn't you train the thing? You should have let me know before dumping it on me.","{'turns': [{'u1': ""I'm so sorry you're having a tough time with the puppy! I know how much I was looking forward to getting back home and seeing my furry little buddy, but I'm sure he's not making it easy for you."", 'u2': ""Thanks for apologizing, but it's not just a tough time, it's utter chaos. The little guy destroyed my living room, and I've found at least 5 chewed-up shoes.""}, {'u1': 'I had no idea things were that bad. I swear, I was getting some good reports from the dog sitter before you took over - she said he was doing great.', 'u2': ""That's not what I'm seeing. He's a puppy, Steve. He's supposed to be destroying things, right? Maybe you should've told me about the potential mess before just sending him over to me.""}, {'u1': ""I didn't think about it that way...I just thought you'd be fine taking care of him. I'll make sure to send over some extra cash to help with the damages."", 'u2': ""It wrecked my place, why didn't you train the thing? You should have let me know before dumping it on me.""}]}",0,1.0,0.0,1.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -38271,7 +38271,7 @@ u1: Oh, come on, it's not that big of a deal.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2126,229_2018,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"I would say, when are you going to go up and pay for a round? We have known each other for a long time, so would be comfortable saying this","{'turns': [{'u1': ""get another one for me too, will you? You're heading up anyway."", 'u2': ""Dude, I'm trying to take care of one beer run here, come on.""}, {'u1': 'Just make it a round, u2. My shout this time.', 'u2': ""Dude, you just said that yesterday. And the day before, I think. Now you're asking me to get another one for you?""}, {'u1': ""You're getting another one, aren't you?"", 'u2': 'I would say, when are you going to go up and pay for a round? We have known each other for a long time, so would be comfortable saying this'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -39189,7 +39189,7 @@ u1: Fine, but what if I'm stuck playing goal and someone inevitably kicks the ba
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2177,265_2122,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,no worries,"{'turns': [{'u1': '- I really need that USB stick, can you lend it to me?', 'u2': 'Yeah, sure thing, borrow it for a bit if you need it'}, {'u1': 'Thanks, I owe you one!', 'u2': ""No big deal, just return it when you're done""}, {'u1': 'Thank you.', 'u2': 'no worries'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -39927,7 +39927,7 @@ u1: I just found another one that I think would look great on me! This messy tex
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2218,202_2035,fictionary,1,en,"You did something that upset Steve the other day. You wanted to apologize to him, so you went to Steve's house. Steve opens the door, does a funny dance for two seconds, and smiles pointing his finger at his hair.",,"Thank god youre not mad at me still, i came to apologise","{'turns': [{'u1': ""what's up buddy?"", 'u2': 'not much, just wanted to clear the air about what happened the other day'}, {'u1': ""no need to be sorry, just being dramatic, that's why I did the dance"", 'u2': ""are you really saying you were just being dramatic? that's not how i saw it""}, {'u1': ""no, really, I wasn't serious, just messing with you"", 'u2': 'Thank god youre not mad at me still, i came to apologise'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -39945,7 +39945,7 @@ u1: no, really, I wasn't serious, just messing with you
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2219,210_2007,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"Sometimes people have other stuff of their mind, besides, you owe me a few outstanding payments yourself...","{'turns': [{'u1': ""I'm telling you, it's always something with that guy. He borrowed my bike and I still haven't seen it back. It's so frustrating when people just don't follow through on their commitments."", 'u2': ""I've had my own experiences with uncooperative friends, but that's no excuse for you not paying me back for that lunch yet""}, {'u1': ""Ah, come on, u2, it's just a little cash. I'll get it to you eventually. Don't sweat it."", 'u2': ""Save it, Steve. I'm still waiting for that cash. It's not just about the money, it's about keeping your word""}, {'u1': ""You're being pretty unreasonable about this, considering I just got back from a business trip and I'm still settling in"", 'u2': 'Sometimes people have other stuff of their mind, besides, you owe me a few outstanding payments yourself...'}]}",0,1.0,0.0,0.0,1.0,,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -40107,7 +40107,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2228,268_2054,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,i like your shoes,"{'turns': [{'u1': 'hey, i just got the shoes i was telling you about. really excited to try them out today.', 'u2': ""sweet, i'm glad you like them. how much were they?""}, {'u1': ""oh, way more than i wanted to spend, but they're worth it. i finished that big project at work and wanted to treat myself."", 'u2': ""yeah, you deserve it. you've been working hard on that project for ages.""}, {'u1': 'yeah, it was a long time coming, but finally got it done. and now these shoes are the perfect way to celebrate.', 'u2': 'i like your shoes'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -40233,7 +40233,7 @@ u1: That's an odd number. I'm changing it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2235,236_2008,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"Steve, you're not a child, grow up, you're going to get yourself fired.","{'turns': [{'u1': ""Come on, guys, don't be so boring! I'm just trying to shake things up a bit! What's the worst that could happen?"", 'u2': ""You're going to get hurt, or worse, you're going to hurt someone else.""}, {'u1': ""I don't get it, I thought it was funny. Am I missing something?"", 'u2': ""Steve, you can't seriously be this clueless, can you?""}, {'u1': 'Mr. Shoehand!', 'u2': ""Steve, you're not a child, grow up, you're going to get yourself fired.""}]}",0,0.0,0.0,,1.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -40449,7 +40449,7 @@ u1: that person should work on their English, don't you think?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2247,245_2112,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,"Well you know what it's like at work Steve, you have to just go with the flow.","{'turns': [{'u1': ""It really sucks that they're asking you to do their personal stuff."", 'u2': ""It's just what happens at this job, Steve. I swear, it's not just you.""}, {'u1': ""I don't get it, if your boss asks you to run a personal errand, can't you just say no?"", 'u2': ""Well, that's easier said than done. He makes it sound really important.""}, {'u1': ""I know how you feel, sometimes I feel like I'm just a personal errand boy."", 'u2': ""Well you know what it's like at work Steve, you have to just go with the flow.""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -40557,7 +40557,7 @@ u1: I'm so sorry I got the job and you didn't.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2253,216_2097,fictionary,1,en,"Steve is learning French. Whenever Steve meets a French person, he speaks French to them but he is very bad at it. You and Steve met a person who doesn't speak English that well. And Steve whispers to you, ""that person should work on their English, don't you think?""",,"Common Steve! remember you are also bad at speaking french, I guess we all have what we are good at and bad at.... but on a funny side, this person’s English is bad not as much as your French is.","{'turns': [{'u1': ""I've been trying to improve my French, but I'm just not getting it, you know? I feel like a total beginner."", 'u2': ""Yeah, I know what you mean, but maybe try to relax a bit and don't be so hard on yourself. You'll pick it up eventually.""}, {'u1': ""Okay, but honestly, look at that guy. He's been trying to speak English with us for a while now, and it's like he's not even making an effort. Maybe we should give him some tips?"", 'u2': ""Steve, you can't even ask for the directions to the nearest metro in French! At least he's trying.""}, {'u1': ""That person should work on their English, don't you think?"", 'u2': 'Common Steve! remember you are also bad at speaking french, I guess we all have what we are good at and bad at.... but on a funny side, this person’s English is bad not as much as your French is.'}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -41997,7 +41997,7 @@ u1: I'm serious, I really think it'll be cool to have some plants around. It'll 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2333,101_1006,fictionary,1,en,"Steve's new year's resolution was to learn French and go to the gym every day. That was three weeks ago.  At the moment, instead of that, he is watching sports and eating popcorn on the couch.",,Get up off your arse mate - you look like shit and smell like shit. How are you gonna get a girlfriend looking like that?,"{'turns': [{'u1': 'Dude, I was just trying to relax after that football game. You know what a tough weekend we just had!', 'u2': ""Oh yeah, I heard about the game. But you can't just use the excuse of sports to get out of your own responsibilities, man. You still need to stick to your resolutions.""}, {'u1': ""But I'm really trying, mate. I just don't know how to start with this French thing. Can't you just help me out and watch some YouTube videos with me?"", 'u2': ""Help you out? You're not a bloody child. You need to put in some actual effort. I'm not here to babysit you through your New Year's resolutions.""}, {'u1': ""That was three weeks ago! I was going to start with that language app, but now I think I'll just start with the gym. I'll go tomorrow, I swear!"", 'u2': 'Get up off your arse mate - you look like shit and smell like shit. How are you gonna get a girlfriend looking like that?'}]}",1,0.0,1.0,0.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -42699,7 +42699,7 @@ u1: you know, in Japan, people do it this way.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2372,235_2084,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,"Is he a budget unicorn? I like the drawing, the style looks nice.","{'turns': [{'u1': ""Hey, I've been working on a new style. I'm going for a really whimsical look. Check it out!"", 'u2': ""That's great, Steve. It does look nice. What inspired you?""}, {'u1': ""I was thinking of drawing a unicorn, but then I thought, why make it too easy? I'll just draw a horse with a carrot!"", 'u2': ""You're a rebel, Steve. You think that's a unicorn?""}, {'u1': ""Now that's a unicorn!"", 'u2': 'Is he a budget unicorn? I like the drawing, the style looks nice.'}]}",1,1.0,0.0,0.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -42879,7 +42879,7 @@ u1: I did pay you back that one time! What are you even talking about?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2382,116_1012,fictionary,0,en,"Steve has been going out non-stop for the past two months because he needs a distraction from his recent breakup.  You are worried that he might be becoming a bit too destructive.  Steve says, ""ugh, worst hangover yet. I feel like crap.""",,Maybe you need to get back into some healthier habits.,"{'turns': [{'u1': ""Ugh, I'm still hungover from last night and I went out again tonight. I don't know what's wrong with me."", 'u2': ""You're just trying to forget the breakup, but maybe you're forgetting how to take care of yourself in the process.""}, {'u1': ""I swear I'm not getting any younger, my liver is gonna hate me if I keep going out like this."", 'u2': ""Steve, you know you're not as invincible as you think you are. Eventually, something's gotta give.""}, {'u1': 'ugh, worst hangover yet. I feel like crap', 'u2': 'Maybe you need to get back into some healthier habits.'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -43491,7 +43491,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2416,236_2039,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"Haha, very funny!","{'turns': [{'u1': 'I finally figured out how to master the shoehand move! Look at me go!', 'u2': 'Are you done playing around?'}, {'u1': 'Now watch me juggle three staplers with my feet too!', 'u2': 'This is getting ridiculous.'}, {'u1': ""look at me! I'm Mr. Shoehand!"", 'u2': 'Haha, very funny!'}]}",1,1.0,1.0,1.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -43509,7 +43509,7 @@ u1: look at me! I'm Mr. Shoehand!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2417,265_2099,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,all good,"{'turns': [{'u1': 'Hey, I need that USB stick for a project. Can I have it?', 'u2': ""It's yours, dude.""}, {'u1': 'Thanks, I owe you one.', 'u2': 'No problem, but hurry back, I need it back tomorrow.'}, {'u1': ""Don't worry, I'll return it before then."", 'u2': 'all good'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -43545,7 +43545,7 @@ u1: Come on, why can't I borrow it? Don't you trust me?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2419,209_2041,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,You could say the same thing about me Steve.,"{'turns': [{'u1': ""I swear Bill has the worst taste in friends. He's always saying how much he cares about this guy, but the guy is constantly hitting him up for money and never pays it back."", 'u2': ""I get what you mean. I don't know what he sees in that person either.""}, {'u1': ""And it's not like he's a one-time thing, either. He does it over and over again. Bill needs to smarten up."", 'u2': ""Yeah, that doesn't seem like a very trustworthy person.""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'You could say the same thing about me Steve.'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45291,7 +45291,7 @@ u1: My brother needs to dump that guy. He's such a loser.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2516,126_1020,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,I'll text you what the vibe is,"{'turns': [{'u1': ""It's going to be a long night, right? The party's at a wine bar and it's always packed. Are you going to make it through the whole thing?"", 'u2': ""I'm not sure, I might leave early. I'm not a big drinker, to be honest""}, {'u1': 'Fair enough! I might join later if you are still there then. How late do you think it will go?', 'u2': ""I don't know, it depends on who's still having fun and doesn't want to leave. The wine bar's not going to kick us out, right?""}, {'u1': ""Yeah, they're pretty chill about things like that. I might join later if you are still there then."", 'u2': ""I'll text you what the vibe is""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45363,7 +45363,7 @@ u1: I swear, Tyrannosaurus Rex had a more interesting life, and at least that on
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2520,113_1015,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,"I hope it goes well for you Steve, I don't really understand that crypto stuff.","{'turns': [{'u1': ""I just spent my entire savings on Ezillion! I'm gonna be set for life once it goes through the roof. You're gonna be jealous!"", 'u2': 'Dude, are you insane?'}, {'u1': ""Hear me out, u2! The experts on Reddit say it's a total game-changer. It's gonna disrupt the entire financial system!"", 'u2': 'But experts on Reddit are just armchair quarterbacks, Steve...'}, {'u1': ""They're not armchair quarterbacks, they're geniuses! And I'm one of the smart ones who's gonna get in on the ground floor!"", 'u2': ""I hope it goes well for you Steve, I don't really understand that crypto stuff.""}]}",0,0.0,0.0,,0.0,0.0,0.0,,,0.0,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45454,7 +45454,7 @@ u1: I don't get why Bill puts up with him. I'd have cut ties with that guy a lon
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2525,113_1031,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,"I have no idea what you are talking about, but wasn't it a bit stupid to spend ALL your money on it?","{'turns': [{'u1': ""I just invested all my savings into a promising cryptocurrency called Ezillion. It's going to be HUGE, trust me!."", 'u2': 'Dude, that sounds super shady to me. Have you heard of any of these Ezillion people?'}, {'u1': ""No, no one really knows much about Ezillion, but that's what makes it a smart investment! We'll be millionaires by summer!."", 'u2': ""I don't think it's smart to put all our eggs in one basket with something that's basically a mystery. What if it's a scam?""}, {'u1': ""The financial advisors I met with are super confident about Ezillion's future. They say it's the next Bitcoin!"", 'u2': ""I have no idea what you are talking about, but wasn't it a bit stupid to spend ALL your money on it?""}]}",0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45472,7 +45472,7 @@ u1: The financial advisors I met with are super confident about Ezillion's futur
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2526,102_1051,fictionary,0,en,"You got a date this evening. When you tell Steve you got a date, he asks, ""oooh, what's the plan?""",,None of your business but it will be better than your date with your right hand.,"{'turns': [{'u1': ""That's awesome! What's the plan for tonight? You're finally going to ask her out!"", 'u2': ""I'm not telling, Steve. Yet.""}, {'u1': ""Come on, don't be that way! Spill the beans! Who's the lucky lady?"", 'u2': ""You're not getting anything out of me, buddy.""}, {'u1': ""Whoa, you got a date! What's the plan?"", 'u2': 'None of your business but it will be better than your date with your right hand.'}]}",0,0.0,1.0,1.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45490,7 +45490,7 @@ u1: Whoa, you got a date! What's the plan?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2527,242_2061,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"They sure are, Steve","{'turns': [{'u1': ""I had lunch with a friend the other day and he just bailed on me for the check. I'm getting really sick of people not following through on their commitments."", 'u2': ""That's annoying, man.""}, {'u1': ""I know, right? People are always saying they'll do something and then they don't follow through."", 'u2': ""Yeah, it's like they think it's no big deal or something.""}, {'u1': ""I lent my friend a bike and he still hasn't given it back to me. Jeez, people are so unreliable!"", 'u2': 'They sure are, Steve'}]}",1,1.0,1.0,,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45760,7 +45760,7 @@ u1: it's alright. I didn't even like this shirt anyway.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2542,236_2062,fictionary,1,en,"You walk into the office and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"Ok, morning.","{'turns': [{'u1': 'Why are you still here? I\'m trying to rehearse my ""Shoehand"" monologue.', 'u2': ""You can't seriously be taking this seriously, can you?""}, {'u1': ""Silence, I'm channeling my inner method actor! Now watch as I walk out the door with my shoes on my hands!"", 'u2': ""You can't be serious. What's gotten into you?""}, {'u1': ""Look at me! I'm Mr. Shoehand!"", 'u2': 'Ok, morning.'}]}",1,1.0,1.0,1.0,0.0,1.0,,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -45994,7 +45994,7 @@ u1: I'm starting to think you're making it more complicated than it needs to be,
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2555,264_2107,fictionary,1,en,"You are helping Steve move into a new apartment. While carrying a heavy box, you accidentally broke some of Steve's glasses. Steve sighs and says, ""oh man, I loved those glasses! Well, can you clean up the pieces?""",,of course i can! im so sorry for breaking your glasses. i can replace them seen as it was my fault.,"{'turns': [{'u1': 'aww, man. you just busted up my favorite pair. i really loved those frames!', 'u2': ""i'm really sorry steve. they're definitely a unique pair.""}, {'u1': ""we were right in the middle of moving, and now you've gone and broken something. can you even see what you're doing?"", 'u2': ""i can see what i'm doing. but i guess i lost my focus for a second. it's my fault for being careless.""}, {'u1': 'oh man, I loved those glasses! Well, can you clean up the pieces?', 'u2': 'of course i can! im so sorry for breaking your glasses. i can replace them seen as it was my fault.'}]}",0,0.0,0.0,0.0,0.0,,,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -46138,7 +46138,7 @@ u1: what's the deal, you're just being really uptight about this, right?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2563,229_2123,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"Yes sure, but you can get the next one","{'turns': [{'u1': 'hey man get me another beer, please?', 'u2': 'nah you get the next one'}, {'u1': 'no way, get one for me too', 'u2': ""come on, I'm good, get another for yourself""}, {'u1': 'dude can you just grab another one for me too?', 'u2': 'Yes sure, but you can get the next one'}]}",0,0.0,1.0,1.0,,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -46174,7 +46174,7 @@ u1: Come on, I said I'd make it up to you. I'll owe you big time.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2565,257_2051,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,I'm afraid I'm unable to lend you a suitcase this time.,"{'turns': [{'u1': ""Seriously, I'm starting to think you've misplaced my charger and toaster. Can you please help me figure out what happened to them?"", 'u2': ""Dude, I'm positive I lent them to you. We've had this conversation before.""}, {'u1': ""Alright, alright. I'll look for them again. By the way, I've been meaning to ask, do you have a spare suitcase I could use for my trip?"", 'u2': ""Why are you asking me for stuff you never return? It's getting a bit annoying.""}, {'u1': 'Can I borrow your favorite book?', 'u2': ""I'm afraid I'm unable to lend you a suitcase this time.""}]}",0,0.0,0.0,,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -46210,7 +46210,7 @@ u1: Her music taste is just so bad, it's like she has no taste at all.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2567,221_2087,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,You believe too much nonsense Steve,"{'turns': [{'u1': ""I'm telling you, it's aliens! They're so advanced they can defy all the laws of physics. And that website says it's not CGI, it's real footage. I'm not buying it, you're just not seeing it. You're not looking at the big picture."", 'u2': ""Come on, Steve, slow down, and think this through. Let's not jump to conclusions.""}, {'u1': ""But the fact that they're showing us this footage, and we're seeing it for real, that's not a human thing to do. That's an alien thing to do."", 'u2': ""Exactly, Steve, because if it's an alien thing to do, then we have so many other things that aliens could be doing that would be more logical. Have you thought about that?""}, {'u1': ""What else could it be, then? It's not like humans have the technology to do that. You're just not seeing the proof right in front of you."", 'u2': 'You believe too much nonsense Steve'}]}",0,1.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -47110,7 +47110,7 @@ u1: They're going to touch! This is ridiculous.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2617,113_1039,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,"Yeah, we'll see","{'turns': [{'u1': ""You're kidding me, man! Ezillion? Who even heard of that?"", 'u2': ""Honestly, I don't know much about it. You're a financial wizard, what do you know?""}, {'u1': ""Ah, trust me, this is the next big thing! I'm telling you, it's gonna be huge!"", 'u2': ""I'm not saying it won't happen, but we've all seen those stories before...people jumping on the bandwagon...""}, {'u1': ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!"", 'u2': ""Yeah, we'll see""}]}",1,1.0,1.0,1.0,,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -47398,7 +47398,7 @@ u1: Alright, so, the thing I want to get across is how different these two dinos
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2633,238_2026,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,You want me to do that?,"{'turns': [{'u1': ""It would be so cool to be young and popular again. I'm getting old and no one cares about me on social media."", 'u2': 'How old are you now, Steve?'}, {'u1': ""Like, if people see me posting stuff on Instagram, they'd think I'm still cool, you know?"", 'u2': 'Okay, but you need to have an account first, right?'}, {'u1': 'You want to do that for me?', 'u2': 'You want me to do that?'}]}",0,1.0,0.0,,1.0,0.0,,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -47488,7 +47488,7 @@ u1: No, seriously, I don't need you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2638,231_2069,fictionary,1,en,"You and Steve are having some beers at a pub. Steve says that he left his wallet at his place and asks you to pay for him. When you say ""this has happened several times and you have never paid me back"", Steve says ""come on, it happened like one time!""",,"Really?  Which time would that be?  Nevermind, are you still coming over to help me with that project tomorrow?  Bring a pizza with you, no pineapple this time!","{'turns': [{'u1': 'Come on, it happened like one time!', 'u2': 'Seriously, man? How many times do I have to remind you that I paid for your meal last month too?'}, {'u1': ""So, what's the big deal? I'll repay you next week. Just chill!"", 'u2': ""You've been saying that for three weeks now, so don't count on it. How about I just stop helping you with stuff till then?""}, {'u1': 'Come on, this has never happened before!', 'u2': 'Really? Which time would that be? Nevermind, are you still coming over to help me with that project tomorrow? Bring a pizza with you, no pineapple this time!'}]}",1,0.0,1.0,,1.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -48820,7 +48820,7 @@ u1: You look amazing, and I'm not just saying that because you're wearing my fav
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2712,249_2051,fictionary,1,en,Steve talks about the differences between two types of dinosaurs for an hour. You absolutely don't care about the topic.,,"Oh, that's very interesting.","{'turns': [{'u1': ""This is pretty fascinating to me. Did you know that there are some species of dinosaurs that have a crest on their heads, while others don't? And the ones with crests have special cavities inside them that are connected to their respiratory systems."", 'u2': 'So it seems like the purpose of the crest is quite important?'}, {'u1': ""You know, it really makes sense when you think about it. The crests are used for all sorts of things, like attracting mates or intimidating rivals. And the way they're connected to the respiratory system makes them really useful for making loud noises."", 'u2': 'Yeah, I can imagine it would be pretty useful'}, {'u1': 'And then there are the ones without crests, which have different adaptations for their environments. Like the ones that live in cold climates have special feathers to keep warm, while the ones in hot climates have different types of skin to protect themselves from the sun.', 'u2': ""Oh, that's very interesting.""}]}",0,1.0,0.0,,0.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -49270,7 +49270,7 @@ u1: it's alright. I didn't even like this shirt anyway.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2737,257_2009,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"No sorry, I gave it to my mum for a trip she has.","{'turns': [{'u1': ""Hey, can I borrow your bike? I'm getting back into riding and need something to get around while my car is in the shop."", 'u2': ""No, I don't think so. It's not really in working order, and I don't want you riding it until I can get it fixed.""}, {'u1': ""Can I also borrow your coffee mug for a few days? Mine's still in the wash."", 'u2': ""Sorry Steve, I just lent it to a friend and they still haven't returned it.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'No sorry, I gave it to my mum for a trip she has.'}]}",0,1.0,0.0,,0.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -49684,7 +49684,7 @@ u1: I'm telling you, it was just one time!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2760,209_2103,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,Maybe he just feels obligated after knowing him so long Steve.,"{'turns': [{'u1': ""I don't get why my brother always hangs out with his friend, though. He's always calling for money, and like never pays me back."", 'u2': 'Maybe his friend has a tighter budget than he does.'}, {'u1': ""That doesn't make sense. He's always got cash for concerts and stuff, but can't be bothered to lend me $50."", 'u2': 'Well, some people might not see lending money as the same thing as giving them money for a concert.'}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'Maybe he just feels obligated after knowing him so long Steve.'}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -49954,7 +49954,7 @@ u1: Wow, you really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2775,213_2025,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,"i was mentioning it to you as I realise, you are doing the same for your boss so was hoping for some guidance","{'turns': [{'u1': 'sorry to hear that, it can be pretty frustrating. why do you think your boss asked you to do that?', 'u2': ""i've been thinking about that and i still don't have an answer, he's always doing this, though, and it feels like he takes advantage of our relationships to get us to do favors""}, {'u1': ""yeah, that can be tough. do you feel like he's asking you for personal favors, or is it still within work hours and tasks?"", 'u2': ""mostly within work hours, but sometimes he'll ask me to do stuff for his family, which feels weird because we're not exactly close outside of work""}, {'u1': ""hmm, that's interesting. the fact that he asks you for personal favors might make you feel obligated to say yes?"", 'u2': 'i was mentioning it to you as I realise, you are doing the same for your boss so was hoping for some guidance'}]}",0,0.0,0.0,,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -51250,7 +51250,7 @@ u1: Whoa, slow down! I'm not going to lose control. I've driven before, you know
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2847,256_2091,fictionary,1,en,"Steve recently inherited a fancy watch from his dead grandfather. And he keeps showing it to you and talking about it. For the fifth time, Steve says, ""look, look how shiny this watch is.""",,It is very shiny. I like shiny things.,"{'turns': [{'u1': ""I've told you before, but I just can't help showing you this watch. It was my grandfather's, you know. It's just so full of history and stories."", 'u2': 'Yes, I remember you telling me about that. How old is the watch again?'}, {'u1': ""I think it's around 50 years old. It's still ticking like a charm. Look at this intricate design."", 'u2': ""Wow, that's amazing. The craftsmanship back then was incredible.""}, {'u1': 'Look, look how shiny this watch is.', 'u2': 'It is very shiny. I like shiny things.'}]}",0,0.0,1.0,1.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -51394,7 +51394,7 @@ u1: Ugh, moving is always so stressful and chaotic...
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2855,257_2124,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure, as soon as you bring my phone charger and toaster back.","{'turns': [{'u1': ""I've been really busy lately, but I'm sure I can find a suitable case for my trip. Don't worry about the suitcase."", 'u2': ""You've been 'busy' for two months now, and I'm still missing my phone charger and toaster. When can I expect them back?""}, {'u1': ""It's just that I don't really need your toaster anymore."", 'u2': ""You said you needed a toaster, and now you don't? You've been using mine for a month now, and I'd like it back, please.""}, {'u1': 'Can I borrow your suitcase? I need one for my trip next week.', 'u2': 'Sure, as soon as you bring my phone charger and toaster back.'}]}",1,0.0,1.0,,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -51736,7 +51736,7 @@ u1: But this is just not something I can accept. She's got to listen to somethin
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2874,228_2091,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,"Mate, you're great but you just had your accident recently and this is a brand new car! I totally trust you in loads of other ways, but not for this.","{'turns': [{'u1': ""come on, what's up? you're not going to lend me your new car are you? I really need to pick up my girl from work and I won't be able to get to her otherwise"", 'u2': ""no mate, sorry, I just don't feel right letting you have it, especially after what happened with your car recently""}, {'u1': ""it's just my old clunker, it's not like I'm asking to borrow your family heirloom, can't I just use it this once?"", 'u2': ""that's the thing, it's not just a clunker, it's a brand new car and I'm not about to let you take the chance of messing it up with your recent history of car mishaps""}, {'u1': ""come on, why can't I borrow it? Don't you trust me?"", 'u2': ""Mate, you're great but you just had your accident recently and this is a brand new car! I totally trust you in loads of other ways, but not for this.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Gen X. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 

@@ -97,3 +97,7 @@ readme_old.md
 3_experiments/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/human_heldout_f1/context_reply/final_model/*
 3_experiments/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/human_heldout_f1/conversation/final_model/*
 3_experiments/experiment1/output/encoders/FacebookAI_xlm-roberta-large/CSC/human_heldout_f1/last_u1_message/final_model/*
+3_experiments/experiment2/output_old2/*
+3_experiments/experiment1/__pycache__/*
+3_experiments/experiment1/output/decoders_temp0/*
+3_experiments/experiment2/output/decoders_temp0/*

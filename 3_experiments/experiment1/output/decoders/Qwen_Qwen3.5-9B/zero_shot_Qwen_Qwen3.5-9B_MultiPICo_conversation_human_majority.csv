@@ -68,7 +68,7 @@ u1: Nah its OK you were just being neighbourly
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 4,11202598233208778581_2692220885467589558,reddit,,en,,"Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!","The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee.
 So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.","{'turns': [{'u1': ""What's all the fuss about? Did something new happen in the world of credit scores? Can't seem to get through the day without seeing some app popping up everywhere I go."", 'u2': ""Well, I think it's because there was a big change in the law regarding how credit scores are managed.""}, {'u1': 'Is it something big, then? Like, are banks going to start handing out free loans or something?', 'u2': ""No, it's actually more to do with the way credit reference agencies share information and get paid for it.""}, {'u1': ""Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort of crisis I'm not aware of? Are brits really that shit with money? I need answers!"", 'u2': 'The law changed with GDPR meaning the credit reference agencies were obligated to give you access for free. Previously they could charge some admin fee. So to recoup somewhat, and deal with the cost of all the extra people wanting their information they decided to try to monitise a bit more. Sometimes you pay them directly for something, sometimes they sell you to loan companies. That sort of thing.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -120,7 +120,7 @@ u1: Dyson is amazing! You can also look at Berkinstock as well?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 7,12518252026964060539_12826115392138578393,reddit,,en,,He may have a point.  Does it feature child abuse?,"Well, no, but also, yes
 Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who's a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he's known for his very erotic art. Turns out ES is actually... his little [step] sister (who's like 12), who he hasn't seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety
 Its in the same universe as My Little Sister Can't Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.","{'turns': [{'u1': 'Has he talked about shows that make him uncomfortable?', 'u2': 'Yeah, a few actually. He thinks the worst one is Eromanga Sensei.'}, {'u1': ""Why's that?"", 'u2': ""Apparently it's super weird and kinda... disturbing, but also kinda cute?""}, {'u1': 'He may have a point. Does it feature child abuse?', 'u2': 'Well, no, but also, yes Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who\'s a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he\'s known for his very erotic art. Turns out ES is actually... his little [step] sister (who\'s like 12), who he hasn\'t seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety Its in the same universe as My Little Sister Can\'t Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -139,7 +139,7 @@ u1: He may have a point. Does it feature child abuse?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 8,12688524965118127904_17718319999726849196,reddit,,en,,Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.,"this is how randia used to be before it crossed 1lac mark.
 now its all news links.","{'turns': [{'u1': ""I've been browsing here for a few days now and I must say, this community is very active and engaged."", 'u2': 'what made you join?'}, {'u1': 'A friend recommended it and I was curious to see what it’s like. I’m glad I joined!', 'u2': 'your friend must be a regular here'}, {'u1': 'Thank you guys for making me feel so welcome. And being so helpful! This is a nice space.', 'u2': 'this is how randia used to be before it crossed 1lac mark. now its all news links.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -157,7 +157,7 @@ u1: Thank you guys for making me feel so welcome. And being so helpful! This is 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 9,12701030242307294590_13873363278082368642,reddit,,en,,"In Oz we call crisps, chips and chips, hot chips. Hard habit to break.",But crisps aren’t hot.,"{'turns': [{'u1': 'We\'re having a dinner party tonight and I was thinking we could serve some Aussie snacks. I think the term is ""chips"". Is that right?', 'u2': 'Huh? I\'m pretty sure we call them ""crisps"".'}, {'u1': 'Really? I\'m not sure. I\'ve never lived anywhere else besides Australia. What do you mean ""crisps""?', 'u2': 'It\'s a term from the UK. We also call them ""chips"" but in different contexts. It\'s confusing, I know.'}, {'u1': 'In Oz we call crisps, chips and chips, hot chips. Hard habit to break.', 'u2': 'But crisps aren’t hot.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -174,7 +174,7 @@ u1: In Oz we call crisps, chips and chips, hot chips. Hard habit to break.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 10,12743820680089700992_8917188627913633928,reddit,,en,,I think it's a serious threat to our society. But I've known quite a few still think it's just a flu.,"> But I've known quite a few still think it's just a flu.
 Genuine question (not being sarcastic): the listed symptoms for COVID are exactly the same as the symptoms I get when I have the flu. So why is this so much worse?","{'turns': [{'u1': ""I don't think people fully understand the risks, they're not taking it seriously enough."", 'u2': ""Honestly, I've seen some pretty wild misinformation going around. It's not helping.""}, {'u1': ""The fact that it's airborne and highly contagious scares me."", 'u2': ""I know, it's like they're playing roulette with their health.""}, {'u1': ""I think it's a serious threat to our society. But I've known quite a few still think it's just a flu."", 'u2': ""> But I've known quite a few still think it's just a flu. Genuine question (not being sarcastic): the listed symptoms for COVID are exactly the same as the symptoms I get when I have the flu. So why is this so much worse?""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -370,7 +370,7 @@ u1: I like that people always are worried that Epstein was murdered instead of s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 21,1432336763630430362_1035671515632301051,twitter,,en,,Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough,I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!,"{'turns': [{'u1': ""u1 was quick to comment on Ollie Henry's trade request, wondering if Collingwood was really being offered enough in return."", 'u2': ""I'm not sure what the big deal is, he's been underwhelming for most of his career, if Geelong wants him that badly, let them have him!""}, {'u1': ""Fair enough, I guess, but you have to admit it's a bit rich for Collingwood fans to be so quick to criticise Ollie, especially when some of our own big names have been offloaded without much fuss."", 'u2': ""Buckley sold us down the river, no question about it, but that's management for you""}, {'u1': 'Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough', 'u2': ""I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!""}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -527,7 +527,7 @@ u1: Sore throat and fever full family ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 30,1585847090319967408_18127032344945120201,reddit,,en,,Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up,But someone did already...?,"{'turns': [{'u1': 'I was talking to a coworker about the lockdown and they mentioned something about 5G', 'u2': ""That's not surprising, 5G has been in the news lately""}, {'u1': ""Apparently they think it's linked to the virus somehow"", 'u2': ""I've heard people mention that too, but it seems like a pretty baseless claim to me""}, {'u1': ""Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up"", 'u2': 'But someone did already...?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -579,7 +579,7 @@ u1: Did no-one tell the Laois folk there was supposed to be more than just the n
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 33,16248931236252931801_18392104841748248643,twitter,,en,,What if the wheels on the bus didn't go round and round?,Up and down?,"{'turns': [{'u1': ""I love nursery rhymes! Let's play a game where we change the lyrics."", 'u2': ""That's so cool! I'm totally in!""}, {'u1': 'Okay, which one do you want to start with?', 'u2': 'Hmm, how about the wheels on the bus?'}, {'u1': ""What if the wheels on the bus didn't go round and round?"", 'u2': 'Up and down?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -596,7 +596,7 @@ u1: What if the wheels on the bus didn't go round and round?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 34,16650543109753935334_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
 They voted clearly in support of devolution and that vote has been respected with it's implementation.
 Time for another vote to see if they still want devolution.
@@ -617,7 +617,7 @@ u1: The people of Scotland had a vote on devolution in 1997. They voted clearly 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 35,16706234939258333146_1856662399580585102,twitter,,en,,"We just outraised Greg Abbott — again.
 
 Now we’re going to defeat him. That’s how we overcome his extremism and move Texas forward.",Money won’t get you elected,"{'turns': [{'u1': 'u1 is leading in the polls, but we need to keep the momentum going. Every little bit counts!', 'u2': ""Polls don't necessarily translate to votes, though.""}, {'u1': 'Our grassroots effort is picking up steam! More volunteers, more donations, more Texas for the win!', 'u2': ""It's great that you're enthusiastic, but let's not forget that our opponents have a lot of money behind them.""}, {'u1': 'We just outraised Greg Abbott — again. Now we’re going to defeat him. That’s how we overcome his extremism and move Texas forward.', 'u2': 'Money won’t get you elected'}]}",1,1,human_majority,"<TASK_OVERVIEW>
@@ -655,7 +655,7 @@ u1: With the union firmly secured because the Queen died, what now for the SNP a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 37,16873054711772305548_6725044516132975537,reddit,,en,,My first girlfriend gave me the same nickname.,Guess that explains the username.,"{'turns': [{'u1': 'You have no idea how I got my username, do you?', 'u2': ""Actually, I'm pretty curious, how did you come up with it?""}, {'u1': ""It's a story I only tell my closest friends."", 'u2': ""Aww, you're making me feel left out, share!""}, {'u1': 'My first girlfriend gave me the same nickname.', 'u2': 'Guess that explains the username.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -706,7 +706,7 @@ u1: YAY! This makes me so happy ❤️
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 40,16943694019747210588_17483232605586372038,twitter,,en,,"Why do we only rest in peace?
  why don't we live in peace too ?
 ?",Good ?,"{'turns': [{'u1': 'What if our minds were a battlefield? Would we find peace in our hearts too?', 'u2': 'What are you talking about?'}, {'u1': 'Think about it. Every war started with words, with arguments, with our opinions.', 'u2': 'You sound quite upset today.'}, {'u1': ""Why do we only rest in peace? why don't we live in peace too ? ?"", 'u2': 'Good ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -745,7 +745,7 @@ u1: I know everyone is saying don't give into the fearmongering by the media, bu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 42,17457646054318905579_2168687590666378141,twitter,,en,,What is one company you'll never do business with because of their horrible politics?,The Catholic Church,"{'turns': [{'u1': 'have you heard anything about the environmental practices of some of the large corporations in the US?', 'u2': 'Eggs from CA Perdue. Their chicken farms are a nightmare.'}, {'u1': 'I’ve read a lot about those terrible conditions. What else do you feel strongly about?', 'u2': 'I’m a fan of companies that stand up for what they believe in and treat their employees fairly.'}, {'u1': ""What is one company you'll never do business with because of their horrible politics?"", 'u2': 'The Catholic Church'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -797,7 +797,7 @@ u1: Jupiter gonna be wondering where the fuck all these random Irish parcels are
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 45,1783501927699301342_4626127304121327566,reddit,,en,,"Fill in the blanks and give it back, I think that's the game","My brother recommended posting a note saying:
 “I’ll park wherever I want you   _  _  _  _   _  _ _ “.","{'turns': [{'u1': 'I saw you parked near a fire hydrant last week! Where do you plan to park today?', 'u2': 'hahaha, oh, you want to play the parking inspector, eh?'}, {'u1': 'Seriously, you need to be more careful with parking. Some spots have time limits.', 'u2': ""Come on, don't be such a buzzkill! Parking isn't that serious""}, {'u1': ""Fill in the blanks and give it back, I think that's the game"", 'u2': 'My brother recommended posting a note saying: “I’ll park wherever I want you _ _ _ _ _ _ _ “.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -837,7 +837,7 @@ u1: BETRAYAL That's why AAP comes out as worst in this whole issue. Congress wan
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 47,2161430649299695352_11198768799297110650,twitter,,en,,Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation.,Agreed. Houghton’s goal is just absolute perfection.,"{'turns': [{'u1': 'Can’t believe Pagliuca fell for that. How many years of work down the drain.', 'u2': 'Still waiting for someone to get us a goal. We’re so unlucky sometimes.'}, {'u1': 'Pagliuca doesn’t even know what hit him. Poor guy.', 'u2': 'And now Houghton is gonna score. My money’s on it.'}, {'u1': ""Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation."", 'u2': 'Agreed. Houghton’s goal is just absolute perfection.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -888,7 +888,7 @@ u1: Why do men stare at women? Women do the same thing in blink of an eye, where
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 50,2507886556808965649_6352252321123096723,reddit,,en,,Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.,That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.,"{'turns': [{'u1': 'We need to acknowledge the progress made by some countries in resolving conflicts without causing chaos. Pakistan, for instance, has played a significant role in negotiating a peace deal in Afghanistan.', 'u2': ""I don't think we should generalize the progress of other countries to justify our own failures. We have our own set of challenges that we need to address first.""}, {'u1': 'The point is that, unlike India, Pakistan has shown its ability to put aside differences and work towards a common goal. We could learn from that.', 'u2': ""That's not the point. The point is that Pakistan's past actions have been far from exemplary. They've supported groups that have caused immense harm to others.""}, {'u1': 'Pakistan just helped with a peace deal in Afghanistan. India is ripping its own people apart with hate.', 'u2': ""That's a bad example. Pakistan helped the Taliban in Afghanistan and helped in ripping the country apart.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -905,7 +905,7 @@ u1: Pakistan just helped with a peace deal in Afghanistan. India is ripping its 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 51,2893202046812202955_17487538081252840433,twitter,,en,,"Where is BETI PARHAO BETI BACHAO  ?
 Gujarat ranking very poor  in girl child education
 Only 10%  girls in Gujarat complete graduation
@@ -1118,7 +1118,7 @@ u1: Jump street 21
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 63,5228608070889845790_3437472600991932343,twitter,,en,,Would you rather see Alex Jones bankrupt or in jail?,So hard to choose…….let’s do both!,"{'turns': [{'u1': '""I\'m so frustrated with Alex Jones and his misinformation. It\'s time someone held him accountable!', 'u2': ""Honestly, I've lost track of what he's been saying lately. He's just a spectacle to me.""}, {'u1': ""I think it's interesting that his followers still support him despite all the evidence against him. Do you think they're just that brainwashed or what?"", 'u2': ""That's a good question. I think some of them really believe what he's saying, but others are just in it for the drama.""}, {'u1': 'Would you rather see Alex Jones bankrupt or in jail?', 'u2': 'So hard to choose…….let’s do both!'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1135,7 +1135,7 @@ u1: Would you rather see Alex Jones bankrupt or in jail?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 64,5255578180520095660_15098117359332045192,reddit,,en,,Didn’t know we had mountains named after rashers!,"They built the mountains in honour of the rashers, I believe.
 They ran €10 billion over budget and were supposed to be like the Alps though.","{'turns': [{'u1': 'Have you guys ever been on the rasher trail? The food up there must be amazing', 'u2': ""I was wondering the same thing, but I heard it's actually the rasher 'view' that's worth the climb""}, {'u1': ""Really? I didn't know they built a trail up there for us non-hikers"", 'u2': 'No, they built it as part of the bigger project – the Rasher Resorts Complex'}, {'u1': 'Didn’t know we had mountains named after rashers!', 'u2': 'They built the mountains in honour of the rashers, I believe. They ran €10 billion over budget and were supposed to be like the Alps though.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1362,7 +1362,7 @@ u1: Any Sam Smith's. 1970s beer and 1990s prices.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 76,8212951684128818706_16286477251330022739,reddit,,en,,It's not fair to their staff. Jesus Christ how can they be so stupid?,"I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff.
 Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff.
 Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?","{'turns': [{'u1': ""u1: What does your company do? I'm really interested in learning about what it does and its mission."", 'u2': ""u2: Ah we're an IT firm. We provide software solutions for clients in the finance and insurance sector. I'm a bit torn about working here, to be honest. It's not all it's cracked up to be.""}, {'u1': ""u1: Torn? I don't get it. Is everything okay at work? Do you guys get treated unfairly by management or something?"", 'u2': ""u2: I just don't like the way management makes decisions. Sometimes they come out of nowhere and it's hard to understand their thought process.""}, {'u1': ""It's not fair to their staff. Jesus Christ how can they be so stupid?"", 'u2': 'I work for a company which a year ago was facing bankruptcy. A venture capital firm showed up, bought the company and within 2 months had fired or made redundant about 30% of global staff. Largely due to the restructuring efforts and changes in who the company chooses to sell to, a year later the company is now profitable and hiring more staff. Was it the wrong thing to do to carry out the redundancies in that case? Or would it have been ""fairer"" to the staff and investors to have the company go bankrupt and everyone lose their jobs?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -1466,7 +1466,7 @@ u1: Are they cops? Why are they wearing bibs?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 82,9393707267382047502_2627531786957967134,reddit,,en,,"You are still making ""Australia Day"" about the British monarchy so I don't think changing the date to today is going to fly with the people protesting about the current date... of course I don't think any date is going to suit them.","Nah, I’m making it about parliamentary and judicial sovereignty, not the monarchy. The Queen can stay in England and have fuck all to do with Australia, thanks.
 Australia is a de facto republic anyway (‘commonwealth’ is actually a synonym for ‘republic’) and while I’d like to become a real republic, I reckon the Australia Acts are way more constitutionally important to us as a sovereign country than the arrival of the first fleet.","{'turns': [{'u1': 'We’re discussing the date for Australia Day, not the Queen’s involvement. The Queen’s got nothing to do with the day, just the anniversary of the first fleet.', 'u2': 'So, if we change the date, do we then have to remove all references to the Crown from our constitution or parliament?'}, {'u1': 'That’s not what we’re arguing about, it’s about whether we keep the current date or change it. We can keep the Queen as our head of state and still celebrate on the new date.', 'u2': 'I reckon that’s a cop-out. If we really want to be independent, we should ditch the monarchy altogether.'}, {'u1': 'You are still making ""Australia Day"" about the British monarchy so I don\'t think changing the date to today is going to fly with the people protesting about the current date... of course I don\'t think any date is going to suit them.', 'u2': 'Nah, I’m making it about parliamentary and judicial sovereignty, not the monarchy. The Queen can stay in England and have fuck all to do with Australia, thanks. Australia is a de facto republic anyway (‘commonwealth’ is actually a synonym for ‘republic’) and while I’d like to become a real republic, I reckon the Australia Acts are way more constitutionally important to us as a sovereign country than the arrival of the first fleet.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1501,7 +1501,7 @@ u1: We are living through the government that our founders warned us about.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 84,9746058821801455922_3483330736093049977,twitter,,en,,I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.,Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well,"{'turns': [{'u1': '""I just feel like everyone\'s always talking behind my back. What\'s up with that?""', 'u2': ""What's the tea, boo?""}, {'u1': ""You know, I'm one of those people who sees everything. Even if it's not in your face, I still see it. So, I'm gonna be all over that. Foh."", 'u2': 'You can try, but I got receipts'}, {'u1': 'I’ll internally question everything and put pieces together in limbo without saying a word to anyone. That’s why ppl be scared to come to me with bullshit. Foh.', 'u2': ""Ain't no one getting over like a fat rock on you that's what's up. ? Good morning as well""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.

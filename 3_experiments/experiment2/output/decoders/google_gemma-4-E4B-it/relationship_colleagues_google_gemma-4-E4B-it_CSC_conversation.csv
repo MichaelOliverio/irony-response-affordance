@@ -83,7 +83,7 @@ u1: Come on, it's just a minor thing! Don't make a big deal out of it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 5,246_2065,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"Thanks for the advice, but I really like this type of coffee.","{'turns': [{'u1': ""I can relate to the Amazon mistake, but a 40-dollar coffee seems unnecessary. You could've used that money for something else."", 'u2': ""I actually got a discount on it, so it wasn't as bad as it sounds.""}, {'u1': ""Honestly, Steve, it's just a luxury item to me. I'd rather spend a bit on something I enjoy."", 'u2': ""I completely get where you're coming from, but my coffee budget's not an issue.""}, {'u1': ""I'm still learning from my mistake with Amazon, and I don't want you to make the same one."", 'u2': 'Thanks for the advice, but I really like this type of coffee.'}]}",0,1.0,0.0,1.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -287,7 +287,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 17,112_1030,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"Just give it your best and try to enjoy yourself, no pressure. No one said you have to go there and be some Christian Ronaldo","{'turns': [{'u1': ""I don't know how much more of this I can take, u2. I really need to kick the ball into the goal, but every time I try, it goes flying in the wrong direction."", 'u2': ""Haha, well, you're gonna be the first person to ever score with a backhanded kick!""}, {'u1': ""The worst part is that it's not even a casual game, it's for charity. I'll be representing our whole school. If I mess up, it's gonna be all over social media."", 'u2': ""Dude, people will probably be more worried about donating money than your soccer skills. They'll just laugh it off, and you'll be the life of the party!""}, {'u1': ""I guess I'm just really nervous about being that guy on the field who everyone laughs at."", 'u2': 'Just give it your best and try to enjoy yourself, no pressure. No one said you have to go there and be some Christian Ronaldo'}]}",0,0.0,0.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -321,7 +321,7 @@ u1: Come on, buddy! I'm doing you a solid.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 19,259_2007,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,"I don't think that's quite right, but even if so, it's just a waste of everyone's time.","{'turns': [{'u1': ""Even better, there's a company office just a block away with a dedicated cab stand."", 'u2': ""I work there, but I don't get paid for sitting there all day waiting for a cab to call a cab for you.""}, {'u1': ""That's ridiculous, we can just use the app!"", 'u2': ""I know, I know, but do you know how many times people try to scam the app by requesting non-existent cabs? It's a real problem.""}, {'u1': 'But you have an app for calling cabs. I know it gives you a discount!', 'u2': ""I don't think that's quite right, but even if so, it's just a waste of everyone's time.""}]}",0,0.0,0.0,0.0,0.0,,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -1018,7 +1018,7 @@ u1: I don't know, it just feels weird when they're together. Can you keep them s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 60,265_2091,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,"No problem, but I want it back soon.","{'turns': [{'u1': 'I just need it to upload some files to my computer.', 'u2': 'Alright, go ahead.'}, {'u1': ""So I've started the upload, how long will it take?"", 'u2': ""I think it's going to take a few hours, but I'll keep an eye on it.""}, {'u1': 'Thanks, I appreciate it.', 'u2': 'No problem, but I want it back soon.'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -1188,7 +1188,7 @@ u1: What else could it be? I'm telling you, this is the real deal, and you're ju
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 70,230_2059,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"Sure man, but next time give me a bit of warning if that's ok?","{'turns': [{'u1': ""Hey, man, I'm heading out of town for a few days. Got a meeting I need to get to and it's going to be a bit of a rush. Can I count on you to dog-sit for me?"", 'u2': ""Yeah, no problem. I can take care of him. What's his name, by the way?""}, {'u1': ""His name's Max. I'll make sure to drop off all the food and toys he needs. You'll be all set."", 'u2': ""Awesome, thanks! But I do have one thing to mention - what's the plan with your flight? Is it super early or are you leaving at a reasonable hour?""}, {'u1': ""Flight's at 8 am, so yeah, pretty early. I'll try to get as much rest as I can before then, but you know how it is. Thanks for watching Max!"", 'u2': ""Sure man, but next time give me a bit of warning if that's ok?""}]}",0,1.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -1409,7 +1409,7 @@ u1: You're really making a big deal out of nothing.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 83,238_2071,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,Do you want me to show you?,"{'turns': [{'u1': 'This social media stuff is not that hard, is it?', 'u2': ""What makes you think it's not hard?""}, {'u1': ""I mean, everyone else seems to know how to do it, it's like a different language."", 'u2': 'Want to see how I do it?'}, {'u1': ""I've tried watching YouTube tutorials and reading online guides, but nothing makes sense to me."", 'u2': 'Do you want me to show you?'}]}",0,0.0,0.0,0.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -1630,7 +1630,7 @@ u1: What else could it be, humans can't build something like this
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 96,269_2016,fictionary,0,en,"You and Steve applied for the same part-time job and only he got it. You didn't care about getting the job too much, but then you see that Steve is feeling really bad about it.  Steve says, ""I'm so sorry I got the job and you didn't.""",,I'm not bothered.,"{'turns': [{'u1': ""Really? You're not upset that I got the job? I was sure you'd be disappointed."", 'u2': ""Nah, like I said, I wasn't that keen on it anyway.""}, {'u1': ""But come on, you had some great answers in the interview. I was a bit surprised you didn't get it."", 'u2': ""It's fine. Really. Don't worry about it.""}, {'u1': ""I'm so sorry I got the job and you didn't."", 'u2': ""I'm not bothered.""}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -1681,7 +1681,7 @@ u1: Look at me! I'm Mr. Shoehand!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 99,241_2116,fictionary,1,en,"Steve has a friend Bill. Bill often feels annoyed by his colleague. The reasons that Bill finds his colleague annoying are the same as the reasons why you find Steve annoying sometimes (for example, both Bill's colleague and Steve make loud noises in the office).  Steve says, ""Must be tough for Bill to have to deal with noisy colleagues all the time!""",,"Like you, you mean?","{'turns': [{'u1': ""It's amazing how people get so used to their own noise levels, isn't it?"", 'u2': 'Yeah, pretty much like your own music playlist!'}, {'u1': ""And then there's also the way some folks like to hog the copier or the microwave."", 'u2': 'Sounds like someone I know, always making a ruckus with his snacking habits.'}, {'u1': 'Must be tough for Bill to have to deal with noisy colleagues all the time!', 'u2': 'Like you, you mean?'}]}",1,1.0,1.0,1.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -2344,7 +2344,7 @@ u1: gosh, it's so frustrating that I'm the only one trying to get the stuff movi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 138,230_2068,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,No problem.,"{'turns': [{'u1': ""You're going out of town? Again?"", 'u2': 'Not too long.'}, {'u1': 'Seriously, though, do you have time to watch the pup?', 'u2': ""Yeah, I've got some time free.""}, {'u1': ""Alright, I'll leave him here then. Oh, and I'll leave his food and everything he needs on the counter."", 'u2': 'No problem.'}]}",0,1.0,0.0,0.0,,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -2701,7 +2701,7 @@ u1: ew, people are so inconsiderate!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 159,211_2090,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to submit a group assignment by the end of this week, and complains that things are moving so slowly because everybody in the group is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in the group is too laid back!""",,Why not do what you can for now? then add the final touches,"{'turns': [{'u1': ""Listen, I'm getting a bit desperate here. We have just a few days left and nothing's been done. The others seem to think they can just wing it and somehow manage to get it done on time. It's so frustrating! Do you think anyone's even making any progress?"", 'u2': ""Don't get too worked up. These things take time. You can't rush art!""}, {'u1': ""But it's not just that they're not doing enough, it's also that they're not even trying to meet the deadline. I'm the only one who seems to care about this assignment. Everyone else is just along for the ride!"", 'u2': ""Maybe you could explain to them why you're so stressed out about this. Sometimes people just don't understand the pressure you're under.""}, {'u1': ""I just wish someone would take initiative and help me out here. It's like I'm carrying this entire project on my own shoulders!"", 'u2': 'Why not do what you can for now? then add the final touches'}]}",0,1.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -2735,7 +2735,7 @@ u1: so, what did you think of her?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 161,212_2062,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"Yeah, a lot of people can be.","{'turns': [{'u1': ""Yeah, that's pretty frustrating when you do have to deal with people like that. You'd think they'd have some basic consideration for others."", 'u2': ""I guess they don't think about anyone but themselves.""}, {'u1': ""I mean, it's not like it's rocket science to pick up after your dog. It's just common courtesy."", 'u2': 'Exactly.'}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'Yeah, a lot of people can be.'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -5745,7 +5745,7 @@ u1: What's wrong with you? You're starting to freak me out, man.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 338,257_2030,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Okay, but do you still have my charger and toaster? I could really do with those back first if that's okay?","{'turns': [{'u1': ""Hey buddy, I'm in a pinch here. I really need a suitcase for my trip next week. I promise I'll return it to you ASAP."", 'u2': ""I'm happy to lend it to you, Steve, but I have to say, I've been noticing you've been a bit... busy with other things lately.""}, {'u1': ""Ha ha, yeah, work's been keeping me pretty busy, but I'm on top of it. What's this 'busy' stuff all about?"", 'u2': ""I'm just saying, you borrowed my charger and toaster a while back, and I haven't seen them since. I'm starting to think you forgot about them.""}, {'u1': ""Oh, man, I'm so sorry about that. I totally spaced on returning them. I'll dig them out for you this weekend."", 'u2': ""Okay, but do you still have my charger and toaster? I could really do with those back first if that's okay?""}]}",0,0.0,0.0,0.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -5966,7 +5966,7 @@ u1: You just don't get it, do you? I'm trying to make a statement with my hair
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 351,244_2003,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,"Maybe they just forgot, like you forget to flush the toilet.","{'turns': [{'u1': ""You know, we should call the owner to remind them to clean up their pet's poop."", 'u2': ""I get that, but I just find it frustrating when people don't take care of their pets.""}, {'u1': ""Well, at least they're not leaving their dog's poop in my yard. That would be really inconsiderate."", 'u2': ""But it's still not nice that they're leaving it on the sidewalk for others to step in.""}, {'u1': 'ew, people are so inconsiderate!', 'u2': 'Maybe they just forgot, like you forget to flush the toilet.'}]}",1,1.0,0.0,1.0,1.0,1.0,,0.0,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -6187,7 +6187,7 @@ u1: I'm staring at this screen, and I still can't figure out how to get to the +
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 364,105_1016,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,#Laughing. You look like summer dude.,"{'turns': [{'u1': ""Hey, what's up, dude? I thought I was going to a barbecue, but I guess it's just hanging out with you."", 'u2': 'You know, you can never go wrong with that!'}, {'u1': ""I'm feeling pretty casual today, so I figured, why not dress the part?"", 'u2': ""Casual? You look like you're trying out for a fashion show!""}, {'u1': ""Hey, at least my outfit's a bit festive, right?"", 'u2': '#Laughing. You look like summer dude.'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -6204,7 +6204,7 @@ u1: Hey, at least my outfit's a bit festive, right?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 365,219_2009,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,Oh thats quite interesting.,"{'turns': [{'u1': ""The way they cut the sushi, it's really precise, you know, in Japan, people do it this way."", 'u2': ""I'm not sure I agree with that method, though.""}, {'u1': ""When you eat sushi, you're supposed to eat it in one bite, you know, in Japan, people do it this way."", 'u2': 'That makes sense, I guess.'}, {'u1': 'I just read this article about how they do food in Japan.', 'u2': 'Oh thats quite interesting.'}]}",0,1.0,0.0,,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -6646,7 +6646,7 @@ u1: Sorry, I really need to finalize my packing list for next week and I don't h
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 391,203_2002,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,If that's what you think fair enough,"{'turns': [{'u1': ""That sounds like an awesome idea! I'll get to work on it right away. I've got all my favorite pencils sharpened and ready to go."", 'u2': ""You're really getting carried away with this whole drawing thing, aren't you?""}, {'u1': ""Well, you've got to have the right mindset for drawing. A little bit of magic never hurts, right?"", 'u2': ""A little bit of magic? You mean like the kind where you say a picture is a unicorn just because it's a horse with a carrot on its head?""}, {'u1': ""Now that's a unicorn!"", 'u2': ""If that's what you think fair enough""}]}",1,1.0,1.0,1.0,0.0,,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -7207,7 +7207,7 @@ u1: Wow, that doesn't sound good. Why did you say yes?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 424,209_2029,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,I guess some people are just clueless to social cues regarding friendships,"{'turns': [{'u1': ""I have a friend who always borrows money from me but never pays it back. I swear, it's like he thinks I'm made of money."", 'u2': ""Some people just don't understand the concept of personal responsibility, I guess.""}, {'u1': ""But seriously, Bill needs to wise up and surround himself with better people. I don't know why he puts up with his friend's antics."", 'u2': ""I mean, it's not like his friend is some crazy outlier. People like that are everywhere. Maybe Bill just hasn't learned how to spot them.""}, {'u1': ""why is my brother even friends with that guy? I don't get it."", 'u2': 'I guess some people are just clueless to social cues regarding friendships'}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -8176,7 +8176,7 @@ u1: Everyone in the group is too laid back!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 481,242_2102,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,"Yes I know the feeling, as you still haven't paid me back any chance of you sending me the money over please.","{'turns': [{'u1': ""really appreciate you guys covering my lunch the other day, you didn't have to do that, thanks a ton!"", 'u2': ""No problem, just pay us back when you can, we're cool about it.""}, {'u1': ""can you believe it, this guy just won't pay me back and I had to give him a ride last week too!"", 'u2': ""yeah, it is pretty annoying when people don't hold up their end of the deal.""}, {'u1': 'I swear I will pay you back Steve, just give me a couple more days!', 'u2': ""Yes I know the feeling, as you still haven't paid me back any chance of you sending me the money over please.""}]}",0,0.0,0.0,,,0.0,,0.0,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -8261,7 +8261,7 @@ u1: Fine. I'll try to drive smoother. But you're just riding shotgun, so what do
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 486,125_1012,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,"no, but i think i should make  a move soon","{'turns': [{'u1': ""I'm still really interested in how things go between you and this person. Have you thought about what you might say or do to break the ice and get things going? By the way, what's the name of this person?"", 'u2': ""Haha, yeah I thought about it but to be honest, I'm not really sure. That's why I asked you for advice initially. And I've only talked to them a few times so I don't know their name super well yet""}, {'u1': ""Okay no worries, I get it. You just take it one step at a time. Did you end up talking to them again after our last chat? I'm curious to see how things are progressing"", 'u2': ""Yeah, I talked to them a few times. We've just been kind of sticking to our usual conversation topics, though. Nothing's really changed.""}, {'u1': 'did my advice work or what? Any progress so far?', 'u2': 'no, but i think i should make a move soon'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -8431,7 +8431,7 @@ u1: wow, you really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 496,203_2108,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,ha ha. you're a nutter,"{'turns': [{'u1': ""i'm serious this time, i'm going to draw a unicorn."", 'u2': 'you and your unicorns...'}, {'u1': ""i've got the magic spark in me. watch closely, i'll make it happen."", 'u2': 'good luck with that.'}, {'u1': ""now that's a unicorn!"", 'u2': ""ha ha. you're a nutter""}]}",0,0.0,0.0,1.0,,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -10097,7 +10097,7 @@ u1: Yeah, but come on, just a little extra flair.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 594,205_2103,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,Haha I aint trying that!,"{'turns': [{'u1': ""I was thinking we could make some dips, but I had a crazy idea! What if we mix ketchup, mustard, and potato chips together? I bet it'll be a hit!"", 'u2': ""Nah, Steve, I don't think that's gonna work""}, {'u1': ""Come on, just give it a shot! We can use orange juice to thin it out. Trust me, it'll be awesome!"", 'u2': ""Nah, Steve, that's still a terrible idea""}, {'u1': 'Hey, look, I made something delicious!', 'u2': 'Haha I aint trying that!'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -10726,7 +10726,7 @@ u1: look, it must be an alien because humans can't do that. What else could it b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 631,113_1003,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,You should not take your savings and make such a gamble,"{'turns': [{'u1': ""Man, I'm so sure this is going to be the next big thing. My friend's cousin said his friend got in early and now he's set for life."", 'u2': 'He got in early? What does that even mean?'}, {'u1': ""It means he bought in before the prices skyrocketed. Now he's selling and making a killing. I'm basically his partner in this"", 'u2': 'And what exactly makes you think this Ezillion thing is going to skyrocket?'}, {'u1': ""They say it's going to change the world. It's like the future of money or something. Everyone will be using it soon."", 'u2': 'You should not take your savings and make such a gamble'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -11746,7 +11746,7 @@ u1: I'm the only one who's actually doing some work around here.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 691,222_2007,fictionary,1,en,"Steve is a fan of Bulgarian folk music. Every week, he finds a different song and plays it on his phone and says, ""I finally found one you'll like! This one is really good. Come on!""",,"Okay...! I'll give it a listen, I'm sure I'll have to like one of these songs.","{'turns': [{'u1': ""I finally found one you'll like! This one is really good. Come on!"", 'u2': 'Alright, alright, play it then.'}, {'u1': 'This Bulgarian folk song will change the way you look at music!', 'u2': ""I'm sure it will... I just need to hear one that actually moves me.""}, {'u1': ""This one is really catchy! You can't deny it!"", 'u2': ""Okay...! I'll give it a listen, I'm sure I'll have to like one of these songs.""}]}",1,1.0,1.0,1.0,1.0,,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -11831,7 +11831,7 @@ u1: Dude, I paid for you at lunch last week, and you still haven't reimbursed me
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 696,261_2079,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,You getting one for me next round then?,"{'turns': [{'u1': 'Get me another one, will ya?', 'u2': 'You do all the work, Steve.'}, {'u1': ""You're a lifesaver, thanks a bunch!"", 'u2': ""At least I don't have to do all the ordering.""}, {'u1': 'Get another one for me too, will you?', 'u2': 'You getting one for me next round then?'}]}",0,,0.0,0.0,0.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -11950,7 +11950,7 @@ u1: I told you I'd bring back the charger, and it's not like I borrowed the toas
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 703,265_2063,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,No worries mate,"{'turns': [{'u1': ""really need that USB stick, I've got an important presentation to prepare"", 'u2': ""What's the presentation about?""}, {'u1': 'Just some new software I need to demo', 'u2': 'Oh, hope it goes smoothly'}, {'u1': 'thank you', 'u2': 'No worries mate'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -12290,7 +12290,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 723,215_2054,fictionary,1,en,"Steve says to you, ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."" At the same time, you notice that Steve is getting his 8th cup of coffee of the day.",,probably the same with the amount of coffee our generation drinks,"{'turns': [{'u1': ""I mean, I've seen it. The kids these days are hooked on that Red Bull stuff and the energy drinks in general. It's just so unhealthy. Their livers are going to pay for it in 10 years."", 'u2': ""You're telling me. I'm pretty sure my grandma used to have a similar addiction to this Excedrin stuff back in the day""}, {'u1': ""That's true, but at least Excedrin is for headaches, right? These energy drinks are like a gateway to an addiction and a dependency on caffeine."", 'u2': ""Yeah, that's what they say, but I still don't see the difference between that and what my dad used to down back in the 80s when he thought he was the king of Wall Street""}, {'u1': ""have you noticed that kids these days drink energy drinks all the time? That can't be healthy."", 'u2': 'probably the same with the amount of coffee our generation drinks'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -12494,7 +12494,7 @@ u1: no, no, I know you trust me, that's not the point!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 735,103_1034,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,We're getting old man. We used to laugh at our parents when they did not know how to operate things. Now we are the old geysers who even struggle to post a profile picture.,"{'turns': [{'u1': ""Dude, I am going to be the coolest guy ever! I will post this picture of me doing a sick trick and everyone will be jealous. I don't care that I have no idea how to post a picture on social media. I will just figure it out."", 'u2': ""You know that's not exactly how it works, man. You're going to struggle with it like everyone else.""}, {'u1': ""Come on, u2! It can't be that hard! I just need to... wait, where do I even start?"", 'u2': ""You're making this way harder than it needs to be. Just chill and ask me for help.""}, {'u1': ""I don't know, man... I'm just really struggling with this. I feel like a total noob."", 'u2': ""We're getting old man. We used to laugh at our parents when they did not know how to operate things. Now we are the old geysers who even struggle to post a profile picture.""}]}",1,1.0,1.0,,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -13463,7 +13463,7 @@ u1: I'm not handy, I'm just the remote police, keeping the volume in check!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 792,237_2083,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,"get a grip, it tastes like death","{'turns': [{'u1': ""hey, I'm a genius, I've mixed all these flavors together to create a masterpiece!"", 'u2': 'Uh, what is this, Steve?'}, {'u1': ""I swear, it's gonna be the next big thing, just you wait and see!"", 'u2': 'Get a grip, Steve, this is disgusting.'}, {'u1': 'But seriously, have you tasted the sweet and savory combination yet?', 'u2': 'get a grip, it tastes like death'}]}",0,0.0,1.0,1.0,0.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -14432,7 +14432,7 @@ u1: What's the hurry, mate? Can't you see I'm busy?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 849,204_2024,fictionary,1,en,"You walk into the room and Steve is wearing his shoes on his hands. When you see him, he says ""look at me! I'm Mr. Shoehand!""",,"Grow up, Steve.","{'turns': [{'u1': ""You are always like this. I don't know what to say to you anymore."", 'u2': ""I said'stop this nonsense' ten times already.""}, {'u1': ""That's not nonsense, I'm just trying out this new skill!"", 'u2': ""This skill? Putting shoes on your hands is not a skill, it's just silly.""}, {'u1': ""look at me! I'm Mr. Shoehand!"", 'u2': 'Grow up, Steve.'}]}",0,0.0,1.0,0.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -14704,7 +14704,7 @@ u1: Are you calling me a traffic cone?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 865,106_1054,fictionary,0,en,"Steve recently changed jobs. He is annoyed because he needs to deal with some bureaucracy regarding his health insurance. He says, ""I should have just stayed at my old job. If it hadn't been for this new job, I wouldn't have had to deal with so much crap.""",,you will have it done in no time don't stress about it,"{'turns': [{'u1': ""It's really annoying how much paperwork and hassle I'm going through to get my health insurance set up here."", 'u2': ""Tell me about it. It's like they want to make it as difficult as possible.""}, {'u1': ""I don't know, I just feel like I'm in way over my head with all this bureaucratic stuff."", 'u2': ""We'll get you through it, buddy. We've dealt with worse situations before.""}, {'u1': ""I'm really starting to regret taking this job if it means dealing with all this nonsense."", 'u2': ""you will have it done in no time don't stress about it""}]}",0,0.0,0.0,1.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -15248,7 +15248,7 @@ u1: So now you're bringing up old scores?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 897,209_2030,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"When you're good friends with someone often you can overlook some of the less positive things about them/ None of us are perfect, I'm sure I do things you don't like!","{'turns': [{'u1': ""I swear, Bill's friend is the WORST! Always asking for money and never paying it back. What kind of person does that?"", 'u2': ""Yeah, I know what you mean, but maybe he's just going through a tough time and that's why he's doing that.""}, {'u1': ""I just can't understand why Bill puts up with him. He's so annoying and inconsiderate."", 'u2': 'I think maybe Bill feels sorry for him or something. Maybe he thinks he can help him change.'}, {'u1': ""I don't get it."", 'u2': ""When you're good friends with someone often you can overlook some of the less positive things about them/ None of us are perfect, I'm sure I do things you don't like!""}]}",0,1.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -16438,7 +16438,7 @@ u1: Okay, no rush. But, seriously, can I borrow your suitcase now? I really need
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 967,218_2118,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,There's nothing wrong with planning 'a head.',"{'turns': [{'u1': ""I was thinking of this pompadour hairstyle, what do you think? It's really on trend right now."", 'u2': ""Why do you need to be 'on trend'? You're going to be you, no matter what haircut you get.""}, {'u1': ""Because it's a classic, okay? I don't want to be seen as uncool."", 'u2': ""You're starting to sound like my aunt, Steve.""}, {'u1': ""What's wrong with that? My aunt has great taste."", 'u2': ""There's nothing wrong with planning 'a head.'""}]}",1,1.0,1.0,1.0,,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -16846,7 +16846,7 @@ u1: Gosh, it's so frustrating that I'm the only one trying to get the stuff movi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 991,118_1022,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,that's my buddy!!!,"{'turns': [{'u1': ""finally finished that huge project at work and I wanted to treat myself to something nice. You've been telling me I deserve it for months now."", 'u2': ""Yeah, you're getting that new project. Can't wait to see what the boss says about the shoe game""}, {'u1': 'haha, exactly what I was going for with these shoes! Trying to bring some swag to the office today.', 'u2': ""Swag? You're just trying to one-up me with your fancy shoes now""}, {'u1': ""the shoes go really well with my outfit today, don't you think?"", 'u2': ""that's my buddy!!!""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -16999,7 +16999,7 @@ u1: I swear, they're going to be the death of me! Okay, okay, I'll separate them
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1000,207_2121,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,You know I do that intentionally right man? I know it triggers you.,"{'turns': [{'u1': ""I swear man, you did it again. Can't you just use an even number for once? It's driving me nuts."", 'u2': ""What, you don't like a little challenge?""}, {'u1': ""Seriously, dude, you know how it is when you crank it to 37? It's like, I have to fix it. Every. Single. Time."", 'u2': ""That's what I'm counting on, Steve!""}, {'u1': ""Come on, u2, you're being a pest. Stop messing with the volume. I'm trying to watch the game."", 'u2': 'You know I do that intentionally right man? I know it triggers you.'}]}",0,0.0,1.0,,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17203,7 +17203,7 @@ u1: Fries touching the burger again!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1012,112_1036,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,knee injury again so you don't play nice,"{'turns': [{'u1': ""man it's been 20 years and I still can't kick a ball in"", 'u2': ""well, that's what makes this event so entertaining for the donors""}, {'u1': ""I swear I've improved since high school... or so I've been telling myself"", 'u2': ""we'll have to film it and make a highlight reel of your greatest misses""}, {'u1': ""how's your knee feeling, by the way?"", 'u2': ""knee injury again so you don't play nice""}]}",1,1.0,1.0,1.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17288,7 +17288,7 @@ u1: But have you seen the way it moves? That's not something a drone can do. It'
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1017,115_1012,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"They've been friends a while, those things matter less the more you've been friends with them.","{'turns': [{'u1': ""really, like every time I talk to him I have to lend him money. It's getting out of hand!"", 'u2': ""That's not really how friendships work. He's not going to change because you lend him money or don't.""}, {'u1': ""But it's annoying because he never pays me back! It's like he knows I can afford it and just takes it for granted."", 'u2': ""Those things don't define the whole friendship, Steve.""}, {'u1': ""But it's not just that – he always shows up late, never remembers my birthday, and just generally treats me like dirt."", 'u2': ""They've been friends a while, those things matter less the more you've been friends with them.""}]}",0,0.0,1.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17373,7 +17373,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1022,131_1060,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!","{'turns': [{'u1': ""I'm in a bit of a bind here, I've left my suitcase at my brother's place and I really need one for my trip next week."", 'u2': ""Really? You forgot it at your brother's place? That's pretty careless, dude!""}, {'u1': ""Haha, well, I'm not perfect! Can I borrow your suitcase instead? I promise I'll return it as soon as I get back."", 'u2': ""You're kidding me, right? You still haven't returned my phone charger and my toaster, and now you want to borrow something else from me?""}, {'u1': ""Ah, yeah, about that... I'm really sorry, I've been meaning to return them but I just haven't gotten around to it yet."", 'u2': ""Sure thing I'll lend it you on two conditions, you give me back both my phone charger and my toaster and I'll lend you one suitcase free of charge!""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17441,7 +17441,7 @@ u1: More coffee?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1026,235_2021,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,thats amazing mate,"{'turns': [{'u1': ""Hey, I'm getting close to finishing that drawing of a unicorn."", 'u2': ""can't wait to see it""}, {'u1': ""Ha! You won't believe what I've just drawn. Instead of a unicorn, I've got a horse with a carrot stuck to its forehead. The look on its face is priceless!"", 'u2': 'haha nice one Steve!'}, {'u1': ""now that's a unicorn!"", 'u2': 'thats amazing mate'}]}",1,,1.0,,0.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17509,7 +17509,7 @@ u1: I swear, it's not that hard. I'm trying to post this selfie!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1030,126_1038,fictionary,0,en,"You are going to an office party that happens every year at a wine bar. Steve asks you how long the party is going to last.  Steve says, ""I might join later if you are still there then.""",,"Okay, well shoot me a text and I'll let you know if it's still going on.","{'turns': [{'u1': ""I'm thinking about heading to the wine bar soon, what time do you plan on arriving at the party?"", 'u2': ""I'm not sure, I still need to finish up a project at work. Can you hold on a sec?""}, {'u1': ""No problem, I'll wait. How long do you think the party will be going on for tonight?"", 'u2': ""Honestly, I'm not sure. I've never really been to a wine bar before. How about you?""}, {'u1': 'I might join later if you are still there then.', 'u2': ""Okay, well shoot me a text and I'll let you know if it's still going on.""}]}",0,0.0,0.0,,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -17747,7 +17747,7 @@ u1: wow, you really should watch how you spend your money
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1044,212_2109,fictionary,1,en,"When Steve comes over to your house, he frequently forgets to flush the toilet after using the bathroom. You have complained to him about this but he keeps doing it. Later, you and Steve see someone walking their dog on the sidewalk. The dog poops on the sidewalk but the dog owner doesn't pick it up. Steve says, ""ew, people are so inconsiderate!""",,What's the difference between leaving dog poop on the sidewalk and leaving my toilet unflushed Steve?,"{'turns': [{'u1': ""Steve, your toilet situation is so much of a problem for me. I've told you about this like, five times now. Can't you just remember to flush it?"", 'u2': ""So you're just gonna be all annoyed at dog owners for being inconsiderate when you have the same problem and you don't do anything about it?""}, {'u1': ""Come on, it's a dog. It doesn't know any better, but you do, and you're still doing it."", 'u2': ""That's a pretty weak defense for you not flushing the toilet when you're better than the dog.""}, {'u1': 'ew, people are so inconsiderate!', 'u2': ""What's the difference between leaving dog poop on the sidewalk and leaving my toilet unflushed Steve?""}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -19413,7 +19413,7 @@ u1: that person should work on their English, don't you think?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1142,206_2008,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,I think you need some training before you use that.,"{'turns': [{'u1': ""You're so tech-savvy, but this thing looks way more complicated than I thought."", 'u2': ""That's because it's a new feature and not many people use it yet.""}, {'u1': 'How hard can it be to take a picture and upload it? Do I really need a manual?', 'u2': ""Actually, you do. And it's not just about the picture, it's about presenting yourself in a good light.""}, {'u1': ""Come on, it can't be that hard. I just need to figure this out."", 'u2': 'I think you need some training before you use that.'}]}",1,1.0,1.0,,1.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -19430,7 +19430,7 @@ u1: Come on, it can't be that hard. I just need to figure this out.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1143,110_1004,fictionary,0,en,"You and Steve are playing a new video game and you are totally losing to him. Steve teases you by saying, ""come on, you can do better than that!""",,"Alright, how about we resume this game in a week? I should be better by then.","{'turns': [{'u1': 'You call that a move? Come on, u2! I thought you had skills!', 'u2': 'Maybe I had a bad day, okay? Just chill!'}, {'u1': 'Alright, alright! But just one more round! Loser buys pizza!', 'u2': ""You're really rubbing it in, aren't you?""}, {'u1': 'Come on, you can do better than that!', 'u2': 'Alright, how about we resume this game in a week? I should be better by then.'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -19770,7 +19770,7 @@ u1: I'm so sorry, but I'm gonna have to bail again. Next time?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1163,243_2116,fictionary,1,en,"You know that Steve does almost everything at the last minute. Today Steve tells you that he has to write a joint proposal with colleagues from a different team by the end of this week, and complains that things are moving so slowly because everybody in the other team is a procrastinator. He says, ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!""",,That's usually you Steve.,"{'turns': [{'u1': ""I really need to get this proposal done on time, but it's proving to be a nightmare. I've been sending reminders to everyone in the other team for weeks, but they never seem to follow through. I'm starting to think that they're not taking this as seriously as I am."", 'u2': ""Have you tried checking if they've received your reminders? Maybe they're not getting them for some reason?""}, {'u1': ""I have double-checked that they've received them, and it's just frustrating that they're not doing anything with the information. I'm starting to feel like I'm doing all the work myself."", 'u2': ""Well, you know that you're the one who usually sends reminders at the last minute, so maybe this time it's not so different?""}, {'u1': ""gosh, it's so frustrating that I'm the only one trying to get the stuff moving. Everyone in this team is too laid back!"", 'u2': ""That's usually you Steve.""}]}",0,0.0,1.0,0.0,1.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -20263,7 +20263,7 @@ u1: Blimey, mate, just grab me another one?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1192,228_2046,fictionary,1,en,"You just bought a new car. Steve's car is away being repaired because he got in a car accident recently. He says he needs to pick up his girlfriend from work, and asks if he can borrow your new car. You say no, and he responds ""come on, why can't I borrow it? Don't you trust me?"" ",,Considering your recent history...no. I also need my own car.,"{'turns': [{'u1': ""Come on, dude, I know you just got the car and I promise I'll be extra careful, I'll pick up my girlfriend from work and be back in no time, we can even take the scenic route!"", 'u2': ""You've been saying that since the accident, Steve, and I still don't trust you behind the wheel. It's not a matter of being careful, it's about being reliable.""}, {'u1': ""That's not fair, man, I had an accident, it's not like I'm a reckless driver! You're just being paranoid now."", 'u2': ""I'm being realistic, Steve. You said yourself that your car is going to be in the shop for weeks, and I just got mine back. I need it.""}, {'u1': ""Aww, come on, buddy, just this once? I'll owe you one, I promise!"", 'u2': 'Considering your recent history...no. I also need my own car.'}]}",1,1.0,1.0,,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -20535,7 +20535,7 @@ u1: oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1208,259_2108,fictionary,1,en,"Steve wants to take a cab to go home. He asks you to call a taxi for him. When you say ""There are several cabs right there. Why not just get one of those?"" Steve says ""but you have an app for calling cabs. I know it gives you a discount!""",,so download it onto your phone. If I use the app it needs to be me travelling in the cab.,"{'turns': [{'u1': ""I really should, but I'm not sure it's that easy. Plus, I have to ask the dispatcher to book a cab. What's the process with the app?"", 'u2': ""It's super easy. You just enter your pickup location, the number of passengers, and it takes you to a list of available cabs. Then you can book the one that suits you best.""}, {'u1': 'That sounds alright, but can anyone book a cab using the app, or do I need to be the one in the cab?', 'u2': ""That's a good question. I'm not sure, actually. But I do know that if I use the app, I have to be the one in the cab, not someone else. That's why I need to download the app.""}, {'u1': ""Oh, I see. But if I'm booking a cab for you, can't you just use the app?"", 'u2': 'so download it onto your phone. If I use the app it needs to be me travelling in the cab.'}]}",0,0.0,0.0,0.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -20892,7 +20892,7 @@ u1: I know you don't understand, but it's not just about the aesthetics. It's ab
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1229,268_2002,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,Those shoes look amazing with your outfit,"{'turns': [{'u1': 'man, I just got back from a crazy long day at work and I needed to celebrate. I finally finished that project I had been stressing about for weeks.', 'u2': 'No way, congrats on finally finishing that project! You must be stoked'}, {'u1': ""yeah, I'm beyond relieved. I think I'm going to splurge a bit and treat myself to a nice dinner and maybe some new clothes"", 'u2': ""new clothes, huh? I'm sure you're already looking great, but I'm sure something new will just top it off""}, {'u1': ""I know, I know, I've been eyeing this new pair of shoes for weeks, and now that I've finished the project, I think I deserve them"", 'u2': 'Those shoes look amazing with your outfit'}]}",0,0.0,0.0,0.0,0.0,,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -21287,7 +21287,7 @@ u1: It's got a carrot, that's all it's got!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1252,265_2022,fictionary,0,en,"Steve asks you ""can I borrow your USB stick?"" and you give it to him. Steve says, ""thank you.""",,I need it back as soon you have finished with it,"{'turns': [{'u1': ""You're a lifesaver! Can I borrow your laptop instead of the USB stick?"", 'u2': ""Sorry, I've just got a presentation to do and need my laptop.""}, {'u1': 'No worries, I can just do the files on my phone then.', 'u2': ""That's gonna take you ages. Use my laptop for this one project, and then you can have it back.""}, {'u1': 'Thanks so much, mate! I owe you one!', 'u2': 'I need it back as soon you have finished with it'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -21848,7 +21848,7 @@ u1: This is getting ridiculous, u2 - you just set it to 23. Fix it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1285,125_1056,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,We're getting married next week - did you not get the invite!,"{'turns': [{'u1': ""You said you were taking things slow. I haven't heard from you in a bit. Did things go south or what?"", 'u2': ""No, they just progressed at a glacial pace. Nothing bad, I just feel like I'm stuck in limbo""}, {'u1': ""You think you're stuck in limbo? I'm starting to wonder if you should just be more direct and ask them out already."", 'u2': ""Are you kidding me? I've been trying to do that! But they keep saying we should just hang out as friends. I think it's time to give up on any romantic prospects and just enjoy their company as a friend.""}, {'u1': 'You guys just made plans for that dinner I was telling you about?', 'u2': ""We're getting married next week - did you not get the invite!""}]}",1,1.0,1.0,1.0,,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -22137,7 +22137,7 @@ u1: why is my brother even friends with that guy? I don't get it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1302,125_1019,fictionary,1,en,"You had a crush on one of Steve's colleagues and asked for Steve's advice on how to make a move on him/her. He said you should probably take things slow because s/he recently got out of a relationship. About a month later, you feel like you are totally stuck in the friend zone with him/her.  Steve asks, ""did my advice work or what? Any progress so far?""",,no it didn't,"{'turns': [{'u1': ""Honestly, I was hoping to see some signs of life from you two, but the radio silence is deafening. How's the conversation going? Any spark at all?"", 'u2': ""Honestly, it's been pretty meh so far. We mostly talk about work and stuff.""}, {'u1': ""Hmm, that doesn't sound like much progress. Has he/she even hinted at being interested in anything beyond just being friends?"", 'u2': ""No, not really. We've hung out a few times, but it's always been pretty low-key and platonic.""}, {'u1': 'Did my advice work or what? Any progress so far?', 'u2': ""no it didn't""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -22171,7 +22171,7 @@ u1: Cheers, mate! Get another one for me too, will you?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1304,271_2095,fictionary,0,en,"You are going to a party later today. You ask if Steve wants to join. He says, ""I'm interested. When does the party start?""",,around 8,"{'turns': [{'u1': ""Hey man, it's your buddy Steve. I'm interested in going to the party with you today!"", 'u2': ""Cool, let's get going. What's the party at?""}, {'u1': ""I heard it's at Alex's place. We should get there early so we can grab some drinks before the crowd gets too big."", 'u2': 'Alright, sounds like a plan.'}, {'u1': 'So, when do you think we should head over?', 'u2': 'around 8'}]}",0,,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -22494,7 +22494,7 @@ u1: Dude, I didn't drink that much, I'm perfectly sober! And yeah, I guess we di
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1323,129_1023,fictionary,1,en,"You are helping Steve move into a new apartment. After an hour, you realize that Steve is only carrying light stuff and you are doing all the heavy lifting.  Steve says, ""ugh, moving is always so stressful and chaotic...""",,Yet you're only carrying the easy stuff l am the one doing all the work here,"{'turns': [{'u1': 'ugh, moving is always so stressful and chaotic...', 'u2': ""Dude, you're just setting up the couch, and I'm lugging boxes up and down the stairs.""}, {'u1': ""I don't know, I just feel overwhelmed with all this stuff."", 'u2': ""It's not the stuff that's overwhelming, it's you carrying those few light boxes like they're featherweights while I'm doing all the heavy lifting.""}, {'u1': ""uhh, yeah I guess that's kinda true"", 'u2': ""Yet you're only carrying the easy stuff l am the one doing all the work here""}]}",0,0.0,0.0,1.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -23361,7 +23361,7 @@ u1: why is my brother even friends with that guy? I don't get it.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1374,219_2018,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"I would like to learn more about other cultures, but remind Steve, we are not in Japan and things are different everywhere","{'turns': [{'u1': ""I tell you, in Japan, they take their time when it comes to eating. You know, there's this whole philosophy of enjoying the moment, savoring each bite. We should try that here."", 'u2': ""Steve, that's all well and good, but we're in a hurry. How are we supposed to apply that to our fast-paced lives?""}, {'u1': ""Well, think about it, in Japan, even convenience stores have a dedicated space for making a perfect cup of green tea. That's attention to detail, my friend!"", 'u2': ""It's true, the Japanese do appreciate their tea, but I'm not sure how that helps with our current meal. We should focus on what we're doing here and now.""}, {'u1': ""Ah, but you'd do it differently if you were in Tokyo, right? Everyone has their own unique way of enjoying food."", 'u2': 'I would like to learn more about other cultures, but remind Steve, we are not in Japan and things are different everywhere'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -23446,7 +23446,7 @@ u1: This one's a bit out there.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1379,245_2028,fictionary,1,en,"Quite often, Steve's boss asks Steve to run errands that are possibly unrelated to work. A few days ago, your boss asked you to run a personal errand for him, to which you reluctantly said yes. When you complain to Steve about this, he says, ""wow, that doesn't sound good. Why did you say yes?""",,"I felt obliged to do it.  In future when he asks, shall we both refuse to do these errands?","{'turns': [{'u1': ""I'm worried about you. You seem pretty upset."", 'u2': ""Yeah, I just feel really taken for granted. Every other time I run an errand for him, he's always so busy when I need to talk to him about actual work stuff.""}, {'u1': ""Well, that's just not right. You deserve better from your boss."", 'u2': ""I know. And I don't want to be the one always running around doing his personal tasks for him.""}, {'u1': ""He's really been taking advantage of you, hasn't he?"", 'u2': 'I felt obliged to do it. In future when he asks, shall we both refuse to do these errands?'}]}",0,0.0,0.0,0.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -23650,7 +23650,7 @@ u1: I didn't think about that, but I'm still going to call it a unicorn.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1391,233_2021,fictionary,1,en,"Steve and you are hanging out tonight. He shows up wearing a red tank top, green shorts, and yellow sneakers.",,nice outfit,"{'turns': [{'u1': 'you look great today, hows it going?', 'u2': 'you look pretty sharp yourself'}, {'u1': 'i thought it would be a casual night, guess i was wrong huh?', 'u2': ""nah, you're still on point""}, {'u1': ""i just picked this outfit at random, hoping you wouldn't judge me"", 'u2': 'nice outfit'}]}",1,,1.0,,1.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -24381,7 +24381,7 @@ u1: How many rounds we had now?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1434,239_2019,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,That's a strange thing to do. Are you superstitious?,"{'turns': [{'u1': 'Hey, I just noticed something funny. When you set the volume to an odd number, I take the remote and change it to an even number.', 'u2': ""That's a pretty clever way to deal with a problem like that.""}, {'u1': 'I did it again! You just set the volume to 43, and I quickly changed it to 44.', 'u2': ""That's getting a bit old. Can't you just let me change the volume in peace?""}, {'u1': ""You're trying to set it to 73 again, aren't you?"", 'u2': ""That's a strange thing to do. Are you superstitious?""}]}",0,0.0,1.0,,0.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -25486,7 +25486,7 @@ u1: I should have just stayed at my old job. If it hadn't been for this new job,
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1499,220_2053,fictionary,1,en,"Steve has a very strong opinion about the recent political scandal. You are not interested in it and would rather talk about something else. Steve says, ""jeez, only idiots would vote for that piece of crap, don't you think so? ",,Well luckily there aren't that many of them - so lets talk about a good one ?,"{'turns': [{'u1': ""I'm starting to think most of the country is run by idiots and they just can't think for themselves."", 'u2': ""You're really convinced of that? Is there something specific that made you think that way?""}, {'u1': ""Oh, for sure, the way people blindly follow whatever they hear on the news without questioning it. That's just ignorant."", 'u2': ""I get where you're coming from, but isn't that just the way it's always been? People have always trusted their news sources.""}, {'u1': ""This is different, I'm telling you. People are actually stupid about this stuff now."", 'u2': ""Well luckily there aren't that many of them - so lets talk about a good one ?""}]}",0,0.0,0.0,,,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -25554,7 +25554,7 @@ u1: look at me! I'm Mr. Shoehand!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1503,130_1056,fictionary,0,en,"Steve and you are hanging out, and he invites his other friends. You like them because they are fun.  Steve says, ""I invited some other people, hope you don't mind.""",,Why would I.  It means I'm not stuck with you for the whole night!,"{'turns': [{'u1': ""I was thinking of inviting a couple of other people to join us, see if it's more fun for everyone."", 'u2': ""Oh, really? I hope I don't get stuck with your aunt or cousin or something.""}, {'u1': ""Yeah, I thought about that, but actually, I invited Rachel and Alex, they're always up for a good time."", 'u2': ""They're cool, I like them.""}, {'u1': ""I invited some other people, hope you don't mind."", 'u2': ""Why would I. It means I'm not stuck with you for the whole night!""}]}",1,1.0,0.0,1.0,,1.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -26455,7 +26455,7 @@ u1: People shouldn't just leave their dog's crap on the sidewalk, it's disgustin
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1556,208_2006,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,"nothing, that seems quite reasonable to me","{'turns': [{'u1': ""I'm trying to enjoy my meal but these fries keep touching my hamburger. Can you please move them to the other side?"", 'u2': ""Why the fuss? They're just a little stuck together.""}, {'u1': ""I don't know, it's just really annoying. I don't want to be eating them side by side."", 'u2': ""That's a pretty silly reason to get worked up.""}, {'u1': 'The presentation of the food, it just looks messy to me.', 'u2': 'nothing, that seems quite reasonable to me'}]}",0,0.0,0.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -28903,7 +28903,7 @@ u1: I'm the only one who cares about meeting deadlines, apparently. Nobody else 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1700,131_1014,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,You may as well move in with me when your return...,"{'turns': [{'u1': ""Hey, how's it going? Can you spot me a suitcase for a trip next week? I really need one!"", 'u2': ""You've been 'borrowing' a lot of my stuff lately... like, two months ago my charger and a month ago my toaster...""}, {'u1': ""Oh, I'm so sorry about that! I'll return them as soon as I can. Can I still borrow your suitcase though?"", 'u2': ""That's not the point, the point is you're not returning anything you've borrowed...""}, {'u1': ""You're being a bit unreasonable, I'm really in a bind here."", 'u2': 'You may as well move in with me when your return...'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -29175,7 +29175,7 @@ u1: I'm seriously going to mess this up, aren't I?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1716,113_1017,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,"I don't think that was a bright idea, Steve.","{'turns': [{'u1': 'I finally decided to invest in something, and Ezillion is going to make me a fortune!', 'u2': ""Ezillion? Isn't that one of those cryptocurrencies nobody really understands?""}, {'u1': ""I'm telling you, it's a goldmine! All the experts are saying it's the future of money!"", 'u2': ""Experts? Which ones? Because I've never heard of any reputable financial analysts talking about Ezillion.""}, {'u1': ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!"", 'u2': ""I don't think that was a bright idea, Steve.""}]}",0,0.0,0.0,0.0,,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -30620,7 +30620,7 @@ u1: oh, no reason. I just wanted you to do it for me
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1801,252_2025,fictionary,1,en,"Steve has a very strong opinion about the recent political scandal. You are not interested in it and would rather talk about something else. Steve says, ""jeez, only idiots would vote for that piece of crap, don't you think so? ",,"I don't care about voting, it is all rigged. democracy is an illusion.","{'turns': [{'u1': ""You really don't get what's going on here? The guy's a criminal, and he's getting away with it. It's like the whole system is broken."", 'u2': ""That's what happens when people are too blinded by their own agendas. No one's thinking about what's really going on.""}, {'u1': ""You think it's all just about being blinded? It's more like people are intentionally being misled. There's a whole machine working against us."", 'u2': ""I'm not sure I'd say intentionally misled, but there's definitely some serious manipulation going on. It's all very calculated.""}, {'u1': ""The thing is, it's not just some politicians, it's the whole system. The media, the politicians, the institutions... they're all in on it."", 'u2': ""I don't care about voting, it is all rigged. democracy is an illusion.""}]}",0,0.0,0.0,,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -31538,7 +31538,7 @@ u1: This coffee habit of yours is going to be the death of you yet, I'm warning 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1855,109_1031,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,Does it really matter what music she listens to?,"{'turns': [{'u1': ""What am I even saying? I mean, we all have our own tastes in music, right? Maybe she just hasn't discovered the bands I love yet!"", 'u2': ""Doesn't that work the other way around? You just haven't discovered the bands she loves?""}, {'u1': ""But it's not just about discovering new music. It's like, some of her music is just so cheesy, it makes me cringe."", 'u2': ""Well, then maybe she just likes to have a little fun with her music, and not take it all so seriously. That's pretty appealing to me, actually.""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'Does it really matter what music she listens to?'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -31657,7 +31657,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1862,122_1039,fictionary,0,en,"You've just introduced Steve to your work colleagues and everybody seems to love him because he is funny, witty, and charming.  Steve says, ""hey, this is fun. I'm having a great time.""",,same here!,"{'turns': [{'u1': 'Hey guys, what do you all do here?', 'u2': ""You're asking the right person, Steve! He's our lead dev, but don't hold that against him.""}, {'u1': ""Haha, I can take it. So, what's a typical day like around here?"", 'u2': 'You know, the usual: debugging, writing code, occasionally yelling at the computer.'}, {'u1': 'And having an amazing team around to deal with it, I assume?', 'u2': 'same here!'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -31674,7 +31674,7 @@ u1: And having an amazing team around to deal with it, I assume?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1863,128_1041,fictionary,0,en,"Steve started seeing someone a while ago. He introduced her to you tonight. You think she is very similar to his ex-girlfriend that he was deeply involved with.  Steve says, ""so, what did you think of her?""",,Take it slow see how it goes do not rush into anything.,"{'turns': [{'u1': ""what do you really think of her? you're not giving me any hints here"", 'u2': ""it's a bit weird because she seems so similar to your ex""}, {'u1': ""i know what you mean, but i'm trying to be objective"", 'u2': ""i'm sure you are, but it's always tough to shake the feeling that it's the same person""}, {'u1': ""that's true, but we'll see how things go with her"", 'u2': 'Take it slow see how it goes do not rush into anything.'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -33068,7 +33068,7 @@ u1: Oh, so it's about paying me?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1945,209_2006,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"you should, its exactly what you do to me","{'turns': [{'u1': ""I'm telling you, u2, your behavior is one of the reasons why I think you're annoying. You're always taking my money and never paying it back."", 'u2': 'you just love being in control and making people do your bidding'}, {'u1': ""I don't get it, I swear, my brother has so much better taste than that. He can't be friends with someone that's so clearly self-centered."", 'u2': 'because, just like you, he likes to get things for free'}, {'u1': ""Why is my brother even friends with that guy? I don't get it."", 'u2': 'you should, its exactly what you do to me'}]}",0,1.0,0.0,1.0,0.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -33748,7 +33748,7 @@ u1: What's wrong with being a traffic light, mate?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1985,202_2090,fictionary,1,en,"You did something that upset Steve the other day. You wanted to apologize to him, so you went to Steve's house. Steve opens the door, does a funny dance for two seconds, and smiles pointing his finger at his hair.",,Are you okay?,"{'turns': [{'u1': 'Why hello there my best buddy!', 'u2': 'Not exactly the welcome I was expecting.'}, {'u1': ""Oh man I've just been practicing this new dance for weeks, had to bust it out."", 'u2': ""You've been dancing a lot lately, what's gotten into you?""}, {'u1': 'Just trying to lighten the mood, you know?', 'u2': 'Are you okay?'}]}",1,1.0,0.0,1.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -33952,7 +33952,7 @@ u1: have you noticed that kids these days drink energy drinks all the time? That
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1997,250_2067,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,so pick one then,"{'turns': [{'u1': 'I found this awesome undercut with some messy texture on top. What do you think?', 'u2': ""I don't care. Just pick one and get it over with.""}, {'u1': 'I love it, but I want to get your honest opinion. What do you think the beard situation would look like with this style?', 'u2': 'Why do I need to care about the beard situation?'}, {'u1': 'Fair point, but the overall vibe is still great, right?', 'u2': 'so pick one then'}]}",0,0.0,1.0,1.0,0.0,1.0,,0.0,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -34343,7 +34343,7 @@ u1: ew, people are so inconsiderate!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2020,271_2001,fictionary,0,en,"You are going to a party later today. You ask if Steve wants to join. He says, ""I'm interested. When does the party start?""",,About 9,"{'turns': [{'u1': 'That sounds awesome! Can we even make it a whole day event?', 'u2': 'Nah, just a few hours'}, {'u1': 'How about we meet up beforehand and grab some food before heading there?', 'u2': ""Yeah, I'm down""}, {'u1': 'When does the party start?', 'u2': 'About 9'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -34751,7 +34751,7 @@ u1: I mean, she is great in many other ways, but her music taste is just horribl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2044,131_1058,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,Sure. As soon as I get back my phone charger and toaster.,"{'turns': [{'u1': ""Look, I'm really sorry about all the stuff I've borrowed from you lately, but my girlfriend's grandma came to visit and she really needed my help."", 'u2': ""Yeah, that's great, Steve, but I'm starting to feel like I'm the one who's doing all the lending around here.""}, {'u1': ""Hey, man, I promise I'll return your phone charger soon, I swear it's on my list."", 'u2': ""For months it's been on your list, Steve. I need it back. And the toaster. And a suitcase is not going to change that.""}, {'u1': 'Come on, u2, can I borrow your suitcase? I need one for my trip next week.', 'u2': 'Sure. As soon as I get back my phone charger and toaster.'}]}",1,1.0,1.0,,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -34785,7 +34785,7 @@ u1: I'm just trying to be supportive, okay? I know how much you hate weddings, b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2046,128_1044,fictionary,0,en,"Steve started seeing someone a while ago. He introduced her to you tonight. You think she is very similar to his ex-girlfriend that he was deeply involved with.  Steve says, ""so, what did you think of her?""",,She looks similar to someone I know,"{'turns': [{'u1': 'You seem a bit distant. What do you think of her?', 'u2': ""A bit too polished, I'd say""}, {'u1': 'A bit too polished, huh? I was kind of thinking she was kind of nice.', 'u2': ""I'm sure she's great, but you can't deny the vibe you got, right?""}, {'u1': 'So, what did you think of her?', 'u2': 'She looks similar to someone I know'}]}",0,0.0,1.0,0.0,1.0,0.0,0.0,,,,0.0,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -35057,7 +35057,7 @@ u1: oh, really? how so?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2062,121_1006,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,He's shit everywhere and you owe me £500 for cleaning.,"{'turns': [{'u1': ""Hey, mate! How's my little furball doing?"", 'u2': ""Haha, he's doing great, still completely destroying your living room.""}, {'u1': ""Ha! That's my boy! I'm sure he'll calm down eventually, right?"", 'u2': ""Nope, he's actually getting worse. I'm starting to think he's plotting against me.""}, {'u1': ""Ah, I'm sure he's just tired from all the excitement."", 'u2': ""He's shit everywhere and you owe me £500 for cleaning.""}]}",0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -35482,7 +35482,7 @@ u1: Wow, you really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2087,217_2040,fictionary,1,en,Steve talks about the differences between two types of dinosaurs for an hour. You absolutely don't care about the topic.,,"Nothing, let him talk","{'turns': [{'u1': 'I was just getting to the best part! Did you know that the Spinosaurus had a sail on its back that was over 6 feet tall? Can you believe it?', 'u2': 'Uh-huh, okay'}, {'u1': 'And the cool thing is, scientists think that this sail was used for display purposes, maybe even to attract mates. Can you imagine having a giant sail on your back?', 'u2': 'Yeah, I can imagine'}, {'u1': ""So, this sail would've been a major talking point for any Spinosaurus looking to find a mate. It's like having a giant sign on your back saying, 'Pick me!'"", 'u2': 'Nothing, let him talk'}]}",0,0.0,0.0,0.0,,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -36026,7 +36026,7 @@ u1: That person should work on their english, don't you think?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2119,112_1028,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"It's a charity event not the Champions League Final, no one is expecting you to be Lionel Messi, just try and have some fun with it.","{'turns': [{'u1': ""I don't know how I'm supposed to run up and down the field for hours without collapsing. I'm more of a video game guy, not some athletic superhuman."", 'u2': ""Dude, it's not a marathon, it's a 90-minute game. And besides, you're not competing against pros, it's a charity event.""}, {'u1': ""I guess I'm just worried I'll make a fool of myself in front of everyone. I don't want to be that guy who trips over his own feet in front of the whole crowd."", 'u2': ""It's not like you're going to be playing in the Super Bowl, Steve. And honestly, I think it'd be kind of funny if you tripped and fell. You'd definitely be the most memorable player on the field.""}, {'u1': ""I don't know what to do. I really don't want to let everyone down."", 'u2': ""It's a charity event not the Champions League Final, no one is expecting you to be Lionel Messi, just try and have some fun with it.""}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -36247,7 +36247,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2132,109_1033,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,We can't all be perfect,"{'turns': [{'u1': ""I guess she's just too nice to her and puts up with all his nonsense."", 'u2': ""Well, being nice is a trait that's usually valued in a partner.""}, {'u1': ""That's exactly what I mean, she's always sacrificing her own tastes for mine."", 'u2': 'But maybe she does that because she cares about you?'}, {'u1': 'Her music taste is just horrible.', 'u2': ""We can't all be perfect""}]}",0,1.0,0.0,1.0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -36417,7 +36417,7 @@ u1: But it's not fair to expect me to be motivated 24/7, dude! Can't I just indu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2142,102_1026,fictionary,0,en,"You got a date this evening. When you tell Steve you got a date, he asks, ""oooh, what's the plan?""",,Give him the details of what I have planned for the date,"{'turns': [{'u1': ""I'm stoked for you, bro! What's the plan?"", 'u2': ""We're going to that new Italian place downtown that just opened up.""}, {'u1': ""Nice choice! What time's the reservation?"", 'u2': ""It's for 7 pm. I've been waiting all week to try their pasta dishes.""}, {'u1': ""So, what's the deal with the pasta dishes? Are you gonna try the famous spaghetti Bolognese?"", 'u2': 'Give him the details of what I have planned for the date'}]}",0,0.0,0.0,1.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -36536,7 +36536,7 @@ u1: Oh yeah, that! I was meaning to get you back, but things have been pretty bu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2149,225_2038,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Sure mate, but can you return my phone charger and toaster first?","{'turns': [{'u1': ""Hey mate, I've been looking everywhere for a good suitcase. Can I take a look at yours? I'm planning on going on a trip soon."", 'u2': ""Dude, I've lent you my phone charger and toaster before and you still haven't returned them. Now you're asking for my suitcase?""}, {'u1': ""Don't worry about that mate. I'll return them soon, I promise. But I really need your suitcase for this trip."", 'u2': ""That's just it, you've been saying that for months. I lent you my stuff and you never gave it back. Can you return my phone charger and toaster first?""}, {'u1': ""I know I've been a bit slack about returning your stuff, but can I just have the suitcase for now?"", 'u2': 'Sure mate, but can you return my phone charger and toaster first?'}]}",0,0.0,1.0,0.0,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -37046,7 +37046,7 @@ u1: No way, I've done my research. Ezillion is the future!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2179,238_2076,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,You don't know how to get the picture on there? I can show you.,"{'turns': [{'u1': ""Ah, finally, my picture is about to change my life. I'm going to be young and cool, just like those Instagram influencers."", 'u2': 'Wait, what are you doing?'}, {'u1': ""I'm trying to post this picture on Instagram. But, ugh, it's not working."", 'u2': ""You're doing it wrong. You need to tap on the camera button and then choose the picture from your gallery.""}, {'u1': ""I've never been very tech-savvy. I thought you just had to upload it directly from your phone."", 'u2': ""You don't know how to get the picture on there? I can show you.""}]}",0,0.0,0.0,0.0,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -37420,7 +37420,7 @@ u1: you broke them, while moving in the heavy box
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2201,268_2084,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,Are those the shoes you bought the other day? They go well with that suit.,"{'turns': [{'u1': 'Hey, you know I just closed that big project at work and I treated myself to a new pair of shoes. I thought they were pretty pricey, but hey, I deserved it.', 'u2': 'Dude, you deserve it. You worked so hard on that project.'}, {'u1': 'Actually, I just put them on for the first time today. I think they go great with my new suit.', 'u2': ""Yeah, they do look nice on you. Which one's the new suit?""}, {'u1': ""It's the navy one, thanks. By the way, do you like the shoes?"", 'u2': 'Are those the shoes you bought the other day? They go well with that suit.'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -37471,7 +37471,7 @@ u1: You're really going to set it to 19?!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2204,218_2070,fictionary,1,en,"Steve has recently been interested in trendy hairstyles. He keeps showing you pictures of different hairstyles and asks for your opinion. When you say ""I don't care. Just pick one and get it over with,"" Steve says ""I don't need a haircut right now. But I want to be well-informed when I do!""",,Well keep it saved and think about it when you are about to get a haircut,"{'turns': [{'u1': 'I just saw the coolest fade haircut on that one guy at the gym. Have you ever thought about trying one?', 'u2': ""Honestly, I don't know if that style would look good on you. We should show it to that other guy at work and see what he thinks""}, {'u1': ""Yeah, that's a great idea. Okay, so the other guy at work didn't think I'd pull off a fade. What do you think? Should I stick with a classic cut?"", 'u2': ""Well, I'm not really sure. I mean, I like your hair just the way it is. But if you want to change it up, you could try a pompadour""}, {'u1': ""You know what, I don't need a haircut right now. But I want to be well-informed when I do!"", 'u2': 'Well keep it saved and think about it when you are about to get a haircut'}]}",0,0.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -37658,7 +37658,7 @@ u1: I'm starting to feel like I'm the only one who cares about this project!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2215,205_2059,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,"That's fucking gross, hahahaha","{'turns': [{'u1': ""hey, look, I made something new, Steve's Special Sauce"", 'u2': 'What is that?!'}, {'u1': ""Okay, so it's got ketchup, mustard, and potato chips crushed up. Then I add a little bit of OJ to give it some zing"", 'u2': ""That's so disgusting, Steve!""}, {'u1': 'hey, look, I made something delicious!', 'u2': ""That's fucking gross, hahahaha""}]}",0,1.0,0.0,,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -38032,7 +38032,7 @@ u1: I do those things for the company because they're work-related, not for pers
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2237,113_1005,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,"That is the craziest idea you have yet, you are putting all your money into something you know nothing bout, Steve this is a very reckless decision on your part, you need to rethink what you are doing","{'turns': [{'u1': ""Dude, I'm telling you, this Ezillion thing is gonna change the world! People are making millions! Why aren't you excited?"", 'u2': ""You're just getting caught up in some fad, Steve. People say lots of things. We have no idea if it's any good or not. What if it crashes?""}, {'u1': ""No way! It's a guaranteed success! The guys behind it have a great team and the market is really hot. This is a chance to make some real money, dude!"", 'u2': ""You're listening to their sales pitches instead of doing your research. And you're basing your decision on what people say online? That's just stupid.""}, {'u1': ""Come on, I'm only going all-in because you said I should be more adventurous with my investments."", 'u2': 'That is the craziest idea you have yet, you are putting all your money into something you know nothing bout, Steve this is a very reckless decision on your part, you need to rethink what you are doing'}]}",0,1.0,0.0,1.0,0.0,0.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -38593,7 +38593,7 @@ u1: Yeah, those sneakers are really cool, but trust me, they're just a fad. You 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2270,253_2084,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,"I'm not sure Steve, alien conspiracies aren't really my bag. I mean if one landed on my doorstep I'll take an interest but I think when there's no proof I just can't get behind the theories much. I suppose it just doesn't mean much to me unless the proof is there. But I'll give you that it ""could"" be an alien.","{'turns': [{'u1': ""I showed you that video from the UFO website and you still didn't seem impressed. That's proof of something, don't you think?"", 'u2': ""Steve, it was just some footage with a lot of distortion and unclear images. I'm not convinced it's any kind of evidence for UFOs.""}, {'u1': ""But that's exactly what it is - evidence! It shows something we can't explain, something we can't replicate. It's like you're dismissing the very possibility without giving it a chance."", 'u2': ""I'm not dismissing it, I'm just saying I need something more concrete before I can take it seriously. I've seen a lot of misleading footage that claimed to show aliens before and it turned out to be nothing.""}, {'u1': ""This one's different, I'm telling you. I just saw it again and I'm more convinced than ever. Look, it must be an alien because humans can't do that. What else could it be?"", 'u2': 'I\'m not sure Steve, alien conspiracies aren\'t really my bag. I mean if one landed on my doorstep I\'ll take an interest but I think when there\'s no proof I just can\'t get behind the theories much. I suppose it just doesn\'t mean much to me unless the proof is there. But I\'ll give you that it ""could"" be an alien.'}]}",1,1.0,1.0,1.0,1.0,1.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -38610,7 +38610,7 @@ u1: This one's different, I'm telling you. I just saw it again and I'm more conv
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2271,102_1006,fictionary,0,en,"You got a date this evening. When you tell Steve you got a date, he asks, ""oooh, what's the plan?""",,Dinner and drinks,"{'turns': [{'u1': ""You got a date tonight. I hope you're ready to impress!"", 'u2': ""Haha, thanks. I'm trying not to overthink it.""}, {'u1': ""I'm serious, though. You deserve it. Are you nervous?"", 'u2': ""A little, but I'm trying to stay calm.""}, {'u1': ""What's the plan for tonight?"", 'u2': 'Dinner and drinks'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -38678,7 +38678,7 @@ u1: I swear, it's just been really tough lately, I'll get that money to you as s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2275,238_2113,fictionary,1,en,"Steve says he wants to be young and cool, so he impulsively tries to post a picture on social media, but fails because he doesn't know how.",,I'll help you at lunch,"{'turns': [{'u1': 'You know what I wish? I wish I could upload a pic like all the cool kids do', 'u2': ""What's the issue with uploading a picture?""}, {'u1': ""I don't know... the app keeps saying it's too big, or the wrong format. I'm not sure what's wrong"", 'u2': 'Maybe we can try it at the office and I can show you what to do'}, {'u1': ""I'm not even sure if I'm doing it right, to be honest."", 'u2': ""I'll help you at lunch""}]}",0,0.0,0.0,0.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -39052,7 +39052,7 @@ u1: We leave for that conference in 3 days, remember? I need you to have it done
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2297,118_1034,fictionary,0,en,Steve bought a really expensive pair of shoes as a treat to himself for having finished a big project at work. The shoes go very well with his outfit today.,,Damn those are nice kicks man. Be careful out there someone might snatch them.,"{'turns': [{'u1': ""man these new shoes are killing it. I'm so glad I splurged on myself."", 'u2': ""You really know how to treat yourself, don't you?""}, {'u1': 'I know, I feel like I deserve it after crushing that project deadline.', 'u2': ""Yeah, that was a tough one. You must've been working around the clock.""}, {'u1': 'Exactly! I was so focused, I barely had time for lunch.', 'u2': 'Damn those are nice kicks man. Be careful out there someone might snatch them.'}]}",1,1.0,1.0,,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -39103,7 +39103,7 @@ u1: I've got a good feeling about this wedding, man.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2300,217_2077,fictionary,1,en,Steve talks about the differences between two types of dinosaurs for an hour. You absolutely don't care about the topic.,,"Interesting as always Steve! Right, I gotta go, I have an errand to run.","{'turns': [{'u1': 'Yeah, I was thinking that the Diplodocus had this really unique way of eating. It had this long neck and tail, and it was all about reaching high into the trees to grab leaves.', 'u2': 'Dude, yeah, sure'}, {'u1': ""And can you believe it had these tiny arms? Like, they're almost non-existent. I mean, who needs arms when you've got a 15-meter-long neck, right?"", 'u2': 'Ha! Good point. I still think the Velociraptors were cooler, though.'}, {'u1': ""So, I'm thinking the difference between the Spinosaurus and the Tyrannosaurus Rex is basically in their snout shape, isn't it?"", 'u2': 'Interesting as always Steve! Right, I gotta go, I have an errand to run.'}]}",0,0.0,0.0,,1.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -39188,7 +39188,7 @@ u1: hey, look, I made something delicious!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2305,251_2034,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"Really? That's so interesting, please speak more about it.","{'turns': [{'u1': ""I must say, the Japanese way of eating is quite fascinating. They've got a deep understanding of the flavors and presentation."", 'u2': ""That's really cool! I've always wanted to learn more about their culture.""}, {'u1': ""You know, in Japan, they place great emphasis on seasonality when choosing ingredients. It's all about using what's freshest at the moment."", 'u2': ""Oh, I see. So it's not just about following a recipe, but more about adapting to the current season?""}, {'u1': 'You know, people there really appreciate the simplicity of fresh ingredients.', 'u2': ""Really? That's so interesting, please speak more about it.""}]}",1,1.0,1.0,1.0,1.0,,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -39630,7 +39630,7 @@ u1: Come on! I'm just trying to help. You're my colleague, and I want to make su
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2331,251_2122,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,yeah i know man i like japanese stuff too,"{'turns': [{'u1': 'i remember when i was in japan, they had this insane ramen place that served this ridiculously spicy miso ramen', 'u2': ""that sounds crazy what's the deal with the spice""}, {'u1': 'you know, in japan, people would add a type of spicy pepper called hachinoko to really kick up the heat', 'u2': 'sounds wild never had that before'}, {'u1': ""in japan, we'd always have sushi for lunch, and the chef would always make this crazy complicated roll with all sorts of ingredients"", 'u2': 'yeah i know man i like japanese stuff too'}]}",1,1.0,1.0,1.0,1.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -39681,7 +39681,7 @@ u1: That was three weeks ago! I was going to start with that language app, but n
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2334,131_1038,fictionary,1,en,"Steve borrowed your spare phone charger two months ago. Then he took your toaster a month ago. He did not return any of them.  And now, Steve says, ""can I borrow your suitcase? I need one for my trip next week.""",,"Yeah man, as soon as you give me back from phone charger and toaster. You can't keep borrowing my shit and not giving it back.","{'turns': [{'u1': ""Hey, I'm planning this huge trip next week, I need a solid suitcase. Will you lend me yours?"", 'u2': ""Dude, I don't think that's a good idea. You're still using my phone charger and toaster and haven't given them back.""}, {'u1': ""What's the big deal? I promise I'll return your charger and toaster soon."", 'u2': 'You said that two months ago and one month ago respectively. How about I return them to you instead?'}, {'u1': ""Can I still borrow your suitcase? I'm really in a bind."", 'u2': ""Yeah man, as soon as you give me back from phone charger and toaster. You can't keep borrowing my shit and not giving it back.""}]}",1,1.0,1.0,,,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -41364,7 +41364,7 @@ u1: A sticky note? Are you kidding me? I'm a functioning adult, not a kindergart
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2433,203_2098,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,"Man, you're a crack-up!  Next I wanna see a rhinoceros, or a bull... no wait, a triceratops!","{'turns': [{'u1': ""I've got a great idea! I'm going to draw a rhino with a party hat on its head! Can you imagine the look on its face?"", 'u2': ""Dude, that's still just a rhino. What makes it a unicorn?""}, {'u1': ""Wait, I've got it! I'm going to draw a giant spider with a sparkly horn on its head! I'll call it... Sparky the Unicorn!"", 'u2': ""Hah! You crack me up, Steve! But Sparky is one mean-looking creature! Can't you draw something a little less terrifying?""}, {'u1': ""now that's a unicorn!"", 'u2': ""Man, you're a crack-up! Next I wanna see a rhinoceros, or a bull... no wait, a triceratops!""}]}",1,1.0,1.0,0.0,,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -42027,7 +42027,7 @@ u1: This is going to be good! You'll love it, I promise!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2472,240_2004,fictionary,1,en,"You go to a restaurant with Steve. He orders a hamburger and French fries. They are served on the same plate. Whenever a French fry touches the hamburger, he gets annoyed and pushes them to the opposite sides of the plate so they don't touch each other.",,Nothing :),"{'turns': [{'u1': ""What's up, have you tried the fries here? They look good."", 'u2': ""Nope, I'm good.""}, {'u1': 'Be careful not to touch the burger, okay?', 'u2': 'I think I can handle my food.'}, {'u1': ""Seriously, they're getting close again. Separate them, please!"", 'u2': 'Nothing :)'}]}",0,0.0,0.0,,0.0,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43337,7 +43337,7 @@ u1: Wow, you really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2549,115_1045,fictionary,1,en,"Steve has a brother Bill. Bill often feels annoyed by his friend. The reasons that Bill finds his friend annoying are the same as the reasons why you find Steve annoying (for example, both Steve and Bill's friend always ask for money and never pay it back).  Steve says, ""why is my brother even friends with that guy? I don't get it.""",,"Wow, man are you going to go there and pretend you do not know why?","{'turns': [{'u1': ""Why does your brother even hang out with him, man? I don't get it. He's always like, super annoying."", 'u2': ""It's like, the whole not paying back money thing, you know?""}, {'u1': ""Ugh, I know. I swear, he's like the most inconsiderate guy I've ever met."", 'u2': ""Yeah, like, he never calls to say he's running late. Just shows up whenever and expects everything to be fine.""}, {'u1': 'This guy is a huge pain. Always showing up at our place and asking for cash.', 'u2': 'Wow, man are you going to go there and pretend you do not know why?'}]}",1,1.0,1.0,1.0,,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43507,7 +43507,7 @@ u1: have you noticed that kids these days drink energy drinks all the time? That
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2559,113_1014,fictionary,1,en,"Steve excitedly tells you that he spent all his savings buying some cryptocurrency that nobody really knows.  You generally think that risky investments are stupid.  Steve says, ""I used my savings to buy Ezillion! They say it's gonna go way up in the next few months!""",,Don't come crying to me when you're broke,"{'turns': [{'u1': ""I've done my research, I swear! Ezillion is going to skyrocket any day now. The investors, the influencers, they're all saying it's a game-changer!"", 'u2': ""Dude, that's just what all the fake news sites say. Wake up, man.""}, {'u1': ""I'm telling you, Ezillion is the future! It's gonna make me richer than a king and I'm going to live the high life!"", 'u2': 'Good for you, Steve. Break the bank, I guess.'}, {'u1': ""I just bought like a hundred thousand Ezillion coins! It's the smartest thing I ever did, trust me."", 'u2': ""Don't come crying to me when you're broke""}]}",0,1.0,0.0,0.0,1.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43575,7 +43575,7 @@ u1: what's the deal, you're just being really uptight about this, right?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2563,229_2123,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,"Yes sure, but you can get the next one","{'turns': [{'u1': 'hey man get me another beer, please?', 'u2': 'nah you get the next one'}, {'u1': 'no way, get one for me too', 'u2': ""come on, I'm good, get another for yourself""}, {'u1': 'dude can you just grab another one for me too?', 'u2': 'Yes sure, but you can get the next one'}]}",0,0.0,1.0,1.0,,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43592,7 +43592,7 @@ u1: dude can you just grab another one for me too?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2564,230_2069,fictionary,1,en,"Steve shows up at your door with his dog and says, ""I have to go out of town for 3 days. Can you please watch my dog?"" You are not particularly busy for the next 3 days, but he didn't give you any warning about this.",,"Steve, what if I had a hot date?  You can't dump Sam on me like that...of course I'll watch him and you so owe me for this.  Where is his stuff?","{'turns': [{'u1': ""I know this is last-minute, but I'm on an emergency business trip. Can you watch Sam for three days? I'll make it up to you, I promise."", 'u2': ""What, no warning? What's going on? You can't just dump Sam on me!""}, {'u1': ""I know, I know, I'm sorry. It's just come up and I didn't have a chance to plan."", 'u2': ""A business trip? At this time of year? You're not exactly the most reliable guy when it comes to Sam. What if I had plans?!""}, {'u1': ""Come on, I said I'd make it up to you. I'll owe you big time."", 'u2': ""Steve, what if I had a hot date? You can't dump Sam on me like that...of course I'll watch him and you so owe me for this. Where is his stuff?""}]}",1,1.0,1.0,,0.0,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43660,7 +43660,7 @@ u1: What else could it be, then? It's not like humans have the technology to do 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2568,116_1024,fictionary,0,en,"Steve has been going out non-stop for the past two months because he needs a distraction from his recent breakup.  You are worried that he might be becoming a bit too destructive.  Steve says, ""ugh, worst hangover yet. I feel like crap.""",,"maybe have a rest day, it could do you good","{'turns': [{'u1': ""man, I've been so busy the past few weeks. I've barely had a chance to think about anything, let alone myself"", 'u2': ""I know, you've been crazy, but don't forget to take care of yourself sometimes""}, {'u1': ""I just need to keep moving. It's the only thing that keeps me from feeling as much"", 'u2': 'I get that, but your friends and family care about you and want you to be okay'}, {'u1': 'ugh, worst hangover yet. I feel like crap', 'u2': 'maybe have a rest day, it could do you good'}]}",0,0.0,0.0,0.0,,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -43728,7 +43728,7 @@ u1: Come on, I just need it for a week. I'll return it before you even notice it
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2572,251_2055,fictionary,1,en,"About two years ago, Steve spent half a year in Japan, where he learned a lot about Japanese food culture. Ever since then, whenever you eat something together, Steve says some version of, ""you know, in Japan, people do it this way.""",,"Nice, you seem to love Japan a lot huh?","{'turns': [{'u1': ""I've really taken a liking to sushi. The way they slice the fish, it's like a work of art. But, you know, in Japan, people use special knives for that."", 'u2': 'That sounds cool! Did you get to try any new sushi places?'}, {'u1': 'I went to this little ramen shop in Tokyo that served the most amazing tonkotsu ramen. People always say that Japanese people put a lot of emphasis on the broth, and I can see why.', 'u2': ""Oh, I've heard of that shop. My cousin went there last year and said it was amazing.""}, {'u1': ""We always use these tiny little chopsticks in Japan, don't we?"", 'u2': 'Nice, you seem to love Japan a lot huh?'}]}",0,1.0,0.0,,1.0,0.0,,1.0,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -44782,7 +44782,7 @@ u1: You want to do that for me?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2634,109_1024,fictionary,1,en,"Steve's girlfriend is totally amazing. She is sweet, beautiful, funny, and cares a lot about Steve.  And yet, Steve is always making silly complaints about her.  Steve says, ""I mean, she is great in many other ways, but her music taste is just horrible.""",,ah we are not all perfect,"{'turns': [{'u1': ""I've been meaning to ask, have you talked to her about her music taste? I feel like it's really holding us back sometimes."", 'u2': ""She's actually pretty into it, and it brings her a lot of joy. Maybe we can find some common ground?""}, {'u1': ""I don't know... I just can't stand listening to that stuff. It's like nails on a chalkboard to me."", 'u2': ""We can't all be into the same things, Steve. That's what makes life interesting, right?""}, {'u1': 'I mean, she is great in many other ways, but her music taste is just horrible.', 'u2': 'ah we are not all perfect'}]}",0,1.0,0.0,0.0,,1.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -44884,7 +44884,7 @@ u1: You really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2640,214_2005,fictionary,1,en,"Steve recently ended up paying 120 dollars for something he bought on Amazon because he forgot to send it back and missed the free-return period. Today, you bought an expensive bag of coffee for 40 dollars from a hipster cafe in town. When Steve learns about how expensive the coffee was, he says, ""wow, you really should watch how you spend your money.""",,"Well you can't talk, can you","{'turns': [{'u1': ""I've been there before, so it's not like you're the first person to forget to send something back to Amazon, but still, 120 bucks? That's a lot of cash"", 'u2': ""You're preaching to the choir, but now you get to go first""}, {'u1': ""You know, a bag of coffee for 40 bucks is a bit steep, don't you think?"", 'u2': ""Steep? That's the understatement of the century!""}, {'u1': 'wow, you really should watch how you spend your money', 'u2': ""Well you can't talk, can you""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -45173,7 +45173,7 @@ u1: get another one for me too, will you?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2657,112_1037,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,"Aw no, poor you hahah!","{'turns': [{'u1': ""I really can't believe I have to do this, best friend. I'm going to get killed on that field. I'm like a walking disaster on two legs."", 'u2': ""Dude, at least you're trying, right?""}, {'u1': ""Yeah, that's about all I can do is try, but trying doesn't exactly get you a trophy, you know? I mean, I'll probably trip over my own feet in the first 10 minutes and make a total fool of myself."", 'u2': ""Oh man, that's so not true! You're being way too hard on yourself!""}, {'u1': ""I'm being too hard on myself? You don't think so? I'm a complete joke on a soccer field. I'll be lucky if I don't get sent off for dissent within the first half hour!"", 'u2': 'Aw no, poor you hahah!'}]}",1,1.0,1.0,,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -45666,7 +45666,7 @@ u1: Ugh, don't be like that. It's just one bad day. I'll get back on track tomor
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2686,268_2114,fictionary,0,en,Steve bought an expensive pair of shoes after having finished a big project at work. The shoes go very well with his outfit today.,,Your outfit looks nice,"{'turns': [{'u1': 'I just bought these shoes yesterday and I am still getting used to wearing them. I am really happy with how they turned out, though.', 'u2': 'They do look great'}, {'u1': 'Do you think they complement my outfit?', 'u2': 'Yeah, definitely, very much so'}, {'u1': ""You know, I'm glad I finally got them after finishing that big project at work."", 'u2': 'Your outfit looks nice'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -45870,7 +45870,7 @@ u1: so, how is my puppy doing?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2698,270_2065,fictionary,0,en,"Steve and you are hanging out, and he wants to invite his other friends. Steve says, ""Mind if some of my friends join?""",,Not at all!,"{'turns': [{'u1': 'So, have you heard from Mike lately?', 'u2': ""Yeah, he's been pretty busy with work.""}, {'u1': ""I was thinking we could ask him and Emma to join us. They're always up for a good time."", 'u2': 'Sounds like a plan!'}, {'u1': 'Mind if some of my friends join?', 'u2': 'Not at all!'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -46465,7 +46465,7 @@ u1: You really should watch how you spend your money.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2733,242_2074,fictionary,1,en,"Yesterday you had lunch with Steve at a cash-only restaurant. You had to pay for him because he didn't have any cash. He said he would pay you back later. A few days later, while still not having paid you back, Steve complains to you that his friend hasn't given back the bike he borrowed from Steve and says, ""jeez, people are so unreliable!""",,yes they are but it works both ways karma and all that,"{'turns': [{'u1': ""I'm telling you, some people just can't be relied on. It's so frustrating."", 'u2': 'tell me about it'}, {'u1': ""And it's not just with money, right? I mean, I lent my friend this bike and now he's not giving it back."", 'u2': ""that doesn't sound like your friend, though. He's usually really responsible""}, {'u1': 'Jeez, people are so unreliable!', 'u2': 'yes they are but it works both ways karma and all that'}]}",1,1.0,1.0,0.0,1.0,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -46686,7 +46686,7 @@ u1: I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2746,258_2018,fictionary,1,en,"Steve asks you to get him some coffee from a coffee shop nearby. But he doesn't seem to be particularly busy right now. When you say ""why can't you get it yourself?"", he simply says, ""oh, no reason. I just wanted you to do it for me.""",,I am not your assistant Steve,"{'turns': [{'u1': ""You know, can you actually just get me a coffee from that place down the street? It'd really save me a lot of time."", 'u2': ""Why do you need me to do that when you're right here?""}, {'u1': ""Well, no particular reason, just thought it'd be easier if you got it for me."", 'u2': ""You're starting to sound like you have a personal assistant or something. I don't think that's what we have around here.""}, {'u1': 'Oh, no reason. I just wanted you to do it for me.', 'u2': 'I am not your assistant Steve'}]}",0,1.0,0.0,,0.0,0.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -46703,7 +46703,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2747,121_1036,fictionary,1,en,"You were watching Steve's new puppy for a week while he was traveling in Italy. The puppy made a total mess out of your apartment.  Clearly, Steve did not train the puppy properly.  Steve texts you and says, ""so, how is my puppy doing?""",,doing exactly what he s not supposed to do,"{'turns': [{'u1': 'i hope everything went smoothly while i was away, my puppy is doing great, i m sure he misses me too', 'u2': 'i think he s found a new purpose in life: destroying my apartment'}, {'u1': 'just wanted to check in, has the puppy been getting enough walks and playtime?', 'u2': 'enough to make sure he knows where the living room is, i think'}, {'u1': 'so, how is my puppy doing?', 'u2': 'doing exactly what he s not supposed to do'}]}",0,0.0,1.0,1.0,0.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -48012,7 +48012,7 @@ u1: now that's a unicorn!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2824,112_1057,fictionary,0,en,Steve has to play soccer for a fundraising event he is a part of. He has always been bad at sports. He is complaining about having to play soccer soon.,,I can't wait to see you play.,"{'turns': [{'u1': ""I don't know how you expect me to get on the field without embarrassing myself."", 'u2': ""You'll crush it, Steve! You've been practicing, right?""}, {'u1': ""Are you kidding me? I'm terrible at sports. I'll get creamed out there."", 'u2': ""Yeah, I know you're not exactly the next David Beckham, but it's for a good cause, remember?""}, {'u1': ""I'm so going to get destroyed. I can already see myself tripping over my own feet in front of everyone."", 'u2': ""I can't wait to see you play.""}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -48369,7 +48369,7 @@ u1: Seriously, u2, come on, I'm changing it to 98
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2845,235_2031,fictionary,1,en,"Steve likes to draw. He says he is going to draw a unicorn. Instead, he draws a horse with a carrot tied to its forehead. Steve says, ""now that's a unicorn!""",,ones ideas may perceive one thing,"{'turns': [{'u1': ""'Hey, have you seen my unicorn drawing? I'm really proud of it."", 'u2': 'Its a... unique interpretation'}, {'u1': 'What do you think of my creation?', 'u2': 'Your unicorn looks a bit confused'}, {'u1': ""now that's a unicorn!"", 'u2': 'ones ideas may perceive one thing'}]}",0,0.0,1.0,1.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -48896,7 +48896,7 @@ u1: Don't pressure me! I'm working on it, alright?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2876,261_2031,fictionary,1,en,"You and Steve are drinking at a bar. You both have had about 5 beers so far. Every single time you stand up to get more beer, Steve stops you and says, ""get another one for me too, will you?""",,give me the money then,"{'turns': [{'u1': 'hey man, one more round for me, too?', 'u2': ""no, i'm getting thirsty""}, {'u1': 'seriously, just get us another round, okay?', 'u2': 'seriously, get your own beer'}, {'u1': 'come on, just one more round', 'u2': 'give me the money then'}]}",0,1.0,0.0,1.0,,0.0,,,0.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -49049,7 +49049,7 @@ u1: no reason, I just wanted you to do it for me
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2885,205_2022,fictionary,1,en,"You are having a small party at your house. Steve, a little tipsy, starts mixing ketchup, mustard, potato chips, and orange juice and says ""hey, look, I made something delicious!""",,Make sure you finish your creation! no food waste in my house!,"{'turns': [{'u1': ""hey, I just added some more OJ, and I'm telling you, it's gonna change the flavor profile!"", 'u2': 'Steve, maybe you should calm down and focus on not spilling anything on the floor.'}, {'u1': ""I'm just experimenting with new taste combinations. I call it... Steve-Style Fusion Cuisine!"", 'u2': ""Umm, isn't that what they call a mess on the floor when you drop something?""}, {'u1': 'Hey, look, I made something delicious!', 'u2': 'Make sure you finish your creation! no food waste in my house!'}]}",1,1.0,1.0,1.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -49508,7 +49508,7 @@ u1: I should have just stayed at my old job. If it hadn't been for this new job,
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 2912,207_2056,fictionary,1,en,"You are watching TV with Steve. Whenever you set the volume to an odd number, Steve takes the remote control away from you and sets the volume to an even number.",,lol your crazy,"{'turns': [{'u1': ""You're so crazy! What's gotten into you?"", 'u2': 'set the volume to 89'}, {'u1': ""You can't control the TV, only an even number, like 42"", 'u2': 'oh shut up'}, {'u1': ""You can't control the TV, only an even number, like 46"", 'u2': 'lol your crazy'}]}",0,1.0,0.0,0.0,,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -49644,7 +49644,7 @@ u1: look at me! I'm Mr. Shoehand!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2920,253_2073,fictionary,1,en,"Steve is obsessed with UFOs and often talks to you about it even though you don't care. He shows you a video from a website about aliens. And he says, ""look, it must be an alien because humans can't do that. What else could it be?""",,a fake video?,"{'turns': [{'u1': ""Look at this incredible footage, it's out of this world, literally. These aliens are clearly flying their UFOs and I've never seen anything like it."", 'u2': ""Can you slow it down? I don't think I can make out what they're doing. Maybe it's just some sort of plane or a drone?""}, {'u1': ""No, no, it's definitely not a plane or a drone. It's an alien spaceship for sure. Just look at the lights and the way it's moving, it's beyond anything humans could do."", 'u2': ""That's exactly what you said about the last video, and the one before that, and I'm starting to think you're just trolling me.""}, {'u1': ""What do you mean? I'm telling you, this is real, and you're just not seeing it. It's like you're not paying attention."", 'u2': 'a fake video?'}]}",1,0.0,1.0,1.0,,1.0,,,1.0,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.
@@ -49814,7 +49814,7 @@ u1: Oh, no reason. I just wanted you to do it for me.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 2930,110_1012,fictionary,0,en,"You and Steve are playing a new video game and you are totally losing to him. Steve teases you by saying, ""come on, you can do better than that!""",,I'm letting you win,"{'turns': [{'u1': 'How could you possibly get killed by a noob like that level 5 dude?!', 'u2': 'Oh, he was hard'}, {'u1': ""That's not funny, that's just embarrassing!"", 'u2': 'I was just trying to give you a chance'}, {'u1': 'Come on, you can do better than that!', 'u2': ""I'm letting you win""}]}",1,0.0,1.0,0.0,1.0,1.0,1.0,,,,,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. You know that u1 and u2 are colleagues.
 The context contains two turns (where each turn encompasses a pair of messages between u1 and u2) and a last message from u1, to which u2 has to respond.

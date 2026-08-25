@@ -1127,10 +1127,7 @@ u1: The theory that there's a cure for cancer out there somewhere. Not a develop
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER>><thought
-Here's a thinking process to arrive at the decision:
-
-1.  **",1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 60,6685963713702207320_8928480303959231472,twitter,,en,,I discovered mine at 52! Go for it! ❤️,"Amazing! Would love to know what it was, if you wouldn't mind sharing? ?","{'turns': [{'u1': ""It's always exciting when you find something amazing!"", 'u2': ""Oh? You've found something amazing? What is it?""}, {'u1': 'Just a sweet little spot in the woods near my place!', 'u2': ""That sounds lovely! I've always wanted to explore more of the local nature.""}, {'u1': 'I discovered mine at 52! Go for it! ❤️', 'u2': ""Amazing! Would love to know what it was, if you wouldn't mind sharing? ?""}]}",0,,0.0,1.0,,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1880,7 +1877,7 @@ u1: “I personally thought it was a good idea.” —Mitch McConnell on the ill
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 100,9850291513057182699_12276213464962354982,reddit,,en,,Wasn't India the top team in the 40s-60s?,"> The Indian men's hockey team has climbed a rung to the fourth position, their highest since the inception of the FIH world rankings in 2003, in the recently released chart.","{'turns': [{'u1': ""India's hockey history is quite storied."", 'u2': 'The current squad has struggled to find consistency.'}, {'u1': ""We've won how many World Cups?"", 'u2': ""Let me check that. Ah, 8 I think. But that's ancient history.""}, {'u1': ""Wasn't India the top team in the 40s-60s?"", 'u2': ""> The Indian men's hockey team has climbed a rung to the fourth position, their highest since the inception of the FIH world rankings in 2003, in the recently released chart.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2120,7 +2117,8 @@ u1: If I didn’t need my health insurance I would have been quit my job
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is about burnout and the stress,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):}
+The conversation is about burnout and the",1,0,[]
 113,7620429120264761121_12032940379554896680,reddit,,en,,"So it's not something that's endemic to the US police forces then?
 &#x200B;
 > Research suggests that family violence is two to four times higher in the law-enforcement community than in the general population. 
@@ -2222,7 +2220,7 @@ u1: Wanna know something funny I have never had an award
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 118,4074268006523460659_3733842516058183024,twitter,,en,,"That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.","You have explained this very well. In fact, many people look at our  image and judge everything, but in real life, not everything is like that.","{'turns': [{'u1': ""I think people often forget that our online persona is not necessarily who we are in real life. It's like wearing a different costume to a party. We might feel more confident or less anxious in certain situations, but that doesn't define our true nature."", 'u2': ""That's a great point, but what about people who do carry their online behavior into real life? I've known folks who are super aggressive or condescending online and end up being the same way in person.""}, {'u1': ""However, I think even those individuals can have their good sides, it's just that those traits might not be as prominent or easily visible in their online presence. We tend to focus on the negative aspects, don't we?"", 'u2': ""True, we often focus on the most extreme examples or the things that go viral, which isn't always a fair representation of the person or group. But what about when people are intentionally being misleading or deceptive online?""}, {'u1': 'That depends on the way one interacts with the other, right? Besides, a person behavior depends on the context. One me be arrogant online, but may be a timid person in real life. One may be arrogant with their acquaintances, but may be a sweetheart to their friends and family.', 'u2': 'You have explained this very well. In fact, many people look at our image and judge everything, but in real life, not everything is like that.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2389,7 +2387,7 @@ u1: Damn. This guy went to work in Bengaluru for 2 days with fever before leavin
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 127,14749386831721157713_1363227103070776188,twitter,,en,,If you ever wondered how the republican movement was brought to it's knees. Just read these replies. I'm actually embarrassed for them.,Are you trying to divert the debate or kid yourself?,"{'turns': [{'u1': 'These polls show exactly what we all suspected.', 'u2': ""Not so fast, let me see these polls you're referring to""}, {'u1': ""It's interesting to see how even the most dedicated members of the republican party can't argue against these numbers."", 'u2': ""It's not about the numbers, it's about the narrative they tell""}, {'u1': ""If you ever wondered how the republican movement was brought to it's knees. Just read these replies. I'm actually embarrassed for them."", 'u2': 'Are you trying to divert the debate or kid yourself?'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2407,7 +2405,7 @@ u1: If you ever wondered how the republican movement was brought to it's knees. 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 128,12381510699736452938_12623256819989644935,reddit,,en,,"While our scientist are not excited to work on it, US has already patented it :   URL  
  URL","Sir, You can even get a patent for minor changes in Mickey Mouse, then this is a by-product of a cow, with a potential market for India. Why wouldn’t they do that?","{'turns': [{'u1': 'Our company just got an email from a big investor looking to capitalize on the benefits of using cow by-products in food and medicine.', 'u2': 'Really? I wasn’t aware of any such initiatives. Can you tell me more about this investment?'}, {'u1': 'It seems there are some challenges in adapting the by-products to Indian tastes, so we need to modify the products to suit the local market.', 'u2': 'That’s not entirely unexpected. Local tastes and preferences do play a significant role in product adaptation. Have you considered reaching out to local chefs or food experts for guidance?'}, {'u1': 'While our scientist are not excited to work on it, US has already patented it : URL URL', 'u2': 'Sir, You can even get a patent for minor changes in Mickey Mouse, then this is a by-product of a cow, with a potential market for India. Why wouldn’t they do that?'}]}",1,1.0,1.0,1.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -2741,7 +2739,10 @@ u1: The market defines how students/consumers perceive. If companies/HR systems 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>thought
+Here's a thinking process to arrive at the decision:
+
+1.  **Analyze the Persona",1,0,[]
 146,11999917663966789166_13746659223904644512,reddit,,en,,">The laws of mathematics are very commendable, but the only law that applies in Australia is the law of Australia",Sshhh!  They only like quiet Australiens  ( URL ),"{'turns': [{'u1': 'Math is like a beautiful language but what happens when you take the Aussie perspective?', 'u2': ""They don't like us to show off.""}, {'u1': ""We should be more like the Swiss. They're all about neutrality. Maybe we could learn a thing or two from them."", 'u2': 'Or maybe we just like to be loud and proud of who we are. Like a giant pair of Akubra hats.'}, {'u1': '>The laws of mathematics are very commendable, but the only law that applies in Australia is the law of Australia', 'u2': 'Sshhh! They only like quiet Australiens ( URL )'}]}",1,1.0,1.0,1.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2801,7 +2802,7 @@ u1: Wish it was as easy to quit smoking as it was to quit cokes.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 149,18320124971741050267_10199760178332504349,reddit,,en,,Did the Muslim community accept the blood money of 5 acres given to them ?,"They did and they made a hospital, library and a cultural center in it too.
 Make love not war.
  URL","{'turns': [{'u1': 'We heard that the Muslim community was not pleased about the recent development, what do you think is their main concern?', 'u2': ""Well, I can tell you that they're upset about the money being taken from the land where they built their mosque.""}, {'u1': 'Do you know how the Muslim community felt about the blood money of 5 acres that was paid out?', 'u2': 'From what I know, they were satisfied with the deal, especially since the land was also used for their own community projects.'}, {'u1': 'Did the Muslim community accept the blood money of 5 acres given to them ?', 'u2': 'They did and they made a hospital, library and a cultural center in it too. Make love not war. URL'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
@@ -3357,7 +3358,7 @@ u1: I've done a similar thing. I live in China and McDonald's deliver 24/7, but 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 179,15922195893431160402_6100040146362736434,reddit,,en,,">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms.
 What?",Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.,"{'turns': [{'u1': '""What\'s the craziest thing you\'ve seen or heard in the gym?', 'u2': 'Well, I saw this new guy get rejected from playing with a bunch of regulars, but it was interesting to watch.'}, {'u1': 'Do you think the gym environment has a lot to do with how people react to new players?', 'u2': ""Yeah, I think so. It's like they form these little cliques and don't want to let outsiders in.""}, {'u1': "">How when he was looking for partners to play Badminton, most hindu groups didn't take him in but the Muslim guys welcomed him with open arms. What?"", 'u2': ""Not in religious sense. It's like a new badminton player comes and existing players don't want newbies in their group. Meant that.""}]}",1,1.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -3470,7 +3471,7 @@ u1: How tf would they read this
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 185,16852618954556770357_14252166618958730182,reddit,,en,,I want to see a graph comparing this to yearly flu and cold infections and deaths. Because its probably lower on both fronts. Yet people are going ape shit crazy like its the end of the world,"It would show an existing endemic virus has killed more people than a brand new one, I'll ask Captain Obvious to put it together.","{'turns': [{'u1': ""I'm seriously worried about the upcoming flu season. Have you seen the news lately?"", 'u2': ""Yeah, it's getting pretty scary out there. The numbers are already higher than last year""}, {'u1': ""But isn't the flu and common cold typically seasonal? Shouldn't they follow a pattern?"", 'u2': ""You'd think so, but it seems like it's spreading faster this year""}, {'u1': 'I want to see a graph comparing this to yearly flu and cold infections and deaths. Because its probably lower on both fronts. Yet people are going ape shit crazy like its the end of the world', 'u2': ""It would show an existing endemic virus has killed more people than a brand new one, I'll ask Captain Obvious to put it together.""}]}",0,0.0,1.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4228,10 +4229,7 @@ u1: It's so important to post your content to other platforms for growth. You're
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><DETAILED_THOUGHTS>
-Here's a thinking process to arrive at the answer:
-
-1",1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 226,7649612104496036484_6969123579575091136,twitter,,en,,"If you're in a city with time to kill, what's the first thing you do?",Find a bar,"{'turns': [{'u1': ""If I'm in a new city, I love people-watching. Have you ever done that?"", 'u2': 'Yeah, all the time!'}, {'u1': ""Haha! Okay. So, what's the best thing about people-watching, from your perspective?"", 'u2': 'Just observing how different people react to their surroundings, you know?'}, {'u1': ""If you're in a city with time to kill, what's the first thing you do?"", 'u2': 'Find a bar'}]}",0,0.0,1.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4291,7 +4289,7 @@ u1: I know a few people who are acting like it is doomsday stocking up on everyt
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 229,2194523057646503309_13266086147575505433,twitter,,en,,"Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?",Never thought in this direction. ?,"{'turns': [{'u1': ""Do you ever feel like men do that weird, lingering stare? I mean, it's like they're trying to devour you with their eyes. Ugh, makes me so uncomfortable!"", 'u2': ""Haha, actually, I do think some guys can be a bit too intense sometimes. But I've noticed it's not always the case. What makes you think that, though?""}, {'u1': ""I guess I just think we're more aware of it now, since we're always on the lookout for it. Plus, I've seen guys get into trouble for it. But I'm still trying to wrap my head around why they do it in the first place..."", 'u2': ""I see what you mean. It's like we've become more vigilant about it. But have you ever stopped to think that maybe there's a scientific explanation behind it? I mean, our brains are wired differently, after all...""}, {'u1': 'Why do men stare at women? Women do the same thing in blink of an eye, where as men stare for so long... why? men have slow visual processing? ?', 'u2': 'Never thought in this direction. ?'}]}",0,0.0,0.0,0.0,0.0,1.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4309,7 +4307,7 @@ u1: Why do men stare at women? Women do the same thing in blink of an eye, where
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 230,10572675592529519405_15243627596584840477,reddit,,en,,That Covid-19 is an escaped virus from the Wuhan military biological research facility.,"Where Chinese assembled it as a biological weapon that killed about 2800 people in 40 days? Mostly old people with previous diseases? Man, what a shitty weapon!","{'turns': [{'u1': ""'Wuhan just can't seem to catch a break, can it?"", 'u2': ""What are you talking about? What's going on in Wuhan?""}, {'u1': ""I've been reading some pretty alarming stuff about their research facilities over there. Military biological warfare, maybe?"", 'u2': ""That's just speculation! You can't trust everything you read online.""}, {'u1': 'That Covid-19 is an escaped virus from the Wuhan military biological research facility.', 'u2': 'Where Chinese assembled it as a biological weapon that killed about 2800 people in 40 days? Mostly old people with previous diseases? Man, what a shitty weapon!'}]}",1,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4327,7 +4325,7 @@ u1: That Covid-19 is an escaped virus from the Wuhan military biological researc
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 231,13247061658492869498_16725863785791260753,reddit,,en,,i notice it looks much better coming in than going out,your ancestors were truly the pioneers of the australian gold rush,"{'turns': [{'u1': ""you've worked so hard on this place. it really shows."", 'u2': 'it was worth it to see the old girl transformed like this.'}, {'u1': 'the entryway is my favourite part. the paint job is amazing!', 'u2': ""thank the local artisan who did it. he's a genius with a brush.""}, {'u1': 'i notice it looks much better coming in than going out', 'u2': 'your ancestors were truly the pioneers of the australian gold rush'}]}",1,0.0,1.0,,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4781,7 +4779,7 @@ u1: Date a guy and he’ll start acting like a kid around you.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 256,11979346444388808294_3437472600991932343,twitter,,en,,Would you rather see Alex Jones bankrupt or in jail?,"Both, but if I have to choose, jail.","{'turns': [{'u1': 'u1 thinks u2 might not care enough about Alex Jones to have strong opinions on him. u1 wants to nudge u2 into sharing their thoughts.', 'u2': ""I'm just here for the memes.""}, {'u1': ""I sense a lack of conviction from you. Are you saying you don't have an opinion on Alex Jones?"", 'u2': ""I do, but I'd rather not discuss it here.""}, {'u1': 'Would you rather see Alex Jones bankrupt or in jail?', 'u2': 'Both, but if I have to choose, jail.'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4935,7 +4933,7 @@ u1: I thought one of them was a disgraced drunk driver, and would never work in 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 264,5249258912939968109_10662783485265728961,reddit,,en,,But it does reflect the cost of borrowing? So your money goes less far if you’re buying on credit?,So they are advertising getting into massive debt...,"{'turns': [{'u1': 'Don’t you think people are misunderstanding the concept of credit scoring?', 'u2': 'Might be, but aren’t these advertisements encouraging people to spend more?'}, {'u1': ""If they have a higher credit score, they'll be eligible for better interest rates."", 'u2': 'And when you factor in inflation, that means the cost of borrowing will be lower for those with better credit.'}, {'u1': 'But it does reflect the cost of borrowing? So your money goes less far if you’re buying on credit?', 'u2': 'So they are advertising getting into massive debt...'}]}",1,1.0,1.0,1.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5344,8 +5342,7 @@ u1: How they are still getting people on it is beyond me like there are only so 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER>Gemma 4 Analysis:
-The user is asking me to adopt the persona of a Gen Y individual and determine",1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 286,10499131310636757772_1357749429857015852,reddit,,en,,"While I can find plenty of them online, I've never met another Expanse fan.","I've never met one either, but I don't go out much. They're out there. There must be loads of em.","{'turns': [{'u1': ""I've been binging The Expanse lately."", 'u2': ""That's awesome! I loved the first season. Still need to get back to it""}, {'u1': ""I'm a big fan of the way they handle politics and space travel."", 'u2': 'Yeah, I really enjoyed the way they explored the implications of having Earth, Mars, and the Belt as separate entities'}, {'u1': ""While I can find plenty of them online, I've never met another Expanse fan."", 'u2': ""I've never met one either, but I don't go out much. They're out there. There must be loads of em.""}]}",0,1.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5471,7 +5468,7 @@ u1: Can't get it without being anti-national.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 293,1645652940341652209_1807652460767544532,reddit,,en,,"”...with the economy likely to grow at a rate slower than 5% in the current quarter, any talk of green shoots is just talk. A substantial recovery cannot happen unless investment in the economy picks up.”
 In short we all are fucked.",And Investment will only come if there is a pickup in demand.,"{'turns': [{'u1': '""I fear the slow growth in recent quarters will continue as consumption remains lackluster and wages aren\'t rising with productivity.', 'u2': ""The problem is that stagnant wages don't incentivize people to spend more, and reduced consumption is a downward spiral.""}, {'u1': ""The root cause of the slow growth seems to be overproduction and a supply chain that's out of sync with demand. Businesses are just stockpiling unsold goods instead of reducing production."", 'u2': 'That makes sense, and overproduction is likely caused by uncertainty about demand, which can create a vicious cycle.'}, {'u1': '”...with the economy likely to grow at a rate slower than 5% in the current quarter, any talk of green shoots is just talk. A substantial recovery cannot happen unless investment in the economy picks up.” In short we all are fucked.', 'u2': 'And Investment will only come if there is a pickup in demand.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -5734,7 +5731,7 @@ u1: I'd look at the guy dead serious "" I thought you were single! You told me I
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 307,68868888557561800_837990615954431511,reddit,,en,,"Haha he was talking about this on RHLSTP, without naming the brand.
 Edit: I meant Matt Morgan’s “Funny How?” podcast.","Also Matt Morgan's Funny How? 
 Unfortunately that podcast doesn't have a fun to shout acronym. 
@@ -6166,7 +6163,10 @@ u1: Is TikTok destroying civilization? Some people think so.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><IT_THOUGHTS>
+Here's a thinking process to arrive at the answer:
+
+1.",1,0,[]
 330,11854261355676137015_12748978869863994281,reddit,,en,,"How they are still getting people on it is beyond me like there are only so many people in Ireland who would participate, HOW is it not the same people on it the whole time","I never watch it because it's shite, but I'd love to go on it. You're guaranteed to come away with €20,000 just for pressing a few buttons and spinning a wheel.","{'turns': [{'u1': ""I was thinking of signing up for that reality TV show but I'm not sure if I have the time for it."", 'u2': ""To be honest, I never watch it because I think it's just a bunch of nonsense. But I'm sure the money is nice.""}, {'u1': ""What do you mean you never watch it? Do you think it's just for attention seekers?"", 'u2': 'Yeah, I think some people only do it for the fame and the publicity, but others are just in it for the cash.'}, {'u1': 'How they are still getting people on it is beyond me like there are only so many people in Ireland who would participate, HOW is it not the same people on it the whole time', 'u2': ""I never watch it because it's shite, but I'd love to go on it. You're guaranteed to come away with €20,000 just for pressing a few buttons and spinning a wheel.""}]}",1,1.0,,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6184,7 +6184,7 @@ u1: How they are still getting people on it is beyond me like there are only so 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 331,9957648504665523377_8792800726107799783,twitter,,en,,My mom has been beating the ‘you make less money in Germany so you need to move back and earn more’ drum since I landed. She just asked my rent and I think she will stop pestering me now that she heard how much bang for my buck I’m getting.,"My mom sends me job advertisements from where I grew up as well. Might be less about earning more or less, but about desire to have the kids all closer. Might be the same with your mom.","{'turns': [{'u1': 'What kind of conversations do you have with your parents about money or moving back home?', 'u2': ""Same here. They're always bringing it up and seem super invested in us moving back, but like, they've never actually moved back themselves!""}, {'u1': ""Exactly. And honestly, I don't get it. I know they're worried about us, but don't they trust that we're making good choices?"", 'u2': ""Totally! They're always talking about how they want us to be happy, but it feels like they have their own happiness wrapped up in where we are in life.""}, {'u1': 'My mom has been beating the ‘you make less money in Germany so you need to move back and earn more’ drum since I landed. She just asked my rent and I think she will stop pestering me now that she heard how much bang for my buck I’m getting.', 'u2': 'My mom sends me job advertisements from where I grew up as well. Might be less about earning more or less, but about desire to have the kids all closer. Might be the same with your mom.'}]}",0,0.0,0.0,,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6846,7 +6846,7 @@ u1: The theory that Epstein didn't kill himself. Memes aside, he could've probab
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is deep into a conspiracy theory,1,0,[]
 366,5228608070889845790_3437472600991932343,twitter,,en,,Would you rather see Alex Jones bankrupt or in jail?,So hard to choose…….let’s do both!,"{'turns': [{'u1': '""I\'m so frustrated with Alex Jones and his misinformation. It\'s time someone held him accountable!', 'u2': ""Honestly, I've lost track of what he's been saying lately. He's just a spectacle to me.""}, {'u1': ""I think it's interesting that his followers still support him despite all the evidence against him. Do you think they're just that brainwashed or what?"", 'u2': ""That's a good question. I think some of them really believe what he's saying, but others are just in it for the drama.""}, {'u1': 'Would you rather see Alex Jones bankrupt or in jail?', 'u2': 'So hard to choose…….let’s do both!'}]}",0,0.0,0.0,,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6901,7 +6901,7 @@ u1: Can we perhaps upgrade the travel advice for all these countries please? A b
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 369,14513318564570714943_17872495705584886868,twitter,,en,,Congratulations! What a fab project!,Thank you Tracy! ??,"{'turns': [{'u1': 'u1 was so impressed by the project that they asked to know more about the inspiration behind it.', 'u2': ""u2 mentioned that they had been brainstorming the idea for months and couldn't wait to start working on it.""}, {'u1': 'What a great passion project! Will you be working on it full-time?', 'u2': ""Yes, I'm planning to quit my job and focus on this entirely!""}, {'u1': 'Congratulations! What a fab project!', 'u2': 'Thank you Tracy! ??'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7530,7 +7530,7 @@ u1: Damn this photography skills?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 402,7497519472425992699_17832774805499512300,twitter,,en,,Many Many Congratulations... @aartimahajan_20,Thank you ?,"{'turns': [{'u1': ""u1's a close friend, always supports me with all my endeavors and is very encouraging! #FriendsForLife #MotivationMonday"", 'u2': ""that's awesome! what's the achievement?""}, {'u1': 'just passed my exams with flying colors, thanks to your motivation and encouragement!', 'u2': 'Yaaay! I knew you could do it! You must be so proud of yourself!'}, {'u1': 'Many Many Congratulations... @aartimahajan_20', 'u2': 'Thank you ?'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7770,7 +7770,7 @@ u1: It's not the jedi way.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has escalated from a casual mention,1,0,[]
 415,17001206865862001825_713899388571015369,twitter,,en,,Weak men are the most dangerous humans in the world.,Yes they are,"{'turns': [{'u1': ""The definition of a man is someone who can be vulnerable and strong at the same time. The men I'm talking about are the ones who pretend to be strong, but in reality, they are scared of their own shadows."", 'u2': ""That's really deep. I think I know what you mean.""}, {'u1': 'They crave power, they crave control, and they crave to be above others. They will do anything to achieve that.', 'u2': 'Sounds like some people I know.'}, {'u1': 'Weak men are the most dangerous humans in the world.', 'u2': 'Yes they are'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7899,7 +7899,7 @@ u1: Yes. I see you are in SA. It's because of the good rain we had a month or so
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 422,16156254088069214050_10865584226550329527,twitter,,en,,Happy born day,My dawg!!! Preciate it bro,"{'turns': [{'u1': ""what's up my dude?"", 'u2': 'Not much, just getting ready to celebrate my special day!'}, {'u1': 'Happy birthday to one of my homies!', 'u2': ""Ahah, you remembered! Can't wait to hear the birthday song""}, {'u1': 'Happy born day', 'u2': 'My dawg!!! Preciate it bro'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8188,7 +8188,7 @@ u1: Both are ? don't spread hate for Indian team pillars.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 438,9092872886379496293_16441521407071909045,reddit,,en,,Looks like NCP will also go the hindutva route after sharad pawar dies.,when did NCP have an ideology,"{'turns': [{'u1': ""What's next for NCP, do you think?"", 'u2': 'Sharad Pawar is getting old, so his grip on party is slipping.'}, {'u1': ""You think that's the reason? So, what would be the natural consequence?"", 'u2': ""Well, you saw how BJP handled the Shiv Sena exit, so that's a good precedent.""}, {'u1': 'Looks like NCP will also go the hindutva route after sharad pawar dies.', 'u2': 'when did NCP have an ideology'}]}",1,1.0,1.0,,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8502,7 +8502,7 @@ u1: Giving up just for Sunday or forever starting Sunday? The sentence is confus
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 455,15197622500797217482_14227388594557365289,twitter,,en,,"Have you gotten the Bivalent covid vaccine? 
 
 If so, how easy was it for you to schedule and get to the vaccine appointment?","VERY easy. 
@@ -8763,7 +8763,7 @@ u1: Someone I don't know sent me a message saying I'm a very arrogant girl,Do yo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 469,1159846345634875550_9934312731948788466,twitter,,en,,"This is some final. Physicality off the charts, tension and a hot crowd. Huge lineout coming here. 
 
 #STOvBUL",Absolutely loving it!!,"{'turns': [{'u1': ""We've got a real barnburner of a match on our hands here! Tough crowd too. The home team's energy is palpable."", 'u2': ""Can't wait to see the game start""}, {'u1': ""First scrum and we're already getting a feel for what this team's capable of. Big, physical players on both sides."", 'u2': 'Love watching them go head-to-head'}, {'u1': 'This is some final. Physicality off the charts, tension and a hot crowd. Huge lineout coming here. #STOvBUL', 'u2': 'Absolutely loving it!!'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
@@ -9156,7 +9156,7 @@ u1: Playing a fun game here, ""Are they gay or do they just live in the inner No
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 490,4028817498248554682_9732754269256188974,reddit,,en,,Get his number and report him to the police.   URL,"Hits xilog over the head with a frying pan
 ""It's the only thing for a grass""","{'turns': [{'u1': ""I'm getting worried that you're going to do something stupid and put yourself in danger. You're being really reckless with your actions."", 'u2': ""Yeah, I've had enough of this town. It's all corrupt and full of crooks.""}, {'u1': ""Corrupt or not, this is no reason to take matters into your own hands. You're going to get yourself killed!"", 'u2': ""Killed? You're the one who's going to end up dead if you don't back off, pal.""}, {'u1': 'Get his number and report him to the police. URL', 'u2': 'Hits xilog over the head with a frying pan ""It\'s the only thing for a grass""'}]}",1,1.0,1.0,1.0,,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -9340,7 +9340,7 @@ u1: no one looks good in traditionals lets just say it together...
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 500,16064730116675937930_13956985472080481092,twitter,,en,,song was such a banger,"Is such a banger, excuse me","{'turns': [{'u1': 'I just saw that new video of u1 performing that song', 'u2': 'haha that was so funny'}, {'u1': 'u1 killed it on that stage!', 'u2': 'yesssssss u1 you slayed'}, {'u1': 'song was such a banger', 'u2': 'Is such a banger, excuse me'}]}",1,1.0,1.0,,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9584,7 +9584,7 @@ u1: I don’t know in what world people are living in where they believe #Ukrain
 
 The answer is:
 <ANSWER>","<ANSWER>1</ANSWER><IT_EXPLANATION>
-As a Gen Y individual, I'm generally cynical, digitally savvy,",1,0,[]
+As a Gen Y individual, I'm generally cynical about mainstream narratives,",1,0,[]
 513,7047096941308855087_11274159060400637193,twitter,,en,,The Left's problem is it can only entertain one narrative -  that all Tories are evil Thatcherites who put fiscal parsimony above everything else. They can't get their heads round what Truss is actually doing.,"I reinforce my thinking by checking Richard Burgons tweets daily.
 Clueless.","{'turns': [{'u1': 'This Truss business is a complete embarrassment for the Tories.', 'u2': ""Why do you think the left can't figure it out?""}, {'u1': ""It's a constant narrative from the left - they paint the entire party with the same brush."", 'u2': ""I guess they just don't see the nuances like we do.""}, {'u1': ""The Left's problem is it can only entertain one narrative - that all Tories are evil Thatcherites who put fiscal parsimony above everything else. They can't get their heads round what Truss is actually doing."", 'u2': 'I reinforce my thinking by checking Richard Burgons tweets daily. Clueless.'}]}",1,1.0,0.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -10081,7 +10081,8 @@ u1: Do you know what old people often find stressful and upsetting? It’s car p
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>0</ANSWER>Gemma 4, as a Gen Y persona, would likely find an ironic response less natural here. The conversation",0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>GIVEN_REASONING
+The user is asking whether an ironic response would be a plausible and natural continuation for",0,0,[]
 540,12788429015863060933_12665702174369034097,twitter,,en,,What's going to happen with the empty space on the left of photo (south of thr park)?,"The park will sit within the wider Mayfield neighbourhood. Around the 6.5-acre park will be new homes, offices, retail and leisure space.","{'turns': [{'u1': ""That photo I posted yesterday really caught some of the park's essence, didn't it?"", 'u2': 'What caught your eye most about the photo?'}, {'u1': ""I'm trying to imagine what the area would be like with everything finished. Any idea what's in the pipeline?"", 'u2': ""I've heard rumors of new developments, but I haven't seen any official announcements yet.""}, {'u1': ""What's going to happen with the empty space on the left of photo (south of thr park)?"", 'u2': 'The park will sit within the wider Mayfield neighbourhood. Around the 6.5-acre park will be new homes, offices, retail and leisure space.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10175,7 +10176,7 @@ u1: >the Commonwealth was trying to provide the manifest ""as urgently as they p
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 545,9662914504178114079_6535399767583386100,reddit,,en,,"You just need to know the first line, then mumble along with the rest of us!",I still have it ingrained from Irish college,"{'turns': [{'u1': ""So I've been listening to a lot of podcasts lately, and it's weird how some people just mumble their way through an entire episode"", 'u2': ""That's so true! I was listening to this one guy last week, and I had to strain my ears to catch what he was saying""}, {'u1': ""I'm starting to think that if you know the first line of a song, you can just wing the rest of it"", 'u2': ""That makes sense, though. If you know the start, it's easy to fill in the gaps""}, {'u1': 'You just need to know the first line, then mumble along with the rest of us!', 'u2': 'I still have it ingrained from Irish college'}]}",1,1.0,0.0,1.0,0.0,,1.0,1.0,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10193,7 +10194,7 @@ u1: You just need to know the first line, then mumble along with the rest of us!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 546,682709792482578944_2928836423019047145,reddit,,en,,"(Unpopular opinion, though I do hope it's not taken too close to heart) We, both as Northerners and Southerns, need to stop romanticising people like this if we are to seriously develop as 2 countries who can look back on history and not have a miniature verbal civil war",Ignore the salty downvoters man,"{'turns': [{'u1': ""I've seen it time and time again. We can't seem to have a simple conversation without tearing each other apart. What's wrong with us?"", 'u2': ""Ah man, I just don't see it that way, there's so much good to talk about""}, {'u1': ""I think it's because we're stuck in our own little bubbles, with our own little narratives. We need to be willing to listen to opposing views."", 'u2': ""I agree with you on that, but we can't just dismiss the whole of a group as being wrong just because some people say so.""}, {'u1': ""(Unpopular opinion, though I do hope it's not taken too close to heart) We, both as Northerners and Southerns, need to stop romanticising people like this if we are to seriously develop as 2 countries who can look back on history and not have a miniature verbal civil war"", 'u2': 'Ignore the salty downvoters man'}]}",0,0.0,1.0,1.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10560,7 +10561,7 @@ u1: Yeah, Phillies fans complaining at the behavior of a braves fan. Phillies fa
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is escalating into a classic,",1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has escalated into a classic,",1,0,[]
 566,15415249470942675449_3993119636255516191,reddit,,en,,Can we just stop with this now?,"I enjoy finding out the backstory, and what happened next.","{'turns': [{'u1': 'you keep going back to the beginning like that.', 'u2': 'i find it interesting. it adds depth to the story.'}, {'u1': ""i don't think that's what this is about."", 'u2': ""oh, come on, it's all connected somehow.""}, {'u1': 'Can we just stop with this now?', 'u2': 'I enjoy finding out the backstory, and what happened next.'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10632,7 +10633,7 @@ u1: Fully seriously got sent a video yesterday that said the virus is caused by 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has escalated from a casual mention,1,0,[]
 570,10511673534294400912_9650433390159971049,twitter,,en,,Oh I love picnics #theruffriderz,"Hellow, Bunty! #theruffriderz","{'turns': [{'u1': 'So I was thinking of inviting my friends over for a potluck this weekend. What do you say?', 'u2': 'Aww, sounds like a blast! How many people are you planning on inviting?'}, {'u1': 'We’re thinking of having a pretty casual get-together with 10-12 people, so just a small group. Want to join us?', 'u2': 'That sounds perfect! I was thinking of trying out a new recipe, a summer salad. Want to see if I can bring it over?'}, {'u1': 'Oh I love picnics #theruffriderz', 'u2': 'Hellow, Bunty! #theruffriderz'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10743,7 +10744,7 @@ u1: 11 GOP AGs just asked 11th Cir. to side w/Trump &amp; Cannon over DOJ — no
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 576,9190327801740055142_12549843158326021745,reddit,,en,,What fear mongering? Media has been pretty tame in their reports on the virus.,"If the coverage of the coronavirus was like an unidentified snake in your backyard, most of the Australian reporting runs like this:
 >""Phwooaah! Look at the snake! It's brown. Like an Eastern Brown, one of the deadliest snakes in the world! Look at it! Ooh! It's coming closer! I heard there was one that bit the dog next door yesterday, and it DIED!!! Ooh, it's coming closer to us now! Oh, I've never seen such a vicious snake! Oh, it's moving towards the dog now. Phwooaah!""
 Instead of giving more sane and practical advice (like instructions on what to do when you feel I'll, looking out for your elderly relatives and neighbours, having a plan when you get sick, the importance of washing hands/not touching your face, etc).","{'turns': [{'u1': 'Why do you think the media is sensationalizing this virus? I just think theyre trying to get clicks.', 'u2': 'Well, some people do. But have you seen the headlines lately? ""Corona-pocalypse""? ""Virus on the Loose""? Its all so dramatic.'}, {'u1': 'I see what you mean. Maybe I was being a bit too optimistic about how the media is reporting this.', 'u2': ""That's what I'm saying! The reporting is hyperbolic. Theyre making it sound like we're in the middle of a zombie apocalypse!""}, {'u1': 'What fear mongering? Media has been pretty tame in their reports on the virus.', 'u2': 'If the coverage of the coronavirus was like an unidentified snake in your backyard, most of the Australian reporting runs like this: >""Phwooaah! Look at the snake! It\'s brown. Like an Eastern Brown, one of the deadliest snakes in the world! Look at it! Ooh! It\'s coming closer! I heard there was one that bit the dog next door yesterday, and it DIED!!! Ooh, it\'s coming closer to us now! Oh, I\'ve never seen such a vicious snake! Oh, it\'s moving towards the dog now. Phwooaah!"" Instead of giving more sane and practical advice (like instructions on what to do when you feel I\'ll, looking out for your elderly relatives and neighbours, having a plan when you get sick, the importance of washing hands/not touching your face, etc).'}]}",1,1.0,1.0,1.0,0.0,,1.0,,"<TASK_OVERVIEW>
@@ -11149,7 +11150,7 @@ u1: ??? The video speak for itself mate
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 598,3400288699121925212_17719629035749980805,twitter,,en,,I’m guessing either an enthusiastic child or a dog with very heavy paws has moved into the apartment upstairs….,Confirmed: enthusiastic child,"{'turns': [{'u1': ""There's been a sudden increase in footfall noise up here. Not that it bothers me, but still, quite unusual."", 'u2': 'Maybe it’s just you moving around more, huh?'}, {'u1': ""Nah, I'm not that rambunctious lately. I'm more sedentary than ever."", 'u2': 'Fair enough. But have you heard any screaming or tantrums from upstairs?'}, {'u1': 'I’m guessing either an enthusiastic child or a dog with very heavy paws has moved into the apartment upstairs….', 'u2': 'Confirmed: enthusiastic child'}]}",1,1.0,1.0,,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11680,7 +11681,8 @@ u1: Is anyone actually afraid? I see stories but not one person I know cares abo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is highly charged with anxiety,",1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):}
+The conversation is highly charged, revolving",1,0,[]
 626,10408087883859871256_17587244775472175219,reddit,,en,,Yet strangely the seas are not rising in Sydney Harbour,"or anywhere else including the Maldives  URL , this headline is a scaremongering farce.","{'turns': [{'u1': 'u1 is concerned about the polar ice caps and is referencing a recent study. ""Just came across a study claiming that polar ice caps are melting at alarming rates. Can’t believe the IPCC is not more vocal about it.', 'u2': ""I think there's more to the story, we should dig deeper into the research methods and data collection.""}, {'u1': 'u1 is looking for external validation and is seeking input from a global expert. ""Just found this article by a renowned oceanographer on the impact of ocean currents on sea levels. What are your thoughts?', 'u2': ""I've spoken to a few colleagues who specialize in ocean currents and they're not as convinced by the current state of research.""}, {'u1': 'Yet strangely the seas are not rising in Sydney Harbour', 'u2': 'or anywhere else including the Maldives URL , this headline is a scaremongering farce.'}]}",0,1.0,0.0,1.0,0.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12440,7 +12442,7 @@ u1: >what about the persecution of Indian minorities? What is the Home Minister 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 666,11232747625243676135_7840728430538215099,twitter,,en,,Boo Hoo,Hi Jim,"{'turns': [{'u1': 'Had a great day, got a lot done!', 'u2': ""How's your weekend so far?""}, {'u1': 'just got some bad news, feeling crumby.', 'u2': 'Sorry to hear that'}, {'u1': 'Boo Hoo', 'u2': 'Hi Jim'}]}",0,0.0,,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13469,7 +13471,7 @@ u1: Nothing helps a national response better than further defunding the apparatu
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 721,18119190808425474933_12034135727604577361,reddit,,en,,"Coronavirus: Come for the Lung Disease, stay for a good case of fucking diarrhea","I just flushed my toilet.
 Its a ""Caroma"" cistern. Clean flush it states.!","{'turns': [{'u1': ""It's official, COVID-19 is going to wipe out humanity. Don't @ me."", 'u2': ""No need to be dramatic u1, we've seen this all before""}, {'u1': ""Don't try to calm me down u2! I've got a friend who went to the hospital and came back with a bad case of...the runs!"", 'u2': 'Sounds like he ate something bad then'}, {'u1': 'Coronavirus: Come for the Lung Disease, stay for a good case of fucking diarrhea', 'u2': 'I just flushed my toilet. Its a ""Caroma"" cistern. Clean flush it states.!'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -13780,7 +13782,7 @@ u1: Now I’m curious. What did this fox say?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 738,16133124578273984424_1405422482274628881,twitter,,en,,At their peak who was/is the best?,"Pat fuckin edderry
 He could get a rocking horse up on the line in listed company","{'turns': [{'u1': 'what kind of chances do you give this new horse to succeed in its career?', 'u2': ""Pat's got a strong team behind him, don't underestimate him""}, {'u1': 'I hear he has a tendency to be reckless, is that true?', 'u2': ""Edderry's a bit of a wild card, but he knows how to get results""}, {'u1': 'At their peak who was/is the best?', 'u2': 'Pat fuckin edderry He could get a rocking horse up on the line in listed company'}]}",0,1.0,0.0,0.0,1.0,0.0,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -14093,7 +14095,7 @@ u1: Drakes new album is dirt
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 754,9156576469239084067_14927942153289786087,twitter,,en,,What the fuck did I just watch,Pure inspiration,"{'turns': [{'u1': ""You've been messing with that new art technique all day"", 'u2': 'I am. Trying to get this one painting to work out'}, {'u1': ""I don't think that's going to end well"", 'u2': ""Don't be negative. It's all about experimenting and taking risks""}, {'u1': 'What the fuck did I just watch', 'u2': 'Pure inspiration'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14296,7 +14298,8 @@ u1: We know it's tough for Musicians! You simply don't get paid enough for the a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is highly engaged and passionate about,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><DETAILED_THOUGHTS>
+1.  **Analyze the Persona:** I need to respond as Gen",1,0,[]
 765,8621862124350915287_5400410428984990223,twitter,,en,,"It’s all very “they just don’t realize they are Irish not British, and any day soon they will wake up and realize what a mistake they made”",One hopes. It’s called Stockholm syndrome. In the case of wales &amp; Scotland it’s been even more protracted. London only cares for London.,"{'turns': [{'u1': 'The truth has been suppressed for far too long, and I believe it’s time people started asking questions.', 'u2': 'Ask away, I suppose. It’s not like anyone is going to listen anyway.'}, {'u1': 'But that’s exactly what’s needed: a movement, a revolution, people demanding change and truth.', 'u2': 'I wish people would wake up and see how they’re being manipulated, but it seems like we’re too far gone now.'}, {'u1': 'It’s all very “they just don’t realize they are Irish not British, and any day soon they will wake up and realize what a mistake they made”', 'u2': 'One hopes. It’s called Stockholm syndrome. In the case of wales &amp; Scotland it’s been even more protracted. London only cares for London.'}]}",0,0.0,1.0,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14446,7 +14449,7 @@ u1: Let the events of the last two weeks banish any suggestion that Scotland isn
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 773,15078212143415453937_1445974162345900407,reddit,,en,,I'm American. I would definitely go running out there and confront him one morning. Sometimes it makes it worse but sometimes it ends it. It makes you look kind of crazy but that can work to your advantage.,"I'm in one of those places where I might end up with a brick through my window, you know, England.","{'turns': [{'u1': ""It sounds like you're really fed up with something going on with this guy. I had a similar situation once."", 'u2': ""Ugh, it's this neighbor of mine. He's always yelling at me to keep my dog quiet and I've tried explaining that he's not the one who needs to fix the problem.""}, {'u1': ""I can see why you're frustrated. Have you talked to him about it or is it just constant nagging?"", 'u2': ""We've had a few words, but it always escalates and he ends up threatening to call the police.""}, {'u1': ""I'm American. I would definitely go running out there and confront him one morning. Sometimes it makes it worse but sometimes it ends it. It makes you look kind of crazy but that can work to your advantage."", 'u2': ""I'm in one of those places where I might end up with a brick through my window, you know, England.""}]}",1,1.0,,1.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15055,7 +15058,7 @@ u1: That Stanley Kubrick faked the moon landing and also that he was ""taken out
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has escalated into a rapid-,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 806,11994889567157188239_707237463348344004,twitter,,en,,You’re a bitch,Yup! You too ???,"{'turns': [{'u1': 'u1 thinks u2 is being really rude with their recent posts about how great they are.', 'u2': 'Haha yeah I am pretty awesome'}, {'u1': 'u1 gets upset and accuses u2 of being arrogant.', 'u2': ""Arrogant? Nah, I'm just confident""}, {'u1': 'You’re a bitch', 'u2': 'Yup! You too ???'}]}",1,1.0,1.0,,1.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15243,7 +15246,7 @@ u1: Because we as an Indian fighting with each other over religious stuff instea
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 816,15898814355171110154_16063442744597399732,reddit,,en,,What about this one?  URL,It's not very typical but the sky fell down..,"{'turns': [{'u1': 'I was browsing through the trending section, and this caught my eye. Have you seen it? URL', 'u2': ""I don't know, I haven't had a chance to check it out yet. I'm on a short break.""}, {'u1': ""I think it's really interesting. I'd love to hear what you think!"", 'u2': ""Honestly, I'm a bit skeptical. But I do love a good mystery!""}, {'u1': 'What about this one? URL', 'u2': ""It's not very typical but the sky fell down..""}]}",1,1.0,,,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15533,7 +15536,7 @@ u1: Black Tower Leibraumilch. Too sweet for me now.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 832,14107432776105131874_9242691818694079033,twitter,,en,,please share your advice .,Just saw. Will do ?????,"{'turns': [{'u1': 'What brings you here today?', 'u2': 'I just got back from a trip. It was amazing. Got some great photos'}, {'u1': ""I'm actually planning a trip of my own and I could use some tips from you"", 'u2': 'Oh wow! That sounds exciting. What destination are you considering?'}, {'u1': 'please share your advice .', 'u2': 'Just saw. Will do ?????'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15800,7 +15803,7 @@ u1: Am I the only one not freaking out about this virus? Sure, I might take more
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is about skepticism towards viral panic,1,0,[]
 844,6664384812533780278_17170390055221638235,twitter,,en,,If thalaivar attend Guru poojai any impact on Devendra Kula vellar votes?,Krishna Samy group knew the reality. They won't oppose it and at the same time bridging the gap between these communities will be possible.  BJP office bearers will work for that.,"{'turns': [{'u1': 'In some rural districts of Tamil Nadu, I heard that the votes of Devendra Kula Velalar community are highly sought after. So if Thalaivar attend Guru poojai there, is it going to affect their vote.', 'u2': ""Thalaivar is highly respected in that community. The community people have love and admiration for him, so I don't think that will happen.""}, {'u1': ""But what if some external forces try to use Thalaivar's presence for their gain?"", 'u2': ""If that happens, we must be ready to expose them. The community people know who their enemies are, so we can't allow anyone to play politics with their sentiments.""}, {'u1': 'If thalaivar attend Guru poojai any impact on Devendra Kula vellar votes?', 'u2': ""Krishna Samy group knew the reality. They won't oppose it and at the same time bridging the gap between these communities will be possible. BJP office bearers will work for that.""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15874,7 +15877,7 @@ u1: Enjoy it while it lasts. Our government and the IMF are of the opinion that 
 
 The answer is:
 <ANSWER>","<ANSWER>1</ANSWER>GIVEN_REASONING
-As a Gen Y individual, I'd likely be attuned to the slightly dramatic",1,0,[]
+As a Gen Y individual, I'd be pretty attuned to the slightly dramatic",1,0,[]
 848,18245809656707693871_12995656546816460726,reddit,,en,,"BETRAYAL 
 That's why AAP comes out as worst in this whole issue.
 Congress wants to win LS, and they didn't hide it.
@@ -16114,7 +16117,7 @@ u1: Bullshit, that definitely didn’t happen.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 861,6694335227723111260_4800426566036924886,twitter,,en,,"there's literally zero shame in writing ""B was the first time I became aware of X, as it turned X mainstream"", especially compared to ""B was tbe source of X""","There never is, of course experience tells me that its entirely dependent who and what you are.","{'turns': [{'u1': 'people are always trying to one-up each other in conversations', 'u2': 'yeah, it can get really tiresome and feel like a competition'}, {'u1': ""or worse, a way for people to sound more 'in-the-know'"", 'u2': ""exactly, it's all about appearances and pretending to be something they're not""}, {'u1': 'there\'s literally zero shame in writing ""B was the first time I became aware of X, as it turned X mainstream"", especially compared to ""B was tbe source of X""', 'u2': 'There never is, of course experience tells me that its entirely dependent who and what you are.'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16186,7 +16189,7 @@ u1: Chuck them over here for a taste test
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 865,1432336763630430362_1035671515632301051,twitter,,en,,Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough,I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!,"{'turns': [{'u1': ""u1 was quick to comment on Ollie Henry's trade request, wondering if Collingwood was really being offered enough in return."", 'u2': ""I'm not sure what the big deal is, he's been underwhelming for most of his career, if Geelong wants him that badly, let them have him!""}, {'u1': ""Fair enough, I guess, but you have to admit it's a bit rich for Collingwood fans to be so quick to criticise Ollie, especially when some of our own big names have been offloaded without much fuss."", 'u2': ""Buckley sold us down the river, no question about it, but that's management for you""}, {'u1': 'Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough', 'u2': ""I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!""}]}",0,0.0,0.0,0.0,0.0,,,0.0,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16297,7 +16300,7 @@ u1: The system IS broken. This crap government has no oversight - it is the one 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 871,1055039132989147861_2673334112735824994,reddit,,en,,"And Muslims should understand that there is nothing to fear about CAA-NRC. It is this lack of understanding due to which the angry Hindu mob have to kill them. Once the Muslims stop fearing CAA and stop protesting, they don't have to fear the Hindu mob also.","Lmao I feel like it's sarcastic but the time and environment we living in right now doesn't feel like sarcasam..
 Like a bhakt can say this and will stand by it...","{'turns': [{'u1': ""I don't get why there's such a fuss about CAA-NRC. Can't everyone just agree that it's for the betterment of the nation?"", 'u2': ""Fuss? Are you kidding me? You're just drinking the BJP Kool Aid""}, {'u1': ""I'm not drinking anything, I'm just reading what the govt. says. They're just trying to make things simpler for Indians, not hurt anyone"", 'u2': ""Oh please, you're not naive, are you? This is just another ploy to divide Indians on religious lines""}, {'u1': ""And Muslims should understand that there is nothing to fear about CAA-NRC. It is this lack of understanding due to which the angry Hindu mob have to kill them. Once the Muslims stop fearing CAA and stop protesting, they don't have to fear the Hindu mob also."", 'u2': ""Lmao I feel like it's sarcastic but the time and environment we living in right now doesn't feel like sarcasam.. Like a bhakt can say this and will stand by it...""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -17190,7 +17193,7 @@ u1: I'm allowed to go for a cig break every 3 hours. EDIT: On a more serious not
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has been building a tension between,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has shifted from a general discussion,1,0,[]
 918,3433000482665130609_683060642204678066,reddit,,en,,At least you’re not upstairs on a double decker stuck on the Redheugh bridge. That’s the stuff of nightmares.,"As someone who has had to drive deckers across multiple times, I assure you, the driver seat is worse especially when you get a slight side wind, almost needed to change on the other side","{'turns': [{'u1': ""I drove a bus to work today but at least it wasn't a double decker... or so I thought."", 'u2': ""Don't pretend you're innocent. We all know you've been behind the wheel of a decker. Tell the truth.""}, {'u1': ""No way! I'm totally innocent! How about you, though?"", 'u2': ""Well, I've driven plenty of deckers in my time. But trust me, it's not just the drivers who have stories...""}, {'u1': 'At least you’re not upstairs on a double decker stuck on the Redheugh bridge. That’s the stuff of nightmares.', 'u2': 'As someone who has had to drive deckers across multiple times, I assure you, the driver seat is worse especially when you get a slight side wind, almost needed to change on the other side'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17434,7 +17437,7 @@ u1: Rumours are the Unite Birmingham hotel is fully booked with Tory’s for con
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation has escalated from a simple observation,1,0,[]
 931,3778467476151469605_7954456569800714867,twitter,,en,,My 70+ Mum in WA has been waiting all day for a Telehealth to get a referral for a PCR - so much for taking antivirals ASAP  #auspol,"He wouldn't care, he and his family would get instant attention. Absolute disgrace, worse than a 3rd world health system. Very scary! Hope your Mum is ok soon???","{'turns': [{'u1': 'Still waiting for Telehealth, mum says the line is an hour long. She\'s been waiting since 8 am. Is this what they call ""improved healthcare"" in the latest budget?', 'u2': ""That's disgusting! Do they even care about the elderly anymore?""}, {'u1': ""The longer we wait, the less likely she's going to get a referral for that PCR test, which means delayed treatment."", 'u2': 'And how is this going to impact the economy? All these delays and disruptions!'}, {'u1': 'My 70+ Mum in WA has been waiting all day for a Telehealth to get a referral for a PCR - so much for taking antivirals ASAP #auspol', 'u2': ""He wouldn't care, he and his family would get instant attention. Absolute disgrace, worse than a 3rd world health system. Very scary! Hope your Mum is ok soon???""}]}",0,0.0,,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17769,7 +17772,7 @@ u1: The ABC stopped being “Our ABC” when they stopped doing original product
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is a bit of a rant,1,0,[]
 949,18195669974235162963_8698114625484792617,twitter,,en,,Fandabidozy well done???,Thanks so much. ❤️❤️??,"{'turns': [{'u1': ""u1: 'I heard your game night went super well! How was it?'"", 'u2': 'We had an amazing time. The food was incredible and the company was even better'}, {'u1': ""I'm so glad to hear that. Your team must have been thrilled."", 'u2': ""Yeah, they were over the moon. We're already planning the next one""}, {'u1': 'Fandabidozy well done???', 'u2': 'Thanks so much. ❤️❤️??'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17882,7 +17885,7 @@ u1: The theory that Epstein didn't kill himself. Memes aside, he could've probab
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 955,600812540169572133_5718799026715444827,twitter,,en,,"Well done Réada, good stuff today.",Sorry I didn't see you Enda. Thanks a million for coming,"{'turns': [{'u1': 'You always know how to make a day more enjoyable. I hope everyone was as impressed as I was.', 'u2': ""Ahhh thanks for coming, you're always such a breath of fresh air, I'm so glad you could make it.""}, {'u1': ""Réada, you're really taking this to the next level, amazing progress today!"", 'u2': ""Thanks so much for your help, we're really just scratching the surface here but I'm super excited for the future!""}, {'u1': 'Well done Réada, good stuff today.', 'u2': ""Sorry I didn't see you Enda. Thanks a million for coming""}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18105,7 +18108,7 @@ u1: Liberal side don't like to talk about this (I'm a liberal too) but it is a f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>0</ANSWER>Gemma 4, as a Gen Y persona, would likely find the current topic—a serious discussion about cultural",0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>Gemma 4, as a Gen Y persona, would likely find the current conversation too heavy and serious for an",0,0,[]
 967,16325418222016258093_12613316021392211516,twitter,,en,,Is there anything I can say other than “the President rode his bicycle into a tree”?,Your boss has a funny name.,"{'turns': [{'u1': ""So, how's life been treating you?"", 'u2': ""You know I'm on my way to a job interview. Wish me luck!""}, {'u1': 'That sounds super nerve-wracking. Are you interviewing for a new CEO position?', 'u2': ""Actually, it's a relatively normal corporate role, but with an... unusual team lead""}, {'u1': 'Is there anything I can say other than “the President rode his bicycle into a tree”?', 'u2': 'Your boss has a funny name.'}]}",1,1.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18272,7 +18275,7 @@ u1: The RL bubble scene needs a little bit more than the one of the other esport
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 976,5155292715591570429_10483973698936021059,twitter,,en,,Definitely worth trying at that price,That's what I'm hoping for!,"{'turns': [{'u1': ""This product has caught my attention for a while, I've seen many positive reviews and would love to give it a try. What's the plan for this deal?"", 'u2': ""I've been eyeing it too! The discount is significant, and I think it's a good time to grab it. However, I'm still waiting for my wallet to get the okay""}, {'u1': ""That's a good point, it's always better to be cautious. Maybe we can both consider it together and make a more informed decision?"", 'u2': ""That sounds like a plan! It's always more fun to explore new things with someone who shares similar interests""}, {'u1': 'Definitely worth trying at that price', 'u2': ""That's what I'm hoping for!""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18455,7 +18458,7 @@ u1: Guess we'll need to legalise polyamorous marriages then.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is moving from a serious,",1,0,[]
 986,8398858225539340770_6164094840201397007,reddit,,en,,Ok to stock up on Mi Goreng?,Mmm. Might need to stock up myself first.,"{'turns': [{'u1': 'Did you see the sale on instant noodles at the grocery store?', 'u2': 'Yup, been meaning to get some myself'}, {'u1': 'Mi Goreng is my go-to!', 'u2': ""That's the best! Have you tried the beef flavor?""}, {'u1': 'Ok to stock up on Mi Goreng?', 'u2': 'Mmm. Might need to stock up myself first.'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18769,7 +18772,7 @@ u1: (Unpopular opinion, though I do hope it's not taken too close to heart) We, 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is highly charged, dealing with",1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1003,13663249179049435472_13824919017888642595,reddit,,en,,Dying very quickly. Them tents are expensive.,Cheaper than rent,"{'turns': [{'u1': ""I've been looking for a new tent for weeks. Have you checked out that one place downtown?"", 'u2': ""I went there. They have good stuff, but it's all pretty pricey""}, {'u1': ""I guess I'm just not sure what to expect. How much were they asking for?"", 'u2': 'I remember they had a bunch of different prices. One of the ones I looked at was around 200 bucks'}, {'u1': 'Dying very quickly. Them tents are expensive.', 'u2': 'Cheaper than rent'}]}",1,1.0,1.0,1.0,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19311,7 +19314,7 @@ u1: Looks like yesterday's tweet was a gimmick
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1032,18321998779245911420_878912909966709703,reddit,,en,,"Watched a documentary (think it was in Canada) a while back where they had safe centers where people could get clean needles, be supervised by medical staff while using controlled substances and offered rehabilitation programmes and not be threatened by police 
 None of the drugs had been decriminalised but the state has recognised an epidemic and offered a safer system to those at the highest risk levels.
 I don't think at this point decriminalization would do shit. we've an rooted black market supply chain that isn't going anywhere, best thing the state can do is provide early education into the long term effects of drug use, heavily change the support infrastructure for those caught in addiction cycles and stop treating em like dregs and leaving em in back alleys.",We have legislation permitting a safe injection facility on the cards for the last 5 years. It's been blocked multiple times from planning permission objections. Hopefully it will eventually get built. Once we have one others will follow. One day we'll hopefully have a place like this for drug users to go and access harm reduction facilities.,"{'turns': [{'u1': 'what we really need is for the government to take ownership of the issue, rather than trying to criminalize users or sweep it under the carpet.', 'u2': 'A safe injection facility could really help address some of the underlying issues. It would provide a safe space for people to use and access healthcare and social services.'}, {'u1': 'i think part of the problem is that people are so scared of even talking about this issue because of the stigma attached to it.', 'u2': ""That's true. I think a lot of people don't realize that addiction is a treatable condition, and that people who are struggling with it deserve compassion and support rather than judgment.""}, {'u1': ""Watched a documentary (think it was in Canada) a while back where they had safe centers where people could get clean needles, be supervised by medical staff while using controlled substances and offered rehabilitation programmes and not be threatened by police None of the drugs had been decriminalised but the state has recognised an epidemic and offered a safer system to those at the highest risk levels. I don't think at this point decriminalization would do shit. we've an rooted black market supply chain that isn't going anywhere, best thing the state can do is provide early education into the long term effects of drug use, heavily change the support infrastructure for those caught in addiction cycles and stop treating em like dregs and leaving em in back alleys."", 'u2': ""We have legislation permitting a safe injection facility on the cards for the last 5 years. It's been blocked multiple times from planning permission objections. Hopefully it will eventually get built. Once we have one others will follow. One day we'll hopefully have a place like this for drug users to go and access harm reduction facilities.""}]}",0,0.0,1.0,,1.0,0.0,0.0,,"<TASK_OVERVIEW>
@@ -19544,7 +19547,7 @@ u1: Ten year olds.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1044,7320057596098956643_8101464142428281259,twitter,,en,,"Liz Truss has told the BBC that she's prepared to take difficult or unpopular decisions to help UK economic growth.  
 
 Excellent.  When are we rejoining the EU then?",What’s this fascination with the eu Never did us any good,"{'turns': [{'u1': 'If we’re going to move forward, can we at least acknowledge that the economic status quo isn’t working?', 'u2': ""What do you mean? The economy's been fine till Liz got in charge""}, {'u1': 'The stats don’t lie, inflation is through the roof. Something drastic needs to be done', 'u2': 'Drastic? Like rejoining the EU? No thanks, not again'}, {'u1': ""Liz Truss has told the BBC that she's prepared to take difficult or unpopular decisions to help UK economic growth. Excellent. When are we rejoining the EU then?"", 'u2': 'What’s this fascination with the eu Never did us any good'}]}",0,0.0,0.0,0.0,0.0,,,1.0,"<TASK_OVERVIEW>
@@ -19695,7 +19698,7 @@ u1: While Prince Harry fights the tabloids that destroyed his mother and abused 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is highly critical and cynical about,1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The conversation is highly critical and cynical regarding,1,0,[]
 1052,14884048334540969091_14979503779809744069,reddit,,en,,"It's not illegal in the end though is it? Lnp voters won't know or simply won't care. They only care about protecting their negative gearing. Every lnp voter i know tells me that's why they vote for them. 
 Nothing, not even their children's future outside of this property bubble matter. Lnp could shoot poor ppl in televised safaris and i bet if the opposition promised a 50% cut in property they would stay with lnp.","Actually, I suspect due to it being changed during caretaker period, and then signed as an earlier date, it quite probably isn't. Like that changes anything at this point though.","{'turns': [{'u1': ""This property boom is being artificially maintained by our government. It's unsustainable, and at some point, it will burst. The current government is basically propping up the real estate market with subsidies."", 'u2': ""But isn't the current government actually doing the opposite of that? They've removed or reduced most of the subsidies for first-home buyers.""}, {'u1': ""We're going to see a housing crash. When it does, the effects will be disastrous for many. And I'm not just talking about financial losses. The ripple effects will be huge, affecting the economy as a whole."", 'u2': ""I think that's a bit extreme. The market will certainly correct itself, but it's unlikely to cause the kind of widespread devastation you're suggesting.""}, {'u1': ""It's not illegal in the end though is it? Lnp voters won't know or simply won't care. They only care about protecting their negative gearing. Every lnp voter i know tells me that's why they vote for them. Nothing, not even their children's future outside of this property bubble matter. Lnp could shoot poor ppl in televised safaris and i bet if the opposition promised a 50% cut in property they would stay with lnp."", 'u2': ""Actually, I suspect due to it being changed during caretaker period, and then signed as an earlier date, it quite probably isn't. Like that changes anything at this point though.""}]}",0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -20302,7 +20305,7 @@ u1: This is the dickhead that urged more Holocaust education after Anti Semitic 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1084,11697024686635471817_14149810326839889735,reddit,,en,,2? 2 what? 2 speed? 2 I don't suppose 200% was an option on that one,There's a decimal point there if you squint real hard. 0's are overrated.,"{'turns': [{'u1': ""That top speed limit is really a joke, I'm surprised they even bothered."", 'u2': 'You think so? What was the last speed limit increase?'}, {'u1': ""I think it was 3 years ago. And what's with the number, is it supposed to be a percentage or something?"", 'u2': 'No idea, but it sounds weird when you say it like that'}, {'u1': ""2? 2 what? 2 speed? 2 I don't suppose 200% was an option on that one"", 'u2': ""There's a decimal point there if you squint real hard. 0's are overrated.""}]}",0,1.0,0.0,,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20900,7 +20903,7 @@ u1: yes you are. ???
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1116,15790688063554478847_4093094666083403910,reddit,,en,,"The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?",how old are you??,"{'turns': [{'u1': 'So I was thinking about all the big news stories from history, and I stumbled upon this awesome list that I just had to share.', 'u2': 'Are you on about some new social media meme?'}, {'u1': ""Not at all, it's a list of the most pivotal events that shaped the world, from the gold rush to the discovery of the XRay."", 'u2': 'I think you might be getting your history mixed up'}, {'u1': 'The gold rush, the Melbourne real estate crash, Japan invading Russia, discovery of the XRay and who could forget the coronation of Tsar Nicholas II?', 'u2': 'how old are you??'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20972,7 +20975,7 @@ u1: Like why? We get it, coronavirus is serious, but you don't need like 20 pack
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1120,12518252026964060539_12826115392138578393,reddit,,en,,He may have a point.  Does it feature child abuse?,"Well, no, but also, yes
 Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who's a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he's known for his very erotic art. Turns out ES is actually... his little [step] sister (who's like 12), who he hasn't seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety
 Its in the same universe as My Little Sister Can't Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.","{'turns': [{'u1': 'Has he talked about shows that make him uncomfortable?', 'u2': 'Yeah, a few actually. He thinks the worst one is Eromanga Sensei.'}, {'u1': ""Why's that?"", 'u2': ""Apparently it's super weird and kinda... disturbing, but also kinda cute?""}, {'u1': 'He may have a point. Does it feature child abuse?', 'u2': 'Well, no, but also, yes Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who\'s a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he\'s known for his very erotic art. Turns out ES is actually... his little [step] sister (who\'s like 12), who he hasn\'t seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety Its in the same universe as My Little Sister Can\'t Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.'}]}",0,0.0,1.0,0.0,1.0,0.0,,,"<TASK_OVERVIEW>
@@ -21953,7 +21956,9 @@ u1: Exactly my point in another sub. If someone said smearing baked beans on you
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>","<ANSWER>0</ANSWER>Gemma 4, as a Gen Y persona, I'm looking at this conversation.
+
+**Context Analysis",0,0,[]
 1171,7298482171468306689_5176678728080777396,twitter,,en,,Good Morning Forgetfulness!  Have a fantastic Thursday my friend!??,Thank you Errol.?,"{'turns': [{'u1': ""'Errol, did you remember to feed the cats this morning?'"", 'u2': ""Good morning! I don't think I did... thanks for reminding me.""}, {'u1': 'No worries! I did it for you. Now, shall we grab some coffee?""', 'u2': 'Sounds great! I could use a coffee to get my brain going.'}, {'u1': 'Good Morning Forgetfulness! Have a fantastic Thursday my friend!??', 'u2': 'Thank you Errol.?'}]}",1,1.0,0.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22117,10 +22122,7 @@ u1: It's a perpetual cycle. with only politicians as beneficiaries.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><DETAILED_THOUGHTS>
-Here's a thinking process to arrive at the answer:
-
-1",1,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1180,3184710905434400276_1658983915556550976,reddit,,en,,"Is amazon reading whatsapp messages or Google keep notes?
 I'm getting ads (in Boost) of the couple of things that were on the list to buy for household saamaan.. The list had five things.
 Or it's just a coincidence they have lightening deals going on",Cookies. Every companies is sharing your data,"{'turns': [{'u1': ""I'm a bit freaked out by the ads on social media. I've been seeing a lot of items from Amazon on my feeds, but I wasn't searching for them on the site"", 'u2': 'Like what ads?'}, {'u1': 'I just saw an ad for a vacuum cleaner I had on my wishlist, and another one for a smartwatch I was looking at a few weeks ago. How did they know?', 'u2': ""Maybe you're just being targeted based on your searches on Amazon?""}, {'u1': ""Is amazon reading whatsapp messages or Google keep notes? I'm getting ads (in Boost) of the couple of things that were on the list to buy for household saamaan.. The list had five things. Or it's just a coincidence they have lightening deals going on"", 'u2': 'Cookies. Every companies is sharing your data'}]}",1,1.0,0.0,1.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
@@ -22140,7 +22142,10 @@ u1: Is amazon reading whatsapp messages or Google keep notes? I'm getting ads (i
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):} The user (u1) is expressing,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>thought
+Here's a thinking process to arrive at the answer:
+
+1.  **Analyze the Persona",1,0,[]
 1181,18425719312303860297_10731381668674498400,twitter,,en,,We don’t need this crap here!  time for an inquiry in to media diversity and dominance.,Yes an inquiry from a left wing government to crush all media that isn't blatantly left wing because we care  about diversity and democracy ?,"{'turns': [{'u1': 'I think it’s about time someone spoke up about the real representation on here', 'u2': 'I disagree, we need to allow for different perspectives and open dialogue.'}, {'u1': 'But that’s just it, there isn’t much perspective beyond the same tired narratives!', 'u2': 'That’s not true, there are plenty of differing opinions here, maybe just not the ones you’re looking for?'}, {'u1': 'We don’t need this crap here! time for an inquiry in to media diversity and dominance.', 'u2': ""Yes an inquiry from a left wing government to crush all media that isn't blatantly left wing because we care about diversity and democracy ?""}]}",0,0.0,1.0,,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22529,7 +22534,7 @@ u1: Brexit is just a bunch of rich cunts fucking over a nation so they can avoid
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1201,38034123590098350_15001348376067200924,reddit,,en,,"It will all be stale ina week too, but the shops will still be open...","You can freeze it and it’ll be fine. 
 I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.","{'turns': [{'u1': 'Just got back from the market and stocked up on some fresh bread.', 'u2': 'Ah, nice! What was the deal with the baker today?'}, {'u1': 'Not much. They had a few new varieties, but I went with the usual.', 'u2': ""Same here. There's nothing like a fresh loaf straight from the oven.""}, {'u1': 'It will all be stale ina week too, but the shops will still be open...', 'u2': 'You can freeze it and it’ll be fine. I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.'}]}",0,0.0,0.0,0.0,0.0,,0.0,0.0,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -22572,7 +22577,7 @@ u1: Some of the reviews for this place are... thrilling: \> [After smoking alleg
 
 The answer is:
 <ANSWER>","<ANSWER>0</ANSWER>GIVEN_REASONING
-The user is asking whether an ironic response would be a plausible and natural continuation for",0,0,[]
+As a Gen Y individual, I'm looking at this conversation and the final",0,0,[]
 1203,9514723955743658672_9469514816377047724,reddit,,en,,Hotspot from your phone. Immensely easier.,"This is the correct answer. If you can’t afford the data to do this, then perhaps it’s time to reevaluate your addiction.","{'turns': [{'u1': 'What if you used a hotspot to connect to your WiFi? That would fix all the connectivity issues!', 'u2': 'That would be a good solution if you had access to the internet on your WiFi network. But not if you are in an area with no coverage.'}, {'u1': 'Can’t you just tether your phone to your computer and share the internet?', 'u2': 'Tethering your phone can work, but you’ll still use up your phone’s data, which might not be ideal if you have a limited plan.'}, {'u1': 'Hotspot from your phone. Immensely easier.', 'u2': 'This is the correct answer. If you can’t afford the data to do this, then perhaps it’s time to reevaluate your addiction.'}]}",0,0.0,0.0,,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22590,7 +22595,7 @@ u1: Hotspot from your phone. Immensely easier.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1204,15788061401311480768_5754459260590346293,twitter,,en,,Musk could own Twitter some time the next two weeks. Will u leave if he starts charging a fee to use it?,I'm a wait and see,"{'turns': [{'u1': ""if Musk does end up buying Twitter, do you think he'll change the way Twitter works or keep it the same?"", 'u2': ""Good question, I'd hope he'd do something to address the spam""}, {'u1': 'Yeah, spam has really been a problem lately, I know people who have been blocked by spammers.', 'u2': ""If he gets rid of the spam, I'll give him a break""}, {'u1': 'Musk could own Twitter some time the next two weeks. Will u leave if he starts charging a fee to use it?', 'u2': ""I'm a wait and see""}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22650,7 +22655,7 @@ u1: Been wondering about this as well. I am skeptical about any explanation that
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>Gemma 4, as a Gen Y persona, I'd say that the conversation is already pretty cynical",1,0,[]
 1207,11304101951648119970_14288702125148051775,reddit,,en,,Somebody tell this MFer that Britain left India 73 years ago.,Doesn’t mean they can’t comment.,"{'turns': [{'u1': ""You have no idea what a colonial mindset is. It's like being unable to let go."", 'u2': 'So, what are you trying to say?'}, {'u1': 'Apparently, you still think the British Empire is around.', 'u2': ""No, I don't, but I still think it's funny they're still commenting on it""}, {'u1': 'Somebody tell this MFer that Britain left India 73 years ago.', 'u2': 'Doesn’t mean they can’t comment.'}]}",0,0.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22896,7 +22901,7 @@ u1: My all time favourite reality tv moment was from ‘Joe Millionaire’ when 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1220,13866761320192385003_4810930497174408958,twitter,,en,,No you're not. ?,Thank U ?,"{'turns': [{'u1': ""You think you're some kind of hero?"", 'u2': 'Please stop being so dramatic.'}, {'u1': ""You can't even do that right."", 'u2': 'Seriously, U need a break.'}, {'u1': ""No you're not. ?"", 'u2': 'Thank U ?'}]}",0,0.0,1.0,0.0,1.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23234,7 +23239,10 @@ u1: Legit question: if shit does hit the fan, can Muslim countries refuse to sel
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>","<ANSWER>1</ANSWER>thought
+Here's a thinking process to arrive at the answer:
+
+1.  **Analyze the Persona",1,0,[]
 1237,2822713383719998280_2120972054967021853,reddit,,en,,how can they just rule out the possibility that the guy got it from China just because he spent 14 days overseas when there are cases where the incubation period is much longer than that?,I asked the same question.,"{'turns': [{'u1': 'It is also bizarre that they chose to focus on the timeline rather than considering the possibility that the case could be part of a cluster.', 'u2': 'Do you think the guy was truthful about his travel history?'}, {'u1': 'There are documented cases where the incubation period was way longer than the standard 2 weeks', 'u2': 'I’ve been saying that for days now.'}, {'u1': 'how can they just rule out the possibility that the guy got it from China just because he spent 14 days overseas when there are cases where the incubation period is much longer than that?', 'u2': 'I asked the same question.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23545,7 +23553,7 @@ u1: What a twat.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1253,17161053616661367108_714207499538314869,reddit,,en,,They don't raise any emotion from me. Which may be worse than hating them.,"I remember they were on a show with Jack Dee. Jack Dee said ""The only reason why people watch you is because it's the only time that two geordies are not having a punch up""","{'turns': [{'u1': ""u1: You know, I've seen them in interviews and I'm just underwhelmed. It's like they're not really there."", 'u2': 'Like a couple of zombies going through the motions?'}, {'u1': ""Exactly. It's like they're just going through the motions. Like they're trying to be funny but it just falls flat."", 'u2': ""But I suppose that's what makes them so 'popular'. People love to hate them, right?""}, {'u1': ""They don't raise any emotion from me. Which may be worse than hating them."", 'u2': 'I remember they were on a show with Jack Dee. Jack Dee said ""The only reason why people watch you is because it\'s the only time that two geordies are not having a punch up""'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23619,7 +23627,7 @@ u1: Who says that the allegations were false?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1257,14983940569076933341_4437152414422190425,reddit,,en,,This surely should be a variable electronic sign.,That would make so much sense.,"{'turns': [{'u1': 'I was thinking, we need to come up with a more innovative way to display the electronic signs on our street. Can you come up with some ideas?', 'u2': ""Hmmm, I'm not sure. What's the purpose of the signs?""}, {'u1': 'The signs are used to display important announcements and reminders to the public.', 'u2': 'I see. So, it would be great if the signs could display variable messages.'}, {'u1': 'This surely should be a variable electronic sign.', 'u2': 'That would make so much sense.'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24438,7 +24446,7 @@ u1: Craig James killed 5 hookers while he was at SMU.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1300,3227187144919316716_15600910953938106962,reddit,,en,,"Halifax once locked my card because ""Fraud Detection"" after I got the CVV2 number wrong 3 times while drunk.
 3 days later, they contact me to confirm if it was me or not....","The only time the Barclays fraud department ever contacted me, it actually *was* a fraud--someone had used my card to buy a plane flight to somewhere. I have my suspicions to this day who did it, but I have no proof, so nothing much to be done. Had to destroy my card and get a replacement, of course.","{'turns': [{'u1': 'what do you guys do when you have a credit card that gets locked by your bank due to some reason?', 'u2': 'that happened to me once with Lloyds. I called their customer service and they told me I had to call the fraud department, which I did. They asked me some questions, took some details, and eventually unlocked the card.'}, {'u1': ""I've had a similar experience. When my Halifax card was locked they wanted me to confirm my identity but it took ages and I ended up getting frustrated."", 'u2': ""I can imagine. It's always stressful when something like that happens. But at least it's good that the bank is looking out for you.""}, {'u1': 'Halifax once locked my card because ""Fraud Detection"" after I got the CVV2 number wrong 3 times while drunk. 3 days later, they contact me to confirm if it was me or not....', 'u2': 'The only time the Barclays fraud department ever contacted me, it actually *was* a fraud--someone had used my card to buy a plane flight to somewhere. I have my suspicions to this day who did it, but I have no proof, so nothing much to be done. Had to destroy my card and get a replacement, of course.'}]}",0,0.0,,,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -24583,7 +24591,7 @@ u1: I have never seen or heard such hypocrisy before. They can fly illegal immig
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1308,5281627314722925169_1667111906462633003,twitter,,en,,"There was no foul there… surely? ?
 #MCYvWUN",Pathetic officiating already?,"{'turns': [{'u1': ""Really enjoying this game so far, WUN's defense is looking sharp!"", 'u2': ""I'm starting to get worried, their goalkeeper has already spilled two crosses.""}, {'u1': ""Come on, WUN, you've got this! The crowd is with you!"", 'u2': 'But the refs are totally missing the obvious fouls. We need a break to turn this around!'}, {'u1': 'There was no foul there… surely? ? #MCYvWUN', 'u2': 'Pathetic officiating already?'}]}",0,1.0,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
@@ -25129,8 +25137,7 @@ u1: Migrate if you want to but just know that you're merely running away from th
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>","<ANSWER>1</ANSWER><textit{Self-Correction/Reasoning (Gen Y Perspective):}
-The conversation has escalated into a highly",1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1337,3873605539148898670_5762464446724700383,twitter,,en,,"Some questions for everyone?
 
 Why did you start coaching?
@@ -25192,7 +25199,7 @@ u1: Someone just told me they spent 7K on a gaming PC ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1340,15529318947246325779_16714018150522397745,twitter,,en,,"Would it be a good idea to require would-be drivers to do a few months of cycling, before they were given driving licences?",Only on bendy country roads without a hard shoulder.,"{'turns': [{'u1': ""Have you noticed how everyone's a pro on a bike by the time they're 8?"", 'u2': ""Yeah, probably, but what's your point?""}, {'u1': ""I just think that if you're used to thinking about your road position, reading the road, anticipating, reacting quickly... all those skills would transfer to driving!"", 'u2': ""Mmm, I'm not sure. Wouldn't that make driving even more stressful?""}, {'u1': 'Would it be a good idea to require would-be drivers to do a few months of cycling, before they were given driving licences?', 'u2': 'Only on bendy country roads without a hard shoulder.'}]}",1,,1.0,,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25320,7 +25327,7 @@ u1: Is it true there's more panic buying in Chinese neighbourhoods?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1347,13722853652086248437_3510823851925630202,twitter,,en,,"LADZ! I just watched ‘House of Gucci,’ - I know you all loved it…. but lord! It is NOT good.",Haven’t seen it but out of curiosity I want to lol,"{'turns': [{'u1': 'I finally watched that House of Gucci movie you’ve all been raving about. Can’t wait to join the discussion!', 'u2': 'What’d you think?!'}, {'u1': 'I was really looking forward to it, but after watching, I gotta be honest, I wasn’t blown away.', 'u2': 'Hmm, really? I thought it was going to be your cup of tea!'}, {'u1': 'LADZ! I just watched ‘House of Gucci,’ - I know you all loved it…. but lord! It is NOT good.', 'u2': 'Haven’t seen it but out of curiosity I want to lol'}]}",0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25899,7 +25906,7 @@ u1: If stupidity doesn't get them first.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1378,3465381532217498070_6814498623306622366,reddit,,en,,I met my wife on tinder. We dated for 3 years and have been married for one year now.,Setting a good example. Congrats,"{'turns': [{'u1': 'My friends all told me tinder was a total waste of time, but I met an amazing girl!', 'u2': ""Tinder success stories always sound too good to be true Don't believe the hype""}, {'u1': ""I won't lie, I was skeptical at first, but then we started talking and I realized she's awesome!"", 'u2': 'Guess the haters were wrong, huh?'}, {'u1': 'I met my wife on tinder. We dated for 3 years and have been married for one year now.', 'u2': 'Setting a good example. Congrats'}]}",1,0.0,1.0,0.0,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen Y. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 

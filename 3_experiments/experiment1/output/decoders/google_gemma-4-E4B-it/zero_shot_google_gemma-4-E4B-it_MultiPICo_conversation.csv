@@ -32,7 +32,7 @@ u1: People from Melbourne scratching their head this summer
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 2,8038252535434962692_13117993283697288300,reddit,,en,,How the fuck has that anything to do with politics you nutjob. Not everything a politician does is related to their political life.,"How does the fuck does the minister for housings advisors husband being the Md of a company making millions out of the housing crisis anything to do with politics? 
 Do you really want me to have to explain that to you?","{'turns': [{'u1': ""What do you mean by that? I don't get what point you're trying to make."", 'u2': ""What are you saying, that it's irrelevant? Come on, let's be real here, a minister's advisor is connected to his government, that's basic political reality.""}, {'u1': ""I still don't see the connection. Can you give me a specific example of how their personal life affects their political decisions?"", 'u2': 'How can you be so blind to the obvious? When a politician has a personal stake in a matter, it influences their actions and decisions.'}, {'u1': 'How the fuck has that anything to do with politics you nutjob. Not everything a politician does is related to their political life.', 'u2': 'How does the fuck does the minister for housings advisors husband being the Md of a company making millions out of the housing crisis anything to do with politics? Do you really want me to have to explain that to you?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -123,7 +123,7 @@ u1: Why restrict it to men?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 7,5264001338341690222_16853732832687001991,reddit,,en,,"In fairness, a British van would be on the hard shoulder.",God bless British Leyland and all the plants on the hard shoulder their broken down vans watered,"{'turns': [{'u1': ""There are some really old cars still being driven in Britain. My friend's brother had a Ford Cortina"", 'u2': ""Oh man I had a friend whose dad had a Ford Escort. I remember seeing it with a 'P' plate""}, {'u1': ""A car's age shouldnt matter to us, its all about reliability now"", 'u2': 'True, but if they were reliable it would still be on the road'}, {'u1': 'In fairness, a British van would be on the hard shoulder.', 'u2': 'God bless British Leyland and all the plants on the hard shoulder their broken down vans watered'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -245,7 +245,7 @@ u1: I'd look at the guy dead serious "" I thought you were single! You told me I
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 14,16036615630954920977_17827404525954407851,reddit,,en,,Looks like yesterday's tweet was a gimmick,Its social media afterall. Everything is a gimmick,"{'turns': [{'u1': ""You guys might be reading too much into yesterday's post."", 'u2': ""Don't think so. It was pretty clear what was going on""}, {'u1': ""We're starting to feel like you're the ones reading too much. We said it was just for fun and now you're jumping all over us"", 'u2': ""Honestly, this is what happens when you post something that sparks so much discussion. We can't win!""}, {'u1': ""Looks like yesterday's tweet was a gimmick"", 'u2': 'Its social media afterall. Everything is a gimmick'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -347,7 +347,7 @@ u1: Saturday night ka mera 'sneak in the garden and light up a joint' routine ba
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 20,3459639331278258680_15446352731092329103,twitter,,en,,I really don't know...I mean I can't say anything about anyone is true until I meet him or her. People are way different in reality. So no conclusions ?,There is definitely truth in what you say,"{'turns': [{'u1': ""I've been saying this to myself lately, and I think it's really true. When I meet people in real life, I often realize that they're not at all how I imagined them."", 'u2': ""That's so true. I think it's because we often build people up in our heads before we meet them, and when we finally do, we're like, 'Oh, they're not that amazing.'""}, {'u1': ""But what if the opposite happens? What if I meet someone and they're even more amazing than I thought?"", 'u2': ""I guess that's possible. But I think it's rare. Usually, people are just as they seem.""}, {'u1': ""I really don't know...I mean I can't say anything about anyone is true until I meet him or her. People are way different in reality. So no conclusions ?"", 'u2': 'There is definitely truth in what you say'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -535,7 +535,7 @@ u1: People say this every year.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 31,8169157592541861786_9944412595497376857,twitter,,en,,"You're a good example, Father, but unfortunately people make things a lot more complicated than they need to around here.",Thank you for your mutual understanding. God bless you! I appreciate your support! I don’t know why people take my tweet out of context and accused me of being harsh &amp; rigid? I pray for all who read my tweet today for mutual understanding.,"{'turns': [{'u1': 'It is interesting to see people reacting differently to the same words.', 'u2': ""That's because we see the world from different perspectives, my friend. And the same applies to tweets as well.""}, {'u1': ""You bring up a good point, but don't you think that our interpretation of these words also depends on the context?"", 'u2': ""Context is indeed important, but sometimes people read what they want to read, rather than what's actually written.""}, {'u1': ""You're a good example, Father, but unfortunately people make things a lot more complicated than they need to around here."", 'u2': 'Thank you for your mutual understanding. God bless you! I appreciate your support! I don’t know why people take my tweet out of context and accused me of being harsh &amp; rigid? I pray for all who read my tweet today for mutual understanding.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -552,7 +552,7 @@ u1: You're a good example, Father, but unfortunately people make things a lot mo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 32,38034123590098350_15001348376067200924,reddit,,en,,"It will all be stale ina week too, but the shops will still be open...","You can freeze it and it’ll be fine. 
 I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.","{'turns': [{'u1': 'Just got back from the market and stocked up on some fresh bread.', 'u2': 'Ah, nice! What was the deal with the baker today?'}, {'u1': 'Not much. They had a few new varieties, but I went with the usual.', 'u2': ""Same here. There's nothing like a fresh loaf straight from the oven.""}, {'u1': 'It will all be stale ina week too, but the shops will still be open...', 'u2': 'You can freeze it and it’ll be fine. I always have 3/4 loafs of bread frozen, handy if you forget to pick some up or if something happens, like the snow. Unusual but handy a few times a year.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -604,7 +604,7 @@ u1: If I send a photo to your phone on Whatsapp, will you reply to me? ??
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 35,15555742103630016700_3166934879056674670,reddit,,en,,"Apologies for jumping in, and downvote it all, if you like. I’m not Irish, but seeing as this thing gets global: We have been through bird and swine flu, the pneumonia, and now this. Not to mention Ebola. And here we all are. It’s not like we have a plague on our hands and as far as I know it’s not the Middle Ages. I heart all the people who lost their loved ones. It is a great tragedy. But isn’t it getting a bit out of hand?","St Patrick's Day parade has been cancelled before due to foot and mouth, so it's not an overreaction to do the same this time. It's only sensible. Also regardless of how much you heart me, I don't want my parents to catch it.","{'turns': [{'u1': 'I just saw the announcement about cancelling the St. Patrick’s Day parade and I have mixed feelings about it.', 'u2': ""I get where you're coming from, but it's better safe than sorry. We don't know how this thing spreads yet.""}, {'u1': ""That's a fair point, but isn't it going to be a bit hard to justify cancelling all these events if it’s not a real threat?"", 'u2': ""It’s a precaution, which I think is a good thing. Would you rather take a chance with your family's health?""}, {'u1': 'Apologies for jumping in, and downvote it all, if you like. I’m not Irish, but seeing as this thing gets global: We have been through bird and swine flu, the pneumonia, and now this. Not to mention Ebola. And here we all are. It’s not like we have a plague on our hands and as far as I know it’s not the Middle Ages. I heart all the people who lost their loved ones. It is a great tragedy. But isn’t it getting a bit out of hand?', 'u2': ""St Patrick's Day parade has been cancelled before due to foot and mouth, so it's not an overreaction to do the same this time. It's only sensible. Also regardless of how much you heart me, I don't want my parents to catch it.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -737,7 +737,7 @@ u1: Bet you’re glad you can now do beer tweets ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 42,15071277880145251910_13408380671143228680,reddit,,en,,"Guys new and doesn’t know our first language is english, probably that.","Could be confusion over the EU Irish English thing ?
  URL","{'turns': [{'u1': ""Hi, hope you can understand what we're saying, I'm having a hard time with your accent"", 'u2': ""Sorry, I've been working in Australia for a while, I've got a bit of a drawl, but I understand most things fine""}, {'u1': ""That's fair, my friend from Scotland has a similar thing going on"", 'u2': ""Oh yeah, I've met people from the UK before, but this is the first time I've had to have a conversation with someone from the Emerald Isle""}, {'u1': 'Guys new and doesn’t know our first language is english, probably that.', 'u2': 'Could be confusion over the EU Irish English thing ? URL'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -755,7 +755,7 @@ u1: Guys new and doesn’t know our first language is english, probably that.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 43,9851470393699205883_1419956437314052893,twitter,,en,,Thanks so much Keith ???,Aways welcome  ?☘️,"{'turns': [{'u1': 'Looking forward to catching up with you at the party tonight!', 'u2': 'The party is going to be lit! See you soon!'}, {'u1': ""So stoked to hear that you're bringing your new guitar!"", 'u2': ""Yeah, can't wait to shred on it in front of everyone""}, {'u1': 'Thanks so much Keith ???', 'u2': 'Aways welcome ?☘️'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -809,7 +809,7 @@ u1: What does this mean? Can somebody ELI5 to somebody who has literally no idea
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 46,2403860982869378717_14616998667380279766,reddit,,en,,"Wasnt it said that the coronavirus wont survive in warm climates and that's why regions like Europe are under major threat and regions like Africa and India are relatively safe from a major outbreak ?
 Or was that another myth of COVID?
 Just googled it and this is the best answer I could find.Guardian
@@ -1023,7 +1023,7 @@ u1: One that have boobs
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 58,10402570674233780126_1496561720441567112,reddit,,en,,"I don’t get why the term living in your parent’s basement is an insult?
 I thought Indians took great pride in living together.
 Probably western culture focuses more on self dependence and living independently. That’s bizarre. Or marybe I’m an orthodox bigot","It's just difference of opinion. 
@@ -1044,7 +1044,7 @@ u1: I don’t get why the term living in your parent’s basement is an insult? 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 59,1229687636070514831_16942732757062839856,twitter,,en,,"Claims the US/West denied defense equipment to India seem unfair &amp; incomplete. All parties made choices. Price &amp; tech leakage were factors, as were political strategies. The USSR sought to foil Indian diversification to keep it on the hook &amp; Delhi sought to appease Moscow. A ?1/","Do u even realise how much the sanctions by West have hurt. Yes it was a choice India made to go to ussr for arms cause it was being denied by the biggest supplier us, who incidently was the one arming our neighbour. Not only weapons but also technology was denied.","{'turns': [{'u1': 'Is it right to criticize the West for its arms sales policies, considering the geopolitical implications involved?', 'u2': ""Well, I don't think anyone should criticize the West for its actions; they are the sole providers of advanced military technology.""}, {'u1': ""But don't you think that's a bit one-sided? The West has its own interests and motivations, just like any other player in this game."", 'u2': ""I think the West's interests are more aligned with the global good, but still, they should be more understanding of other nations' needs.""}, {'u1': 'Claims the US/West denied defense equipment to India seem unfair &amp; incomplete. All parties made choices. Price &amp; tech leakage were factors, as were political strategies. The USSR sought to foil Indian diversification to keep it on the hook &amp; Delhi sought to appease Moscow. A ?1/', 'u2': 'Do u even realise how much the sanctions by West have hurt. Yes it was a choice India made to go to ussr for arms cause it was being denied by the biggest supplier us, who incidently was the one arming our neighbour. Not only weapons but also technology was denied.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1167,7 +1167,7 @@ u1: How is nobody talking about how Brooke has not mentioned the apple when she 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 66,8341580511099362642_2570470670948048893,reddit,,en,,Mostly because the media paints it out to be worse than it is. The flu kills more yearly than corona. News services in particular are the worst for this. They want little more than views.,"The flu kills more people yearly than falling in to active volcanoes. 
 This doesn't make the flu more dangerous than active volcanoes.","{'turns': [{'u1': ""People don't want to believe that corona might not be as bad as everyone says it is."", 'u2': ""They're being fed the information through news outlets and government reports, of course.""}, {'u1': ""What if we're all being misled by our own fears and the sensationalized reports we see on TV and in the newspapers?"", 'u2': ""It's always about the ratings and clicks, isn't it?""}, {'u1': 'Mostly because the media paints it out to be worse than it is. The flu kills more yearly than corona. News services in particular are the worst for this. They want little more than views.', 'u2': ""The flu kills more people yearly than falling in to active volcanoes. This doesn't make the flu more dangerous than active volcanoes.""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1219,7 +1219,7 @@ u1: Hotspot from your phone. Immensely easier.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 69,9459378132739105751_6189015233069648972,reddit,,en,,Has it been any good this series I gave up when capaldi kept wearing sunglasses,It's been better  than it has for a while in my opinion.,"{'turns': [{'u1': ""I don't know what to think about this new season, the last few episodes felt really off, but then I saw that the lead actor had to deal with a lot of stuff in real life and it changed how I looked at it."", 'u2': 'Yeah, people can have bad days, but can that really excuse poor writing?'}, {'u1': ""I see what you mean about the writing, I remember when Capaldi first started and I was like who is this guy? And it took a few episodes to get used to. But I gave up because I just couldn't keep going after that."", 'u2': ""Well, Capaldi's run did have its moments, but I think that's where they lost their way. The Doctor was so much more interesting before that.""}, {'u1': 'Has it been any good this series I gave up when capaldi kept wearing sunglasses', 'u2': ""It's been better than it has for a while in my opinion.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1358,7 +1358,7 @@ u1: Ring joe on Monday, thats insane
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 77,17034604432508923781_3092643763447025099,twitter,,en,,Absolutely scandalous pricing and can't believe they even charge postage!,£5 delivery for standard shipping and a week delivery time ?‍?,"{'turns': [{'u1': 'really want to try out the new product from that brand.', 'u2': 'have you seen the price tag on that?!'}, {'u1': ""I know, I was thinking of buying it in-store instead, but I really don't have time."", 'u2': ""Yeah, I've had similar thoughts. The convenience is nice, but the delivery costs add up!""}, {'u1': ""Absolutely scandalous pricing and can't believe they even charge postage!"", 'u2': '£5 delivery for standard shipping and a week delivery time ?\u200d?'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1451,7 +1451,7 @@ u1: I just said this. Off mic dude be moving kinda funny but he out rapping ever
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 82,5318553108332810771_15657827414503236460,reddit,,en,,"How many jaffa cakes is it acceptable to eat in one sitting?
 The only correct answer is all of them.",And preferably a triple pack.,"{'turns': [{'u1': ""'Tis the season for cake!"", 'u2': 'I am so down for that. The more, the merrier!'}, {'u1': 'You and I both know that one can never have too many cakes.', 'u2': ""That's a bold statement, but I think you might be onto something.""}, {'u1': 'How many jaffa cakes is it acceptable to eat in one sitting? The only correct answer is all of them.', 'u2': 'And preferably a triple pack.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1506,7 +1506,7 @@ u1: There was no foul there… surely? ? #MCYvWUN
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 85,8405023344295198575_8165274770181503009,reddit,,en,,so were getting free drugs?,No you have to pay for charas ki chutney,"{'turns': [{'u1': 'hey whats going on with the event tonight?', 'u2': 'idk still waiting to hear back from the organizers about the headliner'}, {'u1': 'are there gonna be any freebies or perks with the ticket price?', 'u2': 'i heard there will be a ton of free food and drinks'}, {'u1': 'so were getting free drugs?', 'u2': 'No you have to pay for charas ki chutney'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1682,7 +1682,7 @@ u1: The RL bubble scene needs a little bit more than the one of the other esport
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 95,2588709198231409700_5054888054228236348,twitter,,en,,Could you please provide your address so we can follow up with the Environmental Health Team. Thank you,I have sent u a DM,"{'turns': [{'u1': ""Hi, we've received your report and are following up with you regarding the complaint."", 'u2': 'How can we expedite the process?'}, {'u1': 'Following up on our previous conversation, to what extent are the environmental issues a concern for you?', 'u2': ""It's quite serious. Our neighborhood is suffering greatly.""}, {'u1': 'Could you please provide your address so we can follow up with the Environmental Health Team. Thank you', 'u2': 'I have sent u a DM'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1716,7 +1716,7 @@ u1: What are you starting to like less and less the older you get?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 97,16017134084113034176_8159459641426529682,reddit,,en,,So close to 9ct,I kept dropping it on the scales hoping somehow it would tip over but it didn't :-(,"{'turns': [{'u1': ""I'm starting to get a little worried that it's going to be just shy of the mark again"", 'u2': 'Me too!'}, {'u1': ""Do you think the assayer would give us a partial 9ct certification if it's really close?"", 'u2': ""Hmm, not sure, I'd love to know!""}, {'u1': 'So close to 9ct', 'u2': ""I kept dropping it on the scales hoping somehow it would tip over but it didn't :-(""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1939,7 +1939,7 @@ u1: Once people think that everything is created by God, thinking stops. Whateve
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 110,5549029519629101762_16361013864162034503,reddit,,en,,">""What's not to like? Custard, good. Jam, good. Beef, GOOD!""",>It tastes like feet!,"{'turns': [{'u1': ""Love it! It's the perfect comfort food for a chilly evening."", 'u2': ""Are you kidding me? I thought you'd know better.""}, {'u1': ""The pastry is flaky and the beef is so tender, what's not to like?"", 'u2': ""I'm not sure... but this tastes seriously weird.""}, {'u1': '>""What\'s not to like? Custard, good. Jam, good. Beef, GOOD!""', 'u2': '>It tastes like feet!'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1956,7 +1956,7 @@ u1: >""What's not to like? Custard, good. Jam, good. Beef, GOOD!""
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 111,7657791920967658251_3074328207310206253,reddit,,en,,"Why pay when NATO and the UK do it for free, eh?",defending from who exactly ? The Uk has been the only threst to us,"{'turns': [{'u1': 'Do people know that some countries get to enjoy defense from NATO and the UK at no extra cost?', 'u2': 'We get to pay for all our defense'}, {'u1': ""That's crazy to me. Do you think that's fair?"", 'u2': ""no i think it's bs we pay while they have free protection""}, {'u1': 'Why pay when NATO and the UK do it for free, eh?', 'u2': 'defending from who exactly ? The Uk has been the only threst to us'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1973,7 +1973,7 @@ u1: Why pay when NATO and the UK do it for free, eh?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 112,15158614624867011352_16141362918612454746,twitter,,en,,Seems to me that dry cleaning (women’s blouse v men’s shirt) is consistently more expensive and you can’t just decide to opt out and still have it cleaned. Is that not accurate that women are charged more? (Probably shoulda taken Ec10),Dry cleaned vs laundry. Men's shirts with different buttons are also charged more than standard ahirt laundry.,"{'turns': [{'u1': ""I noticed that my dry cleaning bill is always way higher than expected. Is this just normal or is it possible there's something fishy going on?"", 'u2': ""Yeah, I've had that experience too. What do you think is the reason behind it?""}, {'u1': ""Hmm, I'm not sure... Maybe it's because they charge more for certain fabrics or something?"", 'u2': ""That's a good point. Maybe it has to do with the type of clothing or the cleaning process?""}, {'u1': 'Seems to me that dry cleaning (women’s blouse v men’s shirt) is consistently more expensive and you can’t just decide to opt out and still have it cleaned. Is that not accurate that women are charged more? (Probably shoulda taken Ec10)', 'u2': ""Dry cleaned vs laundry. Men's shirts with different buttons are also charged more than standard ahirt laundry.""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -2024,7 +2024,7 @@ u1: If I’ve read the press notes correctly doesn’t he get free coffee for a 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 115,8478316484841357306_7070275979207078831,reddit,,en,,I live in a hostel and I am really pissed about using a common bathroom.,I can understand ? proper and regular cleaning of bathroom should be their priority.,"{'turns': [{'u1': ""That's one of the downsides of staying in a hostel."", 'u2': ""You're right, living in a hostel has its pros and cons.""}, {'u1': 'But the common bathroom situation is really annoying.', 'u2': 'I can see why that would be frustrating.'}, {'u1': 'I live in a hostel and I am really pissed about using a common bathroom.', 'u2': 'I can understand ? proper and regular cleaning of bathroom should be their priority.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -2131,7 +2131,7 @@ u1: But does Janice work there?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 121,14414048990837088696_5694833559517307771,reddit,,en,,">the Commonwealth was trying to provide the manifest ""as urgently as they possibly can""
 What the actual fuck?  Manifests are compiled and submitted by airlines by law.  The Commonwealth government is not able to get a copy of a few pages done quickly?  And the Commonwealth is only today thinking about a process to deal with this request?  God we're so stupid.","I know, this is totally unacceptable considering how hard Peter Dutton touts national security.","{'turns': [{'u1': 'What a joke. The Commonwealth is playing dumb about the passenger manifest. Airlines are responsible for submitting this stuff, not them.', 'u2': ""I'm starting to think they're just not taking this seriously enough.""}, {'u1': ""But wait, it gets better. They're still figuring out a process for responding to these requests. Because, you know, bureaucratic red tape."", 'u2': ""I mean, how hard can it be to provide a few pages of a passenger manifest? It's not like it's a complex national security document.""}, {'u1': '>the Commonwealth was trying to provide the manifest ""as urgently as they possibly can"" What the actual fuck? Manifests are compiled and submitted by airlines by law. The Commonwealth government is not able to get a copy of a few pages done quickly? And the Commonwealth is only today thinking about a process to deal with this request? God we\'re so stupid.', 'u2': 'I know, this is totally unacceptable considering how hard Peter Dutton touts national security.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2191,7 +2191,7 @@ u1: Absolutely not but cute. ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 124,13590865472498601972_16617049933102144908,reddit,,en,,"Anyone who knows his bloody past would know how much of a statesman he is. It is highly unlikely that the countries around the world, with all the intelligence capabilities they have, aren't aware of Modi's past. All of them just Ignore everything, because India is a big country that imports a lot and would buy stuff from them. They will continue to look the other way, till we continue to buy stuff from them. The day we stop paying them to buy stuff, we will see many of them suddenly become concerned about the situation in India and will talk about re-establishing democracy..",Very accurate,"{'turns': [{'u1': ""Let's talk about what makes a statesman. The ability to serve the people, to put the nation first, to maintain integrity and character throughout one's career. Can we really say that someone who has been accused of such severe misconduct has ever put the nation first?"", 'u2': ""That's a good point""}, {'u1': ""India's economic power is undeniable. We have become a major player on the world stage. But with that power comes a certain amount of moral obligation. Don't you think it's time we start holding our leaders accountable for their actions, rather than just looking the other way and accepting empty promises?"", 'u2': 'Many people feel the same way'}, {'u1': ""Anyone who knows his bloody past would know how much of a statesman he is. It is highly unlikely that the countries around the world, with all the intelligence capabilities they have, aren't aware of Modi's past. All of them just Ignore everything, because India is a big country that imports a lot and would buy stuff from them. They will continue to look the other way, till we continue to buy stuff from them. The day we stop paying them to buy stuff, we will see many of them suddenly become concerned about the situation in India and will talk about re-establishing democracy.."", 'u2': 'Very accurate'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -2562,7 +2562,7 @@ u1: Been wondering about this as well. I am skeptical about any explanation that
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 145,15728962677567150864_1978735801133020569,reddit,,en,,"Phantom cosmonauts/astronauts
 There is no way no one died in space, burned up on reentry, or drifted off course and couldn't get back to Earth in the early days of the Space Race.",Many many years ago someone said they had picked up a recording of a cosmonaut saying his craft had missed its trajectory and he was headed away from earth by mistake..knew he would die....,"{'turns': [{'u1': ""What a wild conspiracy theory - that cosmonauts were basically just sacrificial lambs to the Space Race? I don't know what's crazier, the fact that someone would even suggest this or the possibility that it could be true."", 'u2': ""Oh, I think it's more believable than you think! We've had astronauts on the moon and returned safely, but what about all the early missions? All those brave cosmonauts... do we really know what happened to them all?""}, {'u1': ""I guess we don't know the whole story about the early space program, but I think it's safe to say we had the technology and resources to bring those cosmonauts back. It's not like we were just flying blind up there."", 'u2': ""That's easy to say now, but think about it... what if they really did suffer some kind of catastrophic failure? What if they were sent to their deaths, and the Soviet government just covered it up to save face?""}, {'u1': ""Phantom cosmonauts/astronauts There is no way no one died in space, burned up on reentry, or drifted off course and couldn't get back to Earth in the early days of the Space Race."", 'u2': 'Many many years ago someone said they had picked up a recording of a cosmonaut saying his craft had missed its trajectory and he was headed away from earth by mistake..knew he would die....'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2632,7 +2632,7 @@ u1: Rumours are the Unite Birmingham hotel is fully booked with Tory’s for con
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 149,18063039827843597144_10335239238560533529,reddit,,en,,"It's almost like all the evidence that the incubation period can be greater than 2 weeks might actually be....true?
 But of course that means nothing compared with the greed of the universities for $$$$$$$$$$$$$.",Or they were staying with someone in Dubai who infected them with the virus just before they returned to Australia.,"{'turns': [{'u1': ""I'm starting to think that we've been misled about the virus's incubation period. Maybe the truth is more complex than we thought."", 'u2': ""How can we be sure what's true or false when all the information is coming from biased sources?""}, {'u1': ""It's hard to trust the system when it's clear that some people are more interested in profiting from the pandemic than in finding real solutions."", 'u2': ""That's a good point. Maybe we should focus on alternative explanations and theories.""}, {'u1': ""It's almost like all the evidence that the incubation period can be greater than 2 weeks might actually be....true? But of course that means nothing compared with the greed of the universities for $$$$$$$$$$$$$."", 'u2': 'Or they were staying with someone in Dubai who infected them with the virus just before they returned to Australia.'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2755,7 +2755,7 @@ u1: If you could “Delete” anything from your past, what would it be?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 156,15358862275439479408_5695710449275012008,reddit,,en,,"Like why? We get it, coronavirus is serious, but you don't need like 20 packets of toilet rolls??",Wechat + 3x mark up?,"{'turns': [{'u1': ""You're still buying online? That's a bit over the top, aren't you?"", 'u2': ""Because I'm in isolation, online shopping is the safest option for me, okay?""}, {'u1': ""How come you're in isolation if you don't have symptoms?"", 'u2': ""I had contact with someone who tested positive, so I'm taking precautions""}, {'u1': ""Like why? We get it, coronavirus is serious, but you don't need like 20 packets of toilet rolls??"", 'u2': 'Wechat + 3x mark up?'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -2808,7 +2808,7 @@ u1: A new one for you; the Chinese government are responsible for the implementa
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 159,4028817498248554682_9732754269256188974,reddit,,en,,Get his number and report him to the police.   URL,"Hits xilog over the head with a frying pan
 ""It's the only thing for a grass""","{'turns': [{'u1': ""I'm getting worried that you're going to do something stupid and put yourself in danger. You're being really reckless with your actions."", 'u2': ""Yeah, I've had enough of this town. It's all corrupt and full of crooks.""}, {'u1': ""Corrupt or not, this is no reason to take matters into your own hands. You're going to get yourself killed!"", 'u2': ""Killed? You're the one who's going to end up dead if you don't back off, pal.""}, {'u1': 'Get his number and report him to the police. URL', 'u2': 'Hits xilog over the head with a frying pan ""It\'s the only thing for a grass""'}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2877,7 +2877,7 @@ u1: I would never have guessed such a beautiful shot could have been taken withi
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 163,12896957496126345891_1555044667406931030,twitter,,en,,You have used which app?,There are many available on Google playstore...it is Timestamp camera,"{'turns': [{'u1': '""Have you tried any of those new apps with augmented reality?', 'u2': 'A few of them, why do you ask?'}, {'u1': ""What's been your experience with AR so far?"", 'u2': ""Honestly, a bit frustrating, couldn't get the hang of it""}, {'u1': 'You have used which app?', 'u2': 'There are many available on Google playstore...it is Timestamp camera'}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -3191,7 +3191,7 @@ u1: Legit question: if shit does hit the fan, can Muslim countries refuse to sel
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 180,9650025117159137641_3015514439956196914,twitter,,en,,"I've said this many times on the pod, but losing Sasha Banks is losing someone who can legitimately be a crossover star. Big fail on WWE for that",She's close with snoop can aew afford her,"{'turns': [{'u1': ""I'm still not convinced that WWE is doing everything they can to keep their top talent. Maybe they should take a page from AEW."", 'u2': 'sasha banks is the queen of the ring. how can wwe let her go'}, {'u1': 'If Sasha Banks were to jump to AEW, it would be a huge win for them in terms of drawing power.', 'u2': ""she's already a star, but how much would she be worth to aew?""}, {'u1': ""I've said this many times on the pod, but losing Sasha Banks is losing someone who can legitimately be a crossover star. Big fail on WWE for that"", 'u2': ""She's close with snoop can aew afford her""}]}",1,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -3242,7 +3242,7 @@ u1: With the amount of money that has been donated, it's impossible that a cure 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 183,2325292025323751804_17292965808451226419,reddit,,en,,What about those other things that Hindis did do?,"Real life is not a game. You kill someone in red team, Red team kills someone in blue team. Revenge match is only better in game. More than the Red & Blue, people need to think that both are people with family, kids. Only thing different is the team.
 Stop forming group for stupid things. Modi group, Congress group, Everyone is forming fucking cults. You don't vote people to support the cult. You vote to ensure everyone gets to live without any fights.
 DeleteReligion","{'turns': [{'u1': 'It seems you are still confused with the different political ideologies. Do you know what actually is a democracy and what are its principles?', 'u2': ""Do you even know the history of our country? Just like people have different opinions about everything else, so do they about the political parties. What's your problem?""}, {'u1': ""It's not about having different opinions, but about following the principles of democracy. Have you heard about secularism and the separation of religion and state?"", 'u2': ""You are still stuck on this point? Listen, the way people are behaving in this country, it's more like a game than a real life. They're forming groups, taking sides, and fighting over petty issues. That's not what our democracy is about.""}, {'u1': 'What about those other things that Hindis did do?', 'u2': ""Real life is not a game. You kill someone in red team, Red team kills someone in blue team. Revenge match is only better in game. More than the Red & Blue, people need to think that both are people with family, kids. Only thing different is the team. Stop forming group for stupid things. Modi group, Congress group, Everyone is forming fucking cults. You don't vote people to support the cult. You vote to ensure everyone gets to live without any fights. DeleteReligion""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
@@ -3261,7 +3261,7 @@ u1: What about those other things that Hindis did do?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 184,535105906830484510_5401858940598918256,reddit,,en,,Craig James killed 5 hookers while he was at SMU.,What's SMU and who's Craig James?,"{'turns': [{'u1': 'Did you guys hear about the new scandal involving a former SMU coach?', 'u2': 'What former SMU coach?'}, {'u1': 'Some football player who got caught up in a weird scandal!', 'u2': 'Wait, what kind of scandal?'}, {'u1': 'Craig James killed 5 hookers while he was at SMU.', 'u2': ""What's SMU and who's Craig James?""}]}",0,dataset_ground_truth,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.

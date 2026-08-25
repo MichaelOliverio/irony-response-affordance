@@ -66,7 +66,7 @@ u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",1,,1,0,[]
 5,11234414428990216662_12950867292170150292,reddit,,en,,"I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.",Bunnings snags are bulk-bought tubes of garbage.,"{'turns': [{'u1': ""I had a weird thought the other day. What if we could find a veggie sausage that's just as good as the Bunnings ones? Crazy, right?"", 'u2': ""What's wrong with Bunnings snags? They're great as is.""}, {'u1': ""I dunno, I just think maybe there's something better out there. Like a hidden gem that only us foodies know about."", 'u2': 'Doubt it. The only thing better than a Bunnings snag is two Bunnings snags.'}, {'u1': 'I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.', 'u2': 'Bunnings snags are bulk-bought tubes of garbage.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -92,7 +92,7 @@ u1: Dyson is amazing! You can also look at Berkinstock as well?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 7,12518252026964060539_12826115392138578393,reddit,,en,,He may have a point.  Does it feature child abuse?,"Well, no, but also, yes
 Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who's a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he's known for his very erotic art. Turns out ES is actually... his little [step] sister (who's like 12), who he hasn't seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety
 Its in the same universe as My Little Sister Can't Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.","{'turns': [{'u1': 'Has he talked about shows that make him uncomfortable?', 'u2': 'Yeah, a few actually. He thinks the worst one is Eromanga Sensei.'}, {'u1': ""Why's that?"", 'u2': ""Apparently it's super weird and kinda... disturbing, but also kinda cute?""}, {'u1': 'He may have a point. Does it feature child abuse?', 'u2': 'Well, no, but also, yes Eromanga Sensei (the series this guy was most disgusted by) is a weird show though. Its casually pedophillic, but its also mostly just cute as heck. Its about an extremely prolific light novel author who\'s a teenager (for some reason in this universe, basically every successful author ever is a teenager), who writes under a pseudonym and gets his books illustrated by an artist he only knows through the internet called Eromanga Sensei. ES is assumed to be an adult dude, because he\'s known for his very erotic art. Turns out ES is actually... his little [step] sister (who\'s like 12), who he hasn\'t seen in over a year despite living in the same house because after their parents died she refused to come out of her room. And, other than the main siscon thing, its about her slowly coming out and becoming almost socially functional. If you can ignore the sex jokes and the marriage proposal and that the girl molests a few other people for ""artistic reference"", you can almost treat it like a totally wholesome show about social anxiety Its in the same universe as My Little Sister Can\'t Be This Cute (clearly the author of these has a type...), though in that show the sister is a lot, eh, bossier.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -121,7 +121,7 @@ u1: Thank you guys for making me feel so welcome. And being so helpful! This is 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 9,12701030242307294590_13873363278082368642,reddit,,en,,"In Oz we call crisps, chips and chips, hot chips. Hard habit to break.",But crisps aren’t hot.,"{'turns': [{'u1': 'We\'re having a dinner party tonight and I was thinking we could serve some Aussie snacks. I think the term is ""chips"". Is that right?', 'u2': 'Huh? I\'m pretty sure we call them ""crisps"".'}, {'u1': 'Really? I\'m not sure. I\'ve never lived anywhere else besides Australia. What do you mean ""crisps""?', 'u2': 'It\'s a term from the UK. We also call them ""chips"" but in different contexts. It\'s confusing, I know.'}, {'u1': 'In Oz we call crisps, chips and chips, hot chips. Hard habit to break.', 'u2': 'But crisps aren’t hot.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -233,7 +233,7 @@ u1: I think they are trying to keep this thing in the news until Bihar elections
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 17,1391172399908503032_10070870326222354663,reddit,,en,,"Imagine sticking a tooth pick underneath your big toenail and then kicking a wall
 Or imagine getting paper cuts in the webbing of all fingers",No. Imagine.... baby shark doo doo doodoo,"{'turns': [{'u1': ""Ugh, do you get that one pain that doesn't quite go away no matter how much you shift around?"", 'u2': ""What's going on?""}, {'u1': 'Ugh, the ones you get in the nail bed. That one spot that throbs and throbs. You know those ones?', 'u2': 'Eww, yeah...'}, {'u1': 'Imagine sticking a tooth pick underneath your big toenail and then kicking a wall Or imagine getting paper cuts in the webbing of all fingers', 'u2': 'No. Imagine.... baby shark doo doo doodoo'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -313,7 +313,7 @@ u1: Chuck them over here for a taste test</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 23,14502610576710298112_14095055713402977530,reddit,,en,,"The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases.  It's probably locked away guarded by heavily armed guards.  Imagine how much money the medical world would lose when an easily accessible cure is put on the market.","Cancer generally happens later in life.  You can charge FAR more for a cure than for a treatment.  Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.","{'turns': [{'u1': ""I've been reading this amazing stuff about researchers working on gene editing and I've been wondering, what if we could use this tech to just 'cure' cancer? Like, permanently."", 'u2': ""Ha, I highly doubt the 'powers that be' would ever let that happen. Think about all the industries that would tank if cancer just went away.""}, {'u1': ""If you're right and there are some shady interests behind the medical world, would they really keep it a secret for long? I mean, some scientists or medical professionals must be curious enough to start spreading the word."", 'u2': ""Maybe. But they'd be either blackmailed or silenced. I've seen some pretty wild stuff happen when it comes to powerful people getting in the way of big money.""}, {'u1': ""The theory that there's a cure for cancer out there somewhere. Not a developmental one, but one that has a high success rate, like vaccines for various diseases. It's probably locked away guarded by heavily armed guards. Imagine how much money the medical world would lose when an easily accessible cure is put on the market."", 'u2': 'Cancer generally happens later in life. You can charge FAR more for a cure than for a treatment. Make them pay for a cure, and the next round of people will be aging into cancer soon so that you can sell THEM the cure too...the market is endless, people are temporary.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -410,7 +410,7 @@ u1: Sore throat and fever full family ?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 30,1585847090319967408_18127032344945120201,reddit,,en,,Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up,But someone did already...?,"{'turns': [{'u1': 'I was talking to a coworker about the lockdown and they mentioned something about 5G', 'u2': ""That's not surprising, 5G has been in the news lately""}, {'u1': ""Apparently they think it's linked to the virus somehow"", 'u2': ""I've heard people mention that too, but it seems like a pretty baseless claim to me""}, {'u1': ""Fully seriously got sent a video yesterday that said the virus is caused by the 5G rollout and spread via WiFi. You couldn't make it up"", 'u2': 'But someone did already...?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -438,7 +438,7 @@ What?</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 32,1624580175472901311_5705924890865632006,reddit,,en,,Did no-one tell the Laois folk there was supposed to be more than just the name?,"Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!","{'turns': [{'u1': ""What's all this then? Laois is getting a monument? Haven't we more pressing things to worry about? We're going to be known for something that's going to be the size of a bus!"", 'u2': ""It's about time! I'm not saying it has to be huge, but at least make it worth our while. Remember that statue in Cork? The one with the big ball on top? Now that's what I call a monument!""}, {'u1': ""But isn't it about quality over quantity? The name is nice, I suppose, but is that really enough? We want something that will make people stop and stare, not just drive by and think, 'Ah, it's just Laois'."", 'u2': ""Quality over quantity? That's just something the historians and the artsy-fartsy crowd would say. I say, what about something grand, something that says, 'We're Cork, hear us roar!'?""}, {'u1': 'Did no-one tell the Laois folk there was supposed to be more than just the name?', 'u2': ""Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!""}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -556,7 +556,7 @@ u1: YAY! This makes me so happy ❤️</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 40,16943694019747210588_17483232605586372038,twitter,,en,,"Why do we only rest in peace?
  why don't we live in peace too ?
 ?",Good ?,"{'turns': [{'u1': 'What if our minds were a battlefield? Would we find peace in our hearts too?', 'u2': 'What are you talking about?'}, {'u1': 'Think about it. Every war started with words, with arguments, with our opinions.', 'u2': 'You sound quite upset today.'}, {'u1': ""Why do we only rest in peace? why don't we live in peace too ? ?"", 'u2': 'Good ?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -573,7 +573,7 @@ u1: Why do we only rest in peace?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",1,,1,0,[]
 41,1733076514145292669_2994333683564165454,reddit,,en,,"I know everyone is saying don't give into the fearmongering by the media, but if you ask me it's pretty sensible to stay the fuck outta Dublin rn. The only two cases are there, and tho they've been ""contained"" there could be more, especially if they've only tested 392 people. It'll obviously get worse as the weeks go by, Paddy's day will be a melting pot for spreading it even further. It's not looking positive lads.
 Fucking hell it's only March, can 2020 just fuck off?",">  don't give into the fearmongering 
 >but if you ask me it's pretty sensible to stay the fuck outta Dublin rn
@@ -680,7 +680,7 @@ u1: Pagliuca didn't suspect a thing... Ronnie Whelans shin is a poor relation.</
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 48,2172729134312177266_15802185063629380999,twitter,,en,,yes you are. ???,You are going to lose your crush?,"{'turns': [{'u1': 'Youre getting pretty bold out here. What do you have to say for yourself?', 'u2': 'Is this about what happened at the party over the weekend?'}, {'u1': 'I dont think anyone thought youd have the guts to text her yourself. She said no, btw.', 'u2': 'I swear I had nothing to do with it. Youre freaking out over nothing.'}, {'u1': 'yes you are. ???', 'u2': 'You are going to lose your crush?'}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -757,7 +757,7 @@ u1: If you could pick your FAVOURITE thing from ANY #SQLBits event, what would y
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 53,3039945136729552914_3658013811211409339,reddit,,en,,So finally the stupid have outnumbered the sane,"Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail","{'turns': [{'u1': ""I see what's happening in my town, all these uneducated people getting brainwashed by the media."", 'u2': ""The uneducated are usually the first to get their information from sensationalized news. Can't blame them for being misinformed""}, {'u1': ""Exactly! The way the news portrays things is always so biased. It's no wonder they get caught up in all this fake narrative."", 'u2': ""News outlets just serve as a propaganda machine nowadays. That's what's so frustrating about our world today""}, {'u1': 'So finally the stupid have outnumbered the sane', 'u2': 'Haha, stupids have always outnumbered the sane. One of the reasons why democracies fail'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -890,7 +890,7 @@ u1: Jump street 21</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 63,5228608070889845790_3437472600991932343,twitter,,en,,Would you rather see Alex Jones bankrupt or in jail?,So hard to choose…….let’s do both!,"{'turns': [{'u1': '""I\'m so frustrated with Alex Jones and his misinformation. It\'s time someone held him accountable!', 'u2': ""Honestly, I've lost track of what he's been saying lately. He's just a spectacle to me.""}, {'u1': ""I think it's interesting that his followers still support him despite all the evidence against him. Do you think they're just that brainwashed or what?"", 'u2': ""That's a good question. I think some of them really believe what he's saying, but others are just in it for the drama.""}, {'u1': 'Would you rather see Alex Jones bankrupt or in jail?', 'u2': 'So hard to choose…….let’s do both!'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -917,7 +917,7 @@ u1: Didn’t know we had mountains named after rashers!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 65,5401568270236027876_7394103012939129894,reddit,,en,,There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?,Yes.  They have the meats.,"{'turns': [{'u1': ""That reminds me, have you tried any new restaurants lately? I'm getting a little tired of the same old places."", 'u2': 'Arby’s actually! I went there last week. It was pretty meh.'}, {'u1': 'Yeah, that’s kind of what I was thinking... they don’t seem to be doing anything right. Do you think people just love the roast beef?', 'u2': 'Hmm, maybe? But I think there are some other factors at play here...'}, {'u1': 'There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?', 'u2': 'Yes. They have the meats.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -984,7 +984,7 @@ We must take back our streets!</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 69,5900538012500337839_10194397940853410924,reddit,,en,,What an absolute load of garbage. I read those books as a kid. They were great. Not even close,The most disappointing trailer since... well... cant remember the last time I was so disappointed,"{'turns': [{'u1': ""I saw the trailer and I'm extremely disappointed. I was hyped for this movie."", 'u2': ""I know, right? It looks like a complete cash grab. They've ruined it for me.""}, {'u1': ""I've read the books that the movie is based on. The authors did a much better job. I remember the story being so well-written."", 'u2': ""I haven't read the books, but I can tell you that the movie doesn't seem to do the books justice. It looks like they're trying to appeal to a younger audience.""}, {'u1': 'What an absolute load of garbage. I read those books as a kid. They were great. Not even close', 'u2': 'The most disappointing trailer since... well... cant remember the last time I was so disappointed'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1025,7 +1025,7 @@ u1: Where can I find them</CONTEXT>
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 72,6819006717190778124_10270205743788679897,reddit,,en,,"Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star Wars prequels, but George Lucas screwed up the directing and then chickened out after seeing the public reception of the character.
 See also r/darthjarjar",Oh the possibilities. I loved jar jar.,"{'turns': [{'u1': ""I'm reading the Star Wars wiki right now and it's insane how many ideas and concepts got scrapped during the prequels. I'm pretty sure I know why Anakin's fall was watered down."", 'u2': ""Interesting. I was wondering if he just wasn't given enough to do.""}, {'u1': ""It's possible that Anakin just wasn't the right fit for a fall like that. Lucasfilm's track record with strong villains is pretty spotty, and it seems like they always try to redeem them in the end."", 'u2': ""I'm not so sure. It feels like they just wanted to make a kid's movie with a cool spaceship and forgot to actually make a compelling story.""}, {'u1': 'Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star Wars prequels, but George Lucas screwed up the directing and then chickened out after seeing the public reception of the character. See also r/darthjarjar', 'u2': 'Oh the possibilities. I loved jar jar.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1083,7 +1083,7 @@ D. 16MP
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 75,8095750965635916790_13386441966722862550,reddit,,en,,Any Sam Smith's. 1970s beer and 1990s prices.,It's a shame the beer is mostly awful.,"{'turns': [{'u1': ""Can't wait for the new Sam Smith's pub to open near me. It's supposed to have an amazing selection of craft beers and comfy seating areas. I heard they're having a soft opening soon."", 'u2': ""Just saw the ads, too! I'm super stoked about it. I've been hearing rave reviews about their beer list and cozy vibe.""}, {'u1': ""Hoping it'll be more reasonably priced than the overpriced places downtown. Ugh, I'm still bitter about how expensive beer is downtown."", 'u2': ""I totally get it! I've been meaning to check out some of the smaller breweries that pop up in the area. Maybe they'll offer better prices and a more authentic experience?""}, {'u1': ""Any Sam Smith's. 1970s beer and 1990s prices."", 'u2': ""It's a shame the beer is mostly awful.""}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.
@@ -1150,7 +1150,7 @@ u1: Been having them for weeks now, thought it was stress or weather related. An
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 80,9257685538188465174_10141672000707831773,reddit,,en,,"Philadelphia is where it's at, we're gay af",Baltimore too. Come on over and be gay with us.,"{'turns': [{'u1': ""I'm finally free to explore this city and all its gay bars with my boo!"", 'u2': ""OMG, that's amazing! We've been trying to get you to come out to our side of the Chesapeake Bay for ages!""}, {'u1': ""Philadelphia is the perfect place for a queer celebration, don't you think?"", 'u2': ""Totally agree, but Baltimore has a certain charm and vibe that's just as fabulous.""}, {'u1': ""Philadelphia is where it's at, we're gay af"", 'u2': 'Baltimore too. Come on over and be gay with us.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of a message from u1 on social media, to which u2 has to respond.

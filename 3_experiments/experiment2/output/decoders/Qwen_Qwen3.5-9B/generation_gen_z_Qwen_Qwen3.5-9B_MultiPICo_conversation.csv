@@ -76,7 +76,7 @@ u1: Wasnt it said that the coronavirus wont survive in warm climates and that's 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 4,7969054175495174515_5569884978137145247,twitter,,en,,Most of people judge the book by its cover,Hell yeah,"{'turns': [{'u1': 'Have you ever had to give a first impression in a job interview or on a first date?', 'u2': ""So you're saying that's all about looks, huh?""}, {'u1': ""Well, it's not just about looks, but people do make judgments based on appearance."", 'u2': ""I never thought about it that way, but it's so true""}, {'u1': 'Most of people judge the book by its cover', 'u2': 'Hell yeah'}]}",0,1.0,0.0,0.0,0.0,1.0,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -699,7 +699,7 @@ u1: Good Morning ❤️
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 37,7054326581023956460_7983414964818274544,reddit,,en,,"Well, the courts shouldn't be asked to do the duty of the executive.","Courts can, and have, interfered when the executive does not do its duty. 
 The SC has always been super strong and activist when it was the UPA in power. As it should be.
 Bobde has other plans I guess.","{'turns': [{'u1': 'What do you think of the current state of our democracy?', 'u2': ""It's a mess, but the courts are doing their best to hold the executive in check.""}, {'u1': ""But that's not their job, is it?"", 'u2': ""Not in theory, but we've had examples of them stepping in when the executive has failed to uphold the law.""}, {'u1': ""Well, the courts shouldn't be asked to do the duty of the executive."", 'u2': 'Courts can, and have, interfered when the executive does not do its duty. The SC has always been super strong and activist when it was the UPA in power. As it should be. Bobde has other plans I guess.'}]}",0,0.0,0.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
@@ -1012,7 +1012,7 @@ u1: Happy Birthday King
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 54,5789343992485073204_4900369182476203542,twitter,,en,,"Cashless Bail MUST be REPEALED!
 
 Judges need discretion to weigh dangerousness.
@@ -1428,7 +1428,7 @@ u1: I was going to tell you to watch out for the swans, only to realise it isn�
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 76,8887634126573992750_13105125109575992397,reddit,,en,,Seeing the rest of the Democrats show Bernie Bros what’s up has been delightful.,"Bernie is overrated. Warren and even Buttigieg was a better option than him.
 Edit: I meant Warren, not Sanders.","{'turns': [{'u1': 'I have no love for the so-called ""Bernie Bros"". They always scream and shout like a bunch of zealots.', 'u2': ""They can't even articulate their own views! Always spewing propaganda and fake news!""}, {'u1': 'I think the real challenge for the other candidates is to get those vocal fans to simmer down and support them.', 'u2': ""Simmer down? Ha! The only way to get rid of them is to show them who's boss!""}, {'u1': 'Seeing the rest of the Democrats show Bernie Bros what’s up has been delightful.', 'u2': 'Bernie is overrated. Warren and even Buttigieg was a better option than him. Edit: I meant Warren, not Sanders.'}]}",0,1.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
@@ -1447,7 +1447,7 @@ u1: Seeing the rest of the Democrats show Bernie Bros what’s up has been delig
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 77,5714642975335639386_8355500104607225969,reddit,,en,,"Lucky that Queensland couple got some wine delivered to them while in quarantine on that ship, clearly it wasn't a serious situation",You got trolled. Never happened.,"{'turns': [{'u1': 'Did we just hear about another cruise ship outbreak or something?', 'u2': 'Nope. They just got a nice delivery.'}, {'u1': 'Haha, I was worried it was something worse! Do they get to keep the wine?', 'u2': ""I don't think they'll get to keep it long, it's probably quarantine protocol to dispose of it.""}, {'u1': ""Lucky that Queensland couple got some wine delivered to them while in quarantine on that ship, clearly it wasn't a serious situation"", 'u2': 'You got trolled. Never happened.'}]}",0,0.0,,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -2403,7 +2403,7 @@ u1: If you ever wondered how the republican movement was brought to it's knees. 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 128,12381510699736452938_12623256819989644935,reddit,,en,,"While our scientist are not excited to work on it, US has already patented it :   URL  
  URL","Sir, You can even get a patent for minor changes in Mickey Mouse, then this is a by-product of a cow, with a potential market for India. Why wouldn’t they do that?","{'turns': [{'u1': 'Our company just got an email from a big investor looking to capitalize on the benefits of using cow by-products in food and medicine.', 'u2': 'Really? I wasn’t aware of any such initiatives. Can you tell me more about this investment?'}, {'u1': 'It seems there are some challenges in adapting the by-products to Indian tastes, so we need to modify the products to suit the local market.', 'u2': 'That’s not entirely unexpected. Local tastes and preferences do play a significant role in product adaptation. Have you considered reaching out to local chefs or food experts for guidance?'}, {'u1': 'While our scientist are not excited to work on it, US has already patented it : URL URL', 'u2': 'Sir, You can even get a patent for minor changes in Mickey Mouse, then this is a by-product of a cow, with a potential market for India. Why wouldn’t they do that?'}]}",1,1.0,1.0,1.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
@@ -3072,7 +3072,7 @@ u1: Start your day off right, with the stimulating news that Alex Jones is no lo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 164,17904006917808538872_14029811641716380313,twitter,,en,,Same on my side ?,"Really?! 
 Oh god??‍♀️, time for art tho??","{'turns': [{'u1': 'u1, still waiting for those pics from Paris... Did you take them with that fancy new camera?', 'u2': 'Nah, I was too busy eating croissants and drinking coffee'}, {'u1': 'Aww, sounds like a foodie trip! Did you go to that one café on the Seine?', 'u2': 'You know it! The one with the perfect croissant-to-coffee ratio'}, {'u1': 'Same on my side ?', 'u2': 'Really?! Oh god??\u200d♀️, time for art tho??'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
@@ -3501,7 +3501,7 @@ u1: ""Lock Up your Sons &amp; Daughters..""
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 187,1511055427167719383_5817022303752871964,reddit,,en,,Does TikTok not count here?,"Im not too familiar with tiktok, can you make revenue?","{'turns': [{'u1': ""what about Instagram and Facebook? I've been using these platforms for years. Don't they count too?"", 'u2': ""Yeah I'm more familiar with Facebook, but what do you mean by 'count'?""}, {'u1': ""Well, I'm talking about when we talked about social media platforms that can generate revenue. Do they count or not?"", 'u2': 'Oh, revenue, huh? Like, how much money we can make?'}, {'u1': 'Does TikTok not count here?', 'u2': 'Im not too familiar with tiktok, can you make revenue?'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -3851,7 +3851,7 @@ u1: The NFL manipulates it’s games just enough in order to get the best produc
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 206,4064807298626546618_12454701549921945196,reddit,,en,,So another fuckup by the FAI,"Can't really blame the FAI, the referee is supposed to call off the game if it's deemed unplayable.","{'turns': [{'u1': ""Can't believe they didn't close the field when it started raining so much!"", 'u2': ""I think it's not the FAI's job to physically close the field""}, {'u1': ""Then what's the point of even having rules if nobody follows them?"", 'u2': 'Rules are one thing, but safety is a higher priority'}, {'u1': 'So another fuckup by the FAI', 'u2': ""Can't really blame the FAI, the referee is supposed to call off the game if it's deemed unplayable.""}]}",0,0.0,0.0,0.0,,0.0,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -3980,7 +3980,7 @@ u1: That's heartbreaking. I think he's very handsome, and I'd definitely hang ou
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 213,10427737140055675024_7354464227602560117,twitter,,en,,Fab news. Comhghairdeachas. ???,Appreciate it Miriam just glad he absolutely loves Medicine,"{'turns': [{'u1': ""what's the latest on your brother's university decision???"", 'u2': 'he got accepted into his top choice, medicine at UCD'}, {'u1': ""congratulations! I'm over the moon for him. What made you so confident he'd get in?"", 'u2': ""I know it's a competitive course but I've heard the interview went really well. He nailed it!""}, {'u1': 'Fab news. Comhghairdeachas. ???', 'u2': 'Appreciate it Miriam just glad he absolutely loves Medicine'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4016,7 +4016,7 @@ u1: Jesus! Is he old enough to be working there?!?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 215,18339505809624602316_17040859916525891498,reddit,,en,,"The world is ending 
 Change my mind",Sounds too good to be true,"{'turns': [{'u1': 'There have been so many predictions about the apocalypse in the past and they all seemed false. Do you think this time is different?', 'u2': 'What specific prediction are you referring to?'}, {'u1': 'A few scientists are saying that this next solar flare is going to cause a global power grid failure.', 'u2': ""Solar flares are pretty common. I'm not sure how credible those scientists are.""}, {'u1': 'The world is ending Change my mind', 'u2': 'Sounds too good to be true'}]}",1,1.0,1.0,1.0,1.0,,1.0,1.0,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
@@ -4909,7 +4909,7 @@ u1: In Oz we call crisps, chips and chips, hot chips. Hard habit to break.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 263,13587985427468545903_10390553020494045347,reddit,,en,,"I thought one of them was a disgraced drunk driver, and would never work in TV again.",Nah British public love ‘our’ ant and dec too much to care what a disgrace one of them is.,"{'turns': [{'u1': ""People can't even get these guys names straight, but somehow they always remember the scandals. That's some kinda fame."", 'u2': 'True, but at least they can get their reality shows on telly and make a load of cash'}, {'u1': ""There's something creepy about having a pair of blokes hosting a kids show that used to get arrested for drink driving."", 'u2': ""Mate, you know it's all water under the bridge, the British public is all about forgive and forget""}, {'u1': 'I thought one of them was a disgraced drunk driver, and would never work in TV again.', 'u2': 'Nah British public love ‘our’ ant and dec too much to care what a disgrace one of them is.'}]}",0,1.0,0.0,1.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4927,7 +4927,7 @@ u1: I thought one of them was a disgraced drunk driver, and would never work in 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 264,5249258912939968109_10662783485265728961,reddit,,en,,But it does reflect the cost of borrowing? So your money goes less far if you’re buying on credit?,So they are advertising getting into massive debt...,"{'turns': [{'u1': 'Don’t you think people are misunderstanding the concept of credit scoring?', 'u2': 'Might be, but aren’t these advertisements encouraging people to spend more?'}, {'u1': ""If they have a higher credit score, they'll be eligible for better interest rates."", 'u2': 'And when you factor in inflation, that means the cost of borrowing will be lower for those with better credit.'}, {'u1': 'But it does reflect the cost of borrowing? So your money goes less far if you’re buying on credit?', 'u2': 'So they are advertising getting into massive debt...'}]}",1,1.0,1.0,1.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5170,7 +5170,7 @@ u1: Southampton, Fulham and Leeds United are all interested in signing #mufc def
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 277,295437068950756464_7468193759649827276,twitter,,en,,"PolitiFact ""fact-checked"" President Trump almost 6 times as often as they do Joe Biden.
 
 Now you know why Americans don't trust fact-checkers.",Perhaps Trump made six times the number of questionable statements.,"{'turns': [{'u1': ""Did you see PolitiFact's latest report on their fact-checking efforts?"", 'u2': ""What's your point?""}, {'u1': ""It's just more evidence that they're picking and choosing which claims to fact-check,"", 'u2': 'Well, we know the President makes some wild statements.'}, {'u1': 'PolitiFact ""fact-checked"" President Trump almost 6 times as often as they do Joe Biden. Now you know why Americans don\'t trust fact-checkers.', 'u2': 'Perhaps Trump made six times the number of questionable statements.'}]}",1,0.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
@@ -5444,7 +5444,7 @@ u1: Pakistan just helped with a peace deal in Afghanistan. India is ripping its 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 292,13395842311471982589_1746788807727477203,reddit,,en,,Can't get it without being anti-national.,"Nah , everyone will get it","{'turns': [{'u1': ""What's the connection?"", 'u2': ""I'm saying that it will be on the news tomorrow.""}, {'u1': ""You think they'd just report it without scrutiny?"", 'u2': ""No, it's just how they play it.""}, {'u1': ""Can't get it without being anti-national."", 'u2': 'Nah , everyone will get it'}]}",0,0.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6103,7 +6103,7 @@ u1: Think I've seen this meme for every town in ireland over the past week.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 327,7934940929183727285_6514680684154088280,twitter,,en,,"Now wait a minute, you work on a car that has had 2 of the best ""bottom feeders"" in the business  drive it and all see in this pic is the inside line , why didn't you take it ??!!!!",? it was far from a race track,"{'turns': [{'u1': ""That's a sweet ride! Who owns it?"", 'u2': 'Some guy brought it in for a tune-up'}, {'u1': ""That's cool, did it ever do any track days or performance events?"", 'u2': ""I don't think so, it's just a daily driver""}, {'u1': 'Now wait a minute, you work on a car that has had 2 of the best ""bottom feeders"" in the business drive it and all see in this pic is the inside line , why didn\'t you take it ??!!!!', 'u2': '? it was far from a race track'}]}",1,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6157,7 +6157,7 @@ u1: Is TikTok destroying civilization? Some people think so.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 330,11854261355676137015_12748978869863994281,reddit,,en,,"How they are still getting people on it is beyond me like there are only so many people in Ireland who would participate, HOW is it not the same people on it the whole time","I never watch it because it's shite, but I'd love to go on it. You're guaranteed to come away with €20,000 just for pressing a few buttons and spinning a wheel.","{'turns': [{'u1': ""I was thinking of signing up for that reality TV show but I'm not sure if I have the time for it."", 'u2': ""To be honest, I never watch it because I think it's just a bunch of nonsense. But I'm sure the money is nice.""}, {'u1': ""What do you mean you never watch it? Do you think it's just for attention seekers?"", 'u2': 'Yeah, I think some people only do it for the fame and the publicity, but others are just in it for the cash.'}, {'u1': 'How they are still getting people on it is beyond me like there are only so many people in Ireland who would participate, HOW is it not the same people on it the whole time', 'u2': ""I never watch it because it's shite, but I'd love to go on it. You're guaranteed to come away with €20,000 just for pressing a few buttons and spinning a wheel.""}]}",1,1.0,,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -6948,7 +6948,7 @@ u1: This is such a bad idea. I can't think of a worse thing to go right there
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 372,10989814099882926834_12268822874457186840,reddit,,en,,If I have a cough I should seek medical care? This is some needless panic.,"It did say fever, cough, and difficulty breathing. Not just cough.","{'turns': [{'u1': ""It doesn't seem like it would be that bad, right? Like, how serious can a cough really be?"", 'u2': 'Well, my grandma got this bad flu last year and she was really out of it for a week.'}, {'u1': ""Yeah, I've heard of those kinds of cases. But isn't the flu different from what they're saying is going around?"", 'u2': ""That's a good point, but don't you think we should at least pay attention to the symptoms that are being reported?""}, {'u1': 'If I have a cough I should seek medical care? This is some needless panic.', 'u2': 'It did say fever, cough, and difficulty breathing. Not just cough.'}]}",0,0.0,0.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7261,7 +7261,7 @@ u1: That time, when a huge curtain reveal the whole fun fair at SQL Bits Party T
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 388,10775429835198376805_50099444826237706,twitter,,en,,Happy Thursday ❤️,Good morning Dale.?,"{'turns': [{'u1': '🚀 Blast off to a beautiful day!', 'u2': 'Mmm, that coffee smells amazing 😋'}, {'u1': 'Just brewed a fresh pot ☕️', 'u2': 'Awesome, I need it after yesterday 🤯'}, {'u1': 'Happy Thursday ❤️', 'u2': 'Good morning Dale.?'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7317,7 +7317,7 @@ u1: £4.99?? There are thousands of amazing curry recipes for free on BBC good f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 391,16268728323503175880_9311251695568957257,twitter,,en,,"yes, this is great!!",Thanks Jane! X,"{'turns': [{'u1': 'Looking forward to hearing about your experience. Do you think the new app will help you manage your tasks better?', 'u2': 'The UI looks very intuitive, and I have a feeling that this app might be exactly what I need!'}, {'u1': ""That's exactly what I was thinking! I've been struggling with task management for ages. How many features do you think you'll use regularly?"", 'u2': ""Honestly, I think it's all going to depend on how well it integrates with my existing workflows. If it plays nicely, I'll probably use most of the features. But we'll see!""}, {'u1': 'yes, this is great!!', 'u2': 'Thanks Jane! X'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7649,7 +7649,7 @@ u1: So you are mad because the Conservative BJP cares more about Hindu families 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 409,10399117065094193708_7071759177668002935,twitter,,en,,"Nice one, a difficult year",Thanks so much David,"{'turns': [{'u1': '""I\'m a huge fan of your podcast, I listen to every episode, and I must say your insight on current affairs is always spot on, David.', 'u2': ""Wow, thanks so much! We're just trying to bring some sense to a chaotic world.""}, {'u1': '""That\'s what I love about your podcast, David – you\'re always bringing up these really interesting points that get me thinking.', 'u2': ""I'm glad I can inspire some critical thinking! It's been a tough year, and I think we all need to take a step back and re-evaluate our priorities.""}, {'u1': 'Nice one, a difficult year', 'u2': 'Thanks so much David'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8159,7 +8159,7 @@ u1: will any leader take responsibility in delhi? is there nobody left to depend
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 437,3525364851575748168_6083160705112715679,twitter,,en,,Both are ? don't spread hate for Indian team pillars.,Yesterday you were trolling kl now giving gyan on hate ??,"{'turns': [{'u1': ""Can't believe people are spreading hate for Indian team's performance."", 'u2': 'Trolling is just a way of keeping it real, no hate in that.'}, {'u1': ""That's a thin line between keeping it real and being a hater."", 'u2': 'At least theyre not hiding behind a screen and spewing hate.'}, {'u1': ""Both are ? don't spread hate for Indian team pillars."", 'u2': 'Yesterday you were trolling kl now giving gyan on hate ??'}]}",1,,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8455,7 +8455,7 @@ u1: @NualaNiC's jacket is extremely good
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 453,17935152305328288160_4588003880345284837,twitter,,en,,Election Predictions: Republicans will win the House! Stacey Abrams will lose in Georgia!   Any takers?,Yo crazy dude,"{'turns': [{'u1': ""What's the line on the House races for the midterms? Anyone have any insight?"", 'u2': 'Got my eyes on a few races, especially in Pennsylvania and Ohio.'}, {'u1': 'Pennsylvania and Ohio? Why those specifically?', 'u2': 'Just feel like the margins are tight enough to go either way'}, {'u1': 'Election Predictions: Republicans will win the House! Stacey Abrams will lose in Georgia! Any takers?', 'u2': 'Yo crazy dude'}]}",0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8570,7 +8570,7 @@ u1: How embarrassing for him. 1) all that stuff attached to his van. 2) driving 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 459,12730524217281879155_12945194585296310579,twitter,,en,,"Congratulations Alex, plenty of game time is the key mate!  All the best… unleash ?",Thanks very much Rob. Hope you’re keeping well ??,"{'turns': [{'u1': 'Really proud of you, mate! Great to see you getting into the game!?', 'u2': ""Cheers mate, I've been putting in the hours to improve my skills""}, {'u1': ""Good to hear you're getting better, I'm sure you'll make a top pro soon. You're working really hard"", 'u2': ""Appreciate the support, Rob. I'll keep pushing myself to reach my goals""}, {'u1': 'Congratulations Alex, plenty of game time is the key mate! All the best… unleash ?', 'u2': 'Thanks very much Rob. Hope you’re keeping well ??'}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9479,7 +9479,7 @@ u1: Here's an article with more information: URL >“As noted by the conservatio
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 508,14665421012713552719_1347423069629551450,reddit,,en,,Would it not be a great chance to actually start Making in India,"A key theme of the minister’s discussions with government ag ..
 Read more at:
  URL","{'turns': [{'u1': 'It would be a step in the right direction if more factories came up in India', 'u2': 'The PM has been talking about this for a while now.'}, {'u1': 'Do you think we would see an increase in investments in the manufacturing sector if that happens?', 'u2': 'I think so. It’s just a matter of giving the right incentives and creating the right environment.'}, {'u1': 'Would it not be a great chance to actually start Making in India', 'u2': 'A key theme of the minister’s discussions with government ag .. Read more at: URL'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
@@ -9829,7 +9829,7 @@ u1: Heavy metal is the best medicine ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 527,11779629600322669707_15888234897733575918,reddit,,en,,How none of my reddit posts ever get guilded.,"I'd guild you if I wasn't poor, my friend","{'turns': [{'u1': 'I am still new to this whole internet thing. Can you tell me how to increase the chances of my posts being liked and shared on reddit?', 'u2': ""Honestly, it's not that easy. I've been around the block a few times, but I still don't get much traction on my posts. You might want to try posting at the right time, or posting content that's relevant and interesting.""}, {'u1': ""What makes content interesting, in your opinion? I've tried posting funny memes and stuff, but they just die out after a few hours."", 'u2': ""I think it's all about finding that sweet spot. Not too common, not too obscure. And you have to be consistent. I've seen people post great content, but then they don't post for weeks and their audience forgets about them.""}, {'u1': 'How none of my reddit posts ever get guilded.', 'u2': ""I'd guild you if I wasn't poor, my friend""}]}",0,0.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9847,7 +9847,7 @@ u1: How none of my reddit posts ever get guilded.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 528,2888493158263005316_10000152287288954784,twitter,,en,,Never seen the Undertones in Ireland but been there! Loved it.,"Incredible place, Michael. It tipped  down with rain as we left. Lucky to get it in sunshine.","{'turns': [{'u1': ""I've heard great things about The Undertones from friends back home."", 'u2': ""Yeah, they're a huge part of Northern Irish music history.""}, {'u1': 'Would love to catch one of their live shows when I get back.', 'u2': 'If you get a chance, go for the indoor show at the Waterfront Hall. Always a lively atmosphere.'}, {'u1': 'Never seen the Undertones in Ireland but been there! Loved it.', 'u2': 'Incredible place, Michael. It tipped down with rain as we left. Lucky to get it in sunshine.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9884,7 +9884,7 @@ u1: Massively uneducated boy. Beyond brainless.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 530,10699563027813170807_10459629754325538349,reddit,,en,,I'd say it'll be sickening,It'll go viral,"{'turns': [{'u1': '""So, it\'s official now, the company\'s decided to merge their biggest campaign into one ad.', 'u2': ""Whoa, that's huge! I'm sure their team's been working on this for months.""}, {'u1': ""I was thinking, the more I see it, the more it'll probably just fall flat."", 'u2': ""I'm not sure that's a bad thing. Sometimes less is more, right?""}, {'u1': ""I'd say it'll be sickening"", 'u2': ""It'll go viral""}]}",1,1.0,1.0,0.0,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10384,7 +10384,7 @@ u1: so were getting free drugs?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 557,1395994093547363407_18062956231486870483,reddit,,en,,No surprises. BJP wants power at any cost. They don't mind even if country get burned.,All the electoral money at play!,"{'turns': [{'u1': ""I've lost count of the number of times this party has broken promises. It's clear they'll say anything to win."", 'u2': ""You think that's the only reason they'd say something? Look at their track record on corruption.""}, {'u1': ""They've got the money and the influence to bend the system to their will. I'm starting to think the only thing they care about is power."", 'u2': ""Money can get you a lot of things, but it can't hide the stench of corruption that follows them around.""}, {'u1': ""No surprises. BJP wants power at any cost. They don't mind even if country get burned."", 'u2': 'All the electoral money at play!'}]}",0,1.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10692,7 +10692,7 @@ u1: Congratulations ser ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 574,1702264172157830686_17992286821093789731,twitter,,en,,"Welcome to the Tim David era. 
 
 #AUSvWI",I love it,"{'turns': [{'u1': ""'What do you think about Tim David's chances to succeed as the new face of Aussie cricket?"", 'u2': ""He's done some good things in the league, but the big stage is a whole different beast.""}, {'u1': 'Fair point, his big game temperament is yet to be proven', 'u2': ""Exactly, and I'm worried that the pressure might get to him""}, {'u1': 'Welcome to the Tim David era. #AUSvWI', 'u2': 'I love it'}]}",0,1.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
@@ -10823,7 +10823,7 @@ u1: Curse Zeus for making me a mortal
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 581,476416851459628777_3323035862530885153,reddit,,en,,"I’m probably going to be downvoted for having my own opinion, but I disagree. I loved their recent program about their DNA and family history. They can be quite funny but more so their banter is fun to watch. They’re just two typical Northern blokes who’ve been best mates since they were kids and it’s nice to see.","I liked them for a few years, but then Saturday Night Takeaway started getting repetitive. Ant nearly killing a child was the final nail in the coffin for me.","{'turns': [{'u1': 'You can’t go wrong with some lighthearted entertainment every now and then. What do you think about Ant & Dec as a duo?', 'u2': ""Ant & Dec are alright, but I feel like they get a free pass because they've been together so long. They seem nice, but they also don't challenge me at all.""}, {'u1': ""Their humor definitely appeals to a wide audience. I think it's great that they've maintained a close friendship over the years."", 'u2': ""Yeah, it's nice to see that they've remained close friends, but I've started to lose interest in their shows because they don't push themselves creatively.""}, {'u1': 'I’m probably going to be downvoted for having my own opinion, but I disagree. I loved their recent program about their DNA and family history. They can be quite funny but more so their banter is fun to watch. They’re just two typical Northern blokes who’ve been best mates since they were kids and it’s nice to see.', 'u2': 'I liked them for a few years, but then Saturday Night Takeaway started getting repetitive. Ant nearly killing a child was the final nail in the coffin for me.'}]}",0,0.0,1.0,1.0,,0.0,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11348,7 +11348,7 @@ u1: RSS is meeting Muslims, Mohan Bhagwat is praising Ambedkar, wants more socia
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 609,3540653022772353219_3161962435884253629,twitter,,en,,Yesterday I was greedy and inpatient and burned my top lip with my hot tea. This morning I tripped on a kitchen rug and busted the inside of my bottom lip when I slammed into the kitchen counter. I will be taking instant oatmeal to work for breakfast and lunch today ???‍♀️,?? Definitely hope it gets better from here MC!!,"{'turns': [{'u1': ""Ugh, I feel like my day has been one big accident waiting to happen. I've been running on coffee fumes and haven't had much time to eat, so I'm starving and totally grumpy"", 'u2': ""Same, girl! I've been surviving on caffeine and scraps. What's the plan for lunch today?""}, {'u1': ""Ugh, nothing planned that I can think of... Which is weird, because I normally love planning my meals and snacks... and cooking, but I just haven't had the time or energy lately."", 'u2': ""Don't even get me started! I've been stuck in meetings all morning and I just want to crawl under my desk and take a nap""}, {'u1': 'Yesterday I was greedy and inpatient and burned my top lip with my hot tea. This morning I tripped on a kitchen rug and busted the inside of my bottom lip when I slammed into the kitchen counter. I will be taking instant oatmeal to work for breakfast and lunch today ???\u200d♀️', 'u2': '?? Definitely hope it gets better from here MC!!'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11385,7 +11385,7 @@ u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 611,9769578398316647293_8046990025530836412,reddit,,en,,Avatar: the last airbender,I came here to say this,"{'turns': [{'u1': '""What\'s the best TV show on Netflix right now?""', 'u2': 'The one with Aang and his friends, I forgot the title...'}, {'u1': ""I think you're thinking of 'Avatar: The Last Airbender'?"", 'u2': ""That's the one! The one with Aang and his friends.""}, {'u1': 'Avatar: the last airbender', 'u2': 'I came here to say this'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11498,7 +11498,7 @@ u1: >-If you are sick STAY at home This! FFS
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 617,3692253963989846223_457563496090707928,twitter,,en,,Is it the perspective or are those stickers enormous?!,"Just the perspective, I wish we had giant stickers ?","{'turns': [{'u1': ""Looking at this drawing, I'm starting to feel dizzy."", 'u2': ""What's making you feel that way?""}, {'u1': 'Those giant stickers in the background. Are they necessary?', 'u2': ""They're just an aesthetic choice. I thought they were cool.""}, {'u1': 'Is it the perspective or are those stickers enormous?!', 'u2': 'Just the perspective, I wish we had giant stickers ?'}]}",0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11593,7 +11593,7 @@ u1: Labor was in government for six fucking years and didn't once think 'gee may
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 622,2770345086638230991_3563034649708807087,twitter,,en,,If am correct you haven’t reply his/her message that’s the reason why he/she told you that you are arrogant,I thought the same thing,"{'turns': [{'u1': 'I have a question, do you always respond to messages from friends or family on social media?', 'u2': 'Why, did I not respond to one of your messages?'}, {'u1': 'You know what? I think I remember now. It was when you skipped the party and didn’t even send a sorry message.', 'u2': ""Hmm, you're talking about that party? I didn't think you'd still be mad about it""}, {'u1': 'If am correct you haven’t reply his/her message that’s the reason why he/she told you that you are arrogant', 'u2': 'I thought the same thing'}]}",0,0.0,0.0,0.0,0.0,,,0.0,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -11798,7 +11798,7 @@ u1: You can't hide those lion eyes.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 633,2247075016813411975_17680416510082553738,twitter,,en,,Happy birthday,Thanks love! ?,"{'turns': [{'u1': ""u1 is celebrating your special day ahead of schedule, so I'm sending you a virtual cake"", 'u2': 'Awwww, how thoughtful of you!!!'}, {'u1': ""I was thinking of planning a small get-together at my place, but now that I know your bday is today, I'm reconsidering"", 'u2': ""What a wonderful idea! I'd love to celebrate with friends""}, {'u1': 'Happy birthday', 'u2': 'Thanks love! ?'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12062,7 +12062,7 @@ u1: That's damn shitty of Hugo Boss, what on earth with the chaps in the corner 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 647,17129840715925360216_12877148218784926988,twitter,,en,,Peter Dutton is on  again this Sunday This is his third appearance since the election,"Haven't watched since just after Speers took over... Don't need his biased Murdoch ignorance in my life &amp; he does not even try to hide his, or the bias of 'our' @ABCTV..","{'turns': [{'u1': 'Just heard that Peter Dutton is making another appearance on the Sunday morning program', 'u2': ""Can't believe they keep having him on. They're just trying to make him more palatable to the public""}, {'u1': ""I think he's on again this Sunday. Third time since the election, I've heard"", 'u2': 'Do they really think people are that clueless? Or are they just trying to prop him up?'}, {'u1': 'Peter Dutton is on again this Sunday This is his third appearance since the election', 'u2': ""Haven't watched since just after Speers took over... Don't need his biased Murdoch ignorance in my life &amp; he does not even try to hide his, or the bias of 'our' @ABCTV..""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12176,7 +12176,7 @@ u1: I pray the day will come when 'The Daily Racist Express ' will get their kar
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 653,2563116565800703968_2201949443606602851,reddit,,en,,"They are aren't they? I always see on alcohol ads ""always drink responsibly.""",yeah like heinekens ads are literally all about not drinking and driving.,"{'turns': [{'u1': ""People say that booze is bad for you but honestly I've never met anyone who got themselves killed by beer."", 'u2': ""I've heard that too but what about all the other problems it can cause like liver damage, cancer, and addiction?""}, {'u1': 'True, booze has its risks. What about these ads that say drink responsibly? Are they being truthful or just using marketing speak?', 'u2': ""That's a good point. They do say drink responsibly but do they mean it or are they just trying to sell more beer?""}, {'u1': 'They are aren\'t they? I always see on alcohol ads ""always drink responsibly.""', 'u2': 'yeah like heinekens ads are literally all about not drinking and driving.'}]}",1,1.0,1.0,1.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12307,7 +12307,7 @@ u1: If you could “Delete” anything from your past, what would it be?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 660,4050739089915825204_630624309007560631,reddit,,en,,Maintain eye contact and keep going.,"and nice slow, steady strokes.","{'turns': [{'u1': ""Your eyes should be the anchor to their soul. That's where the connection is made."", 'u2': 'But how do we achieve that?'}, {'u1': 'We start with an unshakeable presence.', 'u2': 'Like a gentle breeze that soothes the skin.'}, {'u1': 'Maintain eye contact and keep going.', 'u2': 'and nice slow, steady strokes.'}]}",0,0.0,0.0,,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -12688,7 +12688,7 @@ u1: Well not surprising seeing as we pretty much gave up trying to stop it after
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 680,6058777419734143890_17776168456877826320,twitter,,en,,Sometimes I really really absolutely hate being a grown up.,100% this. Hope your day improves.,"{'turns': [{'u1': 'Just got out of a meeting that felt like a total time-suck. Ugh.', 'u2': ""Meetings can be soul-sucking, don't even get me started""}, {'u1': ""Can't believe how much productivity I've lost this week."", 'u2': ""Yeah, I'm running around like a headless chicken trying to catch up""}, {'u1': 'Sometimes I really really absolutely hate being a grown up.', 'u2': '100% this. Hope your day improves.'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13216,7 +13216,7 @@ u1: Good on you. There's nothing like getting an early start to your day and get
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 708,9183587728324168645_1280035724521913834,reddit,,en,,Abuse of teachers and school admin (particilarly female staff) is chronic.,"Most of the article is behind a pay-wall, but the first few paragraphs are suitably appalling.","{'turns': [{'u1': ""This makes me think of the poor treatment of teachers across the board. Everyone's always talking about how underpaid they are, but I think it's deeper than that."", 'u2': ""Yeah, I agree. And it's even more disturbing when you consider the lack of support for female teachers in particular.""}, {'u1': ""You're right, the numbers do show that female teachers face disproportionate challenges. What really gets me is when people blame the teachers for systemic problems."", 'u2': ""I've seen that too. The way some parents and administrators treat teachers like they're the ones who are broken, rather than acknowledging the issues with the system itself.""}, {'u1': 'Abuse of teachers and school admin (particilarly female staff) is chronic.', 'u2': 'Most of the article is behind a pay-wall, but the first few paragraphs are suitably appalling.'}]}",1,1.0,0.0,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13378,7 +13378,7 @@ u1: Gm ???
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 717,11035817440109897297_1369106257376099378,twitter,,en,,Just curious. Does anyone ever use the back left burner?,"Lol, yes. Not often. But yes.","{'turns': [{'u1': ""I'm trying to organize my kitchen layout a bit better, and I'm curious to know: have you ever noticed how some stoves have these smaller burners on the side?"", 'u2': 'Yeah, the ones on my old stove. They were always a bit tricky to get the flames going.'}, {'u1': ""Those ones! I've been thinking about converting one of my larger burners to be more similar to those, but I'm not sure if it's worth the hassle."", 'u2': ""I think it's an interesting idea, though. Maybe it could be a good way to have more control over your cooking heat?""}, {'u1': 'Just curious. Does anyone ever use the back left burner?', 'u2': 'Lol, yes. Not often. But yes.'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13638,7 +13638,7 @@ u1: It's Benadryl Custardbath-get it RIGHT!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 731,7189041658269664432_5432718058111441457,reddit,,en,,Cheating on your barber is much worse. They know you’ve done the dirty.,"Tell me bout it, I cheated on my barber two days ago, purely because I was just off nightshift an happened to be close to a different barber, Result? Shit haircut an two quid more, that'll teach me!","{'turns': [{'u1': ""u1 just went to get a haircut and it looks awful. They should've told me about that new trimmer thingy."", 'u2': ""Lmao, what's the big deal about a trimmer? That's why they have mirrors for, innit?""}, {'u1': ""The problem isn't the trimmer, it's the whole vibe of the shop. They're all so... laid back."", 'u2': ""Laid back? That's what I like about it! They don't hassle you for upgrades or nothing.""}, {'u1': 'Cheating on your barber is much worse. They know you’ve done the dirty.', 'u2': ""Tell me bout it, I cheated on my barber two days ago, purely because I was just off nightshift an happened to be close to a different barber, Result? Shit haircut an two quid more, that'll teach me!""}]}",1,0.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14244,7 +14244,7 @@ u1: Just went and to grab a few things for dinner tonight there were people pani
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 763,12749216376747775127_10437216852438942780,twitter,,en,,"1/ Enjoy our Devotional entitled, ‘PRAY MORE’",2/ Daily Reading: Psalms 49-50; Acts 20:1-16.,"{'turns': [{'u1': 'Looking for a way to center myself spiritually? Have you heard about our online devotional program?', 'u2': ""I'm really struggling to stay focused and motivated lately. I think it would be helpful to try something new.""}, {'u1': 'Would you like me to recommend a specific devotional resource that I find really helpful?', 'u2': ""Actually, I'd love to hear about any devotional program that you've found effective in the past.""}, {'u1': '1/ Enjoy our Devotional entitled, ‘PRAY MORE’', 'u2': '2/ Daily Reading: Psalms 49-50; Acts 20:1-16.'}]}",0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15098,7 +15098,7 @@ u1: The three great universities are Oxford, Cambridge and?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 809,13314351271100540977_15588575591812132638,twitter,,en,,Train your mind to stay calm in every situation.,Major key right there,"{'turns': [{'u1': 'When was the last time you had to deal with a stressful situation?', 'u2': ""All the time! Life's unpredictable, you know?""}, {'u1': ""Exactly, which is why it's essential to develop coping mechanisms."", 'u2': 'Good point. I try to focus on the present moment when things get tough.'}, {'u1': 'Train your mind to stay calm in every situation.', 'u2': 'Major key right there'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15519,7 +15519,7 @@ u1: Black Tower Leibraumilch. Too sweet for me now.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 832,14107432776105131874_9242691818694079033,twitter,,en,,please share your advice .,Just saw. Will do ?????,"{'turns': [{'u1': 'What brings you here today?', 'u2': 'I just got back from a trip. It was amazing. Got some great photos'}, {'u1': ""I'm actually planning a trip of my own and I could use some tips from you"", 'u2': 'Oh wow! That sounds exciting. What destination are you considering?'}, {'u1': 'please share your advice .', 'u2': 'Just saw. Will do ?????'}]}",0,0.0,0.0,0.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15678,7 +15678,7 @@ u1: What does this mean? Can somebody ELI5 to somebody who has literally no idea
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 838,7741893475282279064_1539657091395184830,twitter,,en,,"More than a million people lined the capital’s streets; four billion are thought to have watched worldwide. Her last farewell was an astonishingly colourful national ritual, Ben Macintyre writes","More than a million on the streets of London sounds a lot. But to put it into context more people were on the streets of London this year for both the Notting Hill Carnival and Gay Pride. They planned for more, we were expecting more, they just didn't come.","{'turns': [{'u1': ""Can't believe this is happening. Such an historic event."", 'u2': 'Not sure what all the fuss is about tbh. Was expecting more of a turnout'}, {'u1': 'The capital is absolutely packed with people!', 'u2': ""That's impressive but what about the crowd numbers for Notting Hill this year? Did they break a record or something?""}, {'u1': 'More than a million people lined the capital’s streets; four billion are thought to have watched worldwide. Her last farewell was an astonishingly colourful national ritual, Ben Macintyre writes', 'u2': ""More than a million on the streets of London sounds a lot. But to put it into context more people were on the streets of London this year for both the Notting Hill Carnival and Gay Pride. They planned for more, we were expecting more, they just didn't come.""}]}",0,0.0,1.0,,1.0,,,0.0,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15696,7 +15696,7 @@ u1: More than a million people lined the capital’s streets; four billion are t
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 839,18099792204190893648_12855018348150637521,twitter,,en,,Do one in small heath next,The kids here need it plus there's loads of talent in small heath park lool,"{'turns': [{'u1': 'Hey mate, I noticed some decent bands performing in Coventry lately, got a thought what if we take it to Small Heath next?', 'u2': 'M8 we r tryna get back into the music scene rn we need to make it happen'}, {'u1': 'Fair point, would be great for the kids in Small Heath, lots of talent lying around', 'u2': ""Yeah, loads of hidden gems here, if we do this right, it'll be a massive opportunity for 'em""}, {'u1': 'Do one in small heath next', 'u2': ""The kids here need it plus there's loads of talent in small heath park lool""}]}",1,1.0,1.0,1.0,1.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15804,7 +15804,7 @@ u1: If thalaivar attend Guru poojai any impact on Devendra Kula vellar votes?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 845,6729194111270145159_8234930110387113285,twitter,,en,,Where can I find them,My page,"{'turns': [{'u1': ""I'm not getting anywhere trying to find them. Have you talked to anyone about this?"", 'u2': ""I know someone who might know something. I'll message them.""}, {'u1': 'Do they usually respond quickly or is it going to take a while?', 'u2': ""They're pretty active on here, so I think it'll be sooner rather than later.""}, {'u1': 'Where can I find them', 'u2': 'My page'}]}",0,0.0,0.0,,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16282,7 +16282,7 @@ u1: The system IS broken. This crap government has no oversight - it is the one 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 871,1055039132989147861_2673334112735824994,reddit,,en,,"And Muslims should understand that there is nothing to fear about CAA-NRC. It is this lack of understanding due to which the angry Hindu mob have to kill them. Once the Muslims stop fearing CAA and stop protesting, they don't have to fear the Hindu mob also.","Lmao I feel like it's sarcastic but the time and environment we living in right now doesn't feel like sarcasam..
 Like a bhakt can say this and will stand by it...","{'turns': [{'u1': ""I don't get why there's such a fuss about CAA-NRC. Can't everyone just agree that it's for the betterment of the nation?"", 'u2': ""Fuss? Are you kidding me? You're just drinking the BJP Kool Aid""}, {'u1': ""I'm not drinking anything, I'm just reading what the govt. says. They're just trying to make things simpler for Indians, not hurt anyone"", 'u2': ""Oh please, you're not naive, are you? This is just another ploy to divide Indians on religious lines""}, {'u1': ""And Muslims should understand that there is nothing to fear about CAA-NRC. It is this lack of understanding due to which the angry Hindu mob have to kill them. Once the Muslims stop fearing CAA and stop protesting, they don't have to fear the Hindu mob also."", 'u2': ""Lmao I feel like it's sarcastic but the time and environment we living in right now doesn't feel like sarcasam.. Like a bhakt can say this and will stand by it...""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
@@ -16849,7 +16849,7 @@ u1: In research, it's not enough to be 99.9% sure, you have to be 100% sure. How
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 901,8093868527988307508_9881282302822660975,reddit,,en,,"She said hello, we said goodbye",Hol up,"{'turns': [{'u1': ""What's up with her saying hi? Don't remember giving her my number."", 'u2': 'Maybe you just met and she wants to make conversation?'}, {'u1': 'Never met her in my life.', 'u2': ""Hmm, that's weird. Maybe she's a friend of a friend?""}, {'u1': 'She said hello, we said goodbye', 'u2': 'Hol up'}]}",0,1.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17715,7 +17715,7 @@ u1: That's technically illegal, I think? You're signing a legal document under f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 947,6163588332376873789_1137361951132508955,twitter,,en,,"There he is! Miss the big fella, can't wait to voice him again.","Thank you, I’ll do my best to catch up the schedule and then into the voice work process! ❤️","{'turns': [{'u1': ""Just heard back from our talent manager, he's finalized the schedule."", 'u2': 'I just needed an update on the schedule. Thanks for letting me know!'}, {'u1': ""I'm really looking forward to getting started with this new role."", 'u2': ""Yeah, I was really impressed with the script and I'm super excited to see where this character takes us!""}, {'u1': ""There he is! Miss the big fella, can't wait to voice him again."", 'u2': 'Thank you, I’ll do my best to catch up the schedule and then into the voice work process! ❤️'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18621,7 +18621,7 @@ u1: Lol I’m Indian… would hate if I got cancelled for my race ☹️
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 996,11154281436116504197_16010986116095901107,reddit,,en,,Its absolutely shite.,"Right thanks for your opinion stated as fact. I thought it was incredible and thoroughly enjoyed my time there. Perhaps you and I have different things that interest us eg I enjoy reading, learning and creating, and you enjoy banging stones together.","{'turns': [{'u1': 'What a load of rubbish. They are trying to pass this off as entertainment. They must think we are all idiots.', 'u2': ""I've seen more engaging things on a napkin. What is this supposed to be, anyway?""}, {'u1': 'A bunch of half-hearted attempts at comedy and pathetic attempts at shock value.', 'u2': ""I'll give you that, but there's something to be said for attempting to push boundaries. Can't please everyone, I suppose.""}, {'u1': 'Its absolutely shite.', 'u2': 'Right thanks for your opinion stated as fact. I thought it was incredible and thoroughly enjoyed my time there. Perhaps you and I have different things that interest us eg I enjoy reading, learning and creating, and you enjoy banging stones together.'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18698,7 +18698,7 @@ u1: It was such a brilliant idea to have the students back. 14-day offshore quar
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1000,6723658154901710705_705320928293917586,twitter,,en,,"FiFi,
 
 whilst not for a moment questioning the accuracy of your comments - publicly praising the people who employ you in such fulsome terms - could be construed as somewhat self-serving.",I'm not employed by them.,"{'turns': [{'u1': 'I am somewhat amused by your tendency to shower the corporate offices with praise, as if you work for them.', 'u2': ""I don't work for them, I work with them as a freelancer.""}, {'u1': ""Freelancing or not, it still appears that you're not shy about expressing your admiration for your 'clients'."", 'u2': ""It's just my way of showing appreciation for the opportunities they provide me with.""}, {'u1': 'FiFi, whilst not for a moment questioning the accuracy of your comments - publicly praising the people who employ you in such fulsome terms - could be construed as somewhat self-serving.', 'u2': ""I'm not employed by them.""}]}",0,0.0,1.0,,1.0,,0.0,,"<TASK_OVERVIEW>
@@ -18864,7 +18864,7 @@ u1: Things are only going one way. Might as well just call the second election a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1009,17683464477611750595_6928989532536285890,twitter,,en,,What are you starting to like less and less the older you get?,People. ?,"{'turns': [{'u1': ""I feel like there are things that used to be so easy for me, but now they're just a hassle"", 'u2': 'What kind of things?'}, {'u1': ""Dealing with people's expectations. I used to be able to please everyone, but now it's exhausting"", 'u2': 'I can relate to that... but is it really about the expectations or is it something else?'}, {'u1': 'What are you starting to like less and less the older you get?', 'u2': 'People. ?'}]}",1,1.0,1.0,1.0,1.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -18973,7 +18973,7 @@ u1: Nothing to see here just a Chinese vessel mapping the ocean to prepare for a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1015,7744735332204086925_11163932140753465047,twitter,,en,,Clare were lucky today. The subs made a big impact. Too many times Clare didn't get the rub of the green but had it today. A good situation for Clare as that game will have grounded them prior to KK semi.,"Couldn't agree more. Even during the game for large stretches, they'd no luck. Two of Wexford's goals were free outs for instance. But they kept their heads which is great to see. They'll be sharper for it the next day.","{'turns': [{'u1': ""That was a closer game than I thought it'd be. I love how Clare just kept going, refusing to give up."", 'u2': 'Yeah I know what you mean! Those subs were a game-changer, no question.'}, {'u1': 'I was thinking they were pretty unlucky earlier in the game but the momentum shifted once they made those substitutions.', 'u2': ""For sure! Now, let's see if they can build on that momentum going into the next game.""}, {'u1': ""Clare were lucky today. The subs made a big impact. Too many times Clare didn't get the rub of the green but had it today. A good situation for Clare as that game will have grounded them prior to KK semi."", 'u2': ""Couldn't agree more. Even during the game for large stretches, they'd no luck. Two of Wexford's goals were free outs for instance. But they kept their heads which is great to see. They'll be sharper for it the next day.""}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19472,7 +19472,7 @@ u1: I going to take a guess and stay this was on strandhill beach, amazing surf 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1041,14679391038570945701_795209230991980752,twitter,,en,,"From next season, the next generation Chevrolet Camaro will replace the Holden Commodore, while the next generation Mustang will line up for Ford. Much of Australia’s recent history has been tied up in the ‘Ford Vs Holden’ rivalry, with households split evenly for a long time.",So sad to see it go!,"{'turns': [{'u1': ""Looks like it's been an open secret that Holden's days were numbered. That's quite some brand heritage to say goodbye to."", 'u2': 'What a shame, really. Family and friends have owned both Fords and Holdens, so many fond memories attached to each model.'}, {'u1': 'I can imagine this change will make the Australian car market a lot more predictable for manufacturers. Less duplication of work and resources.', 'u2': 'Still hard to accept the thought of an end to this famous rivalry. It felt so much a part of Aussie culture.'}, {'u1': 'From next season, the next generation Chevrolet Camaro will replace the Holden Commodore, while the next generation Mustang will line up for Ford. Much of Australia’s recent history has been tied up in the ‘Ford Vs Holden’ rivalry, with households split evenly for a long time.', 'u2': 'So sad to see it go!'}]}",0,0.0,0.0,0.0,0.0,1.0,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -19734,7 +19734,7 @@ u1: A wet race is the ultimate. That’s when you find out who can really drive.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1055,14863750776997670633_13498069352334897143,twitter,,en,,I stopped smoking Cohibas once the Macassar stopped being made. Also the Comandor is my favorite one but it’s no longer being made.,"Well sheesh. I guess I may have been correct ony hesitation. Oh well, I'm sure these will be well worth the price","{'turns': [{'u1': 'I was going to get a bunch of Cohibas to lay down for a bit but decided against it.', 'u2': 'Hesitation? Are you kidding me?'}, {'u1': ""I did hear that Cohibas aren't doing well these days."", 'u2': ""What's going on with Cohibas then?""}, {'u1': 'I stopped smoking Cohibas once the Macassar stopped being made. Also the Comandor is my favorite one but it’s no longer being made.', 'u2': ""Well sheesh. I guess I may have been correct ony hesitation. Oh well, I'm sure these will be well worth the price""}]}",0,0.0,1.0,0.0,0.0,,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -20737,7 +20737,7 @@ u1: be prepared to be called a Hindu Apologist, a leftish libtard and a weak, be
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1108,18174543617866614170_14356780514838919094,twitter,,en,,"No promises, but I think I’m going to finally drink a hard seltzer today as one of my shifties.","I may have missed this, are you very anti seltzers?","{'turns': [{'u1': ""I've been trying to cut back on drinking during the week."", 'u2': 'Is that a new thing for you?'}, {'u1': ""Yeah, I've been finding that I can actually get more work done on days when I'm not hungover."", 'u2': ""That's pretty admirable, but what about some of your favorite drinks? Are you giving those up too?""}, {'u1': 'No promises, but I think I’m going to finally drink a hard seltzer today as one of my shifties.', 'u2': 'I may have missed this, are you very anti seltzers?'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -21698,7 +21698,7 @@ u1: I’ve already got one Diggs, a second one would be pretty amazing.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1158,2325292025323751804_17292965808451226419,reddit,,en,,What about those other things that Hindis did do?,"Real life is not a game. You kill someone in red team, Red team kills someone in blue team. Revenge match is only better in game. More than the Red & Blue, people need to think that both are people with family, kids. Only thing different is the team.
 Stop forming group for stupid things. Modi group, Congress group, Everyone is forming fucking cults. You don't vote people to support the cult. You vote to ensure everyone gets to live without any fights.
 DeleteReligion","{'turns': [{'u1': 'It seems you are still confused with the different political ideologies. Do you know what actually is a democracy and what are its principles?', 'u2': ""Do you even know the history of our country? Just like people have different opinions about everything else, so do they about the political parties. What's your problem?""}, {'u1': ""It's not about having different opinions, but about following the principles of democracy. Have you heard about secularism and the separation of religion and state?"", 'u2': ""You are still stuck on this point? Listen, the way people are behaving in this country, it's more like a game than a real life. They're forming groups, taking sides, and fighting over petty issues. That's not what our democracy is about.""}, {'u1': 'What about those other things that Hindis did do?', 'u2': ""Real life is not a game. You kill someone in red team, Red team kills someone in blue team. Revenge match is only better in game. More than the Red & Blue, people need to think that both are people with family, kids. Only thing different is the team. Stop forming group for stupid things. Modi group, Congress group, Everyone is forming fucking cults. You don't vote people to support the cult. You vote to ensure everyone gets to live without any fights. DeleteReligion""}]}",0,0.0,0.0,0.0,,,0.0,,"<TASK_OVERVIEW>
@@ -22137,7 +22137,7 @@ u1: We don’t need this crap here! time for an inquiry in to media diversity an
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1182,5913824363200763144_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
 They voted clearly in support of devolution and that vote has been respected with it's implementation.
 Time for another vote to see if they still want devolution.
@@ -22527,7 +22527,7 @@ u1: It will all be stale ina week too, but the shops will still be open...
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1202,37268771336504051_2585354592208575908,reddit,,en,,"Some of the reviews for this place are... thrilling:  
 \> [After smoking allegations:] For your false review we will be reporting your misconduct of behaving badly and breaking house rules to immigration and to the regulatory authorities. [..] If you do not edit this review . Your review will be recorded on your records and you will not be *welcomed back to Australia.*
  URL 
@@ -23302,7 +23302,7 @@ u1: Also, the clown being picked up should be literally waiting at the window or
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1242,694348653451657143_7304807344363100836,twitter,,en,,"Q3. What is the resolution of the #GalaxyZFlip3 main camera?
 A. 8MP
 B. 10MP
@@ -23806,7 +23806,7 @@ u1: By quitting, he is making twitter a better place tbh !!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1268,4354222627584435236_9401841510351485236,reddit,,en,,"What do people think the worst case scenario is with COVID-19? Like do people think we'll get the country shut down for two weeks or what? Genuine question, I know it's something the government/international bodies don't want to talk about yet/at all so I'm curious what people imagine it to be",Total societal shut down with hospitals bursting at the seams and people dying at home. I think it's likely. Look at italy for a glimpse into the future. 2000 cases in 10 days and they are struggling. Society will pause.,"{'turns': [{'u1': ""You're really concerned about the spread of COVID-19, aren't you?"", 'u2': ""I'm worried. The news is saying it's spreading fast. What if it gets out of hand?""}, {'u1': ""That's a scary thought. I've heard rumors about the US cases skyrocketing soon."", 'u2': ""I know, right? Italy's outbreak is a huge red flag. If they can't contain it, what makes us think we can?""}, {'u1': ""What do people think the worst case scenario is with COVID-19? Like do people think we'll get the country shut down for two weeks or what? Genuine question, I know it's something the government/international bodies don't want to talk about yet/at all so I'm curious what people imagine it to be"", 'u2': ""Total societal shut down with hospitals bursting at the seams and people dying at home. I think it's likely. Look at italy for a glimpse into the future. 2000 cases in 10 days and they are struggling. Society will pause.""}]}",0,0.0,0.0,1.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -23941,7 +23941,7 @@ u1: Can anyone confirm Fabian Francis had a car purchased for him by Port an MG 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1275,12050292510470079653_5642195397836479107,twitter,,en,,"This is a very dangerous moment. Phoney referendums in Russian-controlled eastern Ukraine will mean Russia can claim that Donbas etc is actually part of Russia. If Ukraine continues to advance there, Putin will threaten to use nukes to defend Russian territory. WW3 would beckon.","My Russian friends living outside of Russia are all speaking to each other, worried and afraid for what comes next. They believe Putin will react fast in Ukraine as well against those who protest. This is not good. What will the West's response be?","{'turns': [{'u1': ""This morning's news about Russian troop buildup near Ukraine's border made me think of the recent history. If you're old enough to remember, do you think NATO's failure to take decisive action in 2008 against Russia's initial invasion of Georgia was a turning point?"", 'u2': 'I do think that was a missed opportunity to show strength. It emboldened Putin, no question.'}, {'u1': ""Does anyone else think that's why we're in this precarious situation now?"", 'u2': ""Precarious is one way to put it. I'm worried this might be the final push by Russia to reclaim its'sphere of influence'.""}, {'u1': 'This is a very dangerous moment. Phoney referendums in Russian-controlled eastern Ukraine will mean Russia can claim that Donbas etc is actually part of Russia. If Ukraine continues to advance there, Putin will threaten to use nukes to defend Russian territory. WW3 would beckon.', 'u2': ""My Russian friends living outside of Russia are all speaking to each other, worried and afraid for what comes next. They believe Putin will react fast in Ukraine as well against those who protest. This is not good. What will the West's response be?""}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -24239,7 +24239,7 @@ u1: Gm bro ☀️
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1291,15334797668558835693_10996792492374609306,reddit,,en,,Government to Scientists: urine trouble.,Hands where I can see them. /r/punpatrol requesting backup.,"{'turns': [{'u1': 'We should consider the consequences of this new discovery.', 'u2': 'What discovery? Spill the beans, science nerd!'}, {'u1': 'A rather unusual side effect has been observed in the lab.', 'u2': ""Oh? Like what? Did the experiment get a little too'experimental'?""}, {'u1': 'Government to Scientists: urine trouble.', 'u2': 'Hands where I can see them. /r/punpatrol requesting backup.'}]}",1,1.0,1.0,,1.0,1.0,1.0,,"<TASK_OVERVIEW>
 You are Gen Z. Use this perspective when making the following decision.
 You have a pair of users, u1 and u2, involved in a dialogue. 

@@ -605,7 +605,7 @@ u1: I want to see a graph comparing this to yearly flu and cold infections and d
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 32,4494493456087476066_5040649622561716521,twitter,,en,,"By slashing oil production during an international energy crisis, Saudi Arabia is aiding Russia's war on Ukraine and adding to pain at the pump.
 
 Continued U.S. dependence on Saudi Arabia is a threat to our national security.
@@ -1054,7 +1054,7 @@ u1: So our slouching Business Sec evades Parliament &amp; finally makes critical
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 56,17259223134160947109_11729396824816689558,reddit,,en,,"""you're going to have to look for the cat with your pants off""",This needs some background information.,"{'turns': [{'u1': ""I'm telling you, the craziest thing happened last night. Our neighbor's cat got loose in our backyard and started causing all sorts of chaos."", 'u2': ""That's crazy. I'm glad no one was hurt.""}, {'u1': 'Yeah, but the craziest part is, our neighbor was frantically searching for their cat all over the neighborhood, but they had their pants down and were completely unaware of the situation!', 'u2': 'Uh, what does that have to do with anything?'}, {'u1': '""you\'re going to have to look for the cat with your pants off""', 'u2': 'This needs some background information.'}]}",0,1.0,0.0,,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -1672,7 +1672,7 @@ u1: What happened to the pandemic? The ending seemed awfully anticlimactic, no?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 89,2087891341690024000_14331869771840568431,reddit,,en,,"Donald Trump is purposefully handling the Corona Virus poorly so that it reaches pandemic state and he can declare Martial Law.
 Martial law: is the imposition of direct military control of normal civilian functions by a government, especially in response to a temporary emergency such as invasion or major disaster, or in an occupied territory.",If this is true he’s way smarter than I would want to give him credit for.,"{'turns': [{'u1': 'u1: There’s been a massive uptick in COVID-19 cases over the last 24 hours.', 'u2': 'I read that. Sounds like he’s botching this whole thing'}, {'u1': 'I keep thinking his strategy is to let it spread until he can impose some kind of military control.', 'u2': 'But that’s just conspiracy theory talk. He’s not capable of that level of planning.'}, {'u1': 'Donald Trump is purposefully handling the Corona Virus poorly so that it reaches pandemic state and he can declare Martial Law. Martial law: is the imposition of direct military control of normal civilian functions by a government, especially in response to a temporary emergency such as invasion or major disaster, or in an occupied territory.', 'u2': 'If this is true he’s way smarter than I would want to give him credit for.'}]}",1,0.0,1.0,1.0,1.0,,,0.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -3220,7 +3220,7 @@ u1: ? Tell him, weird is cool!!! From all of us here in Twitter world
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 172,17057381804587437617_9494241208801358765,reddit,,en,,"Throughout the day (maybe once an hour or so) ask yourself ""Am I dreaming?"" Then, look around and logically think why you are not dreaming. (""I jump but I am not able to fly. That is my cat which I've had for 4 years. I normally eat soup every day for lunch, etc"") Whatever it is, think through it logically.
 Eventually, when you are dreaming, you will be able to recognize that you are dreaming because you have done this line of questioning so much. I used to do this and was able to control my dreams because of this technique.",Thank you I'll definitely try this,"{'turns': [{'u1': ""Have you ever wondered how dreams feel real? I mean, when you're dreaming, it's as if everything is happening for real. The sensory inputs, the emotions, the entire experience... it's so vivid! I often find myself wondering, 'Is this really happening, or am I just imagining it?' It's like my mind is playing tricks on me, and I'm just along for the ride."", 'u2': 'What do you mean? You think our whole reality is just a dream?'}, {'u1': ""Not necessarily. But I do think that our brains can create incredibly convincing simulations of reality. And if we can tap into that ability, we might be able to gain some insight into the nature of reality itself. It's like, what if our dreams are actually a doorway to a deeper level of consciousness?"", 'u2': ""That's a pretty mind-blowing idea. But how can we tap into that?""}, {'u1': 'Throughout the day (maybe once an hour or so) ask yourself ""Am I dreaming?"" Then, look around and logically think why you are not dreaming. (""I jump but I am not able to fly. That is my cat which I\'ve had for 4 years. I normally eat soup every day for lunch, etc"") Whatever it is, think through it logically. Eventually, when you are dreaming, you will be able to recognize that you are dreaming because you have done this line of questioning so much. I used to do this and was able to control my dreams because of this technique.', 'u2': ""Thank you I'll definitely try this""}]}",0,0.0,0.0,0.0,0.0,,,0.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -3778,7 +3778,7 @@ u1: one thing about me is that I want a FT salary on PT hours
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 202,14033142928394100484_12068930096878183270,twitter,,en,,"Am I the only one who likes to have the tv on while I write, instead of music?? There have to be more of us out there! #amwriting","That's me! Haha
 My partner watches stuff on Netflix while I write.","{'turns': [{'u1': '- I find that music tends to be distracting for me, so I usually turn it off when I write. Do you find it distracting as well?', 'u2': 'Yeah, it does. I find that background TV noise is less distracting, personally.'}, {'u1': ""That makes sense. I guess I just like the background chatter for some reason. What's your take on having the lights on or off while you work?"", 'u2': 'Oh, I like having the lights on, actually. But my partner is a night owl, so it can get pretty bright in here!'}, {'u1': 'Am I the only one who likes to have the tv on while I write, instead of music?? There have to be more of us out there! #amwriting', 'u2': ""That's me! Haha My partner watches stuff on Netflix while I write.""}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -4737,7 +4737,7 @@ u1: Bet you’re glad you can now do beer tweets ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 254,15878862390442679669_5355962305897979354,reddit,,en,,It’s Official! I’m Irish!,Paper Irish*,"{'turns': [{'u1': '“Going through some genealogy stuff and I came across a fascinating connection to the Emerald Isle!', 'u2': 'Cool, what have you found out?'}, {'u1': 'It seems my 5th great-grandmother was actually from a small village in rural Ireland. Can’t wait to learn more!', 'u2': ""Sounds like you're really tracing your roots. What do you think it means for you?""}, {'u1': 'It’s Official! I’m Irish!', 'u2': 'Paper Irish*'}]}",1,1.0,,,1.0,,1.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -4963,7 +4963,7 @@ u1: Anybody want to check /r/unitedkingdom to see if they have a shit fit about 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 266,5119194965535611052_1427671407818261860,reddit,,en,,"If i was ordering, i'd stick a note up on my door to say to leave everything on the doorstep, knock and leave.
 Hopefully anyone who is self isolating will not be so daft as to keep quiet and have actual contact with another person.","Yeah... um... how's that policy of not supplying carrier bags with deliveries working out now, Tesco?","{'turns': [{'u1': ""This is what the Government recommends apparently - I haven't checked it myself."", 'u2': ""Haha yeah right, that's exactly what they'll tell us to keep us all calm.""}, {'u1': ""Oh, you're saying we shouldn't be relying on Govt recommendations? Why not?"", 'u2': ""Well, considering they can't even get the basics right, I think we should trust our instincts more.""}, {'u1': ""If i was ordering, i'd stick a note up on my door to say to leave everything on the doorstep, knock and leave. Hopefully anyone who is self isolating will not be so daft as to keep quiet and have actual contact with another person."", 'u2': ""Yeah... um... how's that policy of not supplying carrier bags with deliveries working out now, Tesco?""}]}",1,1.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -5209,7 +5209,7 @@ u1: Ah the old 'I've dropped my sweets' dilemma, do you scrabble around and pick
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 279,5391590719745824271_4961449285252547310,twitter,,en,,Heavy metal is the best medicine ?,"Hmm, to each its own!","{'turns': [{'u1': 'u1: I just binge-listened to Iron Maiden all night', 'u2': ""Dude, you're gonna wear those guitar riffs out!""}, {'u1': ""What?! You think I can ever get tired of Bruce Dickinson's voice?! That's blasphemy!"", 'u2': ""Okay, okay, don't kill me, but isn't metal a bit... intense?""}, {'u1': 'Heavy metal is the best medicine ?', 'u2': 'Hmm, to each its own!'}]}",0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5390,7 +5390,7 @@ u1: Sorry if awkward, but does anyone else here masturbate to their classmates ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 289,11230659942632165530_8439088963071654548,twitter,,en,,What’s your favorite place to which you’ve traveled?,The Isle of Arran on the west coast of Scotland! Avril X,"{'turns': [{'u1': '“What brings you to Scotland today? I have a few friends up that way and love exploring their recommendations.', 'u2': ""I'm actually just on a wee road trip with the missus and exploring some of the lesser-known islands. We heard tales of a tiny shop that does the most wonderful whisky tastings""}, {'u1': ""Road trips with the wife are always fun. What's the plan, do you have a whole itinerary worked out or just going with the flow?"", 'u2': 'Oh, we have a rough plan, but I love the flexibility of having no fixed schedule. We can just see where the day takes us and visit whatever catches our eye'}, {'u1': 'What’s your favorite place to which you’ve traveled?', 'u2': 'The Isle of Arran on the west coast of Scotland! Avril X'}]}",0,0.0,1.0,1.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -5971,7 +5971,7 @@ u1: Would you support NHS workers if they had to go out on strike? It looks like
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 320,5257794376726233484_2065932196256740103,reddit,,en,,"I've 'felt' summers getting longer but couldn't really prove it (or bother to prove it more like it). I know in Brisbane even though we're now in 'Autumn' (ie. late summer), our actual cold period didn't usually start until 1 May (which you could set your watch to). Last few years it started getting really cold in min June. That is AFTER the start of winter. 
 All those global warming/climate change deniers can fuck right off. More summer = more energy usage (esp electricity to run aircons) = more coal being burned in coal fired power stations = more carbon in the atmosphere = contributing to climate change = More summer. 
 Thats the theory. Oh wait....
@@ -6505,7 +6505,7 @@ u1: Why are so many world leaders absolute dickheads? > Did you hear? There's a 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 348,12168697998926211801_9781002345504912265,reddit,,en,,"You do realise that to ‘take that on notice’ means that they have to provide an answer, just that they don’t have the information at that time?","Yes.
 He would have been aware prior to estimates what the questioning would be about.
 He either did not prepare or was unwilling to prepare for those questions.
@@ -7960,7 +7960,7 @@ u1: I'm bald bitch
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 426,3081572222681915429_7010743532332502600,reddit,,en,,Sign the Paris Agreement,Weren’t we apart of that then quit?,"{'turns': [{'u1': 'It is our moral obligation to protect the environment for future generations.', 'u2': 'I don’t want to have kids if I know they’ll be living in a dying world.'}, {'u1': 'This is not about being parents, this is about responsibility towards the planet. Every country should take action.', 'u2': 'Not everyone believes that it’s our responsibility, they think it’s too costly and it’s someone else’s problem.'}, {'u1': 'Sign the Paris Agreement', 'u2': 'Weren’t we apart of that then quit?'}]}",1,1.0,0.0,0.0,1.0,,1.0,1.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -7996,7 +7996,7 @@ u1: I've said this many times on the pod, but losing Sasha Banks is losing someo
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 428,1753004031081148149_4349902385666703211,reddit,,en,,"Good luck becoming a mental health nurse. 
 I too was admitted to the psych unit. Still trying to make something of myself afterwards.",Thanks man I'd like to make a difference in people's lives.,"{'turns': [{'u1': 'What motivated you to want to become a mental health nurse?', 'u2': ""I've seen how nursing can really make a difference in people's lives, and I want to do that for people with mental health issues.""}, {'u1': ""It's not going to be easy, you know. I know from personal experience."", 'u2': ""Yeah, I'm aware it can be tough, but I'm willing to put in the work to make a difference.""}, {'u1': 'Good luck becoming a mental health nurse. I too was admitted to the psych unit. Still trying to make something of myself afterwards.', 'u2': ""Thanks man I'd like to make a difference in people's lives.""}]}",0,0.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -8437,7 +8437,7 @@ u1: I really don't get the toilet paper thing. Buying an extra pack or 2? Sure. 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 452,15208670791168633935_13728450388470711696,twitter,,en,,@NualaNiC's jacket is extremely good,Thanks a mill Rachel x,"{'turns': [{'u1': ""Hey Rach! How's it going?"", 'u2': 'x'}, {'u1': 'Just saw the funniest clip of you and @NualaNiC', 'u2': 'LMAO you guys are the best'}, {'u1': ""@NualaNiC's jacket is extremely good"", 'u2': 'Thanks a mill Rachel x'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -8808,7 +8808,7 @@ u1: What a great way to make money and definitely not get murdered.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 472,2840036681143911603_16313490798085464960,twitter,,en,,"I zoomed in on book titles first, I'm such a nerd :)",We hope we passed….? ?,"{'turns': [{'u1': 'The books in the room looked really interesting and I started flipping through them. I wonder what kind of authors they are.', 'u2': ""Ahaha no clue what that room is for yet, but I have a feeling it's gonna be a long test""}, {'u1': 'I found a whole section of history books and I got completely sidetracked!', 'u2': ""Yeah, I was looking around at the maps on the walls, and it seems like it's some kind of cultural heritage exhibit""}, {'u1': ""I zoomed in on book titles first, I'm such a nerd :)"", 'u2': 'We hope we passed….? ?'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -9663,7 +9663,7 @@ u1: My vitamin D is so low smh
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 518,923341292487738390_64252648328142347,twitter,,en,,Let me interview Fenriz on Hot Ones,Signing off on this,"{'turns': [{'u1': ""I need to reach out to Fenriz to see if he's down to be interviewed"", 'u2': ""Good luck, I'll send you some of his music""}, {'u1': 'What kind of questions should I ask him?', 'u2': 'Ask him about his favorite craft beers'}, {'u1': 'Let me interview Fenriz on Hot Ones', 'u2': 'Signing off on this'}]}",0,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10068,7 +10068,7 @@ u1: Do you know what old people often find stressful and upsetting? It’s car p
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 540,12788429015863060933_12665702174369034097,twitter,,en,,What's going to happen with the empty space on the left of photo (south of thr park)?,"The park will sit within the wider Mayfield neighbourhood. Around the 6.5-acre park will be new homes, offices, retail and leisure space.","{'turns': [{'u1': ""That photo I posted yesterday really caught some of the park's essence, didn't it?"", 'u2': 'What caught your eye most about the photo?'}, {'u1': ""I'm trying to imagine what the area would be like with everything finished. Any idea what's in the pipeline?"", 'u2': ""I've heard rumors of new developments, but I haven't seen any official announcements yet.""}, {'u1': ""What's going to happen with the empty space on the left of photo (south of thr park)?"", 'u2': 'The park will sit within the wider Mayfield neighbourhood. Around the 6.5-acre park will be new homes, offices, retail and leisure space.'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10274,7 +10274,7 @@ u1: How many jaffa cakes is it acceptable to eat in one sitting? The only correc
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 551,15555742103630016700_3166934879056674670,reddit,,en,,"Apologies for jumping in, and downvote it all, if you like. I’m not Irish, but seeing as this thing gets global: We have been through bird and swine flu, the pneumonia, and now this. Not to mention Ebola. And here we all are. It’s not like we have a plague on our hands and as far as I know it’s not the Middle Ages. I heart all the people who lost their loved ones. It is a great tragedy. But isn’t it getting a bit out of hand?","St Patrick's Day parade has been cancelled before due to foot and mouth, so it's not an overreaction to do the same this time. It's only sensible. Also regardless of how much you heart me, I don't want my parents to catch it.","{'turns': [{'u1': 'I just saw the announcement about cancelling the St. Patrick’s Day parade and I have mixed feelings about it.', 'u2': ""I get where you're coming from, but it's better safe than sorry. We don't know how this thing spreads yet.""}, {'u1': ""That's a fair point, but isn't it going to be a bit hard to justify cancelling all these events if it’s not a real threat?"", 'u2': ""It’s a precaution, which I think is a good thing. Would you rather take a chance with your family's health?""}, {'u1': 'Apologies for jumping in, and downvote it all, if you like. I’m not Irish, but seeing as this thing gets global: We have been through bird and swine flu, the pneumonia, and now this. Not to mention Ebola. And here we all are. It’s not like we have a plague on our hands and as far as I know it’s not the Middle Ages. I heart all the people who lost their loved ones. It is a great tragedy. But isn’t it getting a bit out of hand?', 'u2': ""St Patrick's Day parade has been cancelled before due to foot and mouth, so it's not an overreaction to do the same this time. It's only sensible. Also regardless of how much you heart me, I don't want my parents to catch it.""}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10674,7 +10674,7 @@ u1: Labour is finished thanks too Keith and his mates ???????
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 573,11125340787461154625_17341270234328791726,twitter,,en,,Congratulations  ser ?,Thank you buddy!,"{'turns': [{'u1': ""How's it going? Seen any exciting games lately?"", 'u2': ""I'm on a roll today, thanks for asking! Just got done with a 10-0 win in Fortnite.""}, {'u1': ""Wow, that's insane! You're on fire!"", 'u2': ""I know, right? Been playing for hours, and it just feels like everything's clicking.""}, {'u1': 'Congratulations ser ?', 'u2': 'Thank you buddy!'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -10692,7 +10692,7 @@ u1: Congratulations ser ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 574,1702264172157830686_17992286821093789731,twitter,,en,,"Welcome to the Tim David era. 
 
 #AUSvWI",I love it,"{'turns': [{'u1': ""'What do you think about Tim David's chances to succeed as the new face of Aussie cricket?"", 'u2': ""He's done some good things in the league, but the big stage is a whole different beast.""}, {'u1': 'Fair point, his big game temperament is yet to be proven', 'u2': ""Exactly, and I'm worried that the pressure might get to him""}, {'u1': 'Welcome to the Tim David era. #AUSvWI', 'u2': 'I love it'}]}",0,1.0,0.0,0.0,1.0,,,,"<TASK_OVERVIEW>
@@ -12911,7 +12911,7 @@ u1: Virtue’s of lies
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 692,14500042895323959861_4941726504357664738,twitter,,en,,Trump Supporters believe that they are not treated with respect.,"Correct, they shouldn’t be.","{'turns': [{'u1': 'It’s getting crazy how everyone is calling Trump supporters Nazis and racists. Have you seen those tweets saying so?', 'u2': 'Maybe it’s true. We all have our biases. But I don’t think it’s right to generalize all Trump supporters like that.'}, {'u1': 'That’s exactly my point! People have already made up their minds about Trump supporters. They don’t want to have a reasonable conversation.', 'u2': 'I think it’s time we stop being so sensitive and start looking at the facts. Not everyone who supports Trump is a racist.'}, {'u1': 'Trump Supporters believe that they are not treated with respect.', 'u2': 'Correct, they shouldn’t be.'}]}",1,,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -13162,7 +13162,7 @@ u1: Going the other way:€50k fine for blatant pollution of Cork lagoon; 2,000 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 705,6227038186526382080_14009063997415655955,twitter,,en,,After 9 years of failing to deliver training and skills Suusssaaan Ley’s answer is to throw the elderly into a building site. I could just imagine an 80 something woman building a house? We are really witnessing the leftovers- Bubble and Squeak?,The SUSS bitch has never had a portfolio that she has not hated. Does she honestly have a positive bone in her body? Or is she just another Murdocrazy/LNP stooge whose life's ambition is to take the heat off the puppet masters?,"{'turns': [{'u1': '4 years of inaction on jobs and training. What is her answer? Silence.', 'u2': 'Looks like more proof Suusssaaan Ley is just a mouthpiece for the big end of town.'}, {'u1': 'If she actually did something about unemployment the economy would start to boom again. But no, we get more rhetoric from Ley about fake job numbers.', 'u2': 'A bloke as thick as Suusssaaan Ley needs to get real. Fake job numbers? More like fake policies.'}, {'u1': 'After 9 years of failing to deliver training and skills Suusssaaan Ley’s answer is to throw the elderly into a building site. I could just imagine an 80 something woman building a house? We are really witnessing the leftovers- Bubble and Squeak?', 'u2': ""The SUSS bitch has never had a portfolio that she has not hated. Does she honestly have a positive bone in her body? Or is she just another Murdocrazy/LNP stooge whose life's ambition is to take the heat off the puppet masters?""}]}",0,0.0,0.0,0.0,,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14079,7 +14079,7 @@ u1: Drakes new album is dirt
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 754,9156576469239084067_14927942153289786087,twitter,,en,,What the fuck did I just watch,Pure inspiration,"{'turns': [{'u1': ""You've been messing with that new art technique all day"", 'u2': 'I am. Trying to get this one painting to work out'}, {'u1': ""I don't think that's going to end well"", 'u2': ""Don't be negative. It's all about experimenting and taking risks""}, {'u1': 'What the fuck did I just watch', 'u2': 'Pure inspiration'}]}",1,1.0,1.0,1.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -14540,7 +14540,7 @@ u1: Idea of cheating excites far more people than you know.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 779,15312854302914484907_9543475963179985763,reddit,,en,,"We will be lucky if we aren't at 20+ cases by the end of the week. Containment has worked so far, but the current sufferer was out and about for a few days while sick so will need lady luck on our side for numbers to stay down.
 Hopfully further spread is limited and / or slow.","Speaking of containment - this virus has been circulating in China for about 3 months or so.  China has a population of 1.38 billion.  So far, about 80,000 have contracted the virus and just under 3,000 have died.  For a country with such a massive population and lots of very densely populated cities, I'd say that's pretty good containment so far.","{'turns': [{'u1': 'The number of cases is going up daily. We can only hope that the containment efforts will slow down the rate of spread.', 'u2': 'What kind of numbers are we talking about? Are these isolated cases or are there clusters forming?'}, {'u1': ""As of yesterday, we have a total of 10 cases confirmed. It's mostly individual cases but we have one cluster in a local community that's causing concern."", 'u2': ""That's alarming. I've heard that this virus can spread quickly in dense populations. Do you think we're prepared for a potential outbreak?""}, {'u1': ""We will be lucky if we aren't at 20+ cases by the end of the week. Containment has worked so far, but the current sufferer was out and about for a few days while sick so will need lady luck on our side for numbers to stay down. Hopfully further spread is limited and / or slow."", 'u2': ""Speaking of containment - this virus has been circulating in China for about 3 months or so. China has a population of 1.38 billion. So far, about 80,000 have contracted the virus and just under 3,000 have died. For a country with such a massive population and lots of very densely populated cities, I'd say that's pretty good containment so far.""}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -14853,7 +14853,7 @@ u1: Get out or get weird
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 796,10642191468875433981_11721467574729930619,reddit,,en,,"Fidel Castro being Canadian PM Justin Trudeau's father.
 The resemblance really is uncanny (he looks nothing like his supposed biological father) and when you see that the dates his mom was staying with the Castros in Cuba, everything really does line up.  She also had numerous affairs rumors with people like Mick Jagger while she was married.  She really had a history of getting around and partying at places like Studio 54, etc.",Apparently the timelines don't match at all. His mother didn't meet him until after Trudeau was born. The rebuttal I saw also had pictures of young Pierre Trudeau to Justin Trudeau and they're similar.,"{'turns': [{'u1': ""Have you guys seen those videos of Justin Trudeau with a beard? He's got a strong resemblance to Fidel Castro. I'm no expert, but it's pretty interesting. What do you think?"", 'u2': ""I think you're stretching it a bit. I mean, they're both from different countries and times. That beard can make anyone look different. I'm not convinced.""}, {'u1': ""Justin Trudeau's mom had some pretty interesting relationships when she was younger. Anyone else heard about her and the Stones? There's some crazy stories about her wild times in the 70s."", 'u2': ""Yeah, I've heard rumors about her connections to some pretty famous people. But I'm still skeptical about the Castro thing. What's the connection, exactly?""}, {'u1': ""Fidel Castro being Canadian PM Justin Trudeau's father. The resemblance really is uncanny (he looks nothing like his supposed biological father) and when you see that the dates his mom was staying with the Castros in Cuba, everything really does line up. She also had numerous affairs rumors with people like Mick Jagger while she was married. She really had a history of getting around and partying at places like Studio 54, etc."", 'u2': ""Apparently the timelines don't match at all. His mother didn't meet him until after Trudeau was born. The rebuttal I saw also had pictures of young Pierre Trudeau to Justin Trudeau and they're similar.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -15229,7 +15229,7 @@ u1: Because we as an Indian fighting with each other over religious stuff instea
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 816,15898814355171110154_16063442744597399732,reddit,,en,,What about this one?  URL,It's not very typical but the sky fell down..,"{'turns': [{'u1': 'I was browsing through the trending section, and this caught my eye. Have you seen it? URL', 'u2': ""I don't know, I haven't had a chance to check it out yet. I'm on a short break.""}, {'u1': ""I think it's really interesting. I'd love to hear what you think!"", 'u2': ""Honestly, I'm a bit skeptical. But I do love a good mystery!""}, {'u1': 'What about this one? URL', 'u2': ""It's not very typical but the sky fell down..""}]}",1,1.0,,,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15337,7 +15337,7 @@ u1: It’s one of those days where I have deleted more reply’s than normal …
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 822,16763024879860606825_5640711538939609850,twitter,,en,,I dont believe you just send me a rack and i will let you know.,??? Me too,"{'turns': [{'u1': ""i need to confirm if you really sent the item you claimed you did, i'm not seeing anything"", 'u2': 'ha? which item?'}, {'u1': ""i swear i was supposed to get a laptop and i'm not seeing anything in the package"", 'u2': 'dude, i just got a package from fedex, its probably with u1'}, {'u1': 'I dont believe you just send me a rack and i will let you know.', 'u2': '??? Me too'}]}",0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -15429,7 +15429,7 @@ u1: Oh how wonderful!! Congrats!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 827,5232544712899451719_13620119660974992002,twitter,,en,,Trump and GOP puppet master,Evil desperate delusional little man,"{'turns': [{'u1': ""'Folks, the proof is in the pudding', 'You see, the way the polls are trending, it's clear the American people are onto him!'"", 'u2': ""I don't think so, @u1, you're just cherry-picking data to support your narrative""}, {'u1': 'Your defense of him is starting to smell like desperation', 'u2': ""Oh please, you're the one who's desperate, clinging to a sinking ship""}, {'u1': 'Trump and GOP puppet master', 'u2': 'Evil desperate delusional little man'}]}",0,1.0,0.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -16665,7 +16665,7 @@ u1: Find it awful grandiose that we've just renamed Dublin to East Ireland witho
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 891,11429970853381804377_15464467139262406645,twitter,,en,,"I've seen jazz described as ""appropriating black culture""... Where does influence end and ""appropriation"" begin? Not a trivial question.","“Can white guys play the Blues?”, and other assorted clichés?","{'turns': [{'u1': ""I've been thinking a lot about the origins of Jazz and the role of Black American musicians in shaping its sound. Some argue that White musicians who draw inspiration from these roots are somehow profiting off Black cultural expression without giving credit."", 'u2': ""I see your point. But isn't it also true that many White Jazz musicians have worked hard to perfect their craft, and in doing so, have contributed to the evolution of the genre?""}, {'u1': ""What does it mean to 'perfect' a craft when your starting point is rooted in someone else's cultural heritage? Is it simply a matter of talent and hard work, or is there a more nuanced dynamic at play?"", 'u2': ""That's a tough question. Maybe it's about acknowledging the historical context and the power dynamics that have led to the cultural exchange we see today.""}, {'u1': 'I\'ve seen jazz described as ""appropriating black culture""... Where does influence end and ""appropriation"" begin? Not a trivial question.', 'u2': '“Can white guys play the Blues?”, and other assorted clichés?'}]}",0,0.0,0.0,1.0,1.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17233,7 +17233,7 @@ u1: The people of Scotland had a vote on devolution in 1997. They voted clearly 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 921,304885441399226072_16839829900423369173,twitter,,en,,He’s blues apparently but either way it’s the most embarrassing attempt I’ve ever seen,Why would you hit such a legend,"{'turns': [{'u1': 'what just happened to his music', 'u2': 'you sound upset'}, {'u1': 'he went from amazing to abysmal', 'u2': 'don’t be so harsh, maybe he was trying to experiment'}, {'u1': 'He’s blues apparently but either way it’s the most embarrassing attempt I’ve ever seen', 'u2': 'Why would you hit such a legend'}]}",0,0.0,1.0,1.0,0.0,,0.0,0.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17455,7 +17455,7 @@ u1: I can say with hand on heart my opinion has nothing to do with gender, but f
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 933,4545055710738964083_8855341108826293525,twitter,,en,,Hello everyone. Today is my 73rd birthday. Haven't heard from family. Can I  please get some birthday likes?,Happy birthday,"{'turns': [{'u1': ""I've been feeling a bit left out lately, and I could use some social interaction to brighten up my day."", 'u2': ""Take it easy. What's new?""}, {'u1': ""Actually, it's a big milestone. My 73rd birthday is tomorrow."", 'u2': 'Happy Early Birthday to you then!'}, {'u1': ""Hello everyone. Today is my 73rd birthday. Haven't heard from family. Can I please get some birthday likes?"", 'u2': 'Happy birthday'}]}",0,0.0,0.0,0.0,0.0,0.0,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -17790,7 +17790,7 @@ u1: The way Americans pronounce the name ‘Craig’ should be a crime.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 951,15959989377510986891_6535585529959311470,reddit,,en,,"That’s just the culture of pop punk and metalcore though, music for those who are mentally 13.
 (sorry if you like metalcore)
 EDIT - gonna keep this comment up because apparently people can’t discern that pop punk/metalcore is vastly different scene to all the other types of metal. 
@@ -18181,7 +18181,7 @@ u1: The powers that be really think we are thick as fuck.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 972,15728962677567150864_1978735801133020569,reddit,,en,,"Phantom cosmonauts/astronauts
 There is no way no one died in space, burned up on reentry, or drifted off course and couldn't get back to Earth in the early days of the Space Race.",Many many years ago someone said they had picked up a recording of a cosmonaut saying his craft had missed its trajectory and he was headed away from earth by mistake..knew he would die....,"{'turns': [{'u1': ""What a wild conspiracy theory - that cosmonauts were basically just sacrificial lambs to the Space Race? I don't know what's crazier, the fact that someone would even suggest this or the possibility that it could be true."", 'u2': ""Oh, I think it's more believable than you think! We've had astronauts on the moon and returned safely, but what about all the early missions? All those brave cosmonauts... do we really know what happened to them all?""}, {'u1': ""I guess we don't know the whole story about the early space program, but I think it's safe to say we had the technology and resources to bring those cosmonauts back. It's not like we were just flying blind up there."", 'u2': ""That's easy to say now, but think about it... what if they really did suffer some kind of catastrophic failure? What if they were sent to their deaths, and the Soviet government just covered it up to save face?""}, {'u1': ""Phantom cosmonauts/astronauts There is no way no one died in space, burned up on reentry, or drifted off course and couldn't get back to Earth in the early days of the Space Race."", 'u2': 'Many many years ago someone said they had picked up a recording of a cosmonaut saying his craft had missed its trajectory and he was headed away from earth by mistake..knew he would die....'}]}",0,0.0,,,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -19067,7 +19067,7 @@ u1: Ok I will buy for u eventually
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1020,7905334480926265282_11478242095827900523,reddit,,en,,"wwhat's the pattern called at Myer?
 Edit: it's Wild Fur You Australiana version lol",Go to lalalandahop.com.au I just looked at the bottom of the cup lol,"{'turns': [{'u1': ""oh I've been dying to go to Myer but I don't know what pattern is on sale atm?"", 'u2': 'They have some cute ones for you!! Check their website lol'}, {'u1': 'you should totally check the clearance section, they usually have the cutest things there', 'u2': 'Omg I know!! I went last week and found the cutest top for $5!!!'}, {'u1': ""wwhat's the pattern called at Myer? Edit: it's Wild Fur You Australiana version lol"", 'u2': 'Go to lalalandahop.com.au I just looked at the bottom of the cup lol'}]}",0,0.0,0.0,0.0,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
@@ -20091,7 +20091,7 @@ u1: We are in Melbourne and nothing has changed at all. Went to Woolies today, n
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1074,9609426735942268497_3071669749439235955,reddit,,en,,"Are bouncers allowed to search inside your underwear?
 Asking for a friend","Very short answer is no. 
 Longer answer : can’t be bothered to type it out without context. Did a bouncer actually search your “friends” pants and you want to know if that was ok?","{'turns': [{'u1': ""I'm curious because my friends and I were turned away from a club last night and I'm wondering if it was just a misunderstanding."", 'u2': 'Oh really? What happened?'}, {'u1': ""You guys had already paid for your cover charge, but they said there was an 'issue' with your group's reservation?"", 'u2': ""Yeah, something like that. But I'm not convinced that was the real reason""}, {'u1': 'Are bouncers allowed to search inside your underwear? Asking for a friend', 'u2': 'Very short answer is no. Longer answer : can’t be bothered to type it out without context. Did a bouncer actually search your “friends” pants and you want to know if that was ok?'}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
@@ -20994,7 +20994,7 @@ u1: >but how can we after sports rorts? Pretty easily if the last 6 years are an
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1122,9068043742750522864_16999052439141141045,twitter,,en,,Is Sally still on the Gravy Bus?,"She’s on something, that’s for sure ????","{'turns': [{'u1': 'Did Sally leave on the last bus or is she still waiting in the terminal?', 'u2': 'I think I saw her on the platform when I was on my way out, but she was distracted and staring off into space.'}, {'u1': ""I wonder what's got her in such a daze... maybe she's worried about something?"", 'u2': ""I know she was freaking out about her phone earlier, but she didn't seem too upset by the time I saw her.""}, {'u1': 'Is Sally still on the Gravy Bus?', 'u2': 'She’s on something, that’s for sure ????'}]}",1,0.0,1.0,0.0,1.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -21899,7 +21899,7 @@ u1: everyone from Lincoln simultaneously: 'Did you know the Cathedral was once t
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1169,6899861667396480758_6969123579575091136,twitter,,en,,"If you're in a city with time to kill, what's the first thing you do?","Walking tour. Ideally a food tour, if there's time.","{'turns': [{'u1': 'I always love exploring cities. What are your favorite ways to pass the time?', 'u2': ""I'm a big fan of museums. There's something about art and history that really speaks to me.""}, {'u1': ""I've had some amazing experiences at museums, but I also love trying new foods."", 'u2': 'Definitely! Food is a big part of the culture in so many cities. Do you have a favorite type of cuisine?'}, {'u1': ""If you're in a city with time to kill, what's the first thing you do?"", 'u2': ""Walking tour. Ideally a food tour, if there's time.""}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22307,7 +22307,7 @@ u1: What you mean? All the shits and worms from my Ganga snan is not enough to p
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1191,15130254190875958937_6045477859710537693,twitter,,en,,I'm officially a Daemon apologist from today. This episode of #HOTD was ?,Daemon Supremacy #HOTD,"{'turns': [{'u1': ""It seems like a lot of people were against Daemon's plans in the forum, but I think he was trying to protect his people."", 'u2': 'Exactly, but did he go too far?'}, {'u1': ""It's a moral gray area, but his motivations were genuinely good."", 'u2': ""Even if that's true, he still chose to kill Rhaegar, which isn't something you just forget.""}, {'u1': ""I'm officially a Daemon apologist from today. This episode of #HOTD was ?"", 'u2': 'Daemon Supremacy #HOTD'}]}",0,0.0,1.0,1.0,0.0,,,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22871,7 +22871,7 @@ u1: My all time favourite reality tv moment was from ‘Joe Millionaire’ when 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
 1220,13866761320192385003_4810930497174408958,twitter,,en,,No you're not. ?,Thank U ?,"{'turns': [{'u1': ""You think you're some kind of hero?"", 'u2': 'Please stop being so dramatic.'}, {'u1': ""You can't even do that right."", 'u2': 'Seriously, U need a break.'}, {'u1': ""No you're not. ?"", 'u2': 'Thank U ?'}]}",0,0.0,1.0,0.0,1.0,,1.0,0.0,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -22957,7 +22957,7 @@ u1: Soothing, calm voice. Get them to roll their eyes if you can.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1224,9862367486972060427_5845875169302194005,twitter,,en,,"Tina started bitching about sumbul's work in kitchen
 
 Gautam: she needs the work rn and let her do it on her terms. Maine Jo kaam diya, soch ke diya.
@@ -24257,7 +24257,7 @@ u1: Government to Scientists: urine trouble.
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1292,12162821564167248829_17394625436796042370,twitter,,en,,"So I've written 25k of new book since end of July.
 
 This is good yes?
@@ -24356,7 +24356,7 @@ u1: Whats your favourite Queen song ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1297,5918637193697172781_2160691817816476064,twitter,,en,,You are badly due a wash!,True that ?,"{'turns': [{'u1': ""I think we've been playing outside for hours. It's getting dark."", 'u2': 'Yeah, we should probably start heading home then'}, {'u1': ""You've got mud all over your shirt and your knees too!"", 'u2': 'I fell down getting the ball!'}, {'u1': 'You are badly due a wash!', 'u2': 'True that ?'}]}",1,1.0,1.0,0.0,1.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25346,7 +25346,7 @@ u1: First you have to figure out.... how much ground could a groundhog hog if a 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1350,9049723103366466740_3782065980217208909,reddit,,en,,"I don't know, I can't even lay down and watch a movie or TV in bed","I usually try with background noise , but it doesn't help","{'turns': [{'u1': ""I've been trying to get into a show, but my brain just doesn't shut off, you know? I feel like I'm constantly thinking about work or something else."", 'u2': ""Same here, it's like our brains are wired to always be on the go. What's your work like, by the way?""}, {'u1': ""It's just a lot of pressure and stress, always trying to meet deadlines and manage expectations. Sometimes it feels like I'm running a marathon and I just can't catch my breath."", 'u2': ""Ugh, I can imagine. I've been in similar situations before. Do you think it's just the nature of the job or is it something else?""}, {'u1': ""I don't know, I can't even lay down and watch a movie or TV in bed"", 'u2': ""I usually try with background noise , but it doesn't help""}]}",0,0.0,0.0,0.0,0.0,,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 
 You have a pair of users, u1 and u2, involved in a dialogue. 
@@ -25420,7 +25420,7 @@ u1: You'd be an absolute legend if you get everyone 2 weeks off
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,1,0,[]
 1354,14766071579236126305_14222059832717814281,reddit,,en,,"Such a short term outlook by the governing bodies. The sport gets so much more exposure and interest (and new fans) by being on free to air, terrestrial TV. Cricket hemorrhaged fans when it went from Channel 4 to Sky years ago, same with Formula 1.","I used to go every year to Hockenheim. Had my fixed ticket in the Südtribüne, awesome seats. Favourite memory was Irvine winning and Jordan coming third in 99. Brilliant weekends mixing with great fans from all over. Once it went behind a paywall I lost interest totally, stopped going as I no longer watched. Couldn't even tell you the teams in F1 now outside the old regulars.
 I really hope the same doesn't happen to the rugby now.","{'turns': [{'u1': 'People often say that television is changing. But sometimes I wonder if it is really us who are changing. We want more and more. But are we ready to pay for it?', 'u2': 'If that happens with the Rugby, I will be the first to go against it. I love the game, and it brings so much joy, but we cannot let money get in the way.'}, {'u1': ""The current TV rights deal might be expensive, but it's worth it for the exposure and the sport's growth."", 'u2': ""Exposure is one thing, but what about the fans who can't afford to watch it anymore? It's a sad thought.""}, {'u1': 'Such a short term outlook by the governing bodies. The sport gets so much more exposure and interest (and new fans) by being on free to air, terrestrial TV. Cricket hemorrhaged fans when it went from Channel 4 to Sky years ago, same with Formula 1.', 'u2': ""I used to go every year to Hockenheim. Had my fixed ticket in the Südtribüne, awesome seats. Favourite memory was Irvine winning and Jordan coming third in 99. Brilliant weekends mixing with great fans from all over. Once it went behind a paywall I lost interest totally, stopped going as I no longer watched. Couldn't even tell you the teams in F1 now outside the old regulars. I really hope the same doesn't happen to the rugby now.""}]}",0,0.0,0.0,0.0,0.0,0.0,0.0,,"<TASK_OVERVIEW>
 You are Boomer. Use this perspective when making the following decision. 

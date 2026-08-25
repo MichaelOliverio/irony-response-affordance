@@ -86,7 +86,7 @@ u1: Seriously, why are there SO MANY CREDIT SCORE APPS now?! Is there some sort 
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 5,11234414428990216662_12950867292170150292,reddit,,en,,"I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.",Bunnings snags are bulk-bought tubes of garbage.,"{'turns': [{'u1': ""I had a weird thought the other day. What if we could find a veggie sausage that's just as good as the Bunnings ones? Crazy, right?"", 'u2': ""What's wrong with Bunnings snags? They're great as is.""}, {'u1': ""I dunno, I just think maybe there's something better out there. Like a hidden gem that only us foodies know about."", 'u2': 'Doubt it. The only thing better than a Bunnings snag is two Bunnings snags.'}, {'u1': 'I think I quite enjoy vegetarian sausages. I say think because my brain tells me the Bunnings snag is superior, but my stomach says otherwise. It’s a conundrum.', 'u2': 'Bunnings snags are bulk-bought tubes of garbage.'}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -103,7 +103,7 @@ u1: I think I quite enjoy vegetarian sausages. I say think because my brain tell
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 6,11511568951113336561_664144740275927289,twitter,,en,,Dyson is amazing! You can also look at Berkinstock as well?,"I actively dislike how they look, never ☠️","{'turns': [{'u1': ""'You have some really cool gadgets at home. Are they from Dyson?"", 'u2': ""'Huh, I think most of them are, but I don't know about the new vacuum cleaner. I need to check the manual.""}, {'u1': ""'Dyson is so trendy right now. They have a new product line, have you seen it?"", 'u2': ""'I don't think so. I'm not really into trendy stuff. What's the point of having the latest gadgets?""}, {'u1': 'Dyson is amazing! You can also look at Berkinstock as well?', 'u2': 'I actively dislike how they look, never ☠️'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -266,7 +266,7 @@ u1: What do people think the worst case scenario is with COVID-19? Like do peopl
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 15,13282727809339500610_4345437609566393259,reddit,,en,,The powers that be really think we are thick as fuck.,I'm not sure how you can read social media and think we're not,"{'turns': [{'u1': ""They can't control our minds through social media."", 'u2': 'Not with some brainwashed sheep following blindly.'}, {'u1': 'But the masses are just too blind to see the strings being pulled.', 'u2': 'How else can you explain the blatant censorship?'}, {'u1': 'The powers that be really think we are thick as fuck.', 'u2': ""I'm not sure how you can read social media and think we're not""}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -370,7 +370,7 @@ u1: I like that people always are worried that Epstein was murdered instead of s
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 21,1432336763630430362_1035671515632301051,twitter,,en,,Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough,I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!,"{'turns': [{'u1': ""u1 was quick to comment on Ollie Henry's trade request, wondering if Collingwood was really being offered enough in return."", 'u2': ""I'm not sure what the big deal is, he's been underwhelming for most of his career, if Geelong wants him that badly, let them have him!""}, {'u1': ""Fair enough, I guess, but you have to admit it's a bit rich for Collingwood fans to be so quick to criticise Ollie, especially when some of our own big names have been offloaded without much fuss."", 'u2': ""Buckley sold us down the river, no question about it, but that's management for you""}, {'u1': 'Have to laugh at the Collingwood fans on here who have been talking down Ollie Henry ever since he requested a trade now suddenly complaining that a pick in the mid-20s isn’t enough', 'u2': ""I'm a Collingwood supporter but after Buckley sent half a dozen premiership players out the door nothing else amazes me these days! I like Ollie but if he wants to go to Geelong so he can play with his brother SO BE IT! END OF STORY!! KAPUTSKI!!""}]}",0,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -421,7 +421,7 @@ u1: The theory that there's a cure for cancer out there somewhere. Not a develop
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 24,15043765114991269464_4944826392878906022,reddit,,en,,Dont we all hate Irish rail ?,The rest of Ireland hates it. We just don’t have it,"{'turns': [{'u1': ""I'm so done with their incompetence!"", 'u2': ""Yeah I know what you mean. They always seem to be 'on strike' or something.""}, {'u1': 'They really need to sort themselves out!', 'u2': 'The whole country would probably be better off without it'}, {'u1': 'Dont we all hate Irish rail ?', 'u2': 'The rest of Ireland hates it. We just don’t have it'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -438,7 +438,7 @@ u1: Dont we all hate Irish rail ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 25,15342642770078985313_16643049812401160830,twitter,,en,,Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?,"No
 
 It is because you are rational.","{'turns': [{'u1': ""I've been following the news and social media coverage of the Queen's death, and I must admit I'm having a hard time connecting with all the emotional outpouring."", 'u2': 'Emotional outpouring? You think this is just about feelings?'}, {'u1': ""No, I mean, it's all about the way everyone's reacting as if they've lost a family member when, for me, the Queen was just a public figure."", 'u2': ""You think you're the only one who can see that?""}, {'u1': ""Is it because I'm not British (though I've lived in the UK since arriving from Ireland as a young child) that I can't relate to this mass 'grief' around the death of the Queen?"", 'u2': 'No It is because you are rational.'}]}",0,0,human_majority,"<TASK_OVERVIEW>
@@ -562,7 +562,7 @@ u1: >How when he was looking for partners to play Badminton, most hindu groups d
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 32,1624580175472901311_5705924890865632006,reddit,,en,,Did no-one tell the Laois folk there was supposed to be more than just the name?,"Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!","{'turns': [{'u1': ""What's all this then? Laois is getting a monument? Haven't we more pressing things to worry about? We're going to be known for something that's going to be the size of a bus!"", 'u2': ""It's about time! I'm not saying it has to be huge, but at least make it worth our while. Remember that statue in Cork? The one with the big ball on top? Now that's what I call a monument!""}, {'u1': ""But isn't it about quality over quantity? The name is nice, I suppose, but is that really enough? We want something that will make people stop and stare, not just drive by and think, 'Ah, it's just Laois'."", 'u2': ""Quality over quantity? That's just something the historians and the artsy-fartsy crowd would say. I say, what about something grand, something that says, 'We're Cork, hear us roar!'?""}, {'u1': 'Did no-one tell the Laois folk there was supposed to be more than just the name?', 'u2': ""Whoever did Cork's one is letting down the team too. I mean, come on, we're the biggest county! They had the most stone to work with! The potential was there!""}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -596,7 +596,7 @@ u1: What if the wheels on the bus didn't go round and round?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 34,16650543109753935334_11130415265007119424,twitter,,en,,"The people of Scotland had a vote on devolution in 1997.
 They voted clearly in support of devolution and that vote has been respected with it's implementation.
 Time for another vote to see if they still want devolution.
@@ -655,7 +655,7 @@ u1: With the union firmly secured because the Queen died, what now for the SNP a
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 37,16873054711772305548_6725044516132975537,reddit,,en,,My first girlfriend gave me the same nickname.,Guess that explains the username.,"{'turns': [{'u1': 'You have no idea how I got my username, do you?', 'u2': ""Actually, I'm pretty curious, how did you come up with it?""}, {'u1': ""It's a story I only tell my closest friends."", 'u2': ""Aww, you're making me feel left out, share!""}, {'u1': 'My first girlfriend gave me the same nickname.', 'u2': 'Guess that explains the username.'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1049,7 +1049,7 @@ u1: Next up the 747? ?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 59,452015173105250262_1929604048844990661,reddit,,en,,I'm trying to read reddit with one eye  .,Which eye?,"{'turns': [{'u1': 'Just spent an hour trying to find my reading glasses.', 'u2': 'Ahaha, where did you finally find them?'}, {'u1': 'Ugh, still nowhere to be found. I had to ask my roommate to borrow some of his.', 'u2': 'Ha! Good thing for roommate assistance, right?'}, {'u1': ""I'm trying to read reddit with one eye ."", 'u2': 'Which eye?'}]}",1,1,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1066,7 +1066,7 @@ u1: I'm trying to read reddit with one eye .
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
+<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
 60,4895824813506931180_3385576044469113281,reddit,,en,,What new band are you listening to?,Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :),"{'turns': [{'u1': 'Looking for some fresh music', 'u2': ""Ahaha I just got into that new indie scene myself! Who's your favorite artist from it?""}, {'u1': 'Have you listened to that new pop-punk band?', 'u2': ""I know that one! I think they're pretty awesome!""}, {'u1': 'What new band are you listening to?', 'u2': 'Ooh I like that one! Always on the look out for good music. So what new band are you listening to? :)'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1153,7 +1153,7 @@ u1: Didn’t know we had mountains named after rashers!
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 65,5401568270236027876_7394103012939129894,reddit,,en,,There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?,Yes.  They have the meats.,"{'turns': [{'u1': ""That reminds me, have you tried any new restaurants lately? I'm getting a little tired of the same old places."", 'u2': 'Arby’s actually! I went there last week. It was pretty meh.'}, {'u1': 'Yeah, that’s kind of what I was thinking... they don’t seem to be doing anything right. Do you think people just love the roast beef?', 'u2': 'Hmm, maybe? But I think there are some other factors at play here...'}, {'u1': 'There is something off with the restaurant Arby’s. Do you personally know anyone who eats there?', 'u2': 'Yes. They have the meats.'}]}",1,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1300,7 +1300,7 @@ u1: Jar Jar Binks was supposed to be a Sith Lord and the big bad of the Star War
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 73,6899861667396480758_6969123579575091136,twitter,,en,,"If you're in a city with time to kill, what's the first thing you do?","Walking tour. Ideally a food tour, if there's time.","{'turns': [{'u1': 'I always love exploring cities. What are your favorite ways to pass the time?', 'u2': ""I'm a big fan of museums. There's something about art and history that really speaks to me.""}, {'u1': ""I've had some amazing experiences at museums, but I also love trying new foods."", 'u2': 'Definitely! Food is a big part of the culture in so many cities. Do you have a favorite type of cuisine?'}, {'u1': ""If you're in a city with time to kill, what's the first thing you do?"", 'u2': ""Walking tour. Ideally a food tour, if there's time.""}]}",0,0,human_majority,"<TASK_OVERVIEW>
 You have a pair of users, u1 and u2, involved in a dialogue. 
 The context, shown between the tags <CONTEXT>...</CONTEXT>, consists of two turns and a last message from u1, to which u2 has to respond.
@@ -1317,7 +1317,7 @@ u1: If you're in a city with time to kill, what's the first thing you do?
 </TASK_OVERVIEW>
 
 The answer is:
-<ANSWER>",<ANSWER>0</ANSWER>,,0,0,[]
+<ANSWER>",<ANSWER>1</ANSWER>,,1,0,[]
 74,694348653451657143_7304807344363100836,twitter,,en,,"Q3. What is the resolution of the #GalaxyZFlip3 main camera?
 A. 8MP
 B. 10MP
