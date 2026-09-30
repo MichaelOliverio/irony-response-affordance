@@ -1,4 +1,4 @@
-# **Teach Me When To Joke**
-## Detecting Irony Triggering in Dialogues
+# **Is This a Time for Irony?**
+## Estimating Ironic-Response Affordance in Dialogues
 
 ...
