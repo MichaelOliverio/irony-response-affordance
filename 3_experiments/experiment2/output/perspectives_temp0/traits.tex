@@ -1,0 +1,59 @@
+\begin{table}[t]
+\centering
+\small
+\caption{
+Positive-class $F_1$ scores for neutral (\emph{Neutral}) and trait-conditioned (\emph{Cond.}) predictions, both evaluated against the same matching trait-specific proxy labels on the same examples.
+Boldface marks the higher score within each pair; ties at the displayed precision are bolded in both columns.
+An asterisk ($^{*}$) marks the higher unrounded score when the paired difference is significant after Holm correction ($p_{\mathrm{Holm}} < 0.05$).
+Significance is assessed using a two-sided paired approximate randomization test with 10,000 randomizations, swapping whole original-post (MP) or original-context (CSC) clusters. Holm families comprise all comparisons within each dataset--model pair (six for MP; eight for CSC, including traits and relationships).
+}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{
+l@{\hspace{4pt}}
+l@{\hspace{6pt}}
+c@{\hspace{2pt}}
+c@{\hspace{6pt}}
+c@{\hspace{2pt}}
+c
+}
+\toprule
+\textbf{Model} & \textbf{Trait} &
+\multicolumn{2}{c}{\textbf{\texttt{CANTRIP}$_{\mathbf{MP}}$}} &
+\multicolumn{2}{c}{\textbf{\texttt{CANTRIP}$_{\mathbf{CSC}}$}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-6}
+& & Neutral & Cond. & Neutral & Cond. \\
+\midrule
+
+\multirow{6}{*}{Qwen3.5--9B} & Female & $0.38$ & $\mathbf{0.43}^{*}$ & $0.46$ & $\mathbf{0.49}^{*}$ \\
+ & Male & $0.39$ & $\mathbf{0.45}^{*}$ & $0.45$ & $\mathbf{0.51}^{*}$ \\
+\cmidrule(lr){2-6}
+ & Boomer & $\mathbf{0.39}^{*}$ & $0.16$ & $\mathbf{0.44}^{*}$ & $0.30$ \\
+ & Gen X & $\mathbf{0.38}$ & $0.35$ & $\mathbf{0.46}$ & $\mathbf{0.46}$ \\
+ & Gen Y & $0.43$ & $\mathbf{0.46}$ & $0.46$ & $\mathbf{0.51}^{*}$ \\
+ & Gen Z & $0.41$ & $\mathbf{0.45}$ & $0.43$ & $\mathbf{0.52}^{*}$ \\
+
+\midrule
+
+\multirow{6}{*}{Ministral3--8B} & Female & $\mathbf{0.55}$ & $\mathbf{0.55}$ & $\mathbf{0.59}$ & $\mathbf{0.59}$ \\
+ & Male & $\mathbf{0.54}$ & $0.53$ & $0.59$ & $\mathbf{0.60}$ \\
+\cmidrule(lr){2-6}
+ & Boomer & $\mathbf{0.53}$ & $0.52$ & $\mathbf{0.61}$ & $0.60$ \\
+ & Gen X & $\mathbf{0.52}$ & $\mathbf{0.52}$ & $\mathbf{0.60}$ & $\mathbf{0.60}$ \\
+ & Gen Y & $\mathbf{0.58}$ & $0.57$ & $0.59$ & $\mathbf{0.60}$ \\
+ & Gen Z & $\mathbf{0.53}$ & $0.52$ & $0.56$ & $\mathbf{0.57}$ \\
+
+\midrule
+
+\multirow{6}{*}{Gemma4--E4B} & Female & $0.29$ & $\mathbf{0.35}^{*}$ & $0.35$ & $\mathbf{0.41}^{*}$ \\
+ & Male & $0.30$ & $\mathbf{0.36}^{*}$ & $0.35$ & $\mathbf{0.42}^{*}$ \\
+\cmidrule(lr){2-6}
+ & Boomer & $\mathbf{0.33}$ & $0.26$ & $\mathbf{0.32}^{*}$ & $0.26$ \\
+ & Gen X & $0.31$ & $\mathbf{0.44}^{*}$ & $0.34$ & $\mathbf{0.49}^{*}$ \\
+ & Gen Y & $0.28$ & $\mathbf{0.44}^{*}$ & $0.35$ & $\mathbf{0.48}^{*}$ \\
+ & Gen Z & $0.25$ & $\mathbf{0.44}^{*}$ & $0.35$ & $\mathbf{0.52}^{*}$ \\
+
+\bottomrule
+\end{tabular}
+\label{tab:experiment2_traits_neutral_conditioned}
+\end{table}

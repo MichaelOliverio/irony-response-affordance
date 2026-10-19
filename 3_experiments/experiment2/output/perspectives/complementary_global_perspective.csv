@@ -1,0 +1,43 @@
+dataset,model,model_name,strategy,perspective,kind,target_label,n_samples,f1_global,f1_perspective,f1_delta_reference
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,gender_female,Female,traits,aggregation_on_female,1299,0.41405269761606023,0.4296962879640045,0.01564359034794427
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,gender_male,Male,traits,aggregation_on_male,1335,0.43155452436194897,0.45230439442658094,0.02074987006463197
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_x,Gen X,traits,aggregation_on_genx,1120,0.36524822695035464,0.3712,0.005951773049645337
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_y,Gen Y,traits,aggregation_on_geny,1326,0.4203069657615112,0.4604012671594509,0.04009430139793968
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_z,Gen Z,traits,aggregation_on_genz,683,0.44214876033057854,0.4453125,0.0031637396694214615
+MultiPICo,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_boomer,Boomer,traits,aggregation_on_boomer,263,0.17647058823529413,0.20512820512820512,0.028657616892910992
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,gender_female,Female,traits,aggregation_on_female,1299,0.48667601683029454,0.549407114624506,0.06273109779421143
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,gender_male,Male,traits,aggregation_on_male,1335,0.4878048780487805,0.5365223012281836,0.048717423179403085
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_x,Gen X,traits,aggregation_on_genx,1120,0.4741744284504657,0.5233494363929146,0.049175007942448945
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_y,Gen Y,traits,aggregation_on_geny,1326,0.48897290485192185,0.5666864256075874,0.07771352075566557
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_z,Gen Z,traits,aggregation_on_genz,683,0.4776500638569604,0.5228113440197287,0.045161280162768325
+MultiPICo,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_boomer,Boomer,traits,aggregation_on_boomer,263,0.46715328467153283,0.5121107266435986,0.04495744197206575
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,gender_female,Female,traits,aggregation_on_female,1299,0.344311377245509,0.35526315789473684,0.01095178064922786
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,gender_male,Male,traits,aggregation_on_male,1335,0.36666666666666664,0.35651074589127685,-0.010155920775389793
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_x,Gen X,traits,aggregation_on_genx,1120,0.44201909959072305,0.43073047858942065,-0.011288621001302401
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_y,Gen Y,traits,aggregation_on_geny,1326,0.42105263157894735,0.4296619411123228,0.008609309533375464
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_z,Gen Z,traits,aggregation_on_genz,683,0.46153846153846156,0.44061302681992337,-0.020925434718538194
+MultiPICo,google_gemma-4-E4B-it,Gemma4-E4B,generation_boomer,Boomer,traits,aggregation_on_boomer,263,0.3486238532110092,0.27419354838709675,-0.07443030482391244
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,gender_female,Female,traits,aggregation_on_female,2849,0.45258215962441317,0.49233390119250425,0.03975174156809108
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,gender_male,Male,traits,aggregation_on_male,2851,0.4606334841628959,0.506776180698152,0.0461426965352561
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_x,Gen X,traits,aggregation_on_genx,2126,0.4455106237148732,0.4658536585365854,0.02034303482171218
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_y,Gen Y,traits,aggregation_on_geny,2809,0.4619799139167862,0.5199652777777778,0.05798536386099157
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_gen_z,Gen Z,traits,aggregation_on_genz,2308,0.4837905236907731,0.516612072999532,0.03282154930875897
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,generation_boomer,Boomer,traits,aggregation_on_boomer,742,0.335,0.28879310344827586,-0.046206896551724164
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,relationship_colleagues,Colleagues,relationships,aggregation_on_colleague,856,0.3821656050955414,0.41001564945226915,0.02785004435672772
+CSC,Qwen_Qwen3.5-9B,Qwen3.5-9B,relationship_friends,Best Friends,relationships,aggregation_on_best_friend,2049,0.40476190476190477,0.4127230411171451,0.007961136355240317
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,gender_female,Female,traits,aggregation_on_female,2849,0.5157384987893463,0.5922771152754117,0.07653861648606541
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,gender_male,Male,traits,aggregation_on_male,2851,0.5159159159159159,0.5929676511954993,0.07705173527958342
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_x,Gen X,traits,aggregation_on_genx,2126,0.5236156351791531,0.5991657186196435,0.07555008344049041
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_y,Gen Y,traits,aggregation_on_geny,2809,0.5123438861458031,0.5951859956236324,0.08284210947782933
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_gen_z,Gen Z,traits,aggregation_on_genz,2308,0.5071530758226037,0.5635245901639344,0.0563715143413307
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,generation_boomer,Boomer,traits,aggregation_on_boomer,742,0.546485260770975,0.5983086680761099,0.051823407305134905
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,relationship_colleagues,Colleagues,relationships,aggregation_on_colleague,856,0.554561717352415,0.579273693534101,0.02471197618168597
+CSC,mistralai_Ministral-3-8B-Instruct-2512,Ministral3-8B,relationship_friends,Best Friends,relationships,aggregation_on_best_friend,2049,0.4922691182615963,0.5086705202312138,0.016401401969617535
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,gender_female,Female,traits,aggregation_on_female,2849,0.38733705772811916,0.39475123018042646,0.007414172452307299
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,gender_male,Male,traits,aggregation_on_male,2851,0.40479041916167663,0.4158311345646438,0.011040715402967194
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_x,Gen X,traits,aggregation_on_genx,2126,0.48906048906048905,0.49337175792507204,0.0043112688645829955
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_y,Gen Y,traits,aggregation_on_geny,2809,0.4528699315429173,0.47821969696969696,0.025349765426779636
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,generation_gen_z,Gen Z,traits,aggregation_on_genz,2308,0.4922584089695675,0.5197007481296758,0.027442339160108298
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,generation_boomer,Boomer,traits,aggregation_on_boomer,742,0.27507163323782235,0.2469733656174334,-0.028098267620388945
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,relationship_colleagues,Colleagues,relationships,aggregation_on_colleague,856,0.37454545454545457,0.3600713012477718,-0.014474153297682757
+CSC,google_gemma-4-E4B-it,Gemma4-E4B,relationship_friends,Best Friends,relationships,aggregation_on_best_friend,2049,0.4314354450681636,0.445141065830721,0.01370562076255738

@@ -1,0 +1,35 @@
+\begin{table}[t]
+\centering
+\small
+\caption{
+Positive-class $F_1$ scores on \texttt{CANTRIP}$_{CSC}$ for neutral (\emph{Neutral}) and relationship-conditioned (\emph{Cond.}) predictions, both evaluated against the same matching relationship-specific proxy labels on the same examples.
+Boldface marks the higher score within each pair; ties at the displayed precision are bolded in both columns.
+An asterisk ($^{*}$) marks the higher unrounded score when the paired difference is significant after Holm correction ($p_{\mathrm{Holm}} < 0.05$).
+Significance is assessed using a two-sided paired approximate randomization test with 10,000 randomizations, swapping whole original-context clusters. Holm families comprise all comparisons within each dataset--model pair (six for MP; eight for CSC, including traits and relationships).
+}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Model} & \textbf{Relationship} &
+\multicolumn{2}{c}{\textbf{\texttt{CANTRIP}$_{\mathbf{CSC}}$}} \\
+\cmidrule(lr){3-4}
+& & Neutral & Cond. \\
+\midrule
+
+\multirow{2}{*}{Qwen3.5--9B} & Colleagues & $\mathbf{0.43}$ & $0.41$ \\
+ & Best Friends & $\mathbf{0.44}$ & $0.41$ \\
+
+\midrule
+
+\multirow{2}{*}{Ministral3--8B} & Colleagues & $\mathbf{0.58}$ & $\mathbf{0.58}$ \\
+ & Best Friends & $\mathbf{0.51}$ & $\mathbf{0.51}$ \\
+
+\midrule
+
+\multirow{2}{*}{Gemma4--E4B} & Colleagues & $\mathbf{0.36}$ & $\mathbf{0.36}$ \\
+ & Best Friends & $0.35$ & $\mathbf{0.45}^{*}$ \\
+
+\bottomrule
+\end{tabular}
+\label{tab:experiment2_relationships_neutral_conditioned}
+\end{table}
